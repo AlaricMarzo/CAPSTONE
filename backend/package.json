@@ -4,9 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "concurrently \"nodemon src/server.js\" \"npm run dev:python\"",
     "start": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:python": "cd backend && python3 descriptive_model.py"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "pg": "^8.16.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "concurrently": "^8.2.2"
   }
 }
