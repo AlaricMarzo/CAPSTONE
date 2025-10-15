@@ -23,6 +23,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { getUserMetrics, inventoryData, purchaseData } from "@/data/mockData";
+import UploadPage from "./upload";
 
 function HomePage() {
   const metrics = getUserMetrics();
@@ -251,6 +252,8 @@ export default function Dashboard() {
         return <ReportsPage />;
       case 'settings':
         return <SettingsPage />;
+      case 'upload':
+        return <UploadPage />;
       default:
         return <HomePage />;
     }
