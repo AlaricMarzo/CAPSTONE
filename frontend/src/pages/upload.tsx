@@ -29,16 +29,32 @@ export default function DataUploadPage() {
       })
 
       const response = await fetch("http://localhost:4000/api/upload", {
-        method: "POST",
-        body: formData,
-      })
+      method: "POST",
+      body: formData,
+    })
 
-      const data = await response.json()
-      setResult(data)
+    // ✅ Handle both JSON and non-JSON responses safely
+    const contentType = response.headers.get("content-type") || ""
+    let data: any
 
-      if (data.success) {
-        setSelectedFiles([])
-      }
+    if (contentType.includes("application/json")) {
+      data = await response.json()
+    } else {
+      // fallback in case backend sends HTML error page
+      const text = await response.text()
+      throw new Error(
+        text.includes("Upload error")
+          ? text
+          : `Unexpected response from server (${response.status})`
+      )
+    }
+
+    setResult(data)
+
+    if (data.success) {
+      setSelectedFiles([])
+    }
+
     } catch (error: any) {
       setResult({
         success: false,

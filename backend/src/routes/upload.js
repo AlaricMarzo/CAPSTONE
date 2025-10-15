@@ -59,7 +59,7 @@ function runPythonScript(scriptPath, args = []) {
     const timeout = setTimeout(() => {
       reject(new Error("Python script execution timed out"));
       python.kill();
-    }, 5 * 60 * 1000); // 5 minutes
+    }, 20 * 60 * 1000); // 5 minutes
     // Timeout after 60 seconds
 
     python.on("close", (code) => {
@@ -89,67 +89,75 @@ function runPythonScript(scriptPath, args = []) {
 
 
 // -------------------- Upload Route --------------------
-router.post("/upload", upload.array("files", 20), async (req, res) => {
-  try {
-    if (!req.files || req.files.length === 0) {
-      return res.status(400).json({
-        success: false,
-        error: "No files uploaded",
-      });
-    }
-
-    console.log(`[Backend] Received ${req.files.length} files`);
-
-    const cleanedDir = path.join(__dirname, "../../cleaned");
-    if (!fs.existsSync(cleanedDir)) {
-      fs.mkdirSync(cleanedDir, { recursive: true });
-    }
-
-    const uploadedFiles = req.files.map((file) => file.path); // Collect file paths
-
-    const timestamp = Date.now();
-    const outputPath = path.join(cleanedDir, `combined_cleaned_${timestamp}.csv`); // Output path
-
-    const cleanScriptPath = path.join(__dirname, "../../scripts/clean_data.py");
-
-    console.log("[Backend] Starting data cleaning and loading...");
-
-    let cleanResult;
+// -------------------- Upload Route --------------------
+// -------------------- Upload Route (TEMP DIAGNOSTIC) --------------------
+router.post(
+  "/upload",
+  (req, res, next) => {
+    // Accept ANY file-field name so Multer won't reject
+    upload.any()(req, res, (err) => {
+      if (err) {
+        const msg = err.name === "MulterError" ? `Upload error: ${err.message}` : err.message
+        console.error("[Multer Error]", msg)
+        return res.status(400).json({ success: false, error: msg })
+      }
+      next()
+    })
+  },
+  async (req, res) => {
     try {
-      cleanResult = await runPythonScript(cleanScriptPath, [outputPath, ...uploadedFiles]); // Pass all files to Python script
-      console.log("[Backend] Cleaning and loading complete:", cleanResult);
-    } catch (error) {
-      console.error("[Backend] Error running cleaner/loader:", error.message);
-      return res.status(500).json({
-        success: false,
-        error: `Cleaning/Loading failed: ${error.message}`,
-        filesProcessed: req.files.length,
-      });
-    }
+      // >>> Add this log to SEE the field names that actually arrived
+      console.log("Incoming file fields:", (req.files || []).map(f => f.fieldname))
 
-    if (!cleanResult.success) {
-      return res.json({
-        success: false,
-        error: cleanResult.error || "Cleaning or loading failed",
+      if (!req.files || req.files.length === 0) {
+        return res.status(400).json({ success: false, error: "No files uploaded" })
+      }
+
+      // ... keep all your existing logic below unchanged ...
+      const cleanedDir = path.join(__dirname, "../../cleaned")
+      if (!fs.existsSync(cleanedDir)) fs.mkdirSync(cleanedDir, { recursive: true })
+
+      const uploadedFiles = req.files.map((file) => file.path)
+      const timestamp = Date.now()
+      const outputPath = path.join(cleanedDir, `combined_cleaned_${timestamp}.csv`)
+      const cleanScriptPath = path.join(__dirname, "../../scripts/clean_data.py")
+
+      console.log("[Backend] Starting data cleaning and loading...")
+      let cleanResult
+      try {
+        cleanResult = await runPythonScript(cleanScriptPath, [outputPath, ...uploadedFiles])
+        console.log("[Backend] Cleaning and loading complete:", cleanResult)
+      } catch (error) {
+        console.error("[Backend] Error running cleaner/loader:", error.message)
+        return res.status(500).json({
+          success: false,
+          error: `Cleaning/Loading failed: ${error.message}`,
+          filesProcessed: req.files.length,
+        })
+      }
+
+      if (!cleanResult.success) {
+        return res.json({
+          success: false,
+          error: cleanResult.error || "Cleaning or loading failed",
+          filesProcessed: req.files.length,
+          cleaningResults: cleanResult,
+        })
+      }
+
+      res.json({
+        success: true,
+        message: "Files processed and loaded successfully",
         filesProcessed: req.files.length,
         cleaningResults: cleanResult,
-      });
+      })
+    } catch (error) {
+      console.error("[Backend] Upload error:", error)
+      res.status(500).json({ success: false, error: error.message })
     }
-
-    res.json({
-      success: true,
-      message: "Files processed and loaded successfully",
-      filesProcessed: req.files.length,
-      cleaningResults: cleanResult,
-    });
-  } catch (error) {
-    console.error("[Backend] Upload error:", error);
-    res.status(500).json({
-      success: false,
-      error: error.message,
-    });
   }
-});
+)
+
 
 
 export default router
