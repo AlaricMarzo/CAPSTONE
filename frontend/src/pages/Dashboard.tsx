@@ -17,8 +17,7 @@ import {
   Calendar,
   DollarSign,
   Package,
-  ShoppingCart,
-  Users
+  ShoppingCart
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -56,10 +55,6 @@ function HomePage() {
             placeholder="Search products, customers, orders..." 
             className="pl-10 shadow-soft"
           />
-        </div>
-        <div className="flex items-center gap-2">
-          <Globe className="h-4 w-4 text-muted-foreground" />
-          <span className="text-sm text-muted-foreground">English (US)</span>
         </div>
       </div>
 
@@ -224,20 +219,7 @@ function ReportsPage() {
   );
 }
 
-function UsersPage() {
-  return (
-    <div className="flex-1 space-y-6 p-8 pt-6">
-      <div>
-        <h2 className="text-3xl font-bold text-foreground">Users</h2>
-        <p className="text-muted-foreground">User Management & Access Control</p>
-      </div>
-      
-      <div className="text-center py-12 text-muted-foreground">
-        <p>User management content coming soon...</p>
-      </div>
-    </div>
-  );
-}
+
 
 function SettingsPage() {
   return (
@@ -267,8 +249,6 @@ export default function Dashboard() {
         return <InventoryPage />;
       case 'reports':
         return <ReportsPage />;
-      case 'users':
-        return <UsersPage />;
       case 'settings':
         return <SettingsPage />;
       default:
@@ -280,16 +260,6 @@ export default function Dashboard() {
     <div className="flex h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header with Navigation */}
-        <header className="bg-card/80 backdrop-blur-sm border-b border-border/50 px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <h1 className="text-xl font-semibold text-foreground">SHIELD Analytics</h1>
-            </div>
-            <HeaderNav username="Admin User" />
-          </div>
-        </header>
-        
         <main className="flex-1 overflow-y-auto">
           {renderContent()}
         </main>
