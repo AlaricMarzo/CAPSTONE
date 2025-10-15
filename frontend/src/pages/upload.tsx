@@ -8,6 +8,10 @@ export default function DataUploadPage() {
   const [selectedFiles, setSelectedFiles] = useState<File[]>([])
   const [uploading, setUploading] = useState(false)
   const [result, setResult] = useState<any>(null)
+  const resetForm = () => {
+  setSelectedFiles([])
+  setResult(null)
+ }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
@@ -128,23 +132,41 @@ export default function DataUploadPage() {
               </div>
             )}
 
-            <button
-              onClick={handleUpload}
-              disabled={selectedFiles.length === 0 || uploading}
-              className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-            >
-              {uploading ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  Processing...
-                </>
-              ) : (
-                <>
-                  <Upload className="h-4 w-4" />
-                  Upload and Process
-                </>
-              )}
-            </button>
+            {result?.success ? (
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  disabled
+                  className="w-full sm:w-auto px-4 py-2 bg-green-600 text-white rounded-md flex items-center justify-center gap-2"
+                >
+                  <CheckCircle className="h-4 w-4" />
+                  Imported successfully
+                </button>
+                <button
+                  onClick={resetForm}
+                  className="w-full sm:w-auto px-4 py-2 border rounded-md hover:bg-gray-50"
+                >
+                  Upload more files
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={handleUpload}
+                disabled={selectedFiles.length === 0 || uploading}
+                className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {uploading ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Processing...
+                  </>
+                ) : (
+                  <>
+                    <Upload className="h-4 w-4" />
+                    Upload and Process
+                  </>
+                )}
+              </button>
+            )}
           </div>
         </div>
 
