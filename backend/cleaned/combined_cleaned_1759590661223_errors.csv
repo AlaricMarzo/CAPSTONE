@@ -1,0 +1,21 @@
+file,stage,count,reason
+1759590661190-InventorySalesDetailReport ANC MAY 2022.csv,date_conversion,2963,Invalid date format
+1759590661190-InventorySalesDetailReport ANC MAY 2022.csv,missing_values,904,Missing critical values
+1759590661190-InventorySalesDetailReport ANC MAY 2022.csv,placeholder_removal,5,Placeholder/test data
+1759590661190-InventorySalesDetailReport ANC MAY 2022.csv,deduplication,2,Duplicate rows
+1759590661197-InventorySalesDetailReport ANC JUNE 2022.csv,date_conversion,3831,Invalid date format
+1759590661197-InventorySalesDetailReport ANC JUNE 2022.csv,missing_values,1113,Missing critical values
+1759590661197-InventorySalesDetailReport ANC JUNE 2022.csv,placeholder_removal,8,Placeholder/test data
+1759590661203-InventorySalesDetailReport ANC JULY 2022.csv,date_conversion,4381,Invalid date format
+1759590661203-InventorySalesDetailReport ANC JULY 2022.csv,missing_values,1228,Missing critical values
+1759590661203-InventorySalesDetailReport ANC JULY 2022.csv,placeholder_removal,11,Placeholder/test data
+1759590661207-InventorySalesDetailReport ANC AUGUST 2022.csv,date_conversion,4695,Invalid date format
+1759590661207-InventorySalesDetailReport ANC AUGUST 2022.csv,missing_values,1394,Missing critical values
+1759590661207-InventorySalesDetailReport ANC AUGUST 2022.csv,placeholder_removal,7,Placeholder/test data
+1759590661215-InventorySalesDetailReport  ANC SEP. 2022.csv,date_conversion,5151,Invalid date format
+1759590661215-InventorySalesDetailReport  ANC SEP. 2022.csv,missing_values,1567,Missing critical values
+1759590661215-InventorySalesDetailReport  ANC SEP. 2022.csv,placeholder_removal,9,Placeholder/test data
+1759590661215-InventorySalesDetailReport  ANC SEP. 2022.csv,deduplication,2,Duplicate rows
+1759590661219-InventorySalesDetailReport  ANC DEC. 2022.csv,date_conversion,5029,Invalid date format
+1759590661219-InventorySalesDetailReport  ANC DEC. 2022.csv,missing_values,1343,Missing critical values
+1759590661219-InventorySalesDetailReport  ANC DEC. 2022.csv,placeholder_removal,9,Placeholder/test data

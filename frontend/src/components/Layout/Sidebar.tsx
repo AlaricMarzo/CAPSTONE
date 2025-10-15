@@ -1,29 +1,26 @@
-import { cn } from "@/lib/utils";
-import { 
-  Home, 
-  ShoppingCart, 
-  Package, 
-  FileBarChart, 
-  Users, 
-  Settings,
-  Bell
-} from "lucide-react";
+"use client"
+
+import { cn } from "@/lib/utils"
+import { Home, ShoppingCart, Package, FileBarChart, Users, Settings, Bell, UploadIcon } from "lucide-react"
+import { Link, useLocation } from "react-router-dom"
 
 interface SidebarProps {
-  activeTab: string;
-  onTabChange: (tab: string) => void;
+  activeTab: string
+  onTabChange: (tab: string) => void
 }
 
 const navigation = [
-  { id: 'home', name: 'Home', icon: Home },
-  { id: 'sales', name: 'Sales', icon: ShoppingCart },
-  { id: 'inventory', name: 'Inventory', icon: Package },
-  { id: 'reports', name: 'Reports', icon: FileBarChart },
-  { id: 'users', name: 'Users', icon: Users },
-  { id: 'settings', name: 'Settings', icon: Settings },
-];
+  { id: "home", name: "Home", icon: Home },
+  { id: "sales", name: "Sales", icon: ShoppingCart },
+  { id: "inventory", name: "Inventory", icon: Package },
+  { id: "reports", name: "Reports", icon: FileBarChart },
+  { id: "users", name: "Users", icon: Users },
+  { id: "settings", name: "Settings", icon: Settings },
+]
 
 export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
+  const location = useLocation()
+
   return (
     <div className="flex h-screen w-64 flex-col bg-sidebar-background border-r border-sidebar-border">
       {/* Logo */}
@@ -38,11 +35,9 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
 
       {/* Navigation */}
       <nav className="flex-1 space-y-1 px-4 py-4">
-        <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-2">
-          Payments
-        </div>
+        <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-2">Payments</div>
         {navigation.map((item) => {
-          const Icon = item.icon;
+          const Icon = item.icon
           return (
             <button
               key={item.id}
@@ -51,14 +46,27 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
                 "flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                 activeTab === item.id
                   ? "bg-primary text-primary-foreground"
-                  : "text-sidebar-foreground hover:bg-secondary hover:text-secondary-foreground"
+                  : "text-sidebar-foreground hover:bg-secondary hover:text-secondary-foreground",
               )}
             >
               <Icon className="h-4 w-4" />
               {item.name}
             </button>
-          );
+          )
         })}
+
+        <Link
+          to="/upload"
+          className={cn(
+            "flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+            location.pathname === "/upload"
+              ? "bg-primary text-primary-foreground"
+              : "text-sidebar-foreground hover:bg-secondary hover:text-secondary-foreground",
+          )}
+        >
+          <UploadIcon className="h-4 w-4" />
+          Upload Data
+        </Link>
       </nav>
 
       {/* User Section */}
@@ -75,5 +83,5 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }
