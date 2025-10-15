@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { Home, ShoppingCart, Package, FileBarChart, Users, Settings, Bell, UploadIcon } from "lucide-react"
+import { Home, ShoppingCart, Package, FileBarChart, Settings, Bell, UploadIcon } from "lucide-react"
 import { Link, useLocation } from "react-router-dom"
 
 interface SidebarProps {
@@ -14,7 +14,6 @@ const navigation = [
   { id: "sales", name: "Sales", icon: ShoppingCart },
   { id: "inventory", name: "Inventory", icon: Package },
   { id: "reports", name: "Reports", icon: FileBarChart },
-  { id: "users", name: "Users", icon: Users },
   { id: "settings", name: "Settings", icon: Settings },
 ]
 
@@ -68,20 +67,6 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
           Upload Data
         </Link>
       </nav>
-
-      {/* User Section */}
-      <div className="border-t border-sidebar-border p-4">
-        <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center">
-            <span className="text-sm font-medium">U</span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-sidebar-foreground">Username</p>
-            <p className="text-xs text-muted-foreground">ID: 1543907</p>
-          </div>
-          <Bell className="h-4 w-4 text-muted-foreground" />
-        </div>
-      </div>
     </div>
   )
 }

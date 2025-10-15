@@ -27,14 +27,7 @@ const alerts = [
     time: '2 hours ago',
     icon: AlertTriangle,
   },
-  {
-    id: 4,
-    type: 'success',
-    title: 'System Update Complete',
-    description: 'Version 2.4.1 deployed successfully',
-    time: '3 hours ago',
-    icon: Activity,
-  },
+  
 ];
 
 const badgeVariants = {
