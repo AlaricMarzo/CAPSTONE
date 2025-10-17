@@ -1,12 +1,38 @@
+import { useState, useEffect } from "react"
 import { Toaster } from "@/components/ui/toaster"
 import { Toaster as Sonner } from "@/components/ui/sonner"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { onAuthStateChanged } from "firebase/auth"
+import { auth } from "@/lib/firebase"
 import Index from "./pages/Index"
 import NotFound from "./pages/NotFound"
+import Upload from "./pages/upload"
+import { LoginForm } from "@/components/Authentication/LoginForm"
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
+
+function RequireAuth({ children }: { children: JSX.Element }) {
+  const [ready, setReady] = useState(false);
+  const [user, setUser] = useState<null | { email: string }>(null);
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (u) => {
+      setUser(u ? { email: u.email ?? "" } : null);
+      setReady(true);
+    });
+    return unsub;
+  }, []);
+
+  if (!ready) return <div className="p-6">Loading...</div>;
+  if (!user) return <Navigate to="/login" replace />;
+  return children;
+}
+
+function LoginPage() {
+  return <LoginForm onLogin={() => { /* onAuthStateChanged will handle redirect */ }} />;
+}
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -15,13 +41,15 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<RequireAuth><Index /></RequireAuth>} />
+          <Route path="/upload" element={<RequireAuth><Upload /></RequireAuth>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-)
+);
 
-export default App
+export default App;
