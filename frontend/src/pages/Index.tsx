@@ -1,7 +1,24 @@
 import Dashboard from "./Dashboard";
 
 const Index = () => {
-  return <Dashboard />;
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState("");
+
+  const handleLogin = (user: string) => {
+    setUsername(user);
+    setIsAuthenticated(true);
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    setUsername("");
+  };
+
+  if (!isAuthenticated) {
+    return <LoginForm onLogin={handleLogin} />;
+  }
+
+  return <Dashboard onLogout={handleLogout} />;
 };
 
 export default Index;
