@@ -1,22 +1,9 @@
 import Dashboard from "./Dashboard";
 
 const Index = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [username, setUsername] = useState("");
-
-  const handleLogin = (user: string) => {
-    setUsername(user);
-    setIsAuthenticated(true);
-  };
-
   const handleLogout = () => {
-    setIsAuthenticated(false);
-    setUsername("");
+    // Logout logic can be handled here if needed, but since auth is managed in App.tsx, this might be optional
   };
-
-  if (!isAuthenticated) {
-    return <LoginForm onLogin={handleLogin} />;
-  }
 
   return <Dashboard onLogout={handleLogout} />;
 };

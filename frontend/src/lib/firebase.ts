@@ -11,6 +11,17 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
 } satisfies FirebaseOptions;
 
+// Debug: Check if env vars are loaded
+console.log("Firebase Config Loaded:", {
+  apiKey: firebaseConfig.apiKey ? "Present" : "Missing",
+  projectId: firebaseConfig.projectId,
+  authDomain: firebaseConfig.authDomain,
+});
+
+if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
+  console.error("Firebase configuration is incomplete. Please check your environment variables.");
+}
+
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
