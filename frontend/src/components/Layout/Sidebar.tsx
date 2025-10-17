@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Home, ShoppingCart, Package, FileBarChart, Settings, UploadIcon } from "lucide-react"
+import { Home, ShoppingCart, Package, FileBarChart, UploadIcon, User } from "lucide-react"
 
  interface SidebarProps {
    activeTab: string
@@ -11,7 +11,6 @@ const navigation = [
    { id: "sales", name: "Sales", icon: ShoppingCart },
    { id: "inventory", name: "Inventory", icon: Package },
    { id: "reports", name: "Reports", icon: FileBarChart },
-   { id: "settings", name: "Settings", icon: Settings },
    { id: "upload", name: "Upload Data", icon: UploadIcon },
  ]
  
@@ -30,7 +29,7 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
 
        {/* Navigation */}
        <nav className="flex-1 space-y-1 px-4 py-4">
-         <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-2">Payments</div>
+         <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider px-2 py-2">Menu</div>
         {navigation.map((item) => {
            const Icon = item.icon
            return (

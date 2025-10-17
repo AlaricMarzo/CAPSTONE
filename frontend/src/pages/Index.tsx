@@ -11,11 +11,16 @@ const Index = () => {
     setIsAuthenticated(true);
   };
 
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    setUsername("");
+  };
+
   if (!isAuthenticated) {
     return <LoginForm onLogin={handleLogin} />;
   }
 
-  return <Dashboard />;
+  return <Dashboard onLogout={handleLogout} />;
 };
 
 export default Index;

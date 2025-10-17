@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Sidebar } from "@/components/Layout/Sidebar";
 import { HeaderNav } from "@/components/Header/HeaderNav";
 import { MetricCard } from "@/components/Dashboard/MetricCard";
 import { RecentAlertsCard } from "@/components/Dashboard/RecentAlertCard"
 import { SalesTrendsChart } from "@/components/Dashboard/SalesTrendCard"
 import { ProductTrafficCard } from "@/components/Dashboard/ProductTrafficCard";
-import { 
-  TrendingUp, 
-  TrendingDown, 
-  Activity, 
+import {
+  TrendingUp,
+  TrendingDown,
+  Activity,
   Clock,
   Search,
   Globe,
@@ -17,17 +18,26 @@ import {
   Calendar,
   DollarSign,
   Package,
-  ShoppingCart
+  ShoppingCart,
+  User
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { getUserMetrics, inventoryData, purchaseData } from "@/data/mockData";
 import UploadPage from "./upload";
+import ProfilePage from "./Profile";
 
-function HomePage() {
+function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
   const metrics = getUserMetrics();
-  
+
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
       {/* Header */}
@@ -45,6 +55,23 @@ function HomePage() {
             <FileText className="h-4 w-4 mr-2" />
             Export Report
           </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <User className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onClick={onProfileClick}>
+                <User className="mr-2 h-4 w-4" />
+                Profile
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={onLogout}>
+                Log out
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 
@@ -212,7 +239,7 @@ function ReportsPage() {
         <h2 className="text-3xl font-bold text-foreground">Reports</h2>
         <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
       </div>
-      
+
       <div className="text-center py-12 text-muted-foreground">
         <p>Reports and analytics coming soon...</p>
       </div>
@@ -222,40 +249,36 @@ function ReportsPage() {
 
 
 
-function SettingsPage() {
-  return (
-    <div className="flex-1 space-y-6 p-8 pt-6">
-      <div>
-        <h2 className="text-3xl font-bold text-foreground">Settings</h2>
-        <p className="text-muted-foreground">System Configuration & Preferences</p>
-      </div>
-      
-      <div className="text-center py-12 text-muted-foreground">
-        <p>Settings content coming soon...</p>
-      </div>
-    </div>
-  );
-}
-
-export default function Dashboard() {
+export default function Dashboard({ onLogout }: { onLogout: () => void }) {
   const [activeTab, setActiveTab] = useState('home');
+  const [previousTab, setPreviousTab] = useState('home');
+
+  const handleProfileClick = () => {
+    setPreviousTab(activeTab);
+    setActiveTab('profile');
+  };
+
+  const handleLogout = () => {
+    onLogout();
+  };
 
   const renderContent = () => {
     switch (activeTab) {
       case 'home':
-        return <HomePage />;
+        return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
       case 'sales':
         return <SalesPage />;
       case 'inventory':
         return <InventoryPage />;
       case 'reports':
         return <ReportsPage />;
-      case 'settings':
-        return <SettingsPage />;
       case 'upload':
         return <UploadPage />;
+      case 'profile':
+        return <ProfilePage onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
+
       default:
-        return <HomePage />;
+        return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
     }
   };
 
