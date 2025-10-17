@@ -59,7 +59,7 @@ function runPythonScript(scriptPath, args = []) {
     const timeout = setTimeout(() => {
       reject(new Error("Python script execution timed out"));
       python.kill();
-    }, 20 * 60 * 1000); // 5 minutes
+    }, 20 * 60 * 1000); // 20 minutes
     // Timeout after 60 seconds
 
     python.on("close", (code) => {
