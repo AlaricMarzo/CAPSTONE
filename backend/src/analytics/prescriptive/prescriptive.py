@@ -237,11 +237,37 @@ print("MODEL 2: ECONOMIC ORDER QUANTITY (EOQ)")
 print("=" * 80)
 
 def calculate_eoq(annual_demand, ordering_cost, holding_cost_percent, unit_cost):
-    """Calculate Economic Order Quantity"""
-    holding_cost = holding_cost_percent * float(unit_cost)
-    if holding_cost <= 0:
+    """
+    Calculate Economic Order Quantity with enhanced error handling
+
+    EOQ = sqrt(2 * Annual Demand * Ordering Cost / Holding Cost)
+
+    Includes validation and error handling for edge cases
+    """
+    try:
+        # Input validation
+        if annual_demand <= 0 or ordering_cost <= 0 or holding_cost_percent <= 0 or unit_cost <= 0:
+            return np.nan
+
+        # Calculate holding cost per unit per year
+        holding_cost = holding_cost_percent * float(unit_cost)
+
+        if holding_cost <= 0:
+            return np.nan
+
+        # Calculate EOQ
+        eoq = math.sqrt((2 * float(annual_demand) * float(ordering_cost)) / holding_cost)
+
+        # Sanity check - EOQ shouldn't be unreasonably large
+        if eoq > annual_demand * 2:  # EOQ > 2x annual demand is suspicious
+            print(f"Warning: EOQ ({eoq:.0f}) seems unusually high for annual demand ({annual_demand:.0f})")
+            return np.nan
+
+        return eoq
+
+    except (ValueError, TypeError, ZeroDivisionError, OverflowError) as e:
+        print(f"Error calculating EOQ: {e}")
         return np.nan
-    return math.sqrt((2 * float(annual_demand) * float(ordering_cost)) / holding_cost)
 
 # Assumptions
 ordering_cost = 150.0  # Cost per order
