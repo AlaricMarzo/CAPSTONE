@@ -1294,13 +1294,7 @@ if __name__ == "__main__":
             "runId": run_id
         }))
 
-        # Optional preview (skip in NON_INTERACTIVE mode)
-        if not NON_INTERACTIVE:
-            view_sample = input("\nView a sample of the cleaned data? (y/n): ").strip().lower()
-            if view_sample == 'y':
-                print("\nSample of cleaned data:", file=sys.stderr)
-                print("=" * 80, file=sys.stderr)
-                print(combined_cleaned_df.head(10).to_string(index=False), file=sys.stderr)
+
 
     except Exception as e:
         print(f"[ERROR] Error occurred: {str(e)}", file=sys.stderr)

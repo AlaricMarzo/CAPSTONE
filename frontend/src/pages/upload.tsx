@@ -2,16 +2,25 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Upload, FileText, CheckCircle, XCircle, Loader2 } from "lucide-react"
+import { Upload, FileText, CheckCircle, XCircle, Loader2, Shield, Database } from "lucide-react"
 
 export default function DataUploadPage() {
   const [selectedFiles, setSelectedFiles] = useState<File[]>([])
   const [uploading, setUploading] = useState(false)
+  const [uploadProgress, setUploadProgress] = useState<number>(0)
   const [result, setResult] = useState<any>(null)
+  const [jobId, setJobId] = useState<string | null>(null)
+  const [pollingInterval, setPollingInterval] = useState<number | null>(null)
+
   const resetForm = () => {
-  setSelectedFiles([])
-  setResult(null)
- }
+    setSelectedFiles([])
+    setResult(null)
+    setJobId(null)
+    if (pollingInterval) {
+      clearInterval(pollingInterval)
+      setPollingInterval(null)
+    }
+  }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
@@ -20,53 +29,69 @@ export default function DataUploadPage() {
     }
   }
 
-  const handleUpload = async () => {
+  const pollJobStatus = async (jobId: string) => {
+    try {
+      const response = await fetch(`http://localhost:5050/api/job/${jobId}`)
+      const data = await response.json()
+
+      if (data.success) {
+        setUploadProgress(data.progress)
+        setResult({
+          success: data.status === 'completed',
+          error: data.error,
+          filesProcessed: data.filesProcessed,
+          cleaningResults: data.cleaningResults,
+          message: data.message,
+          runId: jobId,
+          rowsProcessed: data.cleaningResults?.rowsProcessed || 0
+        })
+
+        if (data.status === 'completed' || data.status === 'failed') {
+          setUploading(false)
+          if (pollingInterval) {
+            clearInterval(pollingInterval)
+            setPollingInterval(null)
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Error polling job status:', error)
+    }
+  }
+
+  const handleUpload = () => {
     if (selectedFiles.length === 0) return
 
     setUploading(true)
+    setUploadProgress(0)
     setResult(null)
+    setJobId(null)
 
-    try {
-      const formData = new FormData()
-      selectedFiles.forEach((file) => {
-        formData.append("files", file)
-      })
+    const formData = new FormData()
+    selectedFiles.forEach((file) => {
+      formData.append("files", file)
+    })
 
-      const response = await fetch("http://localhost:4000/api/upload", {
+    fetch("http://localhost:    /api/upload", {
       method: "POST",
       body: formData,
     })
-
-    // ✅ Handle both JSON and non-JSON responses safely
-    const contentType = response.headers.get("content-type") || ""
-    let data: any
-
-    if (contentType.includes("application/json")) {
-      data = await response.json()
-    } else {
-      // fallback in case backend sends HTML error page
-      const text = await response.text()
-      throw new Error(
-        text.includes("Upload error")
-          ? text
-          : `Unexpected response from server (${response.status})`
-      )
-    }
-
-    setResult(data)
-
-    if (data.success) {
-      setSelectedFiles([])
-    }
-
-    } catch (error: any) {
-      setResult({
-        success: false,
-        error: error.message,
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success && data.jobId) {
+          setJobId(data.jobId)
+          // Start polling for job status
+          const interval = setInterval(() => pollJobStatus(data.jobId), 1000)
+          setPollingInterval(interval)
+        } else {
+          setResult({ success: false, error: data.error || "Upload failed" })
+          setUploading(false)
+        }
       })
-    } finally {
-      setUploading(false)
-    }
+      .catch((error) => {
+        setResult({ success: false, error: error.message })
+        setUploading(false)
+      })
   }
 
   const removeFile = (index: number) => {
@@ -149,56 +174,113 @@ export default function DataUploadPage() {
                 </button>
               </div>
             ) : (
-              <button
-                onClick={handleUpload}
-                disabled={selectedFiles.length === 0 || uploading}
-                className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                {uploading ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin" />
-                    Processing...
-                  </>
-                ) : (
-                  <>
-                    <Upload className="h-4 w-4" />
-                    Upload and Process
-                  </>
-                )}
-              </button>
+              <div className="space-y-3">
+                <button
+                  onClick={handleUpload}
+                  disabled={selectedFiles.length === 0 || uploading}
+                  className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {uploading ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      Uploading...
+                    </>
+                  ) : (
+                    <>
+                      <Upload className="h-4 w-4" />
+                      Upload and Process
+                    </>
+                  )}
+                </button>
+              </div>
             )}
           </div>
         </div>
 
-        {result && (
-          <div
-            className={`rounded-lg border p-4 ${result.success ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}
-          >
-            <div className="flex gap-2">
-              {result.success ? (
-                <CheckCircle className="h-5 w-5 text-green-600" />
-              ) : (
-                <XCircle className="h-5 w-5 text-red-600" />
-              )}
-              <div className="flex-1">
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-6">
+            <h3 className="text-xl font-semibold text-white flex items-center gap-2">
+              <Shield className="h-5 w-5" />
+              Processing Progress
+            </h3>
+          </div>
+
+          <div className="p-6">
+            {uploading ? (
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm font-medium text-gray-700">Processing Progress</span>
+                  <span className="text-sm font-bold text-blue-600">{uploadProgress}%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                  <div
+                    className="bg-gradient-to-r from-blue-500 to-indigo-600 h-3 rounded-full transition-all duration-500 ease-out"
+                    style={{ width: `${uploadProgress}%` }}
+                  ></div>
+                </div>
+                <p className="text-sm text-gray-600 flex items-center gap-2">
+                  <Loader2 className="h-4 w-4 animate-spin text-blue-500" />
+                  {uploadProgress < 20 ? "Uploading files to server..." :
+                   uploadProgress < 40 ? "Validating file headers..." :
+                   uploadProgress < 60 ? "Normalizing units and extracting dates..." :
+                   uploadProgress < 80 ? "Filtering data quality..." :
+                   uploadProgress < 100 ? "Running data cleaning script..." :
+                   "Finalizing results..."}
+                </p>
+              </div>
+            ) : result ? (
+              <div className="space-y-4">
                 {result.success ? (
-                  <div className="space-y-2">
-                    <p className="font-medium">Upload successful!</p>
-                    {result.loadResult && (
-                      <div className="text-sm">
-                        <p>Files processed: {result.filesProcessed}</p>
-                        <p>Rows loaded: {result.loadResult.rows_loaded}</p>
-                        <p>Status: {result.loadResult.status || "completed"}</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <CheckCircle className="h-5 w-5 text-green-600" />
+                        <span className="font-semibold text-green-800">Files Processed</span>
                       </div>
-                    )}
+                      <p className="text-2xl font-bold text-green-600">{result.filesProcessed}</p>
+                    </div>
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Database className="h-5 w-5 text-blue-600" />
+                        <span className="font-semibold text-blue-800">Rows Loaded</span>
+                      </div>
+                      <p className="text-2xl font-bold text-blue-600">{result.rowsProcessed || 0}</p>
+                    </div>
+                    <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 md:col-span-2">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Shield className="h-4 w-4 text-purple-600" />
+                          <span className="font-semibold text-purple-800">Processing Details</span>
+                        </div>
+                        <div className="text-sm text-gray-600 space-y-1">
+                          <p><strong>Status:</strong> Completed</p>
+                          <p><strong>Run ID:</strong> {result.runId}</p>
+                          {result.message && <p><strong>Message:</strong> {result.message}</p>}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 ) : (
-                  <p className="text-red-800">{result.error}</p>
+                  <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <XCircle className="h-5 w-5 text-red-600" />
+                      <span className="font-semibold text-red-800">Processing Failed</span>
+                    </div>
+                    <p className="text-red-700">{result.error}</p>
+                  </div>
                 )}
               </div>
-            </div>
+            ) : (
+              <div className="text-center py-8">
+                <Database className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                <p className="text-gray-500">No processing in progress</p>
+                <p className="text-sm text-gray-400 mt-1">Upload files to see processing status</p>
+              </div>
+            )}
           </div>
-        )}
+        </div>
+
+
 
         <div className="rounded-lg border bg-white shadow-sm p-6">
           <h3 className="text-lg font-semibold mb-4">Pipeline Steps</h3>

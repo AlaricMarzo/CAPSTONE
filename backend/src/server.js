@@ -9,7 +9,8 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-app.use(morgan("dev"))
+// Remove morgan logging to prevent terminal spam from polling
+// app.use(morgan("dev"))
 
 app.get("/health", (_, res) => res.json({ status: "OK" }))
 
@@ -33,5 +34,5 @@ app.use((err, req, res, next) => {
 });
 
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5050
 app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`))
