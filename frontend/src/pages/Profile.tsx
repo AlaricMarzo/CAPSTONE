@@ -20,9 +20,8 @@ type Profile = {
   fullName: string;
 };
 
-// ---------- storage helpers ----------
+// ---------- Local storage helpers ----------
 const storageKey = (email: string) => `shield.profile.${email.toLowerCase()}`;
-
 const loadPersisted = (email?: string): Profile | null => {
   if (!email) return null;
   try {
@@ -32,17 +31,15 @@ const loadPersisted = (email?: string): Profile | null => {
     return null;
   }
 };
-
 const persistProfile = (p: Profile) => {
   try {
     localStorage.setItem(storageKey(p.email), JSON.stringify(p));
   } catch {}
 };
 
-export default function ProfilePage({ userEmail, onLogout, onBack }: ProfilePageProps) {
+export default function ProfilePage({ userEmail, onBack }: ProfilePageProps) {
   const { toast } = useToast();
 
-  // UI state
   const [isSaving, setIsSaving] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const usernameRef = useRef<HTMLInputElement | null>(null);
@@ -51,43 +48,33 @@ export default function ProfilePage({ userEmail, onLogout, onBack }: ProfilePage
   const seedProfile = (email?: string): Profile => {
     const persisted = loadPersisted(email);
     if (persisted) return persisted;
-    return {
-      username: "admin",
-      fullName: "Admin",
-      email: email ?? "",
-    };
+    return { username: "admin", fullName: "Admin", email: email ?? "" };
   };
 
-  // Persisted profile (truth)
   const [userProfile, setUserProfile] = useState<Profile>(() => seedProfile(userEmail));
-
-  // Draft profile (for edits only)
   const [draftProfile, setDraftProfile] = useState<Profile>(userProfile);
 
-  // When entering edit mode, copy persisted → draft and focus username
   useEffect(() => {
     if (isEditing) {
       setDraftProfile(userProfile);
       setTimeout(() => usernameRef.current?.focus(), 0);
     }
-  }, [isEditing]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isEditing, userProfile]);
 
-  // When login email changes (new session), re-seed from storage or defaults
   useEffect(() => {
     const seeded = seedProfile(userEmail);
     setUserProfile(seeded);
     if (!isEditing) setDraftProfile(seeded);
-  }, [userEmail]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [userEmail, isEditing]);
 
   const updateDraft = <K extends keyof Profile>(field: K, value: Profile[K]) =>
     setDraftProfile((prev) => ({ ...prev, [field]: value }));
 
-  // Save profile: commit draft -> persisted, write to localStorage, exit edit mode
   const handleSaveProfile = async () => {
     if (!isEditing) return;
     setIsSaving(true);
-    await new Promise((r) => setTimeout(r, 300)); // simulate API if needed
-    const committed: Profile = { ...draftProfile, email: userProfile.email }; // email fixed to login
+    await new Promise((r) => setTimeout(r, 300));
+    const committed: Profile = { ...draftProfile, email: userProfile.email };
     setUserProfile(committed);
     persistProfile(committed);
     toast({ title: "Profile updated", description: "Your profile has been saved." });
@@ -95,110 +82,121 @@ export default function ProfilePage({ userEmail, onLogout, onBack }: ProfilePage
     setIsEditing(false);
   };
 
-  // Cancel edit: discard draft changes and exit edit mode
   const handleCancelEdit = () => {
     setDraftProfile(userProfile);
     setIsEditing(false);
   };
 
-  // Enable Save only if draft actually changed
   const isDraftDirty =
     draftProfile.username !== userProfile.username ||
     draftProfile.fullName !== userProfile.fullName;
 
-  // Choose which values to show in inputs
   const view = isEditing ? draftProfile : userProfile;
 
   return (
-    <div className="flex-1 space-y-6 p-8 pt-6">
-      {/* Header */}
-      <div className="flex items-center gap-4">
-        <Button variant="ghost" size="sm" onClick={onBack}>
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back
-        </Button>
-        <h2 className="text-3xl font-bold text-foreground">User Profile</h2>
-      </div>
+    <div className="flex-1 p-8 pt-6 bg-background">
+      <div className="mx-auto max-w-4xl space-y-8">
+        {/* Back + centered title block (mirrors upload page spacing) */}
+        <div className="flex items-center justify-between">
+          <Button variant="ghost" size="sm" onClick={onBack}>
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back
+          </Button>
+          <div className="flex-1 text-center -ml-8">
+            <h1 className="text-4xl font-bold text-foreground">User Profile</h1>
+            <p className="mt-2 text-lg text-muted-foreground">
+              Manage your account details and preferences
+            </p>
+          </div>
+          <div className="w-20" /> {/* spacer to keep title centered */}
+        </div>
 
-      <div className="grid gap-6 w-full">
-        {/* Profile Information Card */}
-        <Card className="shadow-soft">
-          <CardHeader>
-            <CardTitle>Profile Information</CardTitle>
-            <CardDescription>View and edit your account details</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label htmlFor="username">Username</Label>
-                <Input
-                  id="username"
-                  ref={usernameRef}
-                  value={view.username}
-                  onChange={(e) => updateDraft("username", e.target.value)}
-                  className="shadow-soft"
-                  disabled={!isEditing}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={userProfile.email} // always the login email
-                  disabled
-                  className="bg-muted shadow-soft"
-                />
-              </div>
-
-              <div className="space-y-2 md:col-span-2">
-                <Label htmlFor="fullName">Full Name</Label>
-                <Input
-                  id="fullName"
-                  value={view.fullName}
-                  onChange={(e) => updateDraft("fullName", e.target.value)}
-                  className="shadow-soft"
-                  disabled={!isEditing}
-                />
-              </div>
+        {/* Main card — same visual weight as Upload page cards */}
+        <div className="rounded-2xl border border-border bg-card shadow-sm">
+          <div className="p-6">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-foreground">Profile Information</h3>
+              <p className="text-sm text-muted-foreground">
+                View and edit your account details below.
+              </p>
             </div>
 
-            {/* Buttons: Edit / Stop Editing + Save Changes */}
-            <div className="flex flex-col sm:flex-row gap-2">
-              {!isEditing ? (
-                <Button
-                  type="button"
-                  variant="outline"
-                  onClick={() => setIsEditing(true)}
-                  className="w-full sm:w-auto"
-                >
-                  <Pencil className="h-4 w-4 mr-2" />
-                  Edit
-                </Button>
-              ) : (
-                <Button
-                  type="button"
-                  variant="secondary"
-                  onClick={handleCancelEdit}
-                  className="w-full sm:w-auto"
-                >
-                  <Pencil className="h-4 w-4 mr-2" />
-                  Stop Editing
-                </Button>
-              )}
+            <div className="space-y-6">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-2">
+                  <Label htmlFor="username">Username</Label>
+                  <Input
+                    id="username"
+                    ref={usernameRef}
+                    value={view.username}
+                    onChange={(e) => updateDraft("username", e.target.value)}
+                    className="shadow-sm"
+                    disabled={!isEditing}
+                  />
+                </div>
 
-              <Button
-                onClick={handleSaveProfile}
-                disabled={!isEditing || !isDraftDirty || isSaving}
-                className="w-full sm:w-auto"
-              >
-                <Save className="h-4 w-4 mr-2" />
-                {isSaving ? "Saving..." : "Save Changes"}
-              </Button>
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={userProfile.email}
+                    disabled
+                    className="bg-muted shadow-sm"
+                  />
+                </div>
+
+                <div className="space-y-2 md:col-span-2">
+                  <Label htmlFor="fullName">Full Name</Label>
+                  <Input
+                    id="fullName"
+                    value={view.fullName}
+                    onChange={(e) => updateDraft("fullName", e.target.value)}
+                    className="shadow-sm"
+                    disabled={!isEditing}
+                  />
+                </div>
+              </div>
+
+              {/* Buttons centered under the form */}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                {!isEditing ? (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setIsEditing(true)}
+                    className="w-full sm:w-auto"
+                  >
+                    <Pencil className="h-4 w-4 mr-2" />
+                    Edit
+                  </Button>
+                ) : (
+                  <Button
+                    type="button"
+                    variant="secondary"
+                    onClick={handleCancelEdit}
+                    className="w-full sm:w-auto"
+                  >
+                    <Pencil className="h-4 w-4 mr-2" />
+                    Stop Editing
+                  </Button>
+                )}
+
+                <Button
+                  onClick={handleSaveProfile}
+                  disabled={!isEditing || !isDraftDirty || isSaving}
+                  className="w-full sm:w-auto"
+                >
+                  <Save className="h-4 w-4 mr-2" />
+                  {isSaving ? "Saving..." : "Save Changes"}
+                </Button>
+              </div>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
+
+        {/* Optional spacer card for parity with pages that stack multiple sections */}
+        {/* <div className="rounded-2xl border border-border bg-card shadow-sm p-6" /> */}
       </div>
     </div>
   );

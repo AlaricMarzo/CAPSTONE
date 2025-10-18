@@ -1,116 +1,121 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState } from "react"
-import { Upload, FileText, CheckCircle, XCircle, Loader2, Shield, Database } from "lucide-react"
+import type React from "react";
+import { useState } from "react";
+import { Upload, FileText, CheckCircle, XCircle, Loader2, Shield, Database } from "lucide-react";
 
 export default function DataUploadPage() {
-  const [selectedFiles, setSelectedFiles] = useState<File[]>([])
-  const [uploading, setUploading] = useState(false)
-  const [uploadProgress, setUploadProgress] = useState<number>(0)
-  const [result, setResult] = useState<any>(null)
-  const [jobId, setJobId] = useState<string | null>(null)
-  const [pollingInterval, setPollingInterval] = useState<number | null>(null)
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
+  const [result, setResult] = useState<any>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
+  const [pollingInterval, setPollingInterval] = useState<number | null>(null);
 
   const resetForm = () => {
-    setSelectedFiles([])
-    setResult(null)
-    setJobId(null)
+    setSelectedFiles([]);
+    setResult(null);
+    setJobId(null);
     if (pollingInterval) {
-      clearInterval(pollingInterval)
-      setPollingInterval(null)
+      clearInterval(pollingInterval);
+      setPollingInterval(null);
     }
-  }
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      setSelectedFiles(Array.from(e.target.files))
-      setResult(null)
+      setSelectedFiles(Array.from(e.target.files));
+      setResult(null);
     }
-  }
+  };
 
   const pollJobStatus = async (jobId: string) => {
     try {
-      const response = await fetch(`http://localhost:5050/api/job/${jobId}`)
-      const data = await response.json()
+      const response = await fetch(`http://localhost:5050/api/job/${jobId}`);
+      const data = await response.json();
 
       if (data.success) {
-        setUploadProgress(data.progress)
+        setUploadProgress(data.progress);
         setResult({
-          success: data.status === 'completed',
+          success: data.status === "completed",
           error: data.error,
           filesProcessed: data.filesProcessed,
           cleaningResults: data.cleaningResults,
           message: data.message,
           runId: jobId,
-          rowsProcessed: data.cleaningResults?.rowsProcessed || 0
-        })
+          rowsProcessed: data.cleaningResults?.rowsProcessed || 0,
+        });
 
-        if (data.status === 'completed' || data.status === 'failed') {
-          setUploading(false)
+        if (data.status === "completed" || data.status === "failed") {
+          setUploading(false);
           if (pollingInterval) {
-            clearInterval(pollingInterval)
-            setPollingInterval(null)
+            clearInterval(pollingInterval);
+            setPollingInterval(null);
           }
         }
       }
     } catch (error) {
-      console.error('Error polling job status:', error)
+      console.error("Error polling job status:", error);
     }
-  }
+  };
 
   const handleUpload = () => {
-    if (selectedFiles.length === 0) return
+    if (selectedFiles.length === 0) return;
 
-    setUploading(true)
-    setUploadProgress(0)
-    setResult(null)
-    setJobId(null)
+    setUploading(true);
+    setUploadProgress(0);
+    setResult(null);
+    setJobId(null);
 
-    const formData = new FormData()
+    const formData = new FormData();
     selectedFiles.forEach((file) => {
-      formData.append("files", file)
-    })
+      formData.append("files", file);
+    });
 
-    fetch("http://localhost:    /api/upload", {
+    // Fixed endpoint to match polling port (5050) and removed stray spaces
+    fetch("http://localhost:5050/api/upload", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
         if (data.success && data.jobId) {
-          setJobId(data.jobId)
-          // Start polling for job status
-          const interval = setInterval(() => pollJobStatus(data.jobId), 1000)
-          setPollingInterval(interval)
+          setJobId(data.jobId);
+          const interval = setInterval(() => pollJobStatus(data.jobId), 1000);
+          setPollingInterval(interval as unknown as number);
         } else {
-          setResult({ success: false, error: data.error || "Upload failed" })
-          setUploading(false)
+          setResult({ success: false, error: data.error || "Upload failed" });
+          setUploading(false);
         }
       })
       .catch((error) => {
-        setResult({ success: false, error: error.message })
-        setUploading(false)
-      })
-  }
+        setResult({ success: false, error: error.message });
+        setUploading(false);
+      });
+  };
 
   const removeFile = (index: number) => {
-    setSelectedFiles((prev) => prev.filter((_, i) => i !== index))
-  }
+    setSelectedFiles((prev) => prev.filter((_, i) => i !== index));
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+    // Match dashboard theme: flat background, no gradients
+    <div className="flex-1 p-8 pt-6 bg-background">
       <div className="mx-auto max-w-4xl space-y-8">
+        {/* Title block (centered like your screenshot) */}
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900">Sales Data Pipeline</h1>
-          <p className="mt-2 text-lg text-gray-600">Upload multiple CSV files for cleaning and database loading</p>
+          <h1 className="text-4xl font-bold text-foreground">Sales Data Pipeline</h1>
+          <p className="mt-2 text-lg text-muted-foreground">
+            Upload multiple CSV files for cleaning and database loading
+          </p>
         </div>
 
-        <div className="rounded-lg border bg-white shadow-sm">
+        {/* Uploader card */}
+        <div className="rounded-lg border border-border bg-card shadow-sm">
           <div className="p-6 space-y-4">
             <div>
-              <h3 className="text-lg font-semibold">Upload CSV Files</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-semibold text-foreground">Upload CSV Files</h3>
+              <p className="text-sm text-muted-foreground">
                 Select one or more CSV files containing sales data. Files will be validated, cleaned, and loaded into
                 the database.
               </p>
@@ -119,36 +124,29 @@ export default function DataUploadPage() {
             <div className="flex items-center gap-4">
               <label
                 htmlFor="file-input"
-                className="px-4 py-2 border rounded-md hover:bg-gray-50 flex items-center gap-2 cursor-pointer"
+                className="px-4 py-2 border border-border rounded-md hover:bg-muted flex items-center gap-2 cursor-pointer"
               >
                 <Upload className="h-4 w-4" />
                 Select Files
               </label>
-              <input
-                id="file-input"
-                type="file"
-                multiple
-                accept=".csv"
-                onChange={handleFileChange}
-                className="hidden"
-              />
-              <span className="text-sm text-gray-500">
+              <input id="file-input" type="file" multiple accept=".csv" onChange={handleFileChange} className="hidden" />
+              <span className="text-sm text-muted-foreground">
                 {selectedFiles.length === 0 ? "No files selected" : `${selectedFiles.length} file(s) selected`}
               </span>
             </div>
 
             {selectedFiles.length > 0 && (
               <div className="space-y-2">
-                <p className="text-sm font-medium">Selected Files:</p>
+                <p className="text-sm font-medium text-foreground">Selected Files:</p>
                 <div className="space-y-2">
                   {selectedFiles.map((file, index) => (
-                    <div key={index} className="flex items-center justify-between rounded-lg border bg-white p-3">
+                    <div key={index} className="flex items-center justify-between rounded-lg border border-border bg-card p-3">
                       <div className="flex items-center gap-2">
-                        <FileText className="h-4 w-4 text-blue-500" />
-                        <span className="text-sm">{file.name}</span>
-                        <span className="text-xs text-gray-500">({(file.size / 1024).toFixed(2)} KB)</span>
+                        <FileText className="h-4 w-4 text-primary" />
+                        <span className="text-sm text-foreground">{file.name}</span>
+                        <span className="text-xs text-muted-foreground">({(file.size / 1024).toFixed(2)} KB)</span>
                       </div>
-                      <button className="p-1 hover:bg-gray-100 rounded" onClick={() => removeFile(index)}>
+                      <button className="p-1 hover:bg-muted rounded" onClick={() => removeFile(index)}>
                         <XCircle className="h-4 w-4" />
                       </button>
                     </div>
@@ -166,10 +164,7 @@ export default function DataUploadPage() {
                   <CheckCircle className="h-4 w-4" />
                   Imported successfully
                 </button>
-                <button
-                  onClick={resetForm}
-                  className="w-full sm:w-auto px-4 py-2 border rounded-md hover:bg-gray-50"
-                >
+                <button onClick={resetForm} className="w-full sm:w-auto px-4 py-2 border border-border rounded-md hover:bg-muted">
                   Upload more files
                 </button>
               </div>
@@ -178,7 +173,7 @@ export default function DataUploadPage() {
                 <button
                   onClick={handleUpload}
                   disabled={selectedFiles.length === 0 || uploading}
-                  className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-md hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {uploading ? (
                     <>
@@ -197,7 +192,8 @@ export default function DataUploadPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+        {/* Processing card (keeps its gradient header as in your screenshot) */}
+        <div className="bg-card rounded-2xl shadow-xl border border-border overflow-hidden">
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-6">
             <h3 className="text-xl font-semibold text-white flex items-center gap-2">
               <Shield className="h-5 w-5" />
@@ -209,23 +205,28 @@ export default function DataUploadPage() {
             {uploading ? (
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-gray-700">Processing Progress</span>
-                  <span className="text-sm font-bold text-blue-600">{uploadProgress}%</span>
+                  <span className="text-sm font-medium text-foreground">Processing Progress</span>
+                  <span className="text-sm font-bold text-primary">{uploadProgress}%</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
                   <div
-                    className="bg-gradient-to-r from-blue-500 to-indigo-600 h-3 rounded-full transition-all duration-500 ease-out"
+                    className="bg-primary h-3 rounded-full transition-all duration-500 ease-out"
                     style={{ width: `${uploadProgress}%` }}
-                  ></div>
+                  />
                 </div>
-                <p className="text-sm text-gray-600 flex items-center gap-2">
-                  <Loader2 className="h-4 w-4 animate-spin text-blue-500" />
-                  {uploadProgress < 20 ? "Uploading files to server..." :
-                   uploadProgress < 40 ? "Validating file headers..." :
-                   uploadProgress < 60 ? "Normalizing units and extracting dates..." :
-                   uploadProgress < 80 ? "Filtering data quality..." :
-                   uploadProgress < 100 ? "Running data cleaning script..." :
-                   "Finalizing results..."}
+                <p className="text-sm text-muted-foreground flex items-center gap-2">
+                  <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                  {uploadProgress < 20
+                    ? "Uploading files to server..."
+                    : uploadProgress < 40
+                    ? "Validating file headers..."
+                    : uploadProgress < 60
+                    ? "Normalizing units and extracting dates..."
+                    : uploadProgress < 80
+                    ? "Filtering data quality..."
+                    : uploadProgress < 100
+                    ? "Running data cleaning script..."
+                    : "Finalizing results..."}
                 </p>
               </div>
             ) : result ? (
@@ -252,10 +253,18 @@ export default function DataUploadPage() {
                           <Shield className="h-4 w-4 text-purple-600" />
                           <span className="font-semibold text-purple-800">Processing Details</span>
                         </div>
-                        <div className="text-sm text-gray-600 space-y-1">
-                          <p><strong>Status:</strong> Completed</p>
-                          <p><strong>Run ID:</strong> {result.runId}</p>
-                          {result.message && <p><strong>Message:</strong> {result.message}</p>}
+                        <div className="text-sm text-muted-foreground space-y-1">
+                          <p>
+                            <strong className="text-foreground">Status:</strong> Completed
+                          </p>
+                          <p>
+                            <strong className="text-foreground">Run ID:</strong> {result.runId}
+                          </p>
+                          {result.message && (
+                            <p>
+                              <strong className="text-foreground">Message:</strong> {result.message}
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -272,19 +281,18 @@ export default function DataUploadPage() {
               </div>
             ) : (
               <div className="text-center py-8">
-                <Database className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500">No processing in progress</p>
-                <p className="text-sm text-gray-400 mt-1">Upload files to see processing status</p>
+                <Database className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">No processing in progress</p>
+                <p className="text-sm text-muted-foreground mt-1">Upload files to see processing status</p>
               </div>
             )}
           </div>
         </div>
 
-
-
-        <div className="rounded-lg border bg-white shadow-sm p-6">
-          <h3 className="text-lg font-semibold mb-4">Pipeline Steps</h3>
-          <ol className="space-y-3 text-sm">
+        {/* Pipeline steps */}
+        <div className="rounded-lg border border-border bg-card shadow-sm p-6">
+          <h3 className="text-lg font-semibold mb-4 text-foreground">Pipeline Steps</h3>
+          <ol className="space-y-3 text-sm text-foreground">
             <li className="flex gap-2">
               <span className="font-semibold">1.</span>
               <span>Header validation - Ensures all required columns are present</span>
@@ -313,5 +321,5 @@ export default function DataUploadPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
