@@ -109,3 +109,5 @@ export function LoginForm({ onLogin }: LoginFormProps) {
     </div>
   );
 }
+
+export default LoginForm;
