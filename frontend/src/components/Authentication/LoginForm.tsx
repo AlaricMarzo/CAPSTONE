@@ -37,12 +37,15 @@ export function LoginForm({ onLogin }: LoginFormProps) {
     setIsLoading(true);
     try {
       const cred = await signInWithEmailAndPassword(auth, email.trim(), password);
-      onLogin(cred.user.email ?? email);
+      const signedEmail = cred.user.email ?? email.trim();
+
+      // persist the email for profile usage
+      localStorage.setItem("shield.userEmail", signedEmail);
+
+      onLogin(signedEmail);
       toast({ title: "Welcome back!", description: "Successfully logged in to SHIELD Dashboard" });
 
-      // Redirect to the main page after successful login
       navigate("/", { replace: true });
-
       setPassword("");
     } catch (err: any) {
       toast({ title: "Invalid credentials", description: prettyError(err?.code), variant: "destructive" });

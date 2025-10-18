@@ -42,13 +42,12 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const [confirmOpen, setConfirmOpen] = useState(false);
 
   const confirmLogout = () => {
-    onLogout(); // this will take you back to Login in Index.tsx
+    onLogout();
     setConfirmOpen(false);
   };
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
-      {/* Header row (same as your original) */}
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Dashboard Overview</h2>
@@ -64,7 +63,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             Export Report
           </Button>
 
-          {/* Your original user dropdown, now with a confirmation popout for Logout */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
@@ -77,12 +75,10 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
                 Profile
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-
-              {/* Logout item wrapped with AlertDialog */}
               <DropdownMenuItem
                 className="text-destructive cursor-pointer"
                 onSelect={(e) => {
-                  e.preventDefault(); // keep the menu open until dialog handles it
+                  e.preventDefault();
                   setConfirmOpen(true);
                 }}
               >
@@ -91,14 +87,11 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             </DropdownMenuContent>
           </DropdownMenu>
 
-          {/* Confirmation Dialog */}
           <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
             <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogTitle>Are you sure you want to log out?</AlertDialogTitle>
-                <AlertDialogDescription>
-                  You will be returned to the login page.
-                </AlertDialogDescription>
+                <AlertDialogDescription>You will be returned to the login page.</AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
@@ -109,7 +102,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
       </div>
 
-      {/* Search Bar */}
       <div className="flex items-center gap-4">
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -117,55 +109,18 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
       </div>
 
-      {/* Key Metrics */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <MetricCard
-          title="Total Revenue"
-          value={`$${metrics.totalRevenue.toFixed(2)}`}
-          change="+12.5% from last month"
-          changeType="positive"
-          icon={DollarSign}
-          color="success"
-          className="shadow-soft hover:shadow-elegant transition-shadow"
-        />
-        <MetricCard
-          title="Total Sales"
-          value={metrics.totalSales.toString()}
-          change="+8.2% from last month"
-          changeType="positive"
-          icon={ShoppingCart}
-          color="info"
-          className="shadow-soft hover:shadow-elegant transition-shadow"
-        />
-        <MetricCard
-          title="Low Stock Items"
-          value={metrics.lowStockItems.toString()}
-          change={`${metrics.outOfStockItems} out of stock`}
-          changeType="warning"
-          icon={Package}
-          color="warning"
-          className="shadow-soft hover:shadow-elegant transition-shadow"
-        />
-        <MetricCard
-          title="Avg Order Value"
-          value={`$${metrics.averageOrderValue.toFixed(2)}`}
-          change="+5.1% from last month"
-          changeType="positive"
-          icon={TrendingUp}
-          color="default"
-          className="shadow-soft hover:shadow-elegant transition-shadow"
-        />
+        <MetricCard title="Total Revenue" value={`$${metrics.totalRevenue.toFixed(2)}`} change="+12.5% from last month" changeType="positive" icon={DollarSign} color="success" className="shadow-soft hover:shadow-elegant transition-shadow" />
+        <MetricCard title="Total Sales" value={metrics.totalSales.toString()} change="+8.2% from last month" changeType="positive" icon={ShoppingCart} color="info" className="shadow-soft hover:shadow-elegant transition-shadow" />
+        <MetricCard title="Low Stock Items" value={metrics.lowStockItems.toString()} change={`${metrics.outOfStockItems} out of stock`} changeType="warning" icon={Package} color="warning" className="shadow-soft hover:shadow-elegant transition-shadow" />
+        <MetricCard title="Avg Order Value" value={`$${metrics.averageOrderValue.toFixed(2)}`} change="+5.1% from last month" changeType="positive" icon={TrendingUp} color="default" className="shadow-soft hover:shadow-elegant transition-shadow" />
       </div>
 
-      {/* Charts and Alerts */}
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <SalesTrendsChart />
-        </div>
+        <div className="lg:col-span-2"><SalesTrendsChart /></div>
         <ProductTrafficCard />
       </div>
 
-      {/* Real-time Alerts */}
       <RecentAlertsCard />
     </div>
   );
@@ -213,7 +168,7 @@ function ReportsPage() {
   );
 }
 
-export default function Dashboard({ onLogout, username }: { onLogout: () => void; username: string }) {
+export default function Dashboard({ onLogout, userEmail }: { onLogout: () => void; userEmail: string }) {
   const [activeTab, setActiveTab] = useState("home");
   const [previousTab, setPreviousTab] = useState("home");
 
@@ -222,26 +177,17 @@ export default function Dashboard({ onLogout, username }: { onLogout: () => void
     setActiveTab("profile");
   };
 
-  const handleLogout = () => {
-    onLogout();
-  };
+  const handleLogout = () => onLogout();
 
   const renderContent = () => {
     switch (activeTab) {
-      case "home":
-        return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
-      case "sales":
-        return <SalesPage />;
-      case "inventory":
-        return <InventoryPage />;
-      case "reports":
-        return <ReportsPage />;
-      case "upload":
-        return <UploadPage />;
-      case "profile":
-        return <ProfilePage userEmail={username} onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
-      default:
-        return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
+      case "home":      return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
+      case "sales":     return <SalesPage />;
+      case "inventory": return <InventoryPage />;
+      case "reports":   return <ReportsPage />;
+      case "upload":    return <UploadPage />;
+      case "profile":   return <ProfilePage userEmail={userEmail} onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
+      default:          return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
     }
   };
 
@@ -249,7 +195,6 @@ export default function Dashboard({ onLogout, username }: { onLogout: () => void
     <div className="flex h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* No extra header inserted, so the top stays exactly like before */}
         <main className="flex-1 overflow-y-auto">{renderContent()}</main>
       </div>
     </div>
