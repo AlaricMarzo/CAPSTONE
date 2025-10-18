@@ -1,29 +1,21 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Sidebar } from "@/components/Layout/Sidebar";
-import { HeaderNav } from "@/components/Header/HeaderNav";
 import { MetricCard } from "@/components/Dashboard/MetricCard";
-import { RecentAlertsCard } from "@/components/Dashboard/RecentAlertCard"
-import { SalesTrendsChart } from "@/components/Dashboard/SalesTrendCard"
+import { RecentAlertsCard } from "@/components/Dashboard/RecentAlertCard";
+import { SalesTrendsChart } from "@/components/Dashboard/SalesTrendCard";
 import { ProductTrafficCard } from "@/components/Dashboard/ProductTrafficCard";
 import {
   TrendingUp,
-  TrendingDown,
-  Activity,
-  Clock,
-  Search,
-  Globe,
-  Bell,
-  FileText,
-  Calendar,
   DollarSign,
   Package,
   ShoppingCart,
-  User
+  User,
+  Search,
+  Calendar,
+  FileText
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,16 +23,32 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { getUserMetrics, inventoryData, purchaseData } from "@/data/mockData";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
+import { getUserMetrics } from "@/data/mockData";
 import UploadPage from "./upload";
 import ProfilePage from "./Profile";
 
 function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
   const metrics = getUserMetrics();
+  const [confirmOpen, setConfirmOpen] = useState(false);
+
+  const confirmLogout = () => {
+    onLogout(); // this will take you back to Login in Index.tsx
+    setConfirmOpen(false);
+  };
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
-      {/* Header */}
+      {/* Header row (same as your original) */}
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Dashboard Overview</h2>
@@ -55,6 +63,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             <FileText className="h-4 w-4 mr-2" />
             Export Report
           </Button>
+
+          {/* Your original user dropdown, now with a confirmation popout for Logout */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
@@ -67,11 +77,35 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
                 Profile
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={onLogout}>
+
+              {/* Logout item wrapped with AlertDialog */}
+              <DropdownMenuItem
+                className="text-destructive cursor-pointer"
+                onSelect={(e) => {
+                  e.preventDefault(); // keep the menu open until dialog handles it
+                  setConfirmOpen(true);
+                }}
+              >
                 Log out
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+          {/* Confirmation Dialog */}
+          <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Are you sure you want to log out?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  You will be returned to the login page.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={confirmLogout}>Yes, log me out</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </div>
 
@@ -79,10 +113,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
       <div className="flex items-center gap-4">
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-          <Input 
-            placeholder="Search products, customers, orders..." 
-            className="pl-10 shadow-soft"
-          />
+          <Input placeholder="Search products, customers, orders..." className="pl-10 shadow-soft" />
         </div>
       </div>
 
@@ -147,38 +178,6 @@ function SalesPage() {
         <h2 className="text-3xl font-bold text-foreground">Sales Dashboard</h2>
         <p className="text-muted-foreground">Sales Trends, Forecasting & Product Performance</p>
       </div>
-      
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <MetricCard
-          title="Total Revenue"
-          value="$684,200"
-          change="+62.1% from previous period"
-          changeType="positive"
-          color="info"
-        />
-        <MetricCard
-          title="Total Profit"
-          value="$245,800"
-          change="+4.2% from previous period"
-          changeType="positive"
-          color="success"
-        />
-        <MetricCard
-          title="Total Sales"
-          value="4,328"
-          change="+1.3% from previous period"
-          changeType="positive"
-          color="warning"
-        />
-        <MetricCard
-          title="Conversion Rate"
-          value="3.2%"
-          change="-0.1% from previous period"
-          changeType="negative"
-          color="destructive"
-        />
-      </div>
-      
       <div className="text-center py-12 text-muted-foreground">
         <p>Sales dashboard content coming soon...</p>
       </div>
@@ -193,38 +192,6 @@ function InventoryPage() {
         <h2 className="text-3xl font-bold text-foreground">Inventory</h2>
         <p className="text-muted-foreground">Live Stock Monitoring & Allocation Logic</p>
       </div>
-      
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <MetricCard
-          title="Total Products"
-          value="1,248"
-          change="Same as last week"
-          changeType="neutral"
-          color="info"
-        />
-        <MetricCard
-          title="Low Stock Items"
-          value="42"
-          change="3 items below threshold"
-          changeType="warning"
-          color="warning"
-        />
-        <MetricCard
-          title="Out of Stock"
-          value="18"
-          change="5% inventory warning"
-          changeType="negative"
-          color="destructive"
-        />
-        <MetricCard
-          title="Expiring Soon"
-          value="24"
-          change="Within next 30 days"
-          changeType="warning"
-          color="warning"
-        />
-      </div>
-      
       <div className="text-center py-12 text-muted-foreground">
         <p>Inventory management content coming soon...</p>
       </div>
@@ -239,7 +206,6 @@ function ReportsPage() {
         <h2 className="text-3xl font-bold text-foreground">Reports</h2>
         <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
       </div>
-
       <div className="text-center py-12 text-muted-foreground">
         <p>Reports and analytics coming soon...</p>
       </div>
@@ -247,15 +213,13 @@ function ReportsPage() {
   );
 }
 
-
-
-export default function Dashboard({ onLogout }: { onLogout: () => void }) {
-  const [activeTab, setActiveTab] = useState('home');
-  const [previousTab, setPreviousTab] = useState('home');
+export default function Dashboard({ onLogout, username }: { onLogout: () => void; username: string }) {
+  const [activeTab, setActiveTab] = useState("home");
+  const [previousTab, setPreviousTab] = useState("home");
 
   const handleProfileClick = () => {
     setPreviousTab(activeTab);
-    setActiveTab('profile');
+    setActiveTab("profile");
   };
 
   const handleLogout = () => {
@@ -264,19 +228,18 @@ export default function Dashboard({ onLogout }: { onLogout: () => void }) {
 
   const renderContent = () => {
     switch (activeTab) {
-      case 'home':
+      case "home":
         return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
-      case 'sales':
+      case "sales":
         return <SalesPage />;
-      case 'inventory':
+      case "inventory":
         return <InventoryPage />;
-      case 'reports':
+      case "reports":
         return <ReportsPage />;
-      case 'upload':
+      case "upload":
         return <UploadPage />;
-      case 'profile':
-        return <ProfilePage onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
-
+      case "profile":
+        return <ProfilePage userEmail={username} onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
       default:
         return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
     }
@@ -286,9 +249,8 @@ export default function Dashboard({ onLogout }: { onLogout: () => void }) {
     <div className="flex h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
       <div className="flex-1 flex flex-col overflow-hidden">
-        <main className="flex-1 overflow-y-auto">
-          {renderContent()}
-        </main>
+        {/* No extra header inserted, so the top stays exactly like before */}
+        <main className="flex-1 overflow-y-auto">{renderContent()}</main>
       </div>
     </div>
   );
