@@ -5,7 +5,9 @@ interface IndexProps {
 }
 
 const Index = ({ onLogout }: IndexProps) => {
-  return <Dashboard onLogout={onLogout} username="admin" />;
+  // last login email is persisted by LoginForm
+  const userEmail = localStorage.getItem("shield.userEmail") || "";
+  return <Dashboard onLogout={onLogout} userEmail={userEmail} />;
 };
 
 export default Index;
