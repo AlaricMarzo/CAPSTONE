@@ -27,8 +27,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from scipy import stats
 from scipy.optimize import linprog, minimize
-from sklearn.ensemble import IsolationForest
-from statsmodels.tsa.holtwinters import ExponentialSmoothing
+from sklearn.ensemble import IsolationForest, RandomForestRegressor
 import tkinter as tk
 from tkinter import filedialog
 
@@ -39,26 +38,35 @@ output_dir = "prescriptive_output"
 os.makedirs(output_dir, exist_ok=True)
 
 # -----------------------------
-# FILE SELECTION DIALOG
+# FILE SELECTION
 # -----------------------------
-def select_csv_file():
-    """Open file dialog to select CSV file"""
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    root.attributes('-topmost', True)  # Bring dialog to front
-    
-    file_path = filedialog.askopenfilename(
-        title="Select Pharmacy Sales CSV File",
-        filetypes=[("CSV files", "*.csv"), ("All files", "*.*")]
-    )
-    
-    root.destroy()
-    
-    if not file_path:
-        print("No file selected. Exiting...")
-        sys.exit(0)
-    
-    return Path(file_path)
+def get_csv_path():
+    """Get CSV file path from command line argument or user input"""
+    if len(sys.argv) > 1:
+        csv_path = sys.argv[1]
+        path = Path(csv_path)
+        if not path.exists():
+            print(f"File not found: {path}")
+            sys.exit(1)
+        return path
+    else:
+        # Fallback to dialog if no argument provided
+        root = tk.Tk()
+        root.withdraw()
+        root.attributes('-topmost', True)
+
+        file_path = filedialog.askopenfilename(
+            title="Select Pharmacy Sales CSV File",
+            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")]
+        )
+
+        root.destroy()
+
+        if not file_path:
+            print("No file selected. Exiting...")
+            sys.exit(0)
+
+        return Path(file_path)
 
 # -----------------------------
 # CONFIG
@@ -70,8 +78,8 @@ print("=" * 80)
 print("PHARMACY SALES PRESCRIPTIVE ANALYSIS")
 print("=" * 80)
 
-# Select CSV file
-csv_path = select_csv_file()
+# Get CSV file path
+csv_path = get_csv_path()
 print(f"\n✓ Selected file: {csv_path}")
 
 # -----------------------------
@@ -143,6 +151,63 @@ top_products = medicine_stats.nlargest(20, 'total_qty')['medicine'].tolist()
 
 print(f"✓ Analyzing top {len(top_products)} products")
 
+def forecast_with_rf(med_data, forecast_days=30):
+    """
+    Forecast demand using RandomForestRegressor based on monthly data with features.
+    Adapted from random_forest.py
+    """
+    # Aggregate to monthly
+    monthly = med_data.set_index('date')['qty'].resample('MS').sum().reset_index()
+    if len(monthly) < 6:
+        return monthly['qty'].mean() * (forecast_days / 30) if len(monthly) > 0 else 0
+
+    # Add features
+    monthly['Year'] = monthly['date'].dt.year
+    monthly['Month'] = monthly['date'].dt.month
+    monthly['Quarter'] = monthly['date'].dt.quarter
+
+    # Add lags
+    for i in range(1, 4):
+        monthly[f'Lag_{i}'] = monthly['qty'].shift(i)
+
+    monthly = monthly.dropna()
+
+    if len(monthly) < 4:
+        return monthly['qty'].mean() * (forecast_days / 30)
+
+    # Train RF
+    features = ['Month', 'Quarter', 'Year', 'Lag_1', 'Lag_2', 'Lag_3']
+    X = monthly[features]
+    y = monthly['qty']
+
+    rf = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    rf.fit(X, y)
+
+    # Forecast next months (approx forecast_days / 30)
+    forecast_months = max(1, int(forecast_days / 30))
+    last_row = monthly.iloc[-1].copy()
+    forecasts = []
+
+    for _ in range(forecast_months):
+        row = pd.DataFrame([{
+            'Month': last_row['Month'] % 12 + 1,
+            'Quarter': ((last_row['Month'] - 1) // 3) + 1,
+            'Year': last_row['Year'] + (1 if last_row['Month'] == 12 else 0),
+            'Lag_1': last_row['qty'],
+            'Lag_2': last_row.get('Lag_1', 0),
+            'Lag_3': last_row.get('Lag_2', 0)
+        }])
+        pred = rf.predict(row)[0]
+        forecasts.append(pred)
+        last_row['qty'] = pred
+        last_row['Lag_3'] = last_row['Lag_2']
+        last_row['Lag_2'] = last_row['Lag_1']
+        last_row['Lag_1'] = pred
+        last_row['Month'] = row['Month'].iloc[0]
+        last_row['Year'] = row['Year'].iloc[0]
+
+    return sum(forecasts) * (forecast_days / (forecast_months * 30))
+
 # -----------------------------
 # MODEL 1: FORECAST-DRIVEN REORDER POINT WITH SAFETY STOCK
 # -----------------------------
@@ -178,17 +243,8 @@ def calculate_reorder_point(medicine_name, df, lead_time_days=7, service_level=0
     # Reorder point
     reorder_point = (avg_daily_demand * lead_time_days) + safety_stock
     
-    # Forecast next 30 days using exponential smoothing
-    try:
-        if len(daily_demand) >= 14:
-            model = ExponentialSmoothing(daily_demand['qty'], seasonal_periods=7, trend='add', seasonal='add')
-            fitted = model.fit()
-            forecast = fitted.forecast(steps=30)
-            forecast_demand = forecast.sum()
-        else:
-            forecast_demand = avg_daily_demand * 30
-    except:
-        forecast_demand = avg_daily_demand * 30
+    # Forecast next 30 days using RandomForest
+    forecast_demand = forecast_with_rf(med_data, 30)
     
     return {
         'medicine': medicine_name,
@@ -226,8 +282,8 @@ plt.title('Reorder Point with Safety Stock (Top 10 Products)', fontsize=16, pad=
 plt.xticks(x, top_10_rop['medicine'], rotation=45, ha='right')
 plt.legend()
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, 'reorder_point_analysis.png'), dpi=300, bbox_inches='tight')   
-plt.show()
+plt.savefig(os.path.join(output_dir, 'reorder_point_analysis.png'), dpi=300, bbox_inches='tight')
+plt.close()
 
 # -----------------------------
 # MODEL 2: ENHANCED ECONOMIC ORDER QUANTITY (EOQ)
@@ -317,7 +373,7 @@ plt.xlabel('EOQ (Units)')
 plt.ylabel('Medicine')
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'eoq_analysis.png'), dpi=300, bbox_inches='tight')
-plt.show()
+plt.close()
 
 # -----------------------------
 # MODEL 3: LINEAR PROGRAMMING FOR INVENTORY ALLOCATION
@@ -375,7 +431,7 @@ allocation_df = optimize_inventory_allocation(
 if allocation_df is not None:
     print(f"\nOptimal Inventory Allocation (Budget: ${total_budget:,.2f}, Storage: {storage_capacity:,.0f} units):")
     print(allocation_df.head(10)[['medicine', 'optimal_allocation', 'allocated_value', 'expected_profit']].to_string(index=False))
-    
+
     # Visualization
     plt.figure(figsize=(14, 8))
     top_10_alloc = allocation_df.head(10)
@@ -385,7 +441,7 @@ if allocation_df is not None:
     plt.ylabel('Medicine')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, 'inventory_allocation.png'), dpi=300, bbox_inches='tight')
-    plt.show()
+    plt.close()
 else:
     print("\nOptimization failed. Adjust constraints.")
 
@@ -465,10 +521,10 @@ if whatif_df is not None:
     ax2.set_xlabel('Scenario')
     ax2.set_ylabel('Projected Profit ($)')
     ax2.tick_params(axis='x', rotation=45)
-    
+
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, 'ewhatif_analysis.png'), dpi=300, bbox_inches='tight')
-    plt.show()
+    plt.close()
 
 # -----------------------------
 # MODEL 5: DISCOUNT OPTIMIZATION ENGINE
@@ -535,7 +591,7 @@ ax2.set_title('Top 10 Discount Efficient Products', fontsize=14)
 
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'discount_optimization.png'), dpi=300, bbox_inches='tight')
-plt.show()
+plt.close()
 
 # -----------------------------
 # MODEL 6: RESOURCE PLANNING FOR SUPPLIES
@@ -598,7 +654,7 @@ ax2.set_title('Capital Requirements (Top 10 Products)', fontsize=14)
 
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'resource_planning.png'), dpi=300, bbox_inches='tight')
-plt.show()
+plt.close()
 
 # -----------------------------
 # MODEL 7: ANOMALY DETECTION MODULE
@@ -673,8 +729,7 @@ plt.grid(True, alpha=0.3)
 
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'anomaly_detection.png'), dpi=300, bbox_inches='tight')
-
-plt.show()
+plt.close()
 
 # -----------------------------
 # MODEL 8: PRESCRIPTIVE RECOMMENDATIONS ENGINE

@@ -1,6 +1,7 @@
 import warnings
 from pathlib import Path
 import re
+import sys
 from typing import Dict, Tuple, Optional
 
 import numpy as np
@@ -319,16 +320,19 @@ def run_on_file(file_path: Path):
 
 # -------------- Entrypoint --------------
 def main():
-    files = list(DATA_DIR.glob("*.csv")) + list(DATA_DIR.glob("*.xlsx"))
-    if not files:
-        print(f"❌ No files found in {DATA_DIR}. Put .csv/.xlsx there.")
+    if len(sys.argv) > 1:
+        # Use provided CSV path
+        csv_path = Path(sys.argv[1])
+        if not csv_path.exists():
+            print(f"❌ File not found: {csv_path}")
+            return
+        files = [csv_path]
+        print(f"Using provided file: {csv_path}")
+    else:
+        print("❌ No file provided. Please provide CSV path as argument.")
         return
-    print(f"Found {len(files)} dataset(s) in {DATA_DIR}")
+
     for f in files:
-        # skip helpers like *_errors.csv
-        if "error" in f.stem.lower() or f.stem.lower().endswith("_errors"):
-            print(f"   ↪ Skipping helper file: {f.name}")
-            continue
         run_on_file(f)
     print("\n🎉 Done. See /analytics/out/<dataset>/<sku>/report_<sku>.png")
 

@@ -4,6 +4,7 @@
 import warnings
 from pathlib import Path
 import re
+import sys
 from typing import Dict, Optional, List
 
 import numpy as np
@@ -208,10 +209,18 @@ def run_file(path: Path):
         print("No results produced for this dataset.")
 
 def main():
-    files = list(DATA_DIR.glob("*.csv")) + list(DATA_DIR.glob("*.xlsx"))
-    if not files:
-        print(f"❌ No files found in {DATA_DIR}")
+    if len(sys.argv) > 1:
+        # Use provided CSV path
+        csv_path = Path(sys.argv[1])
+        if not csv_path.exists():
+            print(f"❌ File not found: {csv_path}")
+            return
+        files = [csv_path]
+        print(f"Using provided file: {csv_path}")
+    else:
+        print("❌ No file provided. Please provide CSV path as argument.")
         return
+
     for f in files:
         run_file(f)
 

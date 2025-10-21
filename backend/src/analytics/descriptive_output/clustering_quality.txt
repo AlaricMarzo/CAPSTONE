@@ -1,0 +1,2 @@
+Overall Silhouette Score: 0.172
+Overall Davies-Bouldin Score: 1.550

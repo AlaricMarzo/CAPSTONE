@@ -1,10 +1,13 @@
 import warnings
 from pathlib import Path
 import re
+import sys
 from typing import Dict, Optional, Tuple, List
 
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend to avoid tkinter issues
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
@@ -120,15 +123,23 @@ def monthly_aggregate(df: pd.DataFrame, key_col: str) -> pd.DataFrame:
 
 # -------------- main --------------
 def main():
-    print(f"🔹 Loading {DATA_PATH}")
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(f"{DATA_PATH} not found")
+    if len(sys.argv) > 1:
+        # Use provided CSV path
+        csv_path = Path(sys.argv[1])
+        if not csv_path.exists():
+            print(f"❌ File not found: {csv_path}")
+            return
+        data_path = csv_path
+        print(f"Using provided file: {csv_path}")
+    else:
+        print("❌ No file provided. Please provide CSV path as argument.")
+        return
 
     # robust CSV read
-    if DATA_PATH.suffix.lower() in (".xlsx", ".xls"):
-        df = pd.read_excel(DATA_PATH)
+    if data_path.suffix.lower() in (".xlsx", ".xls"):
+        df = pd.read_excel(data_path)
     else:
-        df = pd.read_csv(DATA_PATH, low_memory=False)
+        df = pd.read_csv(data_path, low_memory=False)
 
     # detect & normalize columns
     rename = detect_columns(df)

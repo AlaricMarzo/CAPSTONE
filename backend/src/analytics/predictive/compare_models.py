@@ -4,6 +4,7 @@
 
 import pandas as pd
 import numpy as np
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -31,14 +32,31 @@ def load_model_csv(path: Path, model_name: str) -> pd.DataFrame:
     # Normalize structure
     rename_map = {}
     for c in df.columns:
-        if "mae" in c: rename_map[c] = "mae"
-        elif "mse" in c: rename_map[c] = "mse"
-        elif "mape" in c: rename_map[c] = "mape"
-        elif c in ["sku", "item code"]: rename_map[c] = "sku"
-        elif "desc" in c: rename_map[c] = "description"
+        cl = c.lower()
+        if "mae" in cl: rename_map[c] = "mae"
+        elif "mse" in cl: rename_map[c] = "mse"
+        elif "mape" in cl: rename_map[c] = "mape"
+        elif cl in ["sku", "item code", "item_code"]: rename_map[c] = "sku"
+        elif "desc" in cl: rename_map[c] = "description"
 
     df = df.rename(columns=rename_map)
     df["model"] = model_name
+
+    # Ensure required columns exist, add defaults if missing
+    required_cols = ["sku", "model", "mae", "mse", "mape"]
+    for col in required_cols:
+        if col not in df.columns:
+            if col in ["mae", "mse", "mape"]:
+                df[col] = 0.0
+            elif col == "sku":
+                df[col] = ""
+            else:
+                df[col] = ""
+
+    # Add description if missing
+    if "description" not in df.columns:
+        df["description"] = "Unknown"
+
     df = df[["sku", "description", "model", "mae", "mse", "mape"]].dropna(subset=["sku"])
     return df
 
@@ -65,11 +83,14 @@ def load_all_models() -> pd.DataFrame:
 def pick_best_model(df: pd.DataFrame) -> pd.DataFrame:
     """Pick best model per SKU using lowest MAPE, then MAE, then MSE."""
     df = df.copy()
-    df["rank"] = df.groupby("sku")[["mape", "mae", "mse"]].apply(
-        lambda x: np.lexsort((x["mse"], x["mae"], x["mape"]))
-    ).explode().astype(int)
+
+    # Remove duplicate rows if any
+    df = df.drop_duplicates(subset=["sku", "model"])
+
+    # Rank models per SKU
     df["rank"] = df.groupby("sku")["mape"].rank(method="min", ascending=True)
 
+    # Select the best model per SKU (lowest MAPE)
     winners = df.loc[df.groupby("sku")["mape"].idxmin()].copy()
     winners = winners.sort_values("mape")
     return winners
