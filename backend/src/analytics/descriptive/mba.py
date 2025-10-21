@@ -49,7 +49,6 @@ def _build_basket(df: pd.DataFrame) -> pd.DataFrame:
           .count()
           .unstack(fill_value=0)
           .astype(bool)
-          .astype(int)
     )
     return basket
 
