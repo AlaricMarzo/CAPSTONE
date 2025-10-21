@@ -195,7 +195,7 @@ export default function DataUploadPage() {
         {/* Processing card (keeps its gradient header as in your screenshot) */}
         <div className="bg-card rounded-2xl shadow-xl border border-border overflow-hidden">
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-6">
-            <h3 className="text-xl font-semibold text-white flex items-center gap-2">
+            <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
               <Shield className="h-5 w-5" />
               Processing Progress
             </h3>
@@ -205,8 +205,8 @@ export default function DataUploadPage() {
             {uploading ? (
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-foreground">Processing Progress</span>
-                  <span className="text-sm font-bold text-primary">{uploadProgress}%</span>
+                  <span className="text-sm font-medium text-black">Processing Progress</span>
+                  <span className="text-sm font-bold text-black">{uploadProgress}%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
                   <div
