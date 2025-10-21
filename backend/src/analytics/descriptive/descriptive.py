@@ -1,4 +1,4 @@
-# main.py
+# descriptive.py
 import os, sys, tempfile
 import pandas as pd
 
@@ -9,6 +9,7 @@ import pandas as pd
 from clustering import run_clustering_pipeline
 from mba import run_mba_pipeline
 
+
 def _read_csv_robust(path_or_buf):
     """Try multiple encodings so weird CSVs still load."""
     for enc in ("utf-8-sig", "utf-8", "cp1252", "latin1"):
@@ -18,6 +19,7 @@ def _read_csv_robust(path_or_buf):
             continue
     # last attempt with default
     return pd.read_csv(path_or_buf)
+
 
 def _browse_or_path_or_url():
     print("=" * 70)
@@ -56,6 +58,7 @@ def _browse_or_path_or_url():
     # default again to browse if invalid
     return ("file", "")
 
+
 def _materialize_from_url(url: str) -> str:
     """Download URL to a temp .csv file and return its path."""
     try:
@@ -74,6 +77,7 @@ def _materialize_from_url(url: str) -> str:
         f.write(resp.content)
     print(f"✓ Downloaded to temp file: {tmp_path}")
     return tmp_path
+
 
 def _load_dataframe(source_kind: str, source_value: str) -> pd.DataFrame:
     if source_kind == "file":
@@ -94,6 +98,7 @@ def _load_dataframe(source_kind: str, source_value: str) -> pd.DataFrame:
     print("✗ Unknown source type.")
     sys.exit(1)
 
+
 def _basic_clean(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     if "date" in df.columns:
@@ -103,15 +108,25 @@ def _basic_clean(df: pd.DataFrame) -> pd.DataFrame:
         df[num_cols] = df[num_cols].fillna(0)
     return df
 
+
 def main():
-    out_dir = "descriptive_output"
+    # --- Anchor everything to the script directory to avoid duplicate folders ---
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)  # make relative paths in other modules resolve here
+
+    out_dir = os.path.join(script_dir, "descriptive_output")
     os.makedirs(out_dir, exist_ok=True)
 
+    print(f"Script directory: {script_dir}")
+    print(f"Current working directory (anchored): {os.getcwd()}")
+    print(f"Output directory: {out_dir}")
+
+    # --- Data source selection and load ---
     source_kind, source_value = _browse_or_path_or_url()
     df = _load_dataframe(source_kind, source_value)
     df = _basic_clean(df)
 
-    # Always run BOTH pipelines, no prompts.
+    # --- Run BOTH pipelines with the same absolute output_dir ---
     print("\n=== CLUSTERING (auto) ===")
     run_clustering_pipeline(df, output_dir=out_dir)
 
@@ -119,6 +134,7 @@ def main():
     run_mba_pipeline(df, output_dir=out_dir)
 
     print("\n✓ All done. Check the 'descriptive_output' folder for CSVs and charts.")
+
 
 if __name__ == "__main__":
     main()
