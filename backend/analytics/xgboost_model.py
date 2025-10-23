@@ -1,5 +1,5 @@
-# backend/analytics/xgboost_model.py
-# XGBoost forecasting per SKU (80/20 split) with robust column autodetect.
+# backend/analytics/xgboost_model.py 
+# XGBoost forecasting per SKU with product description and robust 80/20 split.
 
 import warnings
 from pathlib import Path
@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 HERE = Path(__file__).resolve().parent
 DATA_DIR = HERE / "cleaned"
-OUT_DIR  = HERE / "out" / "xgb"
+OUT_DIR  = HERE / "ml_xgboost"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 FORECAST_STEPS = 6
@@ -121,6 +121,15 @@ def run_file(path: Path):
     if "Item Code" not in df.columns:
         df["Item Code"] = df["Description"].astype(str)  # fallback key
 
+    # map descriptions per SKU
+    sku_desc = (
+        df[["Item Code", "Description"]]
+        .dropna(subset=["Description"])
+        .drop_duplicates(subset=["Item Code"])
+        .set_index("Item Code")["Description"]
+        .to_dict()
+    )
+
     # monthly per SKU
     monthly = (df.groupby(["Item Code", pd.Grouper(key="Date", freq="MS")])["Qty"]
                  .sum().reset_index())
@@ -148,11 +157,19 @@ def run_file(path: Path):
             print(f"   ↪ {sku}: too few rows after lags, skipped.")
             continue
 
+        desc = sku_desc.get(sku, "Unknown Product")
+        label = f"{sku} — {desc}"
+
         X = series[["Month", "Quarter", "Year", "Lag_1", "Lag_2", "Lag_3"]]
         y = series["Qty"]
 
-        # 80/20 chronological split
-        split = int(len(series) * 0.8)
+        # Smart time split: last 3 months if short, else 80/20
+        if len(series) < 15:
+            test_size = 3
+            split = len(series) - test_size
+        else:
+            split = int(len(series) * 0.8)
+
         X_train, X_test = X.iloc[:split], X.iloc[split:]
         y_train, y_test = y.iloc[:split], y.iloc[split:]
         dates_test = series["Date"].iloc[split:]
@@ -164,8 +181,10 @@ def run_file(path: Path):
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
 
+        # -------- metrics --------
         mae = float(mean_absolute_error(y_test, y_pred))
         mse = float(mean_squared_error(y_test, y_pred))
+        rmse = float(np.sqrt(mse))
         mp  = float(mape(y_test, y_pred))
 
         # roll-forward 6-month forecast (uses predicted values as new lags)
@@ -183,23 +202,29 @@ def run_file(path: Path):
             fc_vals.append(pred)
             lag1, lag2, lag3 = pred, lag1, lag2  # shift lags
 
-        # plot
+        # plot with bottom metrics (same style as SARIMA/ETS/Holt)
         plt.figure(figsize=(10,5))
         plt.plot(series["Date"], series["Qty"], label="Historical", linewidth=2)
         plt.plot(dates_test, y_pred, "r--", label="Test Pred", linewidth=1.8)
-        plt.plot(fc_dates, fc_vals, "g-", label="XGBoost Forecast", linewidth=2)
-        plt.title(f"XGBoost — {sku}")
+        plt.plot(fc_dates, fc_vals, "g-", label="XGBoost Forecast (t+1..t+6)", linewidth=2)
+        plt.title(f"XGBoost Forecast — {label}")
         plt.xlabel("Month"); plt.ylabel("Qty")
-        plt.legend(); plt.grid(alpha=0.25); plt.tight_layout()
+        plt.legend(); plt.grid(alpha=0.25)
+        # bottom metric text block
+        footer = f"XGBoost → MAE {mae:.2f}, MSE {mse:.2f}, RMSE {rmse:.2f}, MAPE {mp:.2f}%"
+        plt.gcf().text(0.5, -0.06, footer, ha="center", va="top", fontsize=9, linespacing=1.4)
+        plt.tight_layout()
         out_img = out_dir / f"xgb_{clean_name(sku)}.png"
-        plt.savefig(out_img, dpi=150); plt.close()
+        plt.savefig(out_img, dpi=150, bbox_inches="tight")
+        plt.close()
 
-        row = {"dataset": path.name, "sku": sku, "xgb_mae": mae, "xgb_mse": mse, "xgb_mape": mp}
-        for i, v in enumerate(fc_vals, 1):
-            row[f"xgb_t+{i}"] = v
-        rows.append(row)
+        rows.append({
+            "dataset": path.name, "sku": sku, "description": desc,
+            "xgb_rmse": rmse, "xgb_mae": mae, "xgb_mse": mse, "xgb_mape": mp,
+            **{f"xgb_t+{i}": round(v, 2) for i, v in enumerate(fc_vals, 1)}
+        })
 
-        print(f"   ✅ {sku}: MAE={mae:.2f}  MAPE={mp:.2f}%  → {out_img}")
+        print(f"   ✅ {label}: RMSE={rmse:.2f}  MAE={mae:.2f}  MSE={mse:.2f}  MAPE={mp:.2f}%  → {out_img}")
 
     if rows:
         pd.DataFrame(rows).to_csv(out_dir / "xgb_results.csv", index=False)

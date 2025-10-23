@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import warnings
 from pathlib import Path
 import re
@@ -5,7 +8,13 @@ from typing import Dict, Optional, Tuple, List
 
 import numpy as np
 import pandas as pd
+
+# ---- use headless (non-GUI) backend to avoid Tkinter errors on Windows ----
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+# ---------------------------------------------------------------------------
+
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
@@ -14,7 +23,7 @@ warnings.filterwarnings("ignore")
 # ---------------- CONFIG ----------------
 HERE      = Path(__file__).resolve().parent
 DATA_PATH = HERE / "cleaned" / "complete_data.csv"   # change if needed
-OUT_DIR   = HERE / "out" / "rf"
+OUT_DIR   = HERE / "ml_random_forest"                # flat outputs
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 FORECAST_STEPS = 6
@@ -114,7 +123,7 @@ def monthly_aggregate(df: pd.DataFrame, key_col: str) -> pd.DataFrame:
         df.groupby([key_col, pd.Grouper(key="Date", freq="MS")])["Qty"]
           .sum()
           .reset_index()
-          .sort_values(["{0}".format(key_col), "Date"])
+          .sort_values([key_col, "Date"])
     )
     return monthly
 
@@ -124,7 +133,7 @@ def main():
     if not DATA_PATH.exists():
         raise FileNotFoundError(f"{DATA_PATH} not found")
 
-    # robust CSV read
+    # robust CSV/XLSX read
     if DATA_PATH.suffix.lower() in (".xlsx", ".xls"):
         df = pd.read_excel(DATA_PATH)
     else:
@@ -204,8 +213,10 @@ def main():
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
 
+        # ------------------ metrics ------------------
         mae = float(mean_absolute_error(y_test, y_pred))
         mse = float(mean_squared_error(y_test, y_pred))
+        rmse = float(np.sqrt(mse))
         mp  = float(mape(y_test, y_pred))
 
         # iterative forecast next 6 months
@@ -225,29 +236,39 @@ def main():
             # update lags for next step
             lag1, lag2, lag3 = pred, lag1, lag2
 
-        # ----- plot -----
+        # ----- plot with bottom metrics (aligned with XGBoost style) -----
         plt.figure(figsize=(10,5))
         plt.plot(series["Date"], y, label="Historical", linewidth=2)
         plt.plot(dates_test, y_pred, "r--", label="Test Pred", linewidth=1.8)
         plt.plot(fc_dates, fc_vals, "g-", label="RF Forecast (t+1..t+6)", linewidth=2)
         plt.title(f"Random Forest Forecast — {label}")
         plt.xlabel("Month"); plt.ylabel("Qty")
-        plt.legend(); plt.grid(alpha=0.25); plt.tight_layout()
-        out_img = OUT_DIR / f"rf_{clean_name(sku)}.png"
-        plt.savefig(out_img, dpi=150); plt.close()
+        plt.legend(); plt.grid(alpha=0.25)
 
-        print(f"📊 {sku}: MAE={mae:.2f}  MSE={mse:.2f}  MAPE={mp:.2f}%  → {out_img}")
+        footer = f"Random Forest → MAE {mae:.2f}, MSE {mse:.2f}, RMSE {rmse:.2f}, MAPE {mp:.2f}%"
+        plt.gcf().text(0.5, -0.06, footer, ha="center", va="top", fontsize=9, linespacing=1.4)
+
+        plt.tight_layout()
+        out_img = OUT_DIR / f"rf_{clean_name(sku)}.png"
+        plt.savefig(out_img, dpi=150, bbox_inches="tight")
+        plt.close()
+
+        print(f"📊 {sku}: RMSE={rmse:.2f}  MAE={mae:.2f}  MSE={mse:.2f}  MAPE={mp:.2f}%   → {out_img}")
 
         summary_rows.append([
-            sku, desc, len(series), mae, mse, mp,
+            sku, desc, len(series), rmse, mae, mse, mp, 
             *[round(v,2) for v in fc_vals]
         ])
 
     # save summary
     if summary_rows:
-        cols = ["SKU","Description","HistoryPts","MAE","MSE","MAPE%"] + [f"t+{i+1}" for i in range(FORECAST_STEPS)]
-        pd.DataFrame(summary_rows, columns=cols).to_csv(OUT_DIR / "rf_results_summary.csv", index=False)
-        print(f"\n✅ Saved summary → {OUT_DIR / 'rf_results_summary.csv'}")
+        cols = (
+            ["SKU","Description","HistoryPts","RMSE","MAE","MSE","MAPE%"] +
+            [f"t+{i+1}" for i in range(FORECAST_STEPS)]
+        )
+        out_csv = OUT_DIR / "rf_results_summary.csv"
+        pd.DataFrame(summary_rows, columns=cols).to_csv(out_csv, index=False)
+        print(f"\n✅ Saved summary → {out_csv}")
     else:
         print("No products produced results. Check column detection or data length.")
 
