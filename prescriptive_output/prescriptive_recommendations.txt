@@ -1,6 +1,6 @@
 ================================================================================
 PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
-Generated: 2025-10-23 15:34:52
+Generated: 2025-10-23 20:49:49
 ================================================================================
 
 📦 INVENTORY MANAGEMENT RECOMMENDATIONS:
@@ -29,7 +29,7 @@ Generated: 2025-10-23 15:34:52
 💰 BUDGET ALLOCATION RECOMMENDATIONS:
 
   ✓ PRIORITIZE INVESTMENT IN:
-    • RETANIX (CETIRIZINE) 10MG TAB: 350364 units ($852,432.41)
+    • RETANIX (CETIRIZINE) 10MG TAB: 560582 units (₱1,363,891.86)
 
 💵 PRICING & DISCOUNT RECOMMENDATIONS:
 
@@ -50,12 +50,12 @@ Generated: 2025-10-23 15:34:52
 ⚙️ OPERATIONAL EFFICIENCY:
 
   ✓ INVESTIGATE 100 ANOMALOUS SALES DAYS
-    • 2024-09-18: $118,645.44 (Score: -0.79)
-    • 2024-03-21: $66,970.49 (Score: -0.75)
-    • 2024-03-18: $87,535.88 (Score: -0.72)
+    • 2024-09-18: ₱118,645.44 (Score: -0.79)
+    • 2024-03-21: ₱66,970.49 (Score: -0.75)
+    • 2024-03-18: ₱87,535.88 (Score: -0.72)
 
 🏗️ RESOURCE PLANNING (Next 90 Days):
 
   ✓ PREPARE FOR NEXT QUARTER:
     • Storage needed: 71,597 cubic feet
-    • Capital required: $1,054,039.07
+    • Capital required: ₱1,054,039.07

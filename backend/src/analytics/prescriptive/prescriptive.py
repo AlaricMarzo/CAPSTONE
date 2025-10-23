@@ -440,9 +440,9 @@ def optimize_inventory_allocation(products_df, budget_constraint, storage_constr
         print(f"Error in inventory allocation: {e}")
         return None
 
-# Set constraints
-total_budget = medicine_stats['total_sales'].sum() * 0.3
-storage_capacity = medicine_stats['total_qty'].sum() * 0.5
+# Set constraints (increased to allow more products in allocation)
+total_budget = medicine_stats['total_sales'].sum() * 0.6
+storage_capacity = medicine_stats['total_qty'].sum() * 0.8
 
 allocation_df = optimize_inventory_allocation(
     medicine_stats[medicine_stats['medicine'].isin(top_products)].copy(),
@@ -451,9 +451,9 @@ allocation_df = optimize_inventory_allocation(
 )
 
 if allocation_df is not None and not allocation_df.empty:
-    print(f"\nOptimal Inventory Allocation (Budget: ${total_budget:,.2f}, Storage: {storage_capacity:,.0f} units):")
+    print(f"\nOptimal Inventory Allocation (Budget: ₱{total_budget:,.2f}, Storage: {storage_capacity:,.0f} units):")
     print(allocation_df.head(10)[['medicine', 'optimal_allocation', 'allocated_value', 'expected_profit']].to_string(index=False))
-    
+
     # Visualization
     plt.figure(figsize=(14, 8))
     top_10_alloc = allocation_df.head(10)
@@ -539,13 +539,13 @@ if top_products:
         ax1.bar(whatif_df['scenario'], whatif_df['projected_sales'], color=['red', 'orange', 'gray', 'lightgreen', 'green'])
         ax1.set_title(f'Sales Projections - {top_medicine}', fontsize=14)
         ax1.set_xlabel('Scenario')
-        ax1.set_ylabel('Projected Sales ($)')
+        ax1.set_ylabel('Projected Sales (₱)')
         ax1.tick_params(axis='x', rotation=45)
         
         ax2.bar(whatif_df['scenario'], whatif_df['projected_profit'], color=['red', 'orange', 'gray', 'lightgreen', 'green'])
         ax2.set_title(f'Profit Projections - {top_medicine}', fontsize=14)
         ax2.set_xlabel('Scenario')
-        ax2.set_ylabel('Projected Profit ($)')
+        ax2.set_ylabel('Projected Profit (₱)')
         ax2.tick_params(axis='x', rotation=45)
         
         plt.tight_layout()
@@ -612,7 +612,7 @@ if product_discount is not None and not product_discount.empty:
     
     top_10_disc = product_discount.head(10)
     ax2.barh(top_10_disc['medicine'], top_10_disc['discount_efficiency'], color='teal')
-    ax2.set_xlabel('Discount Efficiency (Qty per $ Discount)')
+    ax2.set_xlabel('Discount Efficiency (Qty per ₱ Discount)')
     ax2.set_ylabel('Medicine')
     ax2.set_title('Top 10 Discount Efficient Products', fontsize=14)
     
@@ -664,7 +664,7 @@ if resource_df is not None and not resource_df.empty:
     total_capital = resource_df['capital_needed'].sum()
     
     print(f"\nTotal Storage Required: {total_storage:,.0f} cubic feet")
-    print(f"Total Capital Required: ${total_capital:,.2f}")
+    print(f"Total Capital Required: ₱{total_capital:,.2f}")
     
     # Visualization
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
@@ -677,7 +677,7 @@ if resource_df is not None and not resource_df.empty:
     ax1.set_title('Storage Requirements (Top 10 Products)', fontsize=14)
     
     ax2.barh(top_10_resource['medicine'], top_10_resource['capital_needed'], color='coral')
-    ax2.set_xlabel('Capital Needed ($)')
+    ax2.set_xlabel('Capital Needed (₱)')
     ax2.set_ylabel('Medicine')
     ax2.set_title('Capital Requirements (Top 10 Products)', fontsize=14)
     
@@ -740,7 +740,7 @@ if daily_sales is not None and anomalies is not None:
                daily_sales[daily_sales['anomaly'] == -1]['sales'],
                c='red', label='Anomaly', alpha=0.8, s=100, marker='x')
     plt.xlabel('Date')
-    plt.ylabel('Daily Sales ($)')
+    plt.ylabel('Daily Sales (₱)')
     plt.title('Sales Anomaly Detection', fontsize=14)
     plt.legend()
     plt.xticks(rotation=45)
@@ -798,7 +798,7 @@ def generate_recommendations(df, rop_df, eoq_df, allocation_df, product_discount
         top_alloc = allocation_df.head(5)
         recommendations.append(f"\n  ✓ PRIORITIZE INVESTMENT IN:")
         for _, row in top_alloc.iterrows():
-            recommendations.append(f"    • {row['medicine']}: {row['optimal_allocation']:.0f} units (${row['allocated_value']:,.2f})")
+            recommendations.append(f"    • {row['medicine']}: {row['optimal_allocation']:.0f} units (₱{row['allocated_value']:,.2f})")
     
     recommendations.append("\n💵 PRICING & DISCOUNT RECOMMENDATIONS:")
     
@@ -820,14 +820,14 @@ def generate_recommendations(df, rop_df, eoq_df, allocation_df, product_discount
     if anomalies is not None and not anomalies.empty:
         recommendations.append(f"\n  ✓ INVESTIGATE {len(anomalies)} ANOMALOUS SALES DAYS")
         for _, row in anomalies.head(3).iterrows():
-            recommendations.append(f"    • {row['date'].strftime('%Y-%m-%d')}: ${row['sales']:,.2f} (Score: {row['anomaly_score']:.2f})")
+            recommendations.append(f"    • {row['date'].strftime('%Y-%m-%d')}: ₱{row['sales']:,.2f} (Score: {row['anomaly_score']:.2f})")
     
     recommendations.append("\n🏗️ RESOURCE PLANNING (Next 90 Days):")
     
     if resource_df is not None and not resource_df.empty:
         recommendations.append(f"\n  ✓ PREPARE FOR NEXT QUARTER:")
         recommendations.append(f"    • Storage needed: {resource_df['storage_needed'].sum():,.0f} cubic feet")
-        recommendations.append(f"    • Capital required: ${resource_df['capital_needed'].sum():,.2f}")
+        recommendations.append(f"    • Capital required: ₱{resource_df['capital_needed'].sum():,.2f}")
     
     return "\n".join(recommendations)
 
