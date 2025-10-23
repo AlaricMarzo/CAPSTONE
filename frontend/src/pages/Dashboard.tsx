@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Sidebar } from "@/components/Layout/Sidebar";
 import { MetricCard } from "@/components/Dashboard/MetricCard";
 import { RecentAlertsCard } from "@/components/Dashboard/RecentAlertCard";
@@ -36,6 +36,26 @@ import {
 import { getUserMetrics } from "@/data/mockData";
 import UploadPage from "./upload";
 import ProfilePage from "./Profile";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
+  LineChart,
+  Line,
+  BarChart,
+  Bar,
+  ScatterChart,
+  Scatter,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
   const metrics = getUserMetrics();
@@ -155,15 +175,285 @@ function InventoryPage() {
 }
 
 function ReportsPage() {
+  const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [runningAnalysis, setRunningAnalysis] = useState(false);
+
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/analytics/prescriptive');
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const result = await response.json();
+      setData(result.data);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const runAnalysis = async () => {
+    try {
+      setRunningAnalysis(true);
+      const response = await fetch('/api/analytics/run-prescriptive', {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to run analysis');
+      }
+      const result = await response.json();
+      if (result.success) {
+        // Refresh data after successful run
+        await fetchData();
+      } else {
+        setError(result.error || 'Analysis failed');
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to run analysis');
+    } finally {
+      setRunningAnalysis(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
+          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+        </div>
+        <div className="text-center py-12 text-muted-foreground">
+          <p>Loading analytics data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
+          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+        </div>
+        <div className="text-center py-12 text-destructive">
+          <p>Error loading data: {error}</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
-      <div>
-        <h2 className="text-3xl font-bold text-foreground">Reports</h2>
-        <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
+          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+        </div>
+        <Button
+          onClick={runAnalysis}
+          disabled={runningAnalysis}
+          className="shadow-soft"
+        >
+          {runningAnalysis ? "Running Analysis..." : "Run Prescriptive Analysis"}
+        </Button>
       </div>
-      <div className="text-center py-12 text-muted-foreground">
-        <p>Reports and analytics coming soon...</p>
-      </div>
+
+      <Tabs defaultValue="reorder-point" className="w-full">
+        <TabsList className="grid w-full grid-cols-8">
+          <TabsTrigger value="reorder-point">Reorder Point</TabsTrigger>
+          <TabsTrigger value="eoq">EOQ</TabsTrigger>
+          <TabsTrigger value="inventory-allocation">Inventory Allocation</TabsTrigger>
+          <TabsTrigger value="what-if">What-If Analysis</TabsTrigger>
+          <TabsTrigger value="discount-optimization">Discount Optimization</TabsTrigger>
+          <TabsTrigger value="resource-planning">Resource Planning</TabsTrigger>
+          <TabsTrigger value="anomaly-detection">Anomaly Detection</TabsTrigger>
+          <TabsTrigger value="recommendations">Recommendations</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="reorder-point" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data?.reorderPoint}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="medicine" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="reorder_point" fill="#8884d8" name="Reorder Point" />
+                <Bar dataKey="safety_stock" fill="#82ca9d" name="Safety Stock" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="eoq" className="space-y-4">
+          <Tabs defaultValue="eoq-values" className="w-full">
+            <TabsList className="grid w-full grid-cols-4">
+              <TabsTrigger value="eoq-values">EOQ Values</TabsTrigger>
+              <TabsTrigger value="order-frequency">Order Frequency</TabsTrigger>
+              <TabsTrigger value="cost-breakdown">Cost Breakdown</TabsTrigger>
+              <TabsTrigger value="efficiency">Efficiency</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="eoq-values" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={data?.eoq}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="medicine" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="eoq" fill="#8884d8" name="EOQ (Units)" />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="order-frequency" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={data?.eoq}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="medicine" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="orders_per_year" stroke="#8884d8" name="Orders per Year" />
+                    <Line type="monotone" dataKey="days_between_orders" stroke="#82ca9d" name="Days Between Orders" />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="cost-breakdown" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={data?.eoq}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="medicine" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="annual_ordering_cost" stackId="a" fill="#8884d8" name="Ordering Cost" />
+                    <Bar dataKey="annual_holding_cost" stackId="a" fill="#82ca9d" name="Holding Cost" />
+                    <Bar dataKey="annual_purchase_cost" stackId="a" fill="#ffc658" name="Purchase Cost" />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="efficiency" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <ScatterChart data={data?.eoq}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="annual_demand" name="Annual Demand" />
+                    <YAxis dataKey="total_annual_cost" name="Total Annual Cost" />
+                    <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                    <Legend />
+                    <Scatter name="EOQ Efficiency" dataKey="total_annual_cost" fill="#8884d8" />
+                  </ScatterChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </TabsContent>
+
+        <TabsContent value="inventory-allocation" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data?.inventoryAllocation}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="medicine" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="optimal_allocation" fill="#8884d8" name="Allocated Quantity" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="what-if" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={data?.whatIfAnalysis}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="scenario" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="projected_profit" stroke="#8884d8" name="Profit" />
+                <Line type="monotone" dataKey="projected_cost" stroke="#82ca9d" name="Cost" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="discount-optimization" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <ScatterChart data={data?.discountByProduct}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="discount_pct" name="Discount %" />
+                <YAxis dataKey="profit_margin" name="Profit Margin %" />
+                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                <Legend />
+                <Scatter name="Products" dataKey="profit_margin" fill="#8884d8" />
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="resource-planning" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data?.resourcePlanning}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="medicine" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="storage_needed" fill="#8884d8" name="Storage Needed" />
+                <Bar dataKey="capital_needed" fill="#82ca9d" name="Capital Needed" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="anomaly-detection" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <ScatterChart data={data?.anomalyDetection}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" name="Date" />
+                <YAxis dataKey="sales" name="Sales" />
+                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                <Legend />
+                <Scatter data={data?.anomalyDetection?.filter((d: any) => d.anomaly === 1)} name="Normal" fill="#82ca9d" />
+                <Scatter data={data?.anomalyDetection?.filter((d: any) => d.anomaly === -1)} name="Anomaly" fill="#ff7300" />
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="recommendations" className="space-y-4">
+          <div className="max-h-96 overflow-y-auto p-4 bg-muted rounded-lg">
+            <pre className="whitespace-pre-wrap text-sm">{data?.recommendations}</pre>
+          </div>
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }

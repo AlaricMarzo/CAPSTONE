@@ -1,0 +1,61 @@
+================================================================================
+PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
+Generated: 2025-10-23 23:58:38
+================================================================================
+
+📦 INVENTORY MANAGEMENT RECOMMENDATIONS:
+
+  ✓ HIGH PRIORITY REORDERS (Top 5 by demand):
+    • RETASAR (LOSARTAN POTASSIUM) 50MG: Reorder at 393 units
+      - Safety stock: 201 units | 30-day forecast: 728 units
+    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder at 373 units
+      - Safety stock: 192 units | 30-day forecast: 588 units
+    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder at 166 units
+      - Safety stock: 71 units | 30-day forecast: 248 units
+    • BIOGESIC (PARACETAMOL) 500MG TAB: Reorder at 169 units
+      - Safety stock: 99 units | 30-day forecast: 152 units
+    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Reorder at 146 units
+      - Safety stock: 77 units | 30-day forecast: 332 units
+
+📋 ORDERING STRATEGY RECOMMENDATIONS:
+
+  ✓ OPTIMAL ORDER QUANTITIES (Top 5):
+    • RETASAR (LOSARTAN POTASSIUM) 50MG: Order 2365 units every 77 days
+    • BIOGESIC (PARACETAMOL) 500MG TAB: Order 1747 units every 60 days
+    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Order 799 units every 38 days
+    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 1919 units every 97 days
+    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Order 407 units every 22 days
+
+💰 BUDGET ALLOCATION RECOMMENDATIONS:
+
+  ✓ PRIORITIZE INVESTMENT IN:
+    • RETANIX (CETIRIZINE) 10MG TAB: 560582 units (₱1,363,891.86)
+
+💵 PRICING & DISCOUNT RECOMMENDATIONS:
+
+  ✓ MAINTAIN/INCREASE DISCOUNTS FOR:
+    • BETTER C (ASCORBIC ACID ) 500MG TAB: 0.0% discount (efficiency: 9500.0)
+    • MULTICAPS: 0.0% discount (efficiency: 7575.0)
+    • LIVERAIDE (SILYMARIN) CAP: 0.0% discount (efficiency: 971.4)
+
+📈 SALES GROWTH OPPORTUNITIES:
+
+  ✓ PROMOTE HIGH-MARGIN PRODUCTS:
+    • #EXP2025-03-30: 100.0% margin
+    • #EXP2025-03-31: 100.0% margin
+    • #EXP2026-07-30: 100.0% margin
+    • #EXP2027-05-24: 100.0% margin
+    • ALCIFLORA (BACILLUS CLAUSII) 5ML: 100.0% margin
+
+⚙️ OPERATIONAL EFFICIENCY:
+
+  ✓ INVESTIGATE 100 ANOMALOUS SALES DAYS
+    • 2024-09-18: ₱118,645.44 (Score: -0.79)
+    • 2024-03-21: ₱66,970.49 (Score: -0.75)
+    • 2024-03-18: ₱87,535.88 (Score: -0.72)
+
+🏗️ RESOURCE PLANNING (Next 90 Days):
+
+  ✓ PREPARE FOR NEXT QUARTER:
+    • Storage needed: 71,597 cubic feet
+    • Capital required: ₱1,054,039.07

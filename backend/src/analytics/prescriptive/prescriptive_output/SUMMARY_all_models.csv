@@ -1,0 +1,9 @@
+Model,Records,CSV_File
+Model 1: Reorder Point,14,model_1_reorder_point.csv
+Model 2: EOQ,20,model_2_eoq.csv
+Model 3: Inventory Allocation,1,model_3_inventory_allocation.csv
+Model 4: What-If Analysis,50,model_4_whatif_analysis.csv
+Model 5: Discount Optimization,815,model_5_discount_by_product.csv
+Model 6: Resource Planning,2629,model_6_resource_planning.csv
+Model 7: Anomaly Detection,204,model_7_anomaly_detection.csv
+Model 8: Recommendations,1,model_8_prescriptive_recommendations.txt

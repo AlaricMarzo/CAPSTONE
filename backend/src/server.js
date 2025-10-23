@@ -3,6 +3,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 import morgan from "morgan"
 import uploadRouter from "./routes/upload.js"
+import analyticsRouter from "./routes/analytics.js"
 
 dotenv.config()
 const app = express()
@@ -15,6 +16,7 @@ app.use(express.json())
 app.get("/health", (_, res) => res.json({ status: "OK" }))
 
 app.use("/api", uploadRouter)
+app.use("/api/analytics", analyticsRouter)
 
 import multer from "multer";
 
