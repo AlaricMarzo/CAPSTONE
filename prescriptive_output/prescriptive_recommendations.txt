@@ -1,147 +1,61 @@
 ================================================================================
-PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS
-Generated: 2025-10-17 21:30:39
+PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
+Generated: 2025-10-23 15:34:52
 ================================================================================
 
 📦 INVENTORY MANAGEMENT RECOMMENDATIONS:
 
   ✓ HIGH PRIORITY REORDERS (Top 5 by demand):
-    • RETASAR (LOSARTAN POTASSIUM) 50MG: Reorder when stock falls below 393 units
-      - Maintain safety stock of 201 units
-      - Expected demand (30 days): 728 units
-    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder when stock falls below 373 units
-      - Maintain safety stock of 192 units
-      - Expected demand (30 days): 588 units
-    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder when stock falls below 166 units
-      - Maintain safety stock of 71 units
-      - Expected demand (30 days): 248 units
-    • BIOGESIC (PARACETAMOL) 500MG TAB: Reorder when stock falls below 169 units
-      - Maintain safety stock of 99 units
-      - Expected demand (30 days): 11 units
-    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Reorder when stock falls below 146 units
-      - Maintain safety stock of 77 units
-      - Expected demand (30 days): 332 units
+    • RETASAR (LOSARTAN POTASSIUM) 50MG: Reorder at 393 units
+      - Safety stock: 201 units | 30-day forecast: 728 units
+    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder at 373 units
+      - Safety stock: 192 units | 30-day forecast: 588 units
+    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder at 166 units
+      - Safety stock: 71 units | 30-day forecast: 248 units
+    • BIOGESIC (PARACETAMOL) 500MG TAB: Reorder at 169 units
+      - Safety stock: 99 units | 30-day forecast: 152 units
+    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Reorder at 146 units
+      - Safety stock: 77 units | 30-day forecast: 332 units
 
 📋 ORDERING STRATEGY RECOMMENDATIONS:
 
-  ✓ OPTIMAL ORDER QUANTITIES (Top 5 products):
+  ✓ OPTIMAL ORDER QUANTITIES (Top 5):
     • RETASAR (LOSARTAN POTASSIUM) 50MG: Order 2365 units every 77 days
-      - This minimizes total cost to $28,468.95/year
     • BIOGESIC (PARACETAMOL) 500MG TAB: Order 1747 units every 60 days
-      - This minimizes total cost to $46,236.11/year
     • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Order 799 units every 38 days
-      - This minimizes total cost to $110,907.45/year
     • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 1919 units every 97 days
-      - This minimizes total cost to $18,189.87/year
     • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Order 407 units every 22 days
-      - This minimizes total cost to $338,891.42/year
 
 💰 BUDGET ALLOCATION RECOMMENDATIONS:
 
   ✓ PRIORITIZE INVESTMENT IN:
-    • RETANIX (CETIRIZINE) 10MG TAB: Allocate 350388 units ($852,492.02)
-      - Expected profit: $712,336.82
+    • RETANIX (CETIRIZINE) 10MG TAB: 350364 units ($852,432.41)
 
 💵 PRICING & DISCOUNT RECOMMENDATIONS:
 
   ✓ MAINTAIN/INCREASE DISCOUNTS FOR:
-    • BETTER C (ASCORBIC ACID ) 500MG TAB: Current discount 0.0% is highly efficient
-      - Generates 9500.0 units per dollar of discount
-    • MULTICAPS: Current discount 0.0% is highly efficient
-      - Generates 7575.0 units per dollar of discount
-    • LIVERAIDE (SILYMARIN) CAP: Current discount 0.0% is highly efficient
-      - Generates 971.4 units per dollar of discount
-
-  ✓ REDUCE/ELIMINATE DISCOUNTS FOR:
-    • DUOTRAM (PARA + TRAMA HCL) 325MG/37.5MG TAB: Low efficiency (41.0 units/$)
-      - Consider reducing discount from 0.2%
-    • ZUNAMYN (SULTAMICILLIN) 750MG TAB: Low efficiency (41.0 units/$)
-      - Consider reducing discount from 0.0%
-    • FREDTOR (ATORVASTATIN) 40MG TAB 100&#039;s: Low efficiency (41.0 units/$)
-      - Consider reducing discount from 0.6%
+    • BETTER C (ASCORBIC ACID ) 500MG TAB: 0.0% discount (efficiency: 9500.0)
+    • MULTICAPS: 0.0% discount (efficiency: 7575.0)
+    • LIVERAIDE (SILYMARIN) CAP: 0.0% discount (efficiency: 971.4)
 
 📈 SALES GROWTH OPPORTUNITIES:
 
   ✓ PROMOTE HIGH-MARGIN PRODUCTS:
     • #EXP2025-03-30: 100.0% margin
-      - Increase visibility and marketing for this product
     • #EXP2025-03-31: 100.0% margin
-      - Increase visibility and marketing for this product
     • #EXP2026-07-30: 100.0% margin
-      - Increase visibility and marketing for this product
     • #EXP2027-05-24: 100.0% margin
-      - Increase visibility and marketing for this product
     • ALCIFLORA (BACILLUS CLAUSII) 5ML: 100.0% margin
-      - Increase visibility and marketing for this product
 
-  ✓ PRODUCTS WITH GROWTH POTENTIAL:
-    • RETASAR (LOSARTAN POTASSIUM) 50MG: Steady demand (27.4 units/day)
-      - Consider promotional campaigns to boost sales
-    • BIOGESIC (PARACETAMOL) 500MG TAB: Steady demand (10.1 units/day)
-      - Consider promotional campaigns to boost sales
-    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Steady demand (10.0 units/day)
-      - Consider promotional campaigns to boost sales
+⚙️ OPERATIONAL EFFICIENCY:
 
-⚙️ OPERATIONAL EFFICIENCY RECOMMENDATIONS:
+  ✓ INVESTIGATE 100 ANOMALOUS SALES DAYS
+    • 2024-09-18: $118,645.44 (Score: -0.79)
+    • 2024-03-21: $66,970.49 (Score: -0.75)
+    • 2024-03-18: $87,535.88 (Score: -0.72)
 
-  ✓ INVESTIGATE ANOMALOUS SALES DAYS:
-    • 104 days showed unusual patterns
-    • Review these dates for:
-      - Stock-outs or supply issues
-      - Unexpected demand spikes
-      - Data entry errors
-    • 2024-09-18: Sales $118,645.44 (Score: -0.79)
-    • 2024-03-21: Sales $66,970.49 (Score: -0.75)
-    • 2024-03-18: Sales $87,535.88 (Score: -0.73)
+🏗️ RESOURCE PLANNING (Next 90 Days):
 
-🏗️ RESOURCE PLANNING RECOMMENDATIONS:
-
-  ✓ PREPARE FOR NEXT 90 DAYS:
-    • Total storage space needed: 71,602 cubic feet
-    • Total capital required: $1,053,232.37
-    • Ensure adequate:
-      - Warehouse capacity
-      - Working capital/credit lines
-      - Staff for inventory management
-
-👥 CUSTOMER SEGMENT STRATEGY:
-
-  ✓ CUSTOMER GROUP INSIGHTS:
-    • Regular:
-      - Sales: $15,776,728.36
-      - Profit Margin: 21.1%
-      - Units Sold: 503,499
-    • Senior/PWD:
-      - Sales: $4,839,320.01
-      - Profit Margin: 13.2%
-      - Units Sold: 197,277
-
-🎯 QUICK WINS (Immediate Actions):
-
-  ✓ THIS WEEK:
-    1. Review and adjust reorder points for top 10 products
-    2. Implement EOQ-based ordering for high-volume items
-    3. Analyze anomalous sales days and document findings
-
-  ✓ THIS MONTH:
-    1. Optimize discount strategy based on efficiency analysis
-    2. Reallocate budget to high-margin products
-    3. Set up automated reorder alerts at calculated ROP levels
-    4. Train staff on new inventory management procedures
-
-  ✓ THIS QUARTER:
-    1. Implement full resource planning system
-    2. Develop customer segment-specific marketing campaigns
-    3. Review and optimize supplier relationships
-    4. Establish KPIs and monitoring dashboards
-
-⚠️ RISK MITIGATION:
-
-  ✓ MONITOR CLOSELY:
-    • High demand variability products:
-      - RETASAR (LOSARTAN POTASSIUM) 50MG: CV = 168.8%
-        → Maintain higher safety stock
-      - NOVASARTAN (LOSARTAN K) 50MG FC TAB: CV = 170.9%
-        → Maintain higher safety stock
-      - RETANIX (CETIRIZINE) 10MG TAB: CV = 415.5%
-        → Maintain higher safety stock
+  ✓ PREPARE FOR NEXT QUARTER:
+    • Storage needed: 71,597 cubic feet
+    • Capital required: $1,054,039.07
