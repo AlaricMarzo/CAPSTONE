@@ -132,6 +132,11 @@ def finalize_run(conn, run_id:str, status:str, rows_in:int, rows_out:int, rows_r
 # ---------- ensure objects ----------
 def ensure_indexes(conn):
     with conn, conn.cursor() as cur:
+        # Ensure fact_sales has required columns
+        cur.execute("""ALTER TABLE warehouse.fact_sales ADD COLUMN IF NOT EXISTS gross_amount NUMERIC;""")
+        cur.execute("""ALTER TABLE warehouse.fact_sales ADD COLUMN IF NOT EXISTS discount_rate NUMERIC;""")
+        cur.execute("""ALTER TABLE warehouse.fact_sales ADD COLUMN IF NOT EXISTS expiration_date DATE;""")
+
         cur.execute("""CREATE UNIQUE INDEX IF NOT EXISTS ux_stg_rowhash ON staging.sales_cleaned(row_hash);""")
         cur.execute("""CREATE UNIQUE INDEX IF NOT EXISTS ux_fact_rowhash ON warehouse.fact_sales(row_hash);""")
 
