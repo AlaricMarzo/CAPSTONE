@@ -31,7 +31,7 @@ export default function DataUploadPage() {
 
   const pollJobStatus = async (jobId: string) => {
     try {
-      const response = await fetch(`http://localhost:5050/api/job/${jobId}`);
+      const response = await fetch(`http://localhost:4000/api/job/${jobId}`);
       const data = await response.json();
 
       if (data.success) {
@@ -72,8 +72,8 @@ export default function DataUploadPage() {
       formData.append("files", file);
     });
 
-    // Fixed endpoint to match polling port (5050) and removed stray spaces
-    fetch("http://localhost:5050/api/upload", {
+    // Fixed endpoint to match polling port (4000) and removed stray spaces
+    fetch("http://localhost:4000/api/upload", {
       method: "POST",
       body: formData,
     })

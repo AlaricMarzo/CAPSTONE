@@ -11,10 +11,19 @@ import json  # Added json import for JSON output
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+# Apply performance optimizations first
 try:
-    from load_to_database import run_full_load
+    from apply_performance_fixes import apply_patches
+    apply_patches()
+    print("[PERF] ✅ Performance optimizations applied", file=sys.stderr)
 except ImportError as e:
-    print(f"ERROR: Could not import run_full_load: {e}", file=sys.stderr)  # Redirect to stderr
+    print(f"[PERF] ⚠️  Could not apply performance fixes: {e}", file=sys.stderr)
+    print("[PERF] Continuing with standard (slower) functions", file=sys.stderr)
+
+try:
+    from load_to_database import run_full_load, load_product_categories, get_category_for_product, get_tab_for_product
+except ImportError as e:
+    print(f"ERROR: Could not import required functions: {e}", file=sys.stderr)  # Redirect to stderr
     print(f"Python path: {sys.path}", file=sys.stderr)
     print(f"Current directory: {os.getcwd()}", file=sys.stderr)
     print(f"Script directory: {os.path.dirname(os.path.abspath(__file__))}", file=sys.stderr)
@@ -841,7 +850,8 @@ def clean_dataframe_improved(df):
     # -------- mapping into target schema --------
     target_columns = [
         'Date', 'Receipt', 'SO', 'Item Code', 'Description', 'Expiration Date',
-        'Qty', 'Unit', 'Discount', 'Sales', 'Cost', 'Profit', 'Payment', 'Cashier ID'
+        'Qty', 'Unit', 'Discount', 'Sales', 'Cost', 'Profit', 'Payment', 'Cashier ID',
+        'Category', 'Tab'
     ]
     column_mapping = map_columns_improved(df_clean, target_columns)
 
@@ -860,6 +870,29 @@ def clean_dataframe_improved(df):
             df_final[target_col] = pd.NA
             print(f"[WARNING] Created empty column for '{target_col}' (no source found)", file=sys.stderr)
     df_final['_row_id'] = df_clean['_row_id'].copy()
+
+    # -------- apply categorization BEFORE cleaning --------
+    print("\nAPPLYING CATEGORIZATION:", file=sys.stderr)
+    print("-" * 30, file=sys.stderr)
+
+    # Load product categories early
+    load_product_categories()
+
+    # Apply categorization to each row based on Item Code (much faster and more accurate!)
+    categorized_count = 0
+    for idx in df_final.index:
+        item_code = str(df_final.loc[idx, 'Item Code'] or '').strip()
+        description = str(df_final.loc[idx, 'Description'] or '').strip()
+        if item_code:
+            category = get_category_for_product(item_code, description)
+            tab = get_tab_for_product(item_code, description)
+            if category:
+                df_final.loc[idx, 'Category'] = category
+                categorized_count += 1
+            if tab:
+                df_final.loc[idx, 'Tab'] = tab
+
+    print(f"[OK] Applied categorization to {categorized_count} rows (by Item Code)", file=sys.stderr)
 
     # --- sanity: did mapping leave everything empty in key fields?
     important = ['Item Code','Description','Qty','Sales','Cost']
@@ -1281,7 +1314,7 @@ if __name__ == "__main__":
             raw_df=combined_cleaned_df,       # <-- use raw_df
             ensure_schema_once=False
         )
-            
+
         print(f"[SUCCESS] ETL load completed. run_id = {run_id}")
         print(f"   Loaded {len(combined_cleaned_df)} rows from {len(data_sources)} source file(s)", file=sys.stderr)
 
