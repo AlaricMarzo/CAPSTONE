@@ -91,6 +91,7 @@ def main():
     source_kind, source_value = _browse_or_path_or_url()
     df = _load_dataframe(source_kind, source_value)
 
+    # Prepare subfolders
     kpi_out = os.path.join(out_dir, "kpi_output")
     mba_out = os.path.join(out_dir, "mba_output")
     clu_out = os.path.join(out_dir, "clustering_output")
@@ -98,28 +99,24 @@ def main():
     os.makedirs(mba_out, exist_ok=True)
     os.makedirs(clu_out, exist_ok=True)
 
+    # ---------------- [1/3] KPIs ----------------
     print("\n[1/3] Running KPIs ...")
     kpi_res = compute_kpis(df, kpi_out)
     print("✓ KPIs done.")
     print(f"   Avg monthly sales growth: {kpi_res.get('avg_monthly_growth_rate')}")
 
+    # ---------------- [2/3] MBA -----------------
     print("\n[2/3] Running Market-Basket (MBA) ...")
     mba_res = run_mba(df, mba_out)
     print(f"✓ MBA done. Rules generated: {mba_res.get('rules_count')}")
 
+    # ---------------- [3/3] Clustering ----------
     print("\n[3/3] Running Clustering (self-setting K) ...")
-    clu_res = cluster_all(
-        df, clu_out,
-        by_tab=True,
-        by_category=False,        # flip to True to also generate by-category clusters
-        use_sampling_for_silhouette=False,  # FULL DATA
-        label_points=False,
-        max_point_labels=0,
-        make_zoomed_variant=True,
-        make_per_cluster_panels=True
-    )
+    # NOTE: clustering.cluster_all takes only (df, out_dir, random_state)
+    clu_res = cluster_all(df, clu_out)
     print(f"✓ Clustering done. Global k={clu_res['global']['k']} (silhouette={clu_res['global']['silhouette']:.3f})")
 
+    # ---------------- Manifest ------------------
     manifest = {
         "kpi_outputs": [str(p) for p in Path(kpi_out).glob("*.*")],
         "mba_outputs": [str(p) for p in Path(mba_out).glob("*.*")],
