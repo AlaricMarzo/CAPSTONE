@@ -1,0 +1,82 @@
+[
+  {
+    "item_code":"98057740",
+    "description":"VAXIRAB 2.5 IU 1ML",
+    "category":"COLD CHAIN",
+    "tab":"PRESCRIPTION",
+    "total_sales":1080064.0,
+    "total_qty":596.0
+  },
+  {
+    "item_code":"77965633",
+    "description":"HOSPITAL BED 2-CRANKS MANUAL",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":344871.06,
+    "total_qty":22.0
+  },
+  {
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":333887.27,
+    "total_qty":6784.0
+  },
+  {
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":266166.57,
+    "total_qty":4140.0
+  },
+  {
+    "item_code":"4800308100473",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":230301.7,
+    "total_qty":618.0
+  },
+  {
+    "item_code":"33835549",
+    "description":"RECLINING WHEELCHAIR WITH COMMODE",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":137086.86,
+    "total_qty":14.0
+  },
+  {
+    "item_code":"4300010005",
+    "description":"WHEELCHAIR BLACK ECONO",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":118498.6,
+    "total_qty":30.0
+  },
+  {
+    "item_code":"77939425",
+    "description":"HOSPITAL BED 3 CRANKS MANUAL",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":116342.74,
+    "total_qty":4.0
+  },
+  {
+    "item_code":"4806504653348",
+    "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":112370.0,
+    "total_qty":3255.0
+  },
+  {
+    "item_code":"4806504260614",
+    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":108060.6,
+    "total_qty":7580.0
+  }
+]

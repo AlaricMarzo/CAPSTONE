@@ -108,6 +108,7 @@
     "kpi_active_skus_monthly.json",
     "kpi_category_split_monthly.csv",
     "kpi_category_split_monthly.json",
+    "kpi_manifest.json",
     "kpi_monthly_sales_qty.csv",
     "kpi_monthly_sales_qty.json",
     "kpi_season_index_category.csv",
