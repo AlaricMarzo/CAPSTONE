@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 from matplotlib.ticker import FuncFormatter
 from matplotlib.colors import TwoSlopeNorm
 
@@ -13,15 +14,12 @@ from matplotlib.colors import TwoSlopeNorm
 mpl.rcParams["figure.dpi"] = 120
 mpl.rcParams["savefig.bbox"] = "tight"
 
-FIGSIZE = (10, 6)  # compact window for all non-heatmaps
+FIGSIZE = (10, 6)  # compact window for most plots
 
 def _new_fig(figsize=FIGSIZE, left=0.12, right=0.98, top=0.92, bottom=0.35):
-    """
-    Create a compact figure with generous margins so tick labels never clip.
-    bottom=0.35 is deliberately large since we rotate x-ticks (works even at (10,6)).
-    """
+    """Compact figure with big bottom margin so rotated x-ticks never clip."""
     fig, ax = plt.subplots(figsize=figsize)
-    fig.set_constrained_layout(False)  # allow manual margins
+    fig.set_constrained_layout(False)
     fig.subplots_adjust(left=left, right=right, top=top, bottom=bottom)
     ax.tick_params(labelsize=9)
     return fig, ax
@@ -38,8 +36,10 @@ def _ensure_dir(p: Path) -> Path:
     p.mkdir(parents=True, exist_ok=True); return p
 
 def _to_json(df: pd.DataFrame, path: Path):
-    path.write_text(df.to_json(orient="records", date_format="iso", force_ascii=False, indent=2),
-                    encoding="utf-8")
+    path.write_text(
+        df.to_json(orient="records", date_format="iso", force_ascii=False, indent=2),
+        encoding="utf-8"
+    )
 
 def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
@@ -61,10 +61,7 @@ def _fmt_int(ax, *, x_numeric: bool=False, y_numeric: bool=True):
         ax.xaxis.set_major_formatter(FuncFormatter(lambda v, p: f"{int(round(v)):,}"))
 
 def _set_zoom_limits(ax, ydata, lower_q=2, upper_q=98, pad_frac=0.06):
-    """
-    Zoom toward the center but ALWAYS include the true min/max (+ padding),
-    so no markers get cropped even on a small figure.
-    """
+    """Zoom inward but always include true min/max (+padding) so nothing clips."""
     y = pd.Series(ydata).dropna().astype(float)
     if len(y) == 0: return
     y_min, y_max = float(y.min()), float(y.max())
@@ -73,63 +70,7 @@ def _set_zoom_limits(ax, ydata, lower_q=2, upper_q=98, pad_frac=0.06):
     span = max(hi - lo, 1.0)
     ax.set_ylim(lo - pad_frac*span, hi + pad_frac*span)
 
-# ---------------------------- plotting ----------------------------
-def _plot_monthly(monthly: pd.DataFrame, out_dir: Path):
-    if monthly.empty: return
-    monthly_sorted = monthly.sort_values("month")
-
-    # SALES
-    fig, ax = _new_fig()
-    ax.plot(monthly_sorted["month"], monthly_sorted["total_sales"], marker="o", linewidth=1.5, markersize=4)
-    ax.set_title("Monthly Total Sales")
-    ax.set_xlabel("Month"); ax.set_ylabel("Sales")
-    plt.xticks(rotation=60, ha="right")
-    _fmt_int(ax, y_numeric=True)
-    _set_zoom_limits(ax, monthly_sorted["total_sales"])
-    _finalize(fig, out_dir / "fig_monthly_sales.png")
-
-    # QUANTITY
-    fig, ax = _new_fig()
-    ax.plot(monthly_sorted["month"], monthly_sorted["total_qty"], marker="o", linewidth=1.5, markersize=4)
-    ax.set_title("Monthly Total Quantity")
-    ax.set_xlabel("Month"); ax.set_ylabel("Quantity")
-    plt.xticks(rotation=60, ha="right")
-    _fmt_int(ax, y_numeric=True)
-    _set_zoom_limits(ax, monthly_sorted["total_qty"])
-    _finalize(fig, out_dir / "fig_monthly_qty.png")
-
-def _plot_yearly(yearly: pd.DataFrame, out_dir: Path):
-    if yearly.empty: return
-    fig, ax = _new_fig(bottom=0.22)
-    ax.bar(yearly["year"].astype(str), yearly["total_sales"])
-    ax.set_title("Yearly Total Sales")
-    ax.set_xlabel("Year"); ax.set_ylabel("Sales")
-    _fmt_int(ax, y_numeric=True)
-    _set_zoom_limits(ax, yearly["total_sales"], lower_q=0, upper_q=100)
-    _finalize(fig, out_dir / "fig_yearly_sales.png")
-
-    fig, ax = _new_fig(bottom=0.22)
-    ax.bar(yearly["year"].astype(str), yearly["total_qty"])
-    ax.set_title("Yearly Total Quantity")
-    ax.set_xlabel("Year"); ax.set_ylabel("Quantity")
-    _fmt_int(ax, y_numeric=True)
-    _set_zoom_limits(ax, yearly["total_qty"], lower_q=0, upper_q=100)
-    _finalize(fig, out_dir / "fig_yearly_qty.png")
-
-def _plot_top10(top10_sales: pd.DataFrame, out_dir: Path):
-    if top10_sales.empty: return
-    top10 = top10_sales.copy()
-    top10["label"] = (top10["description"].astype(str) + " • " + top10["category"].astype(str)).str.slice(0, 60)
-    top10 = top10.sort_values("total_sales", ascending=True)
-
-    # extra left margin for long labels
-    fig, ax = _new_fig(left=0.35, bottom=0.12)
-    ax.barh(top10["label"], top10["total_sales"])
-    ax.set_title("Top 10 Best-Selling Products (by Sales) — Overall")
-    ax.set_xlabel("Total Sales"); ax.set_ylabel("Product")
-    _fmt_int(ax, x_numeric=True, y_numeric=False)
-    _finalize(fig, out_dir / "fig_top10_sales.png")
-
+# ---------------------------- heatmap (unchanged) ----------------------------
 def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     if season.empty: return
     pivot = season.pivot(index="category", columns="month_num", values="season_index").sort_index()
@@ -139,7 +80,6 @@ def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     vmax = min(1.6, np.nanpercentile(vals, 90)) if vals.size else 1.6
     norm = TwoSlopeNorm(vmin=vmin, vcenter=1.0, vmax=vmax)
 
-    # Heatmap remains tall for readability of y-labels
     fig_height = max(12, len(pivot) * 0.65)
     fig, ax = plt.subplots(figsize=(12, fig_height))
     fig.set_constrained_layout(False)
@@ -151,7 +91,6 @@ def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     ax.set_xticks(range(len(pivot.columns))); ax.set_xticklabels(pivot.columns)
     ax.set_yticks(range(len(pivot.index))); ax.set_yticklabels(pivot.index)
 
-    # annotate values
     for i in range(pivot.shape[0]):
         for j in range(pivot.shape[1]):
             val = pivot.iat[i, j]
@@ -161,6 +100,91 @@ def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     cbar = plt.colorbar(im, ax=ax)
     cbar.set_label("Season Index (center=1.0)")
     _finalize(fig, out_dir / "fig_season_index_heatmap.png")
+
+# ---------------------------- NEW: combined figures ----------------------------
+def _plot_sales_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir: Path):
+    if monthly.empty or yearly.empty: return
+    monthly = monthly.sort_values("month")
+    years = yearly["year"].astype(int).to_numpy()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+    fig.set_constrained_layout(False)
+    fig.subplots_adjust(left=0.07, right=0.98, top=0.88, bottom=0.34, wspace=0.22)
+
+    # Left: monthly sales
+    ax1.plot(monthly["month"], monthly["total_sales"], marker="o", linewidth=1.6, markersize=4, label="Sales")
+    ax1.set_title("Total Sales per Month")
+    ax1.set_xlabel("Month"); ax1.set_ylabel("Sales")
+    for label in ax1.get_xticklabels():
+        label.set_rotation(60); label.set_ha("right")
+    _fmt_int(ax1, y_numeric=True)
+    _set_zoom_limits(ax1, monthly["total_sales"])
+
+    # Right: yearly sales (force integer ticks & labels)
+    ax2.plot(years, yearly["total_sales"], marker="o", linewidth=1.8, label="Sales")
+    ax2.set_title("Total Sales per Year")
+    ax2.set_xlabel("Year"); ax2.set_ylabel("Sales")
+    _fmt_int(ax2, y_numeric=True)
+    _set_zoom_limits(ax2, yearly["total_sales"], lower_q=0, upper_q=100)
+
+    # <<< this is the key >>>
+    ax2.set_xticks(years)
+    ax2.set_xticklabels([str(y) for y in years])
+    ax2.xaxis.set_major_locator(mticker.FixedLocator(years))
+    ax2.xaxis.set_major_formatter(mticker.FixedFormatter([str(y) for y in years]))
+    # optional small padding so endpoints aren’t clipped
+    ax2.set_xlim(years.min() - 0.2, years.max() + 0.2)
+
+    ax2.legend()
+
+    out_path = Path(out_dir) / "fig_sales_month_vs_year.png"
+    fig.savefig(out_path, dpi=240, bbox_inches="tight")
+    print(f"✓ Saved figure: {out_path}")
+    try:
+        plt.show()
+    finally:
+        plt.close(fig)
+
+def _plot_qty_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir: Path):
+    if monthly.empty or yearly.empty: return
+    monthly = monthly.sort_values("month")
+    years = yearly["year"].astype(int).to_numpy()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+    fig.set_constrained_layout(False)
+    fig.subplots_adjust(left=0.07, right=0.98, top=0.88, bottom=0.34, wspace=0.22)
+
+    # Left: monthly qty
+    ax1.plot(monthly["month"], monthly["total_qty"], marker="o", linewidth=1.6, markersize=4, label="Quantity")
+    ax1.set_title("Total Quantity per Month")
+    ax1.set_xlabel("Month"); ax1.set_ylabel("Quantity")
+    for label in ax1.get_xticklabels():
+        label.set_rotation(60); label.set_ha("right")
+    _fmt_int(ax1, y_numeric=True)
+    _set_zoom_limits(ax1, monthly["total_qty"])
+
+    # Right: yearly qty (force integer ticks & labels)
+    ax2.plot(years, yearly["total_qty"], marker="o", linewidth=1.8, label="Quantity")
+    ax2.set_title("Total Quantity per Year")
+    ax2.set_xlabel("Year"); ax2.set_ylabel("Quantity")
+    _fmt_int(ax2, y_numeric=True)
+    _set_zoom_limits(ax2, yearly["total_qty"], lower_q=0, upper_q=100)
+
+    ax2.set_xticks(years)
+    ax2.set_xticklabels([str(y) for y in years])
+    ax2.xaxis.set_major_locator(mticker.FixedLocator(years))
+    ax2.xaxis.set_major_formatter(mticker.FixedFormatter([str(y) for y in years]))
+    ax2.set_xlim(years.min() - 0.2, years.max() + 0.2)
+
+    ax2.legend()
+
+    out_path = Path(out_dir) / "fig_qty_month_vs_year.png"
+    fig.savefig(out_path, dpi=240, bbox_inches="tight")
+    print(f"✓ Saved figure: {out_path}")
+    try:
+        plt.show()
+    finally:
+        plt.close(fig)
 
 # ---------------------------- KPI compute ----------------------------
 def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
@@ -237,11 +261,12 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
     else:
         avg_monthly_growth = np.nan
 
-    # Save CSV + JSON
+    # Save CSV + JSON (unchanged)
     def save(df_, name):
         (out_path / f"{name}.csv").write_text(df_.to_csv(index=False), encoding="utf-8")
         _to_json(df_, out_path / f"{name}.json")
 
+    out_path = out_dir = _ensure_dir(out_path)  # keep alias used above
     save(monthly, "kpi_monthly_sales_qty")
     save(yearly,  "kpi_yearly_sales_qty")
     save(top10_sales, "kpi_top10_by_sales")
@@ -257,16 +282,15 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
     save(active_items_yearly,  "kpi_active_skus_items_yearly")
     save(season,               "kpi_season_index_category")
 
-    # PNGs
-    _plot_monthly(monthly, out_path)
-    _plot_yearly(yearly, out_path)
-    _plot_top10(top10_sales, out_path)
-    _plot_season_index_heatmap(season, out_path)
+    # --------- ONLY TWO FIGURES NOW (each has 2 plots) ---------
+    _plot_sales_month_vs_year(monthly, yearly, out_path)
+    _plot_qty_month_vs_year(monthly, yearly, out_path)
+    _plot_season_index_heatmap(season, out_path)  # keep this single heatmap
 
-    # ---------- NEW: lightweight manifest for frontend filters ----------
+    # ---------- Manifest for frontend filters ----------
     manifest = {
         "years": sorted([int(y) for y in df["year"].dropna().unique().tolist()]),
-        "months": sorted(df["month"].dropna().unique().tolist()),  # "YYYY-MM"
+        "months": sorted(df["month"].dropna().unique().tolist()),
         "categories": sorted([str(x) for x in df["category"].dropna().unique().tolist()]),
         "tabs": sorted([str(x) for x in df["tab"].dropna().unique().tolist()]),
         "files": sorted([p.name for p in out_path.glob("*.*")])
