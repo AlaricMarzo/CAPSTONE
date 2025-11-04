@@ -96,14 +96,11 @@
     "PROMOTIONS"
   ],
   "files": [
-    "fig_monthly_qty.png",
-    "fig_monthly_sales.png",
     "fig_qty_month_vs_year.png",
     "fig_sales_month_vs_year.png",
     "fig_season_index_heatmap.png",
     "fig_top10_sales.png",
-    "fig_yearly_qty.png",
-    "fig_yearly_sales.png",
+    "fig_top10_sales_and_qty.png",
     "kpi_active_skus_items_monthly.csv",
     "kpi_active_skus_items_monthly.json",
     "kpi_active_skus_items_yearly.csv",
