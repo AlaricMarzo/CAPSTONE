@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
-from matplotlib.ticker import FuncFormatter
+from matplotlib.ticker import FuncFormatter, PercentFormatter
 from matplotlib.colors import TwoSlopeNorm
 import textwrap
 
@@ -212,14 +212,11 @@ def _plot_top10_sales_and_qty(top10_sales: pd.DataFrame, top10_qty: pd.DataFrame
     ax1.set_xlabel("Total Sales"); ax1.set_ylabel("")
     _fmt_int(ax1, x_numeric=True, y_numeric=False)
 
-
-
     # right: qty
     ax2.barh(q_lab.iloc[::-1], q_val.iloc[::-1], color="#91bfdb")
     ax2.set_title("Top 10 Products by Quantity Sold")
     ax2.set_xlabel("Units Sold"); ax2.set_ylabel("")
     _fmt_int(ax2, x_numeric=True, y_numeric=False)
-
 
     out_path = Path(out_dir) / "fig_top10_sales_and_qty.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
@@ -228,6 +225,71 @@ def _plot_top10_sales_and_qty(top10_sales: pd.DataFrame, top10_qty: pd.DataFrame
         plt.show()
     finally:
         plt.close(fig)
+
+# ---------------------------- NEW: Monthly Sales Growth Rate (%) ----------------------------
+def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, float]:
+    """
+    Create monthly % growth line, save CSV + PNG, and return two averages:
+    - cagr_avg: CAGR-style average monthly growth from first to last point
+    - mean_avg: arithmetic mean of month-over-month % changes
+    """
+    if monthly.empty:
+        return {"cagr_avg": np.nan, "mean_avg": np.nan}
+
+    m = monthly.copy()
+    # ensure chronological order by parsing Month strings (YYYY-MM)
+    m["_d"] = pd.to_datetime(m["month"], errors="coerce")
+    m = m.dropna(subset=["_d"]).sort_values("_d")
+
+    ser = m.set_index("month")["total_sales"].astype(float)
+    growth_pct = ser.pct_change() * 100.0
+    growth_df = growth_pct.dropna().reset_index()
+    growth_df.columns = ["month", "growth_pct"]
+
+    # Save CSV
+    out_dir = Path(out_dir)
+    (out_dir / "kpi_monthly_sales_growth_rate.csv").write_text(
+        growth_df.to_csv(index=False), encoding="utf-8"
+    )
+
+    # Figure
+    fig, ax = plt.subplots(figsize=(14, 3.8))
+    fig.set_constrained_layout(False)
+    fig.subplots_adjust(left=0.08, right=0.98, top=0.86, bottom=0.40)
+
+    ax.plot(growth_df["month"], growth_df["growth_pct"], marker="o", linewidth=1.4, markersize=3, label="Growth %")
+    ax.axhline(0, color="#888", linewidth=1)
+    ax.set_title("Monthly Sales Growth Rate (%)")
+    ax.set_xlabel("Month"); ax.set_ylabel("Growth (%)")
+
+    for label in ax.get_xticklabels():
+        label.set_rotation(60); label.set_ha("right")
+
+    ax.yaxis.set_major_formatter(PercentFormatter(xmax=100))
+    _set_zoom_limits(ax, growth_df["growth_pct"], lower_q=1, upper_q=99)
+
+    out_path = out_dir / "fig_monthly_sales_growth_rate.png"
+    fig.savefig(out_path, dpi=240, bbox_inches="tight")
+    print(f"✓ Saved figure: {out_path}")
+    try:
+        plt.show()
+    finally:
+        plt.close(fig)
+
+    # Averages
+    # CAGR-style average monthly growth (uses first/last non-null points)
+    ser_nonnull = ser.dropna()
+    if len(ser_nonnull) >= 2 and ser_nonnull.iloc[0] != 0:
+        n_months = len(ser_nonnull) - 1
+        cagr_avg = (ser_nonnull.iloc[-1] / ser_nonnull.iloc[0]) ** (1 / n_months) - 1
+    else:
+        cagr_avg = np.nan
+
+    # Arithmetic mean of monthly % changes
+    mean_avg = (growth_df["growth_pct"] / 100.0).mean() if not growth_df.empty else np.nan
+
+    return {"cagr_avg": float(cagr_avg) if pd.notnull(cagr_avg) else np.nan,
+            "mean_avg": float(mean_avg) if pd.notnull(mean_avg) else np.nan}
 
 # ---------------------------- KPI compute ----------------------------
 def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
@@ -296,15 +358,12 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
     season = season[["category","month_num","month_sales","avg_sales","season_index"]]\
                  .sort_values(["category","month_num"])
 
-    # Avg monthly growth (CAGR-style)
-    mser = monthly.set_index("month")["total_sales"].sort_index()
-    if len(mser) >= 2 and pd.notnull(mser.iloc[0]) and mser.iloc[0] != 0:
-        months_n = len(mser) - 1
-        avg_monthly_growth = (mser.iloc[-1] / mser.iloc[0]) ** (1/months_n) - 1
-    else:
-        avg_monthly_growth = np.nan
+    # --- NEW: Monthly growth artefacts (CSV + plot) and averages
+    growth_avgs = _plot_monthly_growth(monthly, out_path)
+    cagr_avg = growth_avgs["cagr_avg"]
+    mean_avg = growth_avgs["mean_avg"]
 
-    # Save CSV + JSON (unchanged)
+    # Save CSV + JSON
     def save(df_, name):
         (out_path / f"{name}.csv").write_text(df_.to_csv(index=False), encoding="utf-8")
         _to_json(df_, out_path / f"{name}.json")
@@ -328,8 +387,8 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
     # --------- FIGURES ---------
     _plot_sales_month_vs_year(monthly, yearly, out_path)
     _plot_qty_month_vs_year(monthly, yearly, out_path)
-    _plot_top10_sales_and_qty(top10_sales, top10_qty, out_path)  # << NEW combined Top10 figure
-    _plot_season_index_heatmap(season, out_path)                 # keep heatmap
+    _plot_top10_sales_and_qty(top10_sales, top10_qty, out_path)
+    _plot_season_index_heatmap(season, out_path)
 
     # ---------- Manifest for frontend filters ----------
     manifest = {
@@ -348,7 +407,9 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
             "date_max": str(df["date"].max().date()) if pd.notnull(df["date"].max()) else None,
             "unique_products": int(df["description"].nunique()),
         },
-        "avg_monthly_growth_rate": float(avg_monthly_growth) if pd.notnull(avg_monthly_growth) else None,
+        # Averages for you to show in the dashboard:
+        "avg_monthly_growth_rate_cagr": float(cagr_avg) if pd.notnull(cagr_avg) else None,   # e.g., 0.0123 (→1.23%)
+        "avg_monthly_growth_rate_mean": float(mean_avg) if pd.notnull(mean_avg) else None,   # arithmetic mean of MoM %
         "outputs": [str(p) for p in out_path.glob("*.csv")]
                 + [str(p) for p in out_path.glob("*.json")]
                 + [str(p) for p in out_path.glob("*.png")]

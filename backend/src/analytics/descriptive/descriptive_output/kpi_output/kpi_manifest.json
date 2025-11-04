@@ -96,6 +96,7 @@
     "PROMOTIONS"
   ],
   "files": [
+    "fig_monthly_sales_growth_rate.png",
     "fig_qty_month_vs_year.png",
     "fig_sales_month_vs_year.png",
     "fig_season_index_heatmap.png",
@@ -110,6 +111,7 @@
     "kpi_category_split_monthly.csv",
     "kpi_category_split_monthly.json",
     "kpi_manifest.json",
+    "kpi_monthly_sales_growth_rate.csv",
     "kpi_monthly_sales_qty.csv",
     "kpi_monthly_sales_qty.json",
     "kpi_season_index_category.csv",
