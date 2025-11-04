@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-11-04T21:46:55.084667",
+  "input_file": {
+    "name": "ANC - 4 YEARS (1).csv",
+    "path": "C:\\Users\\admin\\Downloads\\ANC - 4 YEARS (1).csv",
+    "rows": 119881,
+    "columns": 20,
+    "column_names": [
+      "run_id",
+      "date",
+      "receipt",
+      "so",
+      "item_code",
+      "description",
+      "expiration_date",
+      "qty",
+      "unit",
+      "discount",
+      "sales",
+      "cost",
+      "profit",
+      "payment",
+      "cashier_id",
+      "txn_type",
+      "row_hash",
+      "loaded_at",
+      "category",
+      "tab"
+    ]
+  },
+  "execution_stages": {
+    "descriptive": {
+      "kpi": {
+        "status": "success"
+      },
+      "mba": {
+        "status": "success"
+      },
+      "clustering": {
+        "status": "success"
+      },
+      "status": "complete",
+      "output_dir": "descriptive_output"
+    },
+    "predictive": {
+      "random_forest": {
+        "status": "success",
+        "output_dir": "ml_random_forest"
+      },
+      "xgboost": {
+        "status": "success",
+        "output_dir": "ml_xgboost_model"
+      },
+      "sarima_ets": {
+        "status": "module_not_found"
+      },
+      "status": "complete"
+    },
+    "prescriptive": {
+      "products_analyzed": 4399,
+      "reorder_points": 10,
+      "eoq_calculations": 10,
+      "allocation_optimized": 1,
+      "whatif_analysis": true,
+      "discount_analysis": 2,
+      "resource_planning": {
+        "products_planned": 4399,
+        "total_storage": 71597.46073793755,
+        "total_capital": 1054039.070860927
+      },
+      "anomalies_detected": 100,
+      "status": "partial",
+      "output_dir": "prescriptive_output"
+    }
+  },
+  "completion_time": "2025-11-04T21:46:55.084680"
+}
