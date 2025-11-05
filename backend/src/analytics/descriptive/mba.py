@@ -24,10 +24,7 @@ def _new_fig(figsize=FIGSIZE, left=0.35, right=0.98, top=0.92, bottom=0.14):
 def _finalize(fig: plt.Figure, path: Path):
     fig.savefig(path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 def _ensure_dir(p: Path) -> Path:
     p.mkdir(parents=True, exist_ok=True); return p

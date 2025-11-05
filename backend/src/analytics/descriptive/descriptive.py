@@ -5,7 +5,7 @@ import pandas as pd
 
 from kpi import compute_kpis
 from mba import run_mba
-from clustering import cluster_all
+from dbscan import cluster_all
 
 def _read_csv_robust(path_or_buf):
     for enc in ("utf-8-sig", "utf-8", "cp1252", "latin1"):
@@ -111,10 +111,10 @@ def main():
     print(f"✓ MBA done. Rules generated: {mba_res.get('rules_count')}")
 
     # ---------------- [3/3] Clustering ----------
-    print("\n[3/3] Running Clustering (self-setting K) ...")
-    # NOTE: clustering.cluster_all takes only (df, out_dir, random_state)
+    print("\n[3/3] Running Clustering (DBSCAN) ...")
+    # NOTE: dbscan.cluster_all takes only (df, out_dir, random_state)
     clu_res = cluster_all(df, clu_out)
-    print(f"✓ Clustering done. Global k={clu_res['global']['k']} (silhouette={clu_res['global']['silhouette']:.3f})")
+    print(f"✓ Clustering done. Global n_clusters={clu_res['global']['n_clusters']}, n_noise={clu_res['global']['n_noise']}")
 
     # ---------------- Manifest ------------------
     manifest = {

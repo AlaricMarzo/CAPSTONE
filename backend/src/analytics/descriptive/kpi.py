@@ -28,10 +28,7 @@ def _new_fig(figsize=FIGSIZE, left=0.12, right=0.98, top=0.92, bottom=0.35):
 def _finalize(fig: plt.Figure, path: Path):
     fig.savefig(path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 def _ensure_dir(p: Path) -> Path:
     p.mkdir(parents=True, exist_ok=True); return p
@@ -146,10 +143,7 @@ def _plot_sales_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_d
     out_path = Path(out_dir) / "fig_sales_month_vs_year.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {out_path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 def _plot_qty_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir: Path):
     if monthly.empty or yearly.empty: return
@@ -186,10 +180,7 @@ def _plot_qty_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir
     out_path = Path(out_dir) / "fig_qty_month_vs_year.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {out_path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 # ---------------------------- NEW: Top10 Sales & Qty side-by-side ----------------------------
 def _plot_top10_sales_and_qty(top10_sales: pd.DataFrame, top10_qty: pd.DataFrame, out_dir: Path):
@@ -221,10 +212,7 @@ def _plot_top10_sales_and_qty(top10_sales: pd.DataFrame, top10_qty: pd.DataFrame
     out_path = Path(out_dir) / "fig_top10_sales_and_qty.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {out_path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 # ---------------------------- NEW: Monthly Sales Growth Rate (%) ----------------------------
 def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, float]:
@@ -271,10 +259,7 @@ def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, floa
     out_path = out_dir / "fig_monthly_sales_growth_rate.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {out_path}")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
     # Averages
     # CAGR-style average monthly growth (uses first/last non-null points)
