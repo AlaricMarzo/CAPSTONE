@@ -24,8 +24,10 @@ def _new_fig(figsize=FIGSIZE, left=0.35, right=0.98, top=0.92, bottom=0.14):
 def _finalize(fig: plt.Figure, path: Path):
     fig.savefig(path, dpi=240, bbox_inches="tight")
     print(f"✓ Saved figure: {path}")
-    try: plt.show()
-    finally: plt.close(fig)
+    try:
+        plt.show()
+    finally:
+        plt.close(fig)
 
 def _ensure_dir(p: Path) -> Path:
     p.mkdir(parents=True, exist_ok=True); return p
@@ -175,20 +177,24 @@ def _anchors_view(rules: pd.DataFrame, topn=5) -> pd.DataFrame:
         columns=["anchor","complement","lift","confidence_pct","support_pct","pair_tx"])
 
 def _plot_rules(rules: pd.DataFrame, out_path: Path):
-    if rules.empty: return
-    top = rules.head(20).copy()
-    labels = (top["item_a"] + " + " + top["item_b"]).str.slice(0, 60)
+    if rules.empty:
+        return
 
-    # LIFT
+    # -------- LIFT: take top 20 by lift --------
+    top_lift = rules.sort_values("lift", ascending=False).head(20).copy()
+    labels_lift = (top_lift["item_a"] + " + " + top_lift["item_b"]).str.slice(0, 60)
     fig, ax = _new_fig()
-    ax.barh(labels.iloc[::-1], top["lift"].iloc[::-1])
+    # reverse to show highest at the TOP
+    ax.barh(labels_lift.iloc[::-1], top_lift["lift"].iloc[::-1])
     ax.set_title("Top 20 Association Rules by Lift (↑ stronger than chance)")
     ax.set_xlabel("Lift"); ax.set_ylabel("Item Pair")
     _finalize(fig, out_path / "fig_mba_top20_lift.png")
 
-    # CONFIDENCE (%)
+    # -------- CONFIDENCE A→B: take top 20 by confidence_a_to_b --------
+    top_conf = rules.sort_values("confidence_a_to_b", ascending=False).head(20).copy()
+    labels_conf = (top_conf["item_a"] + " → " + top_conf["item_b"]).str.slice(0, 60)
     fig, ax = _new_fig()
-    ax.barh(labels.iloc[::-1], (top["confidence_a_to_b"] * 100).iloc[::-1])
+    ax.barh(labels_conf.iloc[::-1], (top_conf["confidence_a_to_b"] * 100).iloc[::-1])
     ax.set_title("Top 20 Association Rules by Confidence A→B (percent)")
     ax.set_xlabel("Confidence (%)"); ax.set_ylabel("Item Pair")
     _finalize(fig, out_path / "fig_mba_top20_confidence_a_to_b.png")
@@ -260,7 +266,6 @@ def run_mba(
     anchors = _anchors_view(rules, topn=topn_anchor) if not rules.empty else pd.DataFrame()
 
     # Item list for frontend (anchors dropdown/search)
-    # Compute support % relative to valid transactions
     items_rows = []
     if n_tx > 0:
         for item, tx_cnt in item_counts.items():
