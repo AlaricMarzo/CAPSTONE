@@ -303,7 +303,7 @@ prescriptive_manifest = {}
 
 try:
     from Prescriptive.prescriptive import (
-        validate_dataframe, to_numeric_safe, REQUIRED_COLUMNS,
+        validate_dataframe, to_numeric_safe, CORE_REQUIRED,
         calculate_reorder_point, calculate_eoq, optimize_inventory_allocation,
         what_if_analysis, optimize_discount_strategy, resource_planning,
         detect_anomalies, generate_recommendations

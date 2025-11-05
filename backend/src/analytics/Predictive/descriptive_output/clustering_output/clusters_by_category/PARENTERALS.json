@@ -1,0 +1,16 @@
+[
+  {
+    "item_code":"6948909300224",
+    "description":"STERILE WATER FOR INJECTION 50ML",
+    "category":"PARENTERALS",
+    "tab":"GENERICS",
+    "total_qty":4.0,
+    "total_sales":340.0,
+    "months_active":1.0,
+    "avg_price":85.0,
+    "mean_monthly_qty":4.0,
+    "cv_monthly_qty":0.0,
+    "trend_qty_slope":0.0,
+    "cluster":0
+  }
+]

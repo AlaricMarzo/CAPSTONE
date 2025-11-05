@@ -5,9 +5,13 @@ RandomForest monthly forecast with walk-forward MASE, SN blend, bias correction.
 Matches the ExtraTrees pipeline for apples-to-apples comparison.
 
 Run:
-  python random_forest.py --input "cleaned/ANC - 4 YEARS (1).csv" --topn 5 --min_cov 0.7
+  python random_forest.py --topn 5 --min_cov 0.7
 """
+import os
+os.environ['MPLBACKEND'] = 'Agg'
 import warnings, argparse, re, sys
+import tkinter as tk
+from tkinter import filedialog
 from pathlib import Path
 from typing import Dict, List, Tuple, Callable
 import numpy as np, pandas as pd
@@ -15,6 +19,7 @@ import numpy as np, pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.ioff()
 import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
 
@@ -175,13 +180,29 @@ def fit_fn_rf_1step(hist: pd.Series):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--input", type=str, default="")
     ap.add_argument("--topn", type=int, default=TOP_N)
     ap.add_argument("--min_cov", type=float, default=0.7)
+    ap.add_argument("--input", type=str, help="Path to input data file (CSV or Excel)")
     args=ap.parse_args()
 
-    in_path = Path(args.input) if args.input else (DATA_DIR/"ANC - 4 YEARS (1).csv")
-    if not in_path.exists(): sys.exit(f"Input not found: {in_path}")
+    if args.input:
+        in_path = Path(args.input)
+        if not in_path.exists():
+            sys.exit(f"Input not found: {in_path}")
+    else:
+        # Prompt user to select a file
+        root = tk.Tk()
+        root.withdraw()  # Hide the main window
+        file_path = filedialog.askopenfilename(
+            title="Select a data file",
+            filetypes=[("CSV files", "*.csv"), ("Excel files", "*.xlsx"), ("All files", "*.*")]
+        )
+        if not file_path:
+            print("No file selected. Exiting.")
+            sys.exit(1)
+        in_path = Path(file_path)
+        if not in_path.exists():
+            sys.exit(f"Input not found: {in_path}")
 
     df = pd.read_csv(in_path, low_memory=False) if in_path.suffix.lower()==".csv" else pd.read_excel(in_path)
     rename = detect_columns(df); df=df.rename(columns=rename)
