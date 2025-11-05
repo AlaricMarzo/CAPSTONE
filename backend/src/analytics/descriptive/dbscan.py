@@ -156,7 +156,7 @@ def _fit_dbscan(feats: pd.DataFrame, random_state=42) -> Tuple[pd.DataFrame, Dic
 
     # Compute number of clusters and noise points
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    n_noise = list(labels).count(-1)
+    n_noise = out[out["cluster"] == -1]["total_qty"].sum() if -1 in labels else 0
 
     return out, {"n_clusters": n_clusters, "n_noise": n_noise, "eps": eps, "min_samples": min_samples}
 
@@ -185,14 +185,14 @@ def _summarize(clusters_df: pd.DataFrame) -> pd.DataFrame:
     g["persona"] = g.apply(tag, axis=1)
     return g.sort_values("cluster").reset_index(drop=True)
 
-def _cluster_legend_blocks(df: pd.DataFrame, max_lines: int = 6) -> List[str]:
+def _cluster_legend_blocks(df: pd.DataFrame, max_lines: int = 10) -> List[str]:
     """
     Build human-readable text blocks per cluster for the side legend,
     including the other features actually used by DBSCAN.
     """
     def rng(s):
         s = pd.to_numeric(s, errors="coerce")
-        return f"{_human(np.nanmin(s))}–{_human(np.nanmax(s))}"
+        return f"{_human(np.nanmin(s))} to {_human(np.nanmax(s))}"
 
     blocks = []
     for c in sorted(df["cluster"].unique()):
@@ -208,12 +208,15 @@ def _cluster_legend_blocks(df: pd.DataFrame, max_lines: int = 6) -> List[str]:
 
         cluster_label = "Noise" if c == -1 else f"Cluster {c}"
         line1 = cluster_label
-        line2 = f"Qty: {qty_rng} | Sales: {sales_rng}"
-        line3 = f"Med Price: ₱{price_med:,.2f} | Active mo.: {act_med:,.0f}"
-        line4 = f"Med Mean/mo.: {mean_med:,.0f} | CV: {cv_med:,.2f}"
-        line5 = f"Trend slope (qty/mo.): {slope_med:,.2f}"
+        line2 = f"Qty: {qty_rng}"
+        line3 = f"Sales: {sales_rng}"
+        line4 = f"Med Price: ₱{price_med:,.2f}"
+        line5 = f"Active mo.: {act_med:,.0f}"
+        line6 = f"Med Mean/mo.: {mean_med:,.0f}"
+        line7 = f"CV: {cv_med:,.2f}"
+        line8 = f"Trend slope (qty/mo.): {slope_med:,.2f}"
 
-        block = [line1, line2, line3, line4, line5]
+        block = [line1, line2, line3, line4, line5, line6, line7, line8]
         blocks.append("\n".join(block[:max_lines]))
     return blocks
 
@@ -324,9 +327,12 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
     global_df, meta_global = _fit_dbscan(feats, random_state=random_state)
     global_df.to_csv(sub_global / "clusters_global.csv", index=False, encoding="utf-8")
     _to_json(global_df, sub_global / "clusters_global.json")
-    _summarize(global_df).to_csv(sub_sum / "global.csv", index=False, encoding="utf-8")
-    _to_json(_summarize(global_df), sub_sum / "global.json")
-    _plot_both(global_df, f"Global Clusters (n_clusters={meta_global['n_clusters']}, n_noise={meta_global['n_noise']})",
+    sm_global = _summarize(global_df)
+    sm_global.to_csv(sub_sum / "global.csv", index=False, encoding="utf-8")
+    _to_json(sm_global, sub_sum / "global.json")
+    if -1 in sm_global["cluster"].values:
+        meta_global['n_noise'] = sm_global.loc[sm_global["cluster"] == -1, "n"].iloc[0]
+    _plot_both(global_df, f"Global Clusters (n_clusters={meta_global['n_clusters']})",
                sub_global / "fig_global.png")
 
     # -------- by TAB --------
@@ -339,7 +345,9 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
         sm = _summarize(subk)
         sm.to_csv(sub_sum / f"by_tab_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_tab_{fn_root}.json")
-        _plot_both(subk, f"TAB: {tab} (n_clusters={meta['n_clusters']}, n_noise={meta['n_noise']})",
+        if -1 in sm["cluster"].values:
+            meta['n_noise'] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+        _plot_both(subk, f"TAB: {tab} (n_clusters={meta['n_clusters']})",
                    sub_tab / f"fig_tab_{fn_root}.png")
         tabs_info.append({"tab": str(tab), "n_clusters": meta["n_clusters"], "n_noise": meta["n_noise"]})
 
@@ -353,7 +361,9 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
         sm = _summarize(subk)
         sm.to_csv(sub_sum / f"by_category_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_category_{fn_root}.json")
-        _plot_both(subk, f"CATEGORY: {cat} (n_clusters={meta['n_clusters']}, n_noise={meta['n_noise']})",
+        if -1 in sm["cluster"].values:
+            meta['n_noise'] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+        _plot_both(subk, f"CATEGORY: {cat} (n_clusters={meta['n_clusters']})",
                    sub_cat / f"fig_cat_{fn_root}.png")
         cats_info.append({"category": str(cat), "n_clusters": meta["n_clusters"], "n_noise": meta["n_noise"]})
 
