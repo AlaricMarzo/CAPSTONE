@@ -219,12 +219,9 @@ def _plot_scatter(df: pd.DataFrame, title: str, out_png: Path):
     # legend under plot
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.18), ncol=min(5, len(clusters)), frameon=False)
 
-    # finalize: save & show with small figure size
+    # finalize: save with small figure size
     fig.savefig(out_png, dpi=240, bbox_inches="tight")
-    try:
-        plt.show()
-    finally:
-        plt.close(fig)
+    plt.close(fig)
 
 # ---------------------------- main driver ----------------------------
 def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, Any]:
