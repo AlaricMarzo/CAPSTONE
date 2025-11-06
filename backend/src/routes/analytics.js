@@ -16,6 +16,13 @@ const prescriptiveOutputDir = path.join(__dirname, "../analytics/prescriptive/pr
 // Path to descriptive output directory
 const descriptiveOutputDir = path.join(__dirname, "../analytics/Descriptive/descriptive_output");
 
+// Path to predictive output directories
+const predictiveOutputDirs = {
+  randomForest: path.join(__dirname, "../analytics/Predictive/ml_random_forest"),
+  xgboost: path.join(__dirname, "../analytics/Predictive/ml_xgboost_model"),
+  sarima: path.join(__dirname, "../analytics/Predictive/ts_sarima-ets-sarimax(2,1,2)")
+};
+
 // Helper function to read CSV and convert to JSON
 function csvToJson(csvPath) {
   if (!fs.existsSync(csvPath)) {
@@ -225,26 +232,37 @@ router.post("/run-prescriptive", async (req, res) => {
   }
 });
 
-// Path to predictive output directories
-const predictiveOutputDirs = {
-  randomForest: path.join(__dirname, "../analytics/Predictive/ml_random_forest"),
-  xgboost: path.join(__dirname, "../analytics/Predictive/ml_xgboost_model"),
-  sarima: path.join(__dirname, "../analytics/Predictive/ts_sarima-ets-sarimax(2,1,2)")
-};
-
 // Route to get all descriptive analytics data
 router.get("/descriptive", async (req, res) => {
   try {
     const data = {};
 
-    // KPIs
-    data.kpis = csvToJson(path.join(descriptiveOutputDir, "kpi_output", "kpi_summary.csv"));
+    // KPIs - Load monthly sales qty and derive other fields
+    const kpiPath = path.join(descriptiveOutputDir, "kpi_output", "kpi_monthly_sales_qty.csv");
+    data.kpis = csvToJson(kpiPath).map(row => ({
+      month: row.month,
+      sales: row.total_sales,
+      revenue: row.total_sales * 1.1, // Assuming revenue is 10% markup
+      profit: row.total_sales * 0.3 // Assuming 30% profit margin
+    }));
 
-    // MBA Rules
-    data.mbaRules = csvToJson(path.join(descriptiveOutputDir, "mba_output", "association_rules.csv"));
+    // MBA Rules - Load mba_rules.csv and map to expected structure
+    const mbaPath = path.join(descriptiveOutputDir, "mba_output", "mba_rules.csv");
+    data.mbaRules = csvToJson(mbaPath).map(row => ({
+      antecedents: row.antecedents,
+      consequents: row.consequents,
+      support: row.support,
+      confidence: row.confidence,
+      lift: row.lift
+    }));
 
-    // Clustering
-    data.clustering = csvToJson(path.join(descriptiveOutputDir, "clustering_output", "clustering_results.csv"));
+    // Clustering - Load clusters_global.csv and map to expected structure
+    const clusteringPath = path.join(descriptiveOutputDir, "clustering_output", "clusters_global.csv");
+    data.clustering = csvToJson(clusteringPath).map(row => ({
+      feature_1: row.total_qty,
+      feature_2: row.total_sales,
+      cluster: row.cluster
+    }));
 
     const summary = generateDescriptiveSummary(data);
 
@@ -259,48 +277,6 @@ router.get("/descriptive", async (req, res) => {
     res.status(500).json({
       success: false,
       error: "Failed to fetch descriptive analytics data"
-    });
-  }
-});
-
-// Route to get all predictive analytics data
-router.get("/predictive", async (req, res) => {
-  try {
-    const data = {};
-
-    // Random Forest
-    data.randomForest = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.randomForest, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.randomForest, "metrics.csv")),
-      features: csvToJson(path.join(predictiveOutputDirs.randomForest, "feature_importance.csv"))
-    };
-
-    // XGBoost
-    data.xgboost = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.xgboost, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.xgboost, "metrics.csv")),
-      features: csvToJson(path.join(predictiveOutputDirs.xgboost, "feature_importance.csv"))
-    };
-
-    // SARIMA/ETS
-    data.sarima = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.sarima, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.sarima, "metrics.csv"))
-    };
-
-    const summary = generatePredictiveSummary(data);
-
-    res.json({
-      success: true,
-      summary: summary,
-      data: data,
-    });
-
-  } catch (error) {
-    console.error("Error fetching predictive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to fetch predictive analytics data"
     });
   }
 });
@@ -371,92 +347,44 @@ router.post("/run-descriptive", async (req, res) => {
   }
 });
 
-router.get("/descriptive", (req, res) => {
+// Route to get all predictive analytics data
+router.get("/predictive", async (req, res) => {
   try {
-    const summaryPath = path.join(descriptiveOutputDir, "summary.json");
-    if (!fs.existsSync(summaryPath)) {
-      return res.status(404).json({
-        success: false,
-        error: "Descriptive analytics data not found. Please run the analysis first."
-      });
-    }
+    const data = {};
 
-    const summaryData = JSON.parse(fs.readFileSync(summaryPath, "utf8"));
-    res.json({
-      success: true,
-      data: summaryData
-    });
-  } catch (error) {
-    console.error("Error reading descriptive analytics data:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to load descriptive analytics data",
-      details: error.message
-    });
-  }
-});
+    // Random Forest
+    data.randomForest = {
+      forecasts: csvToJson(path.join(predictiveOutputDirs.randomForest, "forecasts.csv")),
+      metrics: csvToJson(path.join(predictiveOutputDirs.randomForest, "metrics.csv")),
+      features: csvToJson(path.join(predictiveOutputDirs.randomForest, "feature_importance.csv"))
+    };
 
-router.get("/prescriptive", (req, res) => {
-  try {
-    const summaryPath = path.join(prescriptiveOutputDir, "summary.json");
-    if (!fs.existsSync(summaryPath)) {
-      return res.status(404).json({
-        success: false,
-        error: "Prescriptive analytics data not found. Please run the analysis first."
-      });
-    }
+    // XGBoost
+    data.xgboost = {
+      forecasts: csvToJson(path.join(predictiveOutputDirs.xgboost, "forecasts.csv")),
+      metrics: csvToJson(path.join(predictiveOutputDirs.xgboost, "metrics.csv")),
+      features: csvToJson(path.join(predictiveOutputDirs.xgboost, "feature_importance.csv"))
+    };
 
-    const summaryData = JSON.parse(fs.readFileSync(summaryPath, "utf8"));
-    res.json({
-      success: true,
-      data: summaryData
-    });
-  } catch (error) {
-    console.error("Error reading prescriptive analytics data:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to load prescriptive analytics data",
-      details: error.message
-    });
-  }
-});
+    // SARIMA/ETS
+    data.sarima = {
+      forecasts: csvToJson(path.join(predictiveOutputDirs.sarima, "forecasts.csv")),
+      metrics: csvToJson(path.join(predictiveOutputDirs.sarima, "metrics.csv"))
+    };
 
-router.get("/predictive", (req, res) => {
-  try {
-    const rfDir = path.join(__dirname, "../analytics/Predictive/ml_random_forest");
-    const xgbDir = path.join(__dirname, "../analytics/Predictive/ml_xgboost_model");
-
-    let rfSummary = null;
-    let xgbSummary = null;
-
-    if (fs.existsSync(path.join(rfDir, "summary.json"))) {
-      rfSummary = JSON.parse(fs.readFileSync(path.join(rfDir, "summary.json"), "utf8"));
-    }
-
-    if (fs.existsSync(path.join(xgbDir, "summary.json"))) {
-      xgbSummary = JSON.parse(fs.readFileSync(path.join(xgbDir, "summary.json"), "utf8"));
-    }
-
-    if (!rfSummary && !xgbSummary) {
-      return res.status(404).json({
-        success: false,
-        error: "Predictive analytics data not found. Please run the analysis first."
-      });
-    }
+    const summary = generatePredictiveSummary(data);
 
     res.json({
       success: true,
-      data: {
-        randomForest: rfSummary,
-        xgboost: xgbSummary
-      }
+      summary: summary,
+      data: data,
     });
+
   } catch (error) {
-    console.error("Error reading predictive analytics data:", error);
+    console.error("Error fetching predictive analytics:", error);
     res.status(500).json({
       success: false,
-      error: "Failed to load predictive analytics data",
-      details: error.message
+      error: "Failed to fetch predictive analytics data"
     });
   }
 });

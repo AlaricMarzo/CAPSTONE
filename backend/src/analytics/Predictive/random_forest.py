@@ -238,6 +238,9 @@ def main():
         df = load_data_from_database()
         out_dir_name = "database_data"
 
+    rename = detect_columns(df)
+    df = df.rename(columns=rename)
+
     if df["Date"].dtype != 'datetime64[ns]':
         df["Date"]=parse_dates_safe(df["Date"])
     df=df.dropna(subset=["Date"])

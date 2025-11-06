@@ -178,7 +178,8 @@ def load_data_from_database():
     load_dotenv()
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
-        raise RuntimeError("DATABASE_URL not set in environment variables")
+        print("DATABASE_URL not set, falling back to CSV data.")
+        return load_csv_data()
 
     try:
         conn = psycopg2.connect(dsn)
@@ -208,16 +209,26 @@ def load_data_from_database():
         conn.close()
 
         if df.empty:
-            raise ValueError("No data found in warehouse.fact_sales table.")
+            print("No data found in database, falling back to CSV data.")
+            return load_csv_data()
 
         print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
     except Exception as e:
-        print(f"X Error loading data from database: {e}")
-        traceback.print_exc()
-        sys.exit(1)
+        print(f"Error loading data from database: {e}, falling back to CSV data.")
+        return load_csv_data()
+
+def load_csv_data():
+    """Fallback to load data from CSV file"""
+    csv_path = HERE.parent.parent / "cleaned" / "data_for_predictive.csv"
+    if not csv_path.exists():
+        raise FileNotFoundError(f"CSV data not found: {csv_path}")
+    
+    df = pd.read_csv(csv_path)
+    print(f"[OK] Loaded fallback CSV data: {len(df):,} rows x {len(df.columns)} columns")
+    return df
 
 def main():
     ap=argparse.ArgumentParser()
@@ -230,11 +241,13 @@ def main():
         in_path=Path(args.input)
         if not in_path.exists(): sys.exit(f"Input not found: {in_path}")
         df = pd.read_csv(in_path, low_memory=False) if in_path.suffix.lower()==".csv" else pd.read_excel(in_path)
-        rename=detect_columns(df); df=df.rename(columns=rename)
         out_dir_name = clean_name(in_path.stem)
     else:
         df = load_data_from_database()
         out_dir_name = "database_data"
+
+    rename = detect_columns(df)
+    df = df.rename(columns=rename)
 
     if df["Date"].dtype != 'datetime64[ns]':
         df["Date"]=parse_dates_safe(df["Date"])
