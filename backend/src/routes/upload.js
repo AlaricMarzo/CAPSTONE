@@ -212,19 +212,51 @@ async function processUpload(jobId, files) {
     }
 
     // Update progress to show cleaning completed
-    jobs.set(jobId, { status: 'processing', progress: 90, message: 'Data cleaning completed, finalizing results...' })
+    jobs.set(jobId, { status: 'processing', progress: 90, message: 'Data cleaning completed, starting analytics pipeline...' })
 
-    // Brief pause to show finalization step
+    // Brief pause to show transition
     await new Promise(resolve => setTimeout(resolve, 500))
 
-    console.log("[Backend] Setting job to completed")
-    jobs.set(jobId, {
-      status: 'completed',
-      progress: 100,
-      message: "Data processing completed successfully! Files have been cleaned and loaded into the database.",
-      filesProcessed: files.length,
-      cleaningResults: cleanResult,
-    })
+    // Run analytics pipeline
+    console.log("[Backend] Starting analytics pipeline...")
+    jobs.set(jobId, { status: 'processing', progress: 95, message: 'Running descriptive, predictive, and prescriptive analytics...' })
+
+    try {
+      const analyticsScriptPath = path.join(__dirname, "../analytics/models.py")
+      const analyticsResult = await runPythonScript(analyticsScriptPath, [outputPath])
+
+      if (analyticsResult.success) {
+        console.log("[Backend] Analytics pipeline completed successfully")
+        jobs.set(jobId, {
+          status: 'completed',
+          progress: 100,
+          message: "Data processing and analytics completed successfully! Files have been cleaned, loaded into the database, and analytics pipeline executed.",
+          filesProcessed: files.length,
+          cleaningResults: cleanResult,
+          analyticsResults: analyticsResult,
+        })
+      } else {
+        console.error("[Backend] Analytics pipeline failed:", analyticsResult.error)
+        jobs.set(jobId, {
+          status: 'completed_with_warnings',
+          progress: 100,
+          message: "Data processing completed, but analytics pipeline encountered issues. Check logs for details.",
+          filesProcessed: files.length,
+          cleaningResults: cleanResult,
+          analyticsResults: analyticsResult,
+        })
+      }
+    } catch (analyticsError) {
+      console.error("[Backend] Error running analytics:", analyticsError.message)
+      jobs.set(jobId, {
+        status: 'completed_with_warnings',
+        progress: 100,
+        message: "Data processing completed, but analytics pipeline failed to start. Check server logs.",
+        filesProcessed: files.length,
+        cleaningResults: cleanResult,
+        analyticsError: analyticsError.message,
+      })
+    }
 
   } catch (error) {
     console.error("[Backend] Background processing error:", error)

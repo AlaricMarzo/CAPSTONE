@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-11-06T21:33:16.949131",
+  "input_file": {
+    "name": "combined_cleaned_1762435792979_errors.csv",
+    "path": "C:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\..\\..\\cleaned\\combined_cleaned_1762435792979_errors.csv",
+    "rows": 5546,
+    "columns": 17,
+    "column_names": [
+      "Date",
+      "Receipt",
+      "SO",
+      "Item Code",
+      "Description",
+      "Expiration Date",
+      "Qty",
+      "Unit",
+      "Discount",
+      "Sales",
+      "Cost",
+      "Profit",
+      "Payment",
+      "Cashier ID",
+      "_row_id",
+      "error_reason",
+      "error_stage"
+    ]
+  },
+  "execution_stages": {
+    "descriptive": {
+      "kpi": {
+        "status": "success"
+      },
+      "mba": {
+        "status": "success"
+      },
+      "clustering": {
+        "status": "success"
+      },
+      "status": "complete",
+      "output_dir": "descriptive_output"
+    },
+    "predictive": {
+      "random_forest": {
+        "status": "success",
+        "output_dir": "ml_random_forest"
+      },
+      "xgboost": {
+        "status": "success",
+        "output_dir": "ml_xgboost_model"
+      },
+      "sarima_ets": {
+        "status": "success",
+        "output_dir": "ts_sarima-ets-sarimax(2,1,2)"
+      },
+      "status": "complete"
+    },
+    "prescriptive": {
+      "status": "success",
+      "output_dir": "prescriptive_output"
+    }
+  },
+  "completion_time": "2025-11-06T21:33:16.949193"
+}

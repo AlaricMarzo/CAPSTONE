@@ -1,9 +1,17 @@
-# Fix EOQ Chart and Add Sub-tabs for EOQ Analysis
+# Analytics Pipeline Enhancement TODO
 
-## Steps to Complete
+## Backend Modifications
+- [ ] Modify `backend/src/analytics/Descriptive/descriptive.py` to output `summary.json` with key results
+- [ ] Modify `backend/src/analytics/prescriptive/prescriptive.py` to output `summary.json` with key results
+- [ ] Modify `backend/src/analytics/Predictive/xgboost_model.py` to output `summary.json` with key metrics
+- [ ] Update `backend/src/routes/analytics.js` to return summary JSONs for each analytics type
 
-- [ ] Update the EOQ tab in Dashboard.tsx to replace the single LineChart with nested tabs structure
-- [ ] Implement EOQ Values sub-tab with BarChart showing EOQ by medicine
-- [ ] Implement Order Frequency sub-tab with LineChart showing orders per year and days between orders
-- [ ] Implement Cost Breakdown sub-tab with stacked BarChart for ordering, holding, and purchase costs
-- [ ] Implement Efficiency sub-tab with ScatterChart for annual demand vs total annual cost
+## Frontend Enhancements
+- [x] Create ProgressBar component in frontend
+- [x] Update `frontend/src/pages/Dashboard.tsx` to integrate progress bar and show completion status
+- [x] Verify graph refresh after analysis completion
+
+## Testing
+- [ ] Test script execution to verify summary.json creation
+- [ ] Test frontend progress bar and completion status
+- [ ] Verify end-to-end pipeline and graph updates

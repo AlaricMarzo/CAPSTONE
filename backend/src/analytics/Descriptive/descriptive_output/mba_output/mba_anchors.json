@@ -1,0 +1,258 @@
+[
+  {
+    "anchor":"PARTNERS BLOOD GLUCOMETER CBPC-73",
+    "complement":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
+    "lift":121.4,
+    "confidence_pct":100.0,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
+    "complement":"PARTNERS BLOOD GLUCOMETER CBPC-73",
+    "lift":121.4,
+    "confidence_pct":100.0,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CALTRATE ADVANCE TAB",
+    "complement":"CHERIFER PGM CAP",
+    "lift":101.1666666667,
+    "confidence_pct":83.33,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CALTRATE ADVANCE TAB",
+    "complement":"CENTRUM(ADVANCE)TAB",
+    "lift":84.3055555556,
+    "confidence_pct":83.33,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CALTRATE ADVANCE TAB",
+    "complement":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "lift":67.4444444444,
+    "confidence_pct":100.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"CHERIFER PGM CAP",
+    "complement":"CALTRATE ADVANCE TAB",
+    "lift":101.1666666667,
+    "confidence_pct":100.0,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CHERIFER PGM CAP",
+    "complement":"CENTRUM(ADVANCE)TAB",
+    "lift":101.1666666667,
+    "confidence_pct":100.0,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CHERIFER PGM CAP",
+    "complement":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "lift":67.4444444444,
+    "confidence_pct":100.0,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CENTRUM(ADVANCE)TAB",
+    "complement":"CHERIFER PGM CAP",
+    "lift":101.1666666667,
+    "confidence_pct":83.33,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CENTRUM(ADVANCE)TAB",
+    "complement":"CALTRATE ADVANCE TAB",
+    "lift":84.3055555556,
+    "confidence_pct":83.33,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CENTRUM(ADVANCE)TAB",
+    "complement":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "lift":56.2037037037,
+    "confidence_pct":83.33,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "complement":"CALTRATE ADVANCE TAB",
+    "lift":67.4444444444,
+    "confidence_pct":66.67,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "complement":"CHERIFER PGM CAP",
+    "lift":67.4444444444,
+    "confidence_pct":55.56,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "complement":"CENTRUM(ADVANCE)TAB",
+    "lift":56.2037037037,
+    "confidence_pct":55.56,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":35.4083333333,
+    "confidence_pct":58.33,
+    "support_pct":1.15,
+    "pair_tx":7
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "lift":27.2371794872,
+    "confidence_pct":58.33,
+    "support_pct":1.15,
+    "pair_tx":7
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":21.6785714286,
+    "confidence_pct":50.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":35.4083333333,
+    "confidence_pct":70.0,
+    "support_pct":1.15,
+    "pair_tx":7
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "lift":30.35,
+    "confidence_pct":60.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "lift":28.0153846154,
+    "confidence_pct":60.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":30.35,
+    "confidence_pct":50.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "complement":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "lift":23.3461538462,
+    "confidence_pct":50.0,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "lift":14.8774509804,
+    "confidence_pct":41.67,
+    "support_pct":0.82,
+    "pair_tx":5
+  },
+  {
+    "anchor":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":28.0153846154,
+    "confidence_pct":46.15,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":27.2371794872,
+    "confidence_pct":53.85,
+    "support_pct":1.15,
+    "pair_tx":7
+  },
+  {
+    "anchor":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "lift":23.3461538462,
+    "confidence_pct":46.15,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":20.010989011,
+    "confidence_pct":46.15,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "lift":16.479638009,
+    "confidence_pct":46.15,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":21.6785714286,
+    "confidence_pct":42.86,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "lift":20.010989011,
+    "confidence_pct":42.86,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "complement":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "lift":16.479638009,
+    "confidence_pct":35.29,
+    "support_pct":0.99,
+    "pair_tx":6
+  },
+  {
+    "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "lift":14.8774509804,
+    "confidence_pct":29.41,
+    "support_pct":0.82,
+    "pair_tx":5
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-07T03:53:07.076147",
+  "input_source": {
+    "type": "database",
+    "table": "warehouse.fact_sales",
+    "rows": 119881,
+    "columns": 15,
+    "column_names": [
+      "date",
+      "receipt",
+      "so",
+      "Item Code",
+      "description",
+      "Expiration Date",
+      "qty",
+      "unit",
+      "discount",
+      "sales",
+      "cost",
+      "profit",
+      "payment",
+      "Cashier ID",
+      "txntype"
+    ]
+  },
+  "execution_stages": {
+    "descriptive": {
+      "kpi": {
+        "status": "success"
+      },
+      "mba": {
+        "status": "warning",
+        "error": "'charmap' codec can't encode character '\\u2713' in position 0: character maps to <undefined>"
+      },
+      "clustering": {
+        "status": "success"
+      },
+      "status": "complete",
+      "output_dir": "descriptive_output"
+    },
+    "predictive": {
+      "random_forest": {
+        "status": "failed",
+        "error": "name 'os' is not defined"
+      },
+      "xgboost": {
+        "status": "failed",
+        "error": "'charmap' codec can't encode character '\\u2192' in position 11: character maps to <undefined>"
+      },
+      "sarima_ets": {
+        "status": "failed",
+        "error": "name 'load_dotenv' is not defined"
+      },
+      "status": "complete"
+    },
+    "prescriptive": {
+      "status": "success",
+      "output_dir": "prescriptive_output"
+    }
+  },
+  "completion_time": "2025-11-07T03:53:07.076170"
+}

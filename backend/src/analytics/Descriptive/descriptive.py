@@ -1,82 +1,61 @@
 # analytics/descriptive/descriptive.py
-import os, sys, json, tempfile
+import os, sys, json
 from pathlib import Path
 import pandas as pd
+import psycopg2
+from dotenv import load_dotenv
 
 from kpi import compute_kpis
 from mba import run_mba
-from dbscan import cluster_all
+from clustering import cluster_all
 
-def _read_csv_robust(path_or_buf):
-    for enc in ("utf-8-sig", "utf-8", "cp1252", "latin1"):
-        try:
-            return pd.read_csv(path_or_buf, encoding=enc, engine="python")
-        except Exception:
-            continue
-    return pd.read_csv(path_or_buf)
+def load_data_from_database():
+    """Load data from the warehouse.fact_sales table in the database"""
+    print("Loading data from database...")
+    load_dotenv()
+    dsn = os.getenv("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError("DATABASE_URL not set in environment variables")
 
-def _browse_or_path_or_url():
-    print("=" * 70)
-    print("DESCRIPTIVE ANALYTICS — DATA IMPORT")
-    print("=" * 70)
-    print("1. Browse for CSV file")
-    print("2. Enter file path manually")
-    print("3. Enter URL to CSV file")
-    choice = (input("Choose option (1/2/3): ").strip() or "1")
-
-    if choice == "1":
-        try:
-            import tkinter as tk
-            from tkinter import filedialog
-            root = tk.Tk(); root.withdraw(); root.attributes("-topmost", True)
-            path = filedialog.askopenfilename(
-                title="Select CSV Data File",
-                filetypes=[("CSV files", "*.csv"), ("All files", "*.*")]
-            )
-            root.destroy()
-            return ("file", path) if path else ("file", "")
-        except Exception as e:
-            print(f"GUI not available ({e}).")
-            manual = input("Enter CSV file path manually: ").strip()
-            return ("file", manual)
-
-    if choice == "2":
-        manual = input("Enter CSV file path: ").strip()
-        return ("file", manual)
-
-    if choice == "3":
-        url = input("Enter URL to CSV file: ").strip()
-        return ("url", url)
-
-    return ("file", "")
-
-def _materialize_from_url(url: str) -> str:
     try:
-        import requests
-    except ImportError:
-        print("✗ Install 'requests' for URL mode: pip install requests")
-        sys.exit(1)
-    resp = requests.get(url, timeout=60); resp.raise_for_status()
-    fd, tmp_path = tempfile.mkstemp(prefix="analytics_", suffix=".csv")
-    os.close(fd)
-    with open(tmp_path, "wb") as f:
-        f.write(resp.content)
-    print(f"✓ Downloaded to temp file: {tmp_path}")
-    return tmp_path
+        conn = psycopg2.connect(dsn)
+        query = """
+        SELECT
+            fs.date_key AS date,
+            fs.receipt_number AS receipt,
+            fs.sales_order_number AS so,
+            p.item_code AS item_code,
+            p.description AS description,
+            fs.expiration_date AS expiration,
+            fs.quantity_sold AS qty,
+            fs.unit AS unit,
+            fs.discount_rate AS discount,
+            fs.sales_amount AS sales,
+            fs.cost_amount AS cost,
+            fs.profit_amount AS profit,
+            fs.payment AS payment,
+            fs.cashier_id AS cashier_id,
+            fs.txn_type AS txn_type
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        JOIN warehouse.dim_date d ON fs.date_key = d.date_key
+        ORDER BY fs.date_key, fs.receipt_number
+        """
+        df = pd.read_sql_query(query, conn)
+        conn.close()
 
-def _load_dataframe(source_kind: str, source_value: str) -> pd.DataFrame:
-    if source_kind == "file":
-        if not source_value or not os.path.exists(source_value):
-            print("✗ No valid file selected/found."); sys.exit(1)
-        print(f"✓ Loading CSV from file: {source_value}")
-        return _read_csv_robust(source_value)
-    if source_kind == "url":
-        if not source_value:
-            print("✗ No URL provided."); sys.exit(1)
-        print(f"⇣ Fetching CSV from URL: {source_value}")
-        tmp = _materialize_from_url(source_value)
-        return _read_csv_robust(tmp)
-    print("✗ Unknown source type."); sys.exit(1)
+        if df.empty:
+            raise ValueError("No data found in warehouse.fact_sales table.")
+
+        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+
+        return df
+
+    except Exception as e:
+        print(f"X Error loading data from database: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -88,8 +67,7 @@ def main():
     print(f"Script directory: {script_dir}")
     print(f"Output directory: {out_dir}")
 
-    source_kind, source_value = _browse_or_path_or_url()
-    df = _load_dataframe(source_kind, source_value)
+    df = load_data_from_database()
 
     # Prepare subfolders
     kpi_out = os.path.join(out_dir, "kpi_output")
@@ -99,22 +77,29 @@ def main():
     os.makedirs(mba_out, exist_ok=True)
     os.makedirs(clu_out, exist_ok=True)
 
+    medicine_stats = df.groupby('description').agg({
+        'sales': 'sum',
+        'qty': 'sum',
+        'profit': 'sum'
+    }).rename(columns={'sales': 'total_sales', 'qty': 'total_qty', 'profit': 'total_profit'})
+    medicine_stats['profit_margin'] = (medicine_stats['total_profit'] / medicine_stats['total_sales'] * 100).fillna(0)
+    medicine_stats = medicine_stats.reset_index().rename(columns={'description': 'medicine'})
+
     # ---------------- [1/3] KPIs ----------------
     print("\n[1/3] Running KPIs ...")
     kpi_res = compute_kpis(df, kpi_out)
-    print("✓ KPIs done.")
+    print("KPIs done.")
     print(f"   Avg monthly sales growth: {kpi_res.get('avg_monthly_growth_rate')}")
 
     # ---------------- [2/3] MBA -----------------
     print("\n[2/3] Running Market-Basket (MBA) ...")
     mba_res = run_mba(df, mba_out)
-    print(f"✓ MBA done. Rules generated: {mba_res.get('rules_count')}")
+    print(f"MBA done. Rules generated: {mba_res.get('rules_count')}")
 
     # ---------------- [3/3] Clustering ----------
     print("\n[3/3] Running Clustering (DBSCAN) ...")
-    # NOTE: dbscan.cluster_all takes only (df, out_dir, random_state)
     clu_res = cluster_all(df, clu_out)
-    print(f"✓ Clustering done. Global n_clusters={clu_res['global']['n_clusters']}, n_noise={clu_res['global']['n_noise']}")
+    print(f"Clustering done. Global n_clusters={clu_res['global']['n_clusters']}, n_noise={clu_res['global']['n_noise']}")
 
     # ---------------- Manifest ------------------
     manifest = {
@@ -123,6 +108,34 @@ def main():
         "clustering_outputs": [str(p) for p in Path(clu_out).rglob("*.*")],
     }
     Path(out_dir, "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    summary = {
+        "data_overview": {
+            "total_rows_analyzed": len(df),
+            "total_sales": float(medicine_stats['total_sales'].sum()),
+            "total_quantity": int(medicine_stats['total_qty'].sum()),
+            "total_profit": float(medicine_stats['total_profit'].sum()),
+            "avg_profit_margin_pct": float(medicine_stats['profit_margin'].mean()),
+        },
+        "top_5_products": medicine_stats.nlargest(5, 'total_sales')[['medicine', 'total_sales', 'total_qty', 'profit_margin']].to_dict('records'),
+        "kpi_analysis": {
+            "kpi_metrics_generated": len([p for p in Path(kpi_out).glob("*.csv")]),
+            "avg_monthly_growth_rate": kpi_res.get('avg_monthly_growth_rate'),
+        },
+        "market_basket_analysis": {
+            "rules_generated": mba_res.get('rules_count', 0),
+            "support_threshold": mba_res.get('support', 0.01),
+            "confidence_threshold": mba_res.get('confidence', 0.1),
+        },
+        "clustering_analysis": {
+            "clusters_identified": clu_res['global']['n_clusters'],
+            "noise_points": clu_res['global']['n_noise'],
+            "total_points_clustered": len(df),
+        },
+        "timestamp": str(pd.Timestamp.now()),
+    }
+    Path(out_dir, "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+
     print("\nAll done! Outputs under:", out_dir)
 
 if __name__ == "__main__":

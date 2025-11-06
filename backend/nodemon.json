@@ -1,0 +1,22 @@
+{
+  "ignore": [
+    "*.csv",
+    "*.log",
+    "*.json",
+    "cleaned/",
+    "uploads/",
+    "descriptive_output/",
+    "prescriptive_output/",
+    "ml_*",
+    "ts_*",
+    "**/descriptive_output/**",
+    "**/prescriptive_output/**",
+    "**/ml_*/**",
+    "**/ts_*/**",
+    "src/server.js"
+  ],
+  "watch": [
+    "src/"
+  ],
+  "ext": "js,mjs,json"
+}

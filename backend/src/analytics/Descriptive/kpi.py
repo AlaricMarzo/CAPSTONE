@@ -73,7 +73,7 @@ def _wrap_label(s: str, width: int = 38, max_lines: int = 2) -> str:
     if len(parts) > max_lines:
         parts = parts[:max_lines]
         if len(parts[-1]) > 2:
-            parts[-1] = parts[-1][:-1] + "…"
+            parts[-1] = parts[-1][:-1] + "..."
     return "\n".join(parts)
 
 # ---------------------------- heatmap ----------------------------
@@ -92,7 +92,7 @@ def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     fig.subplots_adjust(left=0.38, right=0.95, top=0.93, bottom=0.08)
 
     im = ax.imshow(pivot.values, aspect="auto", norm=norm, cmap="viridis")
-    ax.set_title("Season Index Heatmap (Category × Month)\n(1.0 = category average; >1 above, <1 below)")
+    ax.set_title("Season Index Heatmap (Category x Month)\n(1.0 = category average; >1 above, <1 below)")
     ax.set_xlabel("Month Number"); ax.set_ylabel("Category")
     ax.set_xticks(range(len(pivot.columns))); ax.set_xticklabels(pivot.columns)
     ax.set_yticks(range(len(pivot.index))); ax.set_yticklabels(pivot.index)
@@ -142,7 +142,7 @@ def _plot_sales_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_d
 
     out_path = Path(out_dir) / "fig_sales_month_vs_year.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {out_path}")
+    print(f"Saved figure: {out_path}")
     plt.close(fig)
 
 def _plot_qty_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir: Path):
@@ -179,7 +179,7 @@ def _plot_qty_month_vs_year(monthly: pd.DataFrame, yearly: pd.DataFrame, out_dir
 
     out_path = Path(out_dir) / "fig_qty_month_vs_year.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {out_path}")
+    print(f"Saved figure: {out_path}")
     plt.close(fig)
 
 # ---------------------------- NEW: Top10 Sales & Qty side-by-side ----------------------------
@@ -211,7 +211,7 @@ def _plot_top10_sales_and_qty(top10_sales: pd.DataFrame, top10_qty: pd.DataFrame
 
     out_path = Path(out_dir) / "fig_top10_sales_and_qty.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {out_path}")
+    print(f"Saved figure: {out_path}")
     plt.close(fig)
 
 # ---------------------------- NEW: Monthly Sales Growth Rate (%) ----------------------------
@@ -258,7 +258,7 @@ def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, floa
 
     out_path = out_dir / "fig_monthly_sales_growth_rate.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {out_path}")
+    print(f"Saved figure: {out_path}")
     plt.close(fig)
 
     # Averages

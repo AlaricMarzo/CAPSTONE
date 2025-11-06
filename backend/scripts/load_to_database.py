@@ -414,7 +414,7 @@ def run_full_load(file_name: str, raw_df: pd.DataFrame, ensure_schema_once: bool
             # Remove incomplete rows (apply remove_incomplete_rows function)
             cleaned_df, additional_errors_df = remove_incomplete_rows(cleaned_df)
             if not additional_errors_df.empty:
-                errors_df = pd.concat([errors_df, additional_errors_df], ignore_index=True)
+                errors_df = pd.concat([errors_df.reset_index(drop=True), additional_errors_df.reset_index(drop=True)], ignore_index=True)
 
             rows_in = len(cleaned_df)
 
@@ -550,7 +550,7 @@ def remove_incomplete_rows(df):
                 rows_to_remove.append(idx)
 
     if rows_to_remove:
-        removed = df_clean.loc[rows_to_remove].copy()
+        removed = df_clean.loc[rows_to_remove].copy().reset_index(drop=True)
         removed['error_reason'] = 'financial data present but missing supporting fields'
         removed['error_stage']  = 'remove_incomplete_rows'
         errors.append(removed)
@@ -565,7 +565,7 @@ def remove_incomplete_rows(df):
     if available_important:
         empty_mask = df_clean[available_important].isna().all(axis=1)
         if empty_mask.any():
-            removed2 = df_clean.loc[empty_mask].copy()
+            removed2 = df_clean.loc[empty_mask].copy().reset_index(drop=True)
             removed2['error_reason'] = 'all important fields empty'
             removed2['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed2)
@@ -592,7 +592,7 @@ def remove_incomplete_rows(df):
         placeholder_mask = numeric_zeros & (ic_non_numeric | desc_blank | account_like)
 
         if placeholder_mask.any():
-            removed3 = df_clean.loc[placeholder_mask].copy()
+            removed3 = df_clean.loc[placeholder_mask].copy().reset_index(drop=True)
             removed3['error_reason'] = 'placeholder/non-item row (e.g., header like "Account : ...")'
             removed3['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed3)
@@ -626,7 +626,7 @@ def remove_incomplete_rows(df):
         adj_mask = fin_zero & is_adjustment
 
         if adj_mask.any():
-            removed_adj = df_clean.loc[adj_mask].copy()
+            removed_adj = df_clean.loc[adj_mask].copy().reset_index(drop=True)
             removed_adj['error_reason'] = 'non-item adjustment (e.g., Sales Discount/VOID/rounding)'
             removed_adj['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed_adj)
@@ -645,3 +645,18 @@ def remove_incomplete_rows(df):
         else pd.DataFrame(columns=list(df_clean.columns) + ['error_reason', 'error_stage'])
     )
     return df_clean, errors_df
+
+if __name__ == "__main__":
+    import glob
+    cleaned_dir = "../cleaned"
+    csv_files = [f for f in glob.glob(os.path.join(cleaned_dir, "combined_cleaned_*.csv")) if '_errors' not in f]
+    if not csv_files:
+        print("No cleaned CSV files found in backend/cleaned/")
+        sys.exit(1)
+    
+    # Load the most recent cleaned file
+    latest_file = max(csv_files, key=os.path.getctime)
+    print(f"Loading from latest cleaned file: {os.path.basename(latest_file)}")
+    
+    df = pd.read_csv(latest_file)
+    run_full_load(os.path.basename(latest_file), df)

@@ -34,7 +34,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { getUserMetrics } from "@/data/mockData";
-import UploadPage from "./upload";
+import DataUploadPage from "./upload";
 import ProfilePage from "./Profile";
 import {
   Tabs,
@@ -56,6 +56,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import ProgressBar from "@/components/ui/ProgressBar";
 
 function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
   const metrics = getUserMetrics();
@@ -174,62 +175,19 @@ function InventoryPage() {
   );
 }
 
-function ReportsPage() {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [runningAnalysis, setRunningAnalysis] = useState(false);
-
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch('/api/analytics/prescriptive');
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const result = await response.json();
-      setData(result.data);
-      setError(null);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const runAnalysis = async () => {
-    try {
-      setRunningAnalysis(true);
-      const response = await fetch('/api/analytics/run-prescriptive', {
-        method: 'POST',
-      });
-      if (!response.ok) {
-        throw new Error('Failed to run analysis');
-      }
-      const result = await response.json();
-      if (result.success) {
-        // Refresh data after successful run
-        await fetchData();
-      } else {
-        setError(result.error || 'Analysis failed');
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to run analysis');
-    } finally {
-      setRunningAnalysis(false);
-    }
-  };
-
+function DescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis }: {
+  data: any;
+  loading: boolean;
+  error: string | null;
+  runningAnalysis: boolean;
+  onRunAnalysis: () => void;
+}) {
   if (loading) {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
         <div>
-          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
-          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+          <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
+          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
         </div>
         <div className="text-center py-12 text-muted-foreground">
           <p>Loading analytics data...</p>
@@ -242,8 +200,8 @@ function ReportsPage() {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
         <div>
-          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
-          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+          <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
+          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
         </div>
         <div className="text-center py-12 text-destructive">
           <p>Error loading data: {error}</p>
@@ -256,17 +214,300 @@ function ReportsPage() {
     <div className="flex-1 space-y-6 p-8 pt-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-3xl font-bold text-foreground">Reports</h2>
-          <p className="text-muted-foreground">Analytics, Insights & Performance Reports</p>
+          <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
+          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
         </div>
         <Button
-          onClick={runAnalysis}
+          onClick={onRunAnalysis}
+          disabled={runningAnalysis}
+          className="shadow-soft"
+        >
+          {runningAnalysis ? "Running Analysis..." : "Run Descriptive Analysis"}
+        </Button>
+      </div>
+
+      {runningAnalysis && (
+        <ProgressBar label="Running Descriptive Analysis..." />
+      )}
+
+      <Tabs defaultValue="kpis" className="w-full">
+        <TabsList className="grid w-full grid-cols-3">
+          <TabsTrigger value="kpis">KPIs</TabsTrigger>
+          <TabsTrigger value="mba">Market Basket Analysis</TabsTrigger>
+          <TabsTrigger value="clustering">Clustering</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="kpis" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={data?.kpis}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="sales" stroke="#8884d8" name="Sales" />
+                <Line type="monotone" dataKey="revenue" stroke="#82ca9d" name="Revenue" />
+                <Line type="monotone" dataKey="profit" stroke="#ffc658" name="Profit" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="mba" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data?.mbaRules?.slice(0, 10)}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="antecedents" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="support" fill="#8884d8" name="Support" />
+                <Bar dataKey="confidence" fill="#82ca9d" name="Confidence" />
+                <Bar dataKey="lift" fill="#ffc658" name="Lift" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="clustering" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <ScatterChart>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="feature_1" name="Feature 1" />
+                <YAxis dataKey="feature_2" name="Feature 2" />
+                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                <Legend />
+                <Scatter name="Clusters" data={data?.clustering} fill="#8884d8" />
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
+}
+
+function PredictivePage({ data, loading, error, runningAnalysis, onRunAnalysis }: {
+  data: any;
+  loading: boolean;
+  error: string | null;
+  runningAnalysis: boolean;
+  onRunAnalysis: () => void;
+}) {
+  if (loading) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Predictive Analytics</h2>
+          <p className="text-muted-foreground">Forecasting, Machine Learning Models & Time Series Analysis</p>
+        </div>
+        <div className="text-center py-12 text-muted-foreground">
+          <p>Loading predictive analytics data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Predictive Analytics</h2>
+          <p className="text-muted-foreground">Forecasting, Machine Learning Models & Time Series Analysis</p>
+        </div>
+        <div className="text-center py-12 text-destructive">
+          <p>Error loading data: {error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex-1 space-y-6 p-8 pt-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Predictive Analytics</h2>
+          <p className="text-muted-foreground">Forecasting, Machine Learning Models & Time Series Analysis</p>
+        </div>
+        <Button
+          onClick={onRunAnalysis}
+          disabled={runningAnalysis}
+          className="shadow-soft"
+        >
+          {runningAnalysis ? "Running Analysis..." : "Run Predictive Analysis"}
+        </Button>
+      </div>
+
+      {runningAnalysis && (
+        <ProgressBar label="Running Predictive Analysis..." />
+      )}
+
+      <Tabs defaultValue="random-forest" className="w-full">
+        <TabsList className="grid w-full grid-cols-3">
+          <TabsTrigger value="random-forest">Random Forest</TabsTrigger>
+          <TabsTrigger value="xgboost">XGBoost</TabsTrigger>
+          <TabsTrigger value="sarima">SARIMA/ETS</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="random-forest" className="space-y-4">
+          <Tabs defaultValue="forecasts" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="forecasts">Forecasts</TabsTrigger>
+              <TabsTrigger value="features">Feature Importance</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="forecasts" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={data?.randomForest?.forecasts}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="date" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" />
+                    <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="features" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={data?.randomForest?.features} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis type="number" />
+                    <YAxis dataKey="feature" type="category" />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="importance" fill="#8884d8" name="Importance" />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </TabsContent>
+
+        <TabsContent value="xgboost" className="space-y-4">
+          <Tabs defaultValue="forecasts" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="forecasts">Forecasts</TabsTrigger>
+              <TabsTrigger value="features">Feature Importance</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="forecasts" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={data?.xgboost?.forecasts}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="date" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" />
+                    <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="features" className="space-y-4">
+              <div className="h-96">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={data?.xgboost?.features} layout="vertical">
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis type="number" />
+                    <YAxis dataKey="feature" type="category" />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="importance" fill="#8884d8" name="Importance" />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </TabsContent>
+
+        <TabsContent value="sarima" className="space-y-4">
+          <div className="h-96">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={data?.sarima?.forecasts}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" />
+                <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" />
+                <Line type="monotone" dataKey="lower_bound" stroke="#ffc658" name="Lower Bound" strokeDasharray="3 3" />
+                <Line type="monotone" dataKey="upper_bound" stroke="#ff8042" name="Upper Bound" strokeDasharray="3 3" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
+}
+
+function PrescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis }: {
+  data: any;
+  loading: boolean;
+  error: string | null;
+  runningAnalysis: boolean;
+  onRunAnalysis: () => void;
+}) {
+  if (loading) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Prescriptive Analytics</h2>
+          <p className="text-muted-foreground">Optimization, Recommendations & Decision Support</p>
+        </div>
+        <div className="text-center py-12 text-muted-foreground">
+          <p>Loading prescriptive analytics data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Prescriptive Analytics</h2>
+          <p className="text-muted-foreground">Optimization, Recommendations & Decision Support</p>
+        </div>
+        <div className="text-center py-12 text-destructive">
+          <p>Error loading data: {error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex-1 space-y-6 p-8 pt-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-3xl font-bold text-foreground">Prescriptive Analytics</h2>
+          <p className="text-muted-foreground">Optimization, Recommendations & Decision Support</p>
+        </div>
+        <Button
+          onClick={onRunAnalysis}
           disabled={runningAnalysis}
           className="shadow-soft"
         >
           {runningAnalysis ? "Running Analysis..." : "Run Prescriptive Analysis"}
         </Button>
       </div>
+
+      {runningAnalysis && (
+        <ProgressBar label="Running Prescriptive Analysis..." />
+      )}
 
       <Tabs defaultValue="reorder-point" className="w-full">
         <TabsList className="grid w-full grid-cols-8">
@@ -458,34 +699,217 @@ function ReportsPage() {
   );
 }
 
-export default function Dashboard({ onLogout, userEmail }: { onLogout: () => void; userEmail: string }) {
+// Create a Dashboard component that combines all the pages
+interface DashboardProps {
+  onLogout: () => void;
+  userEmail: string;
+}
+
+export default function Dashboard({ onLogout, userEmail }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("home");
-  const [previousTab, setPreviousTab] = useState("home");
+  const [showProfile, setShowProfile] = useState(false);
+
+  // Shared state for analytics data
+  const [descriptiveData, setDescriptiveData] = useState<any>(null);
+  const [descriptiveLoading, setDescriptiveLoading] = useState(true);
+  const [descriptiveError, setDescriptiveError] = useState<string | null>(null);
+  const [descriptiveRunning, setDescriptiveRunning] = useState(false);
+
+  const [predictiveData, setPredictiveData] = useState<any>(null);
+  const [predictiveLoading, setPredictiveLoading] = useState(true);
+  const [predictiveError, setPredictiveError] = useState<string | null>(null);
+  const [predictiveRunning, setPredictiveRunning] = useState(false);
+
+  const [prescriptiveData, setPrescriptiveData] = useState<any>(null);
+  const [prescriptiveLoading, setPrescriptiveLoading] = useState(true);
+  const [prescriptiveError, setPrescriptiveError] = useState<string | null>(null);
+  const [prescriptiveRunning, setPrescriptiveRunning] = useState(false);
 
   const handleProfileClick = () => {
-    setPreviousTab(activeTab);
+    setShowProfile(true);
     setActiveTab("profile");
   };
 
-  const handleLogout = () => onLogout();
+  const handleBackToDashboard = () => {
+    setShowProfile(false);
+    setActiveTab("home");
+  };
 
-  const renderContent = () => {
-    switch (activeTab) {
-      case "home":      return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
-      case "sales":     return <SalesPage />;
-      case "inventory": return <InventoryPage />;
-      case "reports":   return <ReportsPage />;
-      case "upload":    return <UploadPage />;
-      case "profile":   return <ProfilePage userEmail={userEmail} onLogout={handleLogout} onBack={() => setActiveTab(previousTab)} />;
-      default:          return <HomePage onProfileClick={handleProfileClick} onLogout={handleLogout} />;
+  // Fetch functions
+  const fetchDescriptiveData = async () => {
+    try {
+      setDescriptiveLoading(true);
+      const response = await fetch('/api/analytics/descriptive');
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const result = await response.json();
+      setDescriptiveData(result.data);
+      setDescriptiveError(null);
+    } catch (err) {
+      setDescriptiveError(err instanceof Error ? err.message : 'An error occurred');
+    } finally {
+      setDescriptiveLoading(false);
     }
   };
 
+  const fetchPredictiveData = async () => {
+    try {
+      setPredictiveLoading(true);
+      const response = await fetch('/api/analytics/predictive');
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const result = await response.json();
+      setPredictiveData(result.data);
+      setPredictiveError(null);
+    } catch (err) {
+      setPredictiveError(err instanceof Error ? err.message : 'An error occurred');
+    } finally {
+      setPredictiveLoading(false);
+    }
+  };
+
+  const fetchPrescriptiveData = async () => {
+    try {
+      setPrescriptiveLoading(true);
+      const response = await fetch('/api/analytics/prescriptive');
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const result = await response.json();
+      setPrescriptiveData(result.data);
+      setPrescriptiveError(null);
+    } catch (err) {
+      setPrescriptiveError(err instanceof Error ? err.message : 'An error occurred');
+    } finally {
+      setPrescriptiveLoading(false);
+    }
+  };
+
+  // Run analysis functions
+  const runDescriptiveAnalysis = async () => {
+    try {
+      setDescriptiveRunning(true);
+      const response = await fetch('/api/analytics/run-descriptive', {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to run analysis');
+      }
+      const result = await response.json();
+      if (result.success) {
+        await fetchDescriptiveData();
+      } else {
+        setDescriptiveError(result.error || 'Analysis failed');
+      }
+    } catch (err) {
+      setDescriptiveError(err instanceof Error ? err.message : 'Failed to run analysis');
+    } finally {
+      setDescriptiveRunning(false);
+    }
+  };
+
+  const runPredictiveAnalysis = async () => {
+    try {
+      setPredictiveRunning(true);
+      const response = await fetch('/api/analytics/run-predictive', {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to run analysis');
+      }
+      const result = await response.json();
+      if (result.success) {
+        await fetchPredictiveData();
+      } else {
+        setPredictiveError(result.error || 'Analysis failed');
+      }
+    } catch (err) {
+      setPredictiveError(err instanceof Error ? err.message : 'Failed to run analysis');
+    } finally {
+      setPredictiveRunning(false);
+    }
+  };
+
+  const runPrescriptiveAnalysis = async () => {
+    try {
+      setPrescriptiveRunning(true);
+      const response = await fetch('/api/analytics/run-prescriptive', {
+        method: 'POST',
+      });
+      if (!response.ok) {
+        throw new Error('Failed to run analysis');
+      }
+      const result = await response.json();
+      if (result.success) {
+        await fetchPrescriptiveData();
+      } else {
+        setPrescriptiveError(result.error || 'Analysis failed');
+      }
+    } catch (err) {
+      setPrescriptiveError(err instanceof Error ? err.message : 'Failed to run analysis');
+    } finally {
+      setPrescriptiveRunning(false);
+    }
+  };
+
+  // Initial data fetch
+  useEffect(() => {
+    fetchDescriptiveData();
+    fetchPredictiveData();
+    fetchPrescriptiveData();
+  }, []);
+
+  // Event listener for analytics updates
+  useEffect(() => {
+    const handleUpdate = () => {
+      fetchDescriptiveData();
+      fetchPredictiveData();
+      fetchPrescriptiveData();
+    };
+    window.addEventListener('analyticsUpdated', handleUpdate);
+    return () => window.removeEventListener('analyticsUpdated', handleUpdate);
+  }, []);
+
   return (
-    <div className="flex h-screen bg-gradient-to-br from-background via-background to-muted/20">
+    <div className="flex h-screen bg-background">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
       <div className="flex-1 flex flex-col overflow-hidden">
-        <main className="flex-1 overflow-y-auto">{renderContent()}</main>
+        <main className="flex-1 overflow-y-auto">
+          {activeTab === "home" && <HomePage onProfileClick={handleProfileClick} onLogout={onLogout} />}
+          {activeTab === "sales" && <SalesPage />}
+          {activeTab === "inventory" && <InventoryPage />}
+          {activeTab === "upload" && <DataUploadPage />}
+          {activeTab === "descriptive" && (
+            <DescriptivePage
+              data={descriptiveData}
+              loading={descriptiveLoading}
+              error={descriptiveError}
+              runningAnalysis={descriptiveRunning}
+              onRunAnalysis={runDescriptiveAnalysis}
+            />
+          )}
+          {activeTab === "predictive" && (
+            <PredictivePage
+              data={predictiveData}
+              loading={predictiveLoading}
+              error={predictiveError}
+              runningAnalysis={predictiveRunning}
+              onRunAnalysis={runPredictiveAnalysis}
+            />
+          )}
+          {activeTab === "prescriptive" && (
+            <PrescriptivePage
+              data={prescriptiveData}
+              loading={prescriptiveLoading}
+              error={prescriptiveError}
+              runningAnalysis={prescriptiveRunning}
+              onRunAnalysis={runPrescriptiveAnalysis}
+            />
+          )}
+          {activeTab === "profile" && <ProfilePage userEmail={userEmail} onBack={handleBackToDashboard} onLogout={onLogout} />}
+        </main>
       </div>
     </div>
   );

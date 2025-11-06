@@ -7,10 +7,12 @@ Matches the ExtraTrees pipeline for apples-to-apples comparison.
 Run:
   python random_forest.py --input "cleaned/ANC - 4 YEARS (1).csv" --topn 5 --min_cov 0.7
 """
-import warnings, argparse, re, sys
+import warnings, argparse, re, sys, json, os
 from pathlib import Path
 from typing import Dict, List, Tuple, Callable
 import numpy as np, pandas as pd
+import psycopg2
+from dotenv import load_dotenv
 
 import matplotlib
 matplotlib.use("Agg")
@@ -25,7 +27,7 @@ warnings.filterwarnings("ignore")
 
 HERE = Path(__file__).resolve().parent
 DATA_DIR = HERE / "cleaned"
-OUT_ROOT = HERE / "predictive_output" / "ml_random_forest"
+OUT_ROOT = HERE / "ml_random_forest"
 OUT_ROOT.mkdir(parents=True, exist_ok=True)
 
 FORECAST_STEPS=6; SEASON_M=12; TOP_N=5; INTERMITTENT_ZERO_SHARE=0.40
@@ -173,31 +175,85 @@ def fit_fn_rf_1step(hist: pd.Series):
     x=feats_next.drop(columns=["y"]).iloc[[-1]].values
     return float(np.expm1(mdl.predict(x))[0])
 
+def load_data_from_database():
+    """Load data from the warehouse.fact_sales table in the database"""
+    print("Loading data from database...")
+    load_dotenv()
+    dsn = os.getenv("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError("DATABASE_URL not set in environment variables")
+
+    try:
+        conn = psycopg2.connect(dsn)
+        query = """
+        SELECT
+            d.date_key AS Date,
+            fs.receipt_number AS Receipt,
+            fs.sales_order_number AS SO,
+            p.item_code AS "Item Code",
+            p.description AS Description,
+            fs.expiration_date AS "Expiration Date",
+            fs.quantity_sold AS Qty,
+            fs.unit AS Unit,
+            fs.discount_rate AS Discount,
+            fs.sales_amount AS Sales,
+            fs.cost_amount AS Cost,
+            fs.profit_amount AS Profit,
+            fs.payment AS Payment,
+            fs.cashier_id AS "Cashier ID",
+            fs.txn_type AS TxnType
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        JOIN warehouse.dim_date d ON fs.date_key = d.date_key
+        ORDER BY fs.date_key, fs.receipt_number
+        """
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+
+        if df.empty:
+            raise ValueError("No data found in warehouse.fact_sales table.")
+
+        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+
+        return df
+
+    except Exception as e:
+        print(f"X Error loading data from database: {e}")
+        traceback.print_exc()
+        sys.exit(1)
+
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--input", type=str, default="")
     ap.add_argument("--topn", type=int, default=TOP_N)
     ap.add_argument("--min_cov", type=float, default=0.7)
     args=ap.parse_args()
 
-    in_path = Path(args.input) if args.input else (DATA_DIR/"ANC - 4 YEARS (1).csv")
-    if not in_path.exists(): sys.exit(f"Input not found: {in_path}")
+    if args.input:
+        in_path=Path(args.input)
+        if not in_path.exists(): sys.exit(f"Input not found: {in_path}")
+        df = pd.read_csv(in_path, low_memory=False) if in_path.suffix.lower()==".csv" else pd.read_excel(in_path)
+        rename=detect_columns(df); df=df.rename(columns=rename)
+        out_dir_name = clean_name(in_path.stem)
+    else:
+        df = load_data_from_database()
+        out_dir_name = "database_data"
 
-    df = pd.read_csv(in_path, low_memory=False) if in_path.suffix.lower()==".csv" else pd.read_excel(in_path)
-    rename = detect_columns(df); df=df.rename(columns=rename)
-    df["Date"]=parse_dates_safe(df["Date"]); df=df.dropna(subset=["Date"])
+    if df["Date"].dtype != 'datetime64[ns]':
+        df["Date"]=parse_dates_safe(df["Date"])
+    df=df.dropna(subset=["Date"])
     df["Qty"]=pd.to_numeric(df["Qty"], errors="coerce").fillna(0.0).astype(float)
     df["Description"]=df["Description"].astype(str)
     if "Item Code" not in df.columns: df["Item Code"]=df["Description"].astype(str)
 
     key="Item Code"; mon=monthly(df,key); top=choose_top(mon,key,args.topn,args.min_cov)
-    out_dir=OUT_ROOT/clean_name(in_path.stem); out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir=OUT_ROOT/out_dir_name; out_dir.mkdir(parents=True, exist_ok=True)
     rows=[]
     for sku in top:
         s=mon[mon[key]==sku].copy().sort_values("Date")
         span=pd.date_range(s["Date"].min(), s["Date"].max(), freq="MS")
         y=(s.set_index("Date")["Qty"].reindex(span).fillna(0.0).astype(float))
         desc=df[df[key]==sku]["Description"].dropna().iloc[0] if (df[key]==sku).any() else sku
+        desc = desc.encode('ascii', 'ignore').decode('ascii') if isinstance(desc, str) else str(desc)
 
         if len(y)<18:
             h=min(3,max(1,len(y)//5)); te_idx=y.index[-h:]; y_sn=seasonal_naive(y.iloc[:-h].values,h,SEASON_M)
@@ -211,7 +267,8 @@ def main():
             png=out_dir/f"rf_{clean_name(sku)}.png"
             plot_with_table(f"RF (short fallback) — {sku} — {desc}", y.index[:-h], y.index, y.values, te_idx, {"SN holdout":pd.Series(y_sn,index=te_idx)}, [row], png)
             pd.Series(seasonal_naive(y.values,FORECAST_STEPS,SEASON_M), index=pd.date_range(y.index[-1]+pd.offsets.MonthBegin(1), periods=FORECAST_STEPS, freq="MS")).to_csv(out_dir/f"{clean_name(sku)}_forecast.csv", header=["forecast"])
-            rows.append({"sku":sku,"description":desc,"chosen":"SN","MASE_WF":np.nan,"MASE_holdout":row[6],"plot":png.name}); continue
+            rows.append({"sku":sku,"description":desc,"chosen":"SN","MASE_WF":np.nan,"MASE_holdout":row[6],"plot":png.name})
+            continue
 
         y=winsorize(y,0.995)
 
@@ -220,7 +277,7 @@ def main():
             train, test = y.iloc[:-h], y.iloc[-h:]
             cro = croston_sba(train, steps=h); cro.index=test.index
             sn = seasonal_naive(train.values, h, SEASON_M)
-            def met(name,p,pdsc): 
+            def met(name,p,pdsc):
                 return (name,pdsc, mean_absolute_error(test,p), mean_squared_error(test,p),
                         np.sqrt(mean_squared_error(test,p)), mape(test,p),
                         mase(test,p,train.values,SEASON_M), wape(test,p), mpe(test,p))
@@ -271,8 +328,42 @@ def main():
         rows.append({"sku":sku,"description":desc,"chosen":"RF+Blend","MASE_WF":wf_mase,"MASE_holdout":holdout_mase,"alpha":alpha,"bias":bias,"plot":png.name})
 
     if rows:
-        pd.DataFrame(rows).to_csv(OUT_ROOT/clean_name(in_path.stem)/"rf_summary.csv", index=False)
-        print(f"✅ Saved → {OUT_ROOT/clean_name(in_path.stem)/'rf_summary.csv'}")
+        pd.DataFrame(rows).to_csv(out_dir/"rf_summary.csv", index=False)
+        print(f"[OK] Saved to {out_dir/'rf_summary.csv'}")
+
+        valid_mase_holdout = [r['MASE_holdout'] for r in rows if not np.isnan(r.get('MASE_holdout', np.nan))]
+        valid_mase_wf = [r['MASE_WF'] for r in rows if not np.isnan(r.get('MASE_WF', np.nan))]
+
+        summary = {
+            "metadata": {
+                "timestamp": str(pd.Timestamp.now()),
+                "input_file": "database" if not hasattr(args, 'input') or not args.input else str(Path(args.input)),
+                "output_directory": str(out_dir)
+            },
+            "forecast_config": {
+                "forecast_horizon_months": FORECAST_STEPS,
+                "seasonal_period_months": SEASON_M,
+                "min_coverage_threshold": args.min_cov,
+                "top_n_products": args.topn
+            },
+            "overall_metrics": {
+                "total_products_forecasted": len(rows),
+                "products_with_rf": len([r for r in rows if r['chosen']=="RF+Blend"]),
+                "products_with_croston": len([r for r in rows if r['chosen']=="Croston-SBA"]),
+                "products_with_sn": len([r for r in rows if r['chosen']=="SN"]),
+                "avg_mase_holdout": float(np.mean(valid_mase_holdout)) if valid_mase_holdout else None,
+                "median_mase_holdout": float(np.median(valid_mase_holdout)) if valid_mase_holdout else None,
+                "avg_mase_walkforward": float(np.mean(valid_mase_wf)) if valid_mase_wf else None,
+                "median_mase_walkforward": float(np.median(valid_mase_wf)) if valid_mase_wf else None
+            },
+            "models_used": ["RandomForest", "Seasonal-Naive", "Croston-SBA", "Blend"],
+            "top_products_by_holdout_mase": sorted([r for r in rows if not np.isnan(r.get('MASE_holdout', np.nan))], key=lambda x: x['MASE_holdout'])[:3],
+            "all_products": rows
+        }
+
+        with open(out_dir / "summary.json", "w") as f:
+            json.dump(summary, f, indent=2, default=str)
+        print(f"[OK] Saved summary.json")
 
 if __name__=="__main__":
     main()

@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-11-06T22:45:31.477203",
+  "input_source": {
+    "type": "database",
+    "table": "warehouse.fact_sales",
+    "rows": 119881,
+    "columns": 15,
+    "column_names": [
+      "date",
+      "receipt",
+      "so",
+      "Item Code",
+      "description",
+      "Expiration Date",
+      "qty",
+      "unit",
+      "discount",
+      "sales",
+      "cost",
+      "profit",
+      "payment",
+      "Cashier ID",
+      "txntype"
+    ]
+  },
+  "execution_stages": {
+    "descriptive": {
+      "kpi": {
+        "status": "success"
+      },
+      "mba": {
+        "status": "success"
+      },
+      "clustering": {
+        "status": "success"
+      },
+      "status": "complete",
+      "output_dir": "descriptive_output"
+    },
+    "predictive": {
+      "random_forest": {
+        "status": "success",
+        "output_dir": "ml_random_forest"
+      },
+      "xgboost": {
+        "status": "success",
+        "output_dir": "ml_xgboost_model"
+      },
+      "sarima_ets": {
+        "status": "module_not_found"
+      },
+      "status": "complete"
+    },
+    "prescriptive": {
+      "status": "success",
+      "output_dir": "prescriptive_output"
+    }
+  },
+  "completion_time": "2025-11-06T22:45:31.477214"
+}

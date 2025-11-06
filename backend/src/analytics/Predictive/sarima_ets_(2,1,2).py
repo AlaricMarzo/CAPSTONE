@@ -319,9 +319,55 @@ def sanitize(name: str) -> str:
     return re.sub(r"[^a-z0-9]+","_", name.lower()).strip("_")
 
 # ---------- Main ----------
+def load_data_from_database():
+    """Load data from the warehouse.fact_sales table in the database"""
+    print("Loading data from database...")
+    load_dotenv()
+    dsn = os.getenv("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError("DATABASE_URL not set in environment variables")
+
+    try:
+        conn = psycopg2.connect(dsn)
+        query = """
+        SELECT
+            fs.date_key AS Date,
+            fs.receipt_number AS Receipt,
+            fs.sales_order_number AS SO,
+            p.item_code AS "Item Code",
+            p.description AS Description,
+            fs.expiration_date AS "Expiration Date",
+            fs.quantity_sold AS Qty,
+            fs.unit AS Unit,
+            fs.discount_rate AS Discount,
+            fs.sales_amount AS Sales,
+            fs.cost_amount AS Cost,
+            fs.profit_amount AS Profit,
+            fs.payment AS Payment,
+            fs.cashier_id AS "Cashier ID",
+            fs.txn_type AS TxnType
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        JOIN warehouse.dim_date d ON fs.date_key = d.date_key
+        ORDER BY fs.date_key, fs.receipt_number
+        """
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+
+        if df.empty:
+            raise ValueError("No data found in warehouse.fact_sales table.")
+
+        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+
+        return df
+
+    except Exception as e:
+        print(f"X Error loading data from database: {e}")
+        traceback.print_exc()
+        sys.exit(1)
+
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--file", type=str, default=None, help="Optional path to a single CSV/XLSX")
     p.add_argument("--top", type=int, default=DEFAULT_TOPN)
     p.add_argument("--steps", type=int, default=DEFAULT_FORECAST_STEPS)
     p.add_argument("--recent", type=int, default=24, help="Use only last N months for model fitting")
@@ -333,19 +379,17 @@ def main():
     p.set_defaults(do_cal=True)
     args = p.parse_args()
 
-    files: List[Path] = [Path(args.file)] if args.file else (sorted(list(DATA_DIR.glob("*.csv")))+sorted(list(DATA_DIR.glob("*.xlsx"))))
-    if not files:
-        print(f"No files found. Put CSV/XLSX in {DATA_DIR} or pass --file.")
-        sys.exit(0)
+    df = load_data_from_database()
+    df["Date"] = parse_dates_safe(df["Date"])
+    df = df.dropna(subset=["Date"])
+    df["Description"] = df["Description"].astype(str).str.strip().str.replace(r"\s+"," ", regex=True)
+    df["Qty"] = pd.to_numeric(df["Qty"], errors="coerce").fillna(0).astype(float)
+    monthly = (df.set_index("Date")
+                 .groupby("Description")["Qty"]
+                 .resample("MS").sum()
+                 .reset_index())
 
-    for f in files:
-        try:
-            monthly = load_monthly(f)
-        except Exception as e:
-            print(f"[skip] {f.name}: {e}")
-            continue
-
-        for desc in top_by_frequency(monthly, args.top):
+    for desc in top_by_frequency(monthly, args.top):
             y = series_for(monthly, desc)
             if len(y) < 12:
                 print(f"[skip-short] {desc} in {f.name}")
@@ -448,7 +492,7 @@ def main():
                 png_path, title_prefix="SARIMA/ETS/SARIMAX — 80% Train, 20% Test"
             )
 
-    print(f"Done. Check outputs in: {OUT_ROOT}")
+    print(f"[OK] Done. Check outputs in: {OUT_ROOT}")
 
 if __name__ == "__main__":
     main()

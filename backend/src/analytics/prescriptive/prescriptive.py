@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+    # -*- coding: utf-8 -*-
 """
 Enhanced Pharmacy Sales Analysis with Prescriptive Models (IMPROVED)
 
@@ -30,6 +30,8 @@ from scipy import stats
 from scipy.optimize import linprog, minimize
 from sklearn.ensemble import IsolationForest
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
+import psycopg2
+from dotenv import load_dotenv
 
 warnings.filterwarnings('ignore')
 
@@ -75,16 +77,54 @@ def to_numeric_safe(series, column_name=""):
         print(f"Error converting {column_name}: {e}")
         return pd.Series([np.nan] * len(series))
 
-def select_csv_file():
-    """Automatically select the CSV file in the current directory"""
-    csv_files = list(Path(".").glob("*.csv"))
-    if not csv_files:
-        print("No CSV files found in current directory. Exiting...")
+def load_data_from_database():
+    """Load data from the warehouse.fact_sales table in the database"""
+    print("Loading data from database...")
+    load_dotenv()
+    dsn = os.getenv("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError("DATABASE_URL not set in environment variables")
+
+    try:
+        conn = psycopg2.connect(dsn)
+        query = """
+        SELECT
+            fs.date_key AS date,
+            fs.receipt_number AS receipt,
+            fs.sales_order_number AS so,
+            p.item_code AS item_code,
+            p.description AS description,
+            fs.expiration_date AS expiration,
+            fs.quantity_sold AS qty,
+            fs.unit AS unit,
+            fs.discount_rate AS discount,
+            fs.sales_amount AS sales,
+            fs.cost_amount AS cost,
+            fs.profit_amount AS profit,
+            fs.payment AS payment,
+            fs.cashier_id AS cashier_id,
+            fs.txn_type AS txn_type
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        JOIN warehouse.dim_date d ON fs.date_key = d.date_key
+        ORDER BY fs.date_key, fs.receipt_number
+        """
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+
+        if df.empty:
+            raise ValueError("No data found in warehouse.fact_sales table.")
+
+        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+
+        return df
+
+    except Exception as e:
+        print(f"X Error loading data from database: {e}")
+        traceback.print_exc()
         sys.exit(1)
 
-    csv_path = csv_files[0]
-    print(f"Using CSV file: {csv_path}")
-    return csv_path
+
 
 # Configuration
 plt.style.use('seaborn-v0_8-whitegrid')
@@ -94,16 +134,8 @@ print("=" * 80)
 print("PHARMACY SALES PRESCRIPTIVE ANALYSIS (IMPROVED)")
 print("=" * 80)
 
-# Select and load CSV file
-csv_path = select_csv_file()
-print(f"\nSelected file: {csv_path}")
-
-try:
-    df = pd.read_csv(csv_path)
-    print(f"✓ Loaded {len(df)} rows × {len(df.columns)} columns")
-except Exception as e:
-    print(f"Error loading file: {e}")
-    sys.exit(1)
+# Load data from database
+df = load_data_from_database()
 
 # Normalize column names
 df.columns = [c.strip().lower() for c in df.columns]
@@ -113,7 +145,7 @@ print("\nCleaning and validating data...")
 
 try:
     validate_dataframe(df, REQUIRED_COLUMNS)
-except ValueError as e:
+except ValueError as e: 
     print(f"Validation error: {e}")
     sys.exit(1)
 
@@ -137,7 +169,7 @@ for col in numeric_cols:
 
 if 'profit' not in df.columns or df['profit'].isna().sum() > len(df) * 0.5:
     df['profit'] = df['sales'] - df['cost']
-    print("✓ Calculated profit from sales - cost")
+    print("OK Calculated profit from sales - cost")
 
 if 'description' in df.columns:
     df['description'] = df['description'].astype(str).str.strip()
@@ -158,7 +190,7 @@ df['month'] = df['date'].dt.to_period('M')
 
 df = df[(df['qty'] > 0) & (df['sales'] > 0)].copy()
 
-print(f"✓ Data cleaned: {len(df)} valid rows")
+print(f"OK Data cleaned: {len(df)} valid rows")
 
 medicine_stats = df.groupby('medicine').agg({
     'qty': ['sum', 'count'],
@@ -174,7 +206,7 @@ medicine_stats['profit_margin'] = (medicine_stats['total_profit'] / medicine_sta
 medicine_stats['profit_margin'] = medicine_stats['profit_margin'].clip(lower=-100, upper=100)
 
 top_products = medicine_stats.nlargest(20, 'total_qty')['medicine'].tolist()
-print(f"✓ Analyzing top {len(top_products)} products")
+print(f"OK Analyzing top {len(top_products)} products")
 
 # ========== MODEL 1: FORECAST-DRIVEN REORDER POINT ==========
 print("\n" + "=" * 80)
@@ -256,7 +288,7 @@ if not rop_df.empty:
     print(rop_df.head(10)[['medicine', 'avg_daily_demand', 'safety_stock', 'reorder_point', 'forecast_30day']].to_string(index=False))
 
     rop_df.to_csv(os.path.join(output_dir, 'model_1_reorder_point.csv'), index=False)
-    print(f"✓ Saved: model_1_reorder_point.csv ({len(rop_df)} records)")
+    print(f"OK Saved: model_1_reorder_point.csv ({len(rop_df)} records)")
 
     # Visualization
     plt.figure(figsize=(14, 8))
@@ -342,7 +374,7 @@ if not eoq_df.empty:
     print(eoq_df.head(10)[['medicine', 'annual_demand', 'eoq', 'orders_per_year', 'days_between_orders']].to_string(index=False))
 
     eoq_df.to_csv(os.path.join(output_dir, 'model_2_eoq.csv'), index=False)
-    print(f"✓ Saved: model_2_eoq.csv ({len(eoq_df)} records)")
+    print(f"OK Saved: model_2_eoq.csv ({len(eoq_df)} records)")
 
     # Visualization
     plt.figure(figsize=(14, 8))
@@ -409,12 +441,12 @@ allocation_df = optimize_inventory_allocation(
 )
 
 if allocation_df is not None and not allocation_df.empty:
-    print(f"\nOptimal Inventory Allocation (Budget: ₱{total_budget:,.2f}, Storage: {storage_capacity:,.0f} units):")
+    print(f"\nOptimal Inventory Allocation (Budget: PHP{total_budget:,.2f}, Storage: {storage_capacity:,.0f} units):")
     print(allocation_df.head(10)[['medicine', 'optimal_allocation', 'allocated_value', 'expected_profit']].to_string(index=False))
 
     allocation_export = allocation_df[['medicine', 'total_qty', 'avg_unit_price', 'profit_margin', 'optimal_allocation', 'allocated_value', 'expected_profit']].copy()
     allocation_export.to_csv(os.path.join(output_dir, 'model_3_inventory_allocation.csv'), index=False)
-    print(f"✓ Saved: model_3_inventory_allocation.csv ({len(allocation_export)} records)")
+    print(f"OK Saved: model_3_inventory_allocation.csv ({len(allocation_export)} records)")
 
     # Visualization
     plt.figure(figsize=(14, 8))
@@ -496,7 +528,7 @@ for top_medicine in top_products[:10]:
 if whatif_all_results:
     whatif_combined = pd.concat(whatif_all_results, ignore_index=True)
     whatif_combined.to_csv(os.path.join(output_dir, 'model_4_whatif_analysis.csv'), index=False)
-    print(f"✓ Saved: model_4_whatif_analysis.csv ({len(whatif_combined)} records)")
+    print(f"OK Saved: model_4_whatif_analysis.csv ({len(whatif_combined)} records)")
     
     # Show sample for top product
     if whatif_all_results:
@@ -511,13 +543,13 @@ if whatif_all_results:
         ax1.bar(sample_whatif['scenario'], sample_whatif['projected_sales'], color=['red', 'orange', 'gray', 'lightgreen', 'green'])
         ax1.set_title(f'Sales Projections - {top_products[0]}', fontsize=14)
         ax1.set_xlabel('Scenario')
-        ax1.set_ylabel('Projected Sales (₱)')
+        ax1.set_ylabel('Projected Sales (PHP)')
         ax1.tick_params(axis='x', rotation=45)
         
         ax2.bar(sample_whatif['scenario'], sample_whatif['projected_profit'], color=['red', 'orange', 'gray', 'lightgreen', 'green'])
         ax2.set_title(f'Profit Projections - {top_products[0]}', fontsize=14)
         ax2.set_xlabel('Scenario')
-        ax2.set_ylabel('Projected Profit (₱)')
+        ax2.set_ylabel('Projected Profit (PHP)')
         ax2.tick_params(axis='x', rotation=45)
         
         plt.tight_layout()
@@ -568,14 +600,14 @@ if group_discount is not None:
     print(group_discount[['customer_group', 'qty', 'sales', 'profit', 'avg_discount_pct', 'profit_margin']].to_string(index=False))
     
     group_discount.to_csv(os.path.join(output_dir, 'model_5_discount_by_group.csv'), index=False)
-    print(f"✓ Saved: model_5_discount_by_group.csv ({len(group_discount)} records)")
+    print(f"OK Saved: model_5_discount_by_group.csv ({len(group_discount)} records)")
 
 if product_discount is not None and not product_discount.empty:
     print("\nTop 10 Products by Discount Efficiency:")
     print(product_discount.head(10)[['medicine', 'qty', 'discount_pct', 'profit_margin', 'discount_efficiency']].to_string(index=False))
     
     product_discount.to_csv(os.path.join(output_dir, 'model_5_discount_by_product.csv'), index=False)
-    print(f"✓ Saved: model_5_discount_by_product.csv ({len(product_discount)} records)")
+    print(f"OK Saved: model_5_discount_by_product.csv ({len(product_discount)} records)")
     
     # Visualization
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
@@ -588,7 +620,7 @@ if product_discount is not None and not product_discount.empty:
     
     top_10_disc = product_discount.head(10)
     ax2.barh(top_10_disc['medicine'], top_10_disc['discount_efficiency'], color='teal')
-    ax2.set_xlabel('Discount Efficiency (Qty per ₱ Discount)')
+    ax2.set_xlabel('Discount Efficiency (Qty per PHP Discount)')
     ax2.set_ylabel('Medicine')
     ax2.set_title('Top 10 Discount Efficient Products', fontsize=14)
     
@@ -640,10 +672,10 @@ if resource_df is not None and not resource_df.empty:
     total_capital = resource_df['capital_needed'].sum()
 
     print(f"\nTotal Storage Required: {total_storage:,.0f} cubic feet")
-    print(f"Total Capital Required: ₱{total_capital:,.2f}")
+    print(f"Total Capital Required: PHP{total_capital:,.2f}")
 
     resource_df.to_csv(os.path.join(output_dir, 'model_6_resource_planning.csv'), index=False)
-    print(f"✓ Saved: model_6_resource_planning.csv ({len(resource_df)} records)")
+    print(f"OK Saved: model_6_resource_planning.csv ({len(resource_df)} records)")
 
     # Visualization
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
@@ -656,7 +688,7 @@ if resource_df is not None and not resource_df.empty:
     ax1.set_title('Storage Requirements (Top 10 Products)', fontsize=14)
 
     ax2.barh(top_10_resource['medicine'], top_10_resource['capital_needed'], color='coral')
-    ax2.set_xlabel('Capital Needed (₱)')
+    ax2.set_xlabel('Capital Needed (PHP)')
     ax2.set_ylabel('Medicine')
     ax2.set_title('Capital Requirements (Top 10 Products)', fontsize=14)
 
@@ -706,11 +738,11 @@ if daily_sales is not None and anomalies is not None:
         print(anomalies[['date', 'sales', 'qty', 'profit', 'anomaly_score']].head(10).to_string(index=False))
     
     daily_sales.to_csv(os.path.join(output_dir, 'model_7_anomaly_detection.csv'), index=False)
-    print(f"✓ Saved: model_7_anomaly_detection.csv ({len(daily_sales)} records)")
+    print(f"OK Saved: model_7_anomaly_detection.csv ({len(daily_sales)} records)")
     
     if not anomalies.empty:
         anomalies.to_csv(os.path.join(output_dir, 'model_7_anomalies_only.csv'), index=False)
-        print(f"✓ Saved: model_7_anomalies_only.csv ({len(anomalies)} records)")
+        print(f"OK Saved: model_7_anomalies_only.csv ({len(anomalies)} records)")
     
     # Visualization
     plt.figure(figsize=(16, 6))
@@ -723,7 +755,7 @@ if daily_sales is not None and anomalies is not None:
                daily_sales[daily_sales['anomaly'] == -1]['sales'],
                c='red', label='Anomaly', alpha=0.8, s=100, marker='x')
     plt.xlabel('Date')
-    plt.ylabel('Daily Sales (₱)')
+    plt.ylabel('Daily Sales (PHP)')
     plt.title('Sales Anomaly Detection', fontsize=14)
     plt.legend()
     plt.xticks(rotation=45)
@@ -758,59 +790,59 @@ def generate_recommendations(df, rop_df, eoq_df, allocation_df, product_discount
     """
     recommendations = []
     
-    recommendations.append("\n📦 INVENTORY MANAGEMENT RECOMMENDATIONS:")
+    recommendations.append("\n[INVENTORY] INVENTORY MANAGEMENT RECOMMENDATIONS:")
     
     if not rop_df.empty:
         high_demand = rop_df.nlargest(5, 'avg_daily_demand')
-        recommendations.append(f"\n  ✓ HIGH PRIORITY REORDERS (Top 5 by demand):")
+        recommendations.append(f"\n  OK HIGH PRIORITY REORDERS (Top 5 by demand):")
         for _, row in high_demand.iterrows():
-            recommendations.append(f"    • {row['medicine']}: Reorder at {row['reorder_point']:.0f} units")
+            recommendations.append(f"    - {row['medicine']}: Reorder at {row['reorder_point']:.0f} units")
             recommendations.append(f"      - Safety stock: {row['safety_stock']:.0f} units | 30-day forecast: {row['forecast_30day']:.0f} units")
     
-    recommendations.append("\n📋 ORDERING STRATEGY RECOMMENDATIONS:")
+    recommendations.append("\n[ORDERING] ORDERING STRATEGY RECOMMENDATIONS:")
     
     if not eoq_df.empty:
         top_eoq = eoq_df.head(5)
-        recommendations.append(f"\n  ✓ OPTIMAL ORDER QUANTITIES (Top 5):")
+        recommendations.append(f"\n  OK OPTIMAL ORDER QUANTITIES (Top 5):")
         for _, row in top_eoq.iterrows():
-            recommendations.append(f"    • {row['medicine']}: Order {row['eoq']:.0f} units every {row['days_between_orders']:.0f} days")
+            recommendations.append(f"    - {row['medicine']}: Order {row['eoq']:.0f} units every {row['days_between_orders']:.0f} days")
     
-    recommendations.append("\n💰 BUDGET ALLOCATION RECOMMENDATIONS:")
+    recommendations.append("\n[BUDGET] BUDGET ALLOCATION RECOMMENDATIONS:")
     
     if allocation_df is not None and not allocation_df.empty:
         top_alloc = allocation_df.head(5)
-        recommendations.append(f"\n  ✓ PRIORITIZE INVESTMENT IN:")
+        recommendations.append(f"\n  OK PRIORITIZE INVESTMENT IN:")
         for _, row in top_alloc.iterrows():
-            recommendations.append(f"    • {row['medicine']}: {row['optimal_allocation']:.0f} units (₱{row['allocated_value']:,.2f})")
+            recommendations.append(f"    - {row['medicine']}: {row['optimal_allocation']:.0f} units (PHP{row['allocated_value']:,.2f})")
     
-    recommendations.append("\n💵 PRICING & DISCOUNT RECOMMENDATIONS:")
+    recommendations.append("\n[PRICING] PRICING & DISCOUNT RECOMMENDATIONS:")
     
     if product_discount is not None and not product_discount.empty:
         efficient_discounts = product_discount.head(3)
-        recommendations.append(f"\n  ✓ MAINTAIN/INCREASE DISCOUNTS FOR:")
+        recommendations.append(f"\n  OK MAINTAIN/INCREASE DISCOUNTS FOR:")
         for _, row in efficient_discounts.iterrows():
-            recommendations.append(f"    • {row['medicine']}: {row['discount_pct']:.1f}% discount (efficiency: {row['discount_efficiency']:.1f})")
+            recommendations.append(f"    - {row['medicine']}: {row['discount_pct']:.1f}% discount (efficiency: {row['discount_efficiency']:.1f})")
     
-    recommendations.append("\n📈 SALES GROWTH OPPORTUNITIES:")
+    recommendations.append("\n[SALES] SALES GROWTH OPPORTUNITIES:")
     
     high_margin = medicine_stats.nlargest(5, 'profit_margin')
-    recommendations.append(f"\n  ✓ PROMOTE HIGH-MARGIN PRODUCTS:")
+    recommendations.append(f"\n  OK PROMOTE HIGH-MARGIN PRODUCTS:")
     for _, row in high_margin.iterrows():
-        recommendations.append(f"    • {row['medicine']}: {row['profit_margin']:.1f}% margin")
+        recommendations.append(f"    - {row['medicine']}: {row['profit_margin']:.1f}% margin")
     
-    recommendations.append("\n⚙️ OPERATIONAL EFFICIENCY:")
+    recommendations.append("\n[OPERATIONAL] OPERATIONAL EFFICIENCY:")
     
     if anomalies is not None and not anomalies.empty:
-        recommendations.append(f"\n  ✓ INVESTIGATE {len(anomalies)} ANOMALOUS SALES DAYS")
+        recommendations.append(f"\n  OK INVESTIGATE {len(anomalies)} ANOMALOUS SALES DAYS")
         for _, row in anomalies.head(3).iterrows():
-            recommendations.append(f"    • {row['date'].strftime('%Y-%m-%d')}: ₱{row['sales']:,.2f} (Score: {row['anomaly_score']:.2f})")
+            recommendations.append(f"    - {row['date'].strftime('%Y-%m-%d')}: PHP{row['sales']:,.2f} (Score: {row['anomaly_score']:.2f})")
     
-    recommendations.append("\n🏗️ RESOURCE PLANNING (Next 90 Days):")
+    recommendations.append("\n[RESOURCE] RESOURCE PLANNING (Next 90 Days):")
     
     if resource_df is not None and not resource_df.empty:
-        recommendations.append(f"\n  ✓ PREPARE FOR NEXT QUARTER:")
-        recommendations.append(f"    • Storage needed: {resource_df['storage_needed'].sum():,.0f} cubic feet")
-        recommendations.append(f"    • Capital required: ₱{resource_df['capital_needed'].sum():,.2f}")
+        recommendations.append(f"\n  OK PREPARE FOR NEXT QUARTER:")
+        recommendations.append(f"    - Storage needed: {resource_df['storage_needed'].sum():,.0f} cubic feet")
+        recommendations.append(f"    - Capital required: PHP{resource_df['capital_needed'].sum():,.2f}")
     
     return "\n".join(recommendations)
 
@@ -829,7 +861,7 @@ with open(recommendations_file, 'w', encoding='utf-8') as f:
     f.write("=" * 80 + "\n")
     f.write(recommendations)
 
-print(f"\n✓ Saved: model_8_prescriptive_recommendations.txt")
+print(f"\nOK Saved: model_8_prescriptive_recommendations.txt")
 
 summary_data = {
     'Model': [
@@ -866,30 +898,152 @@ summary_data = {
 
 summary_df = pd.DataFrame(summary_data)
 summary_df.to_csv(os.path.join(output_dir, 'SUMMARY_all_models.csv'), index=False)
-print(f"✓ Saved: SUMMARY_all_models.csv")
+print(f"OK Saved: SUMMARY_all_models.csv")
 
+# ========== COMPREHENSIVE SUMMARY JSON ------------------
 print("\n" + "=" * 80)
-print("✅ ANALYSIS COMPLETE!")
+print("GENERATING COMPREHENSIVE SUMMARY...")
 print("=" * 80)
-print("\n📊 Generated CSV Files for Graphing:")
-print("  1. model_1_reorder_point.csv - Reorder points with safety stock")
-print("  2. model_2_eoq.csv - Economic order quantities and costs")
-print("  3. model_3_inventory_allocation.csv - Optimal inventory allocation")
-print("  4. model_4_whatif_analysis.csv - Scenario analysis for all products")
-print("  5. model_5_discount_by_group.csv - Discount analysis by customer group")
-print("  6. model_5_discount_by_product.csv - Discount efficiency by product")
-print("  7. model_6_resource_planning.csv - Resource requirements for 90 days")
-print("  8. model_7_anomaly_detection.csv - Daily sales with anomaly flags")
-print("  9. model_7_anomalies_only.csv - Flagged anomalous days only")
-print("  10. SUMMARY_all_models.csv - Index of all generated files")
-print("\n📈 Generated Chart Images:")
-print("  • model_1_reorder_point_chart.png")
-print("  • model_2_eoq_chart.png")
-print("  • model_3_inventory_allocation_chart.png")
-print("  • model_4_whatif_analysis_chart.png")
-print("  • model_5_discount_optimization_chart.png")
-print("  • model_6_resource_planning_chart.png")
-print("  • model_7_anomaly_detection_chart.png")
-print("\n📄 Generated Report:")
-print("  • model_8_prescriptive_recommendations.txt")
-print("\n" + "=" * 80)
+
+# Build comprehensive summary with results from all models
+summary = {
+    "execution_timestamp": datetime.now().isoformat(),
+    "analysis_period": {
+        "start_date": str(df['date'].min()),
+        "end_date": str(df['date'].max()),
+        "total_days": (df['date'].max() - df['date'].min()).days,
+        "total_transactions": len(df),
+        "total_products": len(medicine_stats)
+    },
+
+    # Model 1: Reorder Point Results
+    "model_1_reorder_point": {
+        "total_products_analyzed": len(rop_df) if not rop_df.empty else 0,
+        "top_10_by_reorder_point": rop_df.nlargest(10, 'reorder_point')[
+            ['medicine', 'avg_daily_demand', 'safety_stock', 'reorder_point', 'forecast_30day']
+        ].to_dict('records') if not rop_df.empty else [],
+        "average_safety_stock": float(rop_df['safety_stock'].mean()) if not rop_df.empty else 0,
+        "average_reorder_point": float(rop_df['reorder_point'].mean()) if not rop_df.empty else 0,
+        "total_safety_stock_needed": float(rop_df['safety_stock'].sum()) if not rop_df.empty else 0,
+    },
+
+    # Model 2: EOQ Results
+    "model_2_eoq": {
+        "total_products_analyzed": len(eoq_df) if not eoq_df.empty else 0,
+        "top_10_by_annual_demand": eoq_df.head(10)[
+            ['medicine', 'annual_demand', 'eoq', 'orders_per_year', 'days_between_orders', 'total_annual_cost']
+        ].to_dict('records') if not eoq_df.empty else [],
+        "average_eoq": float(eoq_df['eoq'].mean()) if not eoq_df.empty else 0,
+        "average_orders_per_year": float(eoq_df['orders_per_year'].mean()) if not eoq_df.empty else 0,
+        "total_annual_ordering_cost": float(eoq_df['annual_ordering_cost'].sum()) if not eoq_df.empty else 0,
+        "total_annual_holding_cost": float(eoq_df['annual_holding_cost'].sum()) if not eoq_df.empty else 0,
+        "total_annual_purchase_cost": float(eoq_df['annual_purchase_cost'].sum()) if not eoq_df.empty else 0,
+        "total_combined_cost": float(eoq_df['total_annual_cost'].sum()) if not eoq_df.empty else 0,
+    },
+
+    # Model 3: Inventory Allocation Results
+    "model_3_inventory_allocation": {
+        "total_products_optimized": len(allocation_df) if allocation_df is not None and not allocation_df.empty else 0,
+        "total_budget_allocated": float(allocation_df['allocated_value'].sum()) if allocation_df is not None and not allocation_df.empty else 0,
+        "total_expected_profit": float(allocation_df['expected_profit'].sum()) if allocation_df is not None and not allocation_df.empty else 0,
+        "budget_constraint_php": float(total_budget),
+        "storage_constraint_units": float(storage_capacity),
+        "top_5_allocations": allocation_df.nlargest(5, 'optimal_allocation')[
+            ['medicine', 'optimal_allocation', 'allocated_value', 'profit_margin', 'expected_profit']
+        ].to_dict('records') if allocation_df is not None and not allocation_df.empty else [],
+    },
+
+    # Model 4: What-If Analysis Results
+    "model_4_whatif_analysis": {
+        "total_scenarios_analyzed": len(whatif_combined) if 'whatif_combined' in locals() else 0,
+        "scenario_summary": {},
+    },
+
+    # Model 5: Discount Optimization Results
+    "model_5_discount_optimization": {
+        "customer_group_analysis": group_discount[
+            ['customer_group', 'qty', 'sales', 'profit', 'avg_discount_pct', 'profit_margin']
+        ].to_dict('records') if group_discount is not None else [],
+        "total_discounted_products": len(product_discount) if product_discount is not None and not product_discount.empty else 0,
+        "top_10_discount_efficient": product_discount.head(10)[
+            ['medicine', 'qty', 'discount_pct', 'profit_margin', 'discount_efficiency']
+        ].to_dict('records') if product_discount is not None and not product_discount.empty else [],
+        "average_discount_pct": float(product_discount['discount_pct'].mean()) if product_discount is not None and not product_discount.empty else 0,
+        "average_profit_margin": float(product_discount['profit_margin'].mean()) if product_discount is not None and not product_discount.empty else 0,
+    },
+
+    # Model 6: Resource Planning Results
+    "model_6_resource_planning": {
+        "planning_horizon_days": PLANNING_HORIZON_DAYS,
+        "total_products_planned": len(resource_df) if resource_df is not None and not resource_df.empty else 0,
+        "total_storage_needed_cubic_feet": float(resource_df['storage_needed'].sum()) if resource_df is not None and not resource_df.empty else 0,
+        "total_capital_required_php": float(resource_df['capital_needed'].sum()) if resource_df is not None and not resource_df.empty else 0,
+        "average_daily_demand": float(resource_df['daily_demand'].mean()) if resource_df is not None and not resource_df.empty else 0,
+        "total_projected_demand": float(resource_df['projected_demand'].sum()) if resource_df is not None and not resource_df.empty else 0,
+        "top_5_resource_requirements": resource_df.head(5)[
+            ['medicine', 'daily_demand', 'projected_demand', 'storage_needed', 'capital_needed']
+        ].to_dict('records') if resource_df is not None and not resource_df.empty else [],
+    },
+
+    # Model 7: Anomaly Detection Results
+    "model_7_anomaly_detection": {
+        "total_days_analyzed": len(daily_sales) if daily_sales is not None else 0,
+        "anomalies_detected": len(anomalies) if anomalies is not None and not anomalies.empty else 0,
+        "anomaly_percentage": float((len(anomalies) / len(daily_sales) * 100) if daily_sales is not None and len(daily_sales) > 0 else 0),
+        "critical_anomalies": anomalies.nsmallest(5, 'anomaly_score')[
+            ['date', 'sales', 'qty', 'profit', 'anomaly_score']
+        ].to_dict('records') if anomalies is not None and not anomalies.empty else [],
+        "average_anomaly_score": float(anomalies['anomaly_score'].mean()) if anomalies is not None and not anomalies.empty else 0,
+    },
+
+    # Overall Financial Summary
+    "financial_summary": {
+        "total_sales": float(df['sales'].sum()),
+        "total_cost": float(df['cost'].sum()),
+        "total_profit": float(df['profit'].sum()),
+        "overall_profit_margin_pct": float((df['profit'].sum() / df['sales'].sum() * 100) if df['sales'].sum() > 0 else 0),
+        "total_quantity_sold": int(df['qty'].sum()),
+        "average_transaction_value": float(df['sales'].sum() / len(df)) if len(df) > 0 else 0,
+        "average_profit_per_transaction": float(df['profit'].sum() / len(df)) if len(df) > 0 else 0,
+    },
+
+    # Top Products Summary
+    "top_products_summary": {
+        "by_revenue": medicine_stats.nlargest(5, 'total_sales')[
+            ['medicine', 'total_qty', 'total_sales', 'total_profit', 'profit_margin']
+        ].to_dict('records'),
+        "by_quantity": medicine_stats.nlargest(5, 'total_qty')[
+            ['medicine', 'total_qty', 'total_sales', 'profit_margin']
+        ].to_dict('records'),
+        "by_profit_margin": medicine_stats.nlargest(5, 'profit_margin')[
+            ['medicine', 'profit_margin', 'total_qty', 'total_profit']
+        ].to_dict('records'),
+    },
+
+    # Key Metrics
+    "key_metrics": {
+        "models_executed": 8,
+        "csv_files_generated": 11,
+        "chart_files_generated": 8,
+        "recommendations_file": "model_8_prescriptive_recommendations.txt",
+    },
+}
+
+if 'whatif_combined' in locals() and not whatif_combined.empty:
+    scenario_names = whatif_combined['scenario'].unique()
+    for scenario in scenario_names:
+        scenario_data = whatif_combined[whatif_combined['scenario'] == scenario]
+        summary["model_4_whatif_analysis"]["scenario_summary"][scenario] = {
+            "products_analyzed": len(scenario_data),
+            "average_profit_change_pct": float(scenario_data['profit_change_pct'].mean()),
+            "min_profit_change_pct": float(scenario_data['profit_change_pct'].min()),
+            "max_profit_change_pct": float(scenario_data['profit_change_pct'].max()),
+        }
+
+# Write summary to JSON file
+summary_json_path = os.path.join(output_dir, "summary.json")
+with open(summary_json_path, 'w', encoding='utf-8') as f:
+    json.dump(summary, f, indent=2, default=str)
+
+print(f"OK Saved: summary.json ({len(str(summary))} bytes)")
+print(f"OK Summary includes results from all 8 models with comprehensive metrics")

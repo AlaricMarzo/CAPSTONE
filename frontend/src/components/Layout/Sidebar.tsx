@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Home, ShoppingCart, Package, FileBarChart, UploadIcon, User } from "lucide-react"
+import { Home, ShoppingCart, Package, FileBarChart, UploadIcon, User, BarChart } from "lucide-react"
 
  interface SidebarProps {
    activeTab: string
@@ -11,6 +11,9 @@ const navigation = [
    { id: "sales", name: "Sales", icon: ShoppingCart },
    { id: "inventory", name: "Inventory", icon: Package },
    { id: "reports", name: "Reports", icon: FileBarChart },
+   { id: "descriptive", name: "Descriptive", icon: BarChart },
+   { id: "predictive", name: "Predictive", icon: FileBarChart },
+   { id: "prescriptive", name: "Prescriptive", icon: Package },
    { id: "upload", name: "Upload Data", icon: UploadIcon },
  ]
  

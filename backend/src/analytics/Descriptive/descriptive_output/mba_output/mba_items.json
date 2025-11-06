@@ -1,0 +1,5007 @@
+[
+  {
+    "item":"BIOGESIC (PARACETAMOL) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":35,
+    "support_pct":5.77
+  },
+  {
+    "item":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":22,
+    "support_pct":3.62
+  },
+  {
+    "item":"BIOFLU (PENYLEPHINE + CHLORPHENAMINE + PARACETAMOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":17,
+    "support_pct":2.8
+  },
+  {
+    "item":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":17,
+    "support_pct":2.8
+  },
+  {
+    "item":"SANICARE BATHROOM TISSUE 1&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":15,
+    "support_pct":2.47
+  },
+  {
+    "item":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":14,
+    "support_pct":2.31
+  },
+  {
+    "item":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":14,
+    "support_pct":2.31
+  },
+  {
+    "item":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":13,
+    "support_pct":2.14
+  },
+  {
+    "item":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":12,
+    "support_pct":1.98
+  },
+  {
+    "item":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":12,
+    "support_pct":1.98
+  },
+  {
+    "item":"GREENCROSS 70% W\/ MOIST 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":12,
+    "support_pct":1.98
+  },
+  {
+    "item":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":12,
+    "support_pct":1.98
+  },
+  {
+    "item":"WILKINS PURE 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":12,
+    "support_pct":1.98
+  },
+  {
+    "item":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":11,
+    "support_pct":1.81
+  },
+  {
+    "item":"EMICOX (CELECOXIB) 200MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":11,
+    "support_pct":1.81
+  },
+  {
+    "item":"LE MINERALE 1.5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":11,
+    "support_pct":1.81
+  },
+  {
+    "item":"ALCLAV NEO (CO-AMOXICLAV) 625MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":10,
+    "support_pct":1.65
+  },
+  {
+    "item":"LE MINERALE 600ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":10,
+    "support_pct":1.65
+  },
+  {
+    "item":"RM LOSARTAN 50MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":10,
+    "support_pct":1.65
+  },
+  {
+    "item":"SAPHORMIN T500 (METFORMIN HCL) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":10,
+    "support_pct":1.65
+  },
+  {
+    "item":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":10,
+    "support_pct":1.65
+  },
+  {
+    "item":"ERCEFLORA (BASILLUS CLAUSII) ORAL SOLUTION 5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"IMMUNPRO 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"RM COLCHICINE 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"VIVALYTE E-DRINK APPLE 250ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":9,
+    "support_pct":1.48
+  },
+  {
+    "item":"CEFUSAPH (CEFUROXIME AXETIL) 500MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"CLEENE CLIO TBRUSH ECONOMY",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"LE MINERALE 330ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"MYONAL (EPERISONE HYDROCHLORIDE) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"SOLMUX (CARBOCISTEINE) 500MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"STREPSILS HONEY LEMON 8s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"Sales Discount Variance",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"VIVALYTE E-DRINK ORANGE 250ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"WHITE FLOWER AC5 1.5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":8,
+    "support_pct":1.32
+  },
+  {
+    "item":"ADVIL LIQUIGEL (IBUPROFEN) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"ATORSAPH-20 (ATORVASTATIN) 20MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"BETTERVENT (SALBUTAMOL) 1MG\/ML (2.5MG\/2.5ML) SOL&#039;N",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"CENTRUM SILVER ADV TAB 1s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"DIATABS (LOPERAMIDE) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"FEMME FACIAL TISSUE UNSCENTED",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"GAUZE PAD 4X4 TRUCARE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"HAPPY ABSORBENT COTTON 40G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"MUCOTUSS FORTE (PHENYLPROPANOLAMINE HCL + CHLORPHENIRAMINE MALEATE + PARACETAMOL + DEXTROMETHORPHAN",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"PREGABASAPH-75 (PREGABALIN) 75MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"ROBITUSSIN L-GEL (GUAIFENESIN) 200MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - ALOE 15 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"TERRAFERON (FERROUS SULFATE + FOLIC ACID + B-COMPLEX + NICOTINAMIDE) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":7,
+    "support_pct":1.15
+  },
+  {
+    "item":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"AMLOTHIX (AMLODIPINE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"ATORSAPH-40 (ATORVASTATIN) 40MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"AZISAPH (AZITHROMYCIN) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"CALTRATE ADVANCE TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"CELCOXX (CELECOXIB) 200MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"CENTRUM(ADVANCE)TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"FUSEDEX (FUROSEMIDE) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"INTERPHIL (IRBESARTAN) 300MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"KETESSE (DEXKETOPROFEN) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"RM MEFENAMIC ACID 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"ROSUSAPH-20 (ROSUVASTATIN) 20MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"SALONPAS PLASTER 20s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"SISTERS NIGHT PLUS 8&#039;S W\/ WINGS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"WILKINS PURE 1L",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":6,
+    "support_pct":0.99
+  },
+  {
+    "item":"ALANERV 920MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"ALCOSURE ISOPROPYL ALC 70% 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"CARESS ADULT DIAPER L10+1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"CHARMEE PANTYLINER GO GIRL 20+2",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"CHERIFER PGM CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"DUAVENT P-NEB 500MCG (IPRATROPRIUM + SALBUTAMOL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"EFFICASCENT OIL EXTRA STRENGTH 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"FEMME INTERFOLDED PAPER TOWEL 1PLY",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"GREENCROSS 70% W\/ MOIST 250ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"HYGEEN COTTON BALLS 50s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"LILAC (LACTULOSE) SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"LOLA REMEDIOS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"MYRA E (VITAMIN E) 12+2 SULIT PACK",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"NAFARIN A (PHENYLEPROPANOLAMINE HCI + CHLORPHENAMINE MALEATE + PARACETAMOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"NEUROBION (VITAMIN B1 + B6 + B12) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"PARTNERS BLOOD GLUCOMETER CBPC-73",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"PHAREX VITAMIN (VITAMIN B1+B6+B12) 17+3 TAB NS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"POCARI SWEAT ION DRINK 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"ROSUSAPH-10 (ROSUVASTATIN) 10MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"SPIROFAR (SPIRONOLACTONE) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"STREPSILS LOZ EXTRA STRONG 8s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"STRESSTABS WIRON TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"TAMPLUS (TAMSULOSIN + FINASTERIDE) 400MCG\/5MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"TOPRADONE (PANTOPRAZOLE+DOMPERIDONE) 40MG\/30MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"WILKINS DISTILLED 1L",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"XIPRO TAB 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"ZOCEF (CEFUROXIME) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"ZYKAST (MONTELUKAST NA + LEVOCETIRIZINE HCL) TAB 10MG\/5MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":5,
+    "support_pct":0.82
+  },
+  {
+    "item":"ALCLAV (CO-AMOXICLAV) 625MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ALGINA (SODIUM ALGINATE) SUS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ALNIX PLUS SYR 5MG 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ANALMIN 500MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"APTRADOL (TRAMADOL HYDROCHLORIDE) 50MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ASMALINÂ® 2MG SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"AUGMENTIN (CO-AMOXICLAV) 457MG 70ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"AUGMENTIN 625MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"BACIFLORA PROBIOTIC DIETARY SUPP 5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"BETADINE (POVIDONE IODINE) WOUND SOLUTION 7.5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"BONAMINE (MECLYCINE HYDROCLHORIDE) CHEW (ADULT) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"CITCOLE (CITICOLINE) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"CLODIN (CLONIDINE) 150MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"DIAMICRON MR (GLICAZIDE) 60MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"DOLFENAL (MEFENAMIC ACID) 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"DOLO NEUROBION(PARACETAMOL + VITAMIN B1+ VITAMIN B6 + VITAMIN B12) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"DULCOLAX SUPP ADULT 10MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"EXFLEM (ACETYLCYSTEINE) 600MG SACH",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"FLANAX FORTE 550MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"FLUIMUCIL (ACETYLCYTEINE) 600MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"FORTRA 200MCG\/6MCG CANISTER",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"GREENCROSS 70% W\/ MOIST 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"INHIBITA (OMEPRAZOLE) 40MG EC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"IRBEQ 150 (IRBESARTAN) 150MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"JOHNSONS BABY OIL ALOE VERA 125ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"JOHNSONS BLOSSOMS BABY POWDER 50G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"KATINKO INHALER",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"LEUKOREX (MONTELUKAST SODIUM) 10MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"MEDICOL ADVANCE 400MG (IBUPROFEN",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"MEDPIN-5 TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"NURSY BABY WIPES SCENTED 90&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"POTEN CEE SUGAR COATED 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"REXIDOL FORTE TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"RHEA HYDROGEN PEROXIDE 10VOL 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"RM TRIMETAZIDINE 35MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"SANICARE COTTON BUDS 200 STEM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"SINUPRET FORTE DRAGEES",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"SYMDEX D TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"TEMPRA 120MG SYRUP 60ML (ORANGE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"TRAPADIX (PARACETAMOL+TRAMADOL) 325MG\/37.5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"VALDA PASTILLES MENTHOL ZIP POUCH 20G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"VERTEX (CINNARIZINE) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"VIBEE TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"VICKS VAPORUB 25G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"WILKINS DISTILLED 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":4,
+    "support_pct":0.66
+  },
+  {
+    "item":"AFICIONADO COOL FANCY RED 55ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ALGESIA (PARACETAMOL + TRAMADOL) 37.5\/325 MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ALLECUR (CETIRIZINE) 5MG\/5MML 60ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ALNIX (CETIRIZINE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ASCORSAPH ZEE(ASCORBIC ACID+ZN)500MG\/10MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ASFRENONSYR 2MG 60ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"BACTIDOL ORAL 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"BETZINE (BETAHISTINE HYDROCHLORIDE) 24MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"BUSCOPAN TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CALCIUMADE (CALCIUM + VITAMIN + MINERALS) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CARESS ADULT DIAPER XL10",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CARESS UNDERPADS XL8",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CARVID (CARVEDILOL) 6.25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CEELIN PLUS SYR 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CENTRUM SILVER ADV TAB 30",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CETOZ-L (LEVOCETIRIZINE DIHYDROCHLORIDE) 5MG FCT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CHARMEE BREATHABLE PANTY LINER GREEN 8&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CHARMEE UNSCENTED BREATHABLE PANTY LINER PINK 8&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"COLGATE AMINO POWDER 37G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"CYSAPHTEINE (ACETYLCYSTEINE) 600MG SACH",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"DECOLGEN FORTE (PHENYLEPROPANOLAMINE HCI + CHLORPHENAMINE MALEATE + PARACETAMOL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"DOXOFIX (DOXOFYLLINE) 400MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"DULCOLAX (BISACODYL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"DUOTRAM (PARA + TRAMA HCL) 325MG\/37.5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"EFFICASCENT EXTREME(METHYLSALICYLATE CHAMPOR + MENTHOL) 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"EFFICASCENT OIL EXTRA STRENGTH 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ESSENTIALE FORTE (PHOSPHOLIPIDS) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"FELOSTAL ER-10 (FELODIPINE) 10MG ER TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"FORMET (METFORMIN) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"GETZAR (LOSARTAN POTASSIUM) 50MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"GLUMET XR 500MG (METFORMIN HCI) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"GLYXAMBI FC TAB 25MG\/5MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"HAPPY ABSORBENT COTTON 10G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"HEPATEK (CARNITINE OROTATE+SILYMARIN+VIT B+ZINC) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"IMODIUM (LOPERAMIDE) 2MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ITORVAZ 20 (ATORVASTATIN) 20MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"JOHNSONS BABY OIL ALOE VERA 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"JOHNSONS WHITE BABY POWDER 25G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"KATINKO JAR 30G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"KATINKO TINS 10G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"KREMIL S ADVANCE (FAMOTIDINE + CALCIUM CARBONATE + MAGNESIUM HYDROXIDE) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"LANOXIN TAB 0.25MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"LISTERINE COOL MINT 250ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"LQUIN (LEVOFLOXACIN) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"MX3 CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"NIVEA SAKURA ROLL-ON 50ML X2",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"NURSY BABY WIPES POWDER SCENT 30&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"NURSY BABY WIPES SCENTED 66&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"OMEGA GOLD CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"OMEGA PAIN KILLER 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"PANTOBET PLUS (PANTOPRAZOLE+DOMPERIDONE) 40MG\/30MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"PLASTIC URINAL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"POCARI SWEAT ION DRINK 900ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"PROLIX (PREDNISONE) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"PROMETIN (METOPROLOL) 50MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"PURE PROTECT NATURAL SANITIZER 70% 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"RAMAVIT (VITAMIN B COMPLEX) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"RM METFORMIN 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"SAFEGUARD PURE WHITE 60G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"SARIDON TRIPLE ACTION (PARACETAMOL PROPYPHENAZONE CAFFEINE) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"SEREMAX FORTE (PREGABALIN + MECOBALAMIN + ALPHA LIPOIC ACID) 75MG\/750MCG\/100MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"STYLEX STRONG HOLD (CLEAR) 125G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"TRUST PILLS (ETHINYL ESTRADIOL + LEVONORGESTREL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"TUSERAN PPA 5+1 CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"VESTAR (TRIMETAZIDINE) 35MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"VICKS VAPORUB 10G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":3,
+    "support_pct":0.49
+  },
+  {
+    "item":"ADVAN PREGNANCY TEST",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ALLERKID 2.5MG DROPS 10ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ALLURASE(ALLOPURINOL) 100MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ALNIX 5MG\/5ML SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ALNIX PLUS (CETIRIZINE+PHENYLEPHRINE) 5MG\/10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"APLOSYN OTIC DROP 5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"APPENTANYX (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ASPEC EC (ASPIRIN) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ASPILETS (ASPIRIN) 80MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"B-PLEX (VIT B1+B6+B12) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"B.T. TISYU 4&#039;S 400SH 2P",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BACTIDOL ORAL120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BAND AID PLASTIC STRIPS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BBFLO GENTLE BUDS WHITE 200s TIPS+36 TIPS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BBFLO PETROLEUM JELLY POWDERY FRESH 50G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BEROCCA (MULTIVITAMINS & MINERALS) TAB 1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BETADINE GARGLE 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BETADINE WOUND SOL&#039;N 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BEWELL-C ZINC PROTECT 10s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BIODERM SOAP TIMELESS BEIGE 135G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BIOGESIC 100MG ORANGE 15ML DRP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BIOGESIC 120MG\/5ML OR SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BL CREAM 7G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"BUSCOPAN VENUS (HYOSCINE BUTYLBROMIDE) 10MG500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CAD3 FS 600MG\/200IU TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CALCIFESAPH ( CALCIUM+VITAMIN D3) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CANESTEN (CLOTRIMAZOLE) 3G CREAM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CARESS ADULT DIAPER M1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CARESS ADULT DIAPER M10+1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CASINO FEMME 150ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CATAPRES TAB (ETHYL ALC) 75MCG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CETADOL (PARACETAMOL + TRAMADOL HCL) 325MG\/37.5MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CLEENE CLIO TBRUSH KIDDIE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CLOOK CARE (OXYGEN REGULATOR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CO-ALTRIA (MONTELUKAST SODIUM + LEVOCITIRIZINE DEHYDROCHLORIDE) 10MG\/5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"COLGATE AMINO POWDER 74G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"CYFROX (CIPROFLOXACIN) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DANZEDIN 80000 EC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DECILONE FORTE 4MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DERPSON (PREDNISONE) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DIFFLAM LOZENGES (BENZYDAMINE HYDROCHLORIDE) 3MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DIZIMARC 16MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DOLAN FP FORTE (IBUPROFEN) 200MG 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DOVE WHITE BEAUTY BAR 135G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DR. S WONG&#039;S SULFUR SOAP 80G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DR. S WONG&#039;S SULFUR W\/ ALOE VERA SOAP 80G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"DUODART 500\/400MCGCAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"EFFICASCENT RELAXSCENT OIL 3ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ENERVON TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ENSURE GOLD VANILLA 400G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"EUTHYROX (LEVOTHYROXINE) 25MCG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"EUTHYROX (LEVOTHYROXINE) 50MCG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"EZ LUBRICATING JELLY 10G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"FASTUM GEL 30G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"FLAGEX (METRONIDAZOLE) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"FLOTERA (LACTOBACILLUS REUTERI) CHEWABLE TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"FOLINOVA (FOLIC ACID) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GALVUSMET (VILDAGLIPTIN + METFORMIN) 50\/500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GILLETE RAZOR BLUE 2 FLEXI",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GLIMESYN (GLIMEPIRIDE) 2MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GLOMED LATEX GLOVES LARGE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GOUTSAPH (COLCHICINE) 500MCG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GREENCROSS 40% W\/ MOIST 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"GYNEPRO 60ML +MODESS SET",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"HIVENT PLUS (SALBUTAMOL+IPRATROPIUM BROMIDE) 2.5MG+500MCG\/2.5ML AMP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"HOVICOR (HYDROCORTISONE) CREAM 15G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"HYDRITE GRANULES (APPLE) SAC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"I-SHIELD ICE BAG 6&#039;",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ICOX (CELCOXIB) 200MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"INBUMIN 250MG (STRIATIN) FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"INSULIN SYRINGE TERUMO 29GX1\/2G 1\/21CC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"IPI SALICYLIC ACID 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ITORVAZ 40 (ATORVASTATIN) 40MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"JOHNSONS BLOSSOMS BABY POWDER 100G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KATIALIS S 5G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KATIALIS SOAP 90G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KING MED LANCETS 200&#039;S STERILE 23G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KOJIESAN CLASSIC 3s 65G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KOOL FEVER BABY 2&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"KREMIL S (ALUMINUM HYDROXIDE + MAGNESIUM HYDROXIDE + SIMETICONE) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"LADY PILLS (ETHINYL ESTRADIOL + LEVONORGESTEROL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"LAMPEIN L 4S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"LISTERINE FRESH BURST 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"LOMOTIL (LOPERAMIDE HCI) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"LUMAR ORS 6G SACHET ORANGE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MEDIPLAST BANTAM PLASTIC STRIPS 12s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MICARDIS PLUS (TELMISARTAN + HYDROCHLOROTHIAZIDE) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MICROPORE 1 INCH",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MICROPORE 1\/2 INCH",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MODESS REGULAR NON WINGS 8&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MONTIGET (MONTELUKAST SODIUM) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MONTIGET (MONTELUKAST SODIUM) 4MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MOPIBAC (MUPIROCIN OINTMENT) 2% 5G TUBE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MUCOSOLVAN 75MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MULTIVIT-PLUS (MULTIVITAMINS) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MUPISAPH (MUPIROCIN) 20MG\/G 5G OINMENT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"MYRA E 400 CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NATRAZOL (LOSARTAN) 100MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NIVEA MEN SILVER PROTECT ROLL-ON 50ML X2",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NORMIX (RIFAXIMIN) 200MG FCT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NURSY BABY WIPES UNSCENTED 30&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"NUVERT (BETAHISTINE HCL) 16MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ORAHEX ALCOHOL FREE 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PALMOLIVE INTENSIVE MOISTURE 90ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PANTO PLUS (PANTOPRAZOLE + DOMPERIDONE) 40MG\/30MG TAB 30",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PANTOR 40MG (PANTOPRAZOLE SODIUM) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PATIENT GOWN",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PAU LINIMENT 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PAU MASAJE ORANGE 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PHILPARA (PARACETAMOL) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PLOGREL (CLOPIDOGREL) 75MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PROHEALTHCARE AUTOMATIC BLOOD PRESSURE MONITOR VM600",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"PROHEALTHCARE DISP. MASK",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"REXONA MEN ROLL ON ICE COOL 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RISEK (OMEPRAZOLE) 40MG CAP 14",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RM AMLODIPINE 10MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RM AMLODIPINE 5MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RM AMOXICILLIN 500MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RM ATORVASTATIN 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"RM CLOPIDOGREL 75MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ROBITUSSIN DM 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ROBITUSSIN DM 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SAFEGUARD LEMON 130G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SAFEGUARD PURE WHITE 85G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SANICARE BABY WIPES 80 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - ALOE 35+5 SH FREE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - LAVENDER 15 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SANICARE COTTON BALLS 150s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SANICARE COTTON BUDS 200 STEM CAN",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SAPHETOR (ETORICOXIB) 120MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SAPHORBIDE 30MG PR TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SCOTT&#039;S CHEWY VIT-C MIXED BERRIES 15s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SEBO DE MACHO 25G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SERC (BETAHISTINE DIHYDROCHLORIDE) 16MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SILKA ORANGE PAPAYA SOAP 65G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SISTERS DAY MAXI REG 8+1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SISTERS OVERNIGHT DRY 4+1 W\/ WINGS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SISTERS PANTYLINER BLUE 8S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SKELAN 550MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SLEEPWELL (MELATONIN) 3MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SOLMUX BRONCHO (SALBUTAMOL SULFATE + CARBOCISTEINE) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"STREPSILS LOZ CHESTY COUGH (AMBROXOL HCL) 6s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"STREPSILS LOZ DRY COUGH 6s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"STRESS BALL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"STUGERON FORTE (CINNARIZINE) 75MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SUMAPEN (PHENOXYMETHYL-PENICILLIN POTASSIUM) 500MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"SUPRACID (SODIUM BICARBONATE) 650MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"TEMPRA FORTE (ORANGE) 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"TROMBOCIL (CILOSTAZOL) 50MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ULTRAXIME 100MG\/5ML 60ML SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"VENTOLIN (SALBUTAMOL) NEBULES 2.5MG\/2.5ML 20",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"VERTISAPH (BETAHISTINE DIHYDROCHLORIDE) 16MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"VESSEL DUE-F 250 LSU (SULODEXIDE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"VIVALYTE PLUS APPLE 4.8G SACHET",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"VONWELT PREDNISONE 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"WHEELCHAIR BLACK ECONO",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"WHITE FLOWER C#4 2.5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"WILKINS DISTILLED 7L",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ZANIDIP (LERCANIDIPINE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ZENITH (AZITHROMYCIN) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":2,
+    "support_pct":0.33
+  },
+  {
+    "item":"ABDOMINAL BINDER (BLUE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ALCOSURE ISOPROPYL ALC 70% 3.7L",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ALLERKID 5MG SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ALLERTA (LORATADINE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ALLERZET (LEVOCETIRIZINE + DIHYDROCHLORIDE) 2.5MG\/5ML SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ALTHEA PILLS (CYPROTERONE ACETATE + ETHINYLESTRADIOL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"AMLIFE (AMLODIPINE + LOSARTAN) 50\/5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"AMLOREX (AMLODIPINE) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"AMOXIL FORTE SUSP. 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"APOLLO LIPBALM PINK 7G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"APPEBON W\/ IRON (VITAMINS-B COMPLEX + IRON + BUCLIZINE HCI) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"APROVASC (IRBESARTAN + AMLODIPINE) 150MG\/5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ARCOXIA (ETORICOXIB) 120MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ATORSAPH-10 (ATORVASTATIN) 10MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"AXE ROLL-ON DARK TEMPTATION 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"AXE ROLL-ON DARK TEMPTATION 40ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"B-PRIME (VIT B-COMPLEX) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BACTIFREE 2% 20MG OINT TUBE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BBFLO GENTLE BUDS PLASTIC 36TIP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BEDPAN PLASTIC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BENCH ALCOGEL CLASSIC HAND SANITIZER 100G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BENCH ATLANTIS 100ML BODY SPRAY",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BENCH B20 BODY SPRAY 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BETADINE THROAT SPRAY 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BEWELL-C 500MG CAP 10s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BILAXTEN 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIOGENIC (ISOPROPYL ALCOHOL) 70% 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIOGENIC (ISOPROPYL ALCOHOL) 70% 50ML SPRAY",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIOGESIC (PARACETAMOL) 250MG\/5ML ORANGE 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIOGESIC (PARACETAMOL)250MG\/5ML STRAW 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIOPLUS PROBIOTICS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIXOCOT (ETORICOXIB) 120MG FCT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BIXOCOT (ETORICOXIB) 90MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BONAMINE (MECLYCINE HYDROCLHORIDE) CHEW (KIDS) 12.5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BONNA 0-6 MONTHS 150G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"BUDEXA (BUDESONIDE) 250MCG\/ML RESP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CALMOSEPTINE (ZINC OXIDE+ CALAMINE) 3.5G OINT SAC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CALPOL 250MG\/5ML 6+ 60ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CALTRATE ADVANCE TAB 30s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CARDIPRES (CARVEDILOL) 12.5MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CARESS ADULT DIAPER L2",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CARESS UNDERPAD M10",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CARESS UNDERPADS L8",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CASINO FEMME 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEELIN DROP 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEELIN PLUS (ASCORBIC ACID + ZINC) 60ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEELIN PLUS (ASCORBIC ACID + ZINC) CHEW TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEELIN PLUS 40MG DRP 15ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEELIN SYR 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CEFALIN (CEFALEXIN) 250MG SUSP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CELCOXX CAP 400MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CELEBREX (CELOCOXIB) 200MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CHARMEE BREATHABLE PANTY LINER GREEN 20&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CHARMEE COTTONY W\/ WINGS 8+1",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CHARMEE LIGHT W\/WINGS 8&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CLIN-GEN (CLINDAMYCIN) 300MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CLOVIMED (CO-AMOXICLAV) 250MG\/62.50MG SUSP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CLOVIX (CLOPIDOGREL) 75MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CLOXANE (CLOXACILLIN) 500MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CLUSIVOL PLUS (MULTIVITAMINS + ZINC + COPPER) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CO-ALEVA (EBASTINE BETAMITASONE) 10MG\/.5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"COLGATE SACHET 22G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"COLGATE TRIPLE ACTION 193G (145ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"COMMODE CHAIR W\/O WHEELS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"COUXIN (AMBROXOL HCI) 30MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"COVERSYL (PERINDOPRIL) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"CURAFEN (DICLOFENAC SODIUM) 100MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DAPHNE (LYNESTRENOL) PILLS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DECOLGEN NO DROWSE (PHENYLEPROPANOLAMINE HCI + PARACETAMOL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DEHYDROSOL (ORS-75 REPLACEMENT) ORAL SOLUTION",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DIABEATS (GLIMEPERIDE) 2MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DIACURE (LOPERAMIDE) 2MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DIANE 35 TAB 21&#039;..",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DIFFLAM FORTE THROAT SPRAY",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DISUDRIN DRP 10ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DOLCET (TRAMADOL HCI + PARACETAMOL) 37.5\/325MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DOVE WHITE BEAUTY BAR 100G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DOXOFAR (DOXOFYLLINE) 400MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DR. KAUFMANN IR SULFUR WHITE 80G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DROPPER",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DRUGMAKER (MEBENDAZOLE) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"DUPHASTON(DYDROGESTERONE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"E-ZINC (ZINC SULFATE) 60ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EFFICASCENT OIL EXTREME25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EFFICASCENT RELAXSCENT OIL 6ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ELASTIC BANDAGE 3x5",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ELIQUIS (APIXABAN) 2.5MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ENOCEE (ASCORBIC ACID) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EQ COLOR S 4&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EQ DRY M 36+2",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EQ DRY M 4&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ESKINOL PIMPLE FIGHTING 135ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ESKINOL SPOT-LESS GLOW FC CALAMANSI 75ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EXEL (CEFALEXIN) 250MG SUSP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EXPEL 15MG SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EYE MO BLUE (HYPROMELLOS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EYE MO RED EYE FORMULA 7.5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"EYEBERRY CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FELOSTAL (FELODIPINE) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FENOFLEX (FENOFIBRATE) 160MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FENOSTAT (ATORVASTIN + FENOFIBRATE) 10MG\/160MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FERLUM PLUS (FERROUS SULFATE + FOLIC ACID) 186MG\/400MCG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FERRICORE (FERROUS SULFATE) 325MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FISSAN PRICKLY HEAT POWDER 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FLUIMUCIL (ACETYLCYTEINE) 200MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FLUIMUCIL GRAN (ACETYLCYTEINE) 100MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FOLEY CATH 12",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FOLIDYN (FOLIC ACID) 5MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"FOLISAPH 5MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GAUZE PAD 2X2 (PARTNERS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GAUZE PAD 3X3 STERILE (PARTNERS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GAVISCON TABLET",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLOBISAPH (KETOANALOGUE) 630MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLOMED LATEX GLOVES MEDIUM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLUBITOR OD (GLICLAZIDE) 30MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLUCERNA VANILLA 400G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLUMET (METFORMIN HCI) 1G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GLUMET (METFORMIN HCI) 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GREAT STERILE LATEX SURGICAL GLOVES 8",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GREENCROSS 70% 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GREENCROSS 70% SOLUTION W\/ MOIST. 150ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"GYNEPRO ULTRA PRO FEM WASH 150ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HAILEY TAWAS SOFT & SCENTED",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HAPPY ABSORBENT COTTON 150G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HARVIMIDE (LOPERAMIDE) 2MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HERACLENE FORTE CAP 3MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HIDRASEC 100MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HISTAZYN (DIPHENHYDRAMINE) 50MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HOSPITAL BED 2-CRANKS MANUAL",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HOT WATER BAG 500ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HYOSWELL (HYOSCINE-N-BUTYLBROMIDE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HYPACE TAB 10MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HYPANTS ADULT DIAPER LARGE 10s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"HYPANTS ADULT DIAPER XL 10s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"INSUGET 70\/30 INJECTION VIAL -VEX",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"IPI (ACEITE DE MANZANILLA) 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"IPI (ACEITE DE MANZANILLA) 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ISORDIL SUBL TAB 5MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ISORE OPHTALMIC SOLUTION 5ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"JOHNSONS BABY OIL 125ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"JOHNSONS BABY OIL 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"JOHNSONS BLOSSOMS BABY POWDER 25G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"K-LYTE (POTASSIUM CHLORIDE) 600MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KAMILLOSAN NM SPRAY 370.5MG 15ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KATHREX (COTRIMOXAZOLE) 960MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KELTICAN (URIDINE + VIT. B12 + FOLIC ACID) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KING MED DISPOSABLE SYRINGE 10CC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KIRKLAND FISH OIL 1000IU",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KLARITHIX (CLARITHROMYCIN) 500MG FCT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KOJIESAN CLASSIC 3&#039;S 100G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"KOOL FEVER KIDS 2&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LACTACYD BABY BATH 150ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LACTACYD BABY BATH 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LAMPEIN JUMBO PACK L 54S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LAMPEIN JUMBO PACK XL 48s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LAMPEIN S 4S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LANCET 100&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LIPITOR (ATORVASTATIN) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LISTERINE COOL MINT 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"LUSTATIN 20 (ROSUVASTATIN CALCIUM) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MAALOX PLUS SUSP 250ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MARVELON (DESOGESTRYL ETHINYLESTRDIOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MELOTAB (MELOXICAM) 15MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MEMO PLUS GOLD CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MENTOPAS PLASTER 1X10",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MEPTIN (PROCATEROL HYDROCHLORIDE) 25MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MERIDON (DOMPERIDONE) 10MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"METO (METOCLOPRAMIDE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MICARDIS (TELMISARTAN) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MILCU DEO POWDER 40G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MODESS ALL NIGHT W\/WINGS 4s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MODESS REGULAR W\/WINGS 8s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MONTI PLUS (MONTELUKAST + LEVOCITIRIZINE) 10\/5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MONTIGET (MONTELUKAST SODIUM) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MOXYLOR (AMOXICILLIN) 250MG\/5ML 60ML SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MUCOBRON FORTE CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MUCOMED (DIPHENHYDRAMINE HYDROCHLORIDE) 25MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MUCOPROTEC 100MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MUPICIN OINTMENT 5G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MX3 COFFEE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MYRA CLASSIC WHITENING LOTION 200ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MYRA CLASSIC WHITENING LOTION 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"MYREX SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NASATHERA CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NEB KIT W\/. MASK ADULT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NEOFORM 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NEOPRED 20MG\/5ML 60ML SYRUP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NEOZEP SYRUP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NIVEA SUN PROTECT & MOISTURE SPF50 75ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NORGESIC FORTE (ORPHENADRINE CITRATE + PARACETAMOL) TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NORMAX (METFORMIN HYDROCHLORIDE) 500MG ER TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NURSY BABY WIPES UNSCENTED 66",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NURSY BABY WIPES UNSCENTED 90&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"NUTRILIN DROP 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OFF KIDS 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OFF KIDS 6ML SAC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OMEGA PAIN KILLER 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OMEPHIL-20 (OMEPRAZOLE) 20MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OMX PROBIOTIC CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ORAHEX REGULAR 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OSCIVIT (CALCIUM CARBONATE + VIT D3",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OTOSOL EAR 10ML DROPS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"OXYGEN TANK 15LBS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PALMOLIVE SILKY STRAIGHT OLIVE OIL & KERATIN (VIOLET) 90ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PAMPERS BABY BASIC M22",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PANTOVIC 40MG EC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PARATRAM (PARACETAMOL + TRAMADOL) 37.5\/325MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PARTNERS GAUZE BANDAGE ROLL 4X10",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PAU LINIMENT 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PAU MASAJE CLASSIC 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PAU MASAJE FLORAL 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PEDIAFORTAN AS 120ML (MULTIVITAMINS + BUCLIZINE HCL + LYSINE HCL) SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PEDIALYTE MILD 30 500ML (ORAL REHYDRATION SALTS) GRAPES",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PEDIAMOX (AMOXICILLIN) 250MG\/5ML SUSP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PEDZINC PLUS SYR 240ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PH CARE NATURAL PROTECTION 50ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PHILSTAT (SIMVASTATIN) 20MG FILM COATED TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PILL CUTTER",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PIOSTAL (PIOGLITAZONE) 30MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PLASIL TAB 10MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PLEMEX FORTE 600MG\/5ML 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PLEMEX KIDS 300MG\/5ML 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PONSTAN SF 250MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PRED FORTE 10MG\/ML 5ML OPTH SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PREDU-XL (TRIMETAZIDINE) 35MG MR TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PREND (PREDNISONE) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PROHEALTH NEBULIZER VMNB03",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PROHEALTH PULSE OXIMETER",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PROPAN TLC DROPS 15ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PROPAN W\/. IRON (BUCLIZINE HCL + MULTIVITAMINS + MINERALS) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"PROVASC 5 (AMLODIPINE BESILATE) 5MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"QUATROFOL (METHYLTETRAHYDROFOLIC ACID) CAPS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RANITEIN (RANITIDINE) 150MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RELEAF FORTE (BLUMEA BALSAMIFERA L. SAMBONG LEAF) 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RENAKULT CAP(PROBIOTIC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RENALOG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RENO DIET-HP 32G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RESTOR-F (MULTIVITAMINS + MINERALS) CAPSULE",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"REXONA DEO LOTION PASSION 3ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"REXONA MEN ROLL ON ICE COOL 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"REXONA ROLL ON POWDER DRY BRIGHTENING 25ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RISEK (OMEPRAZOLE) 20MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RM ASCORBIC ACID 500MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"RM ATORVASTATIN 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 120ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ROBUST TAB 550MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ROVISTA (ROSUVASTATIN) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAFEGUARD FLORAL PINK W\/ ALOE 60G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAFEGUARD IVORY WHITE CARE 85G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAFEGUARD LEMON 85G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SALINASE MAX (SODIUM CHLORIDE .65% + XYLITOL 2.5%) 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SALONPAS GEL 15G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - LAVENDER 35+5 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANICARE CLEANSING WIPES - LAVENDER 80 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANICARE COTTON BUDS 400 STEM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANICARE KT REGULAR TWIN 2&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANICARE PLAYTIME WIPES - CRISP CUCUMBER 35SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANITARY BALM (CAMPHOR+MENTHOL) 32G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SANIX (CEFIXIME) 200MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAPHETOR 90 TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAPHLECOX 200 (CELECOXIB) 200MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAPHLECOX 400 (CELECOXIB) 400MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SAPHRIN (ASPIRIN) 80MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SCOTT&#039;S CHEWY VIT-C ORANGE 15s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SELCEE (ASCORBIC ACID) 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SENOKOT FORTE (CALCIUM SENNOSIDES) 17.54MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SERETIDE INHALER (SALMETEROL FLUTICASONE PROPIONATE) 25\/125",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SILDIAZ 10MG\/G 1% 20G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SINUTAB (PARACETAMOL + PHENYLEPHRINE) COLD TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SISTERS DRY MAXI NO WINGS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SISTERS PANTYLINER PINK 8S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SITICARE DISP SYRINGE 5CC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SOLMUX FORTE 60ML SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SOUTH MOON FABRIC BANDAGES 5X4.5CM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SQCEF (CEFUROXIME) 250MG\/5ML 50ML SUSP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"STIMUNO 25MG\/5ML SYRUP 100ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"STIMUNO 25MG\/5ML SYRUP 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"STREPSILS COOL 8s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"STRESSTABS W\/. IRON TAB 30&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"STYLEX STRONG HOLD (CLEAR) 50G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SUCTION CATH F 14",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SUNSILK SMOOTH & MANAGEABLE SHAMPOO 180ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SUPER TWINS BABY PANTS XL 8S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SURE-GUARD DISPOSABLE SYRINGE 3CC",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SURE-GUARD GAUZE BANDAGE ROLL 4X10",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SURE-GUARD LATEX SURGICAL GLOVES 7.0 PAIR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"SYMBICORT (BUDESONIDE+FORMOTEROL) RAPIHALER 160MCG\/4.5MCG\/ACTUATION",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"Senior Discount",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TAMSOLIN (TAMSULOSIN) 400MCG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TAMSULOSIN (ALFATAM) 400MCG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TIKI-TIKI 120ML SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TIKI-TIKI 30ML DRP BOT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TIKI-TIKI 60ML BOT SYR",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TMZ-MR (TRIMETAZIDINE HCL) 35MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TRAMAL (TRAMADOL) 50MG CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TRIZOLE SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TUDOR MACRO & INFUSION SET1ML=60GTT ADULT",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"TUSERAN FORTE (DEXTROMETHORPAN HBR + PHENYLEPROPANOLAMINE HCI + PARACETAMOL) CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ULTIMA CAP 10s",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ULTRAXIME DROP 20MG 10ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ULTRAXIME SYR 100MG 30ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"UNICIL (SULTAMICILLIN TOSILATE) 750MG FC TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"URINORM (FEBUXOSTAT) 20MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"URISOL (ALLOPURINOL) 100MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VALERI (BETAMETHASONE) 1MG\/G (0.1%W\/W) TOPICAL CREAM",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VALVEX-A (AMLODIPINE + VALSARTAN) 160MG\/5MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VENTOMAX (SALBUTAMOL) 4MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VICKS BABY RUB 20G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VICKS INHALER KEY CHAIN",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VICKS VAPORUB 5G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VIRBEZ (IRBESARTAN) 300MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VIRLIX (CETIRIZINE) 10MG TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VN2 (SALBUTAMOL SULFATE) 2MG\/5ML SYR 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VOLTAREN 50MG (DICLOFENAC NA) FTE TAB",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"VOMETA (DOMPERIDONE) 5MG\/5ML SUSPENSION 60ML",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"WALKER W\/O WHEELS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"WALKER WITH WHEELS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"WHISPER BREATHABLE COTTONY SOFT W\/.WINGS 8&#039;S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"WIPE COTTON BALLS 150S",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"XANTHONE PLUS CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"XANTHONE PLUS GOLD CAP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"XYCLOVIRAX (ACICLOVIR) 400MG TABLET",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"XYZAL (LEVOCETIRIZINE) 5MG TAB 30",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ZITHROMAX (AZITHROMYCIN) 500MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ZYDUSATORVA (ATORVASTATIN) 20MG",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  },
+  {
+    "item":"ZYRIZ PLUS 5MG\/5MG PER 5ML 60ML SYRUP",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":1,
+    "support_pct":0.16
+  }
+]
