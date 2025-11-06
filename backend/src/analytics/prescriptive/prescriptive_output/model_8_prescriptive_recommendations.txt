@@ -1,61 +1,61 @@
 ================================================================================
 PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
-Generated: 2025-10-24 00:19:34
+Generated: 2025-11-06 15:59:56
 ================================================================================
 
 📦 INVENTORY MANAGEMENT RECOMMENDATIONS:
 
   ✓ HIGH PRIORITY REORDERS (Top 5 by demand):
-    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder at 396 units
-      - Safety stock: 207 units | 30-day forecast: 831 units
-    • GOZTAN-50 (LOSARTAN POTASSIUM) 50MG TAB: Reorder at 263 units
-      - Safety stock: 141 units | 30-day forecast: 262 units
-    • CETIRILIFE (CETIRIZINE) 10MG TAB: Reorder at 307 units
-      - Safety stock: 188 units | 30-day forecast: 1034 units
-    • BIOGESIC 500MG TAB: Reorder at 175 units
-      - Safety stock: 76 units | 30-day forecast: 211 units
-    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder at 127 units
-      - Safety stock: 53 units | 30-day forecast: 160 units
+    • RETASAR (LOSARTAN POTASSIUM) 50MG: Reorder at 393 units
+      - Safety stock: 201 units | 30-day forecast: 728 units
+    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder at 373 units
+      - Safety stock: 192 units | 30-day forecast: 588 units
+    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder at 166 units
+      - Safety stock: 71 units | 30-day forecast: 248 units
+    • BIOGESIC (PARACETAMOL) 500MG TAB: Reorder at 169 units
+      - Safety stock: 99 units | 30-day forecast: 152 units
+    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Reorder at 146 units
+      - Safety stock: 77 units | 30-day forecast: 332 units
 
 📋 ORDERING STRATEGY RECOMMENDATIONS:
 
   ✓ OPTIMAL ORDER QUANTITIES (Top 5):
-    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 1274 units every 145 days
-    • MULTICAPS: Order 1342 units every 163 days
-    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Order 400 units every 76 days
-    • BIOGESIC (PARACETAMOL) 500MG TAB: Order 735 units every 142 days
-    • GOZTAN-50 (LOSARTAN POTASSIUM) 50MG TAB: Order 929 units every 252 days
+    • RETASAR (LOSARTAN POTASSIUM) 50MG: Order 2365 units every 77 days
+    • BIOGESIC (PARACETAMOL) 500MG TAB: Order 1747 units every 60 days
+    • APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP: Order 799 units every 38 days
+    • NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 1919 units every 97 days
+    • OHHIRA&#039;S RED OMX PROBIOTICS CAP: Order 407 units every 22 days
 
 💰 BUDGET ALLOCATION RECOMMENDATIONS:
 
   ✓ PRIORITIZE INVESTMENT IN:
-    • MULTICAPS: 102510 units (₱205,020.80)
+    • RETANIX (CETIRIZINE) 10MG TAB: 560582 units (₱1,363,891.86)
 
 💵 PRICING & DISCOUNT RECOMMENDATIONS:
 
   ✓ MAINTAIN/INCREASE DISCOUNTS FOR:
-    • MULTICAPS: 0.0% discount (efficiency: 14999.9)
-    • LIVERAIDE (SILYMARIN) CAP: 0.0% discount (efficiency: 1800.0)
-    • NEOFORM 500MG TAB: 0.0% discount (efficiency: 1000.0)
+    • BETTER C (ASCORBIC ACID ) 500MG TAB: 0.0% discount (efficiency: 9500.0)
+    • MULTICAPS: 0.0% discount (efficiency: 7575.0)
+    • LIVERAIDE (SILYMARIN) CAP: 0.0% discount (efficiency: 971.4)
 
 📈 SALES GROWTH OPPORTUNITIES:
 
   ✓ PROMOTE HIGH-MARGIN PRODUCTS:
+    • #EXP2025-03-30: 100.0% margin
+    • #EXP2025-03-31: 100.0% margin
+    • #EXP2026-07-30: 100.0% margin
     • #EXP2027-05-24: 100.0% margin
     • ALCIFLORA (BACILLUS CLAUSII) 5ML: 100.0% margin
-    • ATORMED -20 (ATORVASTATIN) 20MG TAB: 100.0% margin
-    • AUGMENTIN (CO-AMOXICLAV) 1G: 100.0% margin
-    • AZIMED (AZITHROMYCIN) 500MG: 100.0% margin
 
 ⚙️ OPERATIONAL EFFICIENCY:
 
-  ✓ INVESTIGATE 31 ANOMALOUS SALES DAYS
-    • 2023-02-14: ₱77,845.62 (Score: -0.77)
-    • 2025-03-05: ₱31,407.28 (Score: -0.74)
-    • 2025-03-08: ₱54,333.68 (Score: -0.70)
+  ✓ INVESTIGATE 100 ANOMALOUS SALES DAYS
+    • 2024-09-18: ₱118,645.44 (Score: -0.79)
+    • 2024-03-21: ₱66,970.49 (Score: -0.75)
+    • 2024-03-18: ₱87,535.88 (Score: -0.72)
 
 🏗️ RESOURCE PLANNING (Next 90 Days):
 
   ✓ PREPARE FOR NEXT QUARTER:
-    • Storage needed: 16,897 cubic feet
-    • Capital required: ₱247,456.17
+    • Storage needed: 71,597 cubic feet
+    • Capital required: ₱1,054,039.07

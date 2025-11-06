@@ -34,8 +34,8 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing
 warnings.filterwarnings('ignore')
 
 # Define the output directory
-output_dir = "prescriptive_output"
-os.makedirs(output_dir, exist_ok=True)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+output_dir = os.path.join(script_dir, "prescriptive_output")
 
 # Configuration constants
 REQUIRED_COLUMNS = ['date', 'description', 'qty', 'sales', 'cost']
