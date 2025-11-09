@@ -12,7 +12,9 @@ import {
   User,
   Search,
   Calendar,
-  FileText
+  FileText,
+  AlertCircle,
+  Calculator
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -49,12 +51,16 @@ import {
   Bar,
   ScatterChart,
   Scatter,
+  PieChart,
+  Pie,
+  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
+  Brush,
 } from "recharts";
 import ProgressBar from "@/components/ui/ProgressBar";
 
@@ -182,12 +188,37 @@ function DescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis 
   runningAnalysis: boolean;
   onRunAnalysis: () => void;
 }) {
+  const [salesStartDate, setSalesStartDate] = useState('');
+  const [salesEndDate, setSalesEndDate] = useState('');
+  const [sortedProductMetrics, setSortedProductMetrics] = useState(data?.productMetrics || []);
+
+  useEffect(() => {
+    setSortedProductMetrics(data?.productMetrics || []);
+  }, [data?.productMetrics]);
+
+  const filteredSalesData = data?.recentSales?.filter((item: any) => {
+    if (!salesStartDate && !salesEndDate) return true;
+    const itemDate = new Date(item.month);
+    const start = salesStartDate ? new Date(salesStartDate) : null;
+    const end = salesEndDate ? new Date(salesEndDate) : null;
+    if (start && itemDate < start) return false;
+    if (end && itemDate > end) return false;
+    return true;
+  }) || [];
+
+  const sortProductMetrics = (ascending: boolean) => {
+    const sorted = [...sortedProductMetrics].sort((a, b) =>
+      ascending ? a.value - b.value : b.value - a.value
+    );
+    setSortedProductMetrics(sorted);
+  };
+
   if (loading) {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
-          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
+          <p className="text-muted-foreground">Overview of key metrics and trends</p>
         </div>
         <div className="text-center py-12 text-muted-foreground">
           <p>Loading analytics data...</p>
@@ -201,7 +232,7 @@ function DescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis 
       <div className="flex-1 space-y-6 p-8 pt-6">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
-          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
+          <p className="text-muted-foreground">Overview of key metrics and trends</p>
         </div>
         <div className="text-center py-12 text-destructive">
           <p>Error loading data: {error}</p>
@@ -210,12 +241,14 @@ function DescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis 
     );
   }
 
+  const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300'];
+
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Descriptive Analytics</h2>
-          <p className="text-muted-foreground">KPIs, Market Basket Analysis & Clustering</p>
+          <p className="text-muted-foreground">Overview of key metrics and trends</p>
         </div>
         <Button
           onClick={onRunAnalysis}
@@ -230,62 +263,151 @@ function DescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis 
         <ProgressBar label="Running Descriptive Analysis..." />
       )}
 
-      <Tabs defaultValue="kpis" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="kpis">KPIs</TabsTrigger>
-          <TabsTrigger value="mba">Market Basket Analysis</TabsTrigger>
-          <TabsTrigger value="clustering">Clustering</TabsTrigger>
-        </TabsList>
+      {/* Search Bar */}
+      <div className="flex items-center gap-4">
+        <div className="relative flex-1 max-w-sm">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+          <Input placeholder="Search products, categories, alerts..." className="pl-10 shadow-soft" />
+        </div>
+      </div>
 
-        <TabsContent value="kpis" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={data?.kpis}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line type="monotone" dataKey="sales" stroke="#8884d8" name="Sales" />
-                <Line type="monotone" dataKey="revenue" stroke="#82ca9d" name="Revenue" />
-                <Line type="monotone" dataKey="profit" stroke="#ffc658" name="Profit" />
-              </LineChart>
-            </ResponsiveContainer>
+      {/* KPI Cards */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <MetricCard 
+          title="Total Sales" 
+          value={`$${data?.totalSales?.toFixed(2) || 0}`} 
+          change={`+${data?.growthRate?.toFixed(1) || 0}%`} 
+          changeType="positive" 
+          icon={DollarSign} 
+          color="success" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Sales Growth" 
+          value={`+${data?.growthRate?.toFixed(1) || 0}%`} 
+          change="from last month" 
+          changeType="positive" 
+          icon={TrendingUp} 
+          color="info" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Alerts" 
+          value={data?.alertCount?.toString() || 0} 
+          change="active issues" 
+          changeType="warning" 
+          icon={AlertCircle} 
+          color="warning" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Key Metrics" 
+          value={`$${data?.keyMetricsValue?.toFixed(2) || 0}`} 
+          change="top performers" 
+          changeType="positive" 
+          icon={Package} 
+          color="default" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+      </div>
+
+      {/* Charts Grid */}
+      <div className="grid gap-6 lg:grid-cols-3">
+        {/* Recent Sales Line Chart */}
+        <div className="lg:col-span-2">
+          <div className="bg-card rounded-lg p-6 shadow-soft">
+            <h3 className="text-lg font-semibold mb-4">Recent Sales</h3>
+            <div className="flex gap-4 mb-4">
+              <div className="flex flex-col">
+                <label className="text-sm font-medium mb-1">Start Date</label>
+                <Input
+                  type="date"
+                  value={salesStartDate}
+                  onChange={(e) => setSalesStartDate(e.target.value)}
+                  className="w-32"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label className="text-sm font-medium mb-1">End Date</label>
+                <Input
+                  type="date"
+                  value={salesEndDate}
+                  onChange={(e) => setSalesEndDate(e.target.value)}
+                  className="w-32"
+                />
+              </div>
+            </div>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={filteredSalesData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Brush dataKey="month" height={30} stroke="#8884d8" />
+                  <Line type="monotone" dataKey="sales" stroke="#8884d8" name="Sales" />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-        </TabsContent>
+        </div>
 
-        <TabsContent value="mba" className="space-y-4">
-          <div className="h-96">
+        {/* Lead Time Line Chart */}
+        <div>
+          <div className="bg-card rounded-lg p-6 shadow-soft">
+            <h3 className="text-lg font-semibold mb-4">Lead Time</h3>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={data?.leadTimeData || []}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="week" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Line type="monotone" dataKey="leadTime" stroke="#8884d8" name="Lead Time" />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Product Metrics Bar Chart */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">Product Metrics</h3>
+          <div className="flex gap-2 mb-4">
+            <Button variant="outline" size="sm" onClick={() => {
+              const sorted = [...(data?.productMetrics || [])].sort((a, b) => b.value - a.value);
+              console.log('Sorted descending:', sorted);
+            }}>
+              Sort Descending
+            </Button>
+            <Button variant="outline" size="sm" onClick={() => {
+              const sorted = [...(data?.productMetrics || [])].sort((a, b) => a.value - b.value);
+              console.log('Sorted ascending:', sorted);
+            }}>
+              Sort Ascending
+            </Button>
+          </div>
+          <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data?.mbaRules?.slice(0, 10)}>
+              <BarChart data={data?.productMetrics || []} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="antecedents" />
-                <YAxis />
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="support" fill="#8884d8" name="Support" />
-                <Bar dataKey="confidence" fill="#82ca9d" name="Confidence" />
-                <Bar dataKey="lift" fill="#ffc658" name="Lift" />
+                <Bar dataKey="value" fill="#8884d8" name="Value" />
               </BarChart>
             </ResponsiveContainer>
           </div>
-        </TabsContent>
+        </div>
 
-        <TabsContent value="clustering" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="feature_1" name="Feature 1" />
-                <YAxis dataKey="feature_2" name="Feature 2" />
-                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-                <Legend />
-                <Scatter name="Clusters" data={data?.clustering} fill="#8884d8" />
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
-        </TabsContent>
-      </Tabs>
+        {/* Recent Alerts */}
+        <RecentAlertsCard />
+      </div>
     </div>
   );
 }
@@ -297,6 +419,12 @@ function PredictivePage({ data, loading, error, runningAnalysis, onRunAnalysis }
   runningAnalysis: boolean;
   onRunAnalysis: () => void;
 }) {
+  const [featureSort, setFeatureSort] = useState<'asc' | 'desc'>('desc');
+
+  useEffect(() => {
+    setFeatureSort('desc');
+  }, [data]);
+
   if (loading) {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
@@ -325,6 +453,29 @@ function PredictivePage({ data, loading, error, runningAnalysis, onRunAnalysis }
     );
   }
 
+  // Derive KPIs for accuracy
+  const totalModels = 3;
+  const totalForecasts = (data?.randomForest?.forecasts?.length || 0) + (data?.xgboost?.forecasts?.length || 0) + (data?.sarima?.forecasts?.length || 0);
+  const avgAccuracy = ((data?.randomForest?.metrics?.[0]?.mae || 0) + (data?.xgboost?.metrics?.[0]?.mae || 0) + (data?.sarima?.metrics?.[0]?.mae || 0)) / 3;
+
+  // Combine forecasts for main chart (assume date alignment; take last 30 for demo)
+  const combinedForecasts = [
+    ...(data?.randomForest?.forecasts || []).slice(-30).map(f => ({ date: f.date, model: 'RF', actual: f.actual, predicted: f.predicted })),
+    ...(data?.xgboost?.forecasts || []).slice(-30).map(f => ({ date: f.date, model: 'XGB', actual: f.actual, predicted: f.predicted })),
+    ...(data?.sarima?.forecasts || []).slice(-30).map(f => ({ date: f.date, model: 'SARIMA', actual: f.actual, predicted: f.predicted, lower: f.lower_bound, upper: f.upper_bound }))
+  ];
+
+  // Average feature importance (assume common features)
+  const features = [...new Set([
+    ...(data?.randomForest?.features || []).map(f => f.feature),
+    ...(data?.xgboost?.features || []).map(f => f.feature)
+  ])];
+  const avgImportance = features.map(feat => {
+    const rfImp = (data?.randomForest?.features || []).find(f => f.feature === feat)?.importance || 0;
+    const xgbImp = (data?.xgboost?.features || []).find(f => f.feature === feat)?.importance || 0;
+    return { feature: feat, importance: (rfImp + xgbImp) / 2 };
+  }).sort((a, b) => featureSort === 'desc' ? b.importance - a.importance : a.importance - b.importance).slice(0, 10);
+
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
       <div className="flex items-center justify-between">
@@ -345,97 +496,92 @@ function PredictivePage({ data, loading, error, runningAnalysis, onRunAnalysis }
         <ProgressBar label="Running Predictive Analysis..." />
       )}
 
-      <Tabs defaultValue="random-forest" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="random-forest">Random Forest</TabsTrigger>
-          <TabsTrigger value="xgboost">XGBoost</TabsTrigger>
-          <TabsTrigger value="sarima">SARIMA/ETS</TabsTrigger>
-        </TabsList>
+      {/* Search Bar */}
+      <div className="flex items-center gap-4">
+        <div className="relative flex-1 max-w-sm">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+          <Input placeholder="Search models, forecasts, features..." className="pl-10 shadow-soft" />
+        </div>
+      </div>
 
-        <TabsContent value="random-forest" className="space-y-4">
-          <Tabs defaultValue="forecasts" className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="forecasts">Forecasts</TabsTrigger>
-              <TabsTrigger value="features">Feature Importance</TabsTrigger>
-            </TabsList>
+      {/* KPI Cards */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <MetricCard 
+          title="Total Models" 
+          value={totalModels.toString()} 
+          change="active models" 
+          changeType="positive" 
+          icon={Package} 
+          color="success" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Total Forecasts" 
+          value={totalForecasts.toString()} 
+          change="generated" 
+          changeType="positive" 
+          icon={TrendingUp} 
+          color="info" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Average Accuracy" 
+          value={`${(1 - avgAccuracy).toFixed(2)}`} 
+          change="MAE score" 
+          changeType="positive" 
+          icon={Calculator} 
+          color="warning" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+      </div>
 
-            <TabsContent value="forecasts" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={data?.randomForest?.forecasts}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="date" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" />
-                    <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="features" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data?.randomForest?.features} layout="vertical">
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis type="number" />
-                    <YAxis dataKey="feature" type="category" />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="importance" fill="#8884d8" name="Importance" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </TabsContent>
-
-        <TabsContent value="xgboost" className="space-y-4">
-          <Tabs defaultValue="forecasts" className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="forecasts">Forecasts</TabsTrigger>
-              <TabsTrigger value="features">Feature Importance</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="forecasts" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={data?.xgboost?.forecasts}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="date" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" />
-                    <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="features" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data?.xgboost?.features} layout="vertical">
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis type="number" />
-                    <YAxis dataKey="feature" type="category" />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="importance" fill="#8884d8" name="Importance" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </TabsContent>
-
-        <TabsContent value="sarima" className="space-y-4">
-          <div className="h-96">
+      {/* Key Charts Grid */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        {/* Combined Forecasts Line Chart */}
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">Combined Model Forecasts</h3>
+          <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={data?.sarima?.forecasts}>
+              <LineChart data={combinedForecasts}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="date" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" dot={false} />
+                <Line type="monotone" dataKey="predicted" stroke="#82ca9d" name="Predicted" dot={false} />
+                <Line type="monotone" dataKey="lower" stroke="#ffc658" name="Lower Bound" strokeDasharray="3 3" dot={false} />
+                <Line type="monotone" dataKey="upper" stroke="#ff8042" name="Upper Bound" strokeDasharray="3 3" dot={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Feature Importance Bar Chart */}
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">Average Feature Importance</h3>
+          <div className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={avgImportance} layout="vertical">
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis dataKey="feature" type="category" />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="importance" fill="#8884d8" name="Importance" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </div>
+
+      {/* SARIMA Specific Chart */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">SARIMA Forecast with Bounds</h3>
+          <div className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={data?.sarima?.forecasts || []}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" />
                 <YAxis />
@@ -448,8 +594,24 @@ function PredictivePage({ data, loading, error, runningAnalysis, onRunAnalysis }
               </LineChart>
             </ResponsiveContainer>
           </div>
-        </TabsContent>
-      </Tabs>
+        </div>
+
+        {/* Model Summary Section */}
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">Model Performance Summary</h3>
+          <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>Random Forest MAE: {(data?.randomForest?.metrics?.[0]?.mae || 0).toFixed(2)}</div>
+              <div>XGBoost MAE: {(data?.xgboost?.metrics?.[0]?.mae || 0).toFixed(2)}</div>
+              <div>SARIMA MAE: {(data?.sarima?.metrics?.[0]?.mae || 0).toFixed(2)}</div>
+              <div>Overall Avg MAE: {avgAccuracy.toFixed(2)}</div>
+            </div>
+            <div className="text-xs text-muted-foreground">
+              Forecasts generated: {totalForecasts} | Models: {totalModels}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -509,127 +671,103 @@ function PrescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis
         <ProgressBar label="Running Prescriptive Analysis..." />
       )}
 
-      <Tabs defaultValue="reorder-point" className="w-full">
-        <TabsList className="grid w-full grid-cols-8">
-          <TabsTrigger value="reorder-point">Reorder Point</TabsTrigger>
-          <TabsTrigger value="eoq">EOQ</TabsTrigger>
-          <TabsTrigger value="inventory-allocation">Inventory Allocation</TabsTrigger>
-          <TabsTrigger value="what-if">What-If Analysis</TabsTrigger>
-          <TabsTrigger value="discount-optimization">Discount Optimization</TabsTrigger>
-          <TabsTrigger value="resource-planning">Resource Planning</TabsTrigger>
-          <TabsTrigger value="anomaly-detection">Anomaly Detection</TabsTrigger>
-          <TabsTrigger value="recommendations">Recommendations</TabsTrigger>
-        </TabsList>
+      {/* Search Bar */}
+      <div className="flex items-center gap-4">
+        <div className="relative flex-1 max-w-sm">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+          <Input placeholder="Search models, products, recommendations..." className="pl-10 shadow-soft" />
+        </div>
+      </div>
 
-        <TabsContent value="reorder-point" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data?.reorderPoint}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="medicine" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="reorder_point" fill="#8884d8" name="Reorder Point" />
-                <Bar dataKey="safety_stock" fill="#82ca9d" name="Safety Stock" />
-              </BarChart>
-            </ResponsiveContainer>
+      {/* KPI Cards */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <MetricCard 
+          title="Total Models" 
+          value={data?.summary?.totalModels?.toString() || 7} 
+          change="active models" 
+          changeType="positive" 
+          icon={Package} 
+          color="success" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Reorder Points" 
+          value={(data?.reorderPoint?.length || 0).toString()} 
+          change="calculated" 
+          changeType="positive" 
+          icon={TrendingUp} 
+          color="info" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="EOQ Calculations" 
+          value={(data?.eoq?.length || 0).toString()} 
+          change="optimized" 
+          changeType="positive" 
+          icon={Calculator} 
+          color="warning" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+        <MetricCard 
+          title="Recommendations" 
+          value={data?.summary?.hasRecommendations ? "Available" : "None"} 
+          change="generated" 
+          changeType="positive" 
+          icon={FileText} 
+          color="default" 
+          className="shadow-soft hover:shadow-elegant transition-shadow" 
+        />
+      </div>
+
+      {/* Key Charts Grid */}
+      <div className="grid gap-6 lg:grid-cols-3">
+        {/* Reorder Point Bar Chart */}
+        <div className="lg:col-span-2">
+          <div className="bg-card rounded-lg p-6 shadow-soft">
+            <h3 className="text-lg font-semibold mb-4">Reorder Points</h3>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data?.reorderPoint || []}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="medicine" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="reorder_point" fill="#8884d8" name="Reorder Point" />
+                  <Bar dataKey="safety_stock" fill="#82ca9d" name="Safety Stock" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-        </TabsContent>
+        </div>
 
-        <TabsContent value="eoq" className="space-y-4">
-          <Tabs defaultValue="eoq-values" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="eoq-values">EOQ Values</TabsTrigger>
-              <TabsTrigger value="order-frequency">Order Frequency</TabsTrigger>
-              <TabsTrigger value="cost-breakdown">Cost Breakdown</TabsTrigger>
-              <TabsTrigger value="efficiency">Efficiency</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="eoq-values" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data?.eoq}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="medicine" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="eoq" fill="#8884d8" name="EOQ (Units)" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="order-frequency" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={data?.eoq}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="medicine" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="orders_per_year" stroke="#8884d8" name="Orders per Year" />
-                    <Line type="monotone" dataKey="days_between_orders" stroke="#82ca9d" name="Days Between Orders" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="cost-breakdown" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data?.eoq}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="medicine" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="annual_ordering_cost" stackId="a" fill="#8884d8" name="Ordering Cost" />
-                    <Bar dataKey="annual_holding_cost" stackId="a" fill="#82ca9d" name="Holding Cost" />
-                    <Bar dataKey="annual_purchase_cost" stackId="a" fill="#ffc658" name="Purchase Cost" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="efficiency" className="space-y-4">
-              <div className="h-96">
-                <ResponsiveContainer width="100%" height="100%">
-                  <ScatterChart data={data?.eoq}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="annual_demand" name="Annual Demand" />
-                    <YAxis dataKey="total_annual_cost" name="Total Annual Cost" />
-                    <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-                    <Legend />
-                    <Scatter name="EOQ Efficiency" dataKey="total_annual_cost" fill="#8884d8" />
-                  </ScatterChart>
-                </ResponsiveContainer>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </TabsContent>
-
-        <TabsContent value="inventory-allocation" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data?.inventoryAllocation}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="medicine" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="optimal_allocation" fill="#8884d8" name="Allocated Quantity" />
-              </BarChart>
-            </ResponsiveContainer>
+        {/* EOQ Bar Chart */}
+        <div>
+          <div className="bg-card rounded-lg p-6 shadow-soft">
+            <h3 className="text-lg font-semibold mb-4">EOQ</h3>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data?.eoq || []}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="medicine" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="eoq" fill="#8884d8" name="EOQ" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
-        </TabsContent>
+        </div>
+      </div>
 
-        <TabsContent value="what-if" className="space-y-4">
-          <div className="h-96">
+      {/* What-If Analysis Line Chart */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">What-If Analysis</h3>
+          <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={data?.whatIfAnalysis}>
+              <LineChart data={data?.whatIfAnalysis || []}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="scenario" />
                 <YAxis />
@@ -640,12 +778,14 @@ function PrescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis
               </LineChart>
             </ResponsiveContainer>
           </div>
-        </TabsContent>
+        </div>
 
-        <TabsContent value="discount-optimization" className="space-y-4">
-          <div className="h-96">
+        {/* Discount Optimization Scatter */}
+        <div className="bg-card rounded-lg p-6 shadow-soft">
+          <h3 className="text-lg font-semibold mb-4">Discount Optimization</h3>
+          <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart data={data?.discountByProduct}>
+              <ScatterChart data={data?.discountByProduct || []}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="discount_pct" name="Discount %" />
                 <YAxis dataKey="profit_margin" name="Profit Margin %" />
@@ -655,46 +795,16 @@ function PrescriptivePage({ data, loading, error, runningAnalysis, onRunAnalysis
               </ScatterChart>
             </ResponsiveContainer>
           </div>
-        </TabsContent>
+        </div>
+      </div>
 
-        <TabsContent value="resource-planning" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data?.resourcePlanning}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="medicine" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="storage_needed" fill="#8884d8" name="Storage Needed" />
-                <Bar dataKey="capital_needed" fill="#82ca9d" name="Capital Needed" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </TabsContent>
-
-        <TabsContent value="anomaly-detection" className="space-y-4">
-          <div className="h-96">
-            <ResponsiveContainer width="100%" height="100%">
-              <ScatterChart data={data?.anomalyDetection}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="date" name="Date" />
-                <YAxis dataKey="sales" name="Sales" />
-                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-                <Legend />
-                <Scatter data={data?.anomalyDetection?.filter((d: any) => d.anomaly === 1)} name="Normal" fill="#82ca9d" />
-                <Scatter data={data?.anomalyDetection?.filter((d: any) => d.anomaly === -1)} name="Anomaly" fill="#ff7300" />
-              </ScatterChart>
-            </ResponsiveContainer>
-          </div>
-        </TabsContent>
-
-        <TabsContent value="recommendations" className="space-y-4">
-          <div className="max-h-96 overflow-y-auto p-4 bg-muted rounded-lg">
-            <pre className="whitespace-pre-wrap text-sm">{data?.recommendations}</pre>
-          </div>
-        </TabsContent>
-      </Tabs>
+      {/* Recommendations */}
+      <div className="bg-card rounded-lg p-6 shadow-soft">
+        <h3 className="text-lg font-semibold mb-4">Recommendations</h3>
+        <div className="max-h-96 overflow-y-auto">
+          <pre className="whitespace-pre-wrap text-sm">{data?.recommendations || "No recommendations available."}</pre>
+        </div>
+      </div>
     </div>
   );
 }
