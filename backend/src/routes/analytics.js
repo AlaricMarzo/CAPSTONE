@@ -63,28 +63,62 @@ function jsonToArray(jsonPath) {
   }
 }
 
+// Helper function to encode image to base64 data URL
+function encodeImageToBase64(imagePath) {
+  if (!fs.existsSync(imagePath)) {
+    return null
+  }
+  try {
+    const imageBuffer = fs.readFileSync(imagePath)
+    const base64 = imageBuffer.toString('base64')
+    const ext = path.extname(imagePath).toLowerCase()
+    const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg'
+    return `data:${mimeType};base64,${base64}`
+  } catch (error) {
+    console.error("[v0] Error encoding image:", error)
+    return null
+  }
+}
+
 router.get("/descriptive", async (req, res) => {
   try {
     const kpiDir = path.join(descriptiveOutputDir, "kpi_output")
     const mbaDir = path.join(descriptiveOutputDir, "mba_output")
     const clusterDir = path.join(descriptiveOutputDir, "clustering_output")
 
+    // KPI Data
     const monthlySalesData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_qty.json"))
     const growthData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_growth_rate.json"))
     const categoryData = jsonToArray(path.join(kpiDir, "kpi_category_split_monthly.json"))
+    const tabData = jsonToArray(path.join(kpiDir, "kpi_tab_split_monthly.json"))
     const top10Sales = jsonToArray(path.join(kpiDir, "kpi_top10_by_sales.json"))
     const top10Qty = jsonToArray(path.join(kpiDir, "kpi_top10_by_qty.json"))
-    const activeSkus = jsonToArray(path.join(kpiDir, "kpi_active_skus_monthly.json"))
+    const activeSkusMonthly = jsonToArray(path.join(kpiDir, "kpi_active_skus_monthly.json"))
+    const activeSkusYearly = jsonToArray(path.join(kpiDir, "kpi_active_skus_yearly.json"))
+    const seasonalIndex = jsonToArray(path.join(kpiDir, "kpi_season_index_category.json"))
+    const yearlySales = jsonToArray(path.join(kpiDir, "kpi_yearly_sales_qty.json"))
 
+    // Calculations
     const totalSales = monthlySalesData.reduce((sum, d) => sum + (d.total_sales || 0), 0)
     const totalQty = monthlySalesData.reduce((sum, d) => sum + (d.total_qty || 0), 0)
     const latestGrowth = growthData.length > 0 ? growthData[growthData.length - 1].growth_rate : 0
-    const latestSkus = activeSkus.length > 0 ? activeSkus[activeSkus.length - 1].active_skus : 0
+    const latestSkus = activeSkusMonthly.length > 0 ? activeSkusMonthly[activeSkusMonthly.length - 1].active_skus : 0
 
+    // Formatted Data
     const monthlyFormattedData = monthlySalesData.map((d) => ({
       month: d.month || "",
       sales: d.total_sales || 0,
       quantity: d.total_qty || 0,
+    }))
+
+    const growthFormattedData = growthData.map((d) => ({
+      month: d.month || "",
+      growth_rate: d.growth_rate || 0,
+    }))
+
+    const activeSkusFormatted = activeSkusMonthly.map((d) => ({
+      month: d.month || "",
+      active_skus: d.active_skus || 0,
     }))
 
     const categoryLatest = categoryData.length > 0 ? categoryData[categoryData.length - 1] : {}
@@ -92,19 +126,96 @@ router.get("/descriptive", async (req, res) => {
       .filter(([key]) => key !== "month")
       .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
 
-    const topProducts = (top10Sales || []).slice(0, 10).map((d) => ({
+    const tabLatest = tabData.length > 0 ? tabData[tabData.length - 1] : {}
+    const tabDistribution = Object.entries(tabLatest)
+      .filter(([key]) => key !== "month")
+      .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
+
+    const topProductsSales = (top10Sales || []).slice(0, 10).map((d) => ({
       name: d.sku_description || d.name || "Product",
       sales: d.total_sales || 0,
       quantity: d.qty || 0,
     }))
 
-    const clusteringData = jsonToArray(path.join(clusterDir, "cluster_summaries", "global.json"))
-    const clusteringSummary = (clusteringData || []).map((d, idx) => ({
+    const topProductsQty = (top10Qty || []).slice(0, 10).map((d) => ({
+      name: d.sku_description || d.name || "Product",
+      sales: d.total_sales || 0,
+      quantity: d.qty || 0,
+    }))
+
+    // Seasonal Index
+    const seasonalData = (seasonalIndex || []).map((d) => ({
+      category: d.category || "",
+      season_index: d.season_index || 0,
+    }))
+
+    // Yearly Sales
+    const yearlyFormattedData = yearlySales.map((d) => ({
+      year: d.year || "",
+      sales: d.total_sales || 0,
+      quantity: d.total_qty || 0,
+    }))
+
+    // Clustering Data
+    const clusteringGlobalData = jsonToArray(path.join(clusterDir, "cluster_summaries", "global.json"))
+    const clusteringSummary = (clusteringGlobalData || []).map((d, idx) => ({
       cluster: idx,
       count: d.customer_count || d.count || 0,
       avg_value: d.avg_value || 0,
     }))
 
+    // Clustering Images
+    const clusteringImages = []
+
+    // Global
+    const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global.png"))
+    if (globalImage) {
+      clusteringImages.push({
+        name: "Global Clustering",
+        image: globalImage,
+        summary: clusteringGlobalData || [],
+      })
+    }
+
+    // By Category
+    const categoryClusterDir = path.join(clusterDir, "clusters_by_category")
+    if (fs.existsSync(categoryClusterDir)) {
+      const categoryFiles = fs.readdirSync(categoryClusterDir).filter(f => f.endsWith('.json'))
+      for (const file of categoryFiles) {
+        const summaryPath = path.join(categoryClusterDir, file)
+        const imagePath = path.join(categoryClusterDir, file.replace('.json', '.png'))
+        const summary = jsonToArray(summaryPath)
+        const image = encodeImageToBase64(imagePath)
+        if (image && summary) {
+          clusteringImages.push({
+            name: `Clustering by Category: ${file.replace('.json', '')}`,
+            image,
+            summary,
+          })
+        }
+      }
+    }
+
+    // By Tab
+    const tabClusterDir = path.join(clusterDir, "clusters_by_tab")
+    if (fs.existsSync(tabClusterDir)) {
+      const tabFiles = fs.readdirSync(tabClusterDir).filter(f => f.endsWith('.json'))
+      for (const file of tabFiles) {
+        const summaryPath = path.join(tabClusterDir, file)
+        const imagePath = path.join(tabClusterDir, file.replace('.json', '.png'))
+        const summary = jsonToArray(summaryPath)
+        const image = encodeImageToBase64(imagePath)
+        if (image && summary) {
+          clusteringImages.push({
+            name: `Clustering by Tab: ${file.replace('.json', '')}`,
+            image,
+            summary,
+          })
+        }
+      }
+    }
+
+    // MBA Rules
     const mbaRulesData = jsonToArray(path.join(mbaDir, "mba_rules.json"))
     const mbaRules = (mbaRulesData || []).slice(0, 10).map((d) => ({
       item_a: d.antecedents || d.item_a || "",
@@ -114,6 +225,18 @@ router.get("/descriptive", async (req, res) => {
       support_pct: (d.support || d.support_pct) * 100 || 0,
     }))
 
+    // KPI Images
+    const kpiImages = {}
+    const imageFiles = [
+      { key: "monthly_sales_growth_rate", path: "fig_monthly_sales_growth_rate.png" },
+      { key: "sales_month_vs_year", path: "fig_sales_month_vs_year.png" },
+      { key: "qty_month_vs_year", path: "fig_qty_month_vs_year.png" },
+    ]
+    for (const img of imageFiles) {
+      const imgPath = path.join(kpiDir, img.path)
+      kpiImages[img.key] = encodeImageToBase64(imgPath)
+    }
+
     const formattedData = {
       kpi_summary: {
         total_sales: totalSales,
@@ -122,10 +245,18 @@ router.get("/descriptive", async (req, res) => {
         growth_rate: latestGrowth,
       },
       monthly_sales: monthlyFormattedData,
+      monthly_growth: growthFormattedData,
+      active_skus_trend: activeSkusFormatted,
+      yearly_sales: yearlyFormattedData,
       category_distribution: categoryDistribution,
-      top_products: topProducts,
+      tab_distribution: tabDistribution,
+      seasonal_index: seasonalData,
+      top_products_sales: topProductsSales,
+      top_products_qty: topProductsQty,
       clustering_summary: clusteringSummary,
+      clustering_images: clusteringImages,
       mba_rules: mbaRules,
+      kpi_images: kpiImages,
     }
 
     res.json({ success: true, data: formattedData })

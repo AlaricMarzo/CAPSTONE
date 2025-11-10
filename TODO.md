@@ -1,24 +1,24 @@
-# TODO: Add Reports Tab UI for Downloading CSV and PNG Files
+# TODO: Fix Descriptive Analytics Dashboard
 
-## Backend Changes
-- [ ] Add route to list available CSV and PNG files from output directories (descriptive_output, prescriptive_output, etc.)
-- [ ] Add route to download specific files by path
+## Backend Updates
+- [ ] Update /descriptive route in analytics.js to fetch all KPI outputs (seasonal indices, yearly data, top10 by qty, PNG images)
+- [ ] Add fetching for clustering by category and tab (summaries and images)
+- [ ] Encode PNG images to base64 data URLs for frontend display
+- [ ] Include all MBA outputs (currently only rules)
+- [ ] Test backend response includes all data accurately
 
-## Frontend Changes
-- [ ] Create ReportsPage component (frontend/src/pages/Reports.tsx)
-- [ ] Add download functionality for CSV and PNG files
-- [ ] Update Dashboard.tsx to render ReportsPage for "reports" tab
+## Frontend Updates
+- [ ] Add new chart for monthly sales growth rate
+- [ ] Add trend chart for active SKUs over time
+- [ ] Add seasonal index visualization
+- [ ] Add top 10 products by quantity chart
+- [ ] Expand clustering section to display category and tab clusters with images
+- [ ] Display KPI PNG images in appropriate cards
+- [ ] Ensure all data is displayed accurately and correctly
+- [ ] Test dashboard loads and displays all outputs
 
 ## Testing
-- [ ] Test file listing and downloads
-- [ ] Ensure UI is responsive and user-friendly
-
-## Predictive Analytics Updates
-- [x] Remove hardcoded data from predictive route in analytics.js
-- [x] Set rf_predicted and xgb_predicted to 0 in forecast data
-- [x] Set random_forest and xgboost model performance metrics to 0
-- [x] Remove feature_importance from response
-- [x] Use actual lower_bound and upper_bound from SARIMA forecasts for confidence intervals
-- [ ] Run predictive models to generate fresh outputs for RF and XGBoost
-- [ ] Update API to read actual RF and XGBoost outputs if available
-- [ ] Verify frontend displays updated predictive data correctly
+- [ ] Run descriptive analytics pipeline to generate fresh outputs
+- [ ] Verify backend API returns complete data
+- [ ] Check frontend renders all sections without errors
+- [ ] Validate data accuracy against generated files
