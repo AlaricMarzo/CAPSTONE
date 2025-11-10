@@ -67,30 +67,68 @@ interface PrescriptiveData {
   }
 }
 
+interface DescriptiveData {
+  kpi_summary: {
+    total_sales: number
+    total_quantity: number
+    active_skus: number
+    growth_rate: number
+  }
+  monthly_sales: any[]
+  top_products_sales: any[]
+  clustering_summary: any[]
+  mba_rules: any[]
+}
+
+interface PredictiveData {
+  models_summary: {
+    total_models: number
+    avg_accuracy: number
+    total_forecasts: number
+  }
+  forecast_data: any[]
+  model_performance: any
+}
+
 function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
+  const [descriptiveData, setDescriptiveData] = useState<DescriptiveData | null>(null)
+  const [predictiveData, setPredictiveData] = useState<PredictiveData | null>(null)
   const [prescriptiveData, setPrescriptiveData] = useState<PrescriptiveData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [confirmOpen, setConfirmOpen] = useState(false)
 
   useEffect(() => {
-    const fetchPrescriptiveData = async () => {
+    const fetchAllData = async () => {
       try {
         setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/prescriptive")
-        if (!response.ok) throw new Error("Failed to fetch prescriptive data")
-        const result = await response.json()
-        setPrescriptiveData(result.data)
+        const [descRes, predRes, prescRes] = await Promise.all([
+          fetch("http://localhost:5050/api/analytics/descriptive"),
+          fetch("http://localhost:5050/api/analytics/predictive"),
+          fetch("http://localhost:5050/api/analytics/prescriptive")
+        ])
+
+        if (!descRes.ok) throw new Error("Failed to fetch descriptive data")
+        if (!predRes.ok) throw new Error("Failed to fetch predictive data")
+        if (!prescRes.ok) throw new Error("Failed to fetch prescriptive data")
+
+        const descResult = await descRes.json()
+        const predResult = await predRes.json()
+        const prescResult = await prescRes.json()
+
+        setDescriptiveData(descResult.data)
+        setPredictiveData(predResult.data)
+        setPrescriptiveData(prescResult.data)
         setError(null)
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred")
-        console.error("[v0] Error fetching prescriptive data:", err)
+        console.error("[v0] Error fetching analytics data:", err)
       } finally {
         setLoading(false)
       }
     }
 
-    fetchPrescriptiveData()
+    fetchAllData()
   }, [])
 
   const confirmLogout = () => {
@@ -117,7 +155,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
     )
   }
 
-  if (error || !prescriptiveData || !prescriptiveData.financial_summary || !prescriptiveData.reorder_points) {
+  if (error || !prescriptiveData || !prescriptiveData.financial_summary || !prescriptiveData.reorder_points ||
+      !descriptiveData || !predictiveData) {
     const fallbackMetrics = getUserMetrics()
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
@@ -183,7 +222,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
 
         <div className="text-destructive flex items-center gap-2 mb-4">
-          Error loading prescriptive data: {error || 'Invalid data structure'}. Showing fallback data.
+          Error loading analytics data: {error || 'Invalid data structure'}. Showing fallback data.
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -237,18 +276,25 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
     )
   }
 
-  const { financial_summary, reorder_points } = prescriptiveData
+  // Extract key metrics from all analytics
+  const { financial_summary, reorder_points, key_metrics } = prescriptiveData
+  const descKpi = descriptiveData.kpi_summary
+  const predSummary = predictiveData.models_summary
+
   const totalRevenue = financial_summary.total_sales
   const totalSales = financial_summary.total_quantity_sold
   const lowStockItems = reorder_points.length
   const avgOrderValue = totalSales > 0 ? totalRevenue / totalSales : 0
+  const forecastAccuracy = predSummary.avg_accuracy * 100
+  const activeSkus = descKpi.active_skus
+  const growthRate = descKpi.growth_rate
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold text-foreground">Dashboard Overview</h2>
-          <p className="text-muted-foreground">Real-time business insights and analytics</p>
+          <p className="text-muted-foreground">Comprehensive business insights from descriptive, predictive, and prescriptive analytics</p>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
@@ -306,6 +352,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
       </div>
 
+      {/* Key Performance Indicators */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <MetricCard
           title="Total Revenue"
@@ -326,18 +373,18 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           className="shadow-soft hover:shadow-elegant transition-shadow"
         />
         <MetricCard
-          title="Items to Reorder"
-          value={lowStockItems.toString()}
-          change="need attention"
-          changeType="warning"
+          title="Active SKUs"
+          value={activeSkus.toString()}
+          change={`${growthRate.toFixed(1)}% growth`}
+          changeType="positive"
           icon={Package}
           color="warning"
           className="shadow-soft hover:shadow-elegant transition-shadow"
         />
         <MetricCard
-          title="Avg Order Value"
-          value={formatCurrency(avgOrderValue)}
-          change="per unit"
+          title="Forecast Accuracy"
+          value={`${forecastAccuracy.toFixed(1)}%`}
+          change={`${predSummary.total_models} models`}
           changeType="positive"
           icon={TrendingUp}
           color="default"
@@ -345,14 +392,260 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         />
       </div>
 
+      {/* Analytics Summary Cards */}
+      <div className="grid gap-6 md:grid-cols-3">
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <AlertCircle className="h-5 w-5 text-blue-500" />
+              Descriptive Analytics
+            </CardTitle>
+            <CardDescription>Historical data insights and patterns</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Total Sales:</span>
+                <span className="font-medium">{formatCurrency(descKpi.total_sales)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Total Quantity:</span>
+                <span className="font-medium">{descKpi.total_quantity.toLocaleString()}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Customer Segments:</span>
+                <span className="font-medium">{descriptiveData.clustering_summary.length}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">MBA Rules:</span>
+                <span className="font-medium">{descriptiveData.mba_rules.length}</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <TrendingUp className="h-5 w-5 text-green-500" />
+              Predictive Analytics
+            </CardTitle>
+            <CardDescription>Forecasting and trend predictions</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Models Trained:</span>
+                <span className="font-medium">{predSummary.total_models}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Forecast Points:</span>
+                <span className="font-medium">{predSummary.total_forecasts}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Avg Accuracy:</span>
+                <span className="font-medium">{(predSummary.avg_accuracy * 100).toFixed(1)}%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Best Model:</span>
+                <span className="font-medium">SARIMA</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Package className="h-5 w-5 text-orange-500" />
+              Prescriptive Analytics
+            </CardTitle>
+            <CardDescription>Actionable recommendations</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Items to Reorder:</span>
+                <span className="font-medium">{lowStockItems}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Cost Savings:</span>
+                <span className="font-medium">{formatCurrency(key_metrics.total_cost_savings)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Optimized Products:</span>
+                <span className="font-medium">{key_metrics.total_products_optimized}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Models Applied:</span>
+                <span className="font-medium">{key_metrics.total_models}</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Charts and Trends */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        {/* Monthly Sales Trend */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Monthly Sales Trend</CardTitle>
+            <CardDescription>Sales performance over time</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <ComposedChart data={descriptiveData.monthly_sales.slice(-12)}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis dataKey="month" />
+                  <YAxis yAxisId="left" />
+                  <YAxis yAxisId="right" orientation="right" />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                    formatter={(value: any, name: string) => [
+                      name === 'sales' ? formatCurrency(value) : value.toLocaleString(),
+                      name === 'sales' ? 'Sales' : 'Quantity'
+                    ]}
+                  />
+                  <Legend />
+                  <Bar yAxisId="left" dataKey="sales" fill="#3b82f6" name="Sales" radius={[4, 4, 0, 0]} />
+                  <Line yAxisId="right" type="monotone" dataKey="quantity" stroke="#10b981" name="Quantity" strokeWidth={2} />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Forecast Performance */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Forecast Performance</CardTitle>
+            <CardDescription>Predicted vs Actual sales performance</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <Line
+                  data={predictiveData.forecast_data.slice(-12).map((item: any) => ({
+                    date: item.date,
+                    actual: item.actual,
+                    predicted: item.sarima_predicted,
+                    lower: item.confidence_lower,
+                    upper: item.confidence_upper
+                  }))}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis dataKey="date" />
+                  <YAxis />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                    formatter={(value: any, name: string) => [
+                      formatCurrency(value),
+                      name === 'actual' ? 'Actual Sales' : name === 'predicted' ? 'Predicted Sales' : name
+                    ]}
+                  />
+                  <Legend />
+                  <Line type="monotone" dataKey="actual" stroke="#3b82f6" name="Actual Sales" strokeWidth={2} />
+                  <Line type="monotone" dataKey="predicted" stroke="#10b981" name="Predicted Sales" strokeWidth={2} strokeDasharray="5 5" />
+                  <Line type="monotone" dataKey="upper" stroke="#94a3b8" name="Upper Bound" strokeWidth={1} strokeDasharray="2 2" />
+                  <Line type="monotone" dataKey="lower" stroke="#94a3b8" name="Lower Bound" strokeWidth={1} strokeDasharray="2 2" />
+                </Line>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Additional Analytics Charts */}
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <SalesTrendsChart />
-        </div>
+        {/* Category Distribution */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Category Distribution</CardTitle>
+            <CardDescription>Sales distribution by product category</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={descriptiveData.category_distribution.slice(0, 8)} layout="vertical">
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis type="number" />
+                  <YAxis dataKey="name" type="category" width={80} fontSize={12} />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                    formatter={(value: any) => [value.toLocaleString(), 'Sales']}
+                  />
+                  <Bar dataKey="value" fill="#8b5cf6" radius={[0, 4, 4, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Growth Rate Trend */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Growth Rate Trend</CardTitle>
+            <CardDescription>Monthly sales growth percentage</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <Line data={descriptiveData.monthly_growth.slice(-12)}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                    formatter={(value: any) => [`${value.toFixed(2)}%`, 'Growth Rate']}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="growth_rate"
+                    stroke="#f59e0b"
+                    strokeWidth={3}
+                    dot={{ fill: '#f59e0b', strokeWidth: 2, r: 4 }}
+                  />
+                </Line>
+              </ResponsiveContainer>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Product Traffic Card */}
         <ProductTrafficCard />
       </div>
 
-      <RecentAlertsCard />
+      {/* Top Products and Recent Activity */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Top Performing Products</CardTitle>
+            <CardDescription>Highest revenue generating products</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {descriptiveData.top_products_sales.slice(0, 5).map((product: any, idx: number) => (
+                <div key={idx} className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-xs font-medium">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">{product.name}</p>
+                      <p className="text-xs text-muted-foreground">{product.quantity} units</p>
+                    </div>
+                  </div>
+                  <span className="font-medium">{formatCurrency(product.sales)}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        <RecentAlertsCard />
+      </div>
     </div>
   )
 }
