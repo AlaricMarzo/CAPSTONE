@@ -149,7 +149,7 @@ export default function PrescriptiveAnalytics() {
         />
         <MetricCard
           title="Total Sales"
-          value={`$${(data.financial_summary.total_sales / 1000000).toFixed(2)}M`}
+          value={`₱${(data.financial_summary.total_sales / 1000000).toFixed(2)}M`}
           change="revenue"
           changeType="positive"
           icon={TrendingUp}
@@ -318,7 +318,7 @@ export default function PrescriptiveAnalytics() {
                 <div>
                   <div className="font-semibold text-foreground">{anomaly.date}</div>
                   <div className="text-sm text-muted-foreground">
-                    Sales: ${anomaly.sales.toFixed(2)} | Qty: {anomaly.qty}
+                    Sales: ₱{anomaly.sales.toFixed(2)} | Qty: {anomaly.qty}
                   </div>
                 </div>
                 <div className={`font-bold ${anomaly.anomaly_score < -0.5 ? "text-red-500" : "text-yellow-500"}`}>

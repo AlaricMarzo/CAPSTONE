@@ -75,6 +75,8 @@ interface DescriptiveData {
     growth_rate: number
   }
   monthly_sales: any[]
+  monthly_growth: { month: string; growth_rate: number }[]
+  category_distribution: { name: string; value: number }[]
   top_products_sales: any[]
   clustering_summary: any[]
   mba_rules: any[]
@@ -97,6 +99,12 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [confirmOpen, setConfirmOpen] = useState(false)
+  const [searchTerm, setSearchTerm] = useState("")
+  const [showChart, setShowChart] = useState(true)
+
+  const filteredResourceData = prescriptiveData?.resource_planning?.filter((item: any) =>
+    item.medicine.toLowerCase().includes(searchTerm.toLowerCase())
+  ) || []
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -137,7 +145,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   }
 
   const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat("en-US", {
+    return new Intl.NumberFormat("en-PH", {
       style: "currency",
       currency: "PHP",
       minimumFractionDigits: 0,
@@ -228,7 +236,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <MetricCard
             title="Total Revenue"
-            value={`$${fallbackMetrics.totalRevenue.toFixed(2)}`}
+            value={`₱${fallbackMetrics.totalRevenue.toFixed(2)}`}
             change="+12.5% from last month"
             changeType="positive"
             icon={DollarSign}
@@ -255,7 +263,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           />
           <MetricCard
             title="Avg Order Value"
-            value={`$${fallbackMetrics.averageOrderValue.toFixed(2)}`}
+            value={`₱${fallbackMetrics.averageOrderValue.toFixed(2)}`}
             change="+5.1% from last month"
             changeType="positive"
             icon={TrendingUp}
@@ -277,7 +285,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   }
 
   // Extract key metrics from all analytics
-  const { financial_summary, reorder_points, key_metrics } = prescriptiveData
+  const { financial_summary, reorder_points, key_metrics, resource_planning } = prescriptiveData
   const descKpi = descriptiveData.kpi_summary
   const predSummary = predictiveData.models_summary
 
@@ -288,6 +296,10 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const forecastAccuracy = predSummary.avg_accuracy * 100
   const activeSkus = descKpi.active_skus
   const growthRate = descKpi.growth_rate
+
+  const filteredResourceData = resource_planning?.filter((item: any) =>
+    item.medicine.toLowerCase().includes(searchTerm.toLowerCase())
+  ) || []
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
@@ -616,6 +628,82 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         {/* Product Traffic Card */}
         <ProductTrafficCard />
       </div>
+
+      {/* Resource Planning Section */}
+      <Card className="shadow-soft">
+        <CardHeader>
+          <CardTitle className="flex items-center justify-between">
+            Resource Planning
+            <div className="flex items-center gap-2">
+              <Input
+                placeholder="Filter by medicine..."
+                className="h-8 w-48"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+              <Button variant="outline" size="sm" onClick={() => setShowChart(!showChart)}>
+                {showChart ? 'View List' : 'View Chart'}
+              </Button>
+            </div>
+          </CardTitle>
+          <CardDescription>Resource requirements and planning for inventory management</CardDescription>
+        </CardHeader>
+        <CardContent>
+          {showChart ? (
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={filteredResourceData.slice(0, 10)} layout="vertical">
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis type="number" />
+                  <YAxis dataKey="medicine" type="category" width={150} fontSize={12} />
+                  <Tooltip
+                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                    formatter={(value: any, name: string) => [
+                      name === 'storage_needed' ? value.toLocaleString() : formatCurrency(value),
+                      name === 'storage_needed' ? 'Storage Needed' : 'Capital Needed'
+                    ]}
+                  />
+                  <Legend />
+                  <Bar dataKey="storage_needed" fill="#ef4444" name="Storage Needed" radius={[0, 4, 4, 0]} />
+                  <Bar dataKey="capital_needed" fill="#eab308" name="Capital Needed" radius={[0, 4, 4, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="text-left p-2">Medicine</th>
+                      <th className="text-right p-2">Daily Demand</th>
+                      <th className="text-right p-2">Projected Demand</th>
+                      <th className="text-right p-2">Storage Needed</th>
+                      <th className="text-right p-2">Capital Needed</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredResourceData.slice(0, 15).map((item: any, idx: number) => (
+                      <tr key={idx} className="border-b hover:bg-muted/50">
+                        <td className="p-2 font-medium">{item.medicine}</td>
+                        <td className="p-2 text-right">{item.daily_demand.toLocaleString()}</td>
+                        <td className="p-2 text-right">{item.projected_demand.toLocaleString()}</td>
+                        <td className="p-2 text-right">{item.storage_needed.toLocaleString()}</td>
+                        <td className="p-2 text-right">{formatCurrency(item.capital_needed)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {filteredResourceData.length > 15 && (
+                <div className="text-center text-sm text-muted-foreground">
+                  Showing first 15 of {filteredResourceData.length} items. Use filter to narrow results.
+                </div>
+              )}
+            </div>
+          )}
+        </CardContent>
+      </Card>
 
       {/* Top Products and Recent Activity */}
       <div className="grid gap-6 lg:grid-cols-2">
