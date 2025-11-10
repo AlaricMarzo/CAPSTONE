@@ -31,6 +31,7 @@ import DescriptiveAnalytics from "./DescriptiveAnalytics"
 import PredictiveAnalytics from "./PredictiveAnalytics"
 import PrescriptiveAnalytics from "./PrescriptiveAnalytics"
 import InventoryRecommendations from "./InventoryRecommendations"
+import ReportsPage from "./Reports"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Line,
@@ -643,6 +644,7 @@ export default function Dashboard({ onLogout, userEmail }: DashboardProps) {
           {activeTab === "descriptive" && <DescriptiveAnalytics />}
           {activeTab === "predictive" && <PredictiveAnalytics />}
           {activeTab === "prescriptive" && <PrescriptiveAnalytics />}
+          {activeTab === "reports" && <ReportsPage />}
           {activeTab === "profile" && (
             <ProfilePage userEmail={userEmail} onBack={handleBackToDashboard} onLogout={onLogout} />
           )}

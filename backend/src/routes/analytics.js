@@ -439,4 +439,100 @@ router.post("/run-prescriptive", async (req, res) => {
   }
 })
 
+// Route to list available files for download
+router.get("/files", async (req, res) => {
+  try {
+    const files = {}
+
+    // Descriptive analytics files
+    const descriptiveDir = path.join(descriptiveOutputDir, "kpi_output")
+    if (fs.existsSync(descriptiveDir)) {
+      const descriptiveFiles = fs.readdirSync(descriptiveDir)
+        .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
+        .map(file => ({
+          name: file,
+          path: path.join(descriptiveDir, file),
+          type: file.endsWith('.csv') ? 'csv' : 'png',
+          category: 'descriptive'
+        }))
+      files.descriptive = descriptiveFiles
+    }
+
+    // Prescriptive analytics files
+    if (fs.existsSync(prescriptiveOutputDir)) {
+      const prescriptiveFiles = fs.readdirSync(prescriptiveOutputDir)
+        .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
+        .map(file => ({
+          name: file,
+          path: path.join(prescriptiveOutputDir, file),
+          type: file.endsWith('.csv') ? 'csv' : 'png',
+          category: 'prescriptive'
+        }))
+      files.prescriptive = prescriptiveFiles
+    }
+
+    // Predictive analytics files
+    const sarimaDir = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)")
+    if (fs.existsSync(sarimaDir)) {
+      const predictiveFiles = fs.readdirSync(sarimaDir)
+        .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
+        .map(file => ({
+          name: file,
+          path: path.join(sarimaDir, file),
+          type: file.endsWith('.csv') ? 'csv' : 'png',
+          category: 'predictive'
+        }))
+      files.predictive = predictiveFiles
+    }
+
+    res.json({ success: true, files })
+  } catch (error) {
+    console.error("[v0] Error listing files:", error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+// Route to download specific files
+router.get("/download/:category/:filename", async (req, res) => {
+  try {
+    const { category, filename } = req.params
+    let filePath = ""
+
+    switch (category) {
+      case "descriptive":
+        filePath = path.join(descriptiveOutputDir, "kpi_output", filename)
+        break
+      case "prescriptive":
+        filePath = path.join(prescriptiveOutputDir, filename)
+        break
+      case "predictive":
+        filePath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)", filename)
+        break
+      default:
+        return res.status(400).json({ success: false, error: "Invalid category" })
+    }
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ success: false, error: "File not found" })
+    }
+
+    const fileExtension = path.extname(filename).toLowerCase()
+    const mimeType = fileExtension === '.csv' ? 'text/csv' : 'image/png'
+
+    res.setHeader('Content-Type', mimeType)
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`)
+
+    const fileStream = fs.createReadStream(filePath)
+    fileStream.pipe(res)
+
+    fileStream.on('error', (error) => {
+      console.error("[v0] Error streaming file:", error)
+      res.status(500).json({ success: false, error: "Error downloading file" })
+    })
+  } catch (error) {
+    console.error("[v0] Error downloading file:", error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
 export default router
