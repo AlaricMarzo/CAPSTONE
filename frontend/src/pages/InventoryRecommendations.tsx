@@ -453,43 +453,54 @@ export default function InventoryRecommendations() {
             </CardHeader>
             <CardContent className="space-y-6">
               {/* Chart */}
-              <div className="h-80 md:h-96 w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data.resource_planning} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                    <XAxis
-                      dataKey="medicine"
-                      angle={-45}
-                      textAnchor="end"
-                      height={120}
-                      interval={0}
-                      tick={{ fontSize: 12 }}
-                    />
-                    <YAxis yAxisId="left" label={{ value: "Daily Demand", angle: -90, position: "insideLeft" }} />
-                    <YAxis
-                      yAxisId="right"
-                      orientation="right"
-                      label={{ value: "Storage (cu ft)", angle: 90, position: "insideRight" }}
-                    />
-                    <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }} />
-                    <Legend />
-                    <Bar
-                      yAxisId="left"
-                      dataKey="daily_demand"
-                      fill="#6366f1"
-                      name="Daily Demand"
-                      radius={[4, 4, 0, 0]}
-                    />
-                    <Bar
-                      yAxisId="right"
-                      dataKey="storage_needed"
-                      fill="#ec4899"
-                      name="Storage Needed"
-                      radius={[4, 4, 0, 0]}
-                    />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
+              {(() => {
+                const sortedData = [...data.resource_planning].sort((a, b) => b.daily_demand - a.daily_demand);
+                const chartData = sortedData.slice(0, 20);
+                const barSize = Math.min(30, 600 / (chartData.length || 1));
+                return (
+                  <div className="w-full">
+                    <div className="h-80 md:h-96 w-full">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart data={chartData} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                          <XAxis
+                            dataKey="medicine"
+                            angle={-45}
+                            textAnchor="end"
+                            height={120}
+                            interval={0}
+                            tick={{ fontSize: 12, fill: "var(--foreground)" }}
+                          />
+                          <YAxis yAxisId="left" label={{ value: "Daily Demand", angle: -90, position: "insideLeft" }} />
+                          <YAxis
+                            yAxisId="right"
+                            orientation="right"
+                            label={{ value: "Storage (cu ft)", angle: 90, position: "insideRight" }}
+                          />
+                          <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", opacity: 0.95 }} />
+                          <Legend />
+                          <Bar
+                            yAxisId="left"
+                            dataKey="daily_demand"
+                            fill="#6366f1"
+                            name="Daily Demand"
+                            radius={[4, 4, 0, 0]}
+                            barSize={barSize}
+                          />
+                          <Bar
+                            yAxisId="right"
+                            dataKey="storage_needed"
+                            fill="#ec4899"
+                            name="Storage Needed"
+                            radius={[4, 4, 0, 0]}
+                            barSize={barSize}
+                          />
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Detailed Table */}
               <div className="space-y-3">
