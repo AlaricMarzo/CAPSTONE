@@ -60,8 +60,8 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/" element={<RequireAuth><Index onLogout={handleLogout} /></RequireAuth>} />
-            <Route path="/upload" element={<RequireAuth><Upload /></RequireAuth>} />
+            <Route path="/" element={<Index onLogout={handleLogout} />} />
+            <Route path="/upload" element={<Upload />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

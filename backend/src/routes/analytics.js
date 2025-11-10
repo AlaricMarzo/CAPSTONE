@@ -1,516 +1,442 @@
-import express from "express";
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-import { spawn } from "child_process";
+import express from "express"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
+import { spawn } from "child_process"
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
-const router = express.Router();
+const router = express.Router()
 
-// Path to prescriptive output directory
-const prescriptiveOutputDir = path.join(__dirname, "../analytics/prescriptive/prescriptive_output");
-
-// Path to descriptive output directory
-const descriptiveOutputDir = path.join(__dirname, "../../../descriptive_output");
-
-// Path to predictive output directories
-const predictiveOutputDirs = {
-  randomForest: path.join(__dirname, "../analytics/Predictive/ml_random_forest"),
-  xgboost: path.join(__dirname, "../analytics/Predictive/ml_xgboost_model"),
-  sarima: path.join(__dirname, "../analytics/Predictive/ts_sarima-ets-sarimax(2,1,2)")
-};
+const prescriptiveOutputDir = path.join(__dirname, "../analytics/prescriptive/prescriptive_output")
+const descriptiveOutputDir = path.join(__dirname, "../analytics/Descriptive/descriptive_output")
+const predictiveOutputDir = path.join(__dirname, "../analytics/Predictive")
 
 // Helper function to read CSV and convert to JSON
 function csvToJson(csvPath) {
   if (!fs.existsSync(csvPath)) {
-    return [];
+    console.log("[v0] CSV file not found:", csvPath)
+    return []
   }
 
-  const csvData = fs.readFileSync(csvPath, "utf8");
-  const lines = csvData.split("\n").filter((line) => line.trim() !== "");
-  if (lines.length < 2) return [];
+  try {
+    const csvData = fs.readFileSync(csvPath, "utf8")
+    const lines = csvData.split("\n").filter((line) => line.trim() !== "")
+    if (lines.length < 2) return []
 
-  const headers = lines[0].split(",").map((h) => h.trim());
-  const rows = lines.slice(1).map((line) => {
-    const values = line.split(",").map((v) => v.trim());
-    const obj = {};
-    headers.forEach((header, index) => {
-      const value = values[index] || "";
-      // Try to parse numbers
-      if (!isNaN(value) && value !== "") {
-        obj[header] = Number.parseFloat(value);
-      } else {
-        obj[header] = value;
-      }
-    });
-    return obj;
-  });
+    const headers = lines[0].split(",").map((h) => h.trim())
+    const rows = lines.slice(1).map((line) => {
+      const values = line.split(",").map((v) => v.trim())
+      const obj = {}
+      headers.forEach((header, index) => {
+        const value = values[index] || ""
+        if (!isNaN(value) && value !== "") {
+          obj[header] = Number.parseFloat(value)
+        } else {
+          obj[header] = value
+        }
+      })
+      return obj
+    })
 
-  return rows;
+    return rows
+  } catch (error) {
+    console.error("[v0] Error parsing CSV:", error)
+    return []
+  }
 }
 
 // Helper function to read JSON
 function jsonToArray(jsonPath) {
   if (!fs.existsSync(jsonPath)) {
-    return [];
+    console.log("[v0] JSON file not found:", jsonPath)
+    return []
   }
-  const jsonData = fs.readFileSync(jsonPath, "utf8");
-  return JSON.parse(jsonData);
-}
-
-// Helper functions to generate summary JSONs for each analytics type
-function generatePrescriptiveSummary(data) {
-  return {
-    totalModels: 7,
-    modelCounts: {
-      reorderPoint: data.reorderPoint.length,
-      eoq: data.eoq.length,
-      inventoryAllocation: data.inventoryAllocation.length,
-      whatIfAnalysis: data.whatIfAnalysis.length,
-      discountByGroup: data.discountByGroup.length,
-      discountByProduct: data.discountByProduct.length,
-      resourcePlanning: data.resourcePlanning.length,
-      anomalyDetection: data.anomalyDetection.length,
-      anomaliesOnly: data.anomaliesOnly.length,
-    },
-    summaryRecordsCount: data.summary.length,
-    hasRecommendations: !!data.recommendations && data.recommendations !== "Recommendations file not found.",
-  };
-}
-
-function generateDescriptiveSummary(data) {
-  return {
-    kpiCount: data.kpis.length,
-    associationRulesCount: data.mbaRules.length,
-    clusterCount: data.clustering.length,
-    totalRecords: (data.kpis.length || 0) + (data.mbaRules.length || 0) + (data.clustering.length || 0),
-  };
-}
-
-function generatePredictiveSummary(data) {
-  return {
-    models: {
-      randomForest: {
-        forecastsCount: data.randomForest.forecasts.length,
-        metricsCount: data.randomForest.metrics.length,
-        featuresCount: data.randomForest.features.length,
-      },
-      xgboost: {
-        forecastsCount: data.xgboost.forecasts.length,
-        metricsCount: data.xgboost.metrics.length,
-        featuresCount: data.xgboost.features.length,
-      },
-      sarima: {
-        forecastsCount: data.sarima.forecasts.length,
-        metricsCount: data.sarima.metrics.length,
-      },
-    },
-    totalForecasts:
-      (data.randomForest.forecasts.length || 0) +
-      (data.xgboost.forecasts.length || 0) +
-      (data.sarima.forecasts.length || 0),
-  };
-}
-
-// Route to get all prescriptive analytics data
-router.get("/prescriptive", async (req, res) => {
   try {
-    const data = {};
-
-    // Model 1: Reorder Point
-    data.reorderPoint = csvToJson(path.join(prescriptiveOutputDir, "model_1_reorder_point.csv"));
-
-    // Model 2: EOQ
-    data.eoq = csvToJson(path.join(prescriptiveOutputDir, "model_2_eoq.csv"));
-
-    // Model 3: Inventory Allocation
-    data.inventoryAllocation = csvToJson(path.join(prescriptiveOutputDir, "model_3_inventory_allocation.csv"));
-
-    // Model 4: What-If Analysis
-    data.whatIfAnalysis = csvToJson(path.join(prescriptiveOutputDir, "model_4_whatif_analysis.csv"));
-
-    // Model 5: Discount Optimization (Group)
-    data.discountByGroup = csvToJson(path.join(prescriptiveOutputDir, "model_5_discount_by_group.csv"));
-
-    // Model 5: Discount Optimization (Product)
-    data.discountByProduct = csvToJson(path.join(prescriptiveOutputDir, "model_5_discount_by_product.csv"));
-
-    // Model 6: Resource Planning
-    data.resourcePlanning = csvToJson(path.join(prescriptiveOutputDir, "model_6_resource_planning.csv"));
-
-    // Model 7: Anomaly Detection
-    data.anomalyDetection = csvToJson(path.join(prescriptiveOutputDir, "model_7_anomaly_detection.csv"));
-
-    // Model 7: Anomalies Only
-    data.anomaliesOnly = csvToJson(path.join(prescriptiveOutputDir, "model_7_anomalies_only.csv"));
-
-    // Summary
-    data.summary = csvToJson(path.join(prescriptiveOutputDir, "SUMMARY_all_models.csv"));
-
-    // Read recommendations text file
-    const recommendationsPath = path.join(prescriptiveOutputDir, "model_8_prescriptive_recommendations.txt");
-    if (fs.existsSync(recommendationsPath)) {
-      data.recommendations = fs.readFileSync(recommendationsPath, "utf8");
-    } else {
-      data.recommendations = "Recommendations file not found.";
-    }
-
-    const summary = generatePrescriptiveSummary(data);
-
-    res.json({
-      success: true,
-      summary: summary,
-      data: data,
-    });
-
+    const jsonData = fs.readFileSync(jsonPath, "utf8")
+    return JSON.parse(jsonData)
   } catch (error) {
-    console.error("Error fetching prescriptive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to fetch prescriptive analytics data"
-    });
+    console.error("[v0] Error parsing JSON:", error)
+    return []
   }
-});
+}
 
-// Route to run prescriptive analytics
-router.post("/run-prescriptive", async (req, res) => {
-  try {
-    const prescriptiveDir = path.join(__dirname, "../analytics/prescriptive");
-
-    // Check if prescriptive.py exists
-    const scriptPath = path.join(prescriptiveDir, "prescriptive.py");
-    if (!fs.existsSync(scriptPath)) {
-      return res.status(404).json({
-        success: false,
-        error: "Prescriptive analytics script not found"
-      });
-    }
-
-    // Run the Python script
-    const pythonProcess = spawn("python", ["prescriptive.py"], {
-      cwd: prescriptiveDir,
-      stdio: ["ignore", "pipe", "pipe"]
-    });
-
-    let stdout = "";
-    let stderr = "";
-
-    pythonProcess.stdout.on("data", (data) => {
-      stdout += data.toString();
-    });
-
-    pythonProcess.stderr.on("data", (data) => {
-      stderr += data.toString();
-    });
-
-    pythonProcess.on("close", (code) => {
-      if (code === 0) {
-        res.json({
-          success: true,
-          message: "Prescriptive analytics completed successfully",
-          output: stdout
-        });
-      } else {
-        console.error("Python script error:", stderr);
-        res.status(500).json({
-          success: false,
-          error: "Prescriptive analytics failed",
-          details: stderr
-        });
-      }
-    });
-
-    pythonProcess.on("error", (error) => {
-      console.error("Failed to start Python process:", error);
-      res.status(500).json({
-        success: false,
-        error: "Failed to execute prescriptive analytics",
-        details: error.message
-      });
-    });
-
-  } catch (error) {
-    console.error("Error running prescriptive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to run prescriptive analytics"
-    });
-  }
-});
-
-// Route to get all descriptive analytics data
 router.get("/descriptive", async (req, res) => {
   try {
-    const data = {};
+    const kpiDir = path.join(descriptiveOutputDir, "kpi_output")
+    const mbaDir = path.join(descriptiveOutputDir, "mba_output")
+    const clusterDir = path.join(descriptiveOutputDir, "clustering_output")
 
-    // KPIs - Load from JSON files
-    const monthlySalesQtyPath = path.join(descriptiveOutputDir, "kpi_output", "kpi_monthly_sales_qty.json");
-    const monthlySalesData = jsonToArray(monthlySalesQtyPath);
-    data.kpis = monthlySalesData.map(row => ({
-      month: row.month,
-      sales: row.total_sales,
-      revenue: row.total_sales * 1.1, // Assuming revenue is 10% markup
-      profit: row.total_sales * 0.3 // Assuming 30% profit margin
-    }));
+    const monthlySalesData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_qty.json"))
+    const growthData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_growth_rate.json"))
+    const categoryData = jsonToArray(path.join(kpiDir, "kpi_category_split_monthly.json"))
+    const top10Sales = jsonToArray(path.join(kpiDir, "kpi_top10_by_sales.json"))
+    const top10Qty = jsonToArray(path.join(kpiDir, "kpi_top10_by_qty.json"))
+    const activeSkus = jsonToArray(path.join(kpiDir, "kpi_active_skus_monthly.json"))
 
-    // Total Sales
-    data.totalSales = monthlySalesData.reduce((sum, row) => sum + (row.total_sales || 0), 0);
+    const totalSales = monthlySalesData.reduce((sum, d) => sum + (d.total_sales || 0), 0)
+    const totalQty = monthlySalesData.reduce((sum, d) => sum + (d.total_qty || 0), 0)
+    const latestGrowth = growthData.length > 0 ? growthData[growthData.length - 1].growth_rate : 0
+    const latestSkus = activeSkus.length > 0 ? activeSkus[activeSkus.length - 1].active_skus : 0
 
-    // Growth Rate - Load from growth rate JSON
-    const growthPath = path.join(descriptiveOutputDir, "kpi_output", "kpi_monthly_sales_growth_rate.json");
-    const growthData = jsonToArray(growthPath);
-    data.growthRate = growthData.length > 0 ? growthData[growthData.length - 1].growth_rate : 0;
+    const monthlyFormattedData = monthlySalesData.map((d) => ({
+      month: d.month || "",
+      sales: d.total_sales || 0,
+      quantity: d.total_qty || 0,
+    }))
 
-    // Recent Sales for bar chart (use monthly as is)
-    data.recentSales = monthlySalesData.map(row => ({
-      month: row.month,
-      sales: row.total_sales
-    }));
+    const categoryLatest = categoryData.length > 0 ? categoryData[categoryData.length - 1] : {}
+    const categoryDistribution = Object.entries(categoryLatest)
+      .filter(([key]) => key !== "month")
+      .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
 
-    // Lead Time Data - Derive simple line data (dummy weekly from monthly avg)
-    const avgSales = data.totalSales / monthlySalesData.length;
-    data.leadTimeData = [
-      { week: 'Week 1', leadTime: avgSales * 0.8 },
-      { week: 'Week 2', leadTime: avgSales * 1.0 },
-      { week: 'Week 3', leadTime: avgSales * 0.9 },
-      { week: 'Week 4', leadTime: avgSales * 1.1 },
-      { week: 'Week 5', leadTime: avgSales * 1.2 }
-    ];
+    const topProducts = (top10Sales || []).slice(0, 10).map((d) => ({
+      name: d.sku_description || d.name || "Product",
+      sales: d.total_sales || 0,
+      quantity: d.qty || 0,
+    }))
 
-    // Product Metrics for pie/donut (category split latest month)
-    const categoryPath = path.join(descriptiveOutputDir, "kpi_output", "kpi_category_split_monthly.json");
-    const categoryData = jsonToArray(categoryPath);
-    const latestCategory = categoryData[categoryData.length - 1] || {};
-    data.productMetrics = Object.keys(latestCategory)
-      .filter(key => key !== 'month' && key !== 'total')
-      .map(key => ({ name: key, value: latestCategory[key] || 0 }));
+    const clusteringData = jsonToArray(path.join(clusterDir, "cluster_summaries", "global.json"))
+    const clusteringSummary = (clusteringData || []).map((d, idx) => ({
+      cluster: idx,
+      count: d.customer_count || d.count || 0,
+      avg_value: d.avg_value || 0,
+    }))
 
-    // Key Metrics Value - Sum top10 qty (assume unit price 1)
-    const top10Path = path.join(descriptiveOutputDir, "kpi_output", "kpi_top10_by_qty.json");
-    const top10Data = jsonToArray(top10Path);
-    data.keyMetricsValue = top10Data.reduce((sum, row) => sum + (row.qty || 0), 0);
+    const mbaRulesData = jsonToArray(path.join(mbaDir, "mba_rules.json"))
+    const mbaRules = (mbaRulesData || []).slice(0, 10).map((d) => ({
+      item_a: d.antecedents || d.item_a || "",
+      item_b: d.consequents || d.item_b || "",
+      lift: d.lift || 0,
+      confidence_ab_pct: (d.confidence || d.confidence_ab_pct) * 100 || 0,
+      support_pct: (d.support || d.support_pct) * 100 || 0,
+    }))
 
-    // Alerts - Generate from low active SKUs or top10
-    const activeSkusPath = path.join(descriptiveOutputDir, "kpi_output", "kpi_active_skus_monthly.json");
-    const activeSkusData = jsonToArray(activeSkusPath);
-    data.alerts = [
-      { title: "Low Active SKUs", description: `Only ${activeSkusData[activeSkusData.length - 1]?.active_skus || 0} SKUs active this month`, severity: "warning" },
-      { title: "Category Growth Alert", description: "Category X shows negative growth", severity: "error" },
-      { title: "Top Product Overstock", description: "Product Y exceeds sales threshold", severity: "warning" }
-    ];
-    data.alertCount = data.alerts.length;
+    const formattedData = {
+      kpi_summary: {
+        total_sales: totalSales,
+        total_quantity: totalQty,
+        active_skus: latestSkus,
+        growth_rate: latestGrowth,
+      },
+      monthly_sales: monthlyFormattedData,
+      category_distribution: categoryDistribution,
+      top_products: topProducts,
+      clustering_summary: clusteringSummary,
+      mba_rules: mbaRules,
+    }
 
-    // MBA Rules - Load from CSV (assume exists)
-    const mbaPath = path.join(descriptiveOutputDir, "mba_output", "mba_rules.csv");
-    data.mbaRules = csvToJson(mbaPath).map(row => ({
-      antecedents: row.antecedents,
-      consequents: row.consequents,
-      support: row.support,
-      confidence: row.confidence,
-      lift: row.lift
-    }));
-
-    // Clustering - Load from JSON
-    const clusteringPath = path.join(descriptiveOutputDir, "clustering_output", "clusters_global.json");
-    const clusteringJson = jsonToArray(clusteringPath);
-    data.clustering = clusteringJson.map(row => ({
-      feature_1: row.total_qty || 0,
-      feature_2: row.total_sales || 0,
-      cluster: row.cluster || 0
-    }));
-
-    const summary = generateDescriptiveSummary(data);
-
-    res.json({
-      success: true,
-      summary: summary,
-      data: data,
-    });
-
+    res.json({ success: true, data: formattedData })
   } catch (error) {
-    console.error("Error fetching descriptive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to fetch descriptive analytics data"
-    });
+    console.error("[v0] Error fetching descriptive analytics:", error)
+    res.status(500).json({ success: false, error: error.message })
   }
-});
+})
+
+router.get("/predictive", async (req, res) => {
+  try {
+    const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)")
+
+    const forecastData = csvToJson(path.join(sarimaDirPath, "forecasts.csv"))
+    const metricsData = csvToJson(path.join(sarimaDirPath, "metrics.csv"))
+
+    const formattedForecasts = (forecastData || []).map((d) => ({
+      date: d.date || "",
+      actual: Number.parseFloat(d.actual) || 0,
+      rf_predicted: 0,
+      xgb_predicted: 0,
+      sarima_predicted: Number.parseFloat(d.predicted) || 0,
+      confidence_lower: Number.parseFloat(d.lower_bound) || 0,
+      confidence_upper: Number.parseFloat(d.upper_bound) || 0,
+    }))
+
+    const metrics = (metricsData || [])[0] || {}
+    const modelPerformance = {
+      random_forest: {
+        mae: 0,
+        rmse: 0,
+        r_squared: 0,
+      },
+      xgboost: {
+        mae: 0,
+        rmse: 0,
+        r_squared: 0,
+      },
+      sarima: {
+        mae: Number.parseFloat(metrics.mae) || 0,
+        rmse: Number.parseFloat(metrics.rmse) || 0,
+        r_squared: 0,
+      },
+    }
+
+    const formattedData = {
+      models_summary: {
+        total_models: 3,
+        avg_accuracy:
+          (modelPerformance.random_forest.r_squared +
+            modelPerformance.xgboost.r_squared +
+            modelPerformance.sarima.r_squared) /
+          3,
+        total_forecasts: formattedForecasts.length,
+      },
+      forecast_data: formattedForecasts,
+      model_performance: modelPerformance,
+    }
+
+    res.json({ success: true, data: formattedData })
+  } catch (error) {
+    console.error("[v0] Error fetching predictive analytics:", error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+router.get("/prescriptive", async (req, res) => {
+  try {
+    const reorderData = csvToJson(path.join(prescriptiveOutputDir, "model_1_reorder_point.csv"))
+    const eoqData = csvToJson(path.join(prescriptiveOutputDir, "model_2_eoq.csv"))
+    const allocationData = csvToJson(path.join(prescriptiveOutputDir, "model_3_inventory_allocation.csv"))
+    const whatIfData = csvToJson(path.join(prescriptiveOutputDir, "model_4_whatif_analysis.csv"))
+    const discountData = csvToJson(path.join(prescriptiveOutputDir, "model_5_discount_by_product.csv"))
+    const resourceData = csvToJson(path.join(prescriptiveOutputDir, "model_6_resource_planning.csv"))
+    const anomalyData = csvToJson(path.join(prescriptiveOutputDir, "model_7_anomaly_detection.csv"))
+    const summaryData = csvToJson(path.join(prescriptiveOutputDir, "SUMMARY_all_models.csv"))
+
+    const reorder_points = (reorderData || []).map((d) => ({
+      medicine: d.medicine || d.sku_description || d.name || d.product || "Product",
+      avg_daily_demand: Number.parseFloat(d.avg_daily_demand) || Number.parseFloat(d.daily_demand) || 0,
+      safety_stock: Number.parseFloat(d.safety_stock) || 0,
+      reorder_point: Number.parseFloat(d.reorder_point) || 0,
+      forecast_30day: Number.parseFloat(d.forecast_30day) || Number.parseFloat(d.forecast) || 0,
+    }))
+
+    const eoq_data = (eoqData || []).map((d) => ({
+      medicine: d.medicine || d.sku_description || d.name || d.product || "Product",
+      annual_demand: Number.parseFloat(d.annual_demand) || 0,
+      eoq: Number.parseFloat(d.eoq) || 0,
+      orders_per_year: Number.parseFloat(d.orders_per_year) || 0,
+      days_between_orders:
+        Number.parseFloat(d.days_between_orders) || 365 / (Number.parseFloat(d.orders_per_year) || 1),
+      total_annual_cost: Number.parseFloat(d.total_annual_cost) || 0,
+    }))
+
+    const allocations = (allocationData || []).map((d) => ({
+      medicine: d.medicine || d.sku_description || d.name || d.product || "Product",
+      optimal_allocation: Number.parseFloat(d.optimal_allocation) || Number.parseFloat(d.units_allocated) || 0,
+      allocated_value: Number.parseFloat(d.allocated_value) || Number.parseFloat(d.value) || 0,
+      profit_margin: Number.parseFloat(d.profit_margin) || Number.parseFloat(d.margin_pct) || 0,
+      expected_profit: Number.parseFloat(d.expected_profit) || Number.parseFloat(d.profit) || 0,
+    }))
+
+    const discountGroupMap = new Map()
+    ;(discountData || []).forEach((d) => {
+      const group = d.customer_group || d.group || "Default"
+      if (!discountGroupMap.has(group)) {
+        discountGroupMap.set(group, {
+          customer_group: group,
+          qty: 0,
+          sales: 0,
+          profit: 0,
+          avg_discount_pct: 0,
+          profit_margin: 0,
+        })
+      }
+      const current = discountGroupMap.get(group)
+      current.qty += Number.parseFloat(d.qty) || 0
+      current.sales += Number.parseFloat(d.sales) || 0
+      current.profit += Number.parseFloat(d.profit) || 0
+      current.avg_discount_pct = Number.parseFloat(d.discount_pct) || current.avg_discount_pct
+      current.profit_margin = Number.parseFloat(d.profit_margin) || current.profit_margin
+    })
+    const discount_groups = Array.from(discountGroupMap.values())
+
+    const resource_planning = (resourceData || []).map((d) => ({
+      medicine: d.medicine || d.sku_description || d.name || d.product || "Product",
+      daily_demand: Number.parseFloat(d.daily_demand) || Number.parseFloat(d.demand) || 0,
+      projected_demand: Number.parseFloat(d.projected_demand) || Number.parseFloat(d.forecast) || 0,
+      storage_needed: Number.parseFloat(d.storage_needed) || Number.parseFloat(d.storage) || 0,
+      capital_needed: Number.parseFloat(d.capital_needed) || Number.parseFloat(d.capital) || 0,
+    }))
+
+    const anomalies = (anomalyData || []).map((d) => ({
+      date: d.date || new Date().toISOString().split("T")[0],
+      sales: Number.parseFloat(d.sales) || 0,
+      qty: Number.parseFloat(d.qty) || 0,
+      profit: Number.parseFloat(d.profit) || 0,
+      anomaly_score: Number.parseFloat(d.anomaly_score) || 0,
+    }))
+
+    const total_sales = discount_groups.reduce((sum, g) => sum + g.sales, 0)
+    const total_profit = discount_groups.reduce((sum, g) => sum + g.profit, 0)
+    const total_cost = total_sales - total_profit
+    const overall_profit_margin_pct = total_sales > 0 ? (total_profit / total_sales) * 100 : 0
+    const total_quantity_sold = discount_groups.reduce((sum, g) => sum + g.qty, 0)
+
+    const financial_summary = {
+      total_sales,
+      total_cost,
+      total_profit,
+      overall_profit_margin_pct,
+      total_quantity_sold,
+    }
+
+    const key_metrics = {
+      total_products_optimized: reorder_points.length,
+      total_models: 7,
+      total_cost_savings: summaryData.reduce((sum, d) => sum + (Number.parseFloat(d.total_savings) || 0), 0),
+    }
+
+    const formattedData = {
+      reorder_points,
+      eoq_data,
+      allocations,
+      discount_groups,
+      resource_planning,
+      anomalies,
+      financial_summary,
+      key_metrics,
+    }
+
+    console.log("[v0] Prescriptive data formatted successfully")
+    res.json({ success: true, data: formattedData })
+  } catch (error) {
+    console.error("[v0] Error fetching prescriptive analytics:", error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
 
 // Route to run descriptive analytics
 router.post("/run-descriptive", async (req, res) => {
   try {
-    const descriptiveDir = path.join(__dirname, "../analytics/Descriptive");
-
-    // Check if descriptive.py exists
-    const scriptPath = path.join(descriptiveDir, "descriptive.py");
+    const descriptiveDir = path.join(__dirname, "../analytics/Descriptive")
+    const scriptPath = path.join(descriptiveDir, "descriptive.py")
     if (!fs.existsSync(scriptPath)) {
-      return res.status(404).json({
-        success: false,
-        error: "Descriptive analytics script not found"
-      });
+      return res.status(404).json({ success: false, error: "Descriptive analytics script not found" })
     }
 
-    // Run the Python script
     const pythonProcess = spawn("python", ["descriptive.py"], {
       cwd: descriptiveDir,
-      stdio: ["ignore", "pipe", "pipe"]
-    });
+      stdio: ["ignore", "pipe", "pipe"],
+    })
 
-    let stdout = "";
-    let stderr = "";
+    let stdout = ""
+    let stderr = ""
 
     pythonProcess.stdout.on("data", (data) => {
-      stdout += data.toString();
-    });
+      stdout += data.toString()
+    })
 
     pythonProcess.stderr.on("data", (data) => {
-      stderr += data.toString();
-    });
+      stderr += data.toString()
+    })
 
     pythonProcess.on("close", (code) => {
       if (code === 0) {
-        res.json({
-          success: true,
-          message: "Descriptive analytics completed successfully",
-          output: stdout
-        });
+        res.json({ success: true, message: "Descriptive analytics completed successfully", output: stdout })
       } else {
-        console.error("Python script error:", stderr);
-        res.status(500).json({
-          success: false,
-          error: "Descriptive analytics failed",
-          details: stderr
-        });
+        console.error("[v0] Python script error:", stderr)
+        res.status(500).json({ success: false, error: "Descriptive analytics failed", details: stderr })
       }
-    });
+    })
 
     pythonProcess.on("error", (error) => {
-      console.error("Failed to start Python process:", error);
-      res.status(500).json({
-        success: false,
-        error: "Failed to execute descriptive analytics",
-        details: error.message
-      });
-    });
-
+      console.error("[v0] Failed to start Python process:", error)
+      res.status(500).json({ success: false, error: "Failed to execute descriptive analytics", details: error.message })
+    })
   } catch (error) {
-    console.error("Error running descriptive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to run descriptive analytics"
-    });
+    console.error("[v0] Error running descriptive analytics:", error)
+    res.status(500).json({ success: false, error: "Failed to run descriptive analytics" })
   }
-});
-
-// Route to get all predictive analytics data
-router.get("/predictive", async (req, res) => {
-  try {
-    const data = {};
-
-    // Random Forest
-    data.randomForest = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.randomForest, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.randomForest, "metrics.csv")),
-      features: csvToJson(path.join(predictiveOutputDirs.randomForest, "feature_importance.csv"))
-    };
-
-    // XGBoost
-    data.xgboost = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.xgboost, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.xgboost, "metrics.csv")),
-      features: csvToJson(path.join(predictiveOutputDirs.xgboost, "feature_importance.csv"))
-    };
-
-    // SARIMA/ETS
-    data.sarima = {
-      forecasts: csvToJson(path.join(predictiveOutputDirs.sarima, "forecasts.csv")),
-      metrics: csvToJson(path.join(predictiveOutputDirs.sarima, "metrics.csv"))
-    };
-
-    const summary = generatePredictiveSummary(data);
-
-    res.json({
-      success: true,
-      summary: summary,
-      data: data,
-    });
-
-  } catch (error) {
-    console.error("Error fetching predictive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to fetch predictive analytics data"
-    });
-  }
-});
+})
 
 // Route to run predictive analytics
 router.post("/run-predictive", async (req, res) => {
   try {
-    const predictiveDir = path.join(__dirname, "../analytics/Predictive");
-
-    // Check if models.py exists in parent directory
-    const scriptPath = path.join(__dirname, "../analytics/models.py");
+    const scriptPath = path.join(__dirname, "../analytics/models.py")
     if (!fs.existsSync(scriptPath)) {
-      return res.status(404).json({
-        success: false,
-        error: "Predictive analytics script not found"
-      });
+      return res.status(404).json({ success: false, error: "Predictive analytics script not found" })
     }
 
-    // Run the Python script
     const pythonProcess = spawn("python", [scriptPath], {
       cwd: path.join(__dirname, "../analytics"),
-      stdio: ["ignore", "pipe", "pipe"]
-    });
+      stdio: ["ignore", "pipe", "pipe"],
+    })
 
-    let stdout = "";
-    let stderr = "";
+    let stdout = ""
+    let stderr = ""
 
     pythonProcess.stdout.on("data", (data) => {
-      stdout += data.toString();
-    });
+      stdout += data.toString()
+    })
 
     pythonProcess.stderr.on("data", (data) => {
-      stderr += data.toString();
-    });
+      stderr += data.toString()
+    })
 
     pythonProcess.on("close", (code) => {
       if (code === 0) {
-        res.json({
-          success: true,
-          message: "Predictive analytics completed successfully",
-          output: stdout
-        });
+        res.json({ success: true, message: "Predictive analytics completed successfully", output: stdout })
       } else {
-        console.error("Python script error:", stderr);
-        res.status(500).json({
-          success: false,
-          error: "Predictive analytics failed",
-          details: stderr
-        });
+        console.error("[v0] Python script error:", stderr)
+        res.status(500).json({ success: false, error: "Predictive analytics failed", details: stderr })
       }
-    });
+    })
 
     pythonProcess.on("error", (error) => {
-      console.error("Failed to start Python process:", error);
-      res.status(500).json({
-        success: false,
-        error: "Failed to execute predictive analytics",
-        details: error.message
-      });
-    });
-
+      console.error("[v0] Failed to start Python process:", error)
+      res.status(500).json({ success: false, error: "Failed to execute predictive analytics", details: error.message })
+    })
   } catch (error) {
-    console.error("Error running predictive analytics:", error);
-    res.status(500).json({
-      success: false,
-      error: "Failed to run predictive analytics"
-    });
+    console.error("[v0] Error running predictive analytics:", error)
+    res.status(500).json({ success: false, error: "Failed to run predictive analytics" })
   }
-});
+})
 
-export default router;
+// Route to run prescriptive analytics
+router.post("/run-prescriptive", async (req, res) => {
+  try {
+    const prescriptiveDir = path.join(__dirname, "../analytics/prescriptive")
+    const scriptPath = path.join(prescriptiveDir, "prescriptive.py")
+    if (!fs.existsSync(scriptPath)) {
+      return res.status(404).json({ success: false, error: "Prescriptive analytics script not found" })
+    }
+
+    const pythonProcess = spawn("python", ["prescriptive.py"], {
+      cwd: prescriptiveDir,
+      stdio: ["ignore", "pipe", "pipe"],
+    })
+
+    let stdout = ""
+    let stderr = ""
+
+    pythonProcess.stdout.on("data", (data) => {
+      stdout += data.toString()
+    })
+
+    pythonProcess.stderr.on("data", (data) => {
+      stderr += data.toString()
+    })
+
+    pythonProcess.on("close", (code) => {
+      if (code === 0) {
+        res.json({ success: true, message: "Prescriptive analytics completed successfully", output: stdout })
+      } else {
+        console.error("[v0] Python script error:", stderr)
+        res.status(500).json({ success: false, error: "Prescriptive analytics failed", details: stderr })
+      }
+    })
+
+    pythonProcess.on("error", (error) => {
+      console.error("[v0] Failed to start Python process:", error)
+      res
+        .status(500)
+        .json({ success: false, error: "Failed to execute prescriptive analytics", details: error.message })
+    })
+  } catch (error) {
+    console.error("[v0] Error running prescriptive analytics:", error)
+    res.status(500).json({ success: false, error: "Failed to run prescriptive analytics" })
+  }
+})
+
+export default router

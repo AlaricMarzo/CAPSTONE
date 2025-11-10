@@ -13,6 +13,10 @@ export default defineConfig(({ mode }) => ({
         target: 'http://localhost:5050',
         changeOrigin: true,
       },
+      '/descriptive_output': {
+        target: 'http://localhost:5050',
+        changeOrigin: true,
+      },
     },
   },
   plugins: [

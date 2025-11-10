@@ -58,6 +58,7 @@
     "kpi_category_split_monthly.json",
     "kpi_manifest.json",
     "kpi_monthly_sales_growth_rate.csv",
+    "kpi_monthly_sales_growth_rate.json",
     "kpi_monthly_sales_qty.csv",
     "kpi_monthly_sales_qty.json",
     "kpi_season_index_category.csv",

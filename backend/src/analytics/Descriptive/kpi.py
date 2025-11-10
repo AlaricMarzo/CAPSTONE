@@ -27,7 +27,7 @@ def _new_fig(figsize=FIGSIZE, left=0.12, right=0.98, top=0.92, bottom=0.35):
 
 def _finalize(fig: plt.Figure, path: Path):
     fig.savefig(path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {path}")
+    print(f"Saved figure: {path}")
     plt.close(fig)
 
 def _ensure_dir(p: Path) -> Path:
@@ -232,20 +232,21 @@ def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, floa
     ser = m.set_index("month")["total_sales"].astype(float)
     growth_pct = ser.pct_change() * 100.0
     growth_df = growth_pct.dropna().reset_index()
-    growth_df.columns = ["month", "growth_pct"]
+    growth_df.columns = ["month", "growth_rate"]
 
-    # Save CSV
+    # Save CSV and JSON
     out_dir = Path(out_dir)
     (out_dir / "kpi_monthly_sales_growth_rate.csv").write_text(
         growth_df.to_csv(index=False), encoding="utf-8"
     )
+    _to_json(growth_df, out_dir / "kpi_monthly_sales_growth_rate.json")
 
     # Figure
     fig, ax = plt.subplots(figsize=(14, 3.8))
     fig.set_constrained_layout(False)
     fig.subplots_adjust(left=0.08, right=0.98, top=0.86, bottom=0.40)
 
-    ax.plot(growth_df["month"], growth_df["growth_pct"], marker="o", linewidth=1.4, markersize=3, label="Growth %")
+    ax.plot(growth_df["month"], growth_df["growth_rate"], marker="o", linewidth=1.4, markersize=3, label="Growth %")
     ax.axhline(0, color="#888", linewidth=1)
     ax.set_title("Monthly Sales Growth Rate (%)")
     ax.set_xlabel("Month"); ax.set_ylabel("Growth (%)")
@@ -254,7 +255,7 @@ def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, floa
         label.set_rotation(60); label.set_ha("right")
 
     ax.yaxis.set_major_formatter(PercentFormatter(xmax=100))
-    _set_zoom_limits(ax, growth_df["growth_pct"], lower_q=1, upper_q=99)
+    _set_zoom_limits(ax, growth_df["growth_rate"], lower_q=1, upper_q=99)
 
     out_path = out_dir / "fig_monthly_sales_growth_rate.png"
     fig.savefig(out_path, dpi=240, bbox_inches="tight")
@@ -271,7 +272,7 @@ def _plot_monthly_growth(monthly: pd.DataFrame, out_dir: Path) -> Dict[str, floa
         cagr_avg = np.nan
 
     # Arithmetic mean of monthly % changes
-    mean_avg = (growth_df["growth_pct"] / 100.0).mean() if not growth_df.empty else np.nan
+    mean_avg = (growth_df["growth_rate"] / 100.0).mean() if not growth_df.empty else np.nan
 
     return {"cagr_avg": float(cagr_avg) if pd.notnull(cagr_avg) else np.nan,
             "mean_avg": float(mean_avg) if pd.notnull(mean_avg) else np.nan}
