@@ -44,6 +44,15 @@ interface PredictiveData {
     xgboost: ModelMetrics
     sarima: ModelMetrics
   }
+  product_insights: Array<{
+    product_name: string
+    total_quantity: number
+    total_sales: number
+    total_profit: number
+    avg_unit_price: number
+    profit_margin_pct: number
+    forecasted_demand: number
+  }>
 }
 
 export default function PredictiveAnalytics() {
@@ -237,6 +246,49 @@ export default function PredictiveAnalytics() {
           </Card>
         ))}
       </div>
+
+      {/* Product Insights */}
+      <Card className="shadow-soft">
+        <CardHeader>
+          <CardTitle>Top Product Insights</CardTitle>
+          <CardDescription>Product-level performance with predictive demand forecasts</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4">
+            {data.product_insights.slice(0, 10).map((product, index) => (
+              <div key={index} className="border rounded-lg p-4 bg-card">
+                <div className="flex justify-between items-start mb-2">
+                  <h4 className="font-semibold text-lg">{product.product_name}</h4>
+                  <div className="text-right">
+                    <div className="text-sm text-muted-foreground">Profit Margin</div>
+                    <div className={`text-lg font-bold ${product.profit_margin_pct >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                      {product.profit_margin_pct.toFixed(1)}%
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                  <div>
+                    <div className="text-muted-foreground">Total Sales</div>
+                    <div className="font-semibold">₱{product.total_sales.toLocaleString()}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Quantity Sold</div>
+                    <div className="font-semibold">{product.total_quantity.toLocaleString()}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Avg Unit Price</div>
+                    <div className="font-semibold">₱{product.avg_unit_price.toFixed(2)}</div>
+                  </div>
+                  <div>
+                    <div className="text-muted-foreground">Forecasted Demand</div>
+                    <div className="font-semibold">₱{product.forecasted_demand.toLocaleString()}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   )
 }

@@ -4,6 +4,8 @@ import path from "path"
 import { fileURLToPath } from "url"
 import { dirname } from "path"
 import { spawn } from "child_process"
+import pg from "pg"
+import dotenv from "dotenv"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -268,6 +270,69 @@ router.get("/descriptive", async (req, res) => {
 
 router.get("/predictive", async (req, res) => {
   try {
+    dotenv.config()
+    const dsn = process.env.DATABASE_URL
+    if (!dsn) {
+      throw new Error("DATABASE_URL not set in environment variables")
+    }
+
+    const client = new pg.Client({ connectionString: dsn })
+    await client.connect()
+
+    // Query for top products by sales and quantity with predictive metrics
+    const productQuery = `
+      WITH monthly_sales AS (
+        SELECT
+          fs.product_key,
+          DATE_TRUNC('month', fs.date_key) AS month,
+          SUM(fs.sales_amount) AS monthly_sales
+        FROM warehouse.fact_sales fs
+        GROUP BY fs.product_key, DATE_TRUNC('month', fs.date_key)
+      ),
+      product_stats AS (
+        SELECT
+          p.product_key,
+          p.description AS product_name,
+          SUM(fs.quantity_sold) AS total_quantity,
+          SUM(fs.sales_amount) AS total_sales,
+          SUM(fs.profit_amount) AS total_profit,
+          AVG(fs.sales_amount / NULLIF(fs.quantity_sold, 0)) AS avg_unit_price,
+          CASE
+            WHEN SUM(fs.sales_amount) > 0 THEN (SUM(fs.profit_amount) / SUM(fs.sales_amount)) * 100
+            ELSE 0
+          END AS profit_margin_pct
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        GROUP BY p.product_key, p.description
+      )
+      SELECT
+        ps.product_key,
+        ps.product_name,
+        ps.total_quantity,
+        ps.total_sales,
+        ps.total_profit,
+        ps.avg_unit_price,
+        ps.profit_margin_pct,
+        AVG(ms.monthly_sales) OVER (PARTITION BY ps.product_key ORDER BY ms.month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS forecasted_demand_3month_avg
+      FROM product_stats ps
+      LEFT JOIN monthly_sales ms ON ps.product_key = ms.product_key
+      ORDER BY ps.total_sales DESC, ps.total_quantity DESC
+      LIMIT 20
+    `
+
+    const productResult = await client.query(productQuery)
+    const topProducts = productResult.rows.map(row => ({
+      product_name: row.product_name || "Unknown Product",
+      total_quantity: Number.parseFloat(row.total_quantity) || 0,
+      total_sales: Number.parseFloat(row.total_sales) || 0,
+      total_profit: Number.parseFloat(row.total_profit) || 0,
+      avg_unit_price: Number.parseFloat(row.avg_unit_price) || 0,
+      profit_margin_pct: Number.parseFloat(row.profit_margin_pct) || 0,
+      forecasted_demand: Number.parseFloat(row.forecasted_demand_3month_avg) || 0,
+    }))
+
+    await client.end()
+
     const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)")
     const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost_model", "database_data")
     const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest")
@@ -356,6 +421,7 @@ router.get("/predictive", async (req, res) => {
       forecast_data: formattedForecasts,
       feature_importance: featureImportance,
       model_performance: modelPerformance,
+      product_insights: topProducts, // Add product insights
     }
 
     res.json({ success: true, data: formattedData })
