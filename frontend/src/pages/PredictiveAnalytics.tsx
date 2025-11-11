@@ -15,7 +15,9 @@ import {
 } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MetricCard } from "@/components/Dashboard/MetricCard"
-import { TrendingUp, Target, Zap, AlertCircle, Loader2 } from "lucide-react"
+import { TrendingUp, Target, Zap, AlertCircle, Loader2, BarChart3, PieChart } from "lucide-react"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 interface ModelMetrics {
   mae: number
@@ -28,6 +30,7 @@ interface PredictiveData {
     total_models: number
     avg_accuracy: number
     total_forecasts: number
+    total_products_analyzed: number
   }
   forecast_data: Array<{
     date: string
@@ -53,12 +56,23 @@ interface PredictiveData {
     profit_margin_pct: number
     forecasted_demand: number
   }>
+  model_forecasts: Array<{
+    model: string
+    sku: string
+    name: string
+    data: Array<{
+      date: string
+      forecast: number
+    }>
+  }>
 }
 
 export default function PredictiveAnalytics() {
   const [data, setData] = useState<PredictiveData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [selectedModel, setSelectedModel] = useState<string>("all")
+  const [selectedProduct, setSelectedProduct] = useState<string>("all")
 
   useEffect(() => {
     const fetchData = async () => {
@@ -246,6 +260,216 @@ export default function PredictiveAnalytics() {
           </Card>
         ))}
       </div>
+
+      {/* Navigation Tabs for Model Forecasts */}
+      {data.model_forecasts && data.model_forecasts.length > 0 && (
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Model Forecast Visualizations</CardTitle>
+            <CardDescription>Interactive forecast charts for individual models and products</CardDescription>
+            <div className="flex gap-4 mt-4">
+              <div className="flex items-center gap-2">
+                <label className="text-sm font-medium">Model:</label>
+                <Select value={selectedModel} onValueChange={setSelectedModel}>
+                  <SelectTrigger className="w-40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Models</SelectItem>
+                    <SelectItem value="xgboost">XGBoost</SelectItem>
+                    <SelectItem value="random_forest">Random Forest</SelectItem>
+                    <SelectItem value="sarima">SARIMA</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="flex items-center gap-2">
+                <label className="text-sm font-medium">Product:</label>
+                <Select value={selectedProduct} onValueChange={setSelectedProduct}>
+                  <SelectTrigger className="w-48">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Products</SelectItem>
+                    {[...new Set(data.model_forecasts.map(f => f.sku))].map(sku => (
+                      <SelectItem key={sku} value={sku}>{sku}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <Tabs defaultValue="overview" className="w-full">
+              <TabsList className="grid w-full grid-cols-4">
+                <TabsTrigger value="overview" className="flex items-center gap-2">
+                  <BarChart3 className="h-4 w-4" />
+                  Overview
+                </TabsTrigger>
+                <TabsTrigger value="xgboost" className="flex items-center gap-2">
+                  <TrendingUp className="h-4 w-4" />
+                  XGBoost
+                </TabsTrigger>
+                <TabsTrigger value="random_forest" className="flex items-center gap-2">
+                  <PieChart className="h-4 w-4" />
+                  Random Forest
+                </TabsTrigger>
+                <TabsTrigger value="sarima" className="flex items-center gap-2">
+                  <Target className="h-4 w-4" />
+                  SARIMA
+                </TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="overview" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {data.model_forecasts
+                    .filter(forecast =>
+                      (selectedModel === "all" || forecast.model === selectedModel) &&
+                      (selectedProduct === "all" || forecast.sku === selectedProduct)
+                    )
+                    .slice(0, 6)
+                    .map((forecast, index) => (
+                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
+                        <div className="mb-3">
+                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
+                          <p className="text-xs text-muted-foreground">Model: {forecast.model} | SKU: {forecast.sku}</p>
+                        </div>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={forecast.data}>
+                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
+                              <YAxis tick={{ fontSize: 10 }} />
+                              <Tooltip
+                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
+                                labelStyle={{ color: "var(--foreground)" }}
+                              />
+                              <Line
+                                type="monotone"
+                                dataKey="forecast"
+                                stroke={forecast.model === 'xgboost' ? '#10b981' : forecast.model === 'random_forest' ? '#3b82f6' : '#f59e0b'}
+                                strokeWidth={2}
+                                dot={false}
+                                activeDot={{ r: 4, stroke: forecast.model === 'xgboost' ? '#10b981' : forecast.model === 'random_forest' ? '#3b82f6' : '#f59e0b', strokeWidth: 2 }}
+                              />
+                            </LineChart>
+                          </ResponsiveContainer>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="xgboost" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {data.model_forecasts
+                    .filter(forecast => forecast.model === 'xgboost' && (selectedProduct === "all" || forecast.sku === selectedProduct))
+                    .map((forecast, index) => (
+                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
+                        <div className="mb-3">
+                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
+                          <p className="text-xs text-muted-foreground">XGBoost | SKU: {forecast.sku}</p>
+                        </div>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={forecast.data}>
+                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
+                              <YAxis tick={{ fontSize: 10 }} />
+                              <Tooltip
+                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
+                                labelStyle={{ color: "var(--foreground)" }}
+                              />
+                              <Line
+                                type="monotone"
+                                dataKey="forecast"
+                                stroke="#10b981"
+                                strokeWidth={3}
+                                dot={false}
+                                activeDot={{ r: 5, stroke: '#10b981', strokeWidth: 2 }}
+                              />
+                            </LineChart>
+                          </ResponsiveContainer>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="random_forest" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {data.model_forecasts
+                    .filter(forecast => forecast.model === 'random_forest' && (selectedProduct === "all" || forecast.sku === selectedProduct))
+                    .map((forecast, index) => (
+                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
+                        <div className="mb-3">
+                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
+                          <p className="text-xs text-muted-foreground">Random Forest | SKU: {forecast.sku}</p>
+                        </div>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={forecast.data}>
+                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
+                              <YAxis tick={{ fontSize: 10 }} />
+                              <Tooltip
+                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
+                                labelStyle={{ color: "var(--foreground)" }}
+                              />
+                              <Line
+                                type="monotone"
+                                dataKey="forecast"
+                                stroke="#3b82f6"
+                                strokeWidth={3}
+                                dot={false}
+                                activeDot={{ r: 5, stroke: '#3b82f6', strokeWidth: 2 }}
+                              />
+                            </LineChart>
+                          </ResponsiveContainer>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="sarima" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {data.model_forecasts
+                    .filter(forecast => forecast.model === 'sarima' && (selectedProduct === "all" || forecast.sku === selectedProduct))
+                    .map((forecast, index) => (
+                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
+                        <div className="mb-3">
+                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
+                          <p className="text-xs text-muted-foreground">SARIMA | SKU: {forecast.sku}</p>
+                        </div>
+                        <div className="aspect-video bg-muted rounded overflow-hidden">
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={forecast.data}>
+                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
+                              <YAxis tick={{ fontSize: 10 }} />
+                              <Tooltip
+                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
+                                labelStyle={{ color: "var(--foreground)" }}
+                              />
+                              <Line
+                                type="monotone"
+                                dataKey="forecast"
+                                stroke="#f59e0b"
+                                strokeWidth={3}
+                                dot={false}
+                                activeDot={{ r: 5, stroke: '#f59e0b', strokeWidth: 2 }}
+                              />
+                            </LineChart>
+                          </ResponsiveContainer>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              </TabsContent>
+            </Tabs>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Product Insights */}
       <Card className="shadow-soft">
