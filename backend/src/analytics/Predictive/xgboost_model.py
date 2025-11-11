@@ -212,7 +212,7 @@ def load_data_from_database():
             print("No data found in database, falling back to CSV data.")
             return load_csv_data()
 
-        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 

@@ -181,7 +181,8 @@ def load_data_from_database():
     load_dotenv()
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
-        raise RuntimeError("DATABASE_URL not set in environment variables")
+        print("DATABASE_URL not set, falling back to CSV data.")
+        return load_csv_data()
 
     try:
         conn = psycopg2.connect(dsn)
@@ -211,16 +212,16 @@ def load_data_from_database():
         conn.close()
 
         if df.empty:
-            raise ValueError("No data found in warehouse.fact_sales table.")
+            print("No data found in database, falling back to CSV data.")
+            return load_csv_data()
 
-        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
     except Exception as e:
-        print(f"X Error loading data from database: {e}")
-        traceback.print_exc()
-        sys.exit(1)
+        print(f"Error loading data from database: {e}, falling back to CSV data.")
+        return load_csv_data()
 
 def main():
     ap=argparse.ArgumentParser()

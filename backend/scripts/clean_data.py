@@ -892,7 +892,7 @@ def clean_dataframe_improved(df):
             if tab:
                 df_final.loc[idx, 'Tab'] = tab
 
-    print(f"[OK] Applied categorization to {categorized_count} rows (by Item Code)", file=sys.stderr)
+    print(f" Applied categorization to {categorized_count} rows (by Item Code)", file=sys.stderr)
 
     # --- sanity: did mapping leave everything empty in key fields?
     important = ['Item Code','Description','Qty','Sales','Cost']

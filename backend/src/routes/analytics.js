@@ -82,6 +82,30 @@ function encodeImageToBase64(imagePath) {
   }
 }
 
+// Helper function to find file recursively in directory
+function findFileRecursively(dir, filename) {
+  if (!fs.existsSync(dir)) {
+    return ""
+  }
+
+  function searchDir(currentDir) {
+    const items = fs.readdirSync(currentDir)
+    for (const item of items) {
+      const fullPath = path.join(currentDir, item)
+      const stat = fs.statSync(fullPath)
+      if (stat.isDirectory()) {
+        const found = searchDir(fullPath)
+        if (found) return found
+      } else if (item === filename) {
+        return fullPath
+      }
+    }
+    return ""
+  }
+
+  return searchDir(dir)
+}
+
 router.get("/descriptive", async (req, res) => {
   try {
     const kpiDir = path.join(descriptiveOutputDir, "kpi_output")
@@ -170,7 +194,7 @@ router.get("/descriptive", async (req, res) => {
     const clusteringImages = []
 
     // Global
-    const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global.png"))
+    const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global_linear.png"))
     if (globalImage) {
       clusteringImages.push({
         name: "Global Clustering",
@@ -185,7 +209,7 @@ router.get("/descriptive", async (req, res) => {
       const categoryFiles = fs.readdirSync(categoryClusterDir).filter(f => f.endsWith('.json'))
       for (const file of categoryFiles) {
         const summaryPath = path.join(categoryClusterDir, file)
-        const imagePath = path.join(categoryClusterDir, file.replace('.json', '.png'))
+        const imagePath = path.join(categoryClusterDir, file.replace('.json', '_linear.png'))
         const summary = jsonToArray(summaryPath)
         const image = encodeImageToBase64(imagePath)
         if (image && summary) {
@@ -204,7 +228,7 @@ router.get("/descriptive", async (req, res) => {
       const tabFiles = fs.readdirSync(tabClusterDir).filter(f => f.endsWith('.json'))
       for (const file of tabFiles) {
         const summaryPath = path.join(tabClusterDir, file)
-        const imagePath = path.join(tabClusterDir, file.replace('.json', '.png'))
+        const imagePath = path.join(tabClusterDir, file.replace('.json', '_linear.png'))
         const summary = jsonToArray(summaryPath)
         const image = encodeImageToBase64(imagePath)
         if (image && summary) {
@@ -697,6 +721,39 @@ router.get("/files", async (req, res) => {
       files.descriptive = descriptiveFiles
     }
 
+    // Add clustering output files (including subdirectories)
+    const clusteringDir = path.join(descriptiveOutputDir, "clustering_output")
+    if (fs.existsSync(clusteringDir)) {
+      const clusteringFiles = []
+
+      // Function to recursively get files
+      function getFilesRecursively(dir, baseDir = '') {
+        const items = fs.readdirSync(dir)
+        for (const item of items) {
+          const fullPath = path.join(dir, item)
+          const stat = fs.statSync(fullPath)
+          if (stat.isDirectory()) {
+            getFilesRecursively(fullPath, path.join(baseDir, item))
+          } else if (item.endsWith('.csv') || item.endsWith('.png')) {
+            clusteringFiles.push({
+              name: baseDir ? `${baseDir}/${item}` : item,
+              path: fullPath,
+              type: item.endsWith('.csv') ? 'csv' : 'png',
+              category: 'descriptive'
+            })
+          }
+        }
+      }
+
+      getFilesRecursively(clusteringDir)
+
+      if (files.descriptive) {
+        files.descriptive.push(...clusteringFiles)
+      } else {
+        files.descriptive = clusteringFiles
+      }
+    }
+
     // Prescriptive analytics files
     if (fs.existsSync(prescriptiveOutputDir)) {
       const prescriptiveFiles = fs.readdirSync(prescriptiveOutputDir)
@@ -760,7 +817,14 @@ router.get("/download/:category/:filename", async (req, res) => {
 
     switch (category) {
       case "descriptive":
-        filePath = path.join(descriptiveOutputDir, "kpi_output", filename)
+        // Check kpi_output first
+        let descriptivePath = path.join(descriptiveOutputDir, "kpi_output", filename)
+        if (!fs.existsSync(descriptivePath)) {
+          // Check clustering_output recursively
+          const clusteringDir = path.join(descriptiveOutputDir, "clustering_output")
+          descriptivePath = findFileRecursively(clusteringDir, filename)
+        }
+        filePath = descriptivePath
         break
       case "prescriptive":
         filePath = path.join(prescriptiveOutputDir, filename)

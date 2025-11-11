@@ -23,6 +23,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
+from dotenv import load_dotenv
+import psycopg2
 
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from statsmodels.tsa.statespace.sarimax import SARIMAX
@@ -325,7 +327,8 @@ def load_data_from_database():
     load_dotenv()
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
-        raise RuntimeError("DATABASE_URL not set in environment variables")
+        print("DATABASE_URL not set, falling back to CSV data.")
+        return load_csv_data()
 
     try:
         conn = psycopg2.connect(dsn)
@@ -355,16 +358,16 @@ def load_data_from_database():
         conn.close()
 
         if df.empty:
-            raise ValueError("No data found in warehouse.fact_sales table.")
+            print("No data found in database, falling back to CSV data.")
+            return load_csv_data()
 
-        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
     except Exception as e:
-        print(f"X Error loading data from database: {e}")
-        traceback.print_exc()
-        sys.exit(1)
+        print(f"Error loading data from database: {e}, falling back to CSV data.")
+        return load_csv_data()
 
 def main():
     p = argparse.ArgumentParser()
@@ -392,7 +395,7 @@ def main():
     for desc in top_by_frequency(monthly, args.top):
             y = series_for(monthly, desc)
             if len(y) < 12:
-                print(f"[skip-short] {desc} in {f.name}")
+                print(f"[skip-short] {desc}")
                 continue
 
             # 1) cap spikes

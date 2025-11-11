@@ -47,7 +47,7 @@ def initialize_optimized_matcher():
             original_module.TAB_LOOKUP,           # BARCODE -> Tab
             original_module.PRODUCT_NAME_LOOKUP   # NAME(normalized) -> (Category, Tab)
         )
-        print("[PERF] [OK] Optimized category matcher initialized")
+        print("[PERF]  Optimized category matcher initialized")
 
     return _matcher
 
@@ -178,7 +178,7 @@ def optimized_upsert_dim_product(conn, run_id: str):
         # Perform batch update
         if updates:
             batch_update_categories(conn, updates)
-            print(f"[PERF] [OK] Updated {len(updates)} products with categories/tabs")
+            print(f"[PERF]  Updated {len(updates)} products with categories/tabs")
         
         # Print cache statistics
         if matcher:
@@ -232,7 +232,7 @@ def optimized_load_staging(conn, run_id: str, df):
     
     print(f"[PERF] Checking {len(in_batch_hashes)} unique hashes for duplicates...")
     existing_hashes = optimize_duplicate_checking(conn, in_batch_hashes)
-    print(f"[PERF] [OK] Found {len(existing_hashes)} existing hashes (duplicates)")
+    print(f"[PERF]  Found {len(existing_hashes)} existing hashes (duplicates)")
     
     is_dup = df["row_hash"].astype(str).isin(existing_hashes)
     df_dups = df.loc[is_dup].copy()
@@ -273,7 +273,7 @@ def optimized_load_staging(conn, run_id: str, df):
                 ) VALUES %s
             """, rows_new)
         
-        print(f"[PERF] [OK] Inserted {len(rows_new)} new rows into staging")
+        print(f"[PERF]  Inserted {len(rows_new)} new rows into staging")
     
     # --- Log DUPLICATES into cleaning_errors (same as original) ---
     if not df_dups.empty:
@@ -326,10 +326,10 @@ def apply_patches():
     original_module.upsert_dim_product = optimized_upsert_dim_product
     original_module.load_staging = optimized_load_staging
     
-    print("[OK] Patched get_category_for_product (with caching + fast fuzzy matching)")
-    print("[OK] Patched get_tab_for_product (with caching + fast fuzzy matching)")
-    print("[OK] Patched upsert_dim_product (with batch updates)")
-    print("[OK] Patched load_staging (with optimized duplicate checking)")
+    print(" Patched get_category_for_product (with caching + fast fuzzy matching)")
+    print(" Patched get_tab_for_product (with caching + fast fuzzy matching)")
+    print(" Patched upsert_dim_product (with batch updates)")
+    print(" Patched load_staging (with optimized duplicate checking)")
     print("\n" + "="*60)
     print("PERFORMANCE OPTIMIZATIONS ACTIVE")
     print("="*60 + "\n")
@@ -337,7 +337,7 @@ def apply_patches():
     # Try to install rapidfuzz if not available
     try:
         import rapidfuzz
-        print("[OK] rapidfuzz is installed (100x faster fuzzy matching)")
+        print(" rapidfuzz is installed (100x faster fuzzy matching)")
     except ImportError:
         print("[WARNING] rapidfuzz not installed. Install for 100x faster fuzzy matching:")
         print("   pip install rapidfuzz")

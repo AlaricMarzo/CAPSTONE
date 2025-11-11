@@ -21,8 +21,8 @@ def _read_csv_robust(path_or_buf):
 def _load_dataframe(source_value: str) -> pd.DataFrame:
     """Load dataframe from local CSV file"""
     if not source_value or not os.path.exists(source_value):
-        print("✗ No valid file found."); sys.exit(1)
-    print(f"✓ Loading CSV from file: {source_value}")
+        print(" No valid file found."); sys.exit(1)
+    print(f" Loading CSV from file: {source_value}")
     return _read_csv_robust(source_value)
 
 def load_data_from_database():
@@ -65,11 +65,11 @@ def load_data_from_database():
         if df.empty:
             raise ValueError("No data found in warehouse.fact_sales table.")
 
-        print(f"✓ Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
         return df
 
     except Exception as e:
-        print(f"✗ Error loading data from database: {e}")
+        print(f" Error loading data from database: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)
@@ -109,23 +109,23 @@ def main():
     # ---------------- [1/3] KPIs ----------------
     print("\n[1/3] Running KPIs ...")
     kpi_res = compute_kpis(df, kpi_out)
-    print("✓ KPIs done.")
+    print(" KPIs done.")
     print(f"   Avg monthly sales growth (CAGR): {kpi_res.get('avg_monthly_growth_rate_cagr')}")
 
     # ---------------- [2/3] MBA -----------------
     print("\n[2/3] Running Market-Basket (MBA) ...")
     mba_res = run_mba(df, mba_out)
-    print(f"✓ MBA done. Rules generated: {mba_res.get('rules_count')}")
+    print(f" MBA done. Rules generated: {mba_res.get('rules_count')}")
 
     # -------- DBSCAN Clustering (generates _linear and _log versions) --------
     print("\n[3a/3] Running DBSCAN Clustering ...")
     dbscan_res = dbscan_cluster_all(df, clustering_out)
-    print(f"✓ DBSCAN done. Categories with graphs: {len(dbscan_res['by_category'])}")
+    print(f" DBSCAN done. Categories with graphs: {len(dbscan_res['by_category'])}")
 
     # -------- KMeans Clustering (generates additional scatter plots) --------
     print("\n[3b/3] Running KMeans Clustering ...")
     kmeans_res = kmeans_cluster_all(df, clustering_out)
-    print(f"✓ KMeans done. Categories with graphs: {len(kmeans_res['by_category'])}")
+    print(f" KMeans done. Categories with graphs: {len(kmeans_res['by_category'])}")
 
     # Generate manifest
     manifest = {
@@ -163,7 +163,7 @@ def main():
     }
     Path(out_dir, "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
-    print("\n✓ All done! Outputs under:", out_dir)
+    print("\n All done! Outputs under:", out_dir)
 
 if __name__ == "__main__":
     main()

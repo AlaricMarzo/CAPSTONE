@@ -6,59 +6,63 @@ from pathlib import Path
 
 def run_predictive():
     """
-    Run predictive analytics by executing the predictive model scripts.
+    Run predictive analytics by executing the predictive.py script,
+    which handles running all predictive model scripts.
     """
     print("Running predictive analytics...")
     analytics_dir = Path(__file__).parent
-    predictive_dir = analytics_dir / "Predictive"
+    predictive_script = analytics_dir / "Predictive" / "predictive.py"
 
-    # List of predictive scripts to run
-    scripts = [
-        "xgboost_model.py",
-    ]
+    if not predictive_script.exists():
+        return {
+            "success": False,
+            "message": "Predictive runner script not found",
+            "details": [{"script": "predictive.py", "success": False, "error": "File not found"}]
+        }
 
-    results = []
-    for script in scripts:
-        script_path = predictive_dir / script
-        if not script_path.exists():
-            print(f"Warning: {script} not found, skipping.")
-            continue
-
-        print(f"Running {script}...")
-        try:
-            # Run the script
-            result = subprocess.run(
-                [sys.executable, str(script_path)],
-                cwd=str(predictive_dir),
-                capture_output=True,
-                text=True,
-                timeout=300  # 5 minutes timeout per script
-            )
-            if result.returncode == 0:
-                print(f"{script} completed successfully.")
-                results.append({"script": script, "success": True, "output": result.stdout})
-            else:
-                print(f"{script} failed with code {result.returncode}: {result.stderr}")
-                results.append({"script": script, "success": False, "error": result.stderr})
-        except subprocess.TimeoutExpired:
-            print(f"{script} timed out.")
-            results.append({"script": script, "success": False, "error": "Timeout"})
-        except Exception as e:
-            print(f"Error running {script}: {str(e)}")
-            results.append({"script": script, "success": False, "error": str(e)})
-
-    # Determine overall success: succeed if at least one script succeeded
-    overall_success = any(r["success"] for r in results)
-    if overall_success:
-        message = "Predictive analytics completed successfully"
-    else:
-        message = "All predictive scripts failed"
-
-    return {
-        "success": overall_success,
-        "message": message,
-        "details": results
-    }
+    print("Running predictive.py...")
+    try:
+        # Run the predictive.py script
+        result = subprocess.run(
+            [sys.executable, str(predictive_script)],
+            cwd=str(analytics_dir / "Predictive"),
+            capture_output=True,
+            text=True,
+            timeout=3600  # 1 hour timeout for all models
+        )
+        if result.returncode == 0:
+            print("predictive.py completed successfully.")
+            # Parse the JSON output from predictive.py
+            try:
+                output_data = json.loads(result.stdout.strip())
+                return output_data
+            except json.JSONDecodeError:
+                return {
+                    "success": True,
+                    "message": "Predictive analytics completed (output parsing failed)",
+                    "details": [{"script": "predictive.py", "success": True, "output": result.stdout}]
+                }
+        else:
+            print(f"predictive.py failed with code {result.returncode}: {result.stderr}")
+            return {
+                "success": False,
+                "message": "Predictive analytics failed",
+                "details": [{"script": "predictive.py", "success": False, "error": result.stderr}]
+            }
+    except subprocess.TimeoutExpired:
+        print("predictive.py timed out.")
+        return {
+            "success": False,
+            "message": "Predictive analytics timed out",
+            "details": [{"script": "predictive.py", "success": False, "error": "Timeout"}]
+        }
+    except Exception as e:
+        print(f"Error running predictive.py: {str(e)}")
+        return {
+            "success": False,
+            "message": f"Error running predictive analytics: {str(e)}",
+            "details": [{"script": "predictive.py", "success": False, "error": str(e)}]
+        }
 
 def run_analytics(output_path):
     # Placeholder for full analytics pipeline

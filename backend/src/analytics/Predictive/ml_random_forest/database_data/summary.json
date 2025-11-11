@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-11-12 02:22:13.857904",
+    "timestamp": "2025-11-12 03:32:02.929099",
     "input_file": "database",
     "output_directory": "C:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Predictive\\ml_random_forest\\database_data"
   },
@@ -15,10 +15,10 @@
     "products_with_rf": 2,
     "products_with_croston": 0,
     "products_with_sn": 3,
-    "avg_mase_holdout": 0.9336710983508517,
+    "avg_mase_holdout": 0.9336710983508519,
     "median_mase_holdout": 0.8039575683394532,
-    "avg_mase_walkforward": 1.4804361650620415,
-    "median_mase_walkforward": 1.4804361650620415
+    "avg_mase_walkforward": 1.4804361650620428,
+    "median_mase_walkforward": 1.4804361650620428
   },
   "models_used": [
     "RandomForest",
@@ -31,8 +31,8 @@
       "sku": "4807788561688",
       "description": "BIOGESIC 500MG TAB",
       "chosen": "RF+Blend",
-      "MASE_WF": 1.0233160535369998,
-      "MASE_holdout": 0.4583666111200486,
+      "MASE_WF": 1.0233160535370003,
+      "MASE_holdout": 0.45836661112004795,
       "alpha": 0.0,
       "bias": 1.3,
       "plot": "rf_4807788561688.png"
@@ -59,8 +59,8 @@
       "sku": "4807788561688",
       "description": "BIOGESIC 500MG TAB",
       "chosen": "RF+Blend",
-      "MASE_WF": 1.0233160535369998,
-      "MASE_holdout": 0.4583666111200486,
+      "MASE_WF": 1.0233160535370003,
+      "MASE_holdout": 0.45836661112004795,
       "alpha": 0.0,
       "bias": 1.3,
       "plot": "rf_4807788561688.png"
@@ -77,8 +77,8 @@
       "sku": "4806504260614",
       "description": "APPEVIT CAP",
       "chosen": "RF+Blend",
-      "MASE_WF": 1.9375562765870828,
-      "MASE_holdout": 0.9411307917662981,
+      "MASE_WF": 1.937556276587085,
+      "MASE_holdout": 0.941130791766299,
       "alpha": 0.0,
       "bias": 1.3,
       "plot": "rf_4806504260614.png"
