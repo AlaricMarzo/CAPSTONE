@@ -40,17 +40,17 @@
   ],
   "kpi_analysis": {
     "kpi_metrics_generated": 15,
-    "avg_monthly_growth_rate": null
+    "avg_monthly_growth_rate_cagr": 0.023211083663591703,
+    "avg_monthly_growth_rate_mean": 0.03765706066458029
   },
   "market_basket_analysis": {
     "rules_generated": 101,
-    "support_threshold": 0.01,
-    "confidence_threshold": 0.1
+    "transactions": 25271,
+    "items": 3469
   },
-  "clustering_analysis": {
-    "clusters_identified": 87,
-    "noise_points": 626969,
-    "total_points_clustered": 119881
+  "clustering": {
+    "total_cluster_graphs_generated": 156,
+    "categories_analyzed": 41
   },
-  "timestamp": "2025-11-12 02:38:20.327418"
+  "timestamp": "2025-11-12 02:47:09.714982"
 }

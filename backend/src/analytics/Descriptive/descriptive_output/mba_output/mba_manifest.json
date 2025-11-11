@@ -3,10 +3,35 @@
   "items": 3469,
   "rules_count": 101,
   "categories": [
-    "nan"
+    "ANTIBIOTICS",
+    "ANTIDIABETICS",
+    "ASSISTIVE DEVICE",
+    "BEVERAGES",
+    "CARDIOVASCULAR",
+    "COLD CHAIN",
+    "COTTONS AND HYGIENE",
+    "DIAPERS",
+    "DISPOSABLES",
+    "ELECTRONIC MEDICAL DEVICES",
+    "FOOD SUPPLEMENTS",
+    "GIT",
+    "GUT AND HORMONES",
+    "NEEDLES AND TUBINGS",
+    "PAIN MANAGEMENT",
+    "PROMO PACKS",
+    "RESPIRATORY",
+    "VITAMINS",
+    "WOUND CARE"
   ],
   "tabs": [
-    "nan"
+    "F&B",
+    "GENERICS",
+    "HOUSEHOLD GOODS",
+    "MED-SURG",
+    "OTC",
+    "PERSONAL CARE",
+    "PRESCRIPTION",
+    "PROMOTIONS"
   ],
   "anchors": [
     "AK LOG TAB",

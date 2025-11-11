@@ -1,0 +1,3 @@
+item_code,description,category,tab,total_qty,total_sales,months_active,avg_price,mean_monthly_qty,cv_monthly_qty,trend_qty_slope,cluster
+26586339577,FACE SHIELD,MEMBERS EXCLUSIVE,PROMOTIONS,38.0,399.0,3.0,10.5,12.666666666666666,0.7129587991654772,10.999999999999998,0
+89878823399,ACRYLIC FACE SHIELD,MEMBERS EXCLUSIVE,PROMOTIONS,1.0,150.0,1.0,150.0,1.0,0.0,0.0,0

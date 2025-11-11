@@ -1,0 +1,38 @@
+[
+  {
+    "cluster":0,
+    "n":313,
+    "total_sales":2234894.1800000002,
+    "total_qty":116199.0,
+    "avg_price_med":29.25,
+    "months_active_med":7.0,
+    "mean_monthly_qty_med":10.6153846154,
+    "cv_monthly_qty_med":0.5623479944,
+    "trend_qty_slope_med":0.0,
+    "persona":"High-Sales, High-Volume, Premium"
+  },
+  {
+    "cluster":1,
+    "n":1,
+    "total_sales":4177.5,
+    "total_qty":2051.0,
+    "avg_price_med":2.0368113116,
+    "months_active_med":6.0,
+    "mean_monthly_qty_med":341.8333333333,
+    "cv_monthly_qty_med":2.0407348399,
+    "trend_qty_slope_med":-270.6571428571,
+    "persona":"High-Sales, High-Volume, Declining"
+  },
+  {
+    "cluster":2,
+    "n":3,
+    "total_sales":1983.8,
+    "total_qty":287.0,
+    "avg_price_med":5.4944,
+    "months_active_med":2.0,
+    "mean_monthly_qty_med":50.0,
+    "cv_monthly_qty_med":0.9677419355,
+    "trend_qty_slope_med":-100.0,
+    "persona":"Premium, Declining"
+  }
+]
