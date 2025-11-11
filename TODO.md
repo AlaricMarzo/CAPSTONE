@@ -1,11 +1,10 @@
-# TODO: Fix descriptive.py and dbscan.py for cluster graphs
+# TODO: Fix Product Categorization and Normalization
 
-## Steps:
-1. Fix axis limit bug in dbscan.py _scatter_plot: change x_iqr to y_iqr in ymax calculation.
-2. Fix n_noise inconsistency in cluster_all: use "total_qty" for global noise instead of "n".
-3. Test the fixes by running descriptive.py to ensure all graphs generate.
+## Approved Plan
+- Move category loading to the beginning of `run_full_load` function before any cleaning steps to ensure categorization uses numbers for better matching.
+- Modify `normalize_text` function to retain numbers by removing the digit-stripping line.
 
-## Status:
-- [ ] Step 1: Edit dbscan.py for axis limit fix.
-- [ ] Step 2: Edit dbscan.py for n_noise fix.
-- [ ] Step 3: Run descriptive.py and verify outputs.
+## Steps to Complete
+- [x] Step 1: Add `load_product_categories()` call at the start of `run_full_load` function, right after `begin_run`.
+- [x] Step 2: Remove the line `text = re.sub(r'\d+', '', text)` from the `normalize_text` function.
+- [ ] Step 3: Test the changes to ensure logic is not broken (e.g., run a test script to verify category matching works with numbers retained).

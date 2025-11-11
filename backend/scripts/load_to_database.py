@@ -1,6 +1,8 @@
 import os
 import uuid
 import hashlib
+import re
+import difflib
 from contextlib import contextmanager
 from typing import Optional, Dict, Iterable, Set
 
@@ -10,6 +12,199 @@ from psycopg2.extras import execute_values, Json
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# ---------- Load product categories and tabs ----------
+CATEGORY_LOOKUP = {}  # Barcode -> Category
+TAB_LOOKUP = {}       # Barcode -> Tab
+PRODUCT_NAME_LOOKUP = {}  # Normalized Product Name -> (Category, Tab)
+
+def normalize_text(text: str) -> str:
+    if not text:
+        return ""
+    # Lowercase
+    text = text.lower()
+    # Remove punctuation but retain numbers
+    text = re.sub(r'[^\w\s]', '', text)
+    # Collapse spaces
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+def load_product_categories():
+    global CATEGORY_LOOKUP, TAB_LOOKUP, PRODUCT_NAME_LOOKUP
+    if CATEGORY_LOOKUP:
+        return  # Already loaded
+    try:
+        # Use the relative path to the Excel file
+        excel_path = os.path.join(os.path.dirname(__file__), '..', '..', 'Product List as of 10232024.xlsx')
+        print(f"[DEBUG] Loading Excel file from: {excel_path}")
+        df = pd.read_excel(excel_path)
+        print(f"[DEBUG] Excel file loaded successfully. Shape: {df.shape}")
+        print(f"[DEBUG] Columns: {df.columns.tolist()}")
+        CATEGORY_LOOKUP.clear()
+        TAB_LOOKUP.clear()
+        PRODUCT_NAME_LOOKUP.clear()
+
+        # Use Barcode (Item Code) as the key for exact matching
+        category_col = 'Category' if 'Category' in df.columns else 'category'
+        tab_col = 'Tab' if 'Tab' in df.columns else 'tab'
+        barcode_col = 'Barcode' if 'Barcode' in df.columns else 'barcode'
+        product_col = 'Product Name' if 'Product Name' in df.columns else 'Product Name'
+
+        print(f"[DEBUG] Using columns - Category: {category_col}, Tab: {tab_col}, Barcode: {barcode_col}, Product: {product_col}")
+
+        # Build lookup by Barcode (Item Code) - exact match, much faster!
+        for _, row in df.iterrows():
+            if pd.notna(row.get(barcode_col)):
+                # Normalize barcode to string and strip whitespace
+                barcode = str(row[barcode_col]).strip().upper()
+                if barcode and pd.notna(row.get(category_col)):
+                    CATEGORY_LOOKUP[barcode] = row[category_col].strip()
+                if barcode and pd.notna(row.get(tab_col)):
+                    TAB_LOOKUP[barcode] = row[tab_col].strip()
+
+            # Also build lookup by normalized product name for fuzzy matching
+            if pd.notna(row.get(product_col)):
+                product_name = str(row[product_col]).strip()
+                normalized_name = normalize_text(product_name)
+                if normalized_name and pd.notna(row.get(category_col)) and pd.notna(row.get(tab_col)):
+                    PRODUCT_NAME_LOOKUP[normalized_name] = (
+                        row[category_col].strip(),
+                        row[tab_col].strip()
+                    )
+
+        print(f"[INFO] Loaded {len(CATEGORY_LOOKUP)} product categories and {len(TAB_LOOKUP)} tabs from Excel (by Barcode/Item Code).")
+        print(f"[INFO] Loaded {len(PRODUCT_NAME_LOOKUP)} product names for fuzzy matching.")
+        print(f"[DEBUG] Sample categories: {list(CATEGORY_LOOKUP.items())[:3]}")
+        print(f"[DEBUG] Sample product names: {list(PRODUCT_NAME_LOOKUP.keys())[:3]}")
+    except Exception as e:
+        print(f"[WARNING] Could not load product categories and tabs: {e}")
+        import traceback
+        traceback.print_exc()
+        CATEGORY_LOOKUP.clear()
+        TAB_LOOKUP.clear()
+        PRODUCT_NAME_LOOKUP.clear()
+
+def get_category_for_product(item_code: str, description: str = None) -> Optional[str]:
+    """
+    Get category by Item Code (Barcode) with fallback to fuzzy matching.
+    Priority: 1) Exact Item Code match, 2) Fuzzy description match
+    """
+    if not item_code and not description:
+        return None
+
+    # First try exact Item Code match (fastest)
+    if item_code:
+        item_code_norm = str(item_code).strip().upper()
+        result = CATEGORY_LOOKUP.get(item_code_norm)
+        if result:
+            return result
+
+    # If no Item Code match and we have a description, try fuzzy matching
+    if description:
+        # Import the optimized matcher
+        try:
+            from performance_fixes import get_optimized_matcher
+            # Ensure lookups are loaded before creating matcher
+            if not CATEGORY_LOOKUP:
+                load_product_categories()
+            matcher = get_optimized_matcher(CATEGORY_LOOKUP, TAB_LOOKUP, PRODUCT_NAME_LOOKUP)
+            return matcher.get_category(description)
+        except ImportError:
+            # Fallback to basic fuzzy matching if performance_fixes not available
+            return _fuzzy_match_description(description, CATEGORY_LOOKUP)
+
+    return None
+
+def get_tab_for_product(item_code: str, description: str = None) -> Optional[str]:
+    """
+    Get tab by Item Code (Barcode) with fallback to fuzzy matching.
+    Priority: 1) Exact Item Code match, 2) Fuzzy description match
+    """
+    if not item_code and not description:
+        return None
+
+    # First try exact Item Code match (fastest)
+    if item_code:
+        item_code_norm = str(item_code).strip().upper()
+        result = TAB_LOOKUP.get(item_code_norm)
+        if result:
+            return result
+
+    # If no Item Code match and we have a description, try fuzzy matching
+    if description:
+        # Import the optimized matcher
+        try:
+            from performance_fixes import get_optimized_matcher
+            # Ensure lookups are loaded before creating matcher
+            if not CATEGORY_LOOKUP:
+                load_product_categories()
+            matcher = get_optimized_matcher(CATEGORY_LOOKUP, TAB_LOOKUP, PRODUCT_NAME_LOOKUP)
+            return matcher.get_tab(item_code, description)  # Pass both parameters
+        except ImportError:
+            # Fallback to basic fuzzy matching if performance_fixes not available
+            return _fuzzy_match_description(description, TAB_LOOKUP)
+
+    return None
+
+def _fuzzy_match_description(description: str, lookup_dict: Dict[str, str]) -> Optional[str]:
+    """
+    Basic fuzzy matching fallback when performance_fixes is not available.
+    """
+    if not description:
+        return None
+
+    # Normalize the input description
+    desc_norm = normalize_text(description)
+
+    # Try exact match first
+    if desc_norm in lookup_dict:
+        return lookup_dict[desc_norm]
+
+    # Try fuzzy matching with improved normalization
+    import re
+    from typing import Optional
+
+    def improved_normalize(text: str) -> str:
+        if not text:
+            return ""
+        text = text.lower()
+        text = re.sub(r'\([^)]*\)', '', text)  # Remove parentheses
+        text = re.sub(r'\[[^\]]*\]', '', text)  # Remove brackets
+        text = re.sub(r'\{[^\}]*\}', '', text)  # Remove braces
+        text = re.sub(r'#exp[0-9-]*', '', text, flags=re.IGNORECASE)  # Remove expiration tags
+        text = re.sub(r'exp[0-9-]*', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'#[a-z0-9-]+', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'[^\w\s]', '', text)  # Remove special chars
+        text = re.sub(r'\s+', ' ', text).strip()  # Collapse spaces
+        return text
+
+    desc_norm = improved_normalize(description)
+
+    # Check for exact match with improved normalization
+    for excel_desc, value in lookup_dict.items():
+        excel_norm = improved_normalize(excel_desc)
+        if desc_norm == excel_norm:
+            return value
+
+    # Fuzzy match with 70% threshold
+    try:
+        import difflib
+        best_score = 0
+        best_match = None
+
+        for excel_desc in lookup_dict.keys():
+            excel_norm = improved_normalize(excel_desc)
+            score = difflib.SequenceMatcher(None, desc_norm, excel_norm).ratio()
+            if score > best_score:
+                best_score = score
+                best_match = excel_desc
+
+        if best_score > 0.7 and best_match:
+            return lookup_dict[best_match]
+    except ImportError:
+        pass
+
+    return None
 
 # ---------- small helpers ----------
 def _summarize_errors(errors_df: Optional[pd.DataFrame]) -> Optional[Dict]:
@@ -135,6 +330,24 @@ def ensure_indexes(conn):
         cur.execute("""CREATE UNIQUE INDEX IF NOT EXISTS ux_stg_rowhash ON staging.sales_cleaned(row_hash);""")
         cur.execute("""CREATE UNIQUE INDEX IF NOT EXISTS ux_fact_rowhash ON warehouse.fact_sales(row_hash);""")
 
+def ensure_product_category_column(conn):
+    with conn, conn.cursor() as cur:
+        # Add columns to dim_product
+        cur.execute("""
+            ALTER TABLE warehouse.dim_product
+            ADD COLUMN IF NOT EXISTS category TEXT,
+            ADD COLUMN IF NOT EXISTS tab TEXT;
+        """)
+        print("[INFO] Ensured 'category' and 'tab' columns exist in dim_product table.")
+        
+        # Add columns to staging.sales_cleaned
+        cur.execute("""
+            ALTER TABLE staging.sales_cleaned
+            ADD COLUMN IF NOT EXISTS category TEXT,
+            ADD COLUMN IF NOT EXISTS tab TEXT;
+        """)
+        print("[INFO] Ensured 'category' and 'tab' columns exist in staging.sales_cleaned table.")
+
 def seed_dim_date(conn):
     with conn, conn.cursor() as cur:
         cur.execute("""
@@ -166,7 +379,8 @@ def load_staging(conn, run_id: str, df: pd.DataFrame):
 
     # Ensure required columns exist
     expected = ["Date","Receipt","SO","Item Code","Description","Expiration Date",
-                "Qty","Unit","Discount","Sales","Cost","Profit","Payment","Cashier ID"]
+                "Qty","Unit","Discount","Sales","Cost","Profit","Payment","Cashier ID",
+                "Category","Tab"]
     for col in expected:
         if col not in df.columns:
             df[col] = pd.NA
@@ -231,6 +445,8 @@ def load_staging(conn, run_id: str, df: pd.DataFrame):
                 _none_str(r["Payment"]),
                 _none_str(r["Cashier ID"]),
                 _none_str(r["TxnType"]),
+                _none_str(r["Category"]),
+                _none_str(r["Tab"]),
                 str(r["row_hash"]),
             ))
 
@@ -238,7 +454,8 @@ def load_staging(conn, run_id: str, df: pd.DataFrame):
             execute_values(cur, """
                 INSERT INTO staging.sales_cleaned(
                     run_id, date, receipt, so, item_code, description, expiration_date,
-                    qty, unit, discount, sales, cost, profit, payment, cashier_id, txn_type, row_hash
+                    qty, unit, discount, sales, cost, profit, payment, cashier_id, txn_type,
+                    category, tab, row_hash
                 ) VALUES %s
             """, rows_new)
     # --- 3) Log DUPLICATES into cleaning_errors
@@ -277,6 +494,9 @@ def load_staging(conn, run_id: str, df: pd.DataFrame):
 
 
 def upsert_dim_product(conn, run_id:str):
+    # Load categories if not already loaded
+    load_product_categories()
+
     with conn, conn.cursor() as cur:
         cur.execute("""
         WITH by_item AS (
@@ -284,6 +504,8 @@ def upsert_dim_product(conn, run_id:str):
             item_code,
             MAX(NULLIF(description,'')) FILTER (WHERE description IS NOT NULL) AS any_desc,
             MAX(NULLIF(unit,''))        FILTER (WHERE unit        IS NOT NULL) AS any_unit,
+            MAX(NULLIF(category,''))    FILTER (WHERE category    IS NOT NULL) AS any_cat,
+            MAX(NULLIF(tab,''))         FILTER (WHERE tab         IS NOT NULL) AS any_tab,
             MIN(date) AS run_first_seen,
             MAX(date) AS run_last_seen
           FROM staging.sales_cleaned
@@ -291,15 +513,35 @@ def upsert_dim_product(conn, run_id:str):
             AND item_code IS NOT NULL
           GROUP BY item_code
         )
-        INSERT INTO warehouse.dim_product(item_code, description, unit, first_seen_date, last_seen_date)
-        SELECT item_code, any_desc, any_unit, run_first_seen, run_last_seen
+        INSERT INTO warehouse.dim_product(item_code, description, unit, category, tab, first_seen_date, last_seen_date)
+        SELECT item_code, any_desc, any_unit, any_cat, any_tab, run_first_seen, run_last_seen
         FROM by_item
         ON CONFLICT (item_code) DO UPDATE
         SET description     = COALESCE(EXCLUDED.description, warehouse.dim_product.description),
             unit            = COALESCE(EXCLUDED.unit,        warehouse.dim_product.unit),
+            category        = COALESCE(EXCLUDED.category,    warehouse.dim_product.category),
+            tab             = COALESCE(EXCLUDED.tab,         warehouse.dim_product.tab),
             first_seen_date = LEAST(warehouse.dim_product.first_seen_date, EXCLUDED.first_seen_date),
             last_seen_date  = GREATEST(warehouse.dim_product.last_seen_date, EXCLUDED.last_seen_date);
         """, (run_id,))
+
+        # Now update categories and tabs for products that have item_code but no category or tab
+        cur.execute("""
+            SELECT item_code, description
+            FROM warehouse.dim_product
+            WHERE item_code IS NOT NULL AND ((category IS NULL OR category = '') OR (tab IS NULL OR tab = ''))
+        """)
+        rows = cur.fetchall()
+        for item_code, description in rows:
+            cat = get_category_for_product(item_code, description)
+            tab = get_tab_for_product(item_code, description)
+            if cat or tab:
+                cur.execute("""
+                    UPDATE warehouse.dim_product
+                    SET category = COALESCE(%s, category),
+                        tab = COALESCE(%s, tab)
+                    WHERE item_code = %s
+                """, (cat, tab, item_code))
 
 def load_fact_sales(conn, run_id:str) -> int:
     with conn, conn.cursor() as cur:
@@ -403,7 +645,11 @@ def run_full_load(file_name: str, raw_df: pd.DataFrame, ensure_schema_once: bool
     # Proceed with the existing functionality
     with db() as conn:
         ensure_indexes(conn)  # Ensure database indexes are in place
+        ensure_product_category_column(conn)  # Ensure category and tab columns exist
         seed_dim_date(conn)  # Seed the date dimension if required
+
+        # Load product categories early for better matching
+        load_product_categories()
 
         run_id = begin_run(conn, file_name=file_name)  # Start the ETL run
 
