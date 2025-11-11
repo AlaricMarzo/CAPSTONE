@@ -263,7 +263,7 @@ export default function PrescriptiveAnalytics() {
             <CardContent>
               <div className="h-80">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data.resource_planning}>
+                  <BarChart data={data.resource_planning.slice(0, 20)}>
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="medicine" angle={-45} textAnchor="end" height={100} />
                     <YAxis yAxisId="left" />
