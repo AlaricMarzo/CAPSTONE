@@ -297,9 +297,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const activeSkus = descKpi.active_skus
   const growthRate = descKpi.growth_rate
 
-  const filteredResourceData = resource_planning?.filter((item: any) =>
-    item.medicine.toLowerCase().includes(searchTerm.toLowerCase())
-  ) || []
+
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
