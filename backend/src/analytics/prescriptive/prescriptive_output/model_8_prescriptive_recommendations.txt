@@ -1,6 +1,6 @@
 ================================================================================
 PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
-Generated: 2025-11-12 00:53:52
+Generated: 2025-11-12 02:37:47
 ================================================================================
 
 [INVENTORY] INVENTORY MANAGEMENT RECOMMENDATIONS:
@@ -43,9 +43,9 @@ Generated: 2025-11-12 00:53:52
   OK PROMOTE HIGH-MARGIN PRODUCTS:
     - ALCIFLORA (BACILLUS CLAUSII) 5ML: 100.0% margin
     - ANNIV DISC SDS2YOPET MENDOZA: 100.0% margin
-    - ARCOXIA 90MG TAB: 100.0% margin
     - ATORMED -20 (ATORVASTATIN) 20MG TAB: 100.0% margin
     - AUGMENTIN (CO-AMOXICLAV) 1G: 100.0% margin
+    - AZIMED (AZITHROMYCIN) 500MG: 100.0% margin
 
 [OPERATIONAL] OPERATIONAL EFFICIENCY:
 

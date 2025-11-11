@@ -1,11 +1,11 @@
 {
-  "execution_timestamp": "2025-11-12T00:53:52.191627",
+  "execution_timestamp": "2025-11-12T02:37:47.728185",
   "analysis_period": {
     "start_date": "2022-05-09 00:00:00",
     "end_date": "2025-03-31 00:00:00",
     "total_days": 1057,
     "total_transactions": 117596,
-    "total_products": 3466
+    "total_products": 3465
   },
   "model_1_reorder_point": {
     "total_products_analyzed": 20,
@@ -324,11 +324,11 @@
   },
   "model_6_resource_planning": {
     "planning_horizon_days": 90,
-    "total_products_planned": 3466,
+    "total_products_planned": 3465,
     "total_storage_needed_cubic_feet": 71597.46073793755,
-    "total_capital_required_php": 1054039.070860927,
-    "average_daily_demand": 0.1912693165831505,
-    "total_projected_demand": 59664.55061494798,
+    "total_capital_required_php": 1054039.0708609272,
+    "average_daily_demand": 0.19132451696311678,
+    "total_projected_demand": 59664.55061494797,
     "top_5_resource_requirements": [
       {
         "medicine": "BIOGESIC 500MG TAB",
@@ -411,13 +411,13 @@
     "average_anomaly_score": -0.5696930507380633
   },
   "financial_summary": {
-    "total_sales": 20631838.85,
+    "total_sales": 20631838.849999998,
     "total_cost": 8268542.26,
-    "total_profit": 3971686.85,
-    "overall_profit_margin_pct": 19.250280495477988,
+    "total_profit": 3971686.8500000006,
+    "overall_profit_margin_pct": 19.25028049547799,
     "total_quantity_sold": 700727,
-    "average_transaction_value": 175.44677412497026,
-    "average_profit_per_transaction": 33.77399613932447
+    "average_transaction_value": 175.4467741249702,
+    "average_profit_per_transaction": 33.773996139324474
   },
   "top_products_summary": {
     "by_revenue": [
@@ -503,12 +503,6 @@
         "total_profit": 0.04
       },
       {
-        "medicine": "ARCOXIA 90MG TAB",
-        "profit_margin": 100.0,
-        "total_qty": 26.0,
-        "total_profit": 1833.0
-      },
-      {
         "medicine": "ATORMED -20 (ATORVASTATIN) 20MG TAB",
         "profit_margin": 100.0,
         "total_qty": 587.0,
@@ -519,6 +513,12 @@
         "profit_margin": 100.0,
         "total_qty": 23.0,
         "total_profit": 1668.5
+      },
+      {
+        "medicine": "AZIMED (AZITHROMYCIN) 500MG",
+        "profit_margin": 100.0,
+        "total_qty": 10.0,
+        "total_profit": 360.0
       }
     ]
   },

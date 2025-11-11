@@ -1276,7 +1276,7 @@
   },
   {
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "description":"SUPER CEE PLUS 500MG CAP",
     "category":"",
     "tab":"",
     "total_qty":1961.0,
@@ -2416,7 +2416,7 @@
   },
   {
     "item_code":"300055556201",
-    "description":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
+    "description":"CALTRATE PLUS TAB",
     "category":"",
     "tab":"",
     "total_qty":237.0,
@@ -3511,7 +3511,7 @@
   },
   {
     "item_code":"41720005175",
-    "description":"PLASTIC URINAL",
+    "description":"URINAL",
     "category":"",
     "tab":"",
     "total_qty":81.0,
@@ -3661,7 +3661,7 @@
   },
   {
     "item_code":"4300010005",
-    "description":"WHEELCHAIR BLACK ECONO",
+    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":"",
     "tab":"",
     "total_qty":32.0,
@@ -10096,7 +10096,7 @@
   },
   {
     "item_code":"4800153302398",
-    "description":"STRESSTABS WIRON TAB",
+    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":"",
     "tab":"",
     "total_qty":1743.0,
@@ -12166,7 +12166,7 @@
   },
   {
     "item_code":"4800304050079",
-    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
+    "description":"NORVASC TAB 10MG",
     "category":"",
     "tab":"",
     "total_qty":321.0,
@@ -12196,7 +12196,7 @@
   },
   {
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
+    "description":"ISORDIL ORAL TAB 10MG",
     "category":"",
     "tab":"",
     "total_qty":33.0,
@@ -13426,7 +13426,7 @@
   },
   {
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":"",
     "tab":"",
     "total_qty":152.0,
@@ -13471,7 +13471,7 @@
   },
   {
     "item_code":"4800318210162",
-    "description":"AMOXIL (AMOXICILLIN) 20ML DROP",
+    "description":"AMOXIL DROP 20ML",
     "category":"",
     "tab":"",
     "total_qty":10.0,
@@ -13546,7 +13546,7 @@
   },
   {
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "description":"SINECOD FORTE TAB 50MG",
     "category":"",
     "tab":"",
     "total_qty":1119.0,
@@ -14926,7 +14926,7 @@
   },
   {
     "item_code":"4800348113020",
-    "description":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
+    "description":"NATRAPHARM ATORVAST TAB 20MG",
     "category":"",
     "tab":"",
     "total_qty":28.0,
@@ -17491,7 +17491,7 @@
   },
   {
     "item_code":"4800489114320",
-    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
+    "description":"ARCOXIA 60MG TAB",
     "category":"",
     "tab":"",
     "total_qty":153.0,
@@ -17506,7 +17506,7 @@
   },
   {
     "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "description":"ARCOXIA 90MG TAB",
     "category":"",
     "tab":"",
     "total_qty":202.0,
@@ -26881,7 +26881,7 @@
   },
   {
     "item_code":"4806515270190",
-    "description":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
+    "description":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
     "category":"",
     "tab":"",
     "total_qty":6.0,
@@ -29026,7 +29026,7 @@
   },
   {
     "item_code":"4806520352621",
-    "description":"CLODIN (CLONIDINE) 75MCG TAB",
+    "description":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":"",
     "tab":"",
     "total_qty":416.0,
@@ -31336,7 +31336,7 @@
   },
   {
     "item_code":"4806524147896",
-    "description":"FOLIZ (FOLIC ACID) 5MG CAP",
+    "description":"FOLIZ (FOLIC ACID) 5MG TAB",
     "category":"",
     "tab":"",
     "total_qty":339.0,
@@ -35311,7 +35311,7 @@
   },
   {
     "item_code":"4807770272653",
-    "description":"LUCKY ME MINI JJAMPPONG",
+    "description":"LUCKY ME MINI JJAMPPONG 40G",
     "category":"",
     "tab":"",
     "total_qty":12.0,
@@ -36301,7 +36301,7 @@
   },
   {
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":"",
     "tab":"",
     "total_qty":660.0,
@@ -37771,7 +37771,7 @@
   },
   {
     "item_code":"4807788549150",
-    "description":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP",
+    "description":"ENERVON ACTIV CAP",
     "category":"",
     "tab":"",
     "total_qty":19.0,
@@ -38251,7 +38251,7 @@
   },
   {
     "item_code":"4807788558657",
-    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "description":"URINORM 40MG",
     "category":"",
     "tab":"",
     "total_qty":642.0,
@@ -39076,7 +39076,7 @@
   },
   {
     "item_code":"4807788682963",
-    "description":"VIGOR ACE (MULTIVITAMINS + ZINC + SELENIUM + LECITHIN) CAP",
+    "description":"VIGOR ACE CAP",
     "category":"",
     "tab":"",
     "total_qty":20.0,
@@ -39856,7 +39856,7 @@
   },
   {
     "item_code":"4809010508812",
-    "description":"MILCU DEO POWDER 80G",
+    "description":"MILCU UNDERARM & FOOT 80G",
     "category":"",
     "tab":"",
     "total_qty":30.0,
@@ -45121,7 +45121,7 @@
   },
   {
     "item_code":"8002660027818",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG FCT",
+    "description":"CHOLIB 145MG\/20MG",
     "category":"",
     "tab":"",
     "total_qty":174.0,
@@ -45166,7 +45166,7 @@
   },
   {
     "item_code":"8002660031594",
-    "description":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "description":"ISOPTIN TAB 40MG",
     "category":"",
     "tab":"",
     "total_qty":253.0,
@@ -47776,7 +47776,7 @@
   },
   {
     "item_code":"8902319019235",
-    "description":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
+    "description":"INFEN-25 25MG TAB",
     "category":"",
     "tab":"",
     "total_qty":124.0,
@@ -50446,7 +50446,7 @@
   },
   {
     "item_code":"8964001206293",
-    "description":"MONTIGET TAB 10MG",
+    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":"",
     "tab":"",
     "total_qty":419.0,
@@ -50461,7 +50461,7 @@
   },
   {
     "item_code":"8964001206309",
-    "description":"MONTIGET 4MG TAB",
+    "description":"MONTIGET TAB 4MG",
     "category":"",
     "tab":"",
     "total_qty":442.0,
@@ -50506,7 +50506,7 @@
   },
   {
     "item_code":"8964001206330",
-    "description":"NEBIL 5MG TAB",
+    "description":"NEBILET TAB 5MG",
     "category":"",
     "tab":"",
     "total_qty":577.0,
@@ -50671,7 +50671,7 @@
   },
   {
     "item_code":"8964001206460",
-    "description":"SIMVOGET (SIMVASTATIN) 20MG TAB",
+    "description":"SIMVOGET TAB 20MG 10&#039;",
     "category":"",
     "tab":"",
     "total_qty":175.0,

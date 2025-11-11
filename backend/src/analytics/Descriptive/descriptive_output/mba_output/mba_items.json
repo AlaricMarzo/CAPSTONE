@@ -119,7 +119,7 @@
     "support_pct":1.07
   },
   {
-    "item":"NEBIL 5MG TAB",
+    "item":"NEBILET TAB 5MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":255,
@@ -336,7 +336,7 @@
     "support_pct":0.7
   },
   {
-    "item":"STRESSTABS WIRON TAB",
+    "item":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":175,
@@ -1288,7 +1288,7 @@
     "support_pct":0.33
   },
   {
-    "item":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "item":"SINECOD FORTE TAB 50MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":84,
@@ -1421,7 +1421,7 @@
     "support_pct":0.32
   },
   {
-    "item":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "item":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":"nan",
     "tab":"nan",
     "item_tx":80,
@@ -2436,7 +2436,7 @@
     "support_pct":0.21
   },
   {
-    "item":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "item":"URINORM 40MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":53,
@@ -2737,7 +2737,7 @@
     "support_pct":0.19
   },
   {
-    "item":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "item":"ISOPTIN TAB 40MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":48,
@@ -2940,13 +2940,6 @@
     "support_pct":0.18
   },
   {
-    "item":"PLASTIC URINAL",
-    "category":"nan",
-    "tab":"nan",
-    "item_tx":46,
-    "support_pct":0.18
-  },
-  {
     "item":"REFLUXID DUO 40MG\/30MG SR CAP",
     "category":"nan",
     "tab":"nan",
@@ -2955,6 +2948,13 @@
   },
   {
     "item":"SANICARE CLEANSING WIPES - LAVENDER 15 SHEETS",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":46,
+    "support_pct":0.18
+  },
+  {
+    "item":"URINAL",
     "category":"nan",
     "tab":"nan",
     "item_tx":46,
@@ -3402,7 +3402,7 @@
     "support_pct":0.16
   },
   {
-    "item":"MONTIGET TAB 10MG",
+    "item":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":40,
@@ -3711,6 +3711,13 @@
   },
   {
     "item":"APOLLO LIPBALM PINK 7G",
+    "category":"nan",
+    "tab":"nan",
+    "item_tx":36,
+    "support_pct":0.14
+  },
+  {
+    "item":"ARCOXIA 90MG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":36,
@@ -4214,13 +4221,6 @@
     "support_pct":0.13
   },
   {
-    "item":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":"nan",
-    "tab":"nan",
-    "item_tx":32,
-    "support_pct":0.13
-  },
-  {
     "item":"BIODERM SOAP PRISTINE GRAY 135G",
     "category":"nan",
     "tab":"nan",
@@ -4235,7 +4235,7 @@
     "support_pct":0.13
   },
   {
-    "item":"CLODIN (CLONIDINE) 75MCG TAB",
+    "item":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":32,
@@ -4669,7 +4669,7 @@
     "support_pct":0.11
   },
   {
-    "item":"FOLIZ (FOLIC ACID) 5MG CAP",
+    "item":"FOLIZ (FOLIC ACID) 5MG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":29,
@@ -5061,7 +5061,7 @@
     "support_pct":0.11
   },
   {
-    "item":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "item":"SUPER CEE PLUS 500MG CAP",
     "category":"nan",
     "tab":"nan",
     "item_tx":27,
@@ -5208,7 +5208,7 @@
     "support_pct":0.1
   },
   {
-    "item":"MONTIGET 4MG TAB",
+    "item":"MONTIGET TAB 4MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":26,
@@ -6517,7 +6517,7 @@
     "support_pct":0.08
   },
   {
-    "item":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
+    "item":"CALTRATE PLUS TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":19,
@@ -7287,7 +7287,7 @@
     "support_pct":0.07
   },
   {
-    "item":"MILCU DEO POWDER 80G",
+    "item":"MILCU UNDERARM & FOOT 80G",
     "category":"nan",
     "tab":"nan",
     "item_tx":17,
@@ -7413,7 +7413,7 @@
     "support_pct":0.06
   },
   {
-    "item":"ARCOXIA (ETORICOXIB) 60MG TAB",
+    "item":"ARCOXIA 60MG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":16,
@@ -8337,7 +8337,7 @@
     "support_pct":0.06
   },
   {
-    "item":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
+    "item":"NORVASC TAB 10MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":14,
@@ -8673,7 +8673,7 @@
     "support_pct":0.05
   },
   {
-    "item":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
+    "item":"INFEN-25 25MG TAB",
     "category":"nan",
     "tab":"nan",
     "item_tx":13,
@@ -9499,14 +9499,14 @@
     "support_pct":0.04
   },
   {
-    "item":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG FCT",
+    "item":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
     "category":"nan",
     "tab":"nan",
     "item_tx":11,
     "support_pct":0.04
   },
   {
-    "item":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "item":"CHOLIB 145MG\/20MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":11,
@@ -9919,7 +9919,7 @@
     "support_pct":0.04
   },
   {
-    "item":"WHEELCHAIR BLACK ECONO",
+    "item":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":"nan",
     "tab":"nan",
     "item_tx":11,
@@ -11585,7 +11585,7 @@
     "support_pct":0.03
   },
   {
-    "item":"SIMVOGET (SIMVASTATIN) 20MG TAB",
+    "item":"SIMVOGET TAB 20MG 10&#039;",
     "category":"nan",
     "tab":"nan",
     "item_tx":8,
@@ -11711,7 +11711,7 @@
     "support_pct":0.03
   },
   {
-    "item":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "item":"AMOXIL CAP 500MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":7,
@@ -12068,7 +12068,7 @@
     "support_pct":0.03
   },
   {
-    "item":"LUCKY ME MINI JJAMPPONG",
+    "item":"LUCKY ME MINI JJAMPPONG 40G",
     "category":"nan",
     "tab":"nan",
     "item_tx":7,
@@ -13468,7 +13468,7 @@
     "support_pct":0.02
   },
   {
-    "item":"AMOXIL (AMOXICILLIN) 20ML DROP",
+    "item":"AMOXIL DROP 20ML",
     "category":"nan",
     "tab":"nan",
     "item_tx":5,
@@ -14665,13 +14665,6 @@
     "support_pct":0.02
   },
   {
-    "item":"ARCOXIA 90MG TAB",
-    "category":"nan",
-    "tab":"nan",
-    "item_tx":4,
-    "support_pct":0.02
-  },
-  {
     "item":"ATENURIX FCT 80MG",
     "category":"nan",
     "tab":"nan",
@@ -15449,7 +15442,7 @@
     "support_pct":0.02
   },
   {
-    "item":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
+    "item":"NATRAPHARM ATORVAST TAB 20MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":4,
@@ -16401,7 +16394,7 @@
     "support_pct":0.01
   },
   {
-    "item":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
+    "item":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
     "category":"nan",
     "tab":"nan",
     "item_tx":3,
@@ -16506,7 +16499,7 @@
     "support_pct":0.01
   },
   {
-    "item":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP",
+    "item":"ENERVON ACTIV CAP",
     "category":"nan",
     "tab":"nan",
     "item_tx":3,
@@ -19663,7 +19656,7 @@
     "support_pct":0.01
   },
   {
-    "item":"VIGOR ACE (MULTIVITAMINS + ZINC + SELENIUM + LECITHIN) CAP",
+    "item":"VIGOR ACE CAP",
     "category":"nan",
     "tab":"nan",
     "item_tx":2,
@@ -21007,7 +21000,7 @@
     "support_pct":0.0
   },
   {
-    "item":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
+    "item":"ISORDIL ORAL TAB 10MG",
     "category":"nan",
     "tab":"nan",
     "item_tx":1,

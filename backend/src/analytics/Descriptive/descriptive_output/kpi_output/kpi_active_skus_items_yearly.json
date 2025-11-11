@@ -414,15 +414,15 @@
   },
   {
     "year":2022,
-    "item_code":"4800318210162",
-    "description":"AMOXIL (AMOXICILLIN) 20ML DROP",
+    "item_code":"4800318120027",
+    "description":"AMOXIL CAP 500MG",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "item_code":"4800318210162",
+    "description":"AMOXIL DROP 20ML",
     "category":null,
     "tab":null
   },
@@ -603,22 +603,22 @@
   },
   {
     "year":2022,
+    "item_code":"4800489114368",
+    "description":"ARCOXIA 120MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2022,
     "item_code":"4800489114320",
-    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
+    "description":"ARCOXIA 60MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
     "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2022,
-    "item_code":"4800489114368",
-    "description":"ARCOXIA 120MG TAB",
+    "description":"ARCOXIA 90MG TAB",
     "category":null,
     "tab":null
   },
@@ -1814,15 +1814,15 @@
   },
   {
     "year":2022,
-    "item_code":"300055556201",
-    "description":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
+    "item_code":"4800153556173",
+    "description":"CALTRATE PLUS 30S TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"4800153556173",
-    "description":"CALTRATE PLUS 30S TAB",
+    "item_code":"300055556201",
+    "description":"CALTRATE PLUS TAB",
     "category":null,
     "tab":null
   },
@@ -2472,15 +2472,15 @@
   },
   {
     "year":2022,
-    "item_code":"8002660027818",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG FCT",
+    "item_code":"8002660027825",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"8002660027825",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "item_code":"8002660027818",
+    "description":"CHOLIB 145MG\/20MG",
     "category":null,
     "tab":null
   },
@@ -2599,7 +2599,7 @@
   {
     "year":2022,
     "item_code":"4806520352621",
-    "description":"CLODIN (CLONIDINE) 75MCG TAB",
+    "description":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":null,
     "tab":null
   },
@@ -3082,7 +3082,7 @@
   {
     "year":2022,
     "item_code":"4806515270190",
-    "description":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
+    "description":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
     "category":null,
     "tab":null
   },
@@ -3669,15 +3669,15 @@
   },
   {
     "year":2022,
-    "item_code":"4807788549150",
-    "description":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP",
+    "item_code":"4807788712578",
+    "description":"ENERVON ACTIV 9+1",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"4807788712578",
-    "description":"ENERVON ACTIV 9+1",
+    "item_code":"4807788549150",
+    "description":"ENERVON ACTIV CAP",
     "category":null,
     "tab":null
   },
@@ -4370,7 +4370,7 @@
   {
     "year":2022,
     "item_code":"4806524147896",
-    "description":"FOLIZ (FOLIC ACID) 5MG CAP",
+    "description":"FOLIZ (FOLIC ACID) 5MG TAB",
     "category":null,
     "tab":null
   },
@@ -5322,7 +5322,7 @@
   {
     "year":2022,
     "item_code":"8902319019235",
-    "description":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
+    "description":"INFEN-25 25MG TAB",
     "category":null,
     "tab":null
   },
@@ -5462,14 +5462,14 @@
   {
     "year":2022,
     "item_code":"8002660031594",
-    "description":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "description":"ISOPTIN TAB 40MG",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
+    "description":"ISORDIL ORAL TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -6638,7 +6638,7 @@
   {
     "year":2022,
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":null,
     "tab":null
   },
@@ -6848,7 +6848,7 @@
   {
     "year":2022,
     "item_code":"4809010508812",
-    "description":"MILCU DEO POWDER 80G",
+    "description":"MILCU UNDERARM & FOOT 80G",
     "category":null,
     "tab":null
   },
@@ -6911,14 +6911,7 @@
   {
     "year":2022,
     "item_code":"8964001206309",
-    "description":"MONTIGET 4MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2022,
-    "item_code":"8964001206293",
-    "description":"MONTIGET TAB 10MG",
+    "description":"MONTIGET TAB 4MG",
     "category":null,
     "tab":null
   },
@@ -6926,6 +6919,13 @@
     "year":2022,
     "item_code":"8964001206316",
     "description":"MONTIGET TAB 5MG",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2022,
+    "item_code":"8964001206293",
+    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":null,
     "tab":null
   },
@@ -7275,7 +7275,7 @@
   {
     "year":2022,
     "item_code":"4800348113020",
-    "description":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
+    "description":"NATRAPHARM ATORVAST TAB 20MG",
     "category":null,
     "tab":null
   },
@@ -7330,15 +7330,15 @@
   },
   {
     "year":2022,
-    "item_code":"8964001206330",
-    "description":"NEBIL 5MG TAB",
+    "item_code":"4806518661230",
+    "description":"NEBILET 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"4806518661230",
-    "description":"NEBILET 5MG TAB",
+    "item_code":"8964001206330",
+    "description":"NEBILET TAB 5MG",
     "category":null,
     "tab":null
   },
@@ -7652,15 +7652,15 @@
   },
   {
     "year":2022,
-    "item_code":"4800304050079",
-    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
+    "item_code":"4800304050031",
+    "description":"NORVASC 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
-    "item_code":"4800304050031",
-    "description":"NORVASC 5MG TAB",
+    "item_code":"4800304050079",
+    "description":"NORVASC TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -8473,13 +8473,6 @@
     "year":2022,
     "item_code":"4800136880035",
     "description":"PLASIL TAB 10MG",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2022,
-    "item_code":"41720005175",
-    "description":"PLASTIC URINAL",
     "category":null,
     "tab":null
   },
@@ -10075,14 +10068,14 @@
   {
     "year":2022,
     "item_code":"8964001206460",
-    "description":"SIMVOGET (SIMVASTATIN) 20MG TAB",
+    "description":"SIMVOGET TAB 20MG 10&#039;",
     "category":null,
     "tab":null
   },
   {
     "year":2022,
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "description":"SINECOD FORTE TAB 50MG",
     "category":null,
     "tab":null
   },
@@ -10397,7 +10390,7 @@
   {
     "year":2022,
     "item_code":"4800153302398",
-    "description":"STRESSTABS WIRON TAB",
+    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":null,
     "tab":null
   },
@@ -10523,7 +10516,7 @@
   {
     "year":2022,
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "description":"SUPER CEE PLUS 500MG CAP",
     "category":null,
     "tab":null
   },
@@ -11201,6 +11194,13 @@
   },
   {
     "year":2022,
+    "item_code":"41720005175",
+    "description":"URINAL",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2022,
     "item_code":"25802609256",
     "description":"URINE BAG 1L W\/O HOOK",
     "category":null,
@@ -11216,7 +11216,7 @@
   {
     "year":2022,
     "item_code":"4807788558657",
-    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "description":"URINORM 40MG",
     "category":null,
     "tab":null
   },
@@ -11440,7 +11440,7 @@
   {
     "year":2022,
     "item_code":"4807788682963",
-    "description":"VIGOR ACE (MULTIVITAMINS + ZINC + SELENIUM + LECITHIN) CAP",
+    "description":"VIGOR ACE CAP",
     "category":null,
     "tab":null
   },
@@ -11587,7 +11587,7 @@
   {
     "year":2022,
     "item_code":"4300010005",
-    "description":"WHEELCHAIR BLACK ECONO",
+    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":null,
     "tab":null
   },
@@ -12454,15 +12454,15 @@
   },
   {
     "year":2023,
-    "item_code":"4800318210162",
-    "description":"AMOXIL (AMOXICILLIN) 20ML DROP",
+    "item_code":"4800318120027",
+    "description":"AMOXIL CAP 500MG",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "item_code":"4800318210162",
+    "description":"AMOXIL DROP 20ML",
     "category":null,
     "tab":null
   },
@@ -12748,22 +12748,22 @@
   },
   {
     "year":2023,
+    "item_code":"4800489114368",
+    "description":"ARCOXIA 120MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2023,
     "item_code":"4800489114320",
-    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
+    "description":"ARCOXIA 60MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
     "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2023,
-    "item_code":"4800489114368",
-    "description":"ARCOXIA 120MG TAB",
+    "description":"ARCOXIA 90MG TAB",
     "category":null,
     "tab":null
   },
@@ -14323,15 +14323,15 @@
   },
   {
     "year":2023,
-    "item_code":"300055556201",
-    "description":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
+    "item_code":"4800153556173",
+    "description":"CALTRATE PLUS 30S TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"4800153556173",
-    "description":"CALTRATE PLUS 30S TAB",
+    "item_code":"300055556201",
+    "description":"CALTRATE PLUS TAB",
     "category":null,
     "tab":null
   },
@@ -15254,15 +15254,15 @@
   },
   {
     "year":2023,
-    "item_code":"8002660027818",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG FCT",
+    "item_code":"8002660027825",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"8002660027825",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "item_code":"8002660027818",
+    "description":"CHOLIB 145MG\/20MG",
     "category":null,
     "tab":null
   },
@@ -15430,7 +15430,7 @@
   {
     "year":2023,
     "item_code":"4806520352621",
-    "description":"CLODIN (CLONIDINE) 75MCG TAB",
+    "description":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":null,
     "tab":null
   },
@@ -17523,7 +17523,7 @@
   {
     "year":2023,
     "item_code":"4806524147896",
-    "description":"FOLIZ (FOLIC ACID) 5MG CAP",
+    "description":"FOLIZ (FOLIC ACID) 5MG TAB",
     "category":null,
     "tab":null
   },
@@ -18909,14 +18909,14 @@
   {
     "year":2023,
     "item_code":"8002660031594",
-    "description":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "description":"ISOPTIN TAB 40MG",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
+    "description":"ISORDIL ORAL TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -20162,7 +20162,7 @@
   {
     "year":2023,
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":null,
     "tab":null
   },
@@ -20400,7 +20400,7 @@
   {
     "year":2023,
     "item_code":"4809010508812",
-    "description":"MILCU DEO POWDER 80G",
+    "description":"MILCU UNDERARM & FOOT 80G",
     "category":null,
     "tab":null
   },
@@ -20491,14 +20491,7 @@
   {
     "year":2023,
     "item_code":"8964001206309",
-    "description":"MONTIGET 4MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2023,
-    "item_code":"8964001206293",
-    "description":"MONTIGET TAB 10MG",
+    "description":"MONTIGET TAB 4MG",
     "category":null,
     "tab":null
   },
@@ -20506,6 +20499,13 @@
     "year":2023,
     "item_code":"8964001206316",
     "description":"MONTIGET TAB 5MG",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2023,
+    "item_code":"8964001206293",
+    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":null,
     "tab":null
   },
@@ -20918,7 +20918,7 @@
   {
     "year":2023,
     "item_code":"4800348113020",
-    "description":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
+    "description":"NATRAPHARM ATORVAST TAB 20MG",
     "category":null,
     "tab":null
   },
@@ -21008,15 +21008,15 @@
   },
   {
     "year":2023,
-    "item_code":"8964001206330",
-    "description":"NEBIL 5MG TAB",
+    "item_code":"4806518661230",
+    "description":"NEBILET 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"4806518661230",
-    "description":"NEBILET 5MG TAB",
+    "item_code":"8964001206330",
+    "description":"NEBILET TAB 5MG",
     "category":null,
     "tab":null
   },
@@ -21393,15 +21393,15 @@
   },
   {
     "year":2023,
-    "item_code":"4800304050079",
-    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
+    "item_code":"4800304050031",
+    "description":"NORVASC 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"4800304050031",
-    "description":"NORVASC 5MG TAB",
+    "item_code":"4800304050079",
+    "description":"NORVASC TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -22452,13 +22452,6 @@
     "year":2023,
     "item_code":"4800136880035",
     "description":"PLASIL TAB 10MG",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2023,
-    "item_code":"41720005175",
-    "description":"PLASTIC URINAL",
     "category":null,
     "tab":null
   },
@@ -24558,14 +24551,14 @@
   {
     "year":2023,
     "item_code":"8964001206460",
-    "description":"SIMVOGET (SIMVASTATIN) 20MG TAB",
+    "description":"SIMVOGET TAB 20MG 10&#039;",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "description":"SINECOD FORTE TAB 50MG",
     "category":null,
     "tab":null
   },
@@ -25027,7 +25020,7 @@
   {
     "year":2023,
     "item_code":"4800153302398",
-    "description":"STRESSTABS WIRON TAB",
+    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":null,
     "tab":null
   },
@@ -25999,6 +25992,13 @@
   },
   {
     "year":2023,
+    "item_code":"41720005175",
+    "description":"URINAL",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2023,
     "item_code":"25802609256",
     "description":"URINE BAG 1L W\/O HOOK",
     "category":null,
@@ -26021,7 +26021,7 @@
   {
     "year":2023,
     "item_code":"4807788558657",
-    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "description":"URINORM 40MG",
     "category":null,
     "tab":null
   },
@@ -26315,7 +26315,7 @@
   {
     "year":2023,
     "item_code":"4807788682963",
-    "description":"VIGOR ACE (MULTIVITAMINS + ZINC + SELENIUM + LECITHIN) CAP",
+    "description":"VIGOR ACE CAP",
     "category":null,
     "tab":null
   },
@@ -26482,15 +26482,15 @@
   },
   {
     "year":2023,
-    "item_code":"4300010005",
-    "description":"WHEELCHAIR BLACK ECONO",
+    "item_code":"53216434",
+    "description":"WHEELCHAIR STANDARD ECONO-CHROMED",
     "category":null,
     "tab":null
   },
   {
     "year":2023,
-    "item_code":"53216434",
-    "description":"WHEELCHAIR STANDARD ECONO-CHROMED",
+    "item_code":"4300010005",
+    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":null,
     "tab":null
   },
@@ -27512,7 +27512,7 @@
   {
     "year":2024,
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":null,
     "tab":null
   },
@@ -27791,20 +27791,6 @@
   },
   {
     "year":2024,
-    "item_code":"4800489114320",
-    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2024,
-    "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2024,
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":null,
@@ -27814,6 +27800,20 @@
     "year":2024,
     "item_code":"840164518412",
     "description":"ARCOXIA 120MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2024,
+    "item_code":"4800489114320",
+    "description":"ARCOXIA 60MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2024,
+    "item_code":"4800489114344",
+    "description":"ARCOXIA 90MG TAB",
     "category":null,
     "tab":null
   },
@@ -31012,7 +31012,7 @@
   {
     "year":2024,
     "item_code":"4806520352621",
-    "description":"CLODIN (CLONIDINE) 75MCG TAB",
+    "description":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":null,
     "tab":null
   },
@@ -35366,14 +35366,14 @@
   {
     "year":2024,
     "item_code":"8002660031594",
-    "description":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "description":"ISOPTIN TAB 40MG",
     "category":null,
     "tab":null
   },
   {
     "year":2024,
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
+    "description":"ISORDIL ORAL TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -36570,7 +36570,7 @@
   {
     "year":2024,
     "item_code":"4807770272653",
-    "description":"LUCKY ME MINI JJAMPPONG",
+    "description":"LUCKY ME MINI JJAMPPONG 40G",
     "category":null,
     "tab":null
   },
@@ -36920,7 +36920,7 @@
   {
     "year":2024,
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":null,
     "tab":null
   },
@@ -37151,7 +37151,7 @@
   {
     "year":2024,
     "item_code":"4809010508812",
-    "description":"MILCU DEO POWDER 80G",
+    "description":"MILCU UNDERARM & FOOT 80G",
     "category":null,
     "tab":null
   },
@@ -37375,14 +37375,7 @@
   {
     "year":2024,
     "item_code":"8964001206309",
-    "description":"MONTIGET 4MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2024,
-    "item_code":"8964001206293",
-    "description":"MONTIGET TAB 10MG",
+    "description":"MONTIGET TAB 4MG",
     "category":null,
     "tab":null
   },
@@ -37390,6 +37383,13 @@
     "year":2024,
     "item_code":"8964001206316",
     "description":"MONTIGET TAB 5MG",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2024,
+    "item_code":"8964001206293",
+    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":null,
     "tab":null
   },
@@ -37941,15 +37941,15 @@
   },
   {
     "year":2024,
-    "item_code":"8964001206330",
-    "description":"NEBIL 5MG TAB",
+    "item_code":"4806518661230",
+    "description":"NEBILET 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2024,
-    "item_code":"4806518661230",
-    "description":"NEBILET 5MG TAB",
+    "item_code":"8964001206330",
+    "description":"NEBILET TAB 5MG",
     "category":null,
     "tab":null
   },
@@ -38403,13 +38403,6 @@
   },
   {
     "year":2024,
-    "item_code":"4800304050079",
-    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2024,
     "item_code":"4800304050031",
     "description":"NORVASC 5MG TAB",
     "category":null,
@@ -38419,6 +38412,13 @@
     "year":2024,
     "item_code":"1210001136748",
     "description":"NORVASC 5MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2024,
+    "item_code":"4800304050079",
+    "description":"NORVASC TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -39770,13 +39770,6 @@
     "year":2024,
     "item_code":"4800136880035",
     "description":"PLASIL TAB 10MG",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2024,
-    "item_code":"41720005175",
-    "description":"PLASTIC URINAL",
     "category":null,
     "tab":null
   },
@@ -42394,7 +42387,7 @@
   {
     "year":2024,
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "description":"SINECOD FORTE TAB 50MG",
     "category":null,
     "tab":null
   },
@@ -42926,7 +42919,7 @@
   {
     "year":2024,
     "item_code":"4800153302398",
-    "description":"STRESSTABS WIRON TAB",
+    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":null,
     "tab":null
   },
@@ -43080,7 +43073,7 @@
   {
     "year":2024,
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "description":"SUPER CEE PLUS 500MG CAP",
     "category":null,
     "tab":null
   },
@@ -44080,6 +44073,13 @@
   },
   {
     "year":2024,
+    "item_code":"41720005175",
+    "description":"URINAL",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2024,
     "item_code":"55795494",
     "description":"URINE BAG W\/ HOOK 2000ML",
     "category":null,
@@ -44095,7 +44095,7 @@
   {
     "year":2024,
     "item_code":"4807788558657",
-    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "description":"URINORM 40MG",
     "category":null,
     "tab":null
   },
@@ -44710,15 +44710,15 @@
   },
   {
     "year":2024,
-    "item_code":"4300010005",
-    "description":"WHEELCHAIR BLACK ECONO",
+    "item_code":"53216434",
+    "description":"WHEELCHAIR STANDARD ECONO-CHROMED",
     "category":null,
     "tab":null
   },
   {
     "year":2024,
-    "item_code":"53216434",
-    "description":"WHEELCHAIR STANDARD ECONO-CHROMED",
+    "item_code":"4300010005",
+    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":null,
     "tab":null
   },
@@ -45858,13 +45858,6 @@
   },
   {
     "year":2025,
-    "item_code":"4800489114320",
-    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2025,
     "item_code":"840164518412",
     "description":"ARCOXIA 120MG TAB",
     "category":null,
@@ -45874,6 +45867,13 @@
     "year":2025,
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2025,
+    "item_code":"4800489114320",
+    "description":"ARCOXIA 60MG TAB",
     "category":null,
     "tab":null
   },
@@ -47756,7 +47756,7 @@
   {
     "year":2025,
     "item_code":"4806520352621",
-    "description":"CLODIN (CLONIDINE) 75MCG TAB",
+    "description":"CLODIN(CLONIDINE) 75MCG TAB",
     "category":null,
     "tab":null
   },
@@ -50850,7 +50850,7 @@
   {
     "year":2025,
     "item_code":"4807770272653",
-    "description":"LUCKY ME MINI JJAMPPONG",
+    "description":"LUCKY ME MINI JJAMPPONG 40G",
     "category":null,
     "tab":null
   },
@@ -51074,7 +51074,7 @@
   {
     "year":2025,
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL CAP",
     "category":null,
     "tab":null
   },
@@ -51291,14 +51291,7 @@
   {
     "year":2025,
     "item_code":"8964001206309",
-    "description":"MONTIGET 4MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2025,
-    "item_code":"8964001206293",
-    "description":"MONTIGET TAB 10MG",
+    "description":"MONTIGET TAB 4MG",
     "category":null,
     "tab":null
   },
@@ -51306,6 +51299,13 @@
     "year":2025,
     "item_code":"8964001206316",
     "description":"MONTIGET TAB 5MG",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2025,
+    "item_code":"8964001206293",
+    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
     "category":null,
     "tab":null
   },
@@ -51633,15 +51633,15 @@
   },
   {
     "year":2025,
-    "item_code":"8964001206330",
-    "description":"NEBIL 5MG TAB",
+    "item_code":"4806518661230",
+    "description":"NEBILET 5MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2025,
-    "item_code":"4806518661230",
-    "description":"NEBILET 5MG TAB",
+    "item_code":"8964001206330",
+    "description":"NEBILET TAB 5MG",
     "category":null,
     "tab":null
   },
@@ -51899,13 +51899,6 @@
   },
   {
     "year":2025,
-    "item_code":"4800304050079",
-    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2025,
     "item_code":"1210001136748",
     "description":"NORVASC 5MG TAB",
     "category":null,
@@ -51915,6 +51908,13 @@
     "year":2025,
     "item_code":"4800304050031",
     "description":"NORVASC 5MG TAB",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2025,
+    "item_code":"4800304050079",
+    "description":"NORVASC TAB 10MG",
     "category":null,
     "tab":null
   },
@@ -52643,13 +52643,6 @@
     "year":2025,
     "item_code":"4800136880035",
     "description":"PLASIL TAB 10MG",
-    "category":null,
-    "tab":null
-  },
-  {
-    "year":2025,
-    "item_code":"41720005175",
-    "description":"PLASTIC URINAL",
     "category":null,
     "tab":null
   },
@@ -54147,7 +54140,7 @@
   {
     "year":2025,
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
+    "description":"SINECOD FORTE TAB 50MG",
     "category":null,
     "tab":null
   },
@@ -54546,7 +54539,7 @@
   {
     "year":2025,
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "description":"SUPER CEE PLUS 500MG CAP",
     "category":null,
     "tab":null
   },
@@ -55196,6 +55189,13 @@
   },
   {
     "year":2025,
+    "item_code":"41720005175",
+    "description":"URINAL",
+    "category":null,
+    "tab":null
+  },
+  {
+    "year":2025,
     "item_code":"55795494",
     "description":"URINE BAG W\/ HOOK 2000ML",
     "category":null,
@@ -55203,15 +55203,15 @@
   },
   {
     "year":2025,
-    "item_code":"4807788558657",
-    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
+    "item_code":"4807788558664",
+    "description":"URINORM (FEBUXOSTAT) 80MG TAB",
     "category":null,
     "tab":null
   },
   {
     "year":2025,
-    "item_code":"4807788558664",
-    "description":"URINORM (FEBUXOSTAT) 80MG TAB",
+    "item_code":"4807788558657",
+    "description":"URINORM 40MG",
     "category":null,
     "tab":null
   },

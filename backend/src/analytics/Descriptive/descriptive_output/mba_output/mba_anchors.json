@@ -425,7 +425,7 @@
   },
   {
     "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "complement":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "complement":"ISOPTIN TAB 40MG",
     "lift":46.0030339806,
     "confidence_pct":8.74,
     "support_pct":0.07,
@@ -440,7 +440,7 @@
     "pair_tx":29
   },
   {
-    "anchor":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "anchor":"ISOPTIN TAB 40MG",
     "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
     "lift":46.0030339806,
     "confidence_pct":37.5,
@@ -601,7 +601,7 @@
   },
   {
     "anchor":"ATENURIX FCT 40MG",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":12.0338095238,
     "confidence_pct":12.14,
     "support_pct":0.13,
@@ -633,7 +633,7 @@
   },
   {
     "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":22.1675438596,
     "confidence_pct":22.37,
     "support_pct":0.07,
@@ -665,7 +665,7 @@
   },
   {
     "anchor":"REVICON FORTE TAB",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":12.0123588829,
     "confidence_pct":12.12,
     "support_pct":0.09,
@@ -761,7 +761,7 @@
   },
   {
     "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":9.9655603023,
     "confidence_pct":10.06,
     "support_pct":0.07,
@@ -808,7 +808,7 @@
     "pair_tx":28
   },
   {
-    "anchor":"NEBIL 5MG TAB",
+    "anchor":"NEBILET TAB 5MG",
     "complement":"B-PLEX (VIT B1+B6+B12) CAP",
     "lift":22.1675438596,
     "confidence_pct":6.67,
@@ -816,7 +816,7 @@
     "pair_tx":17
   },
   {
-    "anchor":"NEBIL 5MG TAB",
+    "anchor":"NEBILET TAB 5MG",
     "complement":"NEPHROMIN TAB",
     "lift":13.4122954445,
     "confidence_pct":7.06,
@@ -824,7 +824,7 @@
     "pair_tx":18
   },
   {
-    "anchor":"NEBIL 5MG TAB",
+    "anchor":"NEBILET TAB 5MG",
     "complement":"ATENURIX FCT 40MG",
     "lift":12.0338095238,
     "confidence_pct":13.33,
@@ -832,7 +832,7 @@
     "pair_tx":34
   },
   {
-    "anchor":"NEBIL 5MG TAB",
+    "anchor":"NEBILET TAB 5MG",
     "complement":"REVICON FORTE TAB",
     "lift":12.0123588829,
     "confidence_pct":9.41,
@@ -840,7 +840,7 @@
     "pair_tx":24
   },
   {
-    "anchor":"NEBIL 5MG TAB",
+    "anchor":"NEBILET TAB 5MG",
     "complement":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
     "lift":9.9655603023,
     "confidence_pct":7.06,
@@ -1025,7 +1025,7 @@
   },
   {
     "anchor":"NEPHROMIN TAB",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":13.4122954445,
     "confidence_pct":13.53,
     "support_pct":0.07,
@@ -1257,7 +1257,7 @@
   },
   {
     "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"NEBIL 5MG TAB",
+    "complement":"NEBILET TAB 5MG",
     "lift":4.1964999681,
     "confidence_pct":4.23,
     "support_pct":0.05,

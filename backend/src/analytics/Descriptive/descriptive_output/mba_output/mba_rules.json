@@ -324,7 +324,7 @@
   },
   {
     "item_a":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "item_b":"ISOPTIN (VERAPAMIL) 40MG TAB",
+    "item_b":"ISOPTIN TAB 40MG",
     "pair_tx":18,
     "support":0.0007122789,
     "lift":46.0030339806,
@@ -613,7 +613,7 @@
   },
   {
     "item_a":"B-PLEX (VIT B1+B6+B12) CAP",
-    "item_b":"NEBIL 5MG TAB",
+    "item_b":"NEBILET TAB 5MG",
     "pair_tx":17,
     "support":0.0006727078,
     "lift":22.1675438596,
@@ -884,7 +884,7 @@
     "either_confidence_max":0.1440677966
   },
   {
-    "item_a":"NEBIL 5MG TAB",
+    "item_a":"NEBILET TAB 5MG",
     "item_b":"NEPHROMIN TAB",
     "pair_tx":18,
     "support":0.0007122789,
@@ -970,7 +970,7 @@
   },
   {
     "item_a":"ATENURIX FCT 40MG",
-    "item_b":"NEBIL 5MG TAB",
+    "item_b":"NEBILET TAB 5MG",
     "pair_tx":34,
     "support":0.0013454157,
     "lift":12.0338095238,
@@ -986,7 +986,7 @@
     "either_confidence_max":0.1333333333
   },
   {
-    "item_a":"NEBIL 5MG TAB",
+    "item_a":"NEBILET TAB 5MG",
     "item_b":"REVICON FORTE TAB",
     "pair_tx":24,
     "support":0.0009497052,
@@ -1190,7 +1190,7 @@
     "either_confidence_max":0.0782122905
   },
   {
-    "item_a":"NEBIL 5MG TAB",
+    "item_a":"NEBILET TAB 5MG",
     "item_b":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
     "pair_tx":18,
     "support":0.0007122789,
@@ -1378,7 +1378,7 @@
   },
   {
     "item_a":"FORXIGA 10MG",
-    "item_b":"NEBIL 5MG TAB",
+    "item_b":"NEBILET TAB 5MG",
     "pair_tx":30,
     "support":0.0011871315,
     "lift":5.8640213482,
@@ -1531,7 +1531,7 @@
   },
   {
     "item_a":"MX3 COFFEE MIX 10G",
-    "item_b":"NEBIL 5MG TAB",
+    "item_b":"NEBILET TAB 5MG",
     "pair_tx":13,
     "support":0.0005144236,
     "lift":4.1964999681,

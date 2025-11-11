@@ -1,98 +1,85 @@
-#!/usr/bin/env python3
-"""
-Analytics Models Runner
-Runs Descriptive, Predictive, and Prescriptive analytics models
-"""
-import os
 import sys
+import json
 import subprocess
-import pandas as pd
+import os
 from pathlib import Path
 
-def main():
-    script_dir = Path(__file__).parent
-    descriptive_dir = script_dir / "Descriptive"
-    predictive_dir = script_dir / "Predictive"
-    prescriptive_dir = script_dir / "prescriptive"
+def run_predictive():
+    """
+    Run predictive analytics by executing the predictive model scripts.
+    """
+    print("Running predictive analytics...")
+    analytics_dir = Path(__file__).parent
+    predictive_dir = analytics_dir / "Predictive"
 
-    print("Running Descriptive Analytics Models...")
+    # List of predictive scripts to run
+    scripts = [
+        "xgboost_model.py",
+    ]
 
-    # Run Descriptive analytics
-    print("Running Descriptive analytics...")
-    try:
-        result = subprocess.run([
-            sys.executable, "descriptive.py"
-        ], cwd=descriptive_dir, capture_output=True, text=True, timeout=600)
+    results = []
+    for script in scripts:
+        script_path = predictive_dir / script
+        if not script_path.exists():
+            print(f"Warning: {script} not found, skipping.")
+            continue
 
-        if result.returncode != 0:
-            print(f"Descriptive failed: {result.stderr}")
-        else:
-            print("Descriptive completed successfully")
+        print(f"Running {script}...")
+        try:
+            # Run the script
+            result = subprocess.run(
+                [sys.executable, str(script_path)],
+                cwd=str(predictive_dir),
+                capture_output=True,
+                text=True,
+                timeout=300  # 5 minutes timeout per script
+            )
+            if result.returncode == 0:
+                print(f"{script} completed successfully.")
+                results.append({"script": script, "success": True, "output": result.stdout})
+            else:
+                print(f"{script} failed with code {result.returncode}: {result.stderr}")
+                results.append({"script": script, "success": False, "error": result.stderr})
+        except subprocess.TimeoutExpired:
+            print(f"{script} timed out.")
+            results.append({"script": script, "success": False, "error": "Timeout"})
+        except Exception as e:
+            print(f"Error running {script}: {str(e)}")
+            results.append({"script": script, "success": False, "error": str(e)})
 
-    except subprocess.TimeoutExpired:
-        print("Descriptive timed out")
-    except Exception as e:
-        print(f"Error running Descriptive: {e}")
+    # Determine overall success: succeed if at least one script succeeded
+    overall_success = any(r["success"] for r in results)
+    if overall_success:
+        message = "Predictive analytics completed successfully"
+    else:
+        message = "All predictive scripts failed"
 
-    print("Running Predictive Analytics Models...")
+    return {
+        "success": overall_success,
+        "message": message,
+        "details": results
+    }
 
-    # Run XGBoost model
-    print("Running XGBoost model...")
-    try:
-        result = subprocess.run([
-            sys.executable, "xgboost_model.py"
-        ], cwd=predictive_dir, capture_output=True, text=True, timeout=300)
-
-        if result.returncode != 0:
-            print(f"XGBoost failed: {result.stderr}")
-        else:
-            print("XGBoost completed successfully")
-
-    except subprocess.TimeoutExpired:
-        print("XGBoost timed out")
-    except Exception as e:
-        print(f"Error running XGBoost: {e}")
-
-    # Run Random Forest model
-    print("Running Random Forest model...")
-    try:
-        result = subprocess.run([
-            sys.executable, "random_forest.py", "--topn", "5", "--min_cov", "0.7"
-        ], cwd=predictive_dir, capture_output=True, text=True, timeout=300)
-
-        if result.returncode != 0:
-            print(f"Random Forest failed: {result.stderr}")
-        else:
-            print("Random Forest completed successfully")
-
-    except subprocess.TimeoutExpired:
-        print("Random Forest timed out")
-    except Exception as e:
-        print(f"Error running Random Forest: {e}")
-
-    print("Predictive analytics models completed.")
-
-    print("Running Prescriptive Analytics Models...")
-
-    # Run Prescriptive analytics
-    print("Running Prescriptive analytics...")
-    try:
-        result = subprocess.run([
-            sys.executable, "prescriptive.py"
-        ], cwd=prescriptive_dir, capture_output=True, text=True, timeout=1200)
-
-        if result.returncode != 0:
-            print(f"Prescriptive failed: {result.stderr}")
-        else:
-            print("Prescriptive completed successfully")
-
-    except subprocess.TimeoutExpired:
-        print("Prescriptive timed out")
-    except Exception as e:
-        print(f"Error running Prescriptive: {e}")
-
-    print("All analytics models (Descriptive, Predictive, Prescriptive) completed.")
-    print('{"success": true, "message": "Analytics pipeline completed successfully"}')
+def run_analytics(output_path):
+    # Placeholder for full analytics pipeline
+    # For now, only run predictive
+    predictive_result = run_predictive()
+    result = {
+        "success": predictive_result["success"],
+        "message": predictive_result["message"],
+        "predictive": predictive_result
+    }
+    return result
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 2:
+        print(json.dumps({"success": False, "error": "Output path required"}))
+        sys.exit(1)
+
+    output_path = sys.argv[1]
+    try:
+        result = run_analytics(output_path)
+        print(json.dumps(result))
+    except Exception as e:
+        print(json.dumps({"success": False, "error": str(e)}))
+        sys.exit(1)

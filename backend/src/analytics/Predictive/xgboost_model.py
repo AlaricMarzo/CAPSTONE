@@ -222,10 +222,10 @@ def load_data_from_database():
 
 def load_csv_data():
     """Fallback to load data from CSV file"""
-    csv_path = HERE.parent.parent / "cleaned" / "data_for_predictive.csv"
+    csv_path = HERE.parent.parent.parent / "cleaned" / "data_for_predictive.csv"
     if not csv_path.exists():
         raise FileNotFoundError(f"CSV data not found: {csv_path}")
-    
+
     df = pd.read_csv(csv_path)
     print(f" Loaded fallback CSV data: {len(df):,} rows x {len(df.columns)} columns")
     return df

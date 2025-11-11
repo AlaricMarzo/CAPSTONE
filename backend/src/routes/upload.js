@@ -222,10 +222,32 @@ async function processUpload(jobId, files) {
     jobs.set(jobId, { status: 'processing', progress: 95, message: 'Running descriptive, predictive, and prescriptive analytics...' })
 
     try {
-      const analyticsScriptPath = path.join(__dirname, "../analytics/models.py")
-      const analyticsResult = await runPythonScript(analyticsScriptPath, [outputPath])
+      // Run descriptive analytics
+      const descResponse = await fetch('http://localhost:5050/api/analytics/run-descriptive', {
+        method: 'POST',
+      })
+      const descResult = await descResponse.json()
 
-      if (analyticsResult.success) {
+      // Run predictive analytics
+      const predResponse = await fetch('http://localhost:5050/api/analytics/run-predictive', {
+        method: 'POST',
+      })
+      const predResult = await predResponse.json()
+
+      // Run prescriptive analytics
+      const prescResponse = await fetch('http://localhost:5050/api/analytics/run-prescriptive', {
+        method: 'POST',
+      })
+      const prescResult = await prescResponse.json()
+
+      const analyticsResults = {
+        descriptive: descResult,
+        predictive: predResult,
+        prescriptive: prescResult,
+        success: descResult.success && predResult.success && prescResult.success
+      }
+
+      if (analyticsResults.success) {
         console.log("[Backend] Analytics pipeline completed successfully")
         jobs.set(jobId, {
           status: 'completed',
@@ -233,17 +255,17 @@ async function processUpload(jobId, files) {
           message: "Data processing and analytics completed successfully! Files have been cleaned, loaded into the database, and analytics pipeline executed.",
           filesProcessed: files.length,
           cleaningResults: cleanResult,
-          analyticsResults: analyticsResult,
+          analyticsResults: analyticsResults,
         })
       } else {
-        console.error("[Backend] Analytics pipeline failed:", analyticsResult.error)
+        console.error("[Backend] Analytics pipeline failed:", analyticsResults)
         jobs.set(jobId, {
           status: 'completed_with_warnings',
           progress: 100,
           message: "Data processing completed, but analytics pipeline encountered issues. Check logs for details.",
           filesProcessed: files.length,
           cleaningResults: cleanResult,
-          analyticsResults: analyticsResult,
+          analyticsResults: analyticsResults,
         })
       }
     } catch (analyticsError) {

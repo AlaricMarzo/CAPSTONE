@@ -3,8 +3,8 @@
     "total_rows_analyzed": 119881,
     "total_sales": 20616048.369999997,
     "total_quantity": 700776,
-    "total_profit": 3964347.4299999997,
-    "avg_profit_margin_pct": 30.96148616743049
+    "total_profit": 3964347.43,
+    "avg_profit_margin_pct": 30.94476550667833
   },
   "top_5_products": [
     {
@@ -52,5 +52,5 @@
     "noise_points": 626969,
     "total_points_clustered": 119881
   },
-  "timestamp": "2025-11-12 00:51:39.736930"
+  "timestamp": "2025-11-12 02:38:20.327418"
 }
