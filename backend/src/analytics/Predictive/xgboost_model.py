@@ -178,28 +178,29 @@ def load_data_from_database():
     load_dotenv()
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
-        print("DATABASE_URL not set, falling back to CSV data.")
-        return load_csv_data()
+        raise RuntimeError("DATABASE_URL not set in environment variables")
 
     try:
         conn = psycopg2.connect(dsn)
         query = """
         SELECT
-            d.date_key AS date,
-            fs.receipt_number AS Receipt,
-            fs.sales_order_number AS SO,
-            p.item_code AS "Item Code",
-            p.description AS Description,
-            fs.expiration_date AS "Expiration Date",
-            fs.quantity_sold AS Qty,
-            fs.unit AS Unit,
-            fs.discount_rate AS Discount,
-            fs.sales_amount AS Sales,
-            fs.cost_amount AS Cost,
-            fs.profit_amount AS Profit,
-            fs.payment AS Payment,
-            fs.cashier_id AS "Cashier ID",
-            fs.txn_type AS TxnType
+            fs.date_key AS date,
+            fs.receipt_number AS receipt,
+            fs.sales_order_number AS so,
+            p.item_code AS item_code,
+            p.description AS description,
+            p.category AS category,
+            p.tab AS tab,
+            fs.expiration_date AS expiration,
+            fs.quantity_sold AS qty,
+            fs.unit AS unit,
+            fs.discount_rate AS discount,
+            fs.sales_amount AS sales,
+            fs.cost_amount AS cost,
+            fs.profit_amount AS profit,
+            fs.payment AS payment,
+            fs.cashier_id AS cashier_id,
+            fs.txn_type AS txn_type
         FROM warehouse.fact_sales fs
         JOIN warehouse.dim_product p ON fs.product_key = p.product_key
         JOIN warehouse.dim_date d ON fs.date_key = d.date_key
@@ -209,26 +210,16 @@ def load_data_from_database():
         conn.close()
 
         if df.empty:
-            print("No data found in database, falling back to CSV data.")
-            return load_csv_data()
+            raise ValueError("No data found in warehouse.fact_sales table.")
 
         print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
-
         return df
 
     except Exception as e:
-        print(f"Error loading data from database: {e}, falling back to CSV data.")
-        return load_csv_data()
-
-def load_csv_data():
-    """Fallback to load data from CSV file"""
-    csv_path = HERE.parent.parent.parent / "cleaned" / "data_for_predictive.csv"
-    if not csv_path.exists():
-        raise FileNotFoundError(f"CSV data not found: {csv_path}")
-
-    df = pd.read_csv(csv_path)
-    print(f" Loaded fallback CSV data: {len(df):,} rows x {len(df.columns)} columns")
-    return df
+        print(f" Error loading data from database: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 def main():
     ap=argparse.ArgumentParser()

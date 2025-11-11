@@ -10,6 +10,9 @@ import warnings, argparse, re, sys
 from pathlib import Path
 from typing import Dict, List, Tuple, Callable
 import numpy as np, pandas as pd
+import psycopg2
+from dotenv import load_dotenv
+import os
 
 import matplotlib
 matplotlib.use("Agg")
@@ -170,16 +173,62 @@ def fit_fn_gb_1step(hist: pd.Series):
     x=feats_next.drop(columns=["y"]).iloc[[-1]].values
     return float(np.expm1(mdl.predict(x))[0])
 
+def load_data_from_database():
+    """Load data from the warehouse.fact_sales table in the database"""
+    print("Loading data from database...")
+    load_dotenv()
+    dsn = os.getenv("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError("DATABASE_URL not set in environment variables")
+
+    try:
+        conn = psycopg2.connect(dsn)
+        query = """
+        SELECT
+            fs.date_key AS date,
+            fs.receipt_number AS receipt,
+            fs.sales_order_number AS so,
+            p.item_code AS item_code,
+            p.description AS description,
+            p.category AS category,
+            p.tab AS tab,
+            fs.expiration_date AS expiration,
+            fs.quantity_sold AS qty,
+            fs.unit AS unit,
+            fs.discount_rate AS discount,
+            fs.sales_amount AS sales,
+            fs.cost_amount AS cost,
+            fs.profit_amount AS profit,
+            fs.payment AS payment,
+            fs.cashier_id AS cashier_id,
+            fs.txn_type AS txn_type
+        FROM warehouse.fact_sales fs
+        JOIN warehouse.dim_product p ON fs.product_key = p.product_key
+        JOIN warehouse.dim_date d ON fs.date_key = d.date_key
+        ORDER BY fs.date_key, fs.receipt_number
+        """
+        df = pd.read_sql_query(query, conn)
+        conn.close()
+
+        if df.empty:
+            raise ValueError("No data found in warehouse.fact_sales table.")
+
+        print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        return df
+
+    except Exception as e:
+        print(f" Error loading data from database: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
+
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--input", type=str, default="")
     ap.add_argument("--topn", type=int, default=TOP_N)
     ap.add_argument("--min_cov", type=float, default=0.7)
     args=ap.parse_args()
 
-    in_path=Path(args.input) if args.input else (DATA_DIR/"ANC - 4 YEARS (1).csv")
-    if not in_path.exists(): sys.exit(f"Input not found: {in_path}")
-    df = pd.read_csv(in_path, low_memory=False) if in_path.suffix.lower()==".csv" else pd.read_excel(in_path)
+    df = load_data_from_database()
     rename=detect_columns(df); df=df.rename(columns=rename)
     df["Date"]=parse_dates_safe(df["Date"]); df=df.dropna(subset=["Date"])
     df["Qty"]=pd.to_numeric(df["Qty"], errors="coerce").fillna(0.0).astype(float)
@@ -187,7 +236,7 @@ def main():
     if "Item Code" not in df.columns: df["Item Code"]=df["Description"].astype(str)
 
     key="Item Code"; mon=monthly(df,key); top=choose_top(mon,key,args.topn,args.min_cov)
-    out_dir=OUT_ROOT/clean_name(in_path.stem); out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir=OUT_ROOT/"database_data"; out_dir.mkdir(parents=True, exist_ok=True)
     rows=[]
     for sku in top:
         s=mon[mon[key]==sku].copy().sort_values("Date")
@@ -267,8 +316,8 @@ def main():
         rows.append({"sku":sku,"description":desc,"chosen":"GB+Blend","MASE_WF":wf_mase,"MASE_holdout":holdout_mase,"alpha":alpha,"bias":bias,"plot":png.name})
 
     if rows:
-        pd.DataFrame(rows).to_csv(OUT_ROOT/clean_name(in_path.stem)/"gb_summary.csv", index=False)
-        print(f"✅ Saved to {OUT_ROOT/clean_name(in_path.stem)/'gb_summary.csv'}")
+        pd.DataFrame(rows).to_csv(out_dir/"gb_summary.csv", index=False)
+        print(f"✅ Saved to {out_dir/'gb_summary.csv'}")
 
 if __name__=="__main__":
     main()

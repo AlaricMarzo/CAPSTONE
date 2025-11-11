@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+    #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 RandomForest monthly forecast with walk-forward MASE, SN blend, bias correction.
@@ -222,6 +222,18 @@ def load_data_from_database():
     except Exception as e:
         print(f"Error loading data from database: {e}, falling back to CSV data.")
         return load_csv_data()
+
+def load_csv_data():
+    """Fallback to load data from CSV file"""
+    csv_path = HERE.parent.parent.parent.parent / "ANC - 4 YEARS.csv"
+    if not csv_path.exists():
+        raise FileNotFoundError(f"CSV data not found: {csv_path}")
+
+    df = pd.read_csv(csv_path, low_memory=False)
+    rename = detect_columns(df)
+    df = df.rename(columns=rename)
+    print(f" Loaded fallback CSV data: {len(df):,} rows x {len(df.columns)} columns")
+    return df
 
 def main():
     ap=argparse.ArgumentParser()

@@ -15,7 +15,7 @@ Run examples:
   python sarima_ets_sarimax_calibrated.py --file "ANC - 4 YEARS (1).csv" --top 8 --steps 6
   python sarima_ets_sarimax_calibrated.py --recent 24 --winsor 0.95 --no-log
 """
-import argparse, warnings, re, sys, math
+import argparse, warnings, re, sys, math, os
 from pathlib import Path
 from typing import Optional, List, Tuple, Dict
 import numpy as np
@@ -327,28 +327,29 @@ def load_data_from_database():
     load_dotenv()
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
-        print("DATABASE_URL not set, falling back to CSV data.")
-        return load_csv_data()
+        raise RuntimeError("DATABASE_URL not set in environment variables")
 
     try:
         conn = psycopg2.connect(dsn)
         query = """
         SELECT
-            fs.date_key AS Date,
-            fs.receipt_number AS Receipt,
-            fs.sales_order_number AS SO,
-            p.item_code AS "Item Code",
-            p.description AS Description,
-            fs.expiration_date AS "Expiration Date",
-            fs.quantity_sold AS Qty,
-            fs.unit AS Unit,
-            fs.discount_rate AS Discount,
-            fs.sales_amount AS Sales,
-            fs.cost_amount AS Cost,
-            fs.profit_amount AS Profit,
-            fs.payment AS Payment,
-            fs.cashier_id AS "Cashier ID",
-            fs.txn_type AS TxnType
+            fs.date_key AS date,
+            fs.receipt_number AS receipt,
+            fs.sales_order_number AS so,
+            p.item_code AS item_code,
+            p.description AS description,
+            p.category AS category,
+            p.tab AS tab,
+            fs.expiration_date AS expiration,
+            fs.quantity_sold AS qty,
+            fs.unit AS unit,
+            fs.discount_rate AS discount,
+            fs.sales_amount AS sales,
+            fs.cost_amount AS cost,
+            fs.profit_amount AS profit,
+            fs.payment AS payment,
+            fs.cashier_id AS cashier_id,
+            fs.txn_type AS txn_type
         FROM warehouse.fact_sales fs
         JOIN warehouse.dim_product p ON fs.product_key = p.product_key
         JOIN warehouse.dim_date d ON fs.date_key = d.date_key
@@ -358,16 +359,16 @@ def load_data_from_database():
         conn.close()
 
         if df.empty:
-            print("No data found in database, falling back to CSV data.")
-            return load_csv_data()
+            raise ValueError("No data found in warehouse.fact_sales table.")
 
         print(f"Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
-
         return df
 
     except Exception as e:
-        print(f"Error loading data from database: {e}, falling back to CSV data.")
-        return load_csv_data()
+        print(f" Error loading data from database: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 def main():
     p = argparse.ArgumentParser()
@@ -383,6 +384,7 @@ def main():
     args = p.parse_args()
 
     df = load_data_from_database()
+    df = df.rename(columns=detect_columns(df))
     df["Date"] = parse_dates_safe(df["Date"])
     df = df.dropna(subset=["Date"])
     df["Description"] = df["Description"].astype(str).str.strip().str.replace(r"\s+"," ", regex=True)
