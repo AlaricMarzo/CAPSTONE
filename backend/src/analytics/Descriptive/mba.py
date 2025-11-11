@@ -23,7 +23,7 @@ def _new_fig(figsize=FIGSIZE, left=0.35, right=0.98, top=0.92, bottom=0.14):
 
 def _finalize(fig: plt.Figure, path: Path):
     fig.savefig(path, dpi=240, bbox_inches="tight")
-    print(f"✓ Saved figure: {path}")
+    print(f" Saved figure: {path}")
     plt.close(fig)
 
 def _ensure_dir(p: Path) -> Path:
@@ -187,12 +187,12 @@ def _plot_rules(rules: pd.DataFrame, out_path: Path):
     ax.set_xlabel("Lift"); ax.set_ylabel("Item Pair")
     _finalize(fig, out_path / "fig_mba_top20_lift.png")
 
-    # -------- CONFIDENCE A→B: take top 20 by confidence_a_to_b --------
+    # -------- CONFIDENCE AtoB: take top 20 by confidence_a_to_b --------
     top_conf = rules.sort_values("confidence_a_to_b", ascending=False).head(20).copy()
-    labels_conf = (top_conf["item_a"] + " → " + top_conf["item_b"]).str.slice(0, 60)
+    labels_conf = (top_conf["item_a"] + " to " + top_conf["item_b"]).str.slice(0, 60)
     fig, ax = _new_fig()
     ax.barh(labels_conf.iloc[::-1], (top_conf["confidence_a_to_b"] * 100).iloc[::-1])
-    ax.set_title("Top 20 Association Rules by Confidence A→B (percent)")
+    ax.set_title("Top 20 Association Rules by Confidence AtoB (percent)")
     ax.set_xlabel("Confidence (%)"); ax.set_ylabel("Item Pair")
     _finalize(fig, out_path / "fig_mba_top20_confidence_a_to_b.png")
 

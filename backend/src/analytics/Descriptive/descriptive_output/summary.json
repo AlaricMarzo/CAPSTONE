@@ -1,0 +1,56 @@
+{
+  "data_overview": {
+    "total_rows_analyzed": 3024,
+    "total_sales": 484838.94,
+    "total_quantity": 18417,
+    "total_profit": 99976.74,
+    "avg_profit_margin_pct": 24.141849076876962
+  },
+  "top_5_products": [
+    {
+      "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
+      "total_sales": 15600.0,
+      "total_qty": 1.0,
+      "profit_margin": 36.82051282051282
+    },
+    {
+      "medicine": "OHHIRAs PROPOLIS 600MG CAP",
+      "total_sales": 11449.92,
+      "total_qty": 189.0,
+      "profit_margin": 7.562672926972415
+    },
+    {
+      "medicine": "RECLINING WHEELCHAIR WITH COMMODE",
+      "total_sales": 10080.0,
+      "total_qty": 1.0,
+      "profit_margin": 30.555555555555557
+    },
+    {
+      "medicine": "NEPHORMIN TAB",
+      "total_sales": 9360.0,
+      "total_qty": 576.0,
+      "profit_margin": 13.846153846153847
+    },
+    {
+      "medicine": "PROHEALTH PULSE OXIMETER",
+      "total_sales": 7812.49,
+      "total_qty": 7.0,
+      "profit_margin": 41.75992545270458
+    }
+  ],
+  "kpi_analysis": {
+    "kpi_metrics_generated": 15,
+    "avg_monthly_growth_rate": null
+  },
+  "market_basket_analysis": {
+    "rules_generated": 41,
+    "support_threshold": 0.01,
+    "confidence_threshold": 0.1
+  },
+  "clustering_analysis": {
+    "clusters_identified": 29,
+    "noise_points": 373,
+    "total_points_clustered": 3024
+  },
+  "timestamp": "2025-11-12 00:15:28.016921"
+}

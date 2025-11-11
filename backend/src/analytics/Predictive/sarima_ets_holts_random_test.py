@@ -3,7 +3,7 @@
 """
 Randomized backtesting (Monte Carlo) + representative LAST-h chart
 - R random holdouts of size h (default 6)
-- Aggregates mean MAE/MSE/RMSE/MAPE/MASE/WAPE/MPE per model across splits → CSV
+- Aggregates mean MAE/MSE/RMSE/MAPE/MASE/WAPE/MPE per model across splits to CSV
 - Also draws a LAST-h chart with the metrics table (calibrated forecast) and exports forward 6m CSV
 """
 import argparse, warnings, re, sys, random

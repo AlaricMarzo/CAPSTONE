@@ -555,10 +555,10 @@ def remove_incomplete_rows(df):
         removed['error_stage']  = 'remove_incomplete_rows'
         errors.append(removed)
         df_clean = df_clean.drop(rows_to_remove)
-        print(f"[OK] Removed {len(rows_to_remove)} incomplete rows")
+        print(f" Removed {len(rows_to_remove)} incomplete rows")
         print(f"  Remaining rows: {len(df_clean)}")
     else:
-        print("[OK] No incomplete rows found - all data appears complete")
+        print(" No incomplete rows found - all data appears complete")
 
     important_columns = ['Item Code', 'Description', 'Qty', 'Sales', 'Cost']
     available_important = [c for c in important_columns if c in df_clean.columns]
@@ -570,7 +570,7 @@ def remove_incomplete_rows(df):
             removed2['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed2)
             df_clean = df_clean.loc[~empty_mask]
-            print(f"[OK] Removed {int(empty_mask.sum())} completely empty data rows")
+            print(f" Removed {int(empty_mask.sum())} completely empty data rows")
 
     # Placeholder/header rows & non-item adjustments clean (from CLEAN.py)
     num_cols = [c for c in ['Qty', 'Sales', 'Cost', 'Profit'] if c in df_clean.columns]
@@ -597,7 +597,7 @@ def remove_incomplete_rows(df):
             removed3['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed3)
             df_clean = df_clean.loc[~placeholder_mask]
-            print(f"[OK] Removed {int(placeholder_mask.sum())} placeholder/non-item rows")
+            print(f" Removed {int(placeholder_mask.sum())} placeholder/non-item rows")
 
     fin_cols = [c for c in ['Sales', 'Cost', 'Profit'] if c in df_clean.columns]
     if fin_cols:
@@ -631,7 +631,7 @@ def remove_incomplete_rows(df):
             removed_adj['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed_adj)
             df_clean = df_clean.loc[~adj_mask]
-            print(f"[OK] Removed {int(adj_mask.sum())} non-item adjustment rows")
+            print(f" Removed {int(adj_mask.sum())} non-item adjustment rows")
 
     final_count = len(df_clean)
     print(f"\nData validation summary:")

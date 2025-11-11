@@ -1,194 +1,131 @@
 {
-  "execution_timestamp": "2025-11-11T02:56:07.649812",
+  "execution_timestamp": "2025-11-12T00:15:36.647160",
   "analysis_period": {
-    "start_date": "2022-05-09 00:00:00",
-    "end_date": "2025-03-31 00:00:00",
-    "total_days": 1057,
-    "total_transactions": 117596,
-    "total_products": 3465
+    "start_date": "2023-01-02 00:00:00",
+    "end_date": "2023-01-31 00:00:00",
+    "total_days": 29,
+    "total_transactions": 2979,
+    "total_products": 874
   },
   "model_1_reorder_point": {
-    "total_products_analyzed": 20,
+    "total_products_analyzed": 1,
     "top_10_by_reorder_point": [
       {
-        "medicine": "RETASAR (LOSARTAN) 50MG TAB",
-        "avg_daily_demand": 27.550588235294118,
-        "safety_stock": 205.40267343922264,
-        "reorder_point": 398.25679108628145,
-        "forecast_30day": 723.1401766946575
-      },
-      {
-        "medicine": "NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-        "avg_daily_demand": 25.835714285714285,
-        "safety_stock": 192.1259231207093,
-        "reorder_point": 372.9759231207093,
-        "forecast_30day": 587.6342102180049
-      },
-      {
-        "medicine": "BIOGESIC 500MG TAB",
-        "avg_daily_demand": 16.113421550094518,
-        "safety_stock": 171.96654560089993,
-        "reorder_point": 284.76049645156155,
-        "forecast_30day": 422.02724203417347
-      },
-      {
-        "medicine": "RETANIX (CETIRIZINE) 10MG TAB",
-        "avg_daily_demand": 9.314220183486238,
-        "safety_stock": 161.31849349574196,
-        "reorder_point": 226.51803478014563,
-        "forecast_30day": 139.71330275229357
-      },
-      {
-        "medicine": "NEPHROMIN TAB",
-        "avg_daily_demand": 10.313559322033898,
-        "safety_stock": 150.40826638998152,
-        "reorder_point": 222.6031816442188,
-        "forecast_30day": 501.98282973048583
-      },
-      {
-        "medicine": "RETAVASC- 5 (AMLODIPINE) 5MG TAB",
-        "avg_daily_demand": 8.480349344978166,
-        "safety_stock": 114.51364118734611,
-        "reorder_point": 173.87608660219325,
-        "forecast_30day": 230.6204632948841
-      },
-      {
-        "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-        "avg_daily_demand": 13.550898203592814,
-        "safety_stock": 71.41740275639543,
-        "reorder_point": 166.27369018154513,
-        "forecast_30day": 247.96484169452373
-      },
-      {
-        "medicine": "APPEVIT CAP",
-        "avg_daily_demand": 10.085413929040737,
-        "safety_stock": 76.72525433672763,
-        "reorder_point": 147.32315184001277,
-        "forecast_30day": 336.3810556319186
-      },
-      {
-        "medicine": "AMLOTHIX (AMLODIPINE) 5MG TAB",
-        "avg_daily_demand": 7.729166666666667,
-        "safety_stock": 82.06476791377199,
-        "reorder_point": 136.16893458043864,
-        "forecast_30day": 169.47961979996978
-      },
-      {
-        "medicine": "IMMUNPRO 500MG TAB",
-        "avg_daily_demand": 5.824594852240229,
-        "safety_stock": 66.56159825797468,
-        "reorder_point": 107.33376222365628,
-        "forecast_30day": 96.50608855022185
+        "medicine": "BIOGESIC (PARACETAMOL) 500MG TAB",
+        "avg_daily_demand": 13.633333333333333,
+        "safety_stock": 68.70927862706993,
+        "reorder_point": 164.14261196040326,
+        "forecast_30day": 348.60075084470554
       }
     ],
-    "average_safety_stock": 92.78241877981598,
-    "average_reorder_point": 154.01354250938212,
-    "total_safety_stock_needed": 1855.6483755963197
+    "average_safety_stock": 68.70927862706993,
+    "average_reorder_point": 164.14261196040326,
+    "total_safety_stock_needed": 68.70927862706993
   },
   "model_2_eoq": {
     "total_products_analyzed": 20,
     "top_10_by_annual_demand": [
       {
-        "medicine": "BIOGESIC 500MG TAB",
-        "annual_demand": 17048.0,
-        "eoq": 2201.0852899291945,
-        "orders_per_year": 7.745270062001281,
-        "days_between_orders": 47.12553559503496,
-        "total_annual_cost": 74310.63101860038
-      },
-      {
-        "medicine": "RETASAR (LOSARTAN) 50MG TAB",
-        "annual_demand": 11709.0,
-        "eoq": 2413.4680921436043,
-        "orders_per_year": 4.85152467443655,
-        "days_between_orders": 75.2340809319682,
-        "total_annual_cost": 29700.207402330965
-      },
-      {
-        "medicine": "APPEVIT CAP",
-        "annual_demand": 7675.0,
-        "eoq": 803.4168352747743,
-        "orders_per_year": 9.55294893388075,
-        "days_between_orders": 38.20809705215539,
-        "total_annual_cost": 112376.48468016423
-      },
-      {
         "medicine": "NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-        "annual_demand": 7234.0,
-        "eoq": 1918.6484090671881,
-        "orders_per_year": 3.7703624936248943,
-        "days_between_orders": 96.80766786142158,
-        "total_annual_cost": 18189.868748087465
+        "annual_demand": 617.0,
+        "eoq": 558.8919440537725,
+        "orders_per_year": 1.1039701082909807,
+        "days_between_orders": 330.624893970222,
+        "total_annual_cost": 1793.6910324872943
       },
       {
-        "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-        "annual_demand": 6789.0,
-        "eoq": 406.8481514032625,
-        "orders_per_year": 16.686815404184628,
-        "days_between_orders": 21.873556527057122,
-        "total_annual_cost": 339145.8146212554
+        "medicine": "NEPHORMIN TAB",
+        "annual_demand": 576.0,
+        "eoq": 206.24108372335667,
+        "orders_per_year": 2.792848008753788,
+        "days_between_orders": 130.6909645121965,
+        "total_annual_cost": 10197.854402626137
       },
       {
-        "medicine": "IMMUNPRO 500MG TAB",
-        "annual_demand": 6110.0,
-        "eoq": 933.5036374111587,
-        "orders_per_year": 6.545234271335645,
-        "days_between_orders": 55.76576557366169,
-        "total_annual_cost": 53371.68028140069
+        "medicine": "SAPHLOR-50 (LOSARTAN) 50MG TAB",
+        "annual_demand": 509.0,
+        "eoq": 527.3832748825776,
+        "orders_per_year": 0.9651424765287245,
+        "days_between_orders": 378.1825055641273,
+        "total_annual_cost": 1407.3427429586172
       },
       {
-        "medicine": "NEPHROMIN TAB",
-        "annual_demand": 4868.0,
-        "eoq": 585.8504379810731,
-        "orders_per_year": 8.309287975913861,
-        "days_between_orders": 43.92674812306731,
-        "total_annual_cost": 85345.90639277415
+        "medicine": "BIOGESIC (PARACETAMOL) 500MG TAB",
+        "annual_demand": 409.0,
+        "eoq": 339.82694557844655,
+        "orders_per_year": 1.2035537655903314,
+        "days_between_orders": 303.26854556511734,
+        "total_annual_cost": 2099.3161296770995
       },
       {
-        "medicine": "TERRAFERON CAP",
-        "annual_demand": 4509.0,
-        "eoq": 848.9811842666285,
-        "orders_per_year": 5.311071768798962,
-        "days_between_orders": 68.72435845139042,
-        "total_annual_cost": 35442.30153063969
+        "medicine": "AMLOTHIX (AMLODIPINE) 5MG TAB",
+        "annual_demand": 311.0,
+        "eoq": 437.782179239527,
+        "orders_per_year": 0.7103989489481715,
+        "days_between_orders": 513.7958052168083,
+        "total_annual_cost": 818.7196846844515
       },
       {
-        "medicine": "BIOFLU TAB",
-        "annual_demand": 4443.0,
-        "eoq": 802.6924509479468,
-        "orders_per_year": 5.53512119710731,
-        "days_between_orders": 65.94254886248044,
-        "total_annual_cost": 38425.6163591322
+        "medicine": "ALCLAV (CO-AMOXICLAV) 625MG TAB",
+        "annual_demand": 269.0,
+        "eoq": 135.43490611653024,
+        "orders_per_year": 1.9861940153637225,
+        "days_between_orders": 183.76855290904663,
+        "total_annual_cost": 5329.818204609117
       },
       {
-        "medicine": "TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-        "annual_demand": 4245.0,
-        "eoq": 817.4028504121885,
-        "orders_per_year": 5.193277706163357,
-        "days_between_orders": 70.28316617207274,
-        "total_annual_cost": 33922.14331184901
+        "medicine": "ALLECUR (CETIRIZINE) 10MG TAB",
+        "annual_demand": 265.0,
+        "eoq": 325.5764119219941,
+        "orders_per_year": 0.8139410298049853,
+        "days_between_orders": 448.4354352887844,
+        "total_annual_cost": 1039.1823089414956
+      },
+      {
+        "medicine": "REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
+        "annual_demand": 251.0,
+        "eoq": 363.23445185679566,
+        "orders_per_year": 0.6910137480542626,
+        "days_between_orders": 528.2094618634678,
+        "total_annual_cost": 780.3041244162788
+      },
+      {
+        "medicine": "KIRKLAND FISH OIL 1000IU",
+        "annual_demand": 230.0,
+        "eoq": 262.67851073127395,
+        "orders_per_year": 0.8755950357709131,
+        "days_between_orders": 416.85937572571737,
+        "total_annual_cost": 1182.678510731274
+      },
+      {
+        "medicine": "CLODIN (CLONIDINE) 150MG TAB",
+        "annual_demand": 220.0,
+        "eoq": 185.2734226346342,
+        "orders_per_year": 1.1874342087037917,
+        "days_between_orders": 307.3854511892794,
+        "total_annual_cost": 2048.2302626111377
       }
     ],
-    "average_eoq": 1051.3500586125049,
-    "average_orders_per_year": 6.666509225645834,
-    "total_annual_ordering_cost": 19999.527676937498,
-    "total_annual_holding_cost": 19999.527676937498,
-    "total_annual_purchase_cost": 1422308.39,
-    "total_combined_cost": 1462307.4453538752
+    "average_eoq": 250.9096530854084,
+    "average_orders_per_year": 1.2622011437507985,
+    "total_annual_ordering_cost": 3786.6034312523957,
+    "total_annual_holding_cost": 3786.6034312523957,
+    "total_annual_purchase_cost": 49878.82,
+    "total_combined_cost": 57452.02686250479
   },
   "model_3_inventory_allocation": {
     "total_products_optimized": 1,
-    "total_budget_allocated": 1363891.85787343,
-    "total_expected_profit": 1139659.2178734299,
-    "budget_constraint_php": 12379103.31,
-    "storage_constraint_units": 560581.6,
+    "total_budget_allocated": 44217.600000000006,
+    "total_expected_profit": 39972.710399999996,
+    "budget_constraint_php": 291167.68799999997,
+    "storage_constraint_units": 14739.2,
     "top_5_allocations": [
       {
-        "medicine": "RETANIX (CETIRIZINE) 10MG TAB",
-        "optimal_allocation": 560581.6,
-        "allocated_value": 1363891.85787343,
-        "profit_margin": 83.55935342633236,
-        "expected_profit": 1139659.2178734299
+        "medicine": "ALLECUR (CETIRIZINE) 10MG TAB",
+        "optimal_allocation": 14739.2,
+        "allocated_value": 44217.600000000006,
+        "profit_margin": 90.39999999999999,
+        "expected_profit": 39972.710399999996
       }
     ]
   },
@@ -197,33 +134,33 @@
     "scenario_summary": {
       "Pessimistic": {
         "products_analyzed": 10,
-        "average_profit_change_pct": -75.9743231438708,
-        "min_profit_change_pct": -130.13215443368452,
-        "max_profit_change_pct": -32.55281076898035
+        "average_profit_change_pct": -41.51776664381516,
+        "min_profit_change_pct": -77.77777777777779,
+        "max_profit_change_pct": -28.849557522123888
       },
       "Conservative": {
         "products_analyzed": 10,
-        "average_profit_change_pct": -9.999999999999996,
-        "min_profit_change_pct": -10.000000000000126,
-        "max_profit_change_pct": -9.999999999999847
+        "average_profit_change_pct": -9.999999999999982,
+        "min_profit_change_pct": -10.000000000000012,
+        "max_profit_change_pct": -9.999999999999911
       },
       "Current": {
         "products_analyzed": 10,
-        "average_profit_change_pct": -3.1102152348922964e-15,
-        "min_profit_change_pct": -1.7231116426138387e-13,
-        "max_profit_change_pct": 1.8494761687108867e-13
+        "average_profit_change_pct": 3.527871583069719e-15,
+        "min_profit_change_pct": 0.0,
+        "max_profit_change_pct": 3.527871583069719e-14
       },
       "Optimistic": {
         "products_analyzed": 10,
-        "average_profit_change_pct": 55.23154475965716,
-        "min_profit_change_pct": 24.02233274020461,
-        "max_profit_change_pct": 94.15748599921112
+        "average_profit_change_pct": 30.465894775242145,
+        "min_profit_change_pct": 21.360619469026553,
+        "max_profit_change_pct": 56.527777777777665
       },
       "Aggressive": {
         "products_analyzed": 10,
-        "average_profit_change_pct": 120.95827510879019,
-        "min_profit_change_pct": 50.39831749959309,
-        "max_profit_change_pct": 208.96475095473846
+        "average_profit_change_pct": 64.9663707961997,
+        "min_profit_change_pct": 44.38053097345136,
+        "max_profit_change_pct": 123.88888888888891
       }
     }
   },
@@ -231,294 +168,294 @@
     "customer_group_analysis": [
       {
         "customer_group": "Regular",
-        "qty": 503706.0,
-        "sales": 15788912.79,
-        "profit": 3333167.35,
+        "qty": 13784.0,
+        "sales": 355537.5,
+        "profit": 80900.31,
         "avg_discount_pct": 0.0,
-        "profit_margin": 21.11080980896342
+        "profit_margin": 22.75436768273389
       },
       {
         "customer_group": "Senior/PWD",
-        "qty": 197021.0,
-        "sales": 4842926.06,
-        "profit": 638519.5,
-        "avg_discount_pct": 8.831172001400915e-08,
-        "profit_margin": 13.18458081104794
+        "qty": 4640.0,
+        "sales": 129741.98,
+        "profit": 19127.09,
+        "avg_discount_pct": 4.91505588258724e-06,
+        "profit_margin": 14.742406428512961
       }
     ],
-    "total_discounted_products": 1482,
+    "total_discounted_products": 182,
     "top_10_discount_efficient": [
       {
-        "medicine": "BETTER C (ASCORBIC ACID ) 500MG TAB",
-        "qty": 1900.0,
-        "discount_pct": 1.3849686389778841e-06,
-        "profit_margin": 75.0,
-        "discount_efficiency": 35428718.91195397
+        "medicine": "CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
+        "qty": 65.0,
+        "discount_pct": 4.094549536290218e-06,
+        "profit_margin": 10.176470588235293,
+        "discount_efficiency": 710463.6660267386
       },
       {
-        "medicine": "SERVONEX (DONEPEZIL HYDROCHLORIDE) 10MG TAB",
-        "qty": 100.0,
-        "discount_pct": 1.3078725049575627e-06,
-        "profit_margin": -11.702127659574469,
-        "discount_efficiency": 1917801.2325009098
-      },
-      {
-        "medicine": "LIVERAIDE CAP",
-        "qty": 340.0,
-        "discount_pct": 3.7580018900879887e-06,
-        "profit_margin": 3.772812963780033,
-        "discount_efficiency": 1445413.092805432
-      },
-      {
-        "medicine": "MULTICAPS",
-        "qty": 3030.0,
-        "discount_pct": 5.5372764032808135e-05,
-        "profit_margin": 100.0,
-        "discount_efficiency": 902701.4838587489
-      },
-      {
-        "medicine": "DOPEZIL (DONEPEZIL HYDROCHLORIDE) 5MG TAB",
-        "qty": 180.0,
-        "discount_pct": 1.7972540856657375e-06,
-        "profit_margin": -13.322475570032575,
-        "discount_efficiency": 901656.68091343
-      },
-      {
-        "medicine": "OMX PROBIOTIC CAP",
+        "medicine": "GLYXAMBI FC (EMPAGLIFLOZIN + LINAGLIPTIN) 10MG/5MG TAB",
         "qty": 30.0,
-        "discount_pct": 2.413695219784027e-06,
-        "profit_margin": -4.220948410630537,
-        "discount_efficiency": 839416.5550464335
+        "discount_pct": 3.690002995913432e-06,
+        "profit_margin": -12.038659793814432,
+        "discount_efficiency": 345211.39416057675
       },
       {
-        "medicine": "AK LOG TAB",
-        "qty": 1430.0,
-        "discount_pct": 1.1439821049781227e-05,
-        "profit_margin": 0.6758533058756517,
-        "discount_efficiency": 622117.4378713231
+        "medicine": "VESSEL DUE-F 250 LSU (SULODEXIDE",
+        "qty": 30.0,
+        "discount_pct": 9.679176711156663e-06,
+        "profit_margin": -12.706628819502422,
+        "discount_efficiency": 214095.12704585143
       },
       {
-        "medicine": "ENTRESTO (SACUBITRIL-VALSARTAN) 100MGTAB",
+        "medicine": "OHHIRAs PROPOLIS 600MG CAP",
+        "qty": 152.0,
+        "discount_pct": 8.769470137436186e-06,
+        "profit_margin": 5.037306772339438,
+        "discount_efficiency": 193125.42636399582
+      },
+      {
+        "medicine": "NEPHORMIN TAB",
+        "qty": 540.0,
+        "discount_pct": 4.000419162522178e-05,
+        "profit_margin": 12.5,
+        "discount_efficiency": 156188.37703688306
+      },
+      {
+        "medicine": "GLUCERNA VANILLA 900G",
+        "qty": 2.0,
+        "discount_pct": 3.0918673676411493e-07,
+        "profit_margin": 4.306513981623087,
+        "discount_efficiency": 148881.73945880707
+      },
+      {
+        "medicine": "GALVUSMET (VILDAGLIPTIN + METFORMIN) 50/500MG TAB",
+        "qty": 30.0,
+        "discount_pct": 2.9165156154610516e-05,
+        "profit_margin": -3.8091787439613527,
+        "discount_efficiency": 123717.68506618467
+      },
+      {
+        "medicine": "XIGDUO XR (DAPAGLIFLOZIN + METFORMIN) 10/1000MG TAB",
+        "qty": 21.0,
+        "discount_pct": 1.6768920750578286e-05,
+        "profit_margin": -11.124542124542124,
+        "discount_efficiency": 114058.12855997015
+      },
+      {
+        "medicine": "CLODIN (CLONIDINE) 150MG TAB",
+        "qty": 200.0,
+        "discount_pct": 0.00012758382646005367,
+        "profit_margin": 50.13297872340425,
+        "discount_efficiency": 104174.08917261625
+      },
+      {
+        "medicine": "PROGLIN 50MG TAB",
         "qty": 28.0,
-        "discount_pct": 2.222029595241976e-06,
-        "profit_margin": -28.798712012879868,
-        "discount_efficiency": 413824.35872116993
-      },
-      {
-        "medicine": "NEURONERV (VIT. B1+B6+B12) TAB",
-        "qty": 120.0,
-        "discount_pct": 4.691767308985208e-05,
-        "profit_margin": 43.38235294117647,
-        "discount_efficiency": 390524.93608369026
-      },
-      {
-        "medicine": "MX3 COFFEE MIX 10G",
-        "qty": 30.0,
-        "discount_pct": 1.4883203908496036e-05,
-        "profit_margin": 7.291666666666667,
-        "discount_efficiency": 383854.85719588416
+        "discount_pct": 4.283580940017998e-05,
+        "profit_margin": -12.663934426229506,
+        "discount_efficiency": 95350.18840621888
       }
     ],
-    "average_discount_pct": 0.01329775973141918,
-    "average_profit_margin": 20.845059392419138
+    "average_discount_pct": 0.01630122510384499,
+    "average_profit_margin": 21.241713279572863
   },
   "model_6_resource_planning": {
     "planning_horizon_days": 90,
-    "total_products_planned": 3465,
-    "total_storage_needed_cubic_feet": 71597.46073793755,
-    "total_capital_required_php": 1054039.0708609272,
-    "average_daily_demand": 0.19132451696311678,
-    "total_projected_demand": 59664.55061494797,
+    "total_products_planned": 874,
+    "total_storage_needed_cubic_feet": 68613.5172413793,
+    "total_capital_required_php": 903623.8593103449,
+    "average_daily_demand": 0.7268997080407166,
+    "total_projected_demand": 57177.93103448275,
     "top_5_resource_requirements": [
       {
-        "medicine": "BIOGESIC 500MG TAB",
-        "daily_demand": 16.128666035950804,
-        "projected_demand": 1451.5799432355723,
-        "storage_needed": 1741.8959318826867,
-        "capital_needed": 3677.673320719016
-      },
-      {
-        "medicine": "RETASAR (LOSARTAN) 50MG TAB",
-        "daily_demand": 11.077578051087984,
-        "projected_demand": 996.9820245979186,
-        "storage_needed": 1196.3784295175021,
-        "capital_needed": 1442.9673604541151
-      },
-      {
-        "medicine": "APPEVIT CAP",
-        "daily_demand": 7.261116367076632,
-        "projected_demand": 653.5004730368969,
-        "storage_needed": 784.2005676442762,
-        "capital_needed": 5594.67587511826
-      },
-      {
         "medicine": "NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-        "daily_demand": 6.843897824030274,
-        "projected_demand": 615.9508041627247,
-        "storage_needed": 739.1409649952697,
-        "capital_needed": 871.4976726584672
+        "daily_demand": 21.275862068965516,
+        "projected_demand": 1914.8275862068965,
+        "storage_needed": 2297.793103448276,
+        "capital_needed": 2723.275862068965
       },
       {
-        "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-        "daily_demand": 6.4228949858088935,
-        "projected_demand": 578.0605487228004,
-        "storage_needed": 693.6726584673604,
-        "capital_needed": 17070.527511825923
+        "medicine": "NEPHORMIN TAB",
+        "daily_demand": 19.862068965517242,
+        "projected_demand": 1787.5862068965519,
+        "storage_needed": 2145.1034482758623,
+        "capital_needed": 17428.96551724138
+      },
+      {
+        "medicine": "SAPHLOR-50 (LOSARTAN) 50MG TAB",
+        "daily_demand": 17.551724137931036,
+        "projected_demand": 1579.6551724137933,
+        "storage_needed": 1895.5862068965519,
+        "capital_needed": 2081.4206896551723
+      },
+      {
+        "medicine": "BIOGESIC (PARACETAMOL) 500MG TAB",
+        "daily_demand": 14.10344827586207,
+        "projected_demand": 1269.3103448275863,
+        "storage_needed": 1523.1724137931035,
+        "capital_needed": 3236.741379310345
+      },
+      {
+        "medicine": "AMLOTHIX (AMLODIPINE) 5MG TAB",
+        "daily_demand": 10.724137931034482,
+        "projected_demand": 965.1724137931034,
+        "storage_needed": 1158.206896551724,
+        "capital_needed": 1127.6689655172413
       }
     ]
   },
   "model_7_anomaly_detection": {
-    "total_days_analyzed": 1035,
-    "anomalies_detected": 100,
-    "anomaly_percentage": 9.66183574879227,
+    "total_days_analyzed": 30,
+    "anomalies_detected": 5,
+    "anomaly_percentage": 16.666666666666664,
     "critical_anomalies": [
       {
-        "date": "2024-09-18 00:00:00",
-        "sales": 118645.44,
-        "qty": 7258.0,
-        "profit": 22515.43,
-        "anomaly_score": -0.7865536155924449
+        "date": "2023-01-28 00:00:00",
+        "sales": 31301.469999999998,
+        "qty": 628.0,
+        "profit": 9029.47,
+        "anomaly_score": -0.677526940715402
       },
       {
-        "date": "2024-03-21 00:00:00",
-        "sales": 66970.49,
-        "qty": 3141.0,
-        "profit": 19546.56,
-        "anomaly_score": -0.7512465992630429
+        "date": "2023-01-08 00:00:00",
+        "sales": 3573.25,
+        "qty": 149.0,
+        "profit": 587.63,
+        "anomaly_score": -0.6124082917102387
       },
       {
-        "date": "2024-03-18 00:00:00",
-        "sales": 87535.88,
-        "qty": 1509.0,
-        "profit": 19302.38,
-        "anomaly_score": -0.722854549151825
+        "date": "2023-01-30 00:00:00",
+        "sales": 27556.15,
+        "qty": 816.0,
+        "profit": 4517.91,
+        "anomaly_score": -0.549026801126642
       },
       {
-        "date": "2024-09-25 00:00:00",
-        "sales": 96570.61,
-        "qty": 1255.0,
-        "profit": 72827.65,
-        "anomaly_score": -0.7205729953070982
+        "date": "2023-01-22 00:00:00",
+        "sales": 6839.7,
+        "qty": 177.0,
+        "profit": 1924.03,
+        "anomaly_score": -0.5307514789766753
       },
       {
-        "date": "2023-02-14 00:00:00",
-        "sales": 77845.62,
-        "qty": 851.0,
-        "profit": 24822.57,
-        "anomaly_score": -0.6745594706115428
+        "date": "2023-01-29 00:00:00",
+        "sales": 7894.46,
+        "qty": 268.0,
+        "profit": 1208.03,
+        "anomaly_score": -0.5296275278826299
       }
     ],
-    "average_anomaly_score": -0.5696930507380633
+    "average_anomaly_score": -0.5798682080823175
   },
   "financial_summary": {
-    "total_sales": 20631838.85,
-    "total_cost": 8268542.26,
-    "total_profit": 3971686.85,
-    "overall_profit_margin_pct": 19.250280495477988,
-    "total_quantity_sold": 700727,
-    "average_transaction_value": 175.44677412497026,
-    "average_profit_per_transaction": 33.77399613932447
+    "total_sales": 485279.48,
+    "total_cost": 179470.38999999998,
+    "total_profit": 100027.4,
+    "overall_profit_margin_pct": 20.61232838446002,
+    "total_quantity_sold": 18424,
+    "average_transaction_value": 162.90012755958375,
+    "average_profit_per_transaction": 33.57750923128567
   },
   "top_products_summary": {
     "by_revenue": [
       {
-        "medicine": "VAXIRAB 2.5 IU 1ML",
-        "total_qty": 596.0,
-        "total_sales": 1080064.0,
-        "total_profit": 169344.76,
-        "profit_margin": 15.679141236074901
-      },
-      {
         "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
-        "total_qty": 22.0,
-        "total_sales": 344871.06,
-        "total_profit": 126751.06,
-        "profit_margin": 36.75317378036881
-      },
-      {
-        "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-        "total_qty": 6789.0,
-        "total_sales": 334139.77,
-        "total_profit": 59214.97,
-        "profit_margin": 17.721616914981418
+        "total_qty": 1.0,
+        "total_sales": 15600.0,
+        "total_profit": 5744.0,
+        "profit_margin": 36.82051282051282
       },
       {
         "medicine": "OHHIRAs PROPOLIS 600MG CAP",
-        "total_qty": 4234.0,
-        "total_sales": 272148.93,
-        "total_profit": 24055.93,
-        "profit_margin": 8.839252096269496
+        "total_qty": 189.0,
+        "total_sales": 11449.92,
+        "total_profit": 865.92,
+        "profit_margin": 7.562672926972415
       },
       {
-        "medicine": "BACTIV 457MG/5ML 70ML",
-        "total_qty": 622.0,
-        "total_sales": 231648.7,
-        "total_profit": 26729.600000000002,
-        "profit_margin": 11.538851718140442
+        "medicine": "RECLINING WHEELCHAIR WITH COMMODE",
+        "total_qty": 1.0,
+        "total_sales": 10080.0,
+        "total_profit": 3080.0,
+        "profit_margin": 30.555555555555557
+      },
+      {
+        "medicine": "NEPHORMIN TAB",
+        "total_qty": 576.0,
+        "total_sales": 9360.0,
+        "total_profit": 1296.0,
+        "profit_margin": 13.846153846153847
+      },
+      {
+        "medicine": "PROHEALTH PULSE OXIMETER",
+        "total_qty": 7.0,
+        "total_sales": 7812.49,
+        "total_profit": 3262.49,
+        "profit_margin": 41.75992545270458
       }
     ],
     "by_quantity": [
       {
-        "medicine": "BIOGESIC 500MG TAB",
-        "total_qty": 17048.0,
-        "total_sales": 71987.05,
-        "profit_margin": 8.696230780397308
-      },
-      {
-        "medicine": "RETASAR (LOSARTAN) 50MG TAB",
-        "total_qty": 11709.0,
-        "total_sales": 28244.75,
-        "profit_margin": 63.730746421901415
-      },
-      {
-        "medicine": "APPEVIT CAP",
-        "total_qty": 7675.0,
-        "total_sales": 109510.6,
-        "profit_margin": 10.65919646134712
-      },
-      {
         "medicine": "NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-        "total_qty": 7234.0,
-        "total_sales": 17058.76,
-        "profit_margin": 61.86721660894462
+        "total_qty": 617.0,
+        "total_sales": 1462.5,
+        "profit_margin": 67.09333333333333
       },
       {
-        "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-        "total_qty": 6789.0,
-        "total_sales": 334139.77,
-        "profit_margin": 17.721616914981418
+        "medicine": "NEPHORMIN TAB",
+        "total_qty": 576.0,
+        "total_sales": 9360.0,
+        "profit_margin": 13.846153846153847
+      },
+      {
+        "medicine": "SAPHLOR-50 (LOSARTAN) 50MG TAB",
+        "total_qty": 509.0,
+        "total_sales": 1117.8,
+        "profit_margin": 70.40168187511183
+      },
+      {
+        "medicine": "BIOGESIC (PARACETAMOL) 500MG TAB",
+        "total_qty": 409.0,
+        "total_sales": 1738.25,
+        "profit_margin": 13.904214008341723
+      },
+      {
+        "medicine": "AMLOTHIX (AMLODIPINE) 5MG TAB",
+        "total_qty": 311.0,
+        "total_sales": 605.6,
+        "profit_margin": 82.02608982826948
       }
     ],
     "by_profit_margin": [
       {
-        "medicine": "ALCIFLORA (BACILLUS CLAUSII) 5ML",
+        "medicine": "DOVE WHITE BEAUTY BAR 135G",
         "profit_margin": 100.0,
-        "total_qty": 97.0,
-        "total_profit": 3183.3
+        "total_qty": 1.0,
+        "total_profit": 78.0
       },
       {
-        "medicine": "ANNIV DISC SDS2YOPET MENDOZA",
+        "medicine": "IRIS SCISSOR OLTEN 4 1/2",
         "profit_margin": 100.0,
-        "total_qty": 4.0,
-        "total_profit": 0.04
+        "total_qty": 1.0,
+        "total_profit": 255.0
       },
       {
-        "medicine": "ATORMED -20 (ATORVASTATIN) 20MG TAB",
+        "medicine": "NOPHLEGM (ACETYLCYSTEINE) 600MG POWDER ORAL SOLUTION",
         "profit_margin": 100.0,
-        "total_qty": 587.0,
-        "total_profit": 4557.6
+        "total_qty": 20.0,
+        "total_profit": 428.56
       },
       {
-        "medicine": "AUGMENTIN (CO-AMOXICLAV) 1G",
+        "medicine": "RINITYN (LORATIDINE) 10MG TAB 5+5",
         "profit_margin": 100.0,
-        "total_qty": 23.0,
-        "total_profit": 1668.5
+        "total_qty": 1.0,
+        "total_profit": 120.0
       },
       {
-        "medicine": "AZIMED (AZITHROMYCIN) 500MG",
+        "medicine": "SERETIDE (SALMETEROL + FLUTICASONE PROP)25/50MCG MDI",
         "profit_margin": 100.0,
-        "total_qty": 10.0,
-        "total_profit": 360.0
+        "total_qty": 1.0,
+        "total_profit": 400.8
       }
     ]
   },

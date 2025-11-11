@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-12 00:15:32.844403",
+    "input_file": "database",
+    "output_directory": "C:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Predictive\\ml_random_forest\\database_data"
+  },
+  "forecast_config": {
+    "forecast_horizon_months": 6,
+    "seasonal_period_months": 12,
+    "min_coverage_threshold": 0.7,
+    "top_n_products": 5
+  },
+  "overall_metrics": {
+    "total_products_forecasted": 5,
+    "products_with_rf": 0,
+    "products_with_croston": 0,
+    "products_with_sn": 5,
+    "avg_mase_holdout": 484.4,
+    "median_mase_holdout": 509.0,
+    "avg_mase_walkforward": null,
+    "median_mase_walkforward": null
+  },
+  "models_used": [
+    "RandomForest",
+    "Seasonal-Naive",
+    "Croston-SBA",
+    "Blend"
+  ],
+  "top_products_by_holdout_mase": [
+    {
+      "sku": "4806524772906",
+      "description": "AMLOTHIX (AMLODIPINE) 5MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 311.0,
+      "plot": "rf_4806524772906.png"
+    },
+    {
+      "sku": "4807788561688",
+      "description": "BIOGESIC (PARACETAMOL) 500MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 409.0,
+      "plot": "rf_4807788561688.png"
+    },
+    {
+      "sku": "78014183",
+      "description": "SAPHLOR-50 (LOSARTAN) 50MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 509.0,
+      "plot": "rf_78014183.png"
+    }
+  ],
+  "all_products": [
+    {
+      "sku": "8904179014702",
+      "description": "NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 617.0,
+      "plot": "rf_8904179014702.png"
+    },
+    {
+      "sku": "4806524781854",
+      "description": "NEPHORMIN TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 576.0,
+      "plot": "rf_4806524781854.png"
+    },
+    {
+      "sku": "78014183",
+      "description": "SAPHLOR-50 (LOSARTAN) 50MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 509.0,
+      "plot": "rf_78014183.png"
+    },
+    {
+      "sku": "4807788561688",
+      "description": "BIOGESIC (PARACETAMOL) 500MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 409.0,
+      "plot": "rf_4807788561688.png"
+    },
+    {
+      "sku": "4806524772906",
+      "description": "AMLOTHIX (AMLODIPINE) 5MG TAB",
+      "chosen": "SN",
+      "MASE_WF": NaN,
+      "MASE_holdout": 311.0,
+      "plot": "rf_4806524772906.png"
+    }
+  ]
+}

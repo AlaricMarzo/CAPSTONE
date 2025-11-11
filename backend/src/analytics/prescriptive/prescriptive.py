@@ -115,7 +115,7 @@ def load_data_from_database():
         if df.empty:
             raise ValueError("No data found in warehouse.fact_sales table.")
 
-        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 

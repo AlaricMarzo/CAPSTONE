@@ -1,61 +1,53 @@
 ================================================================================
 PHARMACY SALES PRESCRIPTIVE RECOMMENDATIONS (IMPROVED)
-Generated: 2025-11-11 02:56:07
+Generated: 2025-11-12 00:15:36
 ================================================================================
 
 [INVENTORY] INVENTORY MANAGEMENT RECOMMENDATIONS:
 
   OK HIGH PRIORITY REORDERS (Top 5 by demand):
-    - RETASAR (LOSARTAN) 50MG TAB: Reorder at 398 units
-      - Safety stock: 205 units | 30-day forecast: 723 units
-    - NOVASARTAN (LOSARTAN K) 50MG FC TAB: Reorder at 373 units
-      - Safety stock: 192 units | 30-day forecast: 588 units
-    - BIOGESIC 500MG TAB: Reorder at 285 units
-      - Safety stock: 172 units | 30-day forecast: 422 units
-    - OHHIRA&#039;S RED OMX PROBIOTICS CAP: Reorder at 166 units
-      - Safety stock: 71 units | 30-day forecast: 248 units
-    - NEPHROMIN TAB: Reorder at 223 units
-      - Safety stock: 150 units | 30-day forecast: 502 units
+    - BIOGESIC (PARACETAMOL) 500MG TAB: Reorder at 164 units
+      - Safety stock: 69 units | 30-day forecast: 349 units
 
 [ORDERING] ORDERING STRATEGY RECOMMENDATIONS:
 
   OK OPTIMAL ORDER QUANTITIES (Top 5):
-    - BIOGESIC 500MG TAB: Order 2201 units every 47 days
-    - RETASAR (LOSARTAN) 50MG TAB: Order 2413 units every 75 days
-    - APPEVIT CAP: Order 803 units every 38 days
-    - NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 1919 units every 97 days
-    - OHHIRA&#039;S RED OMX PROBIOTICS CAP: Order 407 units every 22 days
+    - NOVASARTAN (LOSARTAN K) 50MG FC TAB: Order 559 units every 331 days
+    - NEPHORMIN TAB: Order 206 units every 131 days
+    - SAPHLOR-50 (LOSARTAN) 50MG TAB: Order 527 units every 378 days
+    - BIOGESIC (PARACETAMOL) 500MG TAB: Order 340 units every 303 days
+    - AMLOTHIX (AMLODIPINE) 5MG TAB: Order 438 units every 514 days
 
 [BUDGET] BUDGET ALLOCATION RECOMMENDATIONS:
 
   OK PRIORITIZE INVESTMENT IN:
-    - RETANIX (CETIRIZINE) 10MG TAB: 560582 units (PHP1,363,891.86)
+    - ALLECUR (CETIRIZINE) 10MG TAB: 14739 units (PHP44,217.60)
 
 [PRICING] PRICING & DISCOUNT RECOMMENDATIONS:
 
   OK MAINTAIN/INCREASE DISCOUNTS FOR:
-    - BETTER C (ASCORBIC ACID ) 500MG TAB: 0.0% discount (efficiency: 35428718.9)
-    - SERVONEX (DONEPEZIL HYDROCHLORIDE) 10MG TAB: 0.0% discount (efficiency: 1917801.2)
-    - LIVERAIDE CAP: 0.0% discount (efficiency: 1445413.1)
+    - CORVELAM 800MG (SEVELAMER CARBONATE) TAB: 0.0% discount (efficiency: 710463.7)
+    - GLYXAMBI FC (EMPAGLIFLOZIN + LINAGLIPTIN) 10MG/5MG TAB: 0.0% discount (efficiency: 345211.4)
+    - VESSEL DUE-F 250 LSU (SULODEXIDE: 0.0% discount (efficiency: 214095.1)
 
 [SALES] SALES GROWTH OPPORTUNITIES:
 
   OK PROMOTE HIGH-MARGIN PRODUCTS:
-    - ALCIFLORA (BACILLUS CLAUSII) 5ML: 100.0% margin
-    - ANNIV DISC SDS2YOPET MENDOZA: 100.0% margin
-    - ATORMED -20 (ATORVASTATIN) 20MG TAB: 100.0% margin
-    - AUGMENTIN (CO-AMOXICLAV) 1G: 100.0% margin
-    - AZIMED (AZITHROMYCIN) 500MG: 100.0% margin
+    - DOVE WHITE BEAUTY BAR 135G: 100.0% margin
+    - IRIS SCISSOR OLTEN 4 1/2: 100.0% margin
+    - NOPHLEGM (ACETYLCYSTEINE) 600MG POWDER ORAL SOLUTION: 100.0% margin
+    - RINITYN (LORATIDINE) 10MG TAB 5+5: 100.0% margin
+    - SERETIDE (SALMETEROL + FLUTICASONE PROP)25/50MCG MDI: 100.0% margin
 
 [OPERATIONAL] OPERATIONAL EFFICIENCY:
 
-  OK INVESTIGATE 100 ANOMALOUS SALES DAYS
-    - 2024-09-18: PHP118,645.44 (Score: -0.79)
-    - 2024-03-21: PHP66,970.49 (Score: -0.75)
-    - 2024-03-18: PHP87,535.88 (Score: -0.72)
+  OK INVESTIGATE 5 ANOMALOUS SALES DAYS
+    - 2023-01-28: PHP31,301.47 (Score: -0.68)
+    - 2023-01-08: PHP3,573.25 (Score: -0.61)
+    - 2023-01-30: PHP27,556.15 (Score: -0.55)
 
 [RESOURCE] RESOURCE PLANNING (Next 90 Days):
 
   OK PREPARE FOR NEXT QUARTER:
-    - Storage needed: 71,597 cubic feet
-    - Capital required: PHP1,054,039.07
+    - Storage needed: 68,614 cubic feet
+    - Capital required: PHP903,623.86

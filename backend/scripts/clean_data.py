@@ -351,10 +351,10 @@ def remove_incomplete_rows(df):
         removed['error_stage']  = 'remove_incomplete_rows'
         errors.append(removed)
         df_clean = df_clean.drop(rows_to_remove)
-        print(f"[OK] Removed {len(rows_to_remove)} incomplete rows", file=sys.stderr)
+        print(f" Removed {len(rows_to_remove)} incomplete rows", file=sys.stderr)
         print(f"  Remaining rows: {len(df_clean)}", file=sys.stderr)
     else:
-        print("[OK] No incomplete rows found - all data appears complete", file=sys.stderr)
+        print(" No incomplete rows found - all data appears complete", file=sys.stderr)
 
     important_columns = ['Item Code', 'Description', 'Qty', 'Sales', 'Cost']
     available_important = [c for c in important_columns if c in df_clean.columns]
@@ -366,7 +366,7 @@ def remove_incomplete_rows(df):
             removed2['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed2)
             df_clean = df_clean.loc[~empty_mask]
-            print(f"[OK] Removed {int(empty_mask.sum())} completely empty data rows", file=sys.stderr)
+            print(f" Removed {int(empty_mask.sum())} completely empty data rows", file=sys.stderr)
 
     # Placeholder/header rows & non-item adjustments clean (from CLEAN.py)
     num_cols = [c for c in ['Qty', 'Sales', 'Cost', 'Profit'] if c in df_clean.columns]
@@ -393,7 +393,7 @@ def remove_incomplete_rows(df):
             removed3['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed3)
             df_clean = df_clean.loc[~placeholder_mask]
-            print(f"[OK] Removed {int(placeholder_mask.sum())} placeholder/non-item rows", file=sys.stderr)
+            print(f" Removed {int(placeholder_mask.sum())} placeholder/non-item rows", file=sys.stderr)
 
     fin_cols = [c for c in ['Sales', 'Cost', 'Profit'] if c in df_clean.columns]
     if fin_cols:
@@ -427,7 +427,7 @@ def remove_incomplete_rows(df):
             removed_adj['error_stage']  = 'remove_incomplete_rows'
             errors.append(removed_adj)
             df_clean = df_clean.loc[~adj_mask]
-            print(f"[OK] Removed {int(adj_mask.sum())} non-item adjustment rows", file=sys.stderr)
+            print(f" Removed {int(adj_mask.sum())} non-item adjustment rows", file=sys.stderr)
 
     final_count = len(df_clean)
     print(f"\nData validation summary:", file=sys.stderr)
@@ -516,7 +516,7 @@ def map_columns_improved(df, target_columns):
 
         if best_match and best_score >= 20:
             column_mapping[target_col] = best_match
-            print(f"  [OK] {target_col} <- '{best_match}' (confidence: {best_score}%)", file=sys.stderr)
+            print(f"   {target_col} <- '{best_match}' (confidence: {best_score}%)", file=sys.stderr)
         else:
             print(f"  [WARNING] {target_col} <- NO MATCH FOUND (best was '{best_match}' with {best_score}%)", file=sys.stderr)
 
@@ -819,7 +819,7 @@ def clean_dataframe_improved(df):
             removed['error_stage']  = 'pre-map'
             errors_pre.append(removed)
             df_clean = df_clean.loc[~mask]
-    print(f"[OK] Removed {rows_before - len(df_clean)} total/summary rows", file=sys.stderr)
+    print(f" Removed {rows_before - len(df_clean)} total/summary rows", file=sys.stderr)
 
     # 2) Remove completely empty rows
     empty_mask_all = df_clean.isna().all(axis=1)
@@ -829,7 +829,7 @@ def clean_dataframe_improved(df):
         removed['error_stage']  = 'pre-map'
         errors_pre.append(removed)
         df_clean = df_clean.loc[~empty_mask_all]
-    print(f"[OK] After removing completely empty rows: {len(df_clean)} rows", file=sys.stderr)
+    print(f" After removing completely empty rows: {len(df_clean)} rows", file=sys.stderr)
 
     if len(df_clean) == 0:
         print("WARNING: No data remaining after cleaning!", file=sys.stderr)
@@ -852,7 +852,7 @@ def clean_dataframe_improved(df):
             # Ensure we don't try to access a column that doesn't exist in df_clean
             if source_col in df_clean.columns:
                 df_final[target_col] = df_clean[source_col].copy()
-                print(f"[OK] Mapped '{source_col}' -> '{target_col}' ({df_clean[source_col].notna().sum()} values)", file=sys.stderr)
+                print(f" Mapped '{source_col}' -> '{target_col}' ({df_clean[source_col].notna().sum()} values)", file=sys.stderr)
             else:
                 print(f"[WARNING] Mapped source column '{source_col}' not found in raw data for '{target_col}'.", file=sys.stderr)
                 df_final[target_col] = pd.NA
@@ -907,12 +907,12 @@ def clean_dataframe_improved(df):
             if pd.notna(exp_date) and str(exp_date).strip() != '':
                 df_final.loc[idx, 'Expiration Date'] = exp_date
                 descriptions_with_dates += 1
-        print(f"[OK] Extracted expiration dates from {descriptions_with_dates} descriptions", file=sys.stderr)
+        print(f" Extracted expiration dates from {descriptions_with_dates} descriptions", file=sys.stderr)
 
 
     # -------- unit normalization --------
     df_final, unit_msg = normalize_units_on_df(df_final)
-    print(f"[OK] {unit_msg}", file=sys.stderr)
+    print(f" {unit_msg}", file=sys.stderr)
 
     # -------- type cleaning --------
     df_final = clean_data_types_improved(df_final)
@@ -941,7 +941,7 @@ def clean_dataframe_improved(df):
         removed_dup['error_stage']  = 'duplicates'
         errors_post.append(removed_dup)
         df_final = df_final.loc[~dup_mask]
-    print(f"[OK] Removed {rows_before_dupe_check - len(df_final)} duplicate rows", file=sys.stderr)
+    print(f" Removed {rows_before_dupe_check - len(df_final)} duplicate rows", file=sys.stderr)
 
     # (Optional) remove rows effectively empty across important fields (after type clean)
     important = [c for c in ['Item Code','Description','Qty','Sales','Cost'] if c in df_final.columns]
@@ -953,7 +953,7 @@ def clean_dataframe_improved(df):
             removed_empty['error_stage']  = 'post-map'
             errors_post.append(removed_empty)
             df_final = df_final.loc[~mask_all_null]
-            print(f"[OK] Removed {int(mask_all_null.sum())} rows with all key fields null", file=sys.stderr)
+            print(f" Removed {int(mask_all_null.sum())} rows with all key fields null", file=sys.stderr)
 
     # -------- assemble all errors --------
     errors_all = []
@@ -1015,18 +1015,18 @@ def save_error_report(errors_df, filename='cleaning_errors.xlsx'):
     ext = os.path.splitext(filename)[1].lower()
     if ext == '.csv':
         errors_df.to_csv(filename, index=False)
-        print(f"[OK] Errors CSV saved to '{filename}' ({len(errors_df)} rows).", file=sys.stderr)
+        print(f" Errors CSV saved to '{filename}' ({len(errors_df)} rows).", file=sys.stderr)
         return filename
     try:
         with pd.ExcelWriter(filename, engine='openpyxl') as writer:
             errors_df.to_excel(writer, index=False, sheet_name='removed_rows')
-        print(f"[OK] Errors workbook saved to '{filename}' ({len(errors_df)} rows).", file=sys.stderr)
+        print(f" Errors workbook saved to '{filename}' ({len(errors_df)} rows).", file=sys.stderr)
         return filename
     except Exception as e:
         print(f"Could not write Excel file ({e}). Saving CSV fallback.", file=sys.stderr)
         fallback = os.path.splitext(filename)[0] + '.csv'
         errors_df.to_csv(fallback, index=False)
-        print(f"[OK] Errors CSV saved to '{fallback}' ({len(errors_df)} rows).", file=sys.stderr)
+        print(f" Errors CSV saved to '{fallback}' ({len(errors_df)} rows).", file=sys.stderr)
         return fallback
 
 def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
@@ -1035,7 +1035,7 @@ def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
     if 'Expiration Date' in df_out.columns:
         df_out['Expiration Date'] = df_out['Expiration Date'].astype(str).replace({'NaT':'', 'nan':'', 'None':''})
     df_out.to_csv(filename, index=False)
-    print(f"[OK] Cleaned data saved to '{filename}'")
+    print(f" Cleaned data saved to '{filename}'")
     print(f"Final dataset contains {len(df_out)} records")
 
     # Optional summary
@@ -1103,7 +1103,7 @@ def get_data_sources():
             valid_sources = []
             for source in sources:
                 if os.path.exists(source):
-                    print(f"[OK] File found: {source}")
+                    print(f" File found: {source}")
                     valid_sources.append(source)
                 else:
                     print(f"[WARNING] File not found: {source}")
@@ -1121,7 +1121,7 @@ def get_data_sources():
             valid_sources = []
             for source in sources:
                 if source.startswith(('http://', 'https://')):
-                    print(f"[OK] URL detected: {source}")
+                    print(f" URL detected: {source}")
                     valid_sources.append(source)
                 else:
                     print(f"[WARNING] Invalid URL: {source}")
@@ -1234,7 +1234,7 @@ if __name__ == "__main__":
                 all_cleaned_dfs.append(cleaned_df)
                 all_errors_dfs.append(errors_df)
                 
-                print(f"[OK] Cleaned {len(cleaned_df)} rows from {source_name}")
+                print(f" Cleaned {len(cleaned_df)} rows from {source_name}")
                 
             except Exception as e:
                 print(f"[ERROR] Error processing {data_source}: {str(e)}")
@@ -1252,7 +1252,7 @@ if __name__ == "__main__":
         combined_cleaned_df = pd.concat(all_cleaned_dfs, ignore_index=True)
         combined_errors_df = pd.concat(all_errors_dfs, ignore_index=True) if all_errors_dfs else pd.DataFrame()
         
-        print(f"[OK] Combined {len(all_cleaned_dfs)} file(s) into {len(combined_cleaned_df)} total rows")
+        print(f" Combined {len(all_cleaned_dfs)} file(s) into {len(combined_cleaned_df)} total rows")
         print(f"  Breakdown by file:")
         for df in all_cleaned_dfs:
             source = df['_source_file'].iloc[0] if '_source_file' in df.columns and len(df) > 0 else 'unknown'

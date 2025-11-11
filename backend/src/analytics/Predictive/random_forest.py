@@ -213,7 +213,7 @@ def load_data_from_database():
         if df.empty:
             raise ValueError("No data found in warehouse.fact_sales table.")
 
-        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
@@ -224,6 +224,7 @@ def load_data_from_database():
 
 def main():
     ap=argparse.ArgumentParser()
+    ap.add_argument("--input", type=str, help="Path to input CSV file (optional, uses database if not provided)")
     ap.add_argument("--topn", type=int, default=TOP_N)
     ap.add_argument("--min_cov", type=float, default=0.7)
     args=ap.parse_args()
@@ -287,7 +288,7 @@ def main():
             tbl=[met("Croston-SBA", cro.values, "alpha=0.1"), met("Seasonal-Naive", sn, f"m={SEASON_M}")]
             pred_map={"Croston holdout":pd.Series(cro.values,index=test.index), "SN holdout":pd.Series(sn,index=test.index)}
             png=out_dir/f"rf_{clean_name(sku)}.png"
-            plot_with_table(f"Intermittent → Croston — {sku} — {desc}", y.index[:-h], y.index, y.values, test.index, pred_map, tbl, png)
+            plot_with_table(f"Intermittent to Croston — {sku} — {desc}", y.index[:-h], y.index, y.values, test.index, pred_map, tbl, png)
             croston_sba(y, steps=FORECAST_STEPS).to_csv(out_dir/f"{clean_name(sku)}_forecast.csv", header=["forecast"])
             rows.append({"sku":sku,"description":desc,"chosen":"Croston-SBA","MASE_WF":np.nan,"MASE_holdout":tbl[0][6],"plot":png.name})
             continue
@@ -332,7 +333,7 @@ def main():
 
     if rows:
         pd.DataFrame(rows).to_csv(out_dir/"rf_summary.csv", index=False)
-        print(f"[OK] Saved to {out_dir/'rf_summary.csv'}")
+        print(f" Saved to {out_dir/'rf_summary.csv'}")
 
         valid_mase_holdout = [r['MASE_holdout'] for r in rows if not np.isnan(r.get('MASE_holdout', np.nan))]
         valid_mase_wf = [r['MASE_WF'] for r in rows if not np.isnan(r.get('MASE_WF', np.nan))]
@@ -366,7 +367,7 @@ def main():
 
         with open(out_dir / "summary.json", "w") as f:
             json.dump(summary, f, indent=2, default=str)
-        print(f"[OK] Saved summary.json")
+        print(f" Saved summary.json")
 
 if __name__=="__main__":
     main()

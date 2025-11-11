@@ -357,7 +357,7 @@ def load_data_from_database():
         if df.empty:
             raise ValueError("No data found in warehouse.fact_sales table.")
 
-        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
@@ -492,7 +492,7 @@ def main():
                 png_path, title_prefix="SARIMA/ETS/SARIMAX — 80% Train, 20% Test"
             )
 
-    print(f"[OK] Done. Check outputs in: {OUT_ROOT}")
+    print(f" Done. Check outputs in: {OUT_ROOT}")
 
 if __name__ == "__main__":
     main()

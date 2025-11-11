@@ -394,7 +394,7 @@ def compute_kpis(df: pd.DataFrame, out_dir: str) -> Dict[str, Any]:
             "unique_products": int(df["description"].nunique()),
         },
         # Averages for you to show in the dashboard:
-        "avg_monthly_growth_rate_cagr": float(cagr_avg) if pd.notnull(cagr_avg) else None,   # e.g., 0.0123 (→1.23%)
+        "avg_monthly_growth_rate_cagr": float(cagr_avg) if pd.notnull(cagr_avg) else None,   # e.g., 0.0123 (to1.23%)
         "avg_monthly_growth_rate_mean": float(mean_avg) if pd.notnull(mean_avg) else None,   # arithmetic mean of MoM %
         "outputs": [str(p) for p in out_path.glob("*.csv")]
                 + [str(p) for p in out_path.glob("*.json")]

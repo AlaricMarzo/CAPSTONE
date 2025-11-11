@@ -488,7 +488,7 @@ export default function DescriptiveAnalytics() {
                 {data.mba_rules.slice(0, 5).map((rule, idx) => (
                   <div key={idx} className="border-l-4 border-blue-500 pl-4 py-2">
                     <div className="text-sm font-semibold text-foreground">{rule.item_a}</div>
-                    <div className="text-xs text-muted-foreground">→ {rule.item_b}</div>
+                    <div className="text-xs text-muted-foreground">to {rule.item_b}</div>
                     <div className="flex gap-4 mt-1 text-xs">
                       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Lift: {rule.lift.toFixed(1)}x</span>
                       <span className="bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -666,7 +666,7 @@ export default function DescriptiveAnalytics() {
               {data.mba_rules.slice(0, 5).map((rule, idx) => (
                 <div key={idx} className="border-l-4 border-blue-500 pl-4 py-2">
                   <div className="text-sm font-semibold text-foreground">{rule.item_a}</div>
-                  <div className="text-xs text-muted-foreground">→ {rule.item_b}</div>
+                  <div className="text-xs text-muted-foreground">to {rule.item_b}</div>
                   <div className="flex gap-4 mt-1 text-xs">
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded">Lift: {rule.lift.toFixed(1)}x</span>
                     <span className="bg-green-100 text-green-800 px-2 py-1 rounded">

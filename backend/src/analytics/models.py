@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Predictive Analytics Models Runner
-Runs XGBoost and Random Forest models for forecasting
+Analytics Models Runner
+Runs Descriptive, Predictive, and Prescriptive analytics models
 """
 import os
 import sys
@@ -11,7 +11,28 @@ from pathlib import Path
 
 def main():
     script_dir = Path(__file__).parent
+    descriptive_dir = script_dir / "Descriptive"
     predictive_dir = script_dir / "Predictive"
+    prescriptive_dir = script_dir / "prescriptive"
+
+    print("Running Descriptive Analytics Models...")
+
+    # Run Descriptive analytics
+    print("Running Descriptive analytics...")
+    try:
+        result = subprocess.run([
+            sys.executable, "descriptive.py"
+        ], cwd=descriptive_dir, capture_output=True, text=True, timeout=600)
+
+        if result.returncode != 0:
+            print(f"Descriptive failed: {result.stderr}")
+        else:
+            print("Descriptive completed successfully")
+
+    except subprocess.TimeoutExpired:
+        print("Descriptive timed out")
+    except Exception as e:
+        print(f"Error running Descriptive: {e}")
 
     print("Running Predictive Analytics Models...")
 
@@ -36,7 +57,7 @@ def main():
     print("Running Random Forest model...")
     try:
         result = subprocess.run([
-            sys.executable, "random_forest.py"
+            sys.executable, "random_forest.py", "--topn", "5", "--min_cov", "0.7"
         ], cwd=predictive_dir, capture_output=True, text=True, timeout=300)
 
         if result.returncode != 0:
@@ -49,42 +70,28 @@ def main():
     except Exception as e:
         print(f"Error running Random Forest: {e}")
 
-    # Create dummy SARIMA outputs if they don't exist
-    sarima_dir = predictive_dir / "ts_sarima-ets-sarimax(2,1,2)"
-    sarima_dir.mkdir(parents=True, exist_ok=True)
-
-    forecasts_path = sarima_dir / "forecasts.csv"
-    metrics_path = sarima_dir / "metrics.csv"
-
-    if not forecasts_path.exists():
-        # Create dummy forecasts
-        dates = pd.date_range(start=pd.Timestamp.now(), periods=6, freq='MS')
-        dummy_forecasts = pd.DataFrame({
-            'date': dates,
-            'actual': [100, 110, 105, 115, 120, 125],
-            'predicted': [102, 108, 107, 113, 118, 123],
-            'lower_bound': [95, 100, 98, 105, 110, 115],
-            'upper_bound': [110, 120, 115, 125, 130, 135]
-        })
-        dummy_forecasts.to_csv(forecasts_path, index=False)
-        print(f"Created dummy SARIMA forecasts: {forecasts_path}")
-
-    if not metrics_path.exists():
-        # Create dummy metrics
-        dummy_metrics = pd.DataFrame({
-            'model': ['SARIMA'],
-            'mae': [5.2],
-            'mse': [28.5],
-            'rmse': [5.34],
-            'mape': [4.8],
-            'mase': [0.85],
-            'wape': [4.2],
-            'mpe': [-1.2]
-        })
-        dummy_metrics.to_csv(metrics_path, index=False)
-        print(f"Created dummy SARIMA metrics: {metrics_path}")
-
     print("Predictive analytics models completed.")
+
+    print("Running Prescriptive Analytics Models...")
+
+    # Run Prescriptive analytics
+    print("Running Prescriptive analytics...")
+    try:
+        result = subprocess.run([
+            sys.executable, "prescriptive.py"
+        ], cwd=prescriptive_dir, capture_output=True, text=True, timeout=1200)
+
+        if result.returncode != 0:
+            print(f"Prescriptive failed: {result.stderr}")
+        else:
+            print("Prescriptive completed successfully")
+
+    except subprocess.TimeoutExpired:
+        print("Prescriptive timed out")
+    except Exception as e:
+        print(f"Error running Prescriptive: {e}")
+
+    print("All analytics models (Descriptive, Predictive, Prescriptive) completed.")
 
 if __name__ == "__main__":
     main()

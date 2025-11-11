@@ -327,7 +327,7 @@ def main():
         plot_with_table(f"ExtraTrees — last-{h} holdout — {label}", y.index[:-h], y.index, y.values, y.index[-h:], pred_map, table_rows, png)
 
         # forward 6m forecast from FULL history (apply bias-corr)
-        # generate ET → SN → Blend(α) → bias-corr
+        # generate ET to SN to Blend(α) to bias-corr
         feats_full = add_ts_features(y); Xfull = feats_full.drop(columns=["y"]).values
         y_tr_raw=feats_full["y"].values; cap=np.quantile(y_tr_raw,0.995); ytr_log=np.log1p(np.minimum(y_tr_raw,cap))
         mdl_full,_ = fit_model_extratrees(Xfull, ytr_log, tune=bool(args.tune))
@@ -363,7 +363,7 @@ def main():
 
     if rows:
         pd.DataFrame(rows).to_csv(OUT_ROOT / clean_name(in_path.stem) / "extratrees_summary.csv", index=False)
-        print(f"\n✅ Saved summary → {OUT_ROOT/clean_name(in_path.stem)/'extratrees_summary.csv'}")
+        print(f"\n✅ Saved summary to {OUT_ROOT/clean_name(in_path.stem)/'extratrees_summary.csv'}")
     else:
         print("No results produced.")
 

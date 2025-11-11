@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 from kpi import compute_kpis
 from mba import run_mba
-from clustering import cluster_all
+from dbscan import cluster_all
 
 def load_data_from_database():
     """Load data from the warehouse.fact_sales table in the database"""
@@ -47,7 +47,7 @@ def load_data_from_database():
         if df.empty:
             raise ValueError("No data found in warehouse.fact_sales table.")
 
-        print(f"[OK] Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
+        print(f" Loaded data from database: {len(df):,} rows x {len(df.columns)} columns")
 
         return df
 
@@ -128,8 +128,8 @@ def main():
             "confidence_threshold": mba_res.get('confidence', 0.1),
         },
         "clustering_analysis": {
-            "clusters_identified": clu_res['global']['n_clusters'],
-            "noise_points": clu_res['global']['n_noise'],
+            "clusters_identified": int(clu_res['global']['n_clusters']),
+            "noise_points": int(clu_res['global']['n_noise']),
             "total_points_clustered": len(df),
         },
         "timestamp": str(pd.Timestamp.now()),

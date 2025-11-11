@@ -232,7 +232,7 @@ def main():
             tbl=[met("Croston-SBA", cro.values, "alpha=0.1"), met("Seasonal-Naive", sn, f"m={SEASON_M}")]
             pred_map={"Croston holdout":pd.Series(cro.values,index=test.index), "SN holdout":pd.Series(sn,index=test.index)}
             png=out_dir/f"lstm_{clean_name(sku)}.png"
-            plot_with_table(f"Intermittent → Croston — {sku} — {desc}", y.index[:-h], y.index, y.values, test.index, pred_map, tbl, png)
+            plot_with_table(f"Intermittent to Croston — {sku} — {desc}", y.index[:-h], y.index, y.values, test.index, pred_map, tbl, png)
             croston_sba(y, steps=FORECAST_STEPS).to_csv(out_dir/f"{clean_name(sku)}_forecast.csv", header=["forecast"])
             rows.append({"sku":sku,"description":desc,"chosen":"Croston-SBA","MASE_WF":np.nan,"MASE_holdout":tbl[0][6],"plot":png.name})
             continue
@@ -286,7 +286,7 @@ def main():
 
     if rows:
         pd.DataFrame(rows).to_csv(OUT_ROOT/clean_name(in_path.stem)/"lstm_summary.csv", index=False)
-        print(f"✅ Saved → {OUT_ROOT/clean_name(in_path.stem)/'lstm_summary.csv'}")
+        print(f"✅ Saved to {OUT_ROOT/clean_name(in_path.stem)/'lstm_summary.csv'}")
 
 if __name__=="__main__":
     main()
