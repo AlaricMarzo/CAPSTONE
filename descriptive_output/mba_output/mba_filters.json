@@ -1,6 +1,0 @@
-{
-  "min_support": 0.0005,
-  "min_lift": 1.1,
-  "min_item_tx": 5,
-  "min_pair_tx": 2
-}

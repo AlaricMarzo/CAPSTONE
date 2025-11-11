@@ -3,20 +3,25 @@
     "*.csv",
     "*.log",
     "*.json",
+    ".env",
     "cleaned/",
     "uploads/",
     "descriptive_output/",
     "prescriptive_output/",
+    "outputs/",
     "ml_*",
     "ts_*",
     "**/descriptive_output/**",
     "**/prescriptive_output/**",
+    "**/outputs/**",
     "**/ml_*/**",
     "**/ts_*/**",
     "src/server.js"
   ],
   "watch": [
-    "src/"
+    "src/server.js",
+    "src/routes/"
   ],
-  "ext": "js,mjs,json"
+  "ext": "js,mjs,json",
+  "exec": "node src/server.js"
 }

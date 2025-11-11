@@ -92,6 +92,7 @@ def main():
         print(f"Error running Prescriptive: {e}")
 
     print("All analytics models (Descriptive, Predictive, Prescriptive) completed.")
+    print('{"success": true, "message": "Analytics pipeline completed successfully"}')
 
 if __name__ == "__main__":
     main()

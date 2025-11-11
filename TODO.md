@@ -1,21 +1,11 @@
-# Change Dollar ($) symbols to PHP (₱)
+# TODO: Fix descriptive.py and dbscan.py for cluster graphs
 
-## Tasks
-- [x] Update formatCurrency in frontend/src/pages/InventoryRecommendations.tsx to use PHP currency
-- [x] Update formatCurrency in frontend/src/pages/Dashboard.tsx to use PHP currency
-- [x] Update formatCurrency in frontend/src/pages/DescriptiveAnalytics.tsx to use PHP currency
-- [x] Replace hardcoded $ with ₱ in frontend/src/pages/PrescriptiveAnalytics.tsx
-- [x] Replace hardcoded $ with ₱ in frontend/src/pages/DescriptiveAnalytics.tsx
-- [x] Replace hardcoded $ with ₱ in frontend/src/pages/Dashboard-Descriptive.tsx
-- [x] Replace hardcoded $ with ₱ in frontend/src/pages/Dashboard-Predictive.tsx
-- [x] Replace hardcoded $ with ₱ in frontend/src/pages/Dashboard-Prescriptive.tsx
-- [x] Test the frontend to ensure currency displays correctly with ₱
+## Steps:
+1. Fix axis limit bug in dbscan.py _scatter_plot: change x_iqr to y_iqr in ymax calculation.
+2. Fix n_noise inconsistency in cluster_all: use "total_qty" for global noise instead of "n".
+3. Test the fixes by running descriptive.py to ensure all graphs generate.
 
-# Improve Visibility of Resource Planning Chart in Inventory Tab (Revised)
-
-## Tasks
-- [x] Previous edit reverted due to worsening visibility
-- [x] Edit frontend/src/pages/InventoryRecommendations.tsx: Limit chart to top 10 items, add horizontal scrollbar wrapper, subtle tweaks (dynamic barSize, XAxis fill, tooltip opacity)
-- [x] Further refine: Reduce to top 8 items and adjust container width for optimal fit
-- [ ] Test the changes: Run frontend dev server, navigate to Inventory Recommendations > Resources tab, verify zoomed-in view and scroll navigation
-- [ ] Update TODO.md to mark as completed
+## Status:
+- [ ] Step 1: Edit dbscan.py for axis limit fix.
+- [ ] Step 2: Edit dbscan.py for n_noise fix.
+- [ ] Step 3: Run descriptive.py and verify outputs.

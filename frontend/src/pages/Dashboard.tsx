@@ -163,8 +163,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
     )
   }
 
-  if (error || !prescriptiveData || !prescriptiveData.financial_summary || !prescriptiveData.reorder_points ||
-      !descriptiveData || !predictiveData) {
+  if (error) {
     const fallbackMetrics = getUserMetrics()
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
@@ -230,7 +229,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
 
         <div className="text-destructive flex items-center gap-2 mb-4">
-          Error loading analytics data: {error || 'Invalid data structure'}. Showing fallback data.
+          Error loading analytics data: {error}. Showing fallback data.
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -266,6 +265,126 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             value={`₱${fallbackMetrics.averageOrderValue.toFixed(2)}`}
             change="+5.1% from last month"
             changeType="positive"
+            icon={TrendingUp}
+            color="default"
+            className="shadow-soft hover:shadow-elegant transition-shadow"
+          />
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <SalesTrendsChart />
+          </div>
+          <ProductTrafficCard />
+        </div>
+
+        <RecentAlertsCard />
+      </div>
+    )
+  }
+
+  if (!prescriptiveData || !prescriptiveData.financial_summary || !prescriptiveData.reorder_points ||
+      !descriptiveData || !predictiveData) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-3xl font-bold text-foreground">Dashboard Overview</h2>
+            <p className="text-muted-foreground">Real-time business insights and analytics</p>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <Calendar className="h-4 w-4 text-muted-foreground" />
+              <span className="text-sm text-muted-foreground">Last 30 Days</span>
+            </div>
+            <Button variant="outline" size="sm" className="shadow-soft bg-transparent">
+              <FileText className="h-4 w-4 mr-2" />
+              Export Report
+            </Button>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                  <User className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={onProfileClick}>
+                  <User className="mr-2 h-4 w-4" />
+                  Profile
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem
+                  className="text-destructive cursor-pointer"
+                  onSelect={(e) => {
+                    e.preventDefault()
+                    setConfirmOpen(true)
+                  }}
+                >
+                  Log out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Are you sure you want to log out?</AlertDialogTitle>
+                  <AlertDialogDescription>You will be returned to the login page.</AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={confirmLogout}>Yes, log me out</AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <div className="relative flex-1 max-w-sm">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+            <Input placeholder="Search products, customers, orders..." className="pl-10 shadow-soft" />
+          </div>
+        </div>
+
+        <div className="text-muted-foreground flex items-center gap-2 mb-4">
+          Analytics data not available. Please upload data and wait for processing to complete.
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <MetricCard
+            title="Total Revenue"
+            value="₱0"
+            change="No data"
+            changeType="neutral"
+            icon={DollarSign}
+            color="success"
+            className="shadow-soft hover:shadow-elegant transition-shadow"
+          />
+          <MetricCard
+            title="Total Sales"
+            value="0"
+            change="No data"
+            changeType="neutral"
+            icon={ShoppingCart}
+            color="info"
+            className="shadow-soft hover:shadow-elegant transition-shadow"
+          />
+          <MetricCard
+            title="Active SKUs"
+            value="0"
+            change="No data"
+            changeType="neutral"
+            icon={Package}
+            color="warning"
+            className="shadow-soft hover:shadow-elegant transition-shadow"
+          />
+          <MetricCard
+            title="Forecast Accuracy"
+            value="0%"
+            change="No data"
+            changeType="neutral"
             icon={TrendingUp}
             color="default"
             className="shadow-soft hover:shadow-elegant transition-shadow"

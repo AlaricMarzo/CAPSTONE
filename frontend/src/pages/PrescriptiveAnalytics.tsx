@@ -112,10 +112,18 @@ export default function PrescriptiveAnalytics() {
     )
   }
 
-  if (error || !data) {
+  if (error) {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
-        <div className="text-destructive">Error: {error || "No data available"}</div>
+        <div className="text-destructive">Error: {error}</div>
+      </div>
+    )
+  }
+
+  if (!data || !data.reorder_points || data.reorder_points.length === 0) {
+    return (
+      <div className="flex-1 space-y-6 p-8 pt-6">
+        <div className="text-muted-foreground">Prescriptive analytics data not available. Please upload data and wait for processing to complete.</div>
       </div>
     )
   }

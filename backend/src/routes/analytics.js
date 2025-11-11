@@ -134,13 +134,13 @@ router.get("/descriptive", async (req, res) => {
       .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
 
     const topProductsSales = (top10Sales || []).slice(0, 10).map((d) => ({
-      name: d.sku_description || d.name || "Product",
+      name: d.description || d.name || "Product",
       sales: d.total_sales || 0,
       quantity: d.qty || 0,
     }))
 
     const topProductsQty = (top10Qty || []).slice(0, 10).map((d) => ({
-      name: d.sku_description || d.name || "Product",
+      name: d.description || d.name || "Product",
       sales: d.total_sales || 0,
       quantity: d.qty || 0,
     }))

@@ -261,7 +261,7 @@ def _scatter_plot(df: pd.DataFrame, title: str, out_png: Path, use_log: bool):
     y_iqr = y_75 - y_25
 
     xmin, xmax = _pad_limits(x_25 - 1.5 * x_iqr, x_75 + 1.5 * x_iqr, 0.05)
-    ymin, ymax = _pad_limits(y_25 - 1.5 * y_iqr, y_75 + 1.5 * x_iqr, 0.05)
+    ymin, ymax = _pad_limits(y_25 - 1.5 * y_iqr, y_75 + 1.5 * y_iqr, 0.05)
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
@@ -331,7 +331,7 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
     sm_global.to_csv(sub_sum / "global.csv", index=False, encoding="utf-8")
     _to_json(sm_global, sub_sum / "global.json")
     if -1 in sm_global["cluster"].values:
-        meta_global['n_noise'] = sm_global.loc[sm_global["cluster"] == -1, "n"].iloc[0]
+        meta_global['n_noise'] = sm_global.loc[sm_global["cluster"] == -1, "total_qty"].iloc[0]
     _plot_both(global_df, f"Global Clusters (n_clusters={meta_global['n_clusters']})",
                sub_global / "fig_global.png")
 
