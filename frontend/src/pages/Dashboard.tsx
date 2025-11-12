@@ -111,9 +111,9 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
       try {
         setLoading(true)
         const [descRes, predRes, prescRes] = await Promise.all([
-          fetch("http://localhost:5050/api/analytics/descriptive"),
-          fetch("http://localhost:5050/api/analytics/predictive"),
-          fetch("http://localhost:5050/api/analytics/prescriptive")
+          fetch("/api/analytics/descriptive"),
+          fetch("/api/analytics/predictive"),
+          fetch("/api/analytics/prescriptive")
         ])
 
         if (!descRes.ok) throw new Error("Failed to fetch descriptive data")
@@ -864,7 +864,7 @@ function SalesPage() {
     const fetchSalesData = async () => {
       try {
         setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/descriptive")
+        const response = await fetch("/api/analytics/descriptive")
         if (!response.ok) throw new Error("Failed to fetch sales data")
         const result = await response.json()
         setData(result.data)

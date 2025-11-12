@@ -223,19 +223,19 @@ async function processUpload(jobId, files) {
 
     try {
       // Run descriptive analytics
-      const descResponse = await fetch(`${process.env.RAILWAY_STATIC_URL || 'http://localhost:5050'}/api/analytics/run-descriptive`, {
+      const descResponse = await fetch(`http://localhost:5050/api/analytics/run-descriptive`, {
         method: 'POST',
       })
       const descResult = await descResponse.json()
 
       // Run predictive analytics
-      const predResponse = await fetch(`${process.env.RAILWAY_STATIC_URL || 'http://localhost:5050'}/api/analytics/run-predictive`, {
+      const predResponse = await fetch(`http://localhost:5050/api/analytics/run-predictive`, {
         method: 'POST',
       })
       const predResult = await predResponse.json()
 
       // Run prescriptive analytics
-      const prescResponse = await fetch(`${process.env.RAILWAY_STATIC_URL || 'http://localhost:5050'}/api/analytics/run-prescriptive`, {
+      const prescResponse = await fetch(`http://localhost:5050/api/analytics/run-prescriptive`, {
         method: 'POST',
       })
       const prescResult = await prescResponse.json()
