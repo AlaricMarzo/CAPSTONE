@@ -49,7 +49,7 @@ app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
 // Handle React routing, return all requests to React app
 app.use((req, res, next) => {
-  if (req.path.startsWith('/api')) {
+  if (req.path.startsWith('/api') || req.path.startsWith('/assets') || req.path === '/health') {
     return next();
   }
   res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"))
