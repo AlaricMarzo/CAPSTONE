@@ -1,0 +1,10 @@
+description,chosen,MASE_holdout,plot
+RETASAR (LOSARTAN POTASSIUM) 50MG,Seasonal-Naive,0.9135941810885375,retasar_losartan_potassium_50mg_representative_last_6.png
+BIOGESIC (PARACETAMOL) 500MG TAB,ETS,0.3692730314103474,biogesic_paracetamol_500mg_tab_representative_last_6.png
+APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP,ETS,0.7401986183074266,appevit_buclizine_hcl_b_complex_iron_cap_representative_last_6.png
+OHHIRA&#039;S RED OMX PROBIOTICS CAP,ETS,0.5966587112171837,ohhira_039_s_red_omx_probiotics_cap_representative_last_6.png
+BIOGESIC 500MG TAB,Seasonal-Naive,1.4852413099709332,biogesic_500mg_tab_representative_last_6.png
+IMMUNPRO 500MG TAB,Seasonal-Naive,1.0111373168086453,immunpro_500mg_tab_representative_last_6.png
+OHHIRAs PROPOLIS 600MG CAP,SARIMA,0.6855818401418993,ohhiras_propolis_600mg_cap_representative_last_6.png
+RETANIX (CETIRIZINE) 10MG TAB,ETS,0.7928746844064742,retanix_cetirizine_10mg_tab_representative_last_6.png
+RETAVASC- 5 (AMLODIPINE) 5MG TAB,Holt-Winters,0.7889466635197787,retavasc_5_amlodipine_5mg_tab_representative_last_6.png
