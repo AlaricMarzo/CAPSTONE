@@ -5,9 +5,6 @@ import {
   Line,
   BarChart,
   Bar,
-  PieChart,
-  Pie,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -64,6 +61,10 @@ interface DescriptiveData {
     confidence_ab_pct: number
     support_pct: number
   }>
+  mba_images: {
+    top20_lift: string | null
+    top20_confidence_a_to_b: string | null
+  }
   kpi_images: {
     monthly_sales_growth_rate: string | null
     sales_month_vs_year: string | null
@@ -187,7 +188,7 @@ export default function DescriptiveAnalytics() {
     },
   ]
 
-  const getChartHeight = () => (isMobile ? 300 : 380)
+  const getChartHeight = () => (isMobile ? 350 : 450)
 
   const calculateLeftMargin = (products: Array<{ name: string }>) => {
     if (!products || products.length === 0) return isMobile ? 80 : 120
@@ -250,8 +251,8 @@ export default function DescriptiveAnalytics() {
       {/* Tabs for different chart views */}
       <Tabs defaultValue="trends" className="w-full">
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 gap-2">
-          <TabsTrigger value="trends">Sales Trends</TabsTrigger>
-          <TabsTrigger value="products">Products</TabsTrigger>
+          <TabsTrigger value="trends">Sales Trends (KPI)</TabsTrigger>
+          <TabsTrigger value="products">MBA</TabsTrigger>
           <TabsTrigger value="clustering">Clustering</TabsTrigger>
           <TabsTrigger value="visualizations">Visuals</TabsTrigger>
         </TabsList>
@@ -407,192 +408,219 @@ export default function DescriptiveAnalytics() {
               </CardContent>
             </Card>
           </div>
-        </TabsContent>
 
-        <TabsContent value="products" className="space-y-6">
-          {/* Product Analysis */}
+          {/* Top Products */}
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
-            {/* Category Distribution */}
+            {/* Top Products by Sales */}
             <Card className="shadow-soft overflow-hidden">
               <CardHeader className="pb-3">
-                <CardTitle className="text-lg md:text-base">Category Distribution</CardTitle>
-                <CardDescription className="text-xs md:text-sm">Sales distribution across categories</CardDescription>
+                <CardTitle className="text-lg md:text-base">Top Products by Sales</CardTitle>
+                <CardDescription className="text-xs md:text-sm">Top 10 products by total sales value</CardDescription>
               </CardHeader>
               <CardContent className="p-0 md:p-6">
-                <div className="w-full" style={{ height: `${getChartHeight()}px` }}>
-                  <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                      <Pie
-                        data={filteredCategoryDistribution}
-                        cx="50%"
-                        cy="50%"
-                        labelLine={false}
-                        label={isMobile ? undefined : ({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                        outerRadius={isMobile ? 60 : 80}
-                        fill="#8884d8"
-                        dataKey="value"
-                      >
-                        {filteredCategoryDistribution.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                        ))}
-                      </Pie>
-                      <Tooltip formatter={(value) => `${value}`} />
-                    </PieChart>
-                  </ResponsiveContainer>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Tab Distribution */}
-            <Card className="shadow-soft overflow-hidden">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg md:text-base">Tab Distribution</CardTitle>
-                <CardDescription className="text-xs md:text-sm">Sales distribution across tabs</CardDescription>
-              </CardHeader>
-              <CardContent className="p-0 md:p-6">
-                {data.tab_distribution && data.tab_distribution.length > 0 ? (
-                  <div className="w-full" style={{ height: `${getChartHeight()}px` }}>
-                    <ResponsiveContainer width="100%" height="100%">
-                      <PieChart>
-                        <Pie
-                          data={data.tab_distribution}
-                          cx="50%"
-                          cy="50%"
-                          labelLine={false}
-                          label={isMobile ? undefined : ({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
-                          outerRadius={isMobile ? 60 : 80}
-                          fill="#8884d8"
-                          dataKey="value"
-                        >
-                          {data.tab_distribution.map((entry, index) => (
-                            <Cell key={`tab-cell-${index}`} fill={COLORS[(index + 2) % COLORS.length]} />
+                {data.top_products_sales && data.top_products_sales.length > 0 ? (
+                  <div className="space-y-4">
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b border-border">
+                            <th className="text-left py-2 px-2 font-medium text-foreground">Rank</th>
+                            <th className="text-left py-2 px-2 font-medium text-foreground">Product</th>
+                            <th className="text-right py-2 px-2 font-medium text-foreground">Sales</th>
+                            <th className="text-right py-2 px-2 font-medium text-foreground">Quantity</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {(expandedProductSales
+                            ? data.top_products_sales.slice(0, 10)
+                            : data.top_products_sales.slice(0, 5)
+                          ).map((product, index) => (
+                            <tr key={index} className="border-b border-border/50 hover:bg-muted/50">
+                              <td className="py-2 px-2 text-muted-foreground">#{index + 1}</td>
+                              <td className="py-2 px-2 text-foreground max-w-xs truncate" title={product.name}>
+                                {product.name}
+                              </td>
+                              <td className="py-2 px-2 text-right font-medium text-foreground">
+                                ₱{product.sales.toLocaleString()}
+                              </td>
+                              <td className="py-2 px-2 text-right text-muted-foreground">
+                                {product.quantity.toLocaleString()}
+                              </td>
+                            </tr>
                           ))}
-                        </Pie>
-                        <Tooltip formatter={(value) => `${value}`} />
-                      </PieChart>
-                    </ResponsiveContainer>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button
+                      onClick={() => setExpandedProductSales(!expandedProductSales)}
+                      className="w-full px-4 py-2 text-sm font-medium text-foreground bg-muted hover:bg-muted/80 rounded transition-colors"
+                    >
+                      {expandedProductSales ? "Show Top 5" : "Show All 10"}
+                    </button>
                   </div>
                 ) : (
                   <div className="flex items-center justify-center h-80 text-muted-foreground">
                     <AlertCircle className="h-8 w-8 mr-2" />
-                    <span className="text-sm">No tab data available</span>
+                    <span className="text-sm">No top products data available</span>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+
+            {/* Top Products by Quantity */}
+            <Card className="shadow-soft overflow-hidden">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg md:text-base">Top Products by Quantity</CardTitle>
+                <CardDescription className="text-xs md:text-sm">Top 10 products by total quantity sold</CardDescription>
+              </CardHeader>
+              <CardContent className="p-0 md:p-6">
+                {data.top_products_qty && data.top_products_qty.length > 0 ? (
+                  <div className="space-y-4">
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="border-b border-border">
+                            <th className="text-left py-2 px-2 font-medium text-foreground">Rank</th>
+                            <th className="text-left py-2 px-2 font-medium text-foreground">Product</th>
+                            <th className="text-right py-2 px-2 font-medium text-foreground">Quantity</th>
+                            <th className="text-right py-2 px-2 font-medium text-foreground">Sales</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {(expandedProductQty
+                            ? data.top_products_qty.slice(0, 10)
+                            : data.top_products_qty.slice(0, 5)
+                          ).map((product, index) => (
+                            <tr key={index} className="border-b border-border/50 hover:bg-muted/50">
+                              <td className="py-2 px-2 text-muted-foreground">#{index + 1}</td>
+                              <td className="py-2 px-2 text-foreground max-w-xs truncate" title={product.name}>
+                                {product.name}
+                              </td>
+                              <td className="py-2 px-2 text-right font-medium text-foreground">
+                                {product.quantity.toLocaleString()}
+                              </td>
+                              <td className="py-2 px-2 text-right text-muted-foreground">
+                                ₱{product.sales.toLocaleString()}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <button
+                      onClick={() => setExpandedProductQty(!expandedProductQty)}
+                      className="w-full px-4 py-2 text-sm font-medium text-foreground bg-muted hover:bg-muted/80 rounded transition-colors"
+                    >
+                      {expandedProductQty ? "Show Top 5" : "Show All 10"}
+                    </button>
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-center h-80 text-muted-foreground">
+                    <AlertCircle className="h-8 w-8 mr-2" />
+                    <span className="text-sm">No top products data available</span>
                   </div>
                 )}
               </CardContent>
             </Card>
           </div>
+        </TabsContent>
 
-          {/* Top Products by Sales */}
+        <TabsContent value="products" className="space-y-6">
+          {/* MBA Rules Table */}
           <Card className="shadow-soft overflow-hidden">
             <CardHeader className="pb-3">
-              <CardTitle className="text-lg md:text-base">Top Products by Sales</CardTitle>
-              <CardDescription className="text-xs md:text-sm">Top 10 products by total sales value</CardDescription>
+              <CardTitle className="text-lg md:text-base">Market Basket Analysis Rules</CardTitle>
+              <CardDescription className="text-xs md:text-sm">
+                Top association rules showing product relationships
+              </CardDescription>
             </CardHeader>
             <CardContent className="p-0 md:p-6">
-              {data.top_products_sales && data.top_products_sales.length > 0 ? (
-                <div className="space-y-4">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-border">
-                          <th className="text-left py-2 px-2 font-medium text-foreground">Rank</th>
-                          <th className="text-left py-2 px-2 font-medium text-foreground">Product</th>
-                          <th className="text-right py-2 px-2 font-medium text-foreground">Sales</th>
-                          <th className="text-right py-2 px-2 font-medium text-foreground">Quantity</th>
+              {data.mba_rules && data.mba_rules.length > 0 ? (
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-2 px-2 font-medium text-foreground">Item A</th>
+                        <th className="text-left py-2 px-2 font-medium text-foreground">Item B</th>
+                        <th className="text-right py-2 px-2 font-medium text-foreground">Lift</th>
+                        <th className="text-right py-2 px-2 font-medium text-foreground">Confidence (%)</th>
+                        <th className="text-right py-2 px-2 font-medium text-foreground">Support (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.mba_rules.map((rule, index) => (
+                        <tr key={index} className="border-b border-border/50 hover:bg-muted/50">
+                          <td className="py-2 px-2 text-foreground max-w-xs truncate" title={rule.item_a}>
+                            {rule.item_a}
+                          </td>
+                          <td className="py-2 px-2 text-foreground max-w-xs truncate" title={rule.item_b}>
+                            {rule.item_b}
+                          </td>
+                          <td className="py-2 px-2 text-right font-medium text-foreground">
+                            {rule.lift.toFixed(2)}
+                          </td>
+                          <td className="py-2 px-2 text-right text-foreground">
+                            {rule.confidence_ab_pct.toFixed(1)}%
+                          </td>
+                          <td className="py-2 px-2 text-right text-muted-foreground">
+                            {rule.support_pct.toFixed(1)}%
+                          </td>
                         </tr>
-                      </thead>
-                      <tbody>
-                        {(expandedProductSales
-                          ? data.top_products_sales.slice(0, 10)
-                          : data.top_products_sales.slice(0, 5)
-                        ).map((product, index) => (
-                          <tr key={index} className="border-b border-border/50 hover:bg-muted/50">
-                            <td className="py-2 px-2 text-muted-foreground">#{index + 1}</td>
-                            <td className="py-2 px-2 text-foreground max-w-xs truncate" title={product.name}>
-                              {product.name}
-                            </td>
-                            <td className="py-2 px-2 text-right font-medium text-foreground">
-                              ₱{product.sales.toLocaleString()}
-                            </td>
-                            <td className="py-2 px-2 text-right text-muted-foreground">
-                              {product.quantity.toLocaleString()}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                  <button
-                    onClick={() => setExpandedProductSales(!expandedProductSales)}
-                    className="w-full px-4 py-2 text-sm font-medium text-foreground bg-muted hover:bg-muted/80 rounded transition-colors"
-                  >
-                    {expandedProductSales ? "Show Top 5" : "Show All 10"}
-                  </button>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               ) : (
                 <div className="flex items-center justify-center h-80 text-muted-foreground">
                   <AlertCircle className="h-8 w-8 mr-2" />
-                  <span className="text-sm">No top products data available</span>
+                  <span className="text-sm">No MBA rules data available</span>
                 </div>
               )}
             </CardContent>
           </Card>
 
-          {/* Top Products by Quantity */}
-          <Card className="shadow-soft overflow-hidden">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-lg md:text-base">Top Products by Quantity</CardTitle>
-              <CardDescription className="text-xs md:text-sm">Top 10 products by total quantity sold</CardDescription>
-            </CardHeader>
-            <CardContent className="p-0 md:p-6">
-              {data.top_products_qty && data.top_products_qty.length > 0 ? (
-                <div className="space-y-4">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-border">
-                          <th className="text-left py-2 px-2 font-medium text-foreground">Rank</th>
-                          <th className="text-left py-2 px-2 font-medium text-foreground">Product</th>
-                          <th className="text-right py-2 px-2 font-medium text-foreground">Quantity</th>
-                          <th className="text-right py-2 px-2 font-medium text-foreground">Sales</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {(expandedProductQty
-                          ? data.top_products_qty.slice(0, 10)
-                          : data.top_products_qty.slice(0, 5)
-                        ).map((product, index) => (
-                          <tr key={index} className="border-b border-border/50 hover:bg-muted/50">
-                            <td className="py-2 px-2 text-muted-foreground">#{index + 1}</td>
-                            <td className="py-2 px-2 text-foreground max-w-xs truncate" title={product.name}>
-                              {product.name}
-                            </td>
-                            <td className="py-2 px-2 text-right font-medium text-foreground">
-                              {product.quantity.toLocaleString()}
-                            </td>
-                            <td className="py-2 px-2 text-right text-muted-foreground">
-                              ₱{product.sales.toLocaleString()}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
+          {/* MBA Images */}
+          <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
+            {data.mba_images?.top20_lift && (
+              <Card className="shadow-soft overflow-hidden">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg md:text-base">Top 20 Association Rules by Lift</CardTitle>
+                  <CardDescription className="text-xs md:text-sm">
+                    Rules showing strongest product associations
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-0 md:p-6">
+                  <div className="w-full overflow-x-auto">
+                    <img
+                      src={data.mba_images.top20_lift || "/placeholder.svg"}
+                      alt="Top 20 Association Rules by Lift"
+                      className="w-full h-auto max-w-full object-contain rounded border"
+                    />
                   </div>
-                  <button
-                    onClick={() => setExpandedProductQty(!expandedProductQty)}
-                    className="w-full px-4 py-2 text-sm font-medium text-foreground bg-muted hover:bg-muted/80 rounded transition-colors"
-                  >
-                    {expandedProductQty ? "Show Top 5" : "Show All 10"}
-                  </button>
-                </div>
-              ) : (
-                <div className="flex items-center justify-center h-80 text-muted-foreground">
-                  <AlertCircle className="h-8 w-8 mr-2" />
-                  <span className="text-sm">No top products data available</span>
-                </div>
-              )}
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
+            )}
+
+            {data.mba_images?.top20_confidence_a_to_b && (
+              <Card className="shadow-soft overflow-hidden">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg md:text-base">Top 20 Association Rules by Confidence</CardTitle>
+                  <CardDescription className="text-xs md:text-sm">
+                    Rules showing highest confidence in product associations
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-0 md:p-6">
+                  <div className="w-full overflow-x-auto">
+                    <img
+                      src={data.mba_images.top20_confidence_a_to_b || "/placeholder.svg"}
+                      alt="Top 20 Association Rules by Confidence"
+                      className="w-full h-auto max-w-full object-contain rounded border"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+          </div>
         </TabsContent>
 
         <TabsContent value="visualizations" className="space-y-6">
