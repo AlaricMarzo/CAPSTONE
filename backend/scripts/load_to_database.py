@@ -283,6 +283,8 @@ def _normalize_exp_str(date_str):
 def get_dsn() -> str:
     dsn = os.getenv("DATABASE_URL")
     if not dsn:
+        print(f"[ERROR] DATABASE_URL environment variable is not set")
+        print(f"[DEBUG] Available environment variables: {list(os.environ.keys())}")
         raise RuntimeError("DATABASE_URL not set")
     return dsn
 
