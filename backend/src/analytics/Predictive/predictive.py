@@ -41,7 +41,7 @@ def run_all_predictive_models(timeout: int = 600, exclude: list = None):
     # Find all .py files except __init__.py and this script
     all_scripts = [
         f for f in predictive_dir.glob("*.py")
-        if f.name not in ["__init__.py", "predictive.py"] and f.name not in exclude
+        if f.name not in ["__init__.py", "export_dashboard_artifacts","predictive.py"] and f.name not in exclude
     ]
 
     if not all_scripts:
