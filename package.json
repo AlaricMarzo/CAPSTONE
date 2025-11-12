@@ -2,6 +2,7 @@
   "name": "capstone-monorepo",
   "version": "1.0.0",
   "private": true,
+  "main": "backend/src/server.js",
   "description": "Full-stack capstone project with React frontend and Node.js backend",
   "scripts": {
     "dev:frontend": "cd frontend && npm run dev",
