@@ -579,47 +579,103 @@ export default function DescriptiveAnalytics() {
             </CardContent>
           </Card>
 
-          {/* MBA Images */}
+          {/* Interactive MBA Charts */}
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
-            {data.mba_images?.top20_lift && (
-              <Card className="shadow-soft overflow-hidden">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg md:text-base">Top 20 Association Rules by Lift</CardTitle>
-                  <CardDescription className="text-xs md:text-sm">
-                    Rules showing strongest product associations
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-0 md:p-6">
-                  <div className="w-full overflow-x-auto">
-                    <img
-                      src={data.mba_images.top20_lift || "/placeholder.svg"}
-                      alt="Top 20 Association Rules by Lift"
-                      className="w-full h-auto max-w-full object-contain rounded border"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            )}
+            {/* Top Rules by Lift */}
+            <Card className="shadow-soft overflow-hidden">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg md:text-base">Top Association Rules by Lift</CardTitle>
+                <CardDescription className="text-xs md:text-sm">
+                  Interactive chart showing strongest product associations
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-0 md:p-6">
+                <div className="w-full" style={{ height: `${getChartHeight()}px` }}>
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                      data={data.mba_rules
+                        .sort((a, b) => b.lift - a.lift)
+                        .slice(0, 20)
+                        .map((rule, index) => ({
+                          name: `${rule.item_a} → ${rule.item_b}`,
+                          lift: rule.lift,
+                          confidence: rule.confidence_ab_pct,
+                          support: rule.support_pct,
+                          rule: rule
+                        }))}
+                      margin={{ top: 5, right: isMobile ? 5 : 30, bottom: 5, left: isMobile ? 100 : 150 }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                      <XAxis
+                        dataKey="name"
+                        tick={{ fontSize: isMobile ? 8 : 10 }}
+                        angle={-45}
+                        textAnchor="end"
+                        height={100}
+                      />
+                      <YAxis tick={{ fontSize: isMobile ? 11 : 12 }} width={isMobile ? 35 : 40} />
+                      <Tooltip
+                        contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                        formatter={(value, name, props) => [
+                          `${value.toFixed(2)}`,
+                          name === 'lift' ? 'Lift' : name
+                        ]}
+                        labelFormatter={(label) => `Rule: ${label}`}
+                      />
+                      <Bar dataKey="lift" fill="#3b82f6" name="Lift" radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              </CardContent>
+            </Card>
 
-            {data.mba_images?.top20_confidence_a_to_b && (
-              <Card className="shadow-soft overflow-hidden">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg md:text-base">Top 20 Association Rules by Confidence</CardTitle>
-                  <CardDescription className="text-xs md:text-sm">
-                    Rules showing highest confidence in product associations
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-0 md:p-6">
-                  <div className="w-full overflow-x-auto">
-                    <img
-                      src={data.mba_images.top20_confidence_a_to_b || "/placeholder.svg"}
-                      alt="Top 20 Association Rules by Confidence"
-                      className="w-full h-auto max-w-full object-contain rounded border"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            )}
+            {/* Top Rules by Confidence */}
+            <Card className="shadow-soft overflow-hidden">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg md:text-base">Top Association Rules by Confidence</CardTitle>
+                <CardDescription className="text-xs md:text-sm">
+                  Interactive chart showing highest confidence in product associations
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-0 md:p-6">
+                <div className="w-full" style={{ height: `${getChartHeight()}px` }}>
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                      data={data.mba_rules
+                        .sort((a, b) => b.confidence_ab_pct - a.confidence_ab_pct)
+                        .slice(0, 20)
+                        .map((rule, index) => ({
+                          name: `${rule.item_a} → ${rule.item_b}`,
+                          confidence: rule.confidence_ab_pct,
+                          lift: rule.lift,
+                          support: rule.support_pct,
+                          rule: rule
+                        }))}
+                      margin={{ top: 5, right: isMobile ? 5 : 30, bottom: 5, left: isMobile ? 100 : 150 }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                      <XAxis
+                        dataKey="name"
+                        tick={{ fontSize: isMobile ? 8 : 10 }}
+                        angle={-45}
+                        textAnchor="end"
+                        height={100}
+                      />
+                      <YAxis tick={{ fontSize: isMobile ? 11 : 12 }} width={isMobile ? 35 : 40} />
+                      <Tooltip
+                        contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
+                        formatter={(value, name) => [
+                          `${value.toFixed(1)}%`,
+                          name === 'confidence' ? 'Confidence' : name
+                        ]}
+                        labelFormatter={(label) => `Rule: ${label}`}
+                      />
+                      <Bar dataKey="confidence" fill="#10b981" name="Confidence (%)" radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </TabsContent>
 

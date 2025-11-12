@@ -254,7 +254,7 @@
       const clusteringImages = []
 
         
-      const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global.png"))
+      const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global_linear.png"))
       if (globalImage) {
         clusteringImages.push({
           name: "Global Clustering",
