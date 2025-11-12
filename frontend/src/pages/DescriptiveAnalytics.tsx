@@ -160,14 +160,14 @@ export default function DescriptiveAnalytics() {
   const kpiCards = [
     {
       title: "Total Sales",
-      value: `₱${(data.kpi_summary.total_sales / 1000000).toFixed(2)}M`,
-      change: `+${data.kpi_summary.growth_rate.toFixed(1)}%`,
+      value: `₱${(Number(data.kpi_summary.total_sales || 0) / 1000000).toFixed(2)}M`,
+      change: `+${Number(data.kpi_summary.growth_rate || 0).toFixed(1)}%`,
       icon: DollarSign,
       color: "success" as const,
     },
     {
       title: "Total Quantity Sold",
-      value: (data.kpi_summary.total_quantity / 1000).toFixed(0) + "K",
+      value: (Number(data.kpi_summary.total_quantity || 0) / 1000).toFixed(0) + "K",
       change: "units",
       icon: Package,
       color: "info" as const,
@@ -181,7 +181,7 @@ export default function DescriptiveAnalytics() {
     },
     {
       title: "Growth Rate",
-      value: `${data.kpi_summary.growth_rate.toFixed(1)}%`,
+      value: `${Number(data.kpi_summary.growth_rate || 0).toFixed(1)}%`,
       change: "YoY",
       icon: AlertCircle,
       color: "success" as const,
@@ -617,7 +617,7 @@ export default function DescriptiveAnalytics() {
                       <Tooltip
                         contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
                         formatter={(value, name, props) => [
-                          `${value.toFixed(2)}`,
+                          `${Number(value || 0).toFixed(2)}`,
                           name === 'lift' ? 'Lift' : name
                         ]}
                         labelFormatter={(label) => `Rule: ${label}`}
@@ -665,7 +665,7 @@ export default function DescriptiveAnalytics() {
                       <Tooltip
                         contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
                         formatter={(value, name) => [
-                          `${value.toFixed(1)}%`,
+                          `${Number(value || 0).toFixed(1)}%`,
                           name === 'confidence' ? 'Confidence' : name
                         ]}
                         labelFormatter={(label) => `Rule: ${label}`}
