@@ -1,8 +1,9 @@
 [phases.setup]
-nixPkgs = ["...", "python3", "python3Packages.pip"]
+nixPkgs = ["...", "python3", "python3Packages.pip", "python3Packages.setuptools"]
 
 [phases.install]
 cmds = [
+  "python3 -m ensurepip --upgrade",
   "python3 -m pip install --upgrade pip",
   "python3 -m pip install -r backend/requirements.txt",
   "npm run install:all"
