@@ -5,6 +5,9 @@ import morgan from "morgan"
 import uploadRouter from "./routes/upload.js"
 import analyticsRouter from "./routes/analytics.js"
 import path from 'path'
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 dotenv.config()
 const app = express()
