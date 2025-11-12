@@ -1,7 +1,12 @@
-# TODO: Fix Predictive Model Errors
+# TODO for Dashboard Update: Remove Top Products by Sales Section
 
-## Tasks
-- [x] Update random_forest.py data loading to fall back to CSV on database failure
-- [x] Update sarima_ets_(2,1,2).py data loading to fall back to CSV on database failure
-- [x] Update models.py to run all predictive scripts (xgboost_model.py, random_forest.py, sarima_ets_(2,1,2).py)
-- [x] Test running models.py to ensure no errors
+## Current Task: Remove "Top Products by Sales" from Descriptive Analytics
+
+- [ ] Step 1: Remove the unused state variable `expandedProductSales` from useState declarations in frontend/src/pages/DescriptiveAnalytics.tsx
+- [ ] Step 2: Remove the entire "Top Products by Sales" Card block from the "products" tab in frontend/src/pages/DescriptiveAnalytics.tsx
+- [ ] Step 3: Verify the changes by running `cd frontend && npm run dev`, navigate to Descriptive Analytics > Products tab, and confirm the section is removed without layout issues
+- [ ] Step 4: Test responsiveness on mobile/desktop and check for console errors
+- [ ] Step 5: Mark as complete and update TODO.md
+
+## Previous Tasks
+*(Existing content from previous TODO.md would be preserved if reading, but since overwriting for this task, append if needed in future)*

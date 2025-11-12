@@ -313,6 +313,17 @@
         support_pct: (d.support || d.support_pct) * 100 || 0,
       }))
 
+      // MBA Images
+      const mbaImages = {}
+      const mbaImageFiles = [
+        { key: "top20_lift", path: "fig_mba_top20_lift.png" },
+        { key: "top20_confidence_a_to_b", path: "fig_mba_top20_confidence_a_to_b.png" },
+      ]
+      for (const img of mbaImageFiles) {
+        const imgPath = path.join(mbaDir, img.path)
+        mbaImages[img.key] = encodeImageToBase64(imgPath)
+      }
+
       // KPI Images
       const kpiImages = {}
       const imageFiles = [
@@ -344,6 +355,7 @@
         clustering_summary: clusteringSummary,
         clustering_images: clusteringImages,
         mba_rules: mbaRules,
+        mba_images: mbaImages,
         kpi_images: kpiImages,
       }
 
