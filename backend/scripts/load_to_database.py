@@ -11,7 +11,11 @@ import psycopg2
 from psycopg2.extras import execute_values, Json
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env file if it exists (for local development), but don't fail if it doesn't exist or is corrupted
+try:
+    load_dotenv()
+except Exception as e:
+    print(f"[WARNING] Could not load .env file: {e}. Using environment variables directly.")
 
 # ---------- Load product categories and tabs ----------
 CATEGORY_LOOKUP = {}  # Barcode -> Category
