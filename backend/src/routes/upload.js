@@ -45,7 +45,12 @@ function runPythonScript(scriptPath, args = []) {
   return new Promise((resolve, reject) => {
     const pythonCmd = process.env.PYTHON_CMD || "python";
     const python = spawn(pythonCmd, [scriptPath, ...args], {
-      env: { ...process.env, NON_INTERACTIVE: "1" }
+      env: {
+        ...process.env,
+        NON_INTERACTIVE: "1",
+        // Explicitly pass DATABASE_URL to Python subprocess
+        DATABASE_URL: process.env.DATABASE_URL
+      }
     });
 
     let output = "";
