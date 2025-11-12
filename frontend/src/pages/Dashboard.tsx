@@ -1,11 +1,11 @@
   import { useState, useEffect } from "react"
 import { Sidebar } from "@/components/Layout/Sidebar"
 import { MetricCard } from "@/components/Dashboard/MetricCard"
-import { RecentAlertsCard } from "@/components/Dashboard/RecentAlertCard"
+
 import { SalesTrendsChart } from "@/components/Dashboard/SalesTrendCard"
 import { ProductTrafficCard } from "@/components/Dashboard/ProductTrafficCard"
-import { TrendingUp, DollarSign, Package, ShoppingCart, User, Search, Calendar, FileText, Loader2, AlertCircle } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import { TrendingUp, DollarSign, Package, ShoppingCart, User, FileText, Loader2, AlertCircle, Search } from "lucide-react"
+
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -24,6 +24,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
+
 import { getUserMetrics } from "@/data/mockData"
 import DataUploadPage from "./upload"
 import ProfilePage from "./Profile"
@@ -99,12 +100,9 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [confirmOpen, setConfirmOpen] = useState(false)
-  const [searchTerm, setSearchTerm] = useState("")
   const [showChart, setShowChart] = useState(true)
+  const [searchTerm, setSearchTerm] = useState("")
 
-  const filteredResourceData = prescriptiveData?.resource_planning?.filter((item: any) =>
-    item.medicine.toLowerCase().includes(searchTerm.toLowerCase())
-  ) || []
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -173,14 +171,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             <p className="text-muted-foreground">Real-time business insights and analytics</p>
           </div>
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">Last 30 Days</span>
-            </div>
-            <Button variant="outline" size="sm" className="shadow-soft bg-transparent">
-              <FileText className="h-4 w-4 mr-2" />
-              Export Report
-            </Button>
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -221,12 +211,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="relative flex-1 max-w-sm">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-            <Input placeholder="Search products, customers, orders..." className="pl-10 shadow-soft" />
-          </div>
-        </div>
+
 
         <div className="text-destructive flex items-center gap-2 mb-4">
           Error loading analytics data: {error}. Showing fallback data.
@@ -277,8 +262,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </div>
           <ProductTrafficCard />
         </div>
-
-        <RecentAlertsCard />
       </div>
     )
   }
@@ -292,61 +275,47 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             <h2 className="text-3xl font-bold text-foreground">Dashboard Overview</h2>
             <p className="text-muted-foreground">Real-time business insights and analytics</p>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">Last 30 Days</span>
-            </div>
-            <Button variant="outline" size="sm" className="shadow-soft bg-transparent">
-              <FileText className="h-4 w-4 mr-2" />
-              Export Report
-            </Button>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-                  <User className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={onProfileClick}>
-                  <User className="mr-2 h-4 w-4" />
-                  Profile
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem
-                  className="text-destructive cursor-pointer"
-                  onSelect={(e) => {
-                    e.preventDefault()
-                    setConfirmOpen(true)
-                  }}
-                >
-                  Log out
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Are you sure you want to log out?</AlertDialogTitle>
-                  <AlertDialogDescription>You will be returned to the login page.</AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction onClick={confirmLogout}>Yes, log me out</AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
-          </div>
-        </div>
-
         <div className="flex items-center gap-4">
-          <div className="relative flex-1 max-w-sm">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-            <Input placeholder="Search products, customers, orders..." className="pl-10 shadow-soft" />
-          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <User className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onClick={onProfileClick}>
+                <User className="mr-2 h-4 w-4" />
+                Profile
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem
+                className="text-destructive cursor-pointer"
+                onSelect={(e) => {
+                  e.preventDefault()
+                  setConfirmOpen(true)
+                }}
+              >
+                Log out
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Are you sure you want to log out?</AlertDialogTitle>
+                <AlertDialogDescription>You will be returned to the login page.</AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={confirmLogout}>Yes, log me out</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
+        </div>
+
+
 
         <div className="text-muted-foreground flex items-center gap-2 mb-4">
           Analytics data not available. Please upload data and wait for processing to complete.
@@ -357,7 +326,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             title="Total Revenue"
             value="₱0"
             change="No data"
-            changeType="neutral"
+            changeType="positive"
             icon={DollarSign}
             color="success"
             className="shadow-soft hover:shadow-elegant transition-shadow"
@@ -366,7 +335,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             title="Total Sales"
             value="0"
             change="No data"
-            changeType="neutral"
+            changeType="positive"
             icon={ShoppingCart}
             color="info"
             className="shadow-soft hover:shadow-elegant transition-shadow"
@@ -375,7 +344,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             title="Active SKUs"
             value="0"
             change="No data"
-            changeType="neutral"
+            changeType="positive"
             icon={Package}
             color="warning"
             className="shadow-soft hover:shadow-elegant transition-shadow"
@@ -384,7 +353,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
             title="Forecast Accuracy"
             value="0%"
             change="No data"
-            changeType="neutral"
+            changeType="positive"
             icon={TrendingUp}
             color="default"
             className="shadow-soft hover:shadow-elegant transition-shadow"
@@ -397,8 +366,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </div>
           <ProductTrafficCard />
         </div>
-
-        <RecentAlertsCard />
       </div>
     )
   }
@@ -416,7 +383,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const activeSkus = descKpi.active_skus
   const growthRate = descKpi.growth_rate
 
-
+  const filteredResourceData = prescriptiveData?.resource_planning || []
 
   return (
     <div className="flex-1 space-y-6 p-8 pt-6">
@@ -426,15 +393,6 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           <p className="text-muted-foreground">Comprehensive business insights from descriptive, predictive, and prescriptive analytics</p>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <Calendar className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">Last 30 Days</span>
-          </div>
-          <Button variant="outline" size="sm" className="shadow-soft bg-transparent">
-            <FileText className="h-4 w-4 mr-2" />
-            Export Report
-          </Button>
-
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
@@ -474,12 +432,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
-        <div className="relative flex-1 max-w-sm">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-          <Input placeholder="Search products, customers, orders..." className="pl-10 shadow-soft" />
-        </div>
-      </div>
+
 
       {/* Key Performance Indicators */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -646,41 +599,28 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardContent>
         </Card>
 
-        {/* Forecast Performance */}
+        {/* Top Performing Products */}
         <Card className="shadow-soft">
           <CardHeader>
-            <CardTitle>Forecast Performance</CardTitle>
-            <CardDescription>Predicted vs Actual sales performance</CardDescription>
+            <CardTitle>Top Performing Products</CardTitle>
+            <CardDescription>Highest revenue generating products</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <Line
-                  data={predictiveData.forecast_data.slice(-12).map((item: any) => ({
-                    date: item.date,
-                    actual: item.actual,
-                    predicted: item.sarima_predicted,
-                    lower: item.confidence_lower,
-                    upper: item.confidence_upper
-                  }))}
-                >
-                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                  <XAxis dataKey="date" />
-                  <YAxis />
-                  <Tooltip
-                    contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
-                    formatter={(value: any, name: string) => [
-                      formatCurrency(value),
-                      name === 'actual' ? 'Actual Sales' : name === 'predicted' ? 'Predicted Sales' : name
-                    ]}
-                  />
-                  <Legend />
-                  <Line type="monotone" dataKey="actual" stroke="#3b82f6" name="Actual Sales" strokeWidth={2} />
-                  <Line type="monotone" dataKey="predicted" stroke="#10b981" name="Predicted Sales" strokeWidth={2} strokeDasharray="5 5" />
-                  <Line type="monotone" dataKey="upper" stroke="#94a3b8" name="Upper Bound" strokeWidth={1} strokeDasharray="2 2" />
-                  <Line type="monotone" dataKey="lower" stroke="#94a3b8" name="Lower Bound" strokeWidth={1} strokeDasharray="2 2" />
-                </Line>
-              </ResponsiveContainer>
+            <div className="space-y-3">
+              {descriptiveData.top_products_sales.slice(0, 5).map((product: any, idx: number) => (
+                <div key={idx} className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-xs font-medium">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">{product.name}</p>
+                      <p className="text-xs text-muted-foreground">{product.quantity} units</p>
+                    </div>
+                  </div>
+                  <span className="font-medium">{formatCurrency(product.sales)}</span>
+                </div>
+              ))}
             </div>
           </CardContent>
         </Card>
@@ -712,31 +652,31 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardContent>
         </Card>
 
-        {/* Growth Rate Trend */}
+        {/* Sales Growth Trend */}
         <Card className="shadow-soft">
           <CardHeader>
-            <CardTitle>Growth Rate Trend</CardTitle>
-            <CardDescription>Monthly sales growth percentage</CardDescription>
+            <CardTitle>Sales Growth Trend</CardTitle>
+            <CardDescription>Monthly sales and quantity performance</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <Line data={descriptiveData.monthly_growth.slice(-12)}>
+                <ComposedChart data={descriptiveData.monthly_sales.slice(-12)}>
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                   <XAxis dataKey="month" />
-                  <YAxis />
+                  <YAxis yAxisId="left" />
+                  <YAxis yAxisId="right" orientation="right" />
                   <Tooltip
                     contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }}
-                    formatter={(value: any) => [`${value.toFixed(2)}%`, 'Growth Rate']}
+                    formatter={(value: any, name: string) => [
+                      name === 'sales' ? formatCurrency(value) : value.toLocaleString(),
+                      name === 'sales' ? 'Sales' : 'Quantity'
+                    ]}
                   />
-                  <Line
-                    type="monotone"
-                    dataKey="growth_rate"
-                    stroke="#f59e0b"
-                    strokeWidth={3}
-                    dot={{ fill: '#f59e0b', strokeWidth: 2, r: 4 }}
-                  />
-                </Line>
+                  <Legend />
+                  <Bar yAxisId="left" dataKey="sales" fill="#3b82f6" name="Sales" radius={[4, 4, 0, 0]} />
+                  <Line yAxisId="right" type="monotone" dataKey="quantity" stroke="#10b981" name="Quantity" strokeWidth={2} />
+                </ComposedChart>
               </ResponsiveContainer>
             </div>
           </CardContent>
@@ -752,12 +692,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           <CardTitle className="flex items-center justify-between">
             Resource Planning
             <div className="flex items-center gap-2">
-              <Input
-                placeholder="Filter by medicine..."
-                className="h-8 w-48"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
+
               <Button variant="outline" size="sm" onClick={() => setShowChart(!showChart)}>
                 {showChart ? 'View List' : 'View Chart'}
               </Button>
@@ -814,7 +749,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
               </div>
               {filteredResourceData.length > 15 && (
                 <div className="text-center text-sm text-muted-foreground">
-                  Showing first 15 of {filteredResourceData.length} items. Use filter to narrow results.
+                  Showing first 15 of {filteredResourceData.length} items.
                 </div>
               )}
             </div>
@@ -849,7 +784,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardContent>
         </Card>
 
-        <RecentAlertsCard />
+
       </div>
     </div>
   )
@@ -864,7 +799,7 @@ function SalesPage() {
     const fetchSalesData = async () => {
       try {
         setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/descriptive")
+          const response = await fetch("http://localhost:5050/api/analytics/descriptive")
         if (!response.ok) throw new Error("Failed to fetch sales data")
         const result = await response.json()
         setData(result.data)
@@ -1051,7 +986,7 @@ function SalesPage() {
         <CardContent>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.top_products} layout="vertical">
+              <BarChart data={data.top_products_sales.slice(0, 10)} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                 <XAxis type="number" tickFormatter={(value) => formatCurrency(value)} />
                 <YAxis dataKey="name" type="category" width={150} />

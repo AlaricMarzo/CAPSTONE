@@ -11,17 +11,11 @@ export default function DataUploadPage() {
   const [result, setResult] = useState<any>(null);
   const [jobId, setJobId] = useState<string | null>(null);
   const [pollingInterval, setPollingInterval] = useState<number | null>(null);
-  const [analyticsProgress, setAnalyticsProgress] = useState<number>(0);
-  const [analyticsRunning, setAnalyticsRunning] = useState(false);
-  const [analyticsStep, setAnalyticsStep] = useState<string>("");
 
   const resetForm = () => {
     setSelectedFiles([]);
     setResult(null);
     setJobId(null);
-    setAnalyticsProgress(0);
-    setAnalyticsRunning(false);
-    setAnalyticsStep("");
     if (pollingInterval) {
       clearInterval(pollingInterval);
       setPollingInterval(null);
@@ -90,9 +84,6 @@ export default function DataUploadPage() {
   };
 
   const runDescriptiveAnalytics = async () => {
-    setAnalyticsRunning(true);
-    setAnalyticsProgress(0);
-    setAnalyticsStep("Running descriptive analytics...");
     try {
       const response = await fetch('http://localhost:5050/api/analytics/run-descriptive', {
         method: 'POST',
@@ -101,12 +92,9 @@ export default function DataUploadPage() {
         throw new Error('Failed to run descriptive analytics');
       }
       const result = await response.json();
-      setAnalyticsProgress(33);
-      setAnalyticsStep("Descriptive analytics completed. Starting predictive analytics...");
       return result.success;
     } catch (error) {
       console.error("Error running descriptive analytics:", error);
-      setAnalyticsRunning(false);
       return false;
     }
   };
@@ -120,12 +108,9 @@ export default function DataUploadPage() {
         throw new Error('Failed to run predictive analytics');
       }
       const result = await response.json();
-      setAnalyticsProgress(66);
-      setAnalyticsStep("Predictive analytics completed. Starting prescriptive analytics...");
       return result.success;
     } catch (error) {
       console.error("Error running predictive analytics:", error);
-      setAnalyticsRunning(false);
       return false;
     }
   };
@@ -139,13 +124,9 @@ export default function DataUploadPage() {
         throw new Error('Failed to run prescriptive analytics');
       }
       const result = await response.json();
-      setAnalyticsProgress(100);
-      setAnalyticsStep("Data modeling completed successfully!");
-      setAnalyticsRunning(false);
       return result.success;
     } catch (error) {
       console.error("Error running prescriptive analytics:", error);
-      setAnalyticsRunning(false);
       return false;
     }
   };
@@ -367,26 +348,6 @@ export default function DataUploadPage() {
                       <span className="font-semibold text-red-800">Processing Failed</span>
                     </div>
                     <p className="text-red-700">{result.error}</p>
-                  </div>
-                )}
-
-                {/* Data Modeling Progress */}
-                {analyticsRunning && (
-                  <div className="space-y-4 mt-6">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-black">Data Modeling Progress</span>
-                      <span className="text-sm font-bold text-black">{analyticsProgress}%</span>
-                    </div>
-                    <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
-                      <div
-                        className="bg-primary h-3 rounded-full transition-all duration-500 ease-out"
-                        style={{ width: `${analyticsProgress}%` }}
-                      />
-                    </div>
-                    <p className="text-sm text-muted-foreground flex items-center gap-2">
-                      <Loader2 className="h-4 w-4 animate-spin text-primary" />
-                      {analyticsStep}
-                    </p>
                   </div>
                 )}
               </div>

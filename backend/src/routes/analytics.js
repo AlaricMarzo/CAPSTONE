@@ -432,7 +432,7 @@
       await client.end()
 
       const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
-      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_")
+      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_")
       const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest", "database_data")
 
       // SARIMA Data - aggregate from individual forecast files
@@ -535,9 +535,9 @@
         random_forest: rfMetrics,
         xgboost: xgbMetrics,
         sarima: {
-          mae: Number.parseFloat(sarimaMetrics.mae) || 0,
-          rmse: Number.parseFloat(sarimaMetrics.rmse) || 0,
-          r_squared: 0, // Not provided
+          mae: Number.parseFloat(sarimaMetrics.mae) || Number.parseFloat(sarimaMetrics.MAE) || 0,
+          rmse: Number.parseFloat(sarimaMetrics.rmse) || Number.parseFloat(sarimaMetrics.RMSE) || 0,
+          r_squared: Number.parseFloat(sarimaMetrics.r_squared) || Number.parseFloat(sarimaMetrics.R_SQUARED) || 0,
         },
       }
 
@@ -962,7 +962,7 @@
       }
 
       // XGBoost files
-      const xgbDir = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_")
+      const xgbDir = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_")
       if (fs.existsSync(xgbDir)) {
         const xgbFiles = fs.readdirSync(xgbDir)
           .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
@@ -1024,8 +1024,8 @@
           // Check SARIMA first
           let predictivePath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1", filename)
           if (!fs.existsSync(predictivePath)) {
-            // Check XGBoost
-            predictivePath = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_", filename)
+          // Check XGBoost
+          predictivePath = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_", filename)
             if (!fs.existsSync(predictivePath)) {
               // Check Random Forest
               predictivePath = path.join(predictiveOutputDir, "ml_random_forest", "database_data", filename)
