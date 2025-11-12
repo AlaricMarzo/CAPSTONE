@@ -172,7 +172,7 @@
       const categoryData = jsonToArray(path.join(kpiDir, "kpi_category_split_monthly.json"))
       const tabData = jsonToArray(path.join(kpiDir, "kpi_tab_split_monthly.json"))
       const activeSkusMonthly = jsonToArray(path.join(kpiDir, "kpi_active_skus_monthly.json"))
-      const activeSkusYearly = jsonToArray(path.join(kpiDir, "kpi_active_skus_yearly.json"))
+      const activeSkusYearly = jsonToArray(path.join(kpiDir, "kpi_active_skus_items_yearly.json"))
       const seasonalIndex = jsonToArray(path.join(kpiDir, "kpi_season_index_category.json"))
       const yearlySales = jsonToArray(path.join(kpiDir, "kpi_yearly_sales_qty.json"))
 
@@ -431,13 +431,33 @@
 
       await client.end()
 
-      const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)")
-      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost_model", "database_data")
-      const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest")
+      const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
+      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_")
+      const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest", "database_data")
 
-      // SARIMA Data
-      const sarimaForecastData = csvToJson(path.join(sarimaDirPath, "forecasts.csv"))
-      const sarimaMetricsData = csvToJson(path.join(sarimaDirPath, "metrics.csv"))
+      // SARIMA Data - aggregate from individual forecast files
+      const sarimaForecasts = {}
+      const sarimaMetricsData = csvToJson(path.join(sarimaDirPath, "ts_summary.csv"))
+      if (fs.existsSync(sarimaDirPath)) {
+        const sarimaFiles = fs.readdirSync(sarimaDirPath).filter(f => f.endsWith('_forecast.csv'))
+        for (const file of sarimaFiles) {
+          const skuForecastData = csvToJson(path.join(sarimaDirPath, file))
+          skuForecastData.forEach(d => {
+            const date = d[''] || d.date || d.Date
+            const forecast = Number.parseFloat(d.forecast) || 0
+            if (!sarimaForecasts[date]) sarimaForecasts[date] = 0
+            sarimaForecasts[date] += forecast
+          })
+        }
+      }
+      // Create formatted forecast data for SARIMA
+      const sarimaForecastData = Object.entries(sarimaForecasts).map(([date, forecast]) => ({
+        date,
+        predicted: forecast,
+        actual: 0, // Not available in individual files
+        lower_bound: forecast * 0.9, // Approximate
+        upper_bound: forecast * 1.1, // Approximate
+      }))
 
       // XGBoost Data
       const xgbSummaryData = csvToJson(path.join(xgbDirPath, "xgb_summary.csv"))
@@ -927,7 +947,7 @@
       const predictiveFiles = []
 
       // SARIMA files
-      const sarimaDir = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)")
+      const sarimaDir = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
       if (fs.existsSync(sarimaDir)) {
         const sarimaFiles = fs.readdirSync(sarimaDir)
           .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
@@ -942,7 +962,7 @@
       }
 
       // XGBoost files
-      const xgbDir = path.join(predictiveOutputDir, "ml_xgboost_model", "database_data")
+      const xgbDir = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_")
       if (fs.existsSync(xgbDir)) {
         const xgbFiles = fs.readdirSync(xgbDir)
           .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
@@ -957,7 +977,7 @@
       }
 
       // Random Forest files
-      const rfDir = path.join(predictiveOutputDir, "ml_random_forest")
+      const rfDir = path.join(predictiveOutputDir, "ml_random_forest", "database_data")
       if (fs.existsSync(rfDir)) {
         const rfFiles = fs.readdirSync(rfDir)
           .filter(file => file.endsWith('.csv') || file.endsWith('.png'))
@@ -1002,13 +1022,13 @@
           break
         case "predictive":
           // Check SARIMA first
-          let predictivePath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)", filename)
+          let predictivePath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1", filename)
           if (!fs.existsSync(predictivePath)) {
             // Check XGBoost
-            predictivePath = path.join(predictiveOutputDir, "ml_xgboost_model", "database_data", filename)
+            predictivePath = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_", filename)
             if (!fs.existsSync(predictivePath)) {
               // Check Random Forest
-              predictivePath = path.join(predictiveOutputDir, "ml_random_forest", filename)
+              predictivePath = path.join(predictiveOutputDir, "ml_random_forest", "database_data", filename)
             }
           }
           filePath = predictivePath

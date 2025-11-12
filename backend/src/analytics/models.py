@@ -76,11 +76,7 @@ def run_analytics(output_path):
     return result
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print(json.dumps({"success": False, "error": "Output path required"}))
-        sys.exit(1)
-
-    output_path = sys.argv[1]
+    output_path = sys.argv[1] if len(sys.argv) > 1 else None
     try:
         result = run_analytics(output_path)
         print(json.dumps(result))
