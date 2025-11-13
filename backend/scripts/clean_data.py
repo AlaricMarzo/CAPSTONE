@@ -4,8 +4,6 @@ from io import StringIO
 import re
 import os
 import sys
-import tkinter as tk
-from tkinter import filedialog
 from datetime import datetime
 import json  # Added json import for JSON output
 
@@ -1083,6 +1081,8 @@ def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
 def browse_for_files():
     """Browse for multiple CSV files"""
     try:
+        import tkinter as tk
+        from tkinter import filedialog
         root = tk.Tk()
         root.withdraw()
         root.attributes('-topmost', True)

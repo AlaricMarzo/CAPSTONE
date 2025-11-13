@@ -222,23 +222,17 @@ async function processUpload(jobId, files) {
     jobs.set(jobId, { status: 'processing', progress: 95, message: 'Running descriptive, predictive, and prescriptive analytics...' })
 
     try {
-      // Run descriptive analytics
-      const descResponse = await fetch(`http://localhost:${process.env.PORT || 5050}/api/analytics/run-descriptive`, {
-        method: 'POST',
-      })
-      const descResult = await descResponse.json()
+      // Run descriptive analytics directly
+      const descScriptPath = path.join(__dirname, "../analytics/Descriptive/descriptive.py")
+      const descResult = await runPythonScript(descScriptPath, [])
 
-      // Run predictive analytics
-      const predResponse = await fetch(`http://localhost:${process.env.PORT || 5050}/api/analytics/run-predictive`, {
-        method: 'POST',
-      })
-      const predResult = await predResponse.json()
+      // Run predictive analytics directly
+      const predScriptPath = path.join(__dirname, "../analytics/models.py")
+      const predResult = await runPythonScript(predScriptPath, [])
 
-      // Run prescriptive analytics
-      const prescResponse = await fetch(`http://localhost:${process.env.PORT || 5050}/api/analytics/run-prescriptive`, {
-        method: 'POST',
-      })
-      const prescResult = await prescResponse.json()
+      // Run prescriptive analytics directly
+      const prescScriptPath = path.join(__dirname, "../analytics/prescriptive/prescriptive.py")
+      const prescResult = await runPythonScript(prescScriptPath, [])
 
       const analyticsResults = {
         descriptive: descResult,

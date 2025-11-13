@@ -21,6 +21,172 @@
     if (!fs.existsSync(csvPath)) {
       console.log("[v0] CSV file not found:", csvPath)
       return []
+// Helper function to read CSV and convert to JSON
+function csvToJson(csvPath) {
+  if (!fs.existsSync(csvPath)) {
+    console.log("[v0] CSV file not found:", csvPath)
+    return []
+  }
+
+  try {
+    const csvData = fs.readFileSync(csvPath, "utf8")
+    const lines = csvData.split("\n").filter((line) => line.trim() !== "")
+    if (lines.length < 2) return []
+
+    const headers = lines[0].split(",").map((h) => h.trim())
+    const rows = lines.slice(1).map((line) => {
+      const values = line.split(",").map((v) => v.trim())
+      const obj = {}
+      headers.forEach((header, index) => {
+        const value = values[index] || ""
+        if (!isNaN(value) && value !== "") {
+          obj[header] = Number.parseFloat(value)
+        } else {
+          obj[header] = value
+        }
+      })
+      return obj
+    })
+
+    return rows
+  } catch (error) {
+    console.error("[v0] Error parsing CSV:", error)
+    return []
+  }
+}
+
+// Helper function to read JSON
+function jsonToArray(jsonPath) {
+  if (!fs.existsSync(jsonPath)) {
+    console.log("[v0] JSON file not found:", jsonPath)
+    return []
+  }
+  try {
+    const jsonData = fs.readFileSync(jsonPath, "utf8")
+    return JSON.parse(jsonData)
+  } catch (error) {
+    console.error("[v0] Error parsing JSON:", error)
+    return []
+  }
+}
+
+// Helper function to encode image to base64 data URL
+function encodeImageToBase64(imagePath) {
+  if (!fs.existsSync(imagePath)) {
+    return null
+  }
+  try {
+    const imageBuffer = fs.readFileSync(imagePath)
+    const base64 = imageBuffer.toString('base64')
+    const ext = path.extname(imagePath).toLowerCase()
+    const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg'
+    return `data:${mimeType};base64,${base64}`
+  } catch (error) {
+    console.error("[v0] Error encoding image:", error)
+    return null
+  }
+}
+
+router.get("/descriptive", async (req, res) => {
+  try {
+    const kpiDir = path.join(descriptiveOutputDir, "kpi_output")
+    const mbaDir = path.join(descriptiveOutputDir, "mba_output")
+    const clusterDir = path.join(descriptiveOutputDir, "clustering_output")
+
+    // KPI Data
+    const monthlySalesData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_qty.json"))
+    const growthData = jsonToArray(path.join(kpiDir, "kpi_monthly_sales_growth_rate.json"))
+    const categoryData = jsonToArray(path.join(kpiDir, "kpi_category_split_monthly.json"))
+    const tabData = jsonToArray(path.join(kpiDir, "kpi_tab_split_monthly.json"))
+    const top10Sales = jsonToArray(path.join(kpiDir, "kpi_top10_by_sales.json"))
+    const top10Qty = jsonToArray(path.join(kpiDir, "kpi_top10_by_qty.json"))
+    const activeSkusMonthly = jsonToArray(path.join(kpiDir, "kpi_active_skus_monthly.json"))
+    const activeSkusYearly = jsonToArray(path.join(kpiDir, "kpi_active_skus_yearly.json"))
+    const seasonalIndex = jsonToArray(path.join(kpiDir, "kpi_season_index_category.json"))
+    const yearlySales = jsonToArray(path.join(kpiDir, "kpi_yearly_sales_qty.json"))
+
+    // Check if data is available
+    if (monthlySalesData.length === 0) {
+      return res.status(500).json({ success: false, error: "Descriptive analytics data not available. Please run analytics first." })
+    }
+
+    // Calculations
+    const totalSales = monthlySalesData.reduce((sum, d) => sum + (d.total_sales || 0), 0)
+    const totalQty = monthlySalesData.reduce((sum, d) => sum + (d.total_qty || 0), 0)
+    const latestGrowth = growthData.length > 0 ? growthData[growthData.length - 1].growth_rate : 0
+    const latestSkus = activeSkusMonthly.length > 0 ? activeSkusMonthly[activeSkusMonthly.length - 1].active_skus : 0
+
+    // Formatted Data
+    const monthlyFormattedData = monthlySalesData.map((d) => ({
+      month: d.month || "",
+      sales: d.total_sales || 0,
+      quantity: d.total_qty || 0,
+    }))
+
+    const growthFormattedData = growthData.map((d) => ({
+      month: d.month || "",
+      growth_rate: d.growth_rate || 0,
+    }))
+
+    const activeSkusFormatted = activeSkusMonthly.map((d) => ({
+      month: d.month || "",
+      active_skus: d.active_skus || 0,
+    }))
+
+    const categoryLatest = categoryData.length > 0 ? categoryData[categoryData.length - 1] : {}
+    const categoryDistribution = Object.entries(categoryLatest)
+      .filter(([key]) => key !== "month")
+      .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
+
+    const tabLatest = tabData.length > 0 ? tabData[tabData.length - 1] : {}
+    const tabDistribution = Object.entries(tabLatest)
+      .filter(([key]) => key !== "month")
+      .map(([name, value]) => ({ name, value: Number.parseFloat(value) || 0 }))
+
+    const topProductsSales = (top10Sales || []).slice(0, 10).map((d) => ({
+      name: d.description || d.name || "Product",
+      sales: d.total_sales || 0,
+      quantity: d.qty || 0,
+    }))
+
+    const topProductsQty = (top10Qty || []).slice(0, 10).map((d) => ({
+      name: d.description || d.name || "Product",
+      sales: d.total_sales || 0,
+      quantity: d.qty || 0,
+    }))
+
+    // Seasonal Index
+    const seasonalData = (seasonalIndex || []).map((d) => ({
+      category: d.category || "",
+      season_index: d.season_index || 0,
+    }))
+
+    // Yearly Sales
+    const yearlyFormattedData = yearlySales.map((d) => ({
+      year: d.year || "",
+      sales: d.total_sales || 0,
+      quantity: d.total_qty || 0,
+    }))
+
+    // Clustering Data
+    const clusteringGlobalData = jsonToArray(path.join(clusterDir, "cluster_summaries", "global.json"))
+    const clusteringSummary = (clusteringGlobalData || []).map((d, idx) => ({
+      cluster: idx,
+      count: d.customer_count || d.count || 0,
+      avg_value: d.avg_value || 0,
+    }))
+
+    // Clustering Images
+    const clusteringImages = []
+
+    // Global
+    const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global.png"))
+    if (globalImage) {
+      clusteringImages.push({
+        name: "Global Clustering",
+        image: globalImage,
+        summary: clusteringGlobalData || [],
+      })
     }
 
     try {
@@ -478,6 +644,26 @@ router.get("/predictive", async (req, res) => {
       const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
       const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_")
       const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest", "database_data")
+
+    // Check if predictive data is available
+    if (!fs.existsSync(sarimaDirPath) || !fs.existsSync(xgbDirPath)) {
+      return res.status(500).json({ success: false, error: "Predictive analytics data not available. Please run analytics first." })
+    }
+
+    // Load top products data
+    const topProducts = []
+    try {
+      const top10Sales = jsonToArray(path.join(descriptiveOutputDir, "kpi_output", "kpi_top10_by_sales.json"))
+      if (top10Sales && top10Sales.length > 0) {
+        topProducts.push(...top10Sales.slice(0, 5).map(d => ({
+          name: d.description || d.name || "Product",
+          sales: d.total_sales || 0,
+          quantity: d.qty || 0,
+        })))
+      }
+    } catch (error) {
+      console.log("[v0] Could not load top products for predictive:", error.message)
+    }
 
     // SARIMA Data
     const sarimaForecastData = csvToJson(path.join(sarimaDirPath, "forecasts.csv"))
