@@ -4,14 +4,15 @@
     "description":"BAXTEL BP APP W\/ STETHOSCOPE",
     "category":"MANUAL MEDICAL DEVICES",
     "tab":"MED-SURG",
-    "total_qty":24.0,
-    "total_sales":62732.56,
-    "months_active":11.0,
-    "avg_price":2613.8566666667,
-    "mean_monthly_qty":2.1818181818,
-    "cv_monthly_qty":0.6997023177,
-    "trend_qty_slope":7.018725181e-17,
-    "cluster":1
+    "total_qty":25.0,
+    "total_sales":64892.56,
+    "total_profit":21492.56,
+    "months_active":12.0,
+    "avg_price":2595.7024,
+    "mean_monthly_qty":2.0833333333,
+    "cv_monthly_qty":0.7188880302,
+    "trend_qty_slope":0.0244755245,
+    "cluster":0
   },
   {
     "item_code":"38749624464",
@@ -20,12 +21,13 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":14399.94,
+    "total_profit":-600.06,
     "months_active":2.0,
     "avg_price":7199.97,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806524146790",
@@ -34,12 +36,13 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":2520.0,
+    "total_profit":2520.0,
     "months_active":1.0,
     "avg_price":840.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806537596056",
@@ -48,12 +51,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":220.0,
+    "total_profit":68.8,
     "months_active":1.0,
     "avg_price":220.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"60183859",
@@ -62,12 +66,13 @@
     "tab":"MED-SURG",
     "total_qty":26.0,
     "total_sales":30432.0,
+    "total_profit":14052.0,
     "months_active":14.0,
     "avg_price":1170.4615384615,
     "mean_monthly_qty":1.8571428571,
     "cv_monthly_qty":0.3440104581,
     "trend_qty_slope":0.0043956044,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"80722472",
@@ -76,6 +81,7 @@
     "tab":"MED-SURG",
     "total_qty":109.0,
     "total_sales":60905.6,
+    "total_profit":40740.6,
     "months_active":15.0,
     "avg_price":558.7669724771,
     "mean_monthly_qty":7.2666666667,

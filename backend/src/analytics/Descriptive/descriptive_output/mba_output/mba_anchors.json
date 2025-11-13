@@ -1,1370 +1,490 @@
 [
   {
-    "anchor":"LAMPEIN JUMBO PACK L 54s",
-    "complement":"LAMPEIN JUMBO PACK XL 48s",
-    "lift":950.5318181818,
-    "confidence_pct":77.27,
-    "support_pct":0.07,
-    "pair_tx":17
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.55,
+    "pair_tx":10
   },
   {
-    "anchor":"LAMPEIN JUMBO PACK XL 48s",
-    "complement":"LAMPEIN JUMBO PACK L 54s",
-    "lift":950.5318181818,
-    "confidence_pct":85.0,
-    "support_pct":0.07,
-    "pair_tx":17
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":64.5,
+    "confidence_pct":90.0,
+    "support_pct":1.4,
+    "pair_tx":9
   },
   {
-    "anchor":"PARTNERS BLOOD GLUCOMETER CBPC-73",
-    "complement":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
-    "lift":337.5274390244,
-    "confidence_pct":65.85,
-    "support_pct":0.11,
-    "pair_tx":27
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "lift":64.5,
+    "confidence_pct":70.0,
+    "support_pct":1.09,
+    "pair_tx":7
   },
   {
-    "anchor":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
-    "complement":"PARTNERS BLOOD GLUCOMETER CBPC-73",
-    "lift":337.5274390244,
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":40.3125,
+    "confidence_pct":100.0,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "lift":40.3125,
+    "confidence_pct":50.0,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":64.5,
+    "confidence_pct":90.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "lift":64.5,
+    "confidence_pct":70.0,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":40.3125,
+    "confidence_pct":100.0,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "lift":40.3125,
+    "confidence_pct":50.0,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "lift":61.4285714286,
+    "confidence_pct":66.67,
+    "support_pct":0.93,
+    "pair_tx":6
+  },
+  {
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "lift":44.7916666667,
+    "confidence_pct":55.56,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":40.3125,
+    "confidence_pct":100.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":64.5,
+    "confidence_pct":100.0,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":61.4285714286,
+    "confidence_pct":85.71,
+    "support_pct":0.93,
+    "pair_tx":6
+  },
+  {
+    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "lift":57.5892857143,
+    "confidence_pct":71.43,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":40.3125,
+    "confidence_pct":100.0,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "lift":57.5892857143,
+    "confidence_pct":62.5,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":44.7916666667,
+    "confidence_pct":62.5,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":40.3125,
+    "confidence_pct":62.5,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":40.3125,
+    "confidence_pct":62.5,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":25.1953125,
+    "confidence_pct":62.5,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"ROVISTA (ROSUVASTATIN)20MG TAB",
+    "lift":53.75,
+    "confidence_pct":41.67,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "lift":47.03125,
+    "confidence_pct":58.33,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "lift":44.7916666667,
+    "confidence_pct":83.33,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"PLOGREL (CLOPIDOGREL) 75MG TAB",
+    "lift":38.3928571429,
+    "confidence_pct":41.67,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"NEPHORMIN TAB",
+    "lift":30.7142857143,
+    "confidence_pct":66.67,
+    "support_pct":1.24,
+    "pair_tx":8
+  },
+  {
+    "anchor":"ROVISTA (ROSUVASTATIN)20MG TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "lift":53.75,
+    "confidence_pct":100.0,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "lift":47.03125,
+    "confidence_pct":87.5,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "lift":47.03125,
+    "confidence_pct":87.5,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "complement":"NEPHORMIN TAB",
+    "lift":40.3125,
+    "confidence_pct":87.5,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":16.125,
+    "confidence_pct":75.0,
+    "support_pct":0.93,
+    "pair_tx":6
+  },
+  {
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "lift":47.03125,
+    "confidence_pct":58.33,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "lift":44.7916666667,
+    "confidence_pct":83.33,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"PLOGREL (CLOPIDOGREL) 75MG TAB",
+    "lift":38.3928571429,
+    "confidence_pct":41.67,
+    "support_pct":0.78,
+    "pair_tx":5
+  },
+  {
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"NEPHORMIN TAB",
+    "lift":34.5535714286,
+    "confidence_pct":75.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":12.5416666667,
+    "confidence_pct":58.33,
+    "support_pct":1.09,
+    "pair_tx":7
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
+    "lift":40.3125,
+    "confidence_pct":62.5,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":40.3125,
+    "confidence_pct":62.5,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":40.3125,
     "confidence_pct":56.25,
-    "support_pct":0.11,
-    "pair_tx":27
-  },
-  {
-    "anchor":"GLIMESYN (GLIMEPIRIDE) 2MG TAB",
-    "complement":"GLUMET XR 500MG (METFORMIN HCI) TAB",
-    "lift":331.9418785677,
-    "confidence_pct":63.41,
-    "support_pct":0.11,
-    "pair_tx":26
-  },
-  {
-    "anchor":"GLUMET XR 500MG (METFORMIN HCI) TAB",
-    "complement":"GLIMESYN (GLIMEPIRIDE) 2MG TAB",
-    "lift":331.9418785677,
-    "confidence_pct":55.32,
-    "support_pct":0.11,
-    "pair_tx":26
-  },
-  {
-    "anchor":"INSULINE SYRINGE (BD ULTRA FINE) G30 0.5ML",
-    "complement":"VAXIRAB 2.5 IU 1ML",
-    "lift":249.5131845842,
-    "confidence_pct":88.24,
-    "support_pct":0.12,
-    "pair_tx":30
-  },
-  {
-    "anchor":"VAXIRAB 2.5 IU 1ML",
-    "complement":"INSULINE SYRINGE (BD ULTRA FINE) G30 0.5ML",
-    "lift":249.5131845842,
-    "confidence_pct":34.48,
-    "support_pct":0.12,
-    "pair_tx":30
-  },
-  {
-    "anchor":"VAXIRAB 2.5 IU 1ML",
-    "complement":"INSULIN SYRINGE COSMED",
-    "lift":198.9944657301,
-    "confidence_pct":43.68,
-    "support_pct":0.15,
-    "pair_tx":38
-  },
-  {
-    "anchor":"INSULIN SYRINGE COSMED",
-    "complement":"VAXIRAB 2.5 IU 1ML",
-    "lift":198.9944657301,
-    "confidence_pct":70.37,
-    "support_pct":0.15,
-    "pair_tx":38
-  },
-  {
-    "anchor":"CALTRATE ADVANCE TAB",
-    "complement":"CENTRUM(ADVANCE)TAB",
-    "lift":143.2569875776,
-    "confidence_pct":32.61,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"CENTRUM(ADVANCE)TAB",
-    "complement":"CALTRATE ADVANCE TAB",
-    "lift":143.2569875776,
-    "confidence_pct":26.79,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"CALCITROL 500 1250MG\/250IU TAB",
-    "complement":"MAMACARE CAP",
-    "lift":132.0558239399,
-    "confidence_pct":37.04,
-    "support_pct":0.16,
-    "pair_tx":40
-  },
-  {
-    "anchor":"MAMACARE CAP",
-    "complement":"CALCITROL 500 1250MG\/250IU TAB",
-    "lift":132.0558239399,
-    "confidence_pct":57.97,
-    "support_pct":0.16,
-    "pair_tx":40
-  },
-  {
-    "anchor":"BONAMINE CHEW(ADULT)TAB 25MG",
-    "complement":"BONAMINE CHEW(KIDS)TAB 12.5MG",
-    "lift":95.0801932367,
-    "confidence_pct":13.91,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"BONAMINE CHEW(KIDS)TAB 12.5MG",
-    "complement":"BONAMINE CHEW(ADULT)TAB 25MG",
-    "lift":95.0801932367,
-    "confidence_pct":44.44,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"AK LOG TAB",
-    "complement":"AMVASC BE TAB 5MG",
-    "lift":91.1185185185,
-    "confidence_pct":63.33,
-    "support_pct":0.15,
-    "pair_tx":38
-  },
-  {
-    "anchor":"AMVASC BE TAB 5MG",
-    "complement":"AK LOG TAB",
-    "lift":91.1185185185,
-    "confidence_pct":22.22,
-    "support_pct":0.15,
-    "pair_tx":38
-  },
-  {
-    "anchor":"AMVASC BE TAB 5MG",
-    "complement":"EUTHYROX TAB 50MCG",
-    "lift":24.4887395794,
-    "confidence_pct":9.36,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"AMVASC BE TAB 5MG",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":24.3235727208,
-    "confidence_pct":27.49,
-    "support_pct":0.19,
-    "pair_tx":47
-  },
-  {
-    "anchor":"CARESS ADULT DIAPER XL10",
-    "complement":"CARESS UNDERPADS XL8",
-    "lift":90.7537869869,
-    "confidence_pct":34.31,
-    "support_pct":0.19,
-    "pair_tx":47
-  },
-  {
-    "anchor":"CARESS UNDERPADS XL8",
-    "complement":"CARESS ADULT DIAPER XL10",
-    "lift":90.7537869869,
-    "confidence_pct":50.54,
-    "support_pct":0.19,
-    "pair_tx":47
-  },
-  {
-    "anchor":"AMLOSAPH (AMLODIPINE) 10MG TAB",
-    "complement":"CARDIPRES (CARVEDILOL) 12.5MG FC TAB",
-    "lift":59.0684273709,
-    "confidence_pct":28.57,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"CARDIPRES (CARVEDILOL) 12.5MG FC TAB",
-    "complement":"AMLOSAPH (AMLODIPINE) 10MG TAB",
-    "lift":59.0684273709,
-    "confidence_pct":20.17,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"RM AMLODIPINE 5MG",
-    "complement":"RM CLOPIDOGREL 75MG TAB",
-    "lift":56.2459990855,
-    "confidence_pct":18.52,
-    "support_pct":0.12,
-    "pair_tx":30
-  },
-  {
-    "anchor":"RM AMLODIPINE 5MG",
-    "complement":"RM ATORVASTATIN 10MG TAB",
-    "lift":46.1016313933,
-    "confidence_pct":10.49,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"RM CLOPIDOGREL 75MG TAB",
-    "complement":"RM AMLODIPINE 5MG",
-    "lift":56.2459990855,
-    "confidence_pct":37.04,
-    "support_pct":0.12,
-    "pair_tx":30
-  },
-  {
-    "anchor":"AXMEL (AMOXICILLIN TRIHYDRATE) 500MG CAP",
-    "complement":"MECID (MEFENAMIC) 500MG CAP",
-    "lift":56.0729344729,
-    "confidence_pct":20.51,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"MECID (MEFENAMIC) 500MG CAP",
-    "complement":"AXMEL (AMOXICILLIN TRIHYDRATE) 500MG CAP",
-    "lift":56.0729344729,
-    "confidence_pct":17.78,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"CENTRUM SILVER ADVANCE TAB",
-    "complement":"ROBITUSSIN L-GEL CAP 200MG",
-    "lift":54.7570044514,
-    "confidence_pct":25.37,
-    "support_pct":0.21,
-    "pair_tx":51
-  },
-  {
-    "anchor":"CENTRUM SILVER ADVANCE TAB",
-    "complement":"SOLMUX 500MG CAP",
-    "lift":11.2473846981,
-    "confidence_pct":8.46,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"ROBITUSSIN L-GEL CAP 200MG",
-    "complement":"CENTRUM SILVER ADVANCE TAB",
-    "lift":54.7570044514,
-    "confidence_pct":44.74,
-    "support_pct":0.21,
-    "pair_tx":51
-  },
-  {
-    "anchor":"ESSENTIALE FORTE CAP",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":53.7467705167,
-    "confidence_pct":41.07,
-    "support_pct":0.09,
-    "pair_tx":23
-  },
-  {
-    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "complement":"ESSENTIALE FORTE CAP",
-    "lift":53.7467705167,
-    "confidence_pct":12.23,
-    "support_pct":0.09,
-    "pair_tx":23
+    "support_pct":1.4,
+    "pair_tx":9
   },
   {
     "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
     "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":20.8821865097,
-    "confidence_pct":7.98,
-    "support_pct":0.06,
-    "pair_tx":15
+    "lift":40.3125,
+    "confidence_pct":43.75,
+    "support_pct":1.09,
+    "pair_tx":7
   },
   {
     "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":20.2886359888,
-    "confidence_pct":10.64,
-    "support_pct":0.08,
-    "pair_tx":20
+    "complement":"TRIMEBET (TRIMETAZIDINE) 35G TAB",
+    "lift":25.1953125,
+    "confidence_pct":31.25,
+    "support_pct":0.78,
+    "pair_tx":5
   },
   {
-    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":16.7502978723,
-    "confidence_pct":8.51,
-    "support_pct":0.07,
-    "pair_tx":16
+    "anchor":"NEPHORMIN TAB",
+    "complement":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB",
+    "lift":40.3125,
+    "confidence_pct":50.0,
+    "support_pct":1.09,
+    "pair_tx":7
   },
   {
-    "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":13.0241504487,
-    "confidence_pct":11.17,
-    "support_pct":0.09,
-    "pair_tx":21
+    "anchor":"NEPHORMIN TAB",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "lift":34.5535714286,
+    "confidence_pct":64.29,
+    "support_pct":1.4,
+    "pair_tx":9
   },
   {
-    "anchor":"GAUZE PAD 4X4 TRUCARE",
-    "complement":"MICROPORE 1 INCH",
-    "lift":51.0263703704,
-    "confidence_pct":25.93,
-    "support_pct":0.06,
-    "pair_tx":14
+    "anchor":"NEPHORMIN TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "lift":30.7142857143,
+    "confidence_pct":57.14,
+    "support_pct":1.24,
+    "pair_tx":8
   },
   {
-    "anchor":"MICROPORE 1 INCH",
-    "complement":"GAUZE PAD 4X4 TRUCARE",
-    "lift":51.0263703704,
-    "confidence_pct":11.2,
-    "support_pct":0.06,
-    "pair_tx":14
+    "anchor":"NEPHORMIN TAB",
+    "complement":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "lift":7.6785714286,
+    "confidence_pct":35.71,
+    "support_pct":0.78,
+    "pair_tx":5
   },
   {
-    "anchor":"CARESS ADULT DIAPER L10+1",
-    "complement":"CARESS UNDERPADS L8",
-    "lift":50.766031746,
-    "confidence_pct":13.0,
-    "support_pct":0.05,
-    "pair_tx":13
+    "anchor":"PLOGREL (CLOPIDOGREL) 75MG TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "lift":38.3928571429,
+    "confidence_pct":71.43,
+    "support_pct":0.78,
+    "pair_tx":5
   },
   {
-    "anchor":"CARESS UNDERPADS L8",
-    "complement":"CARESS ADULT DIAPER L10+1",
-    "lift":50.766031746,
-    "confidence_pct":20.63,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "complement":"ISOPTIN TAB 40MG",
-    "lift":50.2081632653,
-    "confidence_pct":9.18,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "complement":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "lift":27.3410790059,
-    "confidence_pct":11.22,
-    "support_pct":0.09,
-    "pair_tx":22
-  },
-  {
-    "anchor":"ISOPTIN TAB 40MG",
-    "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "lift":50.2081632653,
-    "confidence_pct":40.0,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
-    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":48.3754159524,
-    "confidence_pct":18.48,
-    "support_pct":0.16,
-    "pair_tx":39
-  },
-  {
-    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
-    "complement":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
-    "lift":47.8881178064,
-    "confidence_pct":10.9,
-    "support_pct":0.09,
-    "pair_tx":23
-  },
-  {
-    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":17.1732245858,
-    "confidence_pct":9.0,
-    "support_pct":0.08,
-    "pair_tx":19
-  },
-  {
-    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":16.7899905213,
-    "confidence_pct":8.53,
-    "support_pct":0.07,
-    "pair_tx":18
+    "anchor":"PLOGREL (CLOPIDOGREL) 75MG TAB",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "lift":38.3928571429,
+    "confidence_pct":71.43,
+    "support_pct":0.78,
+    "pair_tx":5
   },
   {
     "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
     "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "lift":14.9073989915,
-    "confidence_pct":13.27,
-    "support_pct":0.11,
-    "pair_tx":28
+    "lift":35.8333333333,
+    "confidence_pct":55.56,
+    "support_pct":1.55,
+    "pair_tx":10
   },
   {
-    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":48.3754159524,
-    "confidence_pct":41.49,
-    "support_pct":0.16,
-    "pair_tx":39
-  },
-  {
-    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
     "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":36.5195447798,
-    "confidence_pct":19.15,
-    "support_pct":0.07,
-    "pair_tx":18
+    "lift":35.8333333333,
+    "confidence_pct":55.56,
+    "support_pct":1.55,
+    "pair_tx":10
   },
   {
-    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":31.4068085106,
-    "confidence_pct":15.96,
-    "support_pct":0.06,
-    "pair_tx":15
+    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
+    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "lift":35.8333333333,
+    "confidence_pct":38.89,
+    "support_pct":1.09,
+    "pair_tx":7
   },
   {
-    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
+    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":35.8333333333,
+    "confidence_pct":50.0,
+    "support_pct":1.4,
+    "pair_tx":9
+  },
+  {
+    "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":22.3958333333,
+    "confidence_pct":55.56,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
+    "lift":21.5,
+    "confidence_pct":53.33,
+    "support_pct":2.48,
+    "pair_tx":16
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "lift":21.5,
+    "confidence_pct":33.33,
+    "support_pct":1.55,
+    "pair_tx":10
+  },
+  {
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
     "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "lift":27.486932867,
-    "confidence_pct":24.47,
-    "support_pct":0.09,
-    "pair_tx":23
+    "lift":21.5,
+    "confidence_pct":33.33,
+    "support_pct":1.55,
+    "pair_tx":10
   },
   {
-    "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":20.8821865097,
-    "confidence_pct":15.96,
-    "support_pct":0.06,
-    "pair_tx":15
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
+    "lift":21.5,
+    "confidence_pct":30.0,
+    "support_pct":1.4,
+    "pair_tx":9
   },
   {
-    "anchor":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":47.8881178064,
-    "confidence_pct":41.07,
-    "support_pct":0.09,
-    "pair_tx":23
-  },
-  {
-    "anchor":"RM ATORVASTATIN 10MG TAB",
-    "complement":"RM AMLODIPINE 5MG",
-    "lift":46.1016313933,
-    "confidence_pct":30.36,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
-    "complement":"NATRAVOX 457MG\/5ML 35ML SUSP",
-    "lift":45.2704968309,
-    "confidence_pct":13.43,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"NATRAVOX 457MG\/5ML 35ML SUSP",
-    "complement":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
-    "lift":45.2704968309,
-    "confidence_pct":24.66,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
-    "complement":"MX3 CAP",
-    "lift":44.1423444976,
-    "confidence_pct":15.79,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"MX3 CAP",
-    "complement":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
-    "lift":44.1423444976,
-    "confidence_pct":20.45,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":41.1940465116,
-    "confidence_pct":20.93,
-    "support_pct":0.11,
-    "pair_tx":27
-  },
-  {
-    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
+    "anchor":"FORXIGA (DAPAGLIFLOZIN) 10MG",
     "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":36.5195447798,
-    "confidence_pct":13.95,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "lift":25.2542564865,
-    "confidence_pct":22.48,
-    "support_pct":0.12,
-    "pair_tx":29
-  },
-  {
-    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":20.2886359888,
-    "confidence_pct":15.5,
-    "support_pct":0.08,
-    "pair_tx":20
-  },
-  {
-    "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":17.1732245858,
-    "confidence_pct":14.73,
-    "support_pct":0.08,
-    "pair_tx":19
-  },
-  {
-    "anchor":"KARVIDOL 25MG TAB",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":41.1940465116,
-    "confidence_pct":21.6,
-    "support_pct":0.11,
-    "pair_tx":27
-  },
-  {
-    "anchor":"KARVIDOL 25MG TAB",
-    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":31.4068085106,
-    "confidence_pct":12.0,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"KARVIDOL 25MG TAB",
-    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "lift":21.5688767123,
-    "confidence_pct":19.2,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"KARVIDOL 25MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":16.7899905213,
-    "confidence_pct":14.4,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"KARVIDOL 25MG TAB",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":16.7502978723,
-    "confidence_pct":12.8,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"B-PLEX (VIT B1+B6+B12) CAP",
-    "lift":30.6787529976,
-    "confidence_pct":9.35,
-    "support_pct":0.11,
-    "pair_tx":26
-  },
-  {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"AMVASC BE TAB 5MG",
-    "lift":24.3235727208,
-    "confidence_pct":16.91,
-    "support_pct":0.19,
-    "pair_tx":47
-  },
-  {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"DIABEE (VITAMIN B COMPLEX) CAP",
-    "lift":21.9283122175,
-    "confidence_pct":10.07,
-    "support_pct":0.11,
-    "pair_tx":28
-  },
-  {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"AURORA (ROSUVASTATIN) 20MG FC TAB",
-    "lift":20.3106498408,
-    "confidence_pct":5.04,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"NEBILET TAB 5MG",
-    "lift":11.7995203837,
-    "confidence_pct":12.23,
-    "support_pct":0.14,
-    "pair_tx":34
-  },
-  {
-    "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":30.6787529976,
-    "confidence_pct":34.67,
-    "support_pct":0.11,
-    "pair_tx":26
-  },
-  {
-    "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"REVICON FORTE TAB",
-    "lift":28.3068697124,
-    "confidence_pct":22.67,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "lift":25.7998501873,
-    "confidence_pct":18.67,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"NEBILET TAB 5MG",
-    "lift":21.8684444444,
-    "confidence_pct":22.67,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"FORXIGA 10MG",
-    "lift":11.1529066667,
-    "confidence_pct":22.67,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"REVICON FORTE TAB",
-    "complement":"B-PLEX (VIT B1+B6+B12) CAP",
-    "lift":28.3068697124,
-    "confidence_pct":8.63,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"REVICON FORTE TAB",
-    "complement":"NEBILET TAB 5MG",
-    "lift":11.7537175276,
-    "confidence_pct":12.18,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"REVICON FORTE TAB",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":10.7812876602,
-    "confidence_pct":12.18,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"REVICON FORTE TAB",
-    "complement":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "lift":9.8222779901,
-    "confidence_pct":7.11,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"REVICON FORTE TAB",
-    "complement":"FORXIGA 10MG",
-    "lift":5.9943959391,
-    "confidence_pct":12.18,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":27.486932867,
-    "confidence_pct":10.5,
-    "support_pct":0.09,
-    "pair_tx":23
-  },
-  {
-    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":25.2542564865,
-    "confidence_pct":13.24,
-    "support_pct":0.12,
-    "pair_tx":29
-  },
-  {
-    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":21.5688767123,
-    "confidence_pct":10.96,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":14.9073989915,
-    "confidence_pct":12.79,
-    "support_pct":0.11,
-    "pair_tx":28
-  },
-  {
-    "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":11.950840377,
-    "confidence_pct":9.13,
-    "support_pct":0.08,
-    "pair_tx":20
-  },
-  {
-    "anchor":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "lift":27.3410790059,
-    "confidence_pct":21.78,
-    "support_pct":0.09,
-    "pair_tx":22
-  },
-  {
-    "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"B-PLEX (VIT B1+B6+B12) CAP",
-    "lift":25.7998501873,
-    "confidence_pct":7.87,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"REVICON FORTE TAB",
-    "lift":9.8222779901,
-    "confidence_pct":7.87,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"NEBILET TAB 5MG",
-    "lift":9.7562458691,
-    "confidence_pct":10.11,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":6.9603912376,
-    "confidence_pct":7.87,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"FORXIGA 10MG",
-    "lift":5.2521123596,
-    "confidence_pct":10.67,
-    "support_pct":0.08,
-    "pair_tx":19
-  },
-  {
-    "anchor":"EUTHYROX TAB 50MCG",
-    "complement":"AMVASC BE TAB 5MG",
-    "lift":24.4887395794,
-    "confidence_pct":17.02,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"AMLOTHIX (AMLODIPINE) 5MG TAB",
-    "complement":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-    "lift":24.0488758553,
-    "confidence_pct":15.05,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-    "complement":"AMLOTHIX (AMLODIPINE) 5MG TAB",
-    "lift":24.0488758553,
-    "confidence_pct":9.09,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"FEMME PAPER TOWEL 1PLY",
-    "complement":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
-    "lift":22.2307228916,
-    "confidence_pct":10.84,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
-    "complement":"FEMME PAPER TOWEL 1PLY",
-    "lift":22.2307228916,
-    "confidence_pct":15.0,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"CELCOXX CAP 200MG",
-    "complement":"RM COLCHICINE 500MG TAB",
-    "lift":22.026584022,
-    "confidence_pct":10.83,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"RM COLCHICINE 500MG TAB",
-    "complement":"CELCOXX CAP 200MG",
-    "lift":22.026584022,
-    "confidence_pct":10.74,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"DIABEE (VITAMIN B COMPLEX) CAP",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":21.9283122175,
-    "confidence_pct":24.78,
-    "support_pct":0.11,
-    "pair_tx":28
-  },
-  {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"B-PLEX (VIT B1+B6+B12) CAP",
-    "lift":21.8684444444,
-    "confidence_pct":6.67,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"NEPHROMIN TAB",
-    "lift":13.5672794118,
-    "confidence_pct":7.06,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":11.7995203837,
-    "confidence_pct":13.33,
-    "support_pct":0.14,
-    "pair_tx":34
-  },
-  {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"REVICON FORTE TAB",
-    "lift":11.7537175276,
-    "confidence_pct":9.41,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "lift":9.7562458691,
-    "confidence_pct":7.06,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"ERCEFLORA KIDDIE ORAL SOLUTION 5ML",
-    "complement":"VIVALYTE E-DRINK APPLE 250ML",
-    "lift":21.0633561644,
-    "confidence_pct":20.55,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"VIVALYTE E-DRINK APPLE 250ML",
-    "complement":"ERCEFLORA KIDDIE ORAL SOLUTION 5ML",
-    "lift":21.0633561644,
-    "confidence_pct":6.25,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"VIVALYTE E-DRINK APPLE 250ML",
-    "complement":"VIVALYTE E-DRINK ORANGE 250ML",
-    "lift":12.7411487759,
-    "confidence_pct":9.17,
-    "support_pct":0.09,
-    "pair_tx":22
-  },
-  {
-    "anchor":"AURORA (ROSUVASTATIN) 20MG FC TAB",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":20.3106498408,
-    "confidence_pct":22.95,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "complement":"KLARYTH 250MG\/5ML SUSP 35ML",
-    "lift":19.2103071317,
-    "confidence_pct":8.82,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "complement":"BACTIV 457MG\/5ML 70ML",
-    "lift":16.8276333789,
-    "confidence_pct":26.47,
-    "support_pct":0.18,
-    "pair_tx":45
-  },
-  {
-    "anchor":"KLARYTH 250MG\/5ML SUSP 35ML",
-    "complement":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "lift":19.2103071317,
-    "confidence_pct":13.27,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"KLARYTH 250MG\/5ML SUSP 35ML",
-    "complement":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "lift":6.5184674898,
-    "confidence_pct":13.27,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "lift":16.8276333789,
-    "confidence_pct":11.63,
-    "support_pct":0.18,
-    "pair_tx":45
-  },
-  {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"BREZU SYR 5MCG\/ML 60ML..",
-    "lift":10.5951765719,
-    "confidence_pct":8.27,
-    "support_pct":0.13,
-    "pair_tx":32
-  },
-  {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"APPEVIT 120ML SYR",
-    "lift":10.5221063887,
-    "confidence_pct":6.2,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"MEPTIN SYR 60ML",
-    "lift":7.4452592127,
-    "confidence_pct":3.36,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "lift":5.4561987137,
-    "confidence_pct":11.11,
-    "support_pct":0.17,
-    "pair_tx":43
-  },
-  {
-    "anchor":"CALCIUMADE TAB",
-    "complement":"TERRAFERON CAP",
-    "lift":16.2019250253,
-    "confidence_pct":12.38,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"TERRAFERON CAP",
-    "complement":"CALCIUMADE TAB",
-    "lift":16.2019250253,
-    "confidence_pct":6.91,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"TERRAFERON CAP",
-    "complement":"MX3 COFFEE MIX 10G",
-    "lift":6.006766655,
-    "confidence_pct":7.45,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"RETASAR (LOSARTAN) 50MG TAB",
-    "complement":"RETAVASC (AMLODIPINE) 10MG TAB",
-    "lift":14.009311985,
-    "confidence_pct":6.72,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"RETAVASC (AMLODIPINE) 10MG TAB",
-    "complement":"RETASAR (LOSARTAN) 50MG TAB",
-    "lift":14.009311985,
-    "confidence_pct":14.41,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"NEPHROMIN TAB",
-    "complement":"NEBILET TAB 5MG",
-    "lift":13.5672794118,
-    "confidence_pct":14.06,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"NEPHROMIN TAB",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":11.0620503597,
-    "confidence_pct":12.5,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":13.2820613497,
-    "confidence_pct":6.75,
-    "support_pct":0.09,
-    "pair_tx":22
-  },
-  {
-    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":12.2852047368,
-    "confidence_pct":6.44,
-    "support_pct":0.09,
-    "pair_tx":21
-  },
-  {
-    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":11.2396553975,
-    "confidence_pct":4.29,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "lift":7.2364904614,
-    "confidence_pct":6.44,
-    "support_pct":0.09,
-    "pair_tx":21
-  },
-  {
-    "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":5.7225598232,
-    "confidence_pct":4.91,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"VIVALYTE E-DRINK ORANGE 250ML",
-    "complement":"VIVALYTE E-DRINK APPLE 250ML",
-    "lift":12.7411487759,
-    "confidence_pct":12.43,
-    "support_pct":0.09,
-    "pair_tx":22
-  },
-  {
-    "anchor":"FORXIGA 10MG",
-    "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "lift":11.7775531915,
-    "confidence_pct":9.0,
-    "support_pct":0.18,
-    "pair_tx":45
-  },
-  {
-    "anchor":"FORXIGA 10MG",
-    "complement":"B-PLEX (VIT B1+B6+B12) CAP",
-    "lift":11.1529066667,
-    "confidence_pct":3.4,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"FORXIGA 10MG",
-    "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "lift":11.0613643411,
-    "confidence_pct":5.8,
-    "support_pct":0.12,
-    "pair_tx":29
-  },
-  {
-    "anchor":"FORXIGA 10MG",
-    "complement":"KARVIDOL 25MG TAB",
-    "lift":9.447168,
-    "confidence_pct":4.8,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"FORXIGA 10MG",
-    "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "lift":8.8985957447,
-    "confidence_pct":3.4,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"SOLMUX 500MG CAP",
-    "complement":"CENTRUM SILVER ADVANCE TAB",
-    "lift":11.2473846981,
-    "confidence_pct":9.19,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"BREZU SYR 5MCG\/ML 60ML..",
-    "complement":"BACTIV 457MG\/5ML 70ML",
-    "lift":10.5951765719,
-    "confidence_pct":16.67,
-    "support_pct":0.13,
-    "pair_tx":32
-  },
-  {
-    "anchor":"APPEVIT 120ML SYR",
-    "complement":"BACTIV 457MG\/5ML 70ML",
-    "lift":10.5221063887,
-    "confidence_pct":16.55,
-    "support_pct":0.1,
-    "pair_tx":24
-  },
-  {
-    "anchor":"ALAXAN FR CAP",
-    "complement":"BIOFLU TAB",
-    "lift":7.9686427621,
-    "confidence_pct":14.12,
-    "support_pct":0.15,
-    "pair_tx":37
-  },
-  {
-    "anchor":"ALAXAN FR CAP",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":3.3349882658,
-    "confidence_pct":12.21,
-    "support_pct":0.13,
-    "pair_tx":32
-  },
-  {
-    "anchor":"BIOFLU TAB",
-    "complement":"ALAXAN FR CAP",
-    "lift":7.9686427621,
-    "confidence_pct":8.49,
-    "support_pct":0.15,
-    "pair_tx":37
-  },
-  {
-    "anchor":"BIOFLU TAB",
-    "complement":"FLANAX FORTE 550MG TAB",
-    "lift":4.4547320135,
-    "confidence_pct":4.13,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"BIOFLU TAB",
-    "complement":"NEOZEP FORTE TAB",
-    "lift":3.7617737003,
-    "confidence_pct":3.67,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"BIOFLU TAB",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":3.6323453044,
-    "confidence_pct":13.3,
-    "support_pct":0.24,
-    "pair_tx":58
-  },
-  {
-    "anchor":"MEPTIN SYR 60ML",
-    "complement":"BACTIV 457MG\/5ML 70ML",
-    "lift":7.4452592127,
-    "confidence_pct":11.71,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"LE MINERALE 1.5ML",
-    "complement":"LE MINERALE 600ML",
-    "lift":6.8185070716,
-    "confidence_pct":11.42,
-    "support_pct":0.13,
-    "pair_tx":33
-  },
-  {
-    "anchor":"LE MINERALE 1.5ML",
-    "complement":"SANICARE BATHROOM TISSUE 1s",
-    "lift":2.0794632716,
-    "confidence_pct":5.54,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"LE MINERALE 600ML",
-    "complement":"LE MINERALE 1.5ML",
-    "lift":6.8185070716,
-    "confidence_pct":8.01,
-    "support_pct":0.13,
-    "pair_tx":33
-  },
-  {
-    "anchor":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "complement":"KLARYTH 250MG\/5ML SUSP 35ML",
-    "lift":6.5184674898,
-    "confidence_pct":2.99,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "complement":"BACTIV 457MG\/5ML 70ML",
-    "lift":5.4561987137,
-    "confidence_pct":8.58,
-    "support_pct":0.17,
-    "pair_tx":43
-  },
-  {
-    "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"TERRAFERON CAP",
-    "lift":6.006766655,
-    "confidence_pct":4.59,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"NEBILET TAB 5MG",
-    "lift":4.1121954356,
-    "confidence_pct":4.26,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"ATENURIX FCT 40MG",
-    "lift":3.7719778276,
-    "confidence_pct":4.26,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"FLANAX FORTE 550MG TAB",
-    "complement":"BIOFLU TAB",
-    "lift":4.4547320135,
-    "confidence_pct":7.89,
-    "support_pct":0.07,
-    "pair_tx":18
-  },
-  {
-    "anchor":"FLANAX FORTE 550MG TAB",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":1.5568763752,
-    "confidence_pct":5.7,
-    "support_pct":0.05,
-    "pair_tx":13
-  },
-  {
-    "anchor":"NEOZEP FORTE TAB",
-    "complement":"BIOFLU TAB",
-    "lift":3.7617737003,
-    "confidence_pct":6.67,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"NEOZEP FORTE TAB",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":3.7544672586,
-    "confidence_pct":13.75,
-    "support_pct":0.13,
-    "pair_tx":33
-  },
-  {
-    "anchor":"BIOGESIC 500MG TAB",
-    "complement":"NEOZEP FORTE TAB",
-    "lift":3.7544672586,
-    "confidence_pct":3.66,
-    "support_pct":0.13,
-    "pair_tx":33
-  },
-  {
-    "anchor":"BIOGESIC 500MG TAB",
-    "complement":"BIOFLU TAB",
-    "lift":3.6323453044,
-    "confidence_pct":6.44,
-    "support_pct":0.24,
-    "pair_tx":58
-  },
-  {
-    "anchor":"BIOGESIC 500MG TAB",
-    "complement":"ALAXAN FR CAP",
-    "lift":3.3349882658,
-    "confidence_pct":3.55,
-    "support_pct":0.13,
-    "pair_tx":32
-  },
-  {
-    "anchor":"BIOGESIC 500MG TAB",
-    "complement":"NEOZEP NO-DROWSE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
-    "lift":2.4042328929,
-    "confidence_pct":1.55,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"BIOGESIC 500MG TAB",
-    "complement":"DIATABS CAP",
-    "lift":1.6785993705,
-    "confidence_pct":1.66,
-    "support_pct":0.06,
-    "pair_tx":15
-  },
-  {
-    "anchor":"NEOZEP NO-DROWSE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":2.4042328929,
-    "confidence_pct":8.81,
-    "support_pct":0.06,
-    "pair_tx":14
-  },
-  {
-    "anchor":"SANICARE BATHROOM TISSUE 1s",
-    "complement":"LE MINERALE 1.5ML",
-    "lift":2.0794632716,
-    "confidence_pct":2.44,
-    "support_pct":0.07,
-    "pair_tx":16
-  },
-  {
-    "anchor":"DIATABS CAP",
-    "complement":"BIOGESIC 500MG TAB",
-    "lift":1.6785993705,
-    "confidence_pct":6.15,
-    "support_pct":0.06,
-    "pair_tx":15
+    "lift":21.5,
+    "confidence_pct":23.33,
+    "support_pct":1.09,
+    "pair_tx":7
   }
 ]

@@ -6,6 +6,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":111.0,
+    "total_profit":5.6,
     "months_active":1.0,
     "avg_price":111.0,
     "mean_monthly_qty":1.0,
@@ -18,13 +19,14 @@
     "description":"BONAMIL 6-12 MONTHS 150G",
     "category":"PEDIATRIC MILK",
     "tab":"F&B",
-    "total_qty":1.0,
-    "total_sales":111.0,
-    "months_active":1.0,
+    "total_qty":2.0,
+    "total_sales":222.0,
+    "total_profit":20.22,
+    "months_active":2.0,
     "avg_price":111.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":0.0,
+    "trend_qty_slope":-7.850462293e-17,
     "cluster":0
   },
   {
@@ -32,14 +34,15 @@
     "description":"BONNA 0-6 MONTHS 350G",
     "category":"PEDIATRIC MILK",
     "tab":"F&B",
-    "total_qty":3.0,
-    "total_sales":675.75,
-    "months_active":2.0,
-    "avg_price":225.25,
-    "mean_monthly_qty":1.5,
-    "cv_monthly_qty":0.3333333333,
-    "trend_qty_slope":1.0,
-    "cluster":0
+    "total_qty":4.0,
+    "total_sales":942.75,
+    "total_profit":47.5,
+    "months_active":3.0,
+    "avg_price":235.6875,
+    "mean_monthly_qty":1.3333333333,
+    "cv_monthly_qty":0.3535533906,
+    "trend_qty_slope":1.081396514e-17,
+    "cluster":-1
   },
   {
     "item_code":"4800153151248",
@@ -48,6 +51,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":252.0,
+    "total_profit":12.4,
     "months_active":1.0,
     "avg_price":252.0,
     "mean_monthly_qty":1.0,
@@ -62,26 +66,28 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":901.25,
+    "total_profit":40.35,
     "months_active":3.0,
     "avg_price":225.3125,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800361314053",
     "description":"BEAR BRAND JUNIOR 1+ 400G",
     "category":"PEDIATRIC MILK",
     "tab":"F&B",
-    "total_qty":2.0,
-    "total_sales":394.5,
-    "months_active":1.0,
+    "total_qty":4.0,
+    "total_sales":789.0,
+    "total_profit":38.0,
+    "months_active":2.0,
     "avg_price":197.25,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":0.0,
-    "cluster":0
+    "trend_qty_slope":-1.570092459e-16,
+    "cluster":-1
   },
   {
     "item_code":"4800361348607",
@@ -90,6 +96,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":201.0,
+    "total_profit":9.8,
     "months_active":1.0,
     "avg_price":201.0,
     "mean_monthly_qty":1.0,
@@ -104,6 +111,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":201.0,
+    "total_profit":9.75,
     "months_active":1.0,
     "avg_price":201.0,
     "mean_monthly_qty":1.0,
@@ -118,6 +126,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":194.0,
+    "total_profit":9.45,
     "months_active":1.0,
     "avg_price":194.0,
     "mean_monthly_qty":1.0,
@@ -132,12 +141,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":1314.0,
+    "total_profit":229.2,
     "months_active":3.0,
     "avg_price":262.8,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800361378376",
@@ -146,6 +156,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":80.0,
+    "total_profit":4.0,
     "months_active":1.0,
     "avg_price":80.0,
     "mean_monthly_qty":1.0,
@@ -160,6 +171,7 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":80.0,
+    "total_profit":3.9,
     "months_active":1.0,
     "avg_price":80.0,
     "mean_monthly_qty":1.0,
@@ -174,6 +186,7 @@
     "tab":"F&B",
     "total_qty":16.0,
     "total_sales":240.0,
+    "total_profit":66.4,
     "months_active":4.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.0,
@@ -188,12 +201,13 @@
     "tab":"F&B",
     "total_qty":61.0,
     "total_sales":913.5,
+    "total_profit":341.92,
     "months_active":7.0,
     "avg_price":14.9754098361,
     "mean_monthly_qty":8.7142857143,
     "cv_monthly_qty":0.5442030384,
     "trend_qty_slope":0.8214285714,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"4800361410892",
@@ -202,12 +216,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":440.0,
+    "total_profit":65.84,
     "months_active":3.0,
     "avg_price":110.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801010562207",
@@ -216,6 +231,7 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":376.75,
+    "total_profit":-98.45,
     "months_active":4.0,
     "avg_price":34.25,
     "mean_monthly_qty":2.75,
@@ -230,12 +246,13 @@
     "tab":"F&B",
     "total_qty":29.0,
     "total_sales":20844.0,
+    "total_profit":3444.0,
     "months_active":11.0,
     "avg_price":718.7586206897,
     "mean_monthly_qty":2.6363636364,
     "cv_monthly_qty":0.6913771605,
     "trend_qty_slope":-0.2272727273,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"8901401715024",
@@ -244,11 +261,12 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":3640.0,
+    "total_profit":504.0,
     "months_active":4.0,
     "avg_price":520.0,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4738035415,
     "trend_qty_slope":-0.1,
-    "cluster":0
+    "cluster":-1
   }
 ]

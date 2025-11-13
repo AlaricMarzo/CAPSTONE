@@ -1,10 +1,10 @@
 {
   "data_overview": {
-    "total_rows_analyzed": 116778,
-    "total_sales": 20065607.9,
-    "total_quantity": 678394,
-    "total_profit": 3862129.06,
-    "avg_profit_margin_pct": 30.882524945114692
+    "total_rows_analyzed": 119881,
+    "total_sales": 20616048.37,
+    "total_quantity": 700776,
+    "total_profit": 3964347.4300000006,
+    "avg_profit_margin_pct": 30.939696809652308
   },
   "top_5_products": [
     {
@@ -14,43 +14,43 @@
       "profit_margin": 15.679141236074901
     },
     {
+      "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
+      "total_sales": 344871.06,
+      "total_qty": 22.0,
+      "profit_margin": 36.75317378036881
+    },
+    {
       "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
       "total_sales": 333887.27,
       "total_qty": 6784.0,
       "profit_margin": 17.71929489854465
     },
     {
-      "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
-      "total_sales": 313671.06,
-      "total_qty": 20.0,
-      "profit_margin": 36.74647575074347
-    },
-    {
       "medicine": "OHHIRAs PROPOLIS 600MG CAP",
-      "total_sales": 262105.53,
-      "total_qty": 4080.0,
-      "profit_margin": 8.871438156989667
+      "total_sales": 272148.93,
+      "total_qty": 4234.0,
+      "profit_margin": 8.839252096269496
     },
     {
-      "medicine": "BACTIV 457MG/5ML 70ML",
-      "total_sales": 228228.7,
-      "total_qty": 613.0,
-      "profit_margin": 11.43986273417848
+      "medicine": "BACTIV (CO-AMOXICLAV) 457MG/5ML 70ML",
+      "total_sales": 231648.7,
+      "total_qty": 622.0,
+      "profit_margin": 11.538851718140442
     }
   ],
   "kpi_analysis": {
     "kpi_metrics_generated": 15,
-    "avg_monthly_growth_rate_cagr": 0.02392279775519701,
-    "avg_monthly_growth_rate_mean": 0.03951758888542176
+    "avg_monthly_growth_rate_cagr": 0.023211083663591703,
+    "avg_monthly_growth_rate_mean": 0.03765706066458029
   },
   "market_basket_analysis": {
     "rules_generated": 101,
-    "transactions": 24602,
-    "items": 3465
+    "transactions": 25271,
+    "items": 3469
   },
   "clustering": {
     "total_cluster_graphs_generated": 156,
     "categories_analyzed": 41
   },
-  "timestamp": "2025-11-14 03:10:38.324555"
+  "timestamp": "2025-11-14 05:17:10.010366"
 }

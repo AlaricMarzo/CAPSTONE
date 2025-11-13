@@ -6,6 +6,7 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":180.0,
+    "total_profit":180.0,
     "months_active":2.0,
     "avg_price":90.0,
     "mean_monthly_qty":1.0,
@@ -20,12 +21,13 @@
     "tab":"F&B",
     "total_qty":55.0,
     "total_sales":550.0,
+    "total_profit":260.15,
     "months_active":9.0,
     "avg_price":10.0,
     "mean_monthly_qty":6.1111111111,
     "cv_monthly_qty":0.5795409982,
     "trend_qty_slope":0.3333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800010064384",
@@ -34,12 +36,13 @@
     "tab":"F&B",
     "total_qty":101.0,
     "total_sales":1006.0,
+    "total_profit":473.73,
     "months_active":13.0,
     "avg_price":9.9603960396,
     "mean_monthly_qty":7.7692307692,
     "cv_monthly_qty":0.7124586264,
     "trend_qty_slope":0.0494505495,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800010075069",
@@ -48,12 +51,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":150.0,
+    "total_profit":81.5,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.8,
     "trend_qty_slope":8.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800010075243",
@@ -62,12 +66,13 @@
     "tab":"F&B",
     "total_qty":37.0,
     "total_sales":555.0,
+    "total_profit":298.96,
     "months_active":8.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.625,
     "cv_monthly_qty":0.8508149318,
     "trend_qty_slope":0.6547619048,
-    "cluster":0
+    "cluster":11
   },
   {
     "item_code":"4800010075526",
@@ -76,12 +81,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":135.0,
+    "total_profit":73.35,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.5555555556,
     "trend_qty_slope":-5.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800010961447",
@@ -90,12 +96,13 @@
     "tab":"F&B",
     "total_qty":40.0,
     "total_sales":480.0,
+    "total_profit":111.2,
     "months_active":6.0,
     "avg_price":12.0,
     "mean_monthly_qty":6.6666666667,
     "cv_monthly_qty":0.455521679,
     "trend_qty_slope":-1.2571428571,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016021169",
@@ -104,12 +111,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":108.0,
+    "total_profit":46.62,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.1111111111,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016022180",
@@ -118,12 +126,13 @@
     "tab":"F&B",
     "total_qty":22.0,
     "total_sales":440.0,
+    "total_profit":167.2,
     "months_active":5.0,
     "avg_price":20.0,
     "mean_monthly_qty":4.4,
     "cv_monthly_qty":0.7687061148,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016022258",
@@ -132,6 +141,7 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":180.0,
+    "total_profit":66.96,
     "months_active":6.0,
     "avg_price":20.0,
     "mean_monthly_qty":1.5,
@@ -146,12 +156,13 @@
     "tab":"F&B",
     "total_qty":27.0,
     "total_sales":540.0,
+    "total_profit":205.2,
     "months_active":6.0,
     "avg_price":20.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.379516695,
     "trend_qty_slope":-0.4285714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016024467",
@@ -160,12 +171,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":240.0,
+    "total_profit":61.8,
     "months_active":5.0,
     "avg_price":20.0,
     "mean_monthly_qty":2.4,
     "cv_monthly_qty":0.9718253158,
     "trend_qty_slope":-0.4,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016065859",
@@ -174,12 +186,13 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":200.0,
+    "total_profit":32.0,
     "months_active":4.0,
     "avg_price":10.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.5830951895,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016074882",
@@ -188,12 +201,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":80.0,
+    "total_profit":16.68,
     "months_active":2.0,
     "avg_price":20.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.570092459e-16,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800016074899",
@@ -202,12 +216,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":60.0,
+    "total_profit":12.51,
     "months_active":3.0,
     "avg_price":20.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016083396",
@@ -216,12 +231,13 @@
     "tab":"F&B",
     "total_qty":13.0,
     "total_sales":65.0,
+    "total_profit":26.91,
     "months_active":2.0,
     "avg_price":5.0,
     "mean_monthly_qty":6.5,
     "cv_monthly_qty":0.3846153846,
     "trend_qty_slope":5.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016083457",
@@ -230,12 +246,13 @@
     "tab":"F&B",
     "total_qty":159.0,
     "total_sales":795.0,
+    "total_profit":329.13,
     "months_active":5.0,
     "avg_price":5.0,
     "mean_monthly_qty":31.8,
     "cv_monthly_qty":0.1397868602,
     "trend_qty_slope":-0.7,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"4800016087189",
@@ -244,12 +261,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":50.0,
+    "total_profit":20.7,
     "months_active":1.0,
     "avg_price":5.0,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800016087530",
@@ -258,12 +276,13 @@
     "tab":"F&B",
     "total_qty":21.0,
     "total_sales":208.04,
+    "total_profit":91.7,
     "months_active":6.0,
     "avg_price":9.9066666667,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.6335302236,
     "trend_qty_slope":-0.3714285714,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016087554",
@@ -272,12 +291,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":168.04,
+    "total_profit":89.56,
     "months_active":5.0,
     "avg_price":9.8847058824,
     "mean_monthly_qty":3.4,
     "cv_monthly_qty":0.5455069703,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4800016087592",
@@ -286,12 +306,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":170.0,
+    "total_profit":97.58,
     "months_active":5.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.4,
     "cv_monthly_qty":0.7347056469,
     "trend_qty_slope":0.7,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4800016091117",
@@ -300,12 +321,13 @@
     "tab":"F&B",
     "total_qty":16.0,
     "total_sales":232.0,
+    "total_profit":86.72,
     "months_active":4.0,
     "avg_price":14.5,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.5590169944,
     "trend_qty_slope":1.6,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4800016105098",
@@ -314,12 +336,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":66.0,
+    "total_profit":16.92,
     "months_active":2.0,
     "avg_price":22.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016105746",
@@ -328,12 +351,13 @@
     "tab":"F&B",
     "total_qty":21.0,
     "total_sales":210.0,
+    "total_profit":84.0,
     "months_active":5.0,
     "avg_price":10.0,
     "mean_monthly_qty":4.2,
     "cv_monthly_qty":0.6632565846,
     "trend_qty_slope":0.8,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016106132",
@@ -342,12 +366,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":200.0,
+    "total_profit":18.4,
     "months_active":1.0,
     "avg_price":100.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016110535",
@@ -356,12 +381,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":60.0,
+    "total_profit":17.1,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016110542",
@@ -370,12 +396,13 @@
     "tab":"F&B",
     "total_qty":24.0,
     "total_sales":260.0,
+    "total_profit":98.72,
     "months_active":7.0,
     "avg_price":10.8333333333,
     "mean_monthly_qty":3.4285714286,
     "cv_monthly_qty":0.9842509843,
     "trend_qty_slope":1.1428571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016112140",
@@ -384,12 +411,13 @@
     "tab":"F&B",
     "total_qty":22.0,
     "total_sales":253.34,
+    "total_profit":106.6,
     "months_active":3.0,
     "avg_price":11.5154545455,
     "mean_monthly_qty":7.3333333333,
     "cv_monthly_qty":0.1700753358,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016112430",
@@ -398,12 +426,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":97.34,
+    "total_profit":37.31,
     "months_active":3.0,
     "avg_price":10.8155555556,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.272165527,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800016112478",
@@ -412,12 +441,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":228.0,
+    "total_profit":101.27,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":6.3333333333,
     "cv_monthly_qty":0.9761703679,
     "trend_qty_slope":-7.0,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4800016114274",
@@ -426,12 +456,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":190.0,
+    "total_profit":70.49,
     "months_active":4.0,
     "avg_price":10.0,
     "mean_monthly_qty":4.75,
     "cv_monthly_qty":0.4794965042,
     "trend_qty_slope":0.7,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016115011",
@@ -440,12 +471,13 @@
     "tab":"F&B",
     "total_qty":26.0,
     "total_sales":308.4,
+    "total_profit":122.5,
     "months_active":5.0,
     "avg_price":11.8615384615,
     "mean_monthly_qty":5.2,
     "cv_monthly_qty":0.6129760558,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016115110",
@@ -454,12 +486,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":72.0,
+    "total_profit":21.95,
     "months_active":3.0,
     "avg_price":10.2857142857,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.4040610178,
     "trend_qty_slope":-3.050525372e-16,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016115257",
@@ -468,12 +501,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":75.0,
+    "total_profit":18.45,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016115431",
@@ -482,12 +516,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":64.0,
+    "total_profit":64.0,
     "months_active":5.0,
     "avg_price":10.6666666667,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.2,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016115707",
@@ -496,12 +531,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":220.0,
+    "total_profit":42.9,
     "months_active":2.0,
     "avg_price":20.0,
     "mean_monthly_qty":5.5,
     "cv_monthly_qty":0.0909090909,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4800016138546",
@@ -510,12 +546,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":244.0,
+    "total_profit":55.36,
     "months_active":4.0,
     "avg_price":27.1111111111,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.4843221048,
     "trend_qty_slope":-0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552106",
@@ -524,12 +561,13 @@
     "tab":"F&B",
     "total_qty":23.0,
     "total_sales":759.0,
+    "total_profit":265.65,
     "months_active":8.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.875,
     "cv_monthly_qty":0.5618629558,
     "trend_qty_slope":0.25,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552113",
@@ -538,12 +576,13 @@
     "tab":"F&B",
     "total_qty":14.0,
     "total_sales":462.0,
+    "total_profit":161.7,
     "months_active":5.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.8,
     "cv_monthly_qty":0.6144518048,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552120",
@@ -552,12 +591,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":561.0,
+    "total_profit":196.35,
     "months_active":7.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.4285714286,
     "cv_monthly_qty":0.4322628958,
     "trend_qty_slope":-5.876209286e-17,
-    "cluster":0
+    "cluster":11
   },
   {
     "item_code":"4800016552137",
@@ -566,12 +606,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":396.0,
+    "total_profit":138.6,
     "months_active":6.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":0.2285714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552274",
@@ -580,12 +621,13 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":594.0,
+    "total_profit":208.5,
     "months_active":7.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.5714285714,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":0.3928571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552298",
@@ -594,12 +636,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":175.0,
+    "total_profit":24.85,
     "months_active":4.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.2474358297,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016552304",
@@ -608,12 +651,13 @@
     "tab":"F&B",
     "total_qty":13.0,
     "total_sales":429.0,
+    "total_profit":150.15,
     "months_active":9.0,
     "avg_price":33.0,
     "mean_monthly_qty":1.4444444444,
     "cv_monthly_qty":0.4741856925,
     "trend_qty_slope":0.0166666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016557217",
@@ -622,12 +666,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":561.0,
+    "total_profit":155.55,
     "months_active":8.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.125,
     "cv_monthly_qty":0.495655869,
     "trend_qty_slope":0.0595238095,
-    "cluster":0
+    "cluster":11
   },
   {
     "item_code":"4800016561184",
@@ -636,12 +681,13 @@
     "tab":"F&B",
     "total_qty":26.0,
     "total_sales":858.0,
+    "total_profit":300.3,
     "months_active":10.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.6,
     "cv_monthly_qty":0.5493406483,
     "trend_qty_slope":-0.1818181818,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016561443",
@@ -650,12 +696,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":198.0,
+    "total_profit":69.3,
     "months_active":5.0,
     "avg_price":33.0,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-0.2,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016561498",
@@ -664,12 +711,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":561.0,
+    "total_profit":155.55,
     "months_active":6.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.8333333333,
     "cv_monthly_qty":0.5549400666,
     "trend_qty_slope":-0.1428571429,
-    "cluster":0
+    "cluster":11
   },
   {
     "item_code":"4800016561863",
@@ -678,12 +726,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":140.0,
+    "total_profit":140.0,
     "months_active":2.0,
     "avg_price":35.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.570092459e-16,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800016601583",
@@ -692,12 +741,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":132.0,
+    "total_profit":66.0,
     "months_active":6.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.5821022034,
     "trend_qty_slope":0.0285714286,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800016604225",
@@ -706,12 +756,13 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":489.0,
+    "total_profit":204.8,
     "months_active":7.0,
     "avg_price":24.45,
     "mean_monthly_qty":2.8571428571,
     "cv_monthly_qty":0.6041522987,
     "trend_qty_slope":0.6428571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016622533",
@@ -720,12 +771,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":75.0,
+    "total_profit":25.2,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016622571",
@@ -734,12 +786,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":65.0,
+    "total_profit":10.6,
     "months_active":1.0,
     "avg_price":65.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016622588",
@@ -748,12 +801,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":120.0,
+    "total_profit":11.2,
     "months_active":1.0,
     "avg_price":60.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016627262",
@@ -762,12 +816,13 @@
     "tab":"F&B",
     "total_qty":29.0,
     "total_sales":290.0,
+    "total_profit":116.0,
     "months_active":5.0,
     "avg_price":10.0,
     "mean_monthly_qty":5.8,
     "cv_monthly_qty":0.3991667898,
     "trend_qty_slope":0.6,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016627279",
@@ -776,12 +831,13 @@
     "tab":"F&B",
     "total_qty":27.0,
     "total_sales":266.0,
+    "total_profit":104.0,
     "months_active":4.0,
     "avg_price":9.8518518519,
     "mean_monthly_qty":6.75,
     "cv_monthly_qty":0.2844868796,
     "trend_qty_slope":-0.7,
-    "cluster":0
+    "cluster":10
   },
   {
     "item_code":"4800016627286",
@@ -790,12 +846,13 @@
     "tab":"F&B",
     "total_qty":23.0,
     "total_sales":230.0,
+    "total_profit":92.0,
     "months_active":4.0,
     "avg_price":10.0,
     "mean_monthly_qty":5.75,
     "cv_monthly_qty":0.5126011358,
     "trend_qty_slope":-1.3,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4800016628283",
@@ -804,12 +861,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":60.0,
+    "total_profit":24.0,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016629686",
@@ -818,12 +876,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":170.0,
+    "total_profit":14.6,
     "months_active":2.0,
     "avg_price":85.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4800016633621",
@@ -832,12 +891,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":198.0,
+    "total_profit":54.0,
     "months_active":4.0,
     "avg_price":22.0,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.1924500897,
     "trend_qty_slope":0.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016633782",
@@ -846,12 +906,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":475.0,
+    "total_profit":171.0,
     "months_active":10.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.9,
     "cv_monthly_qty":0.5494898163,
     "trend_qty_slope":0.0666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016635052",
@@ -860,12 +921,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":48.0,
+    "total_profit":19.4,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800016635243",
@@ -874,12 +936,13 @@
     "tab":"F&B",
     "total_qty":14.0,
     "total_sales":558.4,
+    "total_profit":89.4,
     "months_active":6.0,
     "avg_price":39.8857142857,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.4040610178,
     "trend_qty_slope":-1.693579515e-16,
-    "cluster":0
+    "cluster":11
   },
   {
     "item_code":"4800016635250",
@@ -888,12 +951,13 @@
     "tab":"F&B",
     "total_qty":23.0,
     "total_sales":918.4,
+    "total_profit":206.2,
     "months_active":9.0,
     "avg_price":39.9304347826,
     "mean_monthly_qty":2.5555555556,
     "cv_monthly_qty":0.4919003695,
     "trend_qty_slope":-0.2666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016635281",
@@ -902,12 +966,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":100.0,
+    "total_profit":100.0,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800016635342",
@@ -916,12 +981,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":157.0,
+    "total_profit":157.0,
     "months_active":2.0,
     "avg_price":22.4285714286,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.1428571429,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016641008",
@@ -930,12 +996,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":71.04,
+    "total_profit":35.04,
     "months_active":2.0,
     "avg_price":11.84,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":4.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016642029",
@@ -944,12 +1011,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":72.0,
+    "total_profit":36.0,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016644801",
@@ -958,12 +1026,13 @@
     "tab":"F&B",
     "total_qty":48.0,
     "total_sales":1200.0,
+    "total_profit":432.0,
     "months_active":13.0,
     "avg_price":25.0,
     "mean_monthly_qty":3.6923076923,
     "cv_monthly_qty":0.5951190357,
     "trend_qty_slope":0.3516483516,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016652035",
@@ -972,12 +1041,13 @@
     "tab":"F&B",
     "total_qty":21.0,
     "total_sales":252.0,
+    "total_profit":126.0,
     "months_active":8.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.625,
     "cv_monthly_qty":0.7604152106,
     "trend_qty_slope":0.4642857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016653094",
@@ -986,12 +1056,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":84.0,
+    "total_profit":84.0,
     "months_active":2.0,
     "avg_price":28.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800016661006",
@@ -1000,12 +1071,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":84.0,
+    "total_profit":33.95,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.4040610178,
     "trend_qty_slope":-3.050525372e-16,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800016663802",
@@ -1014,12 +1086,13 @@
     "tab":"F&B",
     "total_qty":16.0,
     "total_sales":400.0,
+    "total_profit":180.8,
     "months_active":8.0,
     "avg_price":25.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.6614378278,
     "trend_qty_slope":0.1666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016665271",
@@ -1028,12 +1101,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":225.0,
+    "total_profit":81.0,
     "months_active":5.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.8,
     "cv_monthly_qty":0.6478835439,
     "trend_qty_slope":-0.2,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4800016666247",
@@ -1042,12 +1116,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":50.0,
+    "total_profit":50.0,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800016666445",
@@ -1056,12 +1131,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":143.52,
+    "total_profit":63.48,
     "months_active":4.0,
     "avg_price":11.96,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":-0.8,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800016666452",
@@ -1070,12 +1146,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":200.0,
+    "total_profit":56.8,
     "months_active":3.0,
     "avg_price":25.0,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.4677071733,
     "trend_qty_slope":-1.5,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800016671807",
@@ -1084,12 +1161,13 @@
     "tab":"F&B",
     "total_qty":51.0,
     "total_sales":1275.0,
+    "total_profit":459.0,
     "months_active":12.0,
     "avg_price":25.0,
     "mean_monthly_qty":4.25,
     "cv_monthly_qty":0.5359078576,
     "trend_qty_slope":0.3111888112,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016677274",
@@ -1098,12 +1176,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":135.0,
+    "total_profit":25.2,
     "months_active":1.0,
     "avg_price":45.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800016677298",
@@ -1112,12 +1191,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":75.0,
+    "total_profit":75.0,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800016677335",
@@ -1126,12 +1206,13 @@
     "tab":"F&B",
     "total_qty":52.0,
     "total_sales":624.0,
+    "total_profit":241.8,
     "months_active":12.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.3333333333,
     "cv_monthly_qty":0.575639598,
     "trend_qty_slope":0.034965035,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016677342",
@@ -1140,12 +1221,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":84.0,
+    "total_profit":19.35,
     "months_active":2.0,
     "avg_price":28.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800016680267",
@@ -1154,12 +1236,13 @@
     "tab":"F&B",
     "total_qty":13.0,
     "total_sales":585.0,
+    "total_profit":55.25,
     "months_active":5.0,
     "avg_price":45.0,
     "mean_monthly_qty":2.6,
     "cv_monthly_qty":0.7133552689,
     "trend_qty_slope":-0.8,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016680540",
@@ -1168,12 +1251,13 @@
     "tab":"F&B",
     "total_qty":24.0,
     "total_sales":573.0,
+    "total_profit":220.96,
     "months_active":7.0,
     "avg_price":23.875,
     "mean_monthly_qty":3.4285714286,
     "cv_monthly_qty":1.1651776212,
     "trend_qty_slope":-0.5714285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016963827",
@@ -1182,12 +1266,13 @@
     "tab":"F&B",
     "total_qty":66.0,
     "total_sales":1319.2,
+    "total_profit":304.12,
     "months_active":11.0,
     "avg_price":19.9878787879,
     "mean_monthly_qty":6.0,
     "cv_monthly_qty":0.5817076915,
     "trend_qty_slope":-0.0181818182,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016964060",
@@ -1196,12 +1281,13 @@
     "tab":"F&B",
     "total_qty":27.0,
     "total_sales":405.0,
+    "total_profit":169.92,
     "months_active":6.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.4581228473,
     "trend_qty_slope":-0.4285714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016964299",
@@ -1210,12 +1296,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":380.0,
+    "total_profit":87.78,
     "months_active":4.0,
     "avg_price":20.0,
     "mean_monthly_qty":4.75,
     "cv_monthly_qty":0.3113726202,
     "trend_qty_slope":-0.7,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800016964367",
@@ -1224,12 +1311,13 @@
     "tab":"F&B",
     "total_qty":126.0,
     "total_sales":1512.0,
+    "total_profit":387.24,
     "months_active":12.0,
     "avg_price":12.0,
     "mean_monthly_qty":10.5,
     "cv_monthly_qty":0.6067147573,
     "trend_qty_slope":-0.4335664336,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800031205605",
@@ -1238,12 +1326,13 @@
     "tab":"F&B",
     "total_qty":46.0,
     "total_sales":552.0,
+    "total_profit":342.7,
     "months_active":7.0,
     "avg_price":12.0,
     "mean_monthly_qty":6.5714285714,
     "cv_monthly_qty":0.6079187589,
     "trend_qty_slope":-1.6071428571,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092113246",
@@ -1252,12 +1341,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":30.0,
+    "total_profit":30.0,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800092113253",
@@ -1266,12 +1356,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":100.0,
+    "total_profit":100.0,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.4,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800092113260",
@@ -1280,12 +1371,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":60.0,
+    "total_profit":60.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":1.5,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800092113277",
@@ -1294,12 +1386,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":70.0,
+    "total_profit":70.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.8081220356,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800092113338",
@@ -1308,12 +1401,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":100.0,
+    "total_profit":100.0,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800092113352",
@@ -1322,12 +1416,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":110.0,
+    "total_profit":44.55,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.6666666667,
     "cv_monthly_qty":0.5142594772,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092113369",
@@ -1336,12 +1431,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":20.0,
+    "total_profit":8.1,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":14
   },
   {
     "item_code":"4800092113376",
@@ -1350,12 +1446,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":30.0,
+    "total_profit":12.15,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800092115288",
@@ -1364,12 +1461,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":20.0,
+    "total_profit":20.0,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":14
   },
   {
     "item_code":"4800092115660",
@@ -1378,12 +1476,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":100.0,
+    "total_profit":100.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.6164414003,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800092118746",
@@ -1392,12 +1491,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":20.0,
+    "total_profit":8.1,
     "months_active":2.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":14
   },
   {
     "item_code":"4800092330131",
@@ -1406,12 +1506,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":80.0,
+    "total_profit":41.0,
     "months_active":2.0,
     "avg_price":40.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800092331732",
@@ -1420,12 +1521,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":80.0,
+    "total_profit":41.0,
     "months_active":1.0,
     "avg_price":40.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800092332852",
@@ -1434,12 +1536,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":39.0,
+    "total_profit":0.0,
     "months_active":1.0,
     "avg_price":19.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800092550904",
@@ -1448,12 +1551,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":75.0,
+    "total_profit":36.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800092551284",
@@ -1462,12 +1566,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":30.0,
+    "total_profit":14.4,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800092551369",
@@ -1476,12 +1581,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":30.0,
+    "total_profit":14.4,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800092551383",
@@ -1490,12 +1596,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":30.0,
+    "total_profit":14.4,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800092551444",
@@ -1504,12 +1611,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":61.08,
+    "total_profit":6.48,
     "months_active":2.0,
     "avg_price":8.7257142857,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.7142857143,
     "trend_qty_slope":5.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800092556586",
@@ -1518,12 +1626,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":150.0,
+    "total_profit":43.5,
     "months_active":5.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092660634",
@@ -1532,12 +1641,13 @@
     "tab":"F&B",
     "total_qty":104.0,
     "total_sales":1248.0,
+    "total_profit":408.72,
     "months_active":10.0,
     "avg_price":12.0,
     "mean_monthly_qty":10.4,
     "cv_monthly_qty":0.5946009551,
     "trend_qty_slope":-1.2,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092660788",
@@ -1546,12 +1656,13 @@
     "tab":"F&B",
     "total_qty":56.0,
     "total_sales":672.0,
+    "total_profit":521.36,
     "months_active":8.0,
     "avg_price":12.0,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.6998542122,
     "trend_qty_slope":-1.5476190476,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092660962",
@@ -1560,12 +1671,13 @@
     "tab":"F&B",
     "total_qty":84.0,
     "total_sales":1008.0,
+    "total_profit":330.12,
     "months_active":10.0,
     "avg_price":12.0,
     "mean_monthly_qty":8.4,
     "cv_monthly_qty":0.7026835506,
     "trend_qty_slope":-0.6424242424,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800092773129",
@@ -1574,12 +1686,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":40.0,
+    "total_profit":16.0,
     "months_active":1.0,
     "avg_price":10.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800092773204",
@@ -1588,12 +1701,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":98.4,
+    "total_profit":29.15,
     "months_active":3.0,
     "avg_price":19.68,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800110026923",
@@ -1602,12 +1716,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":40.18,
+    "total_profit":1.48,
     "months_active":1.0,
     "avg_price":20.09,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800116043009",
@@ -1616,12 +1731,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":90.0,
+    "total_profit":33.3,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.4714045208,
     "trend_qty_slope":-1.5,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800116098009",
@@ -1630,12 +1746,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":100.0,
+    "total_profit":39.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800129181002",
@@ -1644,12 +1761,13 @@
     "tab":"F&B",
     "total_qty":107.0,
     "total_sales":1070.0,
+    "total_profit":452.61,
     "months_active":8.0,
     "avg_price":10.0,
     "mean_monthly_qty":13.375,
     "cv_monthly_qty":0.8249218831,
     "trend_qty_slope":-1.25,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194101134",
@@ -1658,12 +1776,13 @@
     "tab":"F&B",
     "total_qty":13.0,
     "total_sales":325.0,
+    "total_profit":130.0,
     "months_active":6.0,
     "avg_price":25.0,
     "mean_monthly_qty":2.1666666667,
     "cv_monthly_qty":0.3171619712,
     "trend_qty_slope":0.1428571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194101783",
@@ -1672,12 +1791,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":36.0,
+    "total_profit":36.0,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800194104869",
@@ -1686,12 +1806,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":48.0,
+    "total_profit":20.4,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800194104937",
@@ -1700,6 +1821,7 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":180.0,
+    "total_profit":97.2,
     "months_active":3.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.0,
@@ -1714,12 +1836,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":144.0,
+    "total_profit":61.2,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.2041241452,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800194105972",
@@ -1728,12 +1851,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":50.0,
+    "total_profit":16.2,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800194106016",
@@ -1742,12 +1866,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":250.0,
+    "total_profit":100.0,
     "months_active":7.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.0357142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194106771",
@@ -1756,12 +1881,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":175.0,
+    "total_profit":70.0,
     "months_active":4.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.2474358297,
     "trend_qty_slope":0.3,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194113427",
@@ -1770,12 +1896,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":190.0,
+    "total_profit":14.6,
     "months_active":1.0,
     "avg_price":95.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194115247",
@@ -1784,12 +1911,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":100.0,
+    "total_profit":100.0,
     "months_active":3.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800194115278",
@@ -1798,12 +1926,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":140.0,
+    "total_profit":25.6,
     "months_active":1.0,
     "avg_price":35.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800194115445",
@@ -1812,12 +1941,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":50.0,
+    "total_profit":16.2,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800194116466",
@@ -1826,12 +1956,13 @@
     "tab":"F&B",
     "total_qty":25.0,
     "total_sales":325.0,
+    "total_profit":93.75,
     "months_active":7.0,
     "avg_price":13.0,
     "mean_monthly_qty":3.5714285714,
     "cv_monthly_qty":0.445421149,
     "trend_qty_slope":-0.0714285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194152327",
@@ -1840,12 +1971,13 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":260.0,
+    "total_profit":75.0,
     "months_active":7.0,
     "avg_price":13.0,
     "mean_monthly_qty":2.8571428571,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.2142857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800194152839",
@@ -1854,12 +1986,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":60.0,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194152891",
@@ -1868,12 +2001,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":48.0,
+    "total_profit":48.0,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4800194152907",
@@ -1882,12 +2016,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":43.28,
+    "total_profit":43.28,
     "months_active":3.0,
     "avg_price":10.82,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800194153225",
@@ -1896,12 +2031,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":25.5,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194153232",
@@ -1910,12 +2046,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":25.5,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.6,
     "trend_qty_slope":-3.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194153683",
@@ -1924,12 +2061,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":25.5,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.6,
     "trend_qty_slope":-3.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194177146",
@@ -1938,12 +2076,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":90.0,
+    "total_profit":16.35,
     "months_active":2.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800194177603",
@@ -1952,6 +2091,7 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":180.0,
+    "total_profit":32.7,
     "months_active":4.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.5,
@@ -1966,12 +2106,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":70.0,
+    "total_profit":20.9,
     "months_active":2.0,
     "avg_price":35.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194177863",
@@ -1980,12 +2121,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":60.0,
+    "total_profit":10.9,
     "months_active":2.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800194177931",
@@ -1994,12 +2136,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":90.0,
+    "total_profit":16.35,
     "months_active":1.0,
     "avg_price":30.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800194179881",
@@ -2008,12 +2151,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":30.0,
+    "total_profit":8.8,
     "months_active":1.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800194179898",
@@ -2022,12 +2166,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":30.0,
+    "total_profit":8.8,
     "months_active":1.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800194179904",
@@ -2036,12 +2181,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":30.0,
+    "total_profit":8.8,
     "months_active":1.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":12
   },
   {
     "item_code":"4800216120013",
@@ -2050,12 +2196,13 @@
     "tab":"F&B",
     "total_qty":14.0,
     "total_sales":168.0,
+    "total_profit":67.2,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.6666666667,
     "cv_monthly_qty":0.2020305089,
     "trend_qty_slope":-4.937662873e-16,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4800216121058",
@@ -2064,12 +2211,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":140.0,
+    "total_profit":37.0,
     "months_active":2.0,
     "avg_price":35.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800318749853",
@@ -2078,12 +2226,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":2958.0,
+    "total_profit":517.59,
     "months_active":6.0,
     "avg_price":422.5714285714,
     "mean_monthly_qty":1.1666666667,
     "cv_monthly_qty":0.3194382825,
     "trend_qty_slope":-0.0285714286,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"4800361028639",
@@ -2092,12 +2241,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":160.0,
+    "total_profit":65.76,
     "months_active":2.0,
     "avg_price":20.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800361028646",
@@ -2106,12 +2256,13 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":358.0,
+    "total_profit":112.48,
     "months_active":4.0,
     "avg_price":19.8888888889,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.5091750772,
     "trend_qty_slope":-1.2,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800365701057",
@@ -2120,12 +2271,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":90.0,
+    "total_profit":42.6,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800365701101",
@@ -2134,12 +2286,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":36.0,
+    "total_profit":12.3,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800523220284",
@@ -2148,12 +2301,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":144.0,
+    "total_profit":67.8,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":3.594306906e-16,
-    "cluster":0
+    "cluster":9
   },
   {
     "item_code":"4800523220482",
@@ -2162,12 +2316,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":66.0,
+    "total_profit":20.55,
     "months_active":2.0,
     "avg_price":22.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800523220802",
@@ -2176,12 +2331,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":120.0,
+    "total_profit":56.5,
     "months_active":4.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":0.2,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800523224350",
@@ -2190,12 +2346,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":92.0,
+    "total_profit":31.4,
     "months_active":2.0,
     "avg_price":23.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800523441832",
@@ -2204,12 +2361,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":35.52,
+    "total_profit":16.47,
     "months_active":2.0,
     "avg_price":11.84,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800523441955",
@@ -2218,12 +2376,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":96.0,
+    "total_profit":34.0,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.4677071733,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4800523443201",
@@ -2232,12 +2391,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":24.0,
+    "total_profit":24.0,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":14
   },
   {
     "item_code":"4800523443249",
@@ -2246,12 +2406,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":84.0,
+    "total_profit":29.75,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.2020305089,
     "trend_qty_slope":-2.468831437e-16,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800523443263",
@@ -2260,12 +2421,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":36.0,
+    "total_profit":36.0,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"4800523443416",
@@ -2274,12 +2436,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":15.0,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800631000419",
@@ -2288,12 +2451,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":60.0,
+    "total_profit":20.4,
     "months_active":2.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4800631000488",
@@ -2302,12 +2466,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":410.0,
+    "total_profit":56.0,
     "months_active":4.0,
     "avg_price":41.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-0.2,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800631001867",
@@ -2316,12 +2481,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":270.0,
+    "total_profit":86.4,
     "months_active":5.0,
     "avg_price":30.0,
     "mean_monthly_qty":1.8,
     "cv_monthly_qty":0.4157397096,
     "trend_qty_slope":-0.3,
-    "cluster":0
+    "cluster":10
   },
   {
     "item_code":"4800631001928",
@@ -2330,26 +2496,28 @@
     "tab":"F&B",
     "total_qty":24.0,
     "total_sales":720.0,
+    "total_profit":230.4,
     "months_active":10.0,
     "avg_price":30.0,
     "mean_monthly_qty":2.4,
     "cv_monthly_qty":0.4639803636,
     "trend_qty_slope":-0.2545454545,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801010104100",
     "description":"JOHNSONS MILK+RICE BABY POWDER 50G",
     "category":"FOOD",
     "tab":"F&B",
-    "total_qty":35.0,
-    "total_sales":1145.0,
-    "months_active":11.0,
-    "avg_price":32.7142857143,
-    "mean_monthly_qty":3.1818181818,
-    "cv_monthly_qty":0.6676183683,
-    "trend_qty_slope":-0.1454545455,
-    "cluster":0
+    "total_qty":38.0,
+    "total_sales":1256.0,
+    "total_profit":187.86,
+    "months_active":12.0,
+    "avg_price":33.0526315789,
+    "mean_monthly_qty":3.1666666667,
+    "cv_monthly_qty":0.6424502956,
+    "trend_qty_slope":-0.1258741259,
+    "cluster":-1
   },
   {
     "item_code":"4801010104209",
@@ -2358,12 +2526,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":316.5,
+    "total_profit":30.0,
     "months_active":3.0,
     "avg_price":52.75,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801010107101",
@@ -2372,12 +2541,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":459.0,
+    "total_profit":44.2,
     "months_active":7.0,
     "avg_price":27.0,
     "mean_monthly_qty":2.4285714286,
     "cv_monthly_qty":0.6550311015,
     "trend_qty_slope":-0.3214285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801688103511",
@@ -2386,12 +2556,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":125.0,
+    "total_profit":44.25,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801981195541",
@@ -2400,12 +2571,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":105.0,
+    "total_profit":105.0,
     "months_active":1.0,
     "avg_price":35.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806018403859",
@@ -2414,12 +2586,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":100.0,
+    "total_profit":22.5,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.9899494937,
     "trend_qty_slope":-3.5,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4806018407703",
@@ -2428,12 +2601,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":90.0,
+    "total_profit":20.25,
     "months_active":1.0,
     "avg_price":10.0,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4806517040388",
@@ -2442,12 +2616,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":60.0,
+    "total_profit":32.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4806517042061",
@@ -2456,12 +2631,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":175.0,
+    "total_profit":26.88,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.4285714286,
     "trend_qty_slope":3.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806517042238",
@@ -2470,12 +2646,13 @@
     "tab":"F&B",
     "total_qty":34.0,
     "total_sales":845.0,
+    "total_profit":125.56,
     "months_active":5.0,
     "avg_price":24.8529411765,
     "mean_monthly_qty":6.8,
     "cv_monthly_qty":0.7635738227,
     "trend_qty_slope":-1.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806517043709",
@@ -2484,12 +2661,13 @@
     "tab":"F&B",
     "total_qty":30.0,
     "total_sales":450.0,
+    "total_profit":129.0,
     "months_active":6.0,
     "avg_price":15.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":-0.8571428571,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806526075135",
@@ -2498,12 +2676,13 @@
     "tab":"F&B",
     "total_qty":32.0,
     "total_sales":224.0,
+    "total_profit":124.8,
     "months_active":1.0,
     "avg_price":7.0,
     "mean_monthly_qty":32.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4806526078037",
@@ -2512,12 +2691,13 @@
     "tab":"F&B",
     "total_qty":399.0,
     "total_sales":3988.0,
+    "total_profit":2300.23,
     "months_active":11.0,
     "avg_price":9.9949874687,
     "mean_monthly_qty":36.2727272727,
     "cv_monthly_qty":0.2841048634,
     "trend_qty_slope":-2.0636363636,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"4806534220589",
@@ -2526,12 +2706,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":63.0,
+    "total_profit":33.57,
     "months_active":1.0,
     "avg_price":7.0,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4807770120206",
@@ -2540,12 +2721,13 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":90.0,
+    "total_profit":90.0,
     "months_active":1.0,
     "avg_price":4.5,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4807770120244",
@@ -2554,12 +2736,13 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":90.0,
+    "total_profit":90.0,
     "months_active":5.0,
     "avg_price":4.5,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.5700877125,
     "trend_qty_slope":0.7,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"4807770121326",
@@ -2568,12 +2751,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":220.0,
+    "total_profit":220.0,
     "months_active":1.0,
     "avg_price":20.0,
     "mean_monthly_qty":11.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"4807770271168",
@@ -2582,12 +2766,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":297.0,
+    "total_profit":104.85,
     "months_active":5.0,
     "avg_price":33.0,
     "mean_monthly_qty":1.8,
     "cv_monthly_qty":0.4157397096,
     "trend_qty_slope":-0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807770271175",
@@ -2596,12 +2781,13 @@
     "tab":"F&B",
     "total_qty":30.0,
     "total_sales":990.0,
+    "total_profit":349.5,
     "months_active":9.0,
     "avg_price":33.0,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.5830951895,
     "trend_qty_slope":-0.5333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807770271342",
@@ -2610,12 +2796,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":165.0,
+    "total_profit":58.25,
     "months_active":2.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.6,
     "trend_qty_slope":-3.0,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4807770271519",
@@ -2624,12 +2811,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":264.0,
+    "total_profit":62.0,
     "months_active":4.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.8660254038,
     "trend_qty_slope":-1.2,
-    "cluster":0
+    "cluster":10
   },
   {
     "item_code":"4807770271601",
@@ -2638,12 +2826,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":66.0,
+    "total_profit":23.3,
     "months_active":2.0,
     "avg_price":33.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4807770272653",
@@ -2652,12 +2841,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":504.0,
+    "total_profit":201.0,
     "months_active":6.0,
     "avg_price":42.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":-0.0571428571,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807770273612",
@@ -2666,12 +2856,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":66.0,
+    "total_profit":23.3,
     "months_active":1.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4807770273810",
@@ -2680,12 +2871,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":132.0,
+    "total_profit":46.6,
     "months_active":1.0,
     "avg_price":33.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4807770274169",
@@ -2694,12 +2886,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":132.0,
+    "total_profit":132.0,
     "months_active":2.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4807770274435",
@@ -2708,12 +2901,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":297.0,
+    "total_profit":69.75,
     "months_active":4.0,
     "avg_price":33.0,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.3685138656,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809010449665",
@@ -2722,12 +2916,13 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":165.0,
+    "total_profit":31.2,
     "months_active":2.0,
     "avg_price":55.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":6
   },
   {
     "item_code":"4809010449689",
@@ -2736,12 +2931,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":200.0,
+    "total_profit":21.6,
     "months_active":2.0,
     "avg_price":50.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4809010449696",
@@ -2750,12 +2946,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":300.0,
+    "total_profit":32.4,
     "months_active":2.0,
     "avg_price":50.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-3.140184917e-16,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809010626011",
@@ -2764,12 +2961,13 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":270.0,
+    "total_profit":140.4,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-0.0,
-    "cluster":0
+    "cluster":10
   },
   {
     "item_code":"4809011681378",
@@ -2778,12 +2976,13 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":540.0,
+    "total_profit":183.6,
     "months_active":8.0,
     "avg_price":30.0,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.4843221048,
     "trend_qty_slope":-0.2380952381,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809011681439",
@@ -2792,12 +2991,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":25.0,
+    "total_profit":7.35,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":14
   },
   {
     "item_code":"4809013041354",
@@ -2806,12 +3006,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":48.0,
+    "total_profit":26.6,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4809013041361",
@@ -2820,12 +3021,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":33.25,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":4.07711102e-16,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4809013041378",
@@ -2834,12 +3036,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":48.0,
+    "total_profit":26.6,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":5
   },
   {
     "item_code":"4891208040143",
@@ -2848,12 +3051,13 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":72.0,
+    "total_profit":72.0,
     "months_active":4.0,
     "avg_price":12.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-0.4,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4891208040181",
@@ -2862,12 +3066,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":60.0,
+    "total_profit":60.0,
     "months_active":2.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"4901301236852",
@@ -2876,12 +3081,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":204.25,
+    "total_profit":-68.11,
     "months_active":1.0,
     "avg_price":204.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4901301272195",
@@ -2890,12 +3096,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":204.25,
+    "total_profit":-68.11,
     "months_active":1.0,
     "avg_price":204.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"5482810952",
@@ -2904,12 +3111,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":850.0,
+    "total_profit":300.0,
     "months_active":1.0,
     "avg_price":850.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"729461168158",
@@ -2918,12 +3126,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":96.0,
+    "total_profit":40.0,
     "months_active":3.0,
     "avg_price":12.0,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.1767766953,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":7
   },
   {
     "item_code":"73112610104",
@@ -2932,12 +3141,13 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":105.0,
+    "total_profit":30.45,
     "months_active":4.0,
     "avg_price":15.0,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4738035415,
     "trend_qty_slope":0.3,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"731126102049",
@@ -2946,12 +3156,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":220.0,
+    "total_profit":220.0,
     "months_active":6.0,
     "avg_price":20.0,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.6618281718,
     "trend_qty_slope":0.0285714286,
-    "cluster":0
+    "cluster":8
   },
   {
     "item_code":"731126103046",
@@ -2960,12 +3171,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":65.0,
+    "total_profit":22.4,
     "months_active":3.0,
     "avg_price":16.25,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.9354143467,
     "trend_qty_slope":1.5,
-    "cluster":0
+    "cluster":4
   },
   {
     "item_code":"731126103084",
@@ -2974,12 +3186,13 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":40.0,
+    "total_profit":40.0,
     "months_active":1.0,
     "avg_price":40.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"731126104043",
@@ -2988,12 +3201,13 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":175.0,
+    "total_profit":175.0,
     "months_active":4.0,
     "avg_price":19.4444444444,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":-0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"731126105040",
@@ -3002,12 +3216,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":40.0,
+    "total_profit":40.0,
     "months_active":1.0,
     "avg_price":20.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":13
   },
   {
     "item_code":"748485401492",
@@ -3016,12 +3231,13 @@
     "tab":"F&B",
     "total_qty":17.0,
     "total_sales":255.0,
+    "total_profit":102.0,
     "months_active":5.0,
     "avg_price":15.0,
     "mean_monthly_qty":3.4,
     "cv_monthly_qty":0.7578881604,
     "trend_qty_slope":0.4,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"750515017429",
@@ -3030,12 +3246,13 @@
     "tab":"F&B",
     "total_qty":49.0,
     "total_sales":588.0,
+    "total_profit":320.95,
     "months_active":8.0,
     "avg_price":12.0,
     "mean_monthly_qty":6.125,
     "cv_monthly_qty":0.6552895656,
     "trend_qty_slope":0.0357142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"750515018402",
@@ -3044,12 +3261,13 @@
     "tab":"F&B",
     "total_qty":292.0,
     "total_sales":3504.0,
+    "total_profit":1664.4,
     "months_active":13.0,
     "avg_price":12.0,
     "mean_monthly_qty":22.4615384615,
     "cv_monthly_qty":0.5498895298,
     "trend_qty_slope":0.8406593407,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"750515031029",
@@ -3058,12 +3276,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":190.0,
+    "total_profit":70.3,
     "months_active":7.0,
     "avg_price":10.0,
     "mean_monthly_qty":2.7142857143,
     "cv_monthly_qty":1.0734777923,
     "trend_qty_slope":0.1428571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"750515031043",
@@ -3072,6 +3291,7 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":180.0,
+    "total_profit":66.6,
     "months_active":5.0,
     "avg_price":10.0,
     "mean_monthly_qty":3.6,
@@ -3086,12 +3306,13 @@
     "tab":"F&B",
     "total_qty":34.0,
     "total_sales":340.0,
+    "total_profit":125.8,
     "months_active":7.0,
     "avg_price":10.0,
     "mean_monthly_qty":4.8571428571,
     "cv_monthly_qty":0.4180197178,
     "trend_qty_slope":0.0357142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"7622300136048",
@@ -3100,12 +3321,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":120.0,
+    "total_profit":120.0,
     "months_active":4.0,
     "avg_price":15.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-0.8,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"768455101771",
@@ -3114,12 +3336,13 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":571.5,
+    "total_profit":95.5,
     "months_active":1.0,
     "avg_price":285.75,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8851717040030",
@@ -3128,12 +3351,13 @@
     "tab":"F&B",
     "total_qty":11.0,
     "total_sales":385.0,
+    "total_profit":166.65,
     "months_active":5.0,
     "avg_price":35.0,
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.7272727273,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8886001038011",
@@ -3142,12 +3366,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":120.0,
+    "total_profit":54.6,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8906070820499",
@@ -3156,12 +3381,13 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":649.5,
+    "total_profit":39.5,
     "months_active":3.0,
     "avg_price":64.95,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.1414213562,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8992760223022",
@@ -3170,12 +3396,13 @@
     "tab":"F&B",
     "total_qty":18.0,
     "total_sales":270.0,
+    "total_profit":270.0,
     "months_active":5.0,
     "avg_price":15.0,
     "mean_monthly_qty":3.6,
     "cv_monthly_qty":0.8534606387,
     "trend_qty_slope":1.3,
-    "cluster":0
+    "cluster":10
   },
   {
     "item_code":"8996001440124",
@@ -3184,12 +3411,13 @@
     "tab":"F&B",
     "total_qty":19.0,
     "total_sales":190.0,
+    "total_profit":38.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":6.3333333333,
     "cv_monthly_qty":0.1488645855,
     "trend_qty_slope":-6.236939886e-16,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8998666001726",
@@ -3198,12 +3426,13 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":160.0,
+    "total_profit":58.8,
     "months_active":2.0,
     "avg_price":20.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"90134809013300215",
@@ -3212,26 +3441,28 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":1000.0,
+    "total_profit":1000.0,
     "months_active":4.0,
     "avg_price":50.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.469041576,
     "trend_qty_slope":-1.4,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"9314057013441",
     "description":"VALDA PASTILLES LEMON CAN 50G",
     "category":"FOOD",
     "tab":"F&B",
-    "total_qty":15.0,
-    "total_sales":2340.0,
-    "months_active":8.0,
+    "total_qty":16.0,
+    "total_sales":2496.0,
+    "total_profit":341.76,
+    "months_active":9.0,
     "avg_price":156.0,
-    "mean_monthly_qty":1.875,
-    "cv_monthly_qty":0.676592771,
-    "trend_qty_slope":0.0833333333,
-    "cluster":0
+    "mean_monthly_qty":1.7777777778,
+    "cv_monthly_qty":0.6903350636,
+    "trend_qty_slope":0.1166666667,
+    "cluster":-1
   },
   {
     "item_code":"9314057013601",
@@ -3240,12 +3471,13 @@
     "tab":"F&B",
     "total_qty":5.0,
     "total_sales":770.0,
+    "total_profit":168.95,
     "months_active":3.0,
     "avg_price":154.0,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":-2.873984609e-16,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"9314057014936",
@@ -3254,12 +3486,13 @@
     "tab":"F&B",
     "total_qty":23.0,
     "total_sales":874.0,
+    "total_profit":279.45,
     "months_active":7.0,
     "avg_price":38.0,
     "mean_monthly_qty":3.2857142857,
     "cv_monthly_qty":0.5070392952,
     "trend_qty_slope":-0.2142857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"9314057014943",
@@ -3268,12 +3501,13 @@
     "tab":"F&B",
     "total_qty":12.0,
     "total_sales":456.0,
+    "total_profit":145.8,
     "months_active":6.0,
     "avg_price":38.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-0.2857142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"9314057016015",
@@ -3282,12 +3516,13 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":644.0,
+    "total_profit":139.96,
     "months_active":3.0,
     "avg_price":161.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"96678954",
@@ -3296,11 +3531,12 @@
     "tab":"F&B",
     "total_qty":23.0,
     "total_sales":337.0,
+    "total_profit":113.9,
     "months_active":3.0,
     "avg_price":14.652173913,
     "mean_monthly_qty":7.6666666667,
     "cv_monthly_qty":0.7480282841,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":-1
   }
 ]

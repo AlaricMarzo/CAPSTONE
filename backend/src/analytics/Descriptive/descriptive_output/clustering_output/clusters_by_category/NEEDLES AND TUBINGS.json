@@ -4,13 +4,14 @@
     "description":"NGT FR8",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":2.0,
-    "total_sales":54.0,
-    "months_active":1.0,
-    "avg_price":27.0,
+    "total_qty":4.0,
+    "total_sales":102.22,
+    "total_profit":42.22,
+    "months_active":2.0,
+    "avg_price":25.555,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":0.0,
+    "trend_qty_slope":-1.570092459e-16,
     "cluster":0
   },
   {
@@ -20,12 +21,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":5880.0,
+    "total_profit":5880.0,
     "months_active":1.0,
     "avg_price":5880.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"14981866658",
@@ -34,6 +36,7 @@
     "tab":"MED-SURG",
     "total_qty":5.0,
     "total_sales":192.0,
+    "total_profit":92.0,
     "months_active":4.0,
     "avg_price":38.4,
     "mean_monthly_qty":1.25,
@@ -46,14 +49,15 @@
     "description":"FOLEY CATH 16",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":39.0,
-    "total_sales":1932.96,
-    "months_active":18.0,
-    "avg_price":49.5630769231,
-    "mean_monthly_qty":2.1666666667,
-    "cv_monthly_qty":0.9514859136,
-    "trend_qty_slope":0.0939112487,
-    "cluster":0
+    "total_qty":41.0,
+    "total_sales":2031.18,
+    "total_profit":596.18,
+    "months_active":19.0,
+    "avg_price":49.5409756098,
+    "mean_monthly_qty":2.1578947368,
+    "cv_monthly_qty":0.9300329739,
+    "trend_qty_slope":0.0894736842,
+    "cluster":-1
   },
   {
     "item_code":"16382500762",
@@ -62,12 +66,13 @@
     "tab":"MED-SURG",
     "total_qty":16.0,
     "total_sales":470.4,
+    "total_profit":246.4,
     "months_active":3.0,
     "avg_price":29.4,
     "mean_monthly_qty":5.3333333333,
     "cv_monthly_qty":0.6373774392,
     "trend_qty_slope":-4.0,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"17266468",
@@ -76,6 +81,7 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":75.0,
+    "total_profit":31.66,
     "months_active":1.0,
     "avg_price":37.5,
     "mean_monthly_qty":2.0,
@@ -90,12 +96,13 @@
     "tab":"MED-SURG",
     "total_qty":391.0,
     "total_sales":5227.85,
+    "total_profit":3390.15,
     "months_active":11.0,
     "avg_price":13.3704603581,
     "mean_monthly_qty":35.5454545455,
     "cv_monthly_qty":1.18634795,
     "trend_qty_slope":-5.0909090909,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"18669180074",
@@ -104,6 +111,7 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":56.0,
+    "total_profit":33.6,
     "months_active":3.0,
     "avg_price":8.0,
     "mean_monthly_qty":2.3333333333,
@@ -118,6 +126,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":12.95,
+    "total_profit":4.95,
     "months_active":1.0,
     "avg_price":12.95,
     "mean_monthly_qty":1.0,
@@ -132,12 +141,13 @@
     "tab":"MED-SURG",
     "total_qty":33.0,
     "total_sales":779.88,
+    "total_profit":416.88,
     "months_active":7.0,
     "avg_price":23.6327272727,
     "mean_monthly_qty":4.7142857143,
     "cv_monthly_qty":0.6680426571,
     "trend_qty_slope":-0.8214285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"29481888702",
@@ -146,12 +156,13 @@
     "tab":"MED-SURG",
     "total_qty":20.0,
     "total_sales":482.2,
+    "total_profit":38.2,
     "months_active":5.0,
     "avg_price":24.11,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.790569415,
     "trend_qty_slope":1.6,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"30558139829",
@@ -160,6 +171,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":24.11,
+    "total_profit":9.11,
     "months_active":1.0,
     "avg_price":24.11,
     "mean_monthly_qty":1.0,
@@ -174,6 +186,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":24.11,
+    "total_profit":9.11,
     "months_active":1.0,
     "avg_price":24.11,
     "mean_monthly_qty":1.0,
@@ -186,14 +199,15 @@
     "description":"SUCTION CATH F 14",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":62.0,
-    "total_sales":802.9,
-    "months_active":6.0,
+    "total_qty":67.0,
+    "total_sales":867.65,
+    "total_profit":331.65,
+    "months_active":7.0,
     "avg_price":12.95,
-    "mean_monthly_qty":10.3333333333,
-    "cv_monthly_qty":0.2885249003,
-    "trend_qty_slope":0.5714285714,
-    "cluster":0
+    "mean_monthly_qty":9.5714285714,
+    "cv_monthly_qty":0.348116531,
+    "trend_qty_slope":0.0357142857,
+    "cluster":-1
   },
   {
     "item_code":"34135711937",
@@ -202,12 +216,13 @@
     "tab":"MED-SURG",
     "total_qty":14.0,
     "total_sales":337.54,
+    "total_profit":127.54,
     "months_active":5.0,
     "avg_price":24.11,
     "mean_monthly_qty":2.8,
     "cv_monthly_qty":1.1605769149,
     "trend_qty_slope":1.2,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"34335010350",
@@ -216,12 +231,13 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":286.8,
+    "total_profit":61.42,
     "months_active":4.0,
     "avg_price":47.8,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":-0.2,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"36187188",
@@ -230,26 +246,28 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":300.0,
+    "total_profit":126.67,
     "months_active":2.0,
     "avg_price":37.5,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.25,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"37297627971",
     "description":"I.V CANNULA G22",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":3.0,
-    "total_sales":69.63,
-    "months_active":1.0,
+    "total_qty":10.0,
+    "total_sales":232.1,
+    "total_profit":122.1,
+    "months_active":2.0,
     "avg_price":23.21,
-    "mean_monthly_qty":3.0,
-    "cv_monthly_qty":0.0,
-    "trend_qty_slope":0.0,
-    "cluster":0
+    "mean_monthly_qty":5.0,
+    "cv_monthly_qty":0.4,
+    "trend_qty_slope":-4.0,
+    "cluster":2
   },
   {
     "item_code":"37583750",
@@ -258,26 +276,28 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":250.0,
+    "total_profit":148.0,
     "months_active":1.0,
     "avg_price":250.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"39851079",
     "description":"NEBULIZER KIT",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":14.0,
-    "total_sales":784.0,
-    "months_active":12.0,
+    "total_qty":15.0,
+    "total_sales":840.0,
+    "total_profit":390.0,
+    "months_active":13.0,
     "avg_price":56.0,
-    "mean_monthly_qty":1.1666666667,
-    "cv_monthly_qty":0.3194382825,
-    "trend_qty_slope":-0.041958042,
-    "cluster":0
+    "mean_monthly_qty":1.1538461538,
+    "cv_monthly_qty":0.312694384,
+    "trend_qty_slope":-0.0274725275,
+    "cluster":-1
   },
   {
     "item_code":"40811509252",
@@ -286,12 +306,13 @@
     "tab":"MED-SURG",
     "total_qty":72.0,
     "total_sales":939.9,
+    "total_profit":461.4,
     "months_active":9.0,
     "avg_price":13.0541666667,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":1.1410886615,
     "trend_qty_slope":0.8833333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"41056073",
@@ -300,12 +321,13 @@
     "tab":"MED-SURG",
     "total_qty":133.0,
     "total_sales":931.0,
+    "total_profit":598.5,
     "months_active":11.0,
     "avg_price":7.0,
     "mean_monthly_qty":12.0909090909,
     "cv_monthly_qty":1.2450819073,
     "trend_qty_slope":1.8818181818,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"44039433277",
@@ -314,6 +336,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":27.0,
+    "total_profit":12.0,
     "months_active":2.0,
     "avg_price":27.0,
     "mean_monthly_qty":0.5,
@@ -328,6 +351,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":12.8,
+    "total_profit":4.8,
     "months_active":1.0,
     "avg_price":12.8,
     "mean_monthly_qty":1.0,
@@ -342,6 +366,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":21.5,
+    "total_profit":5.7,
     "months_active":1.0,
     "avg_price":21.5,
     "mean_monthly_qty":1.0,
@@ -356,12 +381,13 @@
     "tab":"MED-SURG",
     "total_qty":27.0,
     "total_sales":486.0,
+    "total_profit":81.0,
     "months_active":3.0,
     "avg_price":18.0,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.9471638409,
     "trend_qty_slope":-9.5,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"4806031201104",
@@ -370,6 +396,7 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":144.0,
+    "total_profit":54.0,
     "months_active":2.0,
     "avg_price":72.0,
     "mean_monthly_qty":1.0,
@@ -384,6 +411,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":45.0,
+    "total_profit":45.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":3.0,
@@ -398,6 +426,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":49.5,
+    "total_profit":5.79,
     "months_active":2.0,
     "avg_price":16.5,
     "mean_monthly_qty":1.5,
@@ -412,26 +441,28 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":453.6,
+    "total_profit":228.6,
     "months_active":2.0,
     "avg_price":151.2,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806524145212",
     "description":"NASAL OXYGEN CANNULA ADULT (SURE-GUARD",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":31.0,
-    "total_sales":963.94,
-    "months_active":12.0,
-    "avg_price":31.0948387097,
-    "mean_monthly_qty":2.5833333333,
-    "cv_monthly_qty":0.9410291707,
-    "trend_qty_slope":0.0524475524,
-    "cluster":0
+    "total_qty":32.0,
+    "total_sales":995.19,
+    "total_profit":419.19,
+    "months_active":13.0,
+    "avg_price":31.0996875,
+    "mean_monthly_qty":2.4615384615,
+    "cv_monthly_qty":0.9642030388,
+    "trend_qty_slope":0.021978022,
+    "cluster":-1
   },
   {
     "item_code":"4806524145649",
@@ -440,6 +471,7 @@
     "tab":"MED-SURG",
     "total_qty":19.0,
     "total_sales":127.68,
+    "total_profit":127.68,
     "months_active":7.0,
     "avg_price":6.72,
     "mean_monthly_qty":2.7142857143,
@@ -452,28 +484,30 @@
     "description":"SURE-GUARD DISPOSABLE SYRINGE 3CC",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":196.0,
-    "total_sales":1176.72,
-    "months_active":17.0,
-    "avg_price":6.0036734694,
-    "mean_monthly_qty":11.5294117647,
-    "cv_monthly_qty":2.0555589951,
-    "trend_qty_slope":1.7647058824,
-    "cluster":0
+    "total_qty":203.0,
+    "total_sales":1218.72,
+    "total_profit":785.94,
+    "months_active":18.0,
+    "avg_price":6.003546798,
+    "mean_monthly_qty":11.2777777778,
+    "cv_monthly_qty":2.0442874943,
+    "trend_qty_slope":1.6068111455,
+    "cluster":-1
   },
   {
     "item_code":"4806524145687",
     "description":"SURE-GUARD DISPOSABLE SYRINGE 5CC",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":121.0,
-    "total_sales":721.2,
-    "months_active":22.0,
-    "avg_price":5.9603305785,
-    "mean_monthly_qty":5.5,
-    "cv_monthly_qty":0.8291278809,
-    "trend_qty_slope":0.1247882552,
-    "cluster":0
+    "total_qty":124.0,
+    "total_sales":739.2,
+    "total_profit":429.2,
+    "months_active":23.0,
+    "avg_price":5.9612903226,
+    "mean_monthly_qty":5.3913043478,
+    "cv_monthly_qty":0.8326393225,
+    "trend_qty_slope":0.1363636364,
+    "cluster":-1
   },
   {
     "item_code":"4806524145700",
@@ -482,12 +516,13 @@
     "tab":"MED-SURG",
     "total_qty":97.0,
     "total_sales":928.0,
+    "total_profit":607.9,
     "months_active":11.0,
     "avg_price":9.5670103093,
     "mean_monthly_qty":8.8181818182,
     "cv_monthly_qty":0.8661021023,
     "trend_qty_slope":-0.2545454545,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809030034438",
@@ -496,6 +531,7 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":117.0,
+    "total_profit":117.0,
     "months_active":3.0,
     "avg_price":58.5,
     "mean_monthly_qty":0.6666666667,
@@ -510,12 +546,13 @@
     "tab":"MED-SURG",
     "total_qty":9.0,
     "total_sales":361.62,
+    "total_profit":91.62,
     "months_active":2.0,
     "avg_price":40.18,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.1111111111,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4921892791",
@@ -524,12 +561,13 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":286.08,
+    "total_profit":160.08,
     "months_active":3.0,
     "avg_price":40.8685714286,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.8081220356,
     "trend_qty_slope":8.042999111e-16,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"500010220",
@@ -538,12 +576,13 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":1470.0,
+    "total_profit":330.0,
     "months_active":9.0,
     "avg_price":147.0,
     "mean_monthly_qty":1.1111111111,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":-0.0166666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"500010221",
@@ -552,26 +591,28 @@
     "tab":"MED-SURG",
     "total_qty":34.0,
     "total_sales":206.25,
+    "total_profit":121.25,
     "months_active":9.0,
     "avg_price":6.0661764706,
     "mean_monthly_qty":3.7777777778,
     "cv_monthly_qty":0.5261336418,
     "trend_qty_slope":1.099238789e-16,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"55054072",
     "description":"TUDOR MICRO & INFUSION SET1ML=60GTT PEDIA",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":88.0,
-    "total_sales":2224.0,
-    "months_active":5.0,
-    "avg_price":25.2727272727,
-    "mean_monthly_qty":17.6,
-    "cv_monthly_qty":1.3259956496,
-    "trend_qty_slope":-1.6,
-    "cluster":0
+    "total_qty":97.0,
+    "total_sales":2449.0,
+    "total_profit":1091.0,
+    "months_active":6.0,
+    "avg_price":25.2474226804,
+    "mean_monthly_qty":16.1666666667,
+    "cv_monthly_qty":1.3326113112,
+    "trend_qty_slope":0.4285714286,
+    "cluster":-1
   },
   {
     "item_code":"58589085181",
@@ -580,6 +621,7 @@
     "tab":"MED-SURG",
     "total_qty":23.0,
     "total_sales":107.87,
+    "total_profit":57.27,
     "months_active":5.0,
     "avg_price":4.69,
     "mean_monthly_qty":4.6,
@@ -594,12 +636,13 @@
     "tab":"MED-SURG",
     "total_qty":39.0,
     "total_sales":1114.23,
+    "total_profit":568.23,
     "months_active":3.0,
     "avg_price":28.57,
     "mean_monthly_qty":13.0,
     "cv_monthly_qty":0.8725486937,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"62180476559",
@@ -608,6 +651,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":120.54,
+    "total_profit":30.54,
     "months_active":2.0,
     "avg_price":40.18,
     "mean_monthly_qty":1.5,
@@ -622,6 +666,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":72.33,
+    "total_profit":27.33,
     "months_active":2.0,
     "avg_price":24.11,
     "mean_monthly_qty":1.5,
@@ -636,12 +681,13 @@
     "tab":"MED-SURG",
     "total_qty":12.0,
     "total_sales":589.32,
+    "total_profit":169.32,
     "months_active":6.0,
     "avg_price":49.11,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.2886751346,
     "trend_qty_slope":0.2857142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"6590718820",
@@ -650,12 +696,13 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":239.0,
+    "total_profit":119.0,
     "months_active":4.0,
     "avg_price":23.9,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-1.532279563e-16,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"66513858",
@@ -664,12 +711,13 @@
     "tab":"MED-SURG",
     "total_qty":5.0,
     "total_sales":245.55,
+    "total_profit":70.55,
     "months_active":3.0,
     "avg_price":49.11,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":-2.873984609e-16,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"6945630105463",
@@ -678,12 +726,13 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":1200.0,
+    "total_profit":1200.0,
     "months_active":3.0,
     "avg_price":150.0,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.6373774392,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"69609535285",
@@ -692,6 +741,7 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":51.2,
+    "total_profit":19.2,
     "months_active":1.0,
     "avg_price":12.8,
     "mean_monthly_qty":4.0,
@@ -706,26 +756,28 @@
     "tab":"MED-SURG",
     "total_qty":131.0,
     "total_sales":3300.0,
+    "total_profit":1195.0,
     "months_active":10.0,
     "avg_price":25.1908396947,
     "mean_monthly_qty":13.1,
     "cv_monthly_qty":1.9748579946,
     "trend_qty_slope":-0.0666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"74329007",
     "description":"KING MED DISPOSABLE SYRINGE 10CC",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":84.0,
-    "total_sales":659.2,
-    "months_active":13.0,
-    "avg_price":7.8476190476,
-    "mean_monthly_qty":6.4615384615,
-    "cv_monthly_qty":0.5416339603,
-    "trend_qty_slope":0.0164835165,
-    "cluster":0
+    "total_qty":87.0,
+    "total_sales":683.2,
+    "total_profit":378.7,
+    "months_active":14.0,
+    "avg_price":7.8528735632,
+    "mean_monthly_qty":6.2142857143,
+    "cv_monthly_qty":0.5613386412,
+    "trend_qty_slope":-0.0285714286,
+    "cluster":-1
   },
   {
     "item_code":"74539065766",
@@ -734,12 +786,13 @@
     "tab":"MED-SURG",
     "total_qty":16.0,
     "total_sales":666.98,
+    "total_profit":346.98,
     "months_active":9.0,
     "avg_price":41.68625,
     "mean_monthly_qty":1.7777777778,
     "cv_monthly_qty":0.6903350636,
     "trend_qty_slope":-0.0333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"74556168",
@@ -748,12 +801,13 @@
     "tab":"MED-SURG",
     "total_qty":20.0,
     "total_sales":1400.0,
+    "total_profit":840.0,
     "months_active":1.0,
     "avg_price":70.0,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"77424976",
@@ -762,12 +816,13 @@
     "tab":"MED-SURG",
     "total_qty":20.0,
     "total_sales":1400.0,
+    "total_profit":100.0,
     "months_active":1.0,
     "avg_price":70.0,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"786450071827",
@@ -776,6 +831,7 @@
     "tab":"MED-SURG",
     "total_qty":25.0,
     "total_sales":168.0,
+    "total_profit":88.0,
     "months_active":5.0,
     "avg_price":6.72,
     "mean_monthly_qty":5.0,
@@ -790,26 +846,28 @@
     "tab":"MED-SURG",
     "total_qty":15.0,
     "total_sales":602.7,
+    "total_profit":152.7,
     "months_active":4.0,
     "avg_price":40.18,
     "mean_monthly_qty":3.75,
     "cv_monthly_qty":0.9683892698,
     "trend_qty_slope":0.5,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8809381291234",
     "description":"INSULIN SYRINGE TERUMO 29GX1\/2G 1CC",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":65.0,
-    "total_sales":975.0,
-    "months_active":10.0,
+    "total_qty":108.0,
+    "total_sales":1620.0,
+    "total_profit":864.0,
+    "months_active":11.0,
     "avg_price":15.0,
-    "mean_monthly_qty":6.5,
-    "cv_monthly_qty":0.9952550147,
-    "trend_qty_slope":0.9151515152,
-    "cluster":0
+    "mean_monthly_qty":9.8181818182,
+    "cv_monthly_qty":1.2397038232,
+    "trend_qty_slope":1.6727272727,
+    "cluster":-1
   },
   {
     "item_code":"91709035",
@@ -818,12 +876,13 @@
     "tab":"MED-SURG",
     "total_qty":14.0,
     "total_sales":1078.0,
+    "total_profit":406.0,
     "months_active":3.0,
     "avg_price":77.0,
     "mean_monthly_qty":4.6666666667,
     "cv_monthly_qty":0.8081220356,
     "trend_qty_slope":-4.0,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"92182389452",
@@ -832,6 +891,7 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":129.5,
+    "total_profit":49.5,
     "months_active":1.0,
     "avg_price":12.95,
     "mean_monthly_qty":10.0,
@@ -846,6 +906,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":147.33,
+    "total_profit":42.33,
     "months_active":3.0,
     "avg_price":49.11,
     "mean_monthly_qty":1.0,
@@ -860,12 +921,13 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":321.44,
+    "total_profit":97.44,
     "months_active":4.0,
     "avg_price":40.18,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.8660254038,
     "trend_qty_slope":1.2,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"960769046105",
@@ -874,6 +936,7 @@
     "tab":"MED-SURG",
     "total_qty":35.0,
     "total_sales":187.04,
+    "total_profit":99.54,
     "months_active":7.0,
     "avg_price":5.344,
     "mean_monthly_qty":5.0,
@@ -888,6 +951,7 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":129.5,
+    "total_profit":49.5,
     "months_active":1.0,
     "avg_price":12.95,
     "mean_monthly_qty":10.0,
@@ -897,17 +961,18 @@
   },
   {
     "item_code":"9757231134",
-    "description":"Z-CANCARE IV CATH G24",
+    "description":"CANCARE IV CATH G24",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
-    "total_qty":23.0,
-    "total_sales":581.0,
-    "months_active":3.0,
-    "avg_price":25.2608695652,
-    "mean_monthly_qty":7.6666666667,
-    "cv_monthly_qty":0.5465132648,
-    "trend_qty_slope":-3.5,
-    "cluster":2
+    "total_qty":25.0,
+    "total_sales":631.0,
+    "total_profit":331.0,
+    "months_active":4.0,
+    "avg_price":25.24,
+    "mean_monthly_qty":6.25,
+    "cv_monthly_qty":0.7008566187,
+    "trend_qty_slope":-3.1,
+    "cluster":-1
   },
   {
     "item_code":"98668550600",
@@ -916,12 +981,13 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":265.19,
+    "total_profit":25.19,
     "months_active":3.0,
     "avg_price":33.14875,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.8838834765,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"G13926632",
@@ -930,12 +996,13 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":378.0,
+    "total_profit":198.0,
     "months_active":2.0,
     "avg_price":94.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"G18284508",
@@ -944,6 +1011,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":28.0,
+    "total_profit":19.0,
     "months_active":1.0,
     "avg_price":28.0,
     "mean_monthly_qty":1.0,
@@ -958,6 +1026,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":75.0,
+    "total_profit":75.0,
     "months_active":1.0,
     "avg_price":25.0,
     "mean_monthly_qty":3.0,
@@ -972,6 +1041,7 @@
     "tab":"MED-SURG",
     "total_qty":5.0,
     "total_sales":150.0,
+    "total_profit":105.0,
     "months_active":1.0,
     "avg_price":30.0,
     "mean_monthly_qty":5.0,
@@ -986,12 +1056,13 @@
     "tab":"MED-SURG",
     "total_qty":22.0,
     "total_sales":630.0,
+    "total_profit":421.0,
     "months_active":5.0,
     "avg_price":28.6363636364,
     "mean_monthly_qty":4.4,
     "cv_monthly_qty":0.6833316536,
     "trend_qty_slope":1.3,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"G50335220",
@@ -1000,12 +1071,13 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":374.0,
+    "total_profit":34.0,
     "months_active":1.0,
     "avg_price":187.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"G79984089",
@@ -1014,11 +1086,12 @@
     "tab":"MED-SURG",
     "total_qty":13.0,
     "total_sales":455.0,
+    "total_profit":331.38,
     "months_active":2.0,
     "avg_price":35.0,
     "mean_monthly_qty":6.5,
     "cv_monthly_qty":0.8461538462,
     "trend_qty_slope":11.0,
-    "cluster":3
+    "cluster":1
   }
 ]

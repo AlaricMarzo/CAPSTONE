@@ -4,14 +4,15 @@
     "description":"GLOMED LATEX GLOVES LARGE",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
-    "total_qty":44.0,
-    "total_sales":14979.24,
-    "months_active":18.0,
-    "avg_price":340.4372727273,
-    "mean_monthly_qty":2.4444444444,
-    "cv_monthly_qty":0.4141106172,
-    "trend_qty_slope":-0.0227038184,
-    "cluster":0
+    "total_qty":45.0,
+    "total_sales":15318.52,
+    "total_profit":1757.75,
+    "months_active":19.0,
+    "avg_price":340.4115555556,
+    "mean_monthly_qty":2.3684210526,
+    "cv_monthly_qty":0.4377270134,
+    "trend_qty_slope":-0.0210526316,
+    "cluster":-1
   },
   {
     "item_code":"1094266310",
@@ -20,6 +21,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":66.96,
+    "total_profit":51.96,
     "months_active":1.0,
     "avg_price":22.32,
     "mean_monthly_qty":3.0,
@@ -34,12 +36,13 @@
     "tab":"MED-SURG",
     "total_qty":33.0,
     "total_sales":660.0,
+    "total_profit":231.0,
     "months_active":5.0,
     "avg_price":20.0,
     "mean_monthly_qty":6.6,
     "cv_monthly_qty":0.8603072465,
     "trend_qty_slope":2.8,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"12344481899",
@@ -48,6 +51,7 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":150.0,
+    "total_profit":120.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":10.0,
@@ -62,6 +66,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":258.93,
+    "total_profit":138.93,
     "months_active":1.0,
     "avg_price":258.93,
     "mean_monthly_qty":1.0,
@@ -76,12 +81,13 @@
     "tab":"MED-SURG",
     "total_qty":9.0,
     "total_sales":618.72,
+    "total_profit":348.72,
     "months_active":8.0,
     "avg_price":68.7466666667,
     "mean_monthly_qty":1.125,
     "cv_monthly_qty":0.2939723679,
     "trend_qty_slope":-0.0833333333,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"20433840",
@@ -90,12 +96,13 @@
     "tab":"MED-SURG",
     "total_qty":37.0,
     "total_sales":925.0,
+    "total_profit":655.64,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":18.5,
     "cv_monthly_qty":0.4594594595,
     "trend_qty_slope":17.0,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"22695376",
@@ -104,12 +111,13 @@
     "tab":"MED-SURG",
     "total_qty":52.0,
     "total_sales":1462.98,
+    "total_profit":682.98,
     "months_active":8.0,
     "avg_price":28.1342307692,
     "mean_monthly_qty":6.5,
     "cv_monthly_qty":0.7497534111,
     "trend_qty_slope":0.2857142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"32676927286",
@@ -118,6 +126,7 @@
     "tab":"MED-SURG",
     "total_qty":12.0,
     "total_sales":180.0,
+    "total_profit":-3420.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":12.0,
@@ -132,26 +141,28 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":900.0,
+    "total_profit":340.0,
     "months_active":2.0,
     "avg_price":450.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"43182085938",
     "description":"GLOMED LATEX GLOVES MEDIUM",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
-    "total_qty":47.0,
-    "total_sales":16149.76,
-    "months_active":20.0,
-    "avg_price":343.6119148936,
-    "mean_monthly_qty":2.35,
-    "cv_monthly_qty":0.6206788147,
-    "trend_qty_slope":-0.1406015038,
-    "cluster":0
+    "total_qty":53.0,
+    "total_sales":18185.44,
+    "total_profit":6500.44,
+    "months_active":21.0,
+    "avg_price":343.121509434,
+    "mean_monthly_qty":2.5238095238,
+    "cv_monthly_qty":0.6426183534,
+    "trend_qty_slope":-0.1441558442,
+    "cluster":-1
   },
   {
     "item_code":"46454312761",
@@ -160,12 +171,13 @@
     "tab":"MED-SURG",
     "total_qty":17.0,
     "total_sales":5889.92,
+    "total_profit":722.42,
     "months_active":9.0,
     "avg_price":346.4658823529,
     "mean_monthly_qty":1.8888888889,
     "cv_monthly_qty":1.0120382667,
     "trend_qty_slope":0.2333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"47137530",
@@ -174,12 +186,13 @@
     "tab":"MED-SURG",
     "total_qty":141.0,
     "total_sales":3630.0,
+    "total_profit":1455.0,
     "months_active":19.0,
     "avg_price":25.7446808511,
     "mean_monthly_qty":7.4210526316,
     "cv_monthly_qty":1.0915075644,
     "trend_qty_slope":0.4157894737,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4802288884046",
@@ -188,6 +201,7 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":97.25,
+    "total_profit":11.0,
     "months_active":3.0,
     "avg_price":32.4166666667,
     "mean_monthly_qty":1.0,
@@ -202,6 +216,7 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":168.0,
+    "total_profit":168.0,
     "months_active":2.0,
     "avg_price":28.0,
     "mean_monthly_qty":3.0,
@@ -214,28 +229,30 @@
     "description":"SUREGUARD STERILE LATEX GLOVES 7.5 PAIR",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
-    "total_qty":50.0,
-    "total_sales":1039.3,
-    "months_active":11.0,
-    "avg_price":20.786,
-    "mean_monthly_qty":4.5454545455,
-    "cv_monthly_qty":0.6033241252,
-    "trend_qty_slope":0.2909090909,
-    "cluster":0
+    "total_qty":53.0,
+    "total_sales":1099.3,
+    "total_profit":410.3,
+    "months_active":12.0,
+    "avg_price":20.741509434,
+    "mean_monthly_qty":4.4166666667,
+    "cv_monthly_qty":0.6022977245,
+    "trend_qty_slope":0.2272727273,
+    "cluster":-1
   },
   {
     "item_code":"4806524149166",
     "description":"SURE-GUARD LATEX SURGICAL GLOVES 7.0 PAIR",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
-    "total_qty":113.0,
-    "total_sales":2808.0,
-    "months_active":14.0,
-    "avg_price":24.8495575221,
-    "mean_monthly_qty":8.0714285714,
-    "cv_monthly_qty":0.9533319076,
-    "trend_qty_slope":-0.6,
-    "cluster":0
+    "total_qty":119.0,
+    "total_sales":2958.0,
+    "total_profit":1258.9,
+    "months_active":15.0,
+    "avg_price":24.8571428571,
+    "mean_monthly_qty":7.9333333333,
+    "cv_monthly_qty":0.9392988474,
+    "trend_qty_slope":-0.5142857143,
+    "cluster":-1
   },
   {
     "item_code":"4806524149203",
@@ -244,12 +261,13 @@
     "tab":"MED-SURG",
     "total_qty":49.0,
     "total_sales":1568.0,
+    "total_profit":803.6,
     "months_active":7.0,
     "avg_price":32.0,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.8153054839,
     "trend_qty_slope":-0.7142857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806530876353",
@@ -258,12 +276,13 @@
     "tab":"MED-SURG",
     "total_qty":104.0,
     "total_sales":2600.0,
+    "total_profit":832.0,
     "months_active":2.0,
     "avg_price":25.0,
     "mean_monthly_qty":52.0,
     "cv_monthly_qty":0.0769230769,
     "trend_qty_slope":-8.0,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"4897030530678",
@@ -272,12 +291,13 @@
     "tab":"MED-SURG",
     "total_qty":49.0,
     "total_sales":465.5,
+    "total_profit":208.74,
     "months_active":3.0,
     "avg_price":9.5,
     "mean_monthly_qty":16.3333333333,
     "cv_monthly_qty":1.1587811891,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"58869731949",
@@ -286,12 +306,13 @@
     "tab":"MED-SURG",
     "total_qty":41.0,
     "total_sales":720.82,
+    "total_profit":-8605.98,
     "months_active":4.0,
     "avg_price":17.5809756098,
     "mean_monthly_qty":10.25,
     "cv_monthly_qty":0.8790644532,
     "trend_qty_slope":4.1,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"60412941002",
@@ -300,12 +321,13 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":504.0,
+    "total_profit":264.0,
     "months_active":2.0,
     "avg_price":252.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"61132716035",
@@ -314,6 +336,7 @@
     "tab":"MED-SURG",
     "total_qty":67.0,
     "total_sales":142.95,
+    "total_profit":75.95,
     "months_active":5.0,
     "avg_price":2.1335820896,
     "mean_monthly_qty":13.4,
@@ -328,12 +351,13 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":730.0,
+    "total_profit":70.0,
     "months_active":2.0,
     "avg_price":243.3333333333,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"792536229122",
@@ -342,12 +366,13 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":1520.0,
+    "total_profit":222.84,
     "months_active":2.0,
     "avg_price":380.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8104969563",
@@ -356,12 +381,13 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":1017.84,
+    "total_profit":132.84,
     "months_active":3.0,
     "avg_price":339.28,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"81260058593",
@@ -370,12 +396,13 @@
     "tab":"MED-SURG",
     "total_qty":17.0,
     "total_sales":5700.0,
+    "total_profit":1960.0,
     "months_active":6.0,
     "avg_price":335.2941176471,
     "mean_monthly_qty":2.8333333333,
     "cv_monthly_qty":0.5911691542,
     "trend_qty_slope":0.1428571429,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"82080865292",
@@ -384,6 +411,7 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":91.74,
+    "total_profit":48.06,
     "months_active":1.0,
     "avg_price":15.29,
     "mean_monthly_qty":6.0,
@@ -398,6 +426,7 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":39.2,
+    "total_profit":18.2,
     "months_active":1.0,
     "avg_price":5.6,
     "mean_monthly_qty":7.0,
@@ -412,12 +441,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":472.5,
+    "total_profit":247.5,
     "months_active":1.0,
     "avg_price":472.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"90934341121",
@@ -426,12 +456,13 @@
     "tab":"MED-SURG",
     "total_qty":114.0,
     "total_sales":23287.16,
+    "total_profit":9607.16,
     "months_active":8.0,
     "avg_price":204.2733333333,
     "mean_monthly_qty":14.25,
     "cv_monthly_qty":1.3745924716,
     "trend_qty_slope":-4.2380952381,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"94188553914",
@@ -440,6 +471,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":27.75,
+    "total_profit":12.35,
     "months_active":1.0,
     "avg_price":27.75,
     "mean_monthly_qty":1.0,
@@ -454,11 +486,12 @@
     "tab":"MED-SURG",
     "total_qty":48.0,
     "total_sales":840.0,
+    "total_profit":168.0,
     "months_active":7.0,
     "avg_price":17.5,
     "mean_monthly_qty":6.8571428571,
     "cv_monthly_qty":0.6541799362,
     "trend_qty_slope":-0.0357142857,
-    "cluster":0
+    "cluster":1
   }
 ]

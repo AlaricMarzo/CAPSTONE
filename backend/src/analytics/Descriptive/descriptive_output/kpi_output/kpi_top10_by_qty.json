@@ -1,82 +1,82 @@
 [
   {
-    "item_code":"4807788561688",
-    "description":"BIOGESIC 500MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "total_sales":70318.1,
-    "total_qty":16649.0
-  },
-  {
-    "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"PRESCRIPTION",
-    "total_sales":28244.75,
-    "total_qty":11709.0
-  },
-  {
-    "item_code":"4806504260614",
-    "description":"APPEVIT CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":105286.6,
-    "total_qty":7346.0
-  },
-  {
-    "item_code":"0725765883117",
-    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":333887.27,
-    "total_qty":6784.0
-  },
-  {
     "item_code":"8904179014702",
     "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
-    "total_sales":15482.2,
-    "total_qty":6559.0
-  },
-  {
-    "item_code":"4807788562593",
-    "description":"IMMUNPRO 500MG TAB",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":50384.36,
-    "total_qty":6093.0
+    "total_sales":1462.5,
+    "total_qty":617.0
   },
   {
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":74553.12,
-    "total_qty":4371.0
+    "total_sales":9360.0,
+    "total_qty":576.0
   },
   {
-    "item_code":"4807788526762",
-    "description":"BIOFLU TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "total_sales":36045.7,
-    "total_qty":4357.0
-  },
-  {
-    "item_code":"8904186000521",
-    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "item_code":"78014183",
+    "description":"SAPHLOR-50 (LOSARTAN) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
-    "total_sales":31350.1,
-    "total_qty":4109.0
+    "total_sales":1117.8,
+    "total_qty":509.0
   },
   {
-    "item_code":"4809015142035",
-    "description":"OHHIRAs PROPOLIS 600MG CAP",
-    "category":"RESPIRATORY",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC (PARACETAMOL) 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1738.25,
+    "total_qty":409.0
+  },
+  {
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":605.6,
+    "total_qty":311.0
+  },
+  {
+    "item_code":"8902269016674",
+    "description":"ALCLAV (CO-AMOXICLAV) 625MG TAB",
+    "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":262105.53,
-    "total_qty":4080.0
+    "total_sales":4733.96,
+    "total_qty":269.0
+  },
+  {
+    "item_code":"4806527194088",
+    "description":"ALLECUR (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":795.0,
+    "total_qty":265.0
+  },
+  {
+    "item_code":"4806035205429",
+    "description":"REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":573.0,
+    "total_qty":251.0
+  },
+  {
+    "item_code":"96619926626",
+    "description":"KIRKLAND FISH OIL 1000IU",
+    "category":"FOOD SUPPLEMENTS",
+    "tab":"OTC",
+    "total_sales":920.0,
+    "total_qty":230.0
+  },
+  {
+    "item_code":"4806520351211",
+    "description":"CLODIN (CLONIDINE) 150MG TAB",
+    "category":"GIT",
+    "tab":"GENERICS",
+    "total_sales":1692.0,
+    "total_qty":220.0
   }
 ]
