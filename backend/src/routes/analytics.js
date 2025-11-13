@@ -550,21 +550,6 @@ router.get("/predictive", async (req, res) => {
       { feature: "year", importance: 0.05 },
     ]
 
-    // Get top products from descriptive analytics
-    const topProducts = []
-    try {
-      const top10Sales = jsonToArray(path.join(descriptiveOutputDir, "kpi_output", "kpi_top10_by_sales.json"))
-      if (top10Sales && top10Sales.length > 0) {
-        topProducts.push(...top10Sales.slice(0, 5).map(d => ({
-          name: d.description || d.name || "Product",
-          sales: d.total_sales || 0,
-          quantity: d.qty || 0,
-        })))
-      }
-    } catch (error) {
-      console.log("[v0] Could not load top products for predictive:", error.message)
-    }
-
     const formattedData = {
       models_summary: {
         total_models: 3,
@@ -578,7 +563,7 @@ router.get("/predictive", async (req, res) => {
       forecast_data: formattedForecasts,
       feature_importance: featureImportance,
       model_performance: modelPerformance,
-      product_insights: topProducts,
+      product_insights: topProducts, // Add product insights
     }
 
     res.json({ success: true, data: formattedData })

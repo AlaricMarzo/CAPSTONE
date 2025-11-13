@@ -31,7 +31,7 @@ export default function ReportsPage() {
   const fetchFiles = async () => {
     try {
       setLoading(true)
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/files`)
+      const response = await fetch("http://localhost:5050/api/analytics/files")
       if (!response.ok) throw new Error("Failed to fetch files")
       const result = await response.json()
       setFiles(result.files || {})
@@ -47,7 +47,7 @@ export default function ReportsPage() {
   const handleDownload = async (category: string, filename: string) => {
     try {
       setDownloading(`${category}-${filename}`)
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/download/${category}/${filename}`)
+      const response = await fetch(`http://localhost:5050/api/analytics/download/${category}/${filename}`)
       if (!response.ok) throw new Error("Failed to download file")
 
       const blob = await response.blob()
@@ -150,7 +150,7 @@ export default function ReportsPage() {
                   <div key={file.name} className="border rounded-lg p-4 space-y-3">
                     <div className="aspect-video bg-muted rounded flex items-center justify-center">
                       <img
-                        src={`${import.meta.env.VITE_API_URL}/analytics/download/${category}/${file.name}`}
+                        src={`http://localhost:5050/api/analytics/download/${category}/${file.name}`}
                         alt={file.name}
                         className="max-w-full max-h-full object-contain rounded"
                         onError={(e) => {

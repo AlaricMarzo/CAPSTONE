@@ -31,7 +31,7 @@ export default function DataUploadPage() {
 
   const pollJobStatus = async (jobId: string) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/job/${jobId}`);
+      const response = await fetch(`http://localhost:5050/api/job/${jobId}`);
       const data = await response.json();
 
       if (data.success) {
@@ -85,7 +85,7 @@ export default function DataUploadPage() {
 
   const runDescriptiveAnalytics = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/run-descriptive`, {
+      const response = await fetch('http://localhost:5050/api/analytics/run-descriptive', {
         method: 'POST',
       });
       if (!response.ok) {
@@ -101,7 +101,7 @@ export default function DataUploadPage() {
 
   const runPredictiveAnalytics = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/run-predictive`, {
+      const response = await fetch('http://localhost:5050/api/analytics/run-predictive', {
         method: 'POST',
       });
       if (!response.ok) {
@@ -117,7 +117,7 @@ export default function DataUploadPage() {
 
   const runPrescriptiveAnalytics = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/run-prescriptive`, {
+      const response = await fetch('http://localhost:5050/api/analytics/run-prescriptive', {
         method: 'POST',
       });
       if (!response.ok) {
@@ -145,7 +145,7 @@ export default function DataUploadPage() {
     });
 
     // Fixed endpoint to match backend port (5050)
-    fetch(`${import.meta.env.VITE_API_URL}/upload`, {
+    fetch("http://localhost:5050/api/upload", {
       method: "POST",
       body: formData,
     })
