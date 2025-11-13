@@ -6,13 +6,12 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":281.25,
-    "total_profit":56.25,
     "months_active":1.0,
     "avg_price":93.75,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"57282039539",
@@ -21,7 +20,6 @@
     "tab":"F&B",
     "total_qty":14.0,
     "total_sales":470.4,
-    "total_profit":134.4,
     "months_active":1.0,
     "avg_price":33.6,
     "mean_monthly_qty":14.0,
@@ -36,13 +34,12 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":4021.35,
-    "total_profit":173.18,
     "months_active":1.0,
     "avg_price":2010.675,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"8886451003812",
@@ -51,13 +48,12 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":1791.27,
-    "total_profit":195.09,
     "months_active":1.0,
     "avg_price":895.635,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"SD",
@@ -66,12 +62,11 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":-0.01,
-    "total_profit":-0.01,
     "months_active":1.0,
     "avg_price":-0.0033333333,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   }
 ]
