@@ -1,8 +1,8 @@
 {
   "build": {
-    "builder": "NIXPACKS"
+    "builder": "DOCKERFILE"
   },
   "deploy": {
-    "startCommand": "npm run dev"
+    "startCommand": "npm start"
   }
 }
