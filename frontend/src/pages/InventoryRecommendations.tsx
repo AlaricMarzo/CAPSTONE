@@ -164,7 +164,7 @@ export default function InventoryRecommendations() {
           color="info"
         />
         <MetricCard
-          title="Total Sales"
+          title="Total Revenue"
           value={formatCurrency(data.financial_summary?.total_sales || 0)}
           change="this period"
           changeType="positive"
@@ -614,7 +614,7 @@ export default function InventoryRecommendations() {
         <CardContent>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             <div className="p-4 bg-muted/50 rounded-lg">
-              <div className="text-sm text-muted-foreground mb-1">Total Sales</div>
+              <div className="text-sm text-muted-foreground mb-1">Total Revenue</div>
               <div className="text-2xl font-bold text-foreground">
                 {formatCurrency(data.financial_summary?.total_sales || 0)}
               </div>

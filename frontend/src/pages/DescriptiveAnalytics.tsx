@@ -151,14 +151,14 @@ export default function DescriptiveAnalytics() {
   const kpiCards = [
     {
       title: "Total Sales",
-      value: `₱${(Number(data.kpi_summary.total_sales || 0) / 1000000).toFixed(2)}M`,
+      value: formatCurrency(Number(data.kpi_summary.total_sales || 0)),
       change: `+${Number(data.kpi_summary.growth_rate || 0).toFixed(1)}%`,
       icon: DollarSign,
       color: "success" as const,
     },
     {
       title: "Total Quantity Sold",
-      value: (Number(data.kpi_summary.total_quantity || 0) / 1000).toFixed(0) + "K",
+      value: (Number(data.kpi_summary.total_quantity || 0)).toLocaleString(),
       change: "units",
       icon: Package,
       color: "info" as const,

@@ -643,6 +643,22 @@
       const anomalyData = csvToJson(path.join(prescriptiveOutputDir, "model_7_anomaly_detection.csv"))
       const summaryData = csvToJson(path.join(prescriptiveOutputDir, "SUMMARY_all_models.csv"))
 
+      // Encode images to base64
+      const modelImages = {}
+      const imageFiles = [
+        { key: "model_1_reorder_point", path: "model_1_reorder_point_chart.png" },
+        { key: "model_2_eoq", path: "model_2_eoq_chart.png" },
+        { key: "model_3_inventory_allocation", path: "model_3_inventory_allocation_chart.png" },
+        { key: "model_4_whatif_analysis", path: "model_4_whatif_analysis_chart.png" },
+        { key: "model_5_discount_optimization", path: "model_5_discount_optimization_chart.png" },
+        { key: "model_6_resource_planning", path: "model_6_resource_planning_chart.png" },
+        { key: "model_7_anomaly_detection", path: "model_7_anomaly_detection_chart.png" },
+      ]
+      for (const img of imageFiles) {
+        const imgPath = path.join(prescriptiveOutputDir, img.path)
+        modelImages[img.key] = encodeImageToBase64(imgPath)
+      }
+
       const reorder_points = (reorderData || []).map((d) => ({
         medicine: d.medicine || d.sku_description || d.name || d.product || "Product",
         avg_daily_demand: Number.parseFloat(d.avg_daily_demand) || Number.parseFloat(d.daily_demand) || 0,
@@ -736,6 +752,7 @@
         anomalies,
         financial_summary,
         key_metrics,
+        model_images: modelImages,
       }
 
       console.log("[v0] Prescriptive data formatted successfully")

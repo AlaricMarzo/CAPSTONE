@@ -1,56 +1,56 @@
 {
   "data_overview": {
-    "total_rows_analyzed": 3024,
-    "total_sales": 484838.94,
-    "total_quantity": 18417,
-    "total_profit": 99976.74,
-    "avg_profit_margin_pct": 24.141849076876962
+    "total_rows_analyzed": 119881,
+    "total_sales": 20616048.37,
+    "total_quantity": 700776,
+    "total_profit": 3964347.4299999997,
+    "avg_profit_margin_pct": 30.96148616743049
   },
   "top_5_products": [
     {
+      "medicine": "VAXIRAB 2.5 IU 1ML",
+      "total_sales": 1080064.0,
+      "total_qty": 596.0,
+      "profit_margin": 15.679141236074901
+    },
+    {
       "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
-      "total_sales": 15600.0,
-      "total_qty": 1.0,
-      "profit_margin": 36.82051282051282
+      "total_sales": 344871.06,
+      "total_qty": 22.0,
+      "profit_margin": 36.75317378036881
+    },
+    {
+      "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+      "total_sales": 333887.27,
+      "total_qty": 6784.0,
+      "profit_margin": 17.71929489854465
     },
     {
       "medicine": "OHHIRAs PROPOLIS 600MG CAP",
-      "total_sales": 11449.92,
-      "total_qty": 189.0,
-      "profit_margin": 7.562672926972415
+      "total_sales": 272148.93,
+      "total_qty": 4234.0,
+      "profit_margin": 8.839252096269496
     },
     {
-      "medicine": "RECLINING WHEELCHAIR WITH COMMODE",
-      "total_sales": 10080.0,
-      "total_qty": 1.0,
-      "profit_margin": 30.555555555555557
-    },
-    {
-      "medicine": "NEPHORMIN TAB",
-      "total_sales": 9360.0,
-      "total_qty": 576.0,
-      "profit_margin": 13.846153846153847
-    },
-    {
-      "medicine": "PROHEALTH PULSE OXIMETER",
-      "total_sales": 7812.49,
-      "total_qty": 7.0,
-      "profit_margin": 41.75992545270458
+      "medicine": "BACTIV 457MG/5ML 70ML",
+      "total_sales": 231648.7,
+      "total_qty": 622.0,
+      "profit_margin": 11.538851718140442
     }
   ],
   "kpi_analysis": {
     "kpi_metrics_generated": 15,
-    "avg_monthly_growth_rate_cagr": null,
-    "avg_monthly_growth_rate_mean": null
+    "avg_monthly_growth_rate_cagr": 0.023211083663591703,
+    "avg_monthly_growth_rate_mean": 0.03765706066458029
   },
   "market_basket_analysis": {
-    "rules_generated": 41,
-    "transactions": 645,
-    "items": 874
+    "rules_generated": 101,
+    "transactions": 25271,
+    "items": 3470
   },
   "clustering": {
     "total_cluster_graphs_generated": 156,
-    "categories_analyzed": 36
+    "categories_analyzed": 41
   },
-  "timestamp": "2025-11-14 05:20:25.785036"
+  "timestamp": "2025-11-14 05:33:48.170514"
 }

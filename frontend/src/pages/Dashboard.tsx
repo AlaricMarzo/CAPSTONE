@@ -3,7 +3,6 @@ import { Sidebar } from "@/components/Layout/Sidebar"
 import { MetricCard } from "@/components/Dashboard/MetricCard"
 
 import { SalesTrendsChart } from "@/components/Dashboard/SalesTrendCard"
-import { ProductTrafficCard } from "@/components/Dashboard/ProductTrafficCard"
 import { TrendingUp, DollarSign, Package, ShoppingCart, User, FileText, Loader2, AlertCircle, Search } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -256,11 +255,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           />
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <SalesTrendsChart />
-          </div>
-          <ProductTrafficCard />
+        <div className="grid gap-6 lg:grid-cols-1">
+          <SalesTrendsChart />
         </div>
       </div>
     )
@@ -360,11 +356,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           />
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <SalesTrendsChart />
-          </div>
-          <ProductTrafficCard />
+        <div className="grid gap-6 lg:grid-cols-1">
+          <SalesTrendsChart />
         </div>
       </div>
     )
@@ -375,10 +368,11 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const descKpi = descriptiveData.kpi_summary
   const predSummary = predictiveData.models_summary
 
-  const totalRevenue = financial_summary.total_sales
-  const totalSales = financial_summary.total_quantity_sold
+  const totalRevenue = descKpi.total_sales
+  const totalSalesAmount = descKpi.total_sales // Use descriptive total sales for consistency
+  const totalQuantitySold = descKpi.total_quantity // Use descriptive total quantity
   const lowStockItems = reorder_points.length
-  const avgOrderValue = totalSales > 0 ? totalRevenue / totalSales : 0
+  const avgOrderValue = totalQuantitySold > 0 ? totalRevenue / totalQuantitySold : 0
   const forecastAccuracy = predSummary.avg_accuracy * 100
   const activeSkus = descKpi.active_skus
   const growthRate = descKpi.growth_rate
@@ -447,8 +441,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         />
         <MetricCard
           title="Total Sales"
-          value={totalSales.toLocaleString()}
-          change="units sold"
+          value={formatCurrency(totalSalesAmount)}
+          change={`${growthRate.toFixed(1)}% growth`}
           changeType="positive"
           icon={ShoppingCart}
           color="info"
@@ -682,8 +676,31 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardContent>
         </Card>
 
-        {/* Product Traffic Card */}
-        <ProductTrafficCard />
+        {/* Top Performing Products */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle>Top Performing Products</CardTitle>
+            <CardDescription>Highest revenue generating products</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {descriptiveData.top_products_sales.slice(0, 5).map((product: any, idx: number) => (
+                <div key={idx} className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-xs font-medium">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">{product.name}</p>
+                      <p className="text-xs text-muted-foreground">{product.quantity} units</p>
+                    </div>
+                  </div>
+                  <span className="font-medium">{formatCurrency(product.sales)}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Resource Planning Section */}
@@ -757,35 +774,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
         </CardContent>
       </Card>
 
-      {/* Top Products and Recent Activity */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="shadow-soft">
-          <CardHeader>
-            <CardTitle>Top Performing Products</CardTitle>
-            <CardDescription>Highest revenue generating products</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {descriptiveData.top_products_sales.slice(0, 5).map((product: any, idx: number) => (
-                <div key={idx} className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-xs font-medium">
-                      {idx + 1}
-                    </div>
-                    <div>
-                      <p className="font-medium text-sm">{product.name}</p>
-                      <p className="text-xs text-muted-foreground">{product.quantity} units</p>
-                    </div>
-                  </div>
-                  <span className="font-medium">{formatCurrency(product.sales)}</span>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
 
-
-      </div>
     </div>
   )
 }
