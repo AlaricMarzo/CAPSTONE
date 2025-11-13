@@ -17,7 +17,7 @@ import {
 } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MetricCard } from "@/components/Dashboard/MetricCard"
-import { Package, Zap, TrendingUp, Target, Loader2 } from "lucide-react"
+import { Package, Zap, TrendingUp, Target, DollarSign, Loader2 } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const formatCurrency = (value: number) => {
@@ -155,38 +155,38 @@ export default function PrescriptiveAnalytics() {
       {/* KPI Cards */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <MetricCard
-          title="Optimization Models"
-          value={data.key_metrics.total_models.toString()}
-          change="active"
-          changeType="positive"
-          icon={Zap}
-          color="success"
-          className="shadow-soft"
-        />
-        <MetricCard
-          title="Products Optimized"
-          value={data.key_metrics.total_products_optimized.toString()}
-          change="analyzed"
-          changeType="positive"
+          title="Items to Reorder"
+          value={data.reorder_points.length.toString()}
+          change="recommendations"
+          changeType="warning"
           icon={Package}
-          color="info"
-          className="shadow-soft"
-        />
-        <MetricCard
-          title="Total Sales"
-          value={formatCurrency(data.financial_summary.total_sales)}
-          change="revenue"
-          changeType="positive"
-          icon={TrendingUp}
           color="warning"
           className="shadow-soft"
         />
         <MetricCard
-          title="Profit Margin"
-          value={`${data.financial_summary.overall_profit_margin_pct.toFixed(1)}%`}
-          change="margin"
+          title="Cost Savings"
+          value={formatCurrency(data.financial_summary.total_profit)}
+          change="optimized"
           changeType="positive"
-          icon={Target}
+          icon={DollarSign}
+          color="success"
+          className="shadow-soft"
+        />
+        <MetricCard
+          title="Optimized Products"
+          value={data.key_metrics.total_products_optimized.toString()}
+          change="improved"
+          changeType="positive"
+          icon={TrendingUp}
+          color="info"
+          className="shadow-soft"
+        />
+        <MetricCard
+          title="Models Applied"
+          value={data.key_metrics.total_models.toString()}
+          change="active"
+          changeType="positive"
+          icon={Zap}
           color="success"
           className="shadow-soft"
         />
@@ -329,7 +329,7 @@ export default function PrescriptiveAnalytics() {
                     <XAxis dataKey="medicine" angle={-45} textAnchor="end" height={100} />
                     <YAxis yAxisId="left" />
                     <YAxis yAxisId="right" orientation="right" />
-                    <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1  solid var(--border)" }} />
+                    <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }} />
                     <Legend />
                     <Bar yAxisId="left" dataKey="storage_needed" fill="#f59e0b" name="Storage (cubic ft)" radius={[4, 4, 0, 0]} />
                     <Bar yAxisId="right" dataKey="capital_needed" fill="#ef4444" name="Capital (PHP)" radius={[4, 4, 0, 0]} />

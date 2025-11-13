@@ -63,7 +63,6 @@ interface PrescriptiveData {
   key_metrics: {
     total_products_optimized: number
     total_models: number
-    total_cost_savings: number
   }
 }
 
@@ -368,8 +367,8 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const descKpi = descriptiveData.kpi_summary
   const predSummary = predictiveData.models_summary
 
-  const totalRevenue = descKpi.total_sales
-  const totalSalesAmount = descKpi.total_sales // Use descriptive total sales for consistency
+  const totalRevenue = financial_summary.total_sales // Optimized revenue from prescriptive
+  const totalSalesAmount = descKpi.total_sales // Historical sales from descriptive
   const totalQuantitySold = descKpi.total_quantity // Use descriptive total quantity
   const lowStockItems = reorder_points.length
   const avgOrderValue = totalQuantitySold > 0 ? totalRevenue / totalQuantitySold : 0
@@ -546,7 +545,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Cost Savings:</span>
-                <span className="font-medium">{formatCurrency(key_metrics.total_cost_savings)}</span>
+                <span className="font-medium">{formatCurrency(financial_summary.total_profit)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Optimized Products:</span>
