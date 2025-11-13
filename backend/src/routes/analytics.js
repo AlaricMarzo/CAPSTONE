@@ -652,10 +652,15 @@ router.post("/run-descriptive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Descriptive analytics script not found" })
     }
 
-    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", ["descriptive.py"], {
+      const pythonProcess = spawn(pythonCmd, ["descriptive.py"], {
       cwd: descriptiveDir,
       stdio: ["ignore", "pipe", "pipe"],
-    })
+      env: {
+        ...process.env,       // ✅ includes DATABASE_URL, NODE_ENV, etc.
+        PYTHON_CMD: pythonCmd,
+        NON_INTERACTIVE: "1", // optional, if your scripts use it
+      },
+    });
 
     let stdout = ""
     let stderr = ""
@@ -695,10 +700,15 @@ router.post("/run-predictive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Predictive analytics script not found" })
     }
 
-    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", [scriptPath], {
+        const pythonProcess = spawn(pythonCmd, [scriptPath], {
       cwd: path.join(__dirname, "../analytics"),
       stdio: ["ignore", "pipe", "pipe"],
-    })
+      env: {
+        ...process.env,
+        PYTHON_CMD: pythonCmd,
+        NON_INTERACTIVE: "1",
+      },
+    });
 
     let stdout = ""
     let stderr = ""
@@ -739,10 +749,15 @@ router.post("/run-prescriptive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Prescriptive analytics script not found" })
     }
 
-    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", ["prescriptive.py"], {
+        const pythonProcess = spawn(pythonCmd, ["prescriptive.py"], {
       cwd: prescriptiveDir,
       stdio: ["ignore", "pipe", "pipe"],
-    })
+      env: {
+        ...process.env,
+        PYTHON_CMD: pythonCmd,
+        NON_INTERACTIVE: "1",
+      },
+    });
 
     let stdout = ""
     let stderr = ""
