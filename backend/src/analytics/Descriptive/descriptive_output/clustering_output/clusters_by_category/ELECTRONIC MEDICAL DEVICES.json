@@ -6,12 +6,13 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":35040.0,
+    "total_profit":9490.0,
     "months_active":6.0,
     "avg_price":5005.7142857143,
     "mean_monthly_qty":1.1666666667,
     "cv_monthly_qty":0.3194382825,
     "trend_qty_slope":-0.0857142857,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"17792308784",
@@ -20,6 +21,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":2950.0,
+    "total_profit":1450.0,
     "months_active":1.0,
     "avg_price":2950.0,
     "mean_monthly_qty":1.0,
@@ -34,12 +36,13 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":150.0,
+    "total_profit":150.0,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.4,
     "trend_qty_slope":-4.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"23418608",
@@ -48,12 +51,13 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":5120.0,
+    "total_profit":2798.58,
     "months_active":2.0,
     "avg_price":2560.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"24830461",
@@ -62,12 +66,13 @@
     "tab":"MED-SURG",
     "total_qty":41.0,
     "total_sales":55762.75,
+    "total_profit":27267.75,
     "months_active":21.0,
     "avg_price":1360.0670731707,
     "mean_monthly_qty":1.9523809524,
     "cv_monthly_qty":0.5583182021,
     "trend_qty_slope":0.0142857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"32943792797",
@@ -76,6 +81,7 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":51.8,
+    "total_profit":19.8,
     "months_active":1.0,
     "avg_price":12.95,
     "mean_monthly_qty":4.0,
@@ -90,6 +96,7 @@
     "tab":"MED-SURG",
     "total_qty":42.0,
     "total_sales":543.9,
+    "total_profit":207.9,
     "months_active":7.0,
     "avg_price":12.95,
     "mean_monthly_qty":6.0,
@@ -104,6 +111,7 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":955.5,
+    "total_profit":500.5,
     "months_active":4.0,
     "avg_price":136.5,
     "mean_monthly_qty":1.75,
@@ -118,12 +126,13 @@
     "tab":"MED-SURG",
     "total_qty":45.0,
     "total_sales":48203.1,
+    "total_profit":15203.1,
     "months_active":20.0,
     "avg_price":1071.18,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.6265720969,
     "trend_qty_slope":-0.0368421053,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"430010004",
@@ -132,6 +141,7 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":3567.84,
+    "total_profit":1367.84,
     "months_active":2.0,
     "avg_price":891.96,
     "mean_monthly_qty":2.0,
@@ -146,6 +156,7 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":448.0,
+    "total_profit":168.0,
     "months_active":4.0,
     "avg_price":112.0,
     "mean_monthly_qty":1.0,
@@ -160,6 +171,7 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":840.0,
+    "total_profit":190.75,
     "months_active":4.0,
     "avg_price":140.0,
     "mean_monthly_qty":1.5,
@@ -174,6 +186,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":2464.0,
+    "total_profit":1364.0,
     "months_active":1.0,
     "avg_price":2464.0,
     "mean_monthly_qty":1.0,
@@ -188,6 +201,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":104.0,
+    "total_profit":104.0,
     "months_active":1.0,
     "avg_price":104.0,
     "mean_monthly_qty":1.0,
@@ -202,6 +216,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":2000.0,
+    "total_profit":2000.0,
     "months_active":1.0,
     "avg_price":2000.0,
     "mean_monthly_qty":1.0,
@@ -216,12 +231,13 @@
     "tab":"MED-SURG",
     "total_qty":5.0,
     "total_sales":4875.0,
+    "total_profit":1125.0,
     "months_active":1.0,
     "avg_price":975.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806526300428",
@@ -230,12 +246,13 @@
     "tab":"MED-SURG",
     "total_qty":24.0,
     "total_sales":24544.17,
+    "total_profit":8637.17,
     "months_active":13.0,
     "avg_price":1022.67375,
     "mean_monthly_qty":1.8461538462,
     "cv_monthly_qty":0.6997023177,
     "trend_qty_slope":0.1648351648,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806526304730",
@@ -244,12 +261,13 @@
     "tab":"MED-SURG",
     "total_qty":44.0,
     "total_sales":35616.28,
+    "total_profit":18412.28,
     "months_active":20.0,
     "avg_price":809.4609090909,
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.5856408512,
     "trend_qty_slope":-0.030075188,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806526306529",
@@ -258,12 +276,13 @@
     "tab":"MED-SURG",
     "total_qty":11.0,
     "total_sales":12812.8,
+    "total_profit":12812.8,
     "months_active":4.0,
     "avg_price":1164.8,
     "mean_monthly_qty":2.75,
     "cv_monthly_qty":0.6492207662,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806530870108",
@@ -272,12 +291,13 @@
     "tab":"MED-SURG",
     "total_qty":77.0,
     "total_sales":7997.6,
+    "total_profit":2992.6,
     "months_active":25.0,
     "avg_price":103.8649350649,
     "mean_monthly_qty":3.08,
     "cv_monthly_qty":0.7399178978,
     "trend_qty_slope":0.0653846154,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"49480917245",
@@ -286,6 +306,7 @@
     "tab":"MED-SURG",
     "total_qty":28.0,
     "total_sales":2660.0,
+    "total_profit":980.0,
     "months_active":9.0,
     "avg_price":95.0,
     "mean_monthly_qty":3.1111111111,
@@ -300,6 +321,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":3500.0,
+    "total_profit":501.0,
     "months_active":1.0,
     "avg_price":3500.0,
     "mean_monthly_qty":1.0,
@@ -314,12 +336,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":5760.0,
+    "total_profit":2561.0,
     "months_active":1.0,
     "avg_price":5760.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"500010142",
@@ -328,12 +351,13 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":11400.0,
+    "total_profit":900.0,
     "months_active":3.0,
     "avg_price":3800.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.8164965809,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"500010208",
@@ -342,12 +366,13 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":7132.5,
+    "total_profit":2582.5,
     "months_active":5.0,
     "avg_price":1018.9285714286,
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.5714285714,
     "trend_qty_slope":0.4,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"54544278532",
@@ -356,12 +381,13 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":5196.8,
+    "total_profit":2196.8,
     "months_active":6.0,
     "avg_price":866.1333333333,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":0.2285714286,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"58068224947",
@@ -370,12 +396,13 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":77.7,
+    "total_profit":29.7,
     "months_active":2.0,
     "avg_price":12.95,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":4.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"5901234123457",
@@ -384,12 +411,13 @@
     "tab":"MED-SURG",
     "total_qty":4.0,
     "total_sales":10880.0,
+    "total_profit":448.0,
     "months_active":4.0,
     "avg_price":2720.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"60569900152",
@@ -398,12 +426,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":4608.0,
+    "total_profit":3108.0,
     "months_active":1.0,
     "avg_price":4608.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"68509893447",
@@ -412,12 +441,13 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":103.6,
+    "total_profit":39.6,
     "months_active":2.0,
     "avg_price":12.95,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.75,
     "trend_qty_slope":-6.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"6940000000000",
@@ -426,6 +456,7 @@
     "tab":"MED-SURG",
     "total_qty":10.0,
     "total_sales":1260.0,
+    "total_profit":660.0,
     "months_active":6.0,
     "avg_price":126.0,
     "mean_monthly_qty":1.6666666667,
@@ -440,12 +471,13 @@
     "tab":"MED-SURG",
     "total_qty":15.0,
     "total_sales":19710.0,
+    "total_profit":8760.0,
     "months_active":9.0,
     "avg_price":1314.0,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":-0.0333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"74852986588",
@@ -454,6 +486,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":12.95,
+    "total_profit":4.95,
     "months_active":1.0,
     "avg_price":12.95,
     "mean_monthly_qty":1.0,
@@ -468,6 +501,7 @@
     "tab":"MED-SURG",
     "total_qty":5.0,
     "total_sales":360.0,
+    "total_profit":360.0,
     "months_active":3.0,
     "avg_price":72.0,
     "mean_monthly_qty":1.6666666667,
@@ -482,6 +516,7 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":1869.99,
+    "total_profit":819.99,
     "months_active":1.0,
     "avg_price":1869.99,
     "mean_monthly_qty":1.0,
@@ -496,12 +531,13 @@
     "tab":"MED-SURG",
     "total_qty":19.0,
     "total_sales":16740.0,
+    "total_profit":8570.0,
     "months_active":14.0,
     "avg_price":881.0526315789,
     "mean_monthly_qty":1.3571428571,
     "cv_monthly_qty":0.5977798259,
     "trend_qty_slope":0.0769230769,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"819412021653",
@@ -510,12 +546,13 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":4751.98,
+    "total_profit":2351.98,
     "months_active":3.0,
     "avg_price":2375.99,
     "mean_monthly_qty":0.6666666667,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"84390632570",
@@ -524,12 +561,13 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":8960.0,
+    "total_profit":2960.0,
     "months_active":4.0,
     "avg_price":2986.6666666667,
     "mean_monthly_qty":0.75,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8633010201",
@@ -538,12 +576,13 @@
     "tab":"MED-SURG",
     "total_qty":7.0,
     "total_sales":33222.82,
+    "total_profit":10486.82,
     "months_active":5.0,
     "avg_price":4746.1171428571,
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.3499271061,
     "trend_qty_slope":-0.3,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"87691938789",
@@ -552,6 +591,7 @@
     "tab":"MED-SURG",
     "total_qty":35.0,
     "total_sales":453.25,
+    "total_profit":188.25,
     "months_active":4.0,
     "avg_price":12.95,
     "mean_monthly_qty":8.75,
@@ -566,6 +606,7 @@
     "tab":"MED-SURG",
     "total_qty":17.0,
     "total_sales":1768.0,
+    "total_profit":635.04,
     "months_active":8.0,
     "avg_price":104.0,
     "mean_monthly_qty":2.125,
@@ -580,12 +621,13 @@
     "tab":"MED-SURG",
     "total_qty":1.0,
     "total_sales":3799.98,
+    "total_profit":3799.98,
     "months_active":1.0,
     "avg_price":3799.98,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"G17849135",
@@ -594,6 +636,7 @@
     "tab":"MED-SURG",
     "total_qty":6.0,
     "total_sales":94.72,
+    "total_profit":59.8,
     "months_active":4.0,
     "avg_price":15.7866666667,
     "mean_monthly_qty":1.5,

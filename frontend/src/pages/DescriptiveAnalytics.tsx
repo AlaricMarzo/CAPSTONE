@@ -76,8 +76,7 @@ export default function DescriptiveAnalytics() {
   const [data, setData] = useState<DescriptiveData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [selectedTimeRange, setSelectedTimeRange] = useState("all")
-  const [selectedCategory, setSelectedCategory] = useState("all")
+
   const [isMobile, setIsMobile] = useState(false)
   const [expandedProductSales, setExpandedProductSales] = useState(false)
   const [expandedProductQty, setExpandedProductQty] = useState(false)
@@ -138,16 +137,7 @@ export default function DescriptiveAnalytics() {
 
   const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
 
-  // Filter data based on selections
-  const filteredMonthlySales = data.monthly_sales.filter((item) => {
-    if (selectedTimeRange === "last6") return true
-    return true
-  })
 
-  const filteredCategoryDistribution = data.category_distribution.filter((item) => {
-    if (selectedCategory === "all") return true
-    return item.name === selectedCategory
-  })
 
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat("en-PH", {
@@ -206,30 +196,7 @@ export default function DescriptiveAnalytics() {
             Comprehensive sales trends, product distribution, and customer insights
           </p>
         </div>
-        <div className="flex flex-col gap-2 sm:flex-row sm:gap-2">
-          <Select value={selectedTimeRange} onValueChange={setSelectedTimeRange}>
-            <SelectTrigger className="w-full sm:w-32">
-              <SelectValue placeholder="Time Range" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Time</SelectItem>
-              <SelectItem value="last6">Last 6 Months</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-            <SelectTrigger className="w-full sm:w-40">
-              <SelectValue placeholder="Category" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              {data.category_distribution.map((cat) => (
-                <SelectItem key={cat.name} value={cat.name}>
-                  {cat.name}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+
       </div>
 
       {/* KPI Cards - Responsive Grid */}
@@ -269,7 +236,7 @@ export default function DescriptiveAnalytics() {
                 <div className="w-full" style={{ height: `${getChartHeight()}px` }}>
                   <ResponsiveContainer width="100%" height="100%">
                     <ComposedChart
-                      data={filteredMonthlySales}
+                      data={data.monthly_sales}
                       margin={{ top: 5, right: isMobile ? 5 : 30, bottom: 5, left: isMobile ? 0 : 0 }}
                     >
                       <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
