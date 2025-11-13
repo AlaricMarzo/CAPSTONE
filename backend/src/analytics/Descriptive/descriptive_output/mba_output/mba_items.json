@@ -3717,13 +3717,6 @@
     "support_pct":0.14
   },
   {
-    "item":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION",
-    "item_tx":36,
-    "support_pct":0.14
-  },
-  {
     "item":"BONAMINE CHEW(KIDS)TAB 12.5MG",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
@@ -4216,6 +4209,13 @@
   {
     "item":"AMLIFE (AMLODIPINE + LOSARTAN) 50\/5MG TAB",
     "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "item_tx":32,
+    "support_pct":0.13
+  },
+  {
+    "item":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":32,
     "support_pct":0.13
@@ -11711,7 +11711,7 @@
     "support_pct":0.03
   },
   {
-    "item":"AMOXIL CAP 500MG",
+    "item":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":7,
@@ -14661,6 +14661,13 @@
     "item":"ANNIV DISC SDS2YOPET MENDOZA",
     "category":"ADULT MILK",
     "tab":"F&B",
+    "item_tx":4,
+    "support_pct":0.02
+  },
+  {
+    "item":"ARCOXIA 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
     "item_tx":4,
     "support_pct":0.02
   },

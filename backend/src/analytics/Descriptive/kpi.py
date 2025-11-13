@@ -82,8 +82,8 @@ def _plot_season_index_heatmap(season: pd.DataFrame, out_dir: Path):
     pivot = season.pivot(index="category", columns="month_num", values="season_index").sort_index()
 
     vals = pivot.values[np.isfinite(pivot.values)]
-    vmin = max(0.6, np.nanpercentile(vals, 10)) if vals.size else 0.6
-    vmax = min(1.6, np.nanpercentile(vals, 90)) if vals.size else 1.6
+    vmin = max(0.6, min(np.nanpercentile(vals, 10), 0.99)) if vals.size else 0.6
+    vmax = min(1.6, max(np.nanpercentile(vals, 90), 1.01)) if vals.size else 1.6
     norm = TwoSlopeNorm(vmin=vmin, vcenter=1.0, vmax=vmax)
 
     fig_height = max(12, len(pivot) * 0.65)

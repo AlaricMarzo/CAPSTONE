@@ -1,10 +1,10 @@
 {
   "data_overview": {
     "total_rows_analyzed": 119881,
-    "total_sales": 20616048.369999997,
+    "total_sales": 20616048.37,
     "total_quantity": 700776,
-    "total_profit": 3964347.43,
-    "avg_profit_margin_pct": 30.94476550667833
+    "total_profit": 3964347.4299999997,
+    "avg_profit_margin_pct": 30.96148616743049
   },
   "top_5_products": [
     {
@@ -46,11 +46,11 @@
   "market_basket_analysis": {
     "rules_generated": 101,
     "transactions": 25271,
-    "items": 3469
+    "items": 3470
   },
   "clustering": {
     "total_cluster_graphs_generated": 156,
     "categories_analyzed": 41
   },
-  "timestamp": "2025-11-13 12:27:20.682474"
+  "timestamp": "2025-11-14 02:17:37.154545"
 }

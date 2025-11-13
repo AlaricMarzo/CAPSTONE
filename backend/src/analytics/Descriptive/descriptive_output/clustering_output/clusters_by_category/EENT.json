@@ -6,13 +6,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":508.0,
-    "total_profit":73.68,
     "months_active":2.0,
     "avg_price":254.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"1900010056",
@@ -21,13 +20,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":173.22,
-    "total_profit":76.22,
     "months_active":1.0,
     "avg_price":173.22,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"300651439168",
@@ -36,13 +34,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":508.0,
-    "total_profit":49.1,
     "months_active":2.0,
     "avg_price":254.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"38464410122",
@@ -51,13 +48,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":770.99,
-    "total_profit":220.99,
     "months_active":5.0,
     "avg_price":70.09,
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.7272727273,
     "trend_qty_slope":-2.70154001e-16,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"42074398686",
@@ -66,13 +62,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":218.68,
-    "total_profit":94.68,
     "months_active":3.0,
     "avg_price":72.8933333333,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800204001614",
@@ -81,13 +76,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":42.0,
     "total_sales":17131.49,
-    "total_profit":1818.27,
     "months_active":17.0,
     "avg_price":407.8926190476,
     "mean_monthly_qty":2.4705882353,
     "cv_monthly_qty":0.6226998491,
     "trend_qty_slope":0.1200980392,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800261123823",
@@ -96,13 +90,12 @@
     "tab":"GENERICS",
     "total_qty":21.0,
     "total_sales":4223.0,
-    "total_profit":-3302.4,
     "months_active":15.0,
     "avg_price":201.0952380952,
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.5084322977,
     "trend_qty_slope":0.0892857143,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800261123915",
@@ -111,13 +104,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
     "total_sales":5614.3,
-    "total_profit":2854.3,
     "months_active":17.0,
     "avg_price":187.1433333333,
     "mean_monthly_qty":1.7647058824,
     "cv_monthly_qty":0.8589399151,
     "trend_qty_slope":-0.0735294118,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800261124356",
@@ -126,13 +118,12 @@
     "tab":"OTC",
     "total_qty":13.0,
     "total_sales":3063.75,
-    "total_profit":1828.75,
     "months_active":9.0,
     "avg_price":235.6730769231,
     "mean_monthly_qty":1.4444444444,
     "cv_monthly_qty":0.3440104581,
     "trend_qty_slope":6.198032019e-17,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800318000176",
@@ -141,13 +132,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
     "total_sales":388.5,
-    "total_profit":32.34,
     "months_active":5.0,
     "avg_price":64.75,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-4.837423445e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4800331300192",
@@ -156,13 +146,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
     "total_sales":4172.25,
-    "total_profit":-69.75,
     "months_active":5.0,
     "avg_price":521.53125,
     "mean_monthly_qty":1.6,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":0.2,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800331632330",
@@ -171,13 +160,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":1200.0,
-    "total_profit":109.1,
     "months_active":2.0,
     "avg_price":600.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":2
+    "cluster":3
   },
   {
     "item_code":"4800331647051",
@@ -186,13 +174,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":6230.44,
-    "total_profit":365.55,
     "months_active":8.0,
     "avg_price":623.044,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.0952380952,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4800331648355",
@@ -201,13 +188,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":4515.0,
-    "total_profit":455.0,
     "months_active":5.0,
     "avg_price":645.0,
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.5714285714,
     "trend_qty_slope":-0.2,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4801010231103",
@@ -216,13 +202,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
     "total_sales":1291.75,
-    "total_profit":220.36,
     "months_active":8.0,
     "avg_price":161.46875,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":1.099298208e-17,
-    "cluster":2
+    "cluster":3
   },
   {
     "item_code":"4806504269976",
@@ -231,7 +216,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":332.5,
-    "total_profit":137.5,
     "months_active":2.0,
     "avg_price":66.5,
     "mean_monthly_qty":2.5,
@@ -246,13 +230,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":300.0,
-    "total_profit":100.0,
     "months_active":1.0,
     "avg_price":300.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4806510138204",
@@ -261,13 +244,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":550.0,
-    "total_profit":110.0,
     "months_active":2.0,
     "avg_price":275.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4806513450020",
@@ -276,13 +258,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":963.6,
-    "total_profit":215.6,
     "months_active":4.0,
     "avg_price":240.9,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806513450068",
@@ -291,13 +272,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":877.8,
-    "total_profit":205.8,
     "months_active":4.0,
     "avg_price":219.45,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806513450075",
@@ -306,13 +286,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":13.0,
     "total_sales":4858.4,
-    "total_profit":686.96,
     "months_active":10.0,
     "avg_price":373.7230769231,
     "mean_monthly_qty":1.3,
     "cv_monthly_qty":0.3525058227,
     "trend_qty_slope":-0.0545454545,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4806513450082",
@@ -321,13 +300,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":206.8,
-    "total_profit":18.8,
     "months_active":1.0,
     "avg_price":206.8,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4806513450112",
@@ -336,13 +314,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":1410.0,
-    "total_profit":235.0,
     "months_active":2.0,
     "avg_price":282.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.6,
     "trend_qty_slope":3.0,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"4806513450136",
@@ -351,13 +328,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":484.0,
-    "total_profit":132.0,
     "months_active":2.0,
     "avg_price":242.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4806513450174",
@@ -366,13 +342,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":877.8,
-    "total_profit":205.8,
     "months_active":3.0,
     "avg_price":219.45,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806513450204",
@@ -381,13 +356,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":981.75,
-    "total_profit":165.75,
     "months_active":1.0,
     "avg_price":245.4375,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806513450228",
@@ -396,13 +370,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":13.0,
     "total_sales":2860.2,
-    "total_profit":592.2,
     "months_active":6.0,
     "avg_price":220.0153846154,
     "mean_monthly_qty":2.1666666667,
     "cv_monthly_qty":0.6201736729,
     "trend_qty_slope":0.5428571429,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806513450273",
@@ -411,13 +384,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":3696.0,
-    "total_profit":38.84,
     "months_active":4.0,
     "avg_price":739.2,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.1,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4806513450297",
@@ -426,13 +398,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
     "total_sales":2397.6,
-    "total_profit":177.6,
     "months_active":4.0,
     "avg_price":399.6,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.2,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4806518661384",
@@ -441,13 +412,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":36.0,
     "total_sales":15042.45,
-    "total_profit":1836.54,
     "months_active":22.0,
     "avg_price":417.8458333333,
     "mean_monthly_qty":1.6363636364,
     "cv_monthly_qty":0.4339027598,
     "trend_qty_slope":-0.0214568041,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"4806521901620",
@@ -456,13 +426,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":1187.5,
-    "total_profit":727.5,
     "months_active":5.0,
     "avg_price":237.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":2
+    "cluster":3
   },
   {
     "item_code":"4806524796841",
@@ -471,13 +440,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":475.0,
-    "total_profit":325.0,
     "months_active":1.0,
     "avg_price":237.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4806525250175",
@@ -486,13 +454,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":797.54,
-    "total_profit":166.64,
     "months_active":5.0,
     "avg_price":79.754,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4472135955,
     "trend_qty_slope":-0.5,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806532940014",
@@ -501,13 +468,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":1325.0,
-    "total_profit":265.0,
     "months_active":1.0,
     "avg_price":662.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":3
   },
   {
     "item_code":"4806533943816",
@@ -516,7 +482,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":986.0,
-    "total_profit":664.56,
     "months_active":2.0,
     "avg_price":246.5,
     "mean_monthly_qty":2.0,
@@ -531,13 +496,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":521.0,
-    "total_profit":51.0,
     "months_active":1.0,
     "avg_price":521.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":3
   },
   {
     "item_code":"4897000502148",
@@ -546,13 +510,12 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":830.0,
-    "total_profit":86.0,
     "months_active":2.0,
     "avg_price":415.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4987084556066",
@@ -561,13 +524,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":4095.9,
-    "total_profit":4095.9,
     "months_active":6.0,
     "avg_price":372.3545454545,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.5821022034,
     "trend_qty_slope":0.0285714286,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"59497466828",
@@ -576,13 +538,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":57.0,
     "total_sales":3696.47,
-    "total_profit":1391.8,
     "months_active":14.0,
     "avg_price":64.8503508772,
     "mean_monthly_qty":4.0714285714,
     "cv_monthly_qty":1.3403554698,
     "trend_qty_slope":0.0637362637,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"6221032332844",
@@ -591,13 +552,12 @@
     "tab":"GENERICS",
     "total_qty":4.0,
     "total_sales":950.0,
-    "total_profit":621.44,
     "months_active":4.0,
     "avg_price":237.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"88087975567",
@@ -606,13 +566,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":40.0,
     "total_sales":2611.16,
-    "total_profit":880.8,
     "months_active":23.0,
     "avg_price":65.279,
     "mean_monthly_qty":1.7391304348,
     "cv_monthly_qty":0.514781507,
     "trend_qty_slope":-1.321828317e-17,
-    "cluster":-1
+    "cluster":3
   },
   {
     "item_code":"8885015220115",
@@ -621,13 +580,12 @@
     "tab":"OTC",
     "total_qty":150.0,
     "total_sales":15257.02,
-    "total_profit":1537.25,
     "months_active":32.0,
     "avg_price":101.7134666667,
     "mean_monthly_qty":4.6875,
     "cv_monthly_qty":0.400666112,
     "trend_qty_slope":0.0549853372,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8885015220122",
@@ -636,13 +594,12 @@
     "tab":"OTC",
     "total_qty":130.0,
     "total_sales":12453.0,
-    "total_profit":1692.4,
     "months_active":34.0,
     "avg_price":95.7923076923,
     "mean_monthly_qty":3.8235294118,
     "cv_monthly_qty":0.9003615316,
     "trend_qty_slope":0.0595874714,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8885015220290",
@@ -651,13 +608,12 @@
     "tab":"OTC",
     "total_qty":13.0,
     "total_sales":1307.25,
-    "total_profit":184.05,
     "months_active":8.0,
     "avg_price":100.5576923077,
     "mean_monthly_qty":1.625,
     "cv_monthly_qty":0.6105579949,
     "trend_qty_slope":0.0595238095,
-    "cluster":2
+    "cluster":3
   },
   {
     "item_code":"G60421692",
@@ -666,12 +622,11 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":180.0,
-    "total_profit":54.0,
     "months_active":3.0,
     "avg_price":60.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":3
   }
 ]

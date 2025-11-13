@@ -7316,6 +7316,13 @@
   },
   {
     "month":"2022-06",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-06",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -7325,13 +7332,6 @@
     "month":"2022-06",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2022-06",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -12447,17 +12447,17 @@
   },
   {
     "month":"2022-07",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-07",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2022-07",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2022-07",
@@ -17991,6 +17991,13 @@
   },
   {
     "month":"2022-08",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-08",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -18000,13 +18007,6 @@
     "month":"2022-08",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2022-08",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -23983,6 +23983,13 @@
   },
   {
     "month":"2022-09",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-09",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -23992,13 +23999,6 @@
     "month":"2022-09",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2022-09",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -29975,6 +29975,13 @@
   },
   {
     "month":"2022-10",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-10",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -29984,13 +29991,6 @@
     "month":"2022-10",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2022-10",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -36121,17 +36121,17 @@
   },
   {
     "month":"2022-11",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2022-11",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2022-11",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2022-11",
@@ -38831,7 +38831,7 @@
   {
     "month":"2022-12",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -44718,7 +44718,7 @@
   {
     "month":"2023-01",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -48098,6 +48098,13 @@
   },
   {
     "month":"2023-01",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-01",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -48107,13 +48114,6 @@
     "month":"2023-01",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-01",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -54174,6 +54174,13 @@
   },
   {
     "month":"2023-02",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-02",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -54183,13 +54190,6 @@
     "month":"2023-02",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-02",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -56758,7 +56758,7 @@
   {
     "month":"2023-03",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -60180,17 +60180,17 @@
   },
   {
     "month":"2023-03",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-03",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2023-03",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2023-03",
@@ -65899,6 +65899,13 @@
   },
   {
     "month":"2023-04",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-04",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -65908,13 +65915,6 @@
     "month":"2023-04",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-04",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -68518,7 +68518,7 @@
   {
     "month":"2023-05",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -71870,17 +71870,17 @@
   },
   {
     "month":"2023-05",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-05",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2023-05",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2023-05",
@@ -77813,6 +77813,13 @@
   },
   {
     "month":"2023-06",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-06",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -77822,13 +77829,6 @@
     "month":"2023-06",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-06",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -80439,7 +80439,7 @@
   {
     "month":"2023-07",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -90154,17 +90154,17 @@
   },
   {
     "month":"2023-08",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-08",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2023-08",
@@ -96699,6 +96699,13 @@
   },
   {
     "month":"2023-09",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-09",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -96708,13 +96715,6 @@
     "month":"2023-09",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-09",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -103202,6 +103202,13 @@
   },
   {
     "month":"2023-10",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-10",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -103211,13 +103218,6 @@
     "month":"2023-10",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-10",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -109922,17 +109922,17 @@
   },
   {
     "month":"2023-11",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-11",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2023-11",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2023-11",
@@ -117006,6 +117006,13 @@
   },
   {
     "month":"2023-12",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2023-12",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -117015,13 +117022,6 @@
     "month":"2023-12",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2023-12",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -131328,6 +131328,13 @@
   },
   {
     "month":"2024-02",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-02",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -131337,13 +131344,6 @@
     "month":"2024-02",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2024-02",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -138895,17 +138895,17 @@
   },
   {
     "month":"2024-03",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-03",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-03",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-03",
@@ -141871,7 +141871,7 @@
   {
     "month":"2024-04",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -146588,17 +146588,17 @@
   },
   {
     "month":"2024-04",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-04",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-04",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-04",
@@ -149620,7 +149620,7 @@
   {
     "month":"2024-05",
     "item_code":"4800318120027",
-    "description":"AMOXIL CAP 500MG",
+    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -154099,17 +154099,17 @@
   },
   {
     "month":"2024-05",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-05",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-05",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-05",
@@ -161281,17 +161281,17 @@
   },
   {
     "month":"2024-06",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-06",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-06",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-06",
@@ -168162,17 +168162,17 @@
   },
   {
     "month":"2024-07",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-07",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-07",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-07",
@@ -175463,17 +175463,17 @@
   },
   {
     "month":"2024-08",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-08",
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS"
-  },
-  {
-    "month":"2024-08",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
   },
   {
     "month":"2024-08",
@@ -183303,6 +183303,13 @@
   },
   {
     "month":"2024-09",
+    "item_code":"4800489114344",
+    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "month":"2024-09",
     "item_code":"840164518412",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -183312,13 +183319,6 @@
     "month":"2024-09",
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "month":"2024-09",
-    "item_code":"4800489114344",
-    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
