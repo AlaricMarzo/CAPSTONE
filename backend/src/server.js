@@ -10,7 +10,13 @@ import analyticsRouter from "./routes/analytics.js"
 dotenv.config()
 const app = express()
 
-app.use(cors())
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || "http://localhost:5173", // Allow frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+};
+
+app.use(cors(corsOptions))
 app.use(express.json())
 // Remove morgan logging to prevent terminal spam from polling
 // app.use(morgan("dev"))

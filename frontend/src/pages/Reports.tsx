@@ -31,7 +31,7 @@ export default function ReportsPage() {
   const fetchFiles = async () => {
     try {
       setLoading(true)
-      const response = await fetch("http://localhost:5050/api/analytics/files")
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/files`)
       if (!response.ok) throw new Error("Failed to fetch files")
       const result = await response.json()
       setFiles(result.files || {})
@@ -47,7 +47,7 @@ export default function ReportsPage() {
   const handleDownload = async (category: string, filename: string) => {
     try {
       setDownloading(`${category}-${filename}`)
-      const response = await fetch(`http://localhost:5050/api/analytics/download/${category}/${filename}`)
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/analytics/download/${category}/${filename}`)
       if (!response.ok) throw new Error("Failed to download file")
 
       const blob = await response.blob()
@@ -127,6 +127,39 @@ export default function ReportsPage() {
                             <Download className="h-4 w-4" />
                           )}
                         </Button>
+      <Card className="shadow-soft">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <FileText className="h-5 w-5" />
+            {title}
+          </CardTitle>
+          <CardDescription>
+            Download generated reports and visualizations from {title.toLowerCase()} analytics
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {/* PNG Files - Display as images */}
+          {pngFiles.length > 0 && (
+            <div>
+              <h4 className="text-sm font-medium text-muted-foreground mb-3 flex items-center gap-2">
+                <Image className="h-4 w-4" />
+                Generated Charts & Visualizations
+              </h4>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {pngFiles.map((file) => (
+                  <div key={file.name} className="border rounded-lg p-4 space-y-3">
+                    <div className="aspect-video bg-muted rounded flex items-center justify-center">
+                      <img
+                        src={`${import.meta.env.VITE_API_URL}/analytics/download/${category}/${file.name}`}
+                        alt={file.name}
+                        className="max-w-full max-h-full object-contain rounded"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none'
+                          e.currentTarget.nextElementSibling!.classList.remove('hidden')
+                        }}
+                      />
+                      <div className="text-muted-foreground text-sm hidden">
+                        Preview not available
                       </div>
                     </div>
                   ))}

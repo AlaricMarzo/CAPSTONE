@@ -290,7 +290,6 @@ async function processUpload(jobId, files) {
   }
 }
 
-console.log("[DEBUG] DATABASE_URL:", process.env.DATABASE_URL);
 
 
 export default router

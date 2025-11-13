@@ -2,55 +2,30 @@
 import { initializeApp, type FirebaseOptions } from "firebase/app";
 import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 
-// 1) Try to read from Vite env
-const envConfig: FirebaseOptions = {
+const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-};
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+} satisfies FirebaseOptions;
 
-// 2) Fallback to your Firebase console config
-const fallbackConfig: FirebaseOptions = {
-  apiKey: "AIzaSyB_lxDmzlur2YjtOGeQCuzVoUf4Z2hkQOw",
-  authDomain: "capstone-b22c7.firebaseapp.com",
-  projectId: "capstone-b22c7",
-  storageBucket: "capstone-b22c7.firebasestorage.app",
-  messagingSenderId: "967980569103",
-  appId: "1:967980569103:web:2c80aa5743ad572248c97a",
-};
-
-// 3) Merge: use env if present, otherwise fallback
-const firebaseConfig: FirebaseOptions = {
-  apiKey: envConfig.apiKey || fallbackConfig.apiKey,
-  authDomain: envConfig.authDomain || fallbackConfig.authDomain,
-  projectId: envConfig.projectId || fallbackConfig.projectId,
-  storageBucket: envConfig.storageBucket || fallbackConfig.storageBucket,
-  messagingSenderId: envConfig.messagingSenderId || fallbackConfig.messagingSenderId,
-  appId: envConfig.appId || fallbackConfig.appId,
-};
-
-// Debug to confirm
+// Debug: Check if env vars are loaded
 console.log("Firebase Config Loaded:", {
-  fromEnv: !!envConfig.apiKey,
   apiKey: firebaseConfig.apiKey ? "Present" : "Missing",
   projectId: firebaseConfig.projectId,
   authDomain: firebaseConfig.authDomain,
 });
 
-// Only complain if *even the fallback* is broken
-if (!firebaseConfig.apiKey || !firebaseConfig.projectId || !firebaseConfig.authDomain) {
-  console.error("Firebase configuration is incomplete AFTER fallback. Check firebase.ts.");
+if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
+  console.error("Firebase configuration is incomplete. Please check your environment variables.");
 }
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
-// Guard for SSR / non-browser
-if (typeof window !== "undefined") {
-  setPersistence(auth, browserLocalPersistence).catch(() => {});
-}
+setPersistence(auth, browserLocalPersistence).catch(() => {});
 
 export default app;
