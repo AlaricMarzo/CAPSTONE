@@ -430,6 +430,50 @@
       }))
 
       await client.end()
+    // KPI Images
+    const kpiImages = {}
+    const imageFiles = [
+      { key: "monthly_sales_growth_rate", path: "fig_monthly_sales_growth_rate.png" },
+      { key: "sales_month_vs_year", path: "fig_sales_month_vs_year.png" },
+      { key: "qty_month_vs_year", path: "fig_qty_month_vs_year.png" },
+    ]
+    for (const img of imageFiles) {
+      const imgPath = path.join(kpiDir, img.path)
+      kpiImages[img.key] = encodeImageToBase64(imgPath)
+    }
+
+    const formattedData = {
+      kpi_summary: {
+        total_sales: totalSales,
+        total_quantity: totalQty,
+        active_skus: latestSkus,
+        growth_rate: latestGrowth,
+      },
+      monthly_sales: monthlyFormattedData,
+      monthly_growth: growthFormattedData,
+      active_skus_trend: activeSkusFormatted,
+      yearly_sales: yearlyFormattedData,
+      category_distribution: categoryDistribution,
+      tab_distribution: tabDistribution,
+      seasonal_index: seasonalData,
+      top_products_sales: topProductsSales,
+      top_products_qty: topProductsQty,
+      clustering_summary: clusteringSummary,
+      clustering_images: clusteringImages,
+      mba_rules: mbaRules,
+      kpi_images: kpiImages,
+    }
+
+    res.json({ success: true, data: formattedData })
+  } catch (error) {
+    console.error("[v0] Error fetching descriptive analytics:", error)
+    res.status(500).json({ success: false, error: error.message })
+  }
+})
+
+router.get("/predictive", async (req, res) => {
+  try {
+    // Read from analytics output files instead of database
 
       const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
       const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_")
@@ -506,6 +550,21 @@
       { feature: "year", importance: 0.05 },
     ]
 
+    // Get top products from descriptive analytics
+    const topProducts = []
+    try {
+      const top10Sales = jsonToArray(path.join(descriptiveOutputDir, "kpi_output", "kpi_top10_by_sales.json"))
+      if (top10Sales && top10Sales.length > 0) {
+        topProducts.push(...top10Sales.slice(0, 5).map(d => ({
+          name: d.description || d.name || "Product",
+          sales: d.total_sales || 0,
+          quantity: d.qty || 0,
+        })))
+      }
+    } catch (error) {
+      console.log("[v0] Could not load top products for predictive:", error.message)
+    }
+
     const formattedData = {
       models_summary: {
         total_models: 3,
@@ -519,7 +578,7 @@
       forecast_data: formattedForecasts,
       feature_importance: featureImportance,
       model_performance: modelPerformance,
-      product_insights: topProducts, // Add product insights
+      product_insights: topProducts,
     }
 
     res.json({ success: true, data: formattedData })
@@ -652,15 +711,10 @@ router.post("/run-descriptive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Descriptive analytics script not found" })
     }
 
-      const pythonProcess = spawn(pythonCmd, ["descriptive.py"], {
+    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", ["descriptive.py"], {
       cwd: descriptiveDir,
       stdio: ["ignore", "pipe", "pipe"],
-      env: {
-        ...process.env,       // ✅ includes DATABASE_URL, NODE_ENV, etc.
-        PYTHON_CMD: pythonCmd,
-        NON_INTERACTIVE: "1", // optional, if your scripts use it
-      },
-    });
+    })
 
     let stdout = ""
     let stderr = ""
@@ -700,15 +754,10 @@ router.post("/run-predictive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Predictive analytics script not found" })
     }
 
-        const pythonProcess = spawn(pythonCmd, [scriptPath], {
+    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", [scriptPath], {
       cwd: path.join(__dirname, "../analytics"),
       stdio: ["ignore", "pipe", "pipe"],
-      env: {
-        ...process.env,
-        PYTHON_CMD: pythonCmd,
-        NON_INTERACTIVE: "1",
-      },
-    });
+    })
 
     let stdout = ""
     let stderr = ""
@@ -749,15 +798,10 @@ router.post("/run-prescriptive", async (req, res) => {
       return res.status(404).json({ success: false, error: "Prescriptive analytics script not found" })
     }
 
-        const pythonProcess = spawn(pythonCmd, ["prescriptive.py"], {
+    const pythonProcess = spawn(process.env.PYTHON_CMD || "python3", ["prescriptive.py"], {
       cwd: prescriptiveDir,
       stdio: ["ignore", "pipe", "pipe"],
-      env: {
-        ...process.env,
-        PYTHON_CMD: pythonCmd,
-        NON_INTERACTIVE: "1",
-      },
-    });
+    })
 
     let stdout = ""
     let stderr = ""
