@@ -1,9 +1,11 @@
+import "dotenv/config";
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
 import morgan from "morgan"
 import uploadRouter from "./routes/upload.js"
 import analyticsRouter from "./routes/analytics.js"
+
 
 dotenv.config()
 const app = express()
