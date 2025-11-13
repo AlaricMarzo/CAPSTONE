@@ -11,7 +11,7 @@
     "mean_monthly_qty":2.1666666667,
     "cv_monthly_qty":1.2040366033,
     "trend_qty_slope":-0.6,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"13558758",
@@ -130,13 +130,13 @@
     "description":"URINAL",
     "category":"PLASTIC, GLASSWARE, AND STAINLESS",
     "tab":"MED-SURG",
-    "total_qty":81.0,
-    "total_sales":7676.0,
-    "months_active":29.0,
-    "avg_price":94.7654320988,
-    "mean_monthly_qty":2.7931034483,
-    "cv_monthly_qty":0.6263531306,
-    "trend_qty_slope":0.0192118227,
+    "total_qty":79.0,
+    "total_sales":7486.0,
+    "months_active":28.0,
+    "avg_price":94.7594936709,
+    "mean_monthly_qty":2.8214285714,
+    "cv_monthly_qty":0.6287203007,
+    "trend_qty_slope":0.0177887247,
     "cluster":0
   },
   {
@@ -193,7 +193,7 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.7200822998,
     "trend_qty_slope":-0.5,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"4800067052211",
@@ -256,13 +256,13 @@
     "description":"BBFLO BREAST PUMP GLASS",
     "category":"PLASTIC, GLASSWARE, AND STAINLESS",
     "tab":"MED-SURG",
-    "total_qty":4.0,
-    "total_sales":720.0,
-    "months_active":5.0,
+    "total_qty":3.0,
+    "total_sales":540.0,
+    "months_active":4.0,
     "avg_price":180.0,
-    "mean_monthly_qty":0.8,
-    "cv_monthly_qty":0.5,
-    "trend_qty_slope":-0.2,
+    "mean_monthly_qty":0.75,
+    "cv_monthly_qty":0.5773502692,
+    "trend_qty_slope":-0.3,
     "cluster":0
   },
   {
@@ -333,7 +333,7 @@
     "mean_monthly_qty":3.25,
     "cv_monthly_qty":0.3352999187,
     "trend_qty_slope":-0.9,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"500001000123",
@@ -361,7 +361,7 @@
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"54897089002",
@@ -375,20 +375,20 @@
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4738035415,
     "trend_qty_slope":0.5,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"61792502891",
     "description":"MEDICINE CUP",
     "category":"PLASTIC, GLASSWARE, AND STAINLESS",
     "tab":"MED-SURG",
-    "total_qty":56.0,
-    "total_sales":345.24,
-    "months_active":24.0,
-    "avg_price":6.165,
-    "mean_monthly_qty":2.3333333333,
-    "cv_monthly_qty":0.5050762723,
-    "trend_qty_slope":0.0252173913,
+    "total_qty":53.0,
+    "total_sales":326.34,
+    "months_active":23.0,
+    "avg_price":6.1573584906,
+    "mean_monthly_qty":2.3043478261,
+    "cv_monthly_qty":0.5187821541,
+    "trend_qty_slope":0.0296442688,
     "cluster":0
   },
   {
@@ -508,13 +508,13 @@
     "description":"PILL CUTTER",
     "category":"PLASTIC, GLASSWARE, AND STAINLESS",
     "tab":"MED-SURG",
-    "total_qty":17.0,
-    "total_sales":2176.0,
-    "months_active":11.0,
+    "total_qty":16.0,
+    "total_sales":2048.0,
+    "months_active":10.0,
     "avg_price":128.0,
-    "mean_monthly_qty":1.5454545455,
-    "cv_monthly_qty":0.5060191334,
-    "trend_qty_slope":-0.0363636364,
+    "mean_monthly_qty":1.6,
+    "cv_monthly_qty":0.5,
+    "trend_qty_slope":-0.0848484848,
     "cluster":0
   },
   {

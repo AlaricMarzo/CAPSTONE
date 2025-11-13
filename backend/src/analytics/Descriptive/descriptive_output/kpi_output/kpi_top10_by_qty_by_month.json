@@ -2,7 +2,7 @@
   {
     "month":"2022-05",
     "item_code":"4800204044727",
-    "description":"POTEN CEE NON-ACIDIC (SODIUM ASCORBATE) 562.50MG CAP",
+    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":937.5,
@@ -1498,106 +1498,6 @@
     "total_sales":1250.0,
     "total_qty":500.0,
     "rank_qty":2.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4800369000545",
-    "description":"TERRAFERON CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":3328.38,
-    "total_qty":438.0,
-    "rank_qty":6.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4806504260614",
-    "description":"APPEVIT CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":4224.0,
-    "total_qty":329.0,
-    "rank_qty":8.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "total_sales":8300.0,
-    "total_qty":497.0,
-    "rank_qty":3.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4806527192664",
-    "description":"ENOCEE (ASCORBIC ACID) 500MG TAB",
-    "category":"VITAMINS",
-    "tab":"GENERICS",
-    "total_sales":1000.0,
-    "total_qty":500.0,
-    "rank_qty":2.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4806527194125",
-    "description":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "total_sales":445.6,
-    "total_qty":231.0,
-    "rank_qty":10.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4807788561688",
-    "description":"BIOGESIC 500MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "total_sales":1656.95,
-    "total_qty":396.0,
-    "rank_qty":7.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"4807788562630",
-    "description":"CALCIUMADE TAB",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":3138.0,
-    "total_qty":295.0,
-    "rank_qty":9.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"54021235",
-    "description":"GLOBISAPH (KETOANALOGUE) 630MG TAB",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "total_sales":7417.6,
-    "total_qty":488.0,
-    "rank_qty":4.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"8904179014702",
-    "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "total_sales":1576.56,
-    "total_qty":675.0,
-    "rank_qty":1.0
-  },
-  {
-    "month":"2023-08",
-    "item_code":"8904182011286",
-    "description":"MEDPIN-5 TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "total_sales":870.0,
-    "total_qty":450.0,
-    "rank_qty":5.0
   },
   {
     "month":"2023-09",

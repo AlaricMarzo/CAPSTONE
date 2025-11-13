@@ -39,7 +39,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.3,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"1900010157",
@@ -53,7 +53,7 @@
     "mean_monthly_qty":1.1666666667,
     "cv_monthly_qty":0.3194382825,
     "trend_qty_slope":-0.0857142857,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800011110004",
@@ -67,7 +67,7 @@
     "mean_monthly_qty":1.9230769231,
     "cv_monthly_qty":0.32,
     "trend_qty_slope":0.0604395604,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800011110011",
@@ -81,7 +81,7 @@
     "mean_monthly_qty":2.0909090909,
     "cv_monthly_qty":0.6901959942,
     "trend_qty_slope":0.1636363636,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800011110028",
@@ -95,7 +95,7 @@
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4123930494,
     "trend_qty_slope":0.1013986014,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800304520091",
@@ -109,7 +109,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":1.099298208e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800304910014",
@@ -123,21 +123,21 @@
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.4358898944,
     "trend_qty_slope":0.0835164835,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800304910021",
     "description":"TROSYD CREAM 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":22.0,
-    "total_sales":5132.75,
-    "months_active":15.0,
-    "avg_price":233.3068181818,
-    "mean_monthly_qty":1.4666666667,
-    "cv_monthly_qty":0.489560437,
-    "trend_qty_slope":-0.0571428571,
-    "cluster":1
+    "total_qty":21.0,
+    "total_sales":4909.0,
+    "months_active":14.0,
+    "avg_price":233.7619047619,
+    "mean_monthly_qty":1.5,
+    "cv_monthly_qty":0.4879500365,
+    "trend_qty_slope":-0.0681318681,
+    "cluster":3
   },
   {
     "item_code":"4800318000275",
@@ -151,21 +151,21 @@
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.1,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800318150024",
     "description":"BACTROBAN OINTMENT 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":20.0,
-    "total_sales":7507.14,
-    "months_active":9.0,
-    "avg_price":375.357,
-    "mean_monthly_qty":2.2222222222,
-    "cv_monthly_qty":0.5099019514,
-    "trend_qty_slope":-0.05,
-    "cluster":1
+    "total_qty":19.0,
+    "total_sales":7192.94,
+    "months_active":8.0,
+    "avg_price":378.5757894737,
+    "mean_monthly_qty":2.375,
+    "cv_monthly_qty":0.4677997062,
+    "trend_qty_slope":-0.1071428571,
+    "cluster":3
   },
   {
     "item_code":"4800333160282",
@@ -179,7 +179,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800333160329",
@@ -193,7 +193,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800333160824",
@@ -207,21 +207,21 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.0244755245,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800333160848",
     "description":"DERMOVATE CREAM 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":3.0,
-    "total_sales":1042.0,
-    "months_active":3.0,
-    "avg_price":347.3333333333,
+    "total_qty":2.0,
+    "total_sales":689.5,
+    "months_active":2.0,
+    "avg_price":344.75,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":8.985767264e-17,
-    "cluster":1
+    "trend_qty_slope":-7.850462293e-17,
+    "cluster":3
   },
   {
     "item_code":"4800333900666",
@@ -235,7 +235,7 @@
     "mean_monthly_qty":2.8333333333,
     "cv_monthly_qty":0.6253026949,
     "trend_qty_slope":0.6,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800346000018",
@@ -249,7 +249,7 @@
     "mean_monthly_qty":0.6666666667,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":-1.229790803e-16,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800346000148",
@@ -263,21 +263,21 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":7.951207132e-18,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800346000155",
     "description":"NIZORAL CREAM 3.5 G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":7.0,
-    "total_sales":1153.25,
-    "months_active":7.0,
-    "avg_price":164.75,
+    "total_qty":6.0,
+    "total_sales":999.0,
+    "months_active":6.0,
+    "avg_price":166.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":-4.423599198e-17,
-    "cluster":1
+    "trend_qty_slope":7.951207132e-18,
+    "cluster":3
   },
   {
     "item_code":"4800346002074",
@@ -291,35 +291,35 @@
     "mean_monthly_qty":1.7647058824,
     "cv_monthly_qty":0.4966554809,
     "trend_qty_slope":0.0171568627,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4801962202763",
     "description":"CANESTEN 3G CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":31.0,
-    "total_sales":3985.5,
-    "months_active":18.0,
-    "avg_price":128.564516129,
-    "mean_monthly_qty":1.7222222222,
-    "cv_monthly_qty":0.5407436972,
-    "trend_qty_slope":-0.036119711,
-    "cluster":1
+    "total_qty":28.0,
+    "total_sales":3600.5,
+    "months_active":17.0,
+    "avg_price":128.5892857143,
+    "mean_monthly_qty":1.6470588235,
+    "cv_monthly_qty":0.5486532677,
+    "trend_qty_slope":-0.0343137255,
+    "cluster":3
   },
   {
     "item_code":"4801962202770",
     "description":"CANESTEN 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":37.0,
-    "total_sales":7287.6,
-    "months_active":19.0,
-    "avg_price":196.9621621622,
-    "mean_monthly_qty":1.9473684211,
-    "cv_monthly_qty":0.696437769,
-    "trend_qty_slope":0.0192982456,
-    "cluster":1
+    "total_qty":34.0,
+    "total_sales":6654.6,
+    "months_active":18.0,
+    "avg_price":195.7235294118,
+    "mean_monthly_qty":1.8888888889,
+    "cv_monthly_qty":0.7252251768,
+    "trend_qty_slope":0.0227038184,
+    "cluster":3
   },
   {
     "item_code":"4801962207645",
@@ -333,7 +333,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4801962439138",
@@ -347,7 +347,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4801962612159",
@@ -361,7 +361,7 @@
     "mean_monthly_qty":1.375,
     "cv_monthly_qty":0.5061603966,
     "trend_qty_slope":0.0595238095,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806505751395",
@@ -375,7 +375,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":1.0488088482,
     "trend_qty_slope":0.4606060606,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806511300273",
@@ -389,7 +389,7 @@
     "mean_monthly_qty":1.7692307692,
     "cv_monthly_qty":0.5499613322,
     "trend_qty_slope":0.0879120879,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806512120023",
@@ -403,21 +403,21 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806512120054",
     "description":"FOSKINA 2% W\/W (2G\/100G) TOPICAL OINTMENT 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":17.0,
-    "total_sales":4923.04,
-    "months_active":10.0,
-    "avg_price":289.5905882353,
-    "mean_monthly_qty":1.7,
-    "cv_monthly_qty":0.4594264515,
-    "trend_qty_slope":-0.0787878788,
-    "cluster":1
+    "total_qty":16.0,
+    "total_sales":4642.04,
+    "months_active":9.0,
+    "avg_price":290.1275,
+    "mean_monthly_qty":1.7777777778,
+    "cv_monthly_qty":0.4419417382,
+    "trend_qty_slope":-0.15,
+    "cluster":3
   },
   {
     "item_code":"4806512120160",
@@ -431,21 +431,21 @@
     "mean_monthly_qty":1.8666666667,
     "cv_monthly_qty":0.4315373562,
     "trend_qty_slope":0.0357142857,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806512120184",
     "description":"CANDIVA 10MG\/G (1%W\/W) CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":35.0,
-    "total_sales":6527.5,
-    "months_active":17.0,
+    "total_qty":34.0,
+    "total_sales":6341.0,
+    "months_active":16.0,
     "avg_price":186.5,
-    "mean_monthly_qty":2.0588235294,
-    "cv_monthly_qty":0.5390846361,
-    "trend_qty_slope":0.1004901961,
-    "cluster":1
+    "mean_monthly_qty":2.125,
+    "cv_monthly_qty":0.5228349657,
+    "trend_qty_slope":0.0941176471,
+    "cluster":3
   },
   {
     "item_code":"4806512120535",
@@ -459,7 +459,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.5291502622,
     "trend_qty_slope":-0.0238095238,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806518550145",
@@ -473,35 +473,35 @@
     "mean_monthly_qty":1.375,
     "cv_monthly_qty":0.3520893951,
     "trend_qty_slope":-0.0119047619,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806518611792",
     "description":"SOFINOX (SODIUM FUSIDATE) 20MG\/G 5G CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":18.0,
-    "total_sales":5532.6,
-    "months_active":9.0,
-    "avg_price":307.3666666667,
-    "mean_monthly_qty":2.0,
-    "cv_monthly_qty":0.5773502692,
-    "trend_qty_slope":-0.0833333333,
-    "cluster":1
+    "total_qty":17.0,
+    "total_sales":5235.6,
+    "months_active":8.0,
+    "avg_price":307.9764705882,
+    "mean_monthly_qty":2.125,
+    "cv_monthly_qty":0.5486693561,
+    "trend_qty_slope":-0.2261904762,
+    "cluster":3
   },
   {
     "item_code":"4806518660936",
     "description":"FLAMMAZINE CREAM 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":8.0,
-    "total_sales":2532.0,
-    "months_active":8.0,
+    "total_qty":7.0,
+    "total_sales":2215.5,
+    "months_active":7.0,
     "avg_price":316.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":1.099298208e-17,
-    "cluster":1
+    "trend_qty_slope":-4.423599198e-17,
+    "cluster":3
   },
   {
     "item_code":"4806519386057",
@@ -515,7 +515,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.5291502622,
     "trend_qty_slope":0.1666666667,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806519590072",
@@ -543,7 +543,7 @@
     "mean_monthly_qty":2.5714285714,
     "cv_monthly_qty":0.9718253158,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806524780192",
@@ -571,7 +571,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.6123724357,
     "trend_qty_slope":0.8,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533600924",
@@ -585,7 +585,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533601495",
@@ -613,7 +613,7 @@
     "mean_monthly_qty":3.6666666667,
     "cv_monthly_qty":1.9404353265,
     "trend_qty_slope":-0.5214285714,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533601587",
@@ -641,7 +641,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.3,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533602324",
@@ -655,7 +655,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533602836",
@@ -669,7 +669,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806533602843",
@@ -683,7 +683,7 @@
     "mean_monthly_qty":3.1666666667,
     "cv_monthly_qty":0.6922603388,
     "trend_qty_slope":-0.3142857143,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788412584",
@@ -697,7 +697,7 @@
     "mean_monthly_qty":2.4642857143,
     "cv_monthly_qty":0.6900438178,
     "trend_qty_slope":0.0566502463,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788524560",
@@ -711,21 +711,21 @@
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.685118789,
     "trend_qty_slope":0.6857142857,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788524843",
     "description":"BACTIFREE 2% 20MG OINT TUBE",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":24.0,
-    "total_sales":7188.93,
-    "months_active":10.0,
-    "avg_price":299.53875,
-    "mean_monthly_qty":2.4,
-    "cv_monthly_qty":0.6508541397,
+    "total_qty":22.0,
+    "total_sales":6579.93,
+    "months_active":9.0,
+    "avg_price":299.0877272727,
+    "mean_monthly_qty":2.4444444444,
+    "cv_monthly_qty":0.6711283209,
     "trend_qty_slope":-0.1333333333,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788535818",
@@ -739,7 +739,7 @@
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.6066300355,
     "trend_qty_slope":-0.0214285714,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788542496",
@@ -753,7 +753,7 @@
     "mean_monthly_qty":1.1428571429,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":-2.751513687e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4807788586957",
@@ -767,49 +767,49 @@
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.489560437,
     "trend_qty_slope":-0.2571428571,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4809010332769",
     "description":"KATIALIS S 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":63.0,
-    "total_sales":1575.95,
-    "months_active":28.0,
-    "avg_price":25.0150793651,
-    "mean_monthly_qty":2.25,
-    "cv_monthly_qty":0.7286042805,
-    "trend_qty_slope":0.0134099617,
-    "cluster":1
+    "total_qty":60.0,
+    "total_sales":1499.2,
+    "months_active":27.0,
+    "avg_price":24.9866666667,
+    "mean_monthly_qty":2.2222222222,
+    "cv_monthly_qty":0.7483314774,
+    "trend_qty_slope":0.014041514,
+    "cluster":3
   },
   {
     "item_code":"4809010332776",
     "description":"KATIALIS M 15G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":32.0,
-    "total_sales":1142.19,
-    "months_active":21.0,
-    "avg_price":35.6934375,
-    "mean_monthly_qty":1.5238095238,
-    "cv_monthly_qty":0.521041625,
-    "trend_qty_slope":-0.0025974026,
-    "cluster":1
+    "total_qty":31.0,
+    "total_sales":1105.94,
+    "months_active":20.0,
+    "avg_price":35.675483871,
+    "mean_monthly_qty":1.55,
+    "cv_monthly_qty":0.5191444174,
+    "trend_qty_slope":-0.0052631579,
+    "cluster":3
   },
   {
     "item_code":"4809010332783",
     "description":"KATIALIS BIG 30G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":24.0,
-    "total_sales":1313.33,
-    "months_active":14.0,
-    "avg_price":54.7220833333,
-    "mean_monthly_qty":1.7142857143,
-    "cv_monthly_qty":0.7772815878,
-    "trend_qty_slope":0.0087912088,
-    "cluster":1
+    "total_qty":23.0,
+    "total_sales":1257.83,
+    "months_active":13.0,
+    "avg_price":54.6882608696,
+    "mean_monthly_qty":1.7692307692,
+    "cv_monthly_qty":0.7728864711,
+    "trend_qty_slope":9.242443008e-18,
+    "cluster":3
   },
   {
     "item_code":"4809014259109",
@@ -823,7 +823,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4809015705667",
@@ -837,7 +837,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.4564354646,
     "trend_qty_slope":0.5714285714,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"5702191025187",
@@ -851,35 +851,35 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"6922748503015",
     "description":"BL CREAM 7G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
-    "total_qty":615.0,
-    "total_sales":23932.0,
-    "months_active":33.0,
-    "avg_price":38.9138211382,
-    "mean_monthly_qty":18.6363636364,
-    "cv_monthly_qty":0.4195689128,
-    "trend_qty_slope":-0.1918449198,
-    "cluster":3
+    "total_qty":599.0,
+    "total_sales":23289.5,
+    "months_active":32.0,
+    "avg_price":38.8806343907,
+    "mean_monthly_qty":18.71875,
+    "cv_monthly_qty":0.4234448256,
+    "trend_qty_slope":-0.2069281525,
+    "cluster":1
   },
   {
     "item_code":"72355794",
     "description":"MUPISAPH 20MG\/G 5G OINMENT",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":80.0,
-    "total_sales":12236.04,
-    "months_active":14.0,
-    "avg_price":152.9505,
-    "mean_monthly_qty":5.7142857143,
-    "cv_monthly_qty":0.460298816,
-    "trend_qty_slope":-0.0307692308,
-    "cluster":1
+    "total_qty":72.0,
+    "total_sales":11033.54,
+    "months_active":13.0,
+    "avg_price":153.2436111111,
+    "mean_monthly_qty":5.5384615385,
+    "cv_monthly_qty":0.4783104266,
+    "trend_qty_slope":-0.010989011,
+    "cluster":3
   },
   {
     "item_code":"746876000705",
@@ -893,21 +893,21 @@
     "mean_monthly_qty":7.5909090909,
     "cv_monthly_qty":0.8271496582,
     "trend_qty_slope":-0.1507622812,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"746876000712",
     "description":"Z-CALMOSEPTINE OINT SAC 3.5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":153.0,
-    "total_sales":5554.2,
-    "months_active":15.0,
-    "avg_price":36.3019607843,
-    "mean_monthly_qty":10.2,
-    "cv_monthly_qty":0.6784804848,
-    "trend_qty_slope":0.4071428571,
-    "cluster":1
+    "total_qty":150.0,
+    "total_sales":5446.2,
+    "months_active":14.0,
+    "avg_price":36.308,
+    "mean_monthly_qty":10.7142857143,
+    "cv_monthly_qty":0.6422183775,
+    "trend_qty_slope":0.3032967033,
+    "cluster":3
   },
   {
     "item_code":"8851881728628",
@@ -921,7 +921,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"8904220118892",
@@ -935,7 +935,7 @@
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.5345224838,
     "trend_qty_slope":0.5,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"8904346102485",
@@ -949,7 +949,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"92547827",
@@ -963,21 +963,21 @@
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"9314057007990",
     "description":"CALADRYL LOTION 30ML",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
-    "total_qty":9.0,
-    "total_sales":1280.6,
-    "months_active":7.0,
-    "avg_price":142.2888888889,
-    "mean_monthly_qty":1.2857142857,
-    "cv_monthly_qty":0.3513641845,
-    "trend_qty_slope":-0.0714285714,
-    "cluster":1
+    "total_qty":7.0,
+    "total_sales":976.6,
+    "months_active":6.0,
+    "avg_price":139.5142857143,
+    "mean_monthly_qty":1.1666666667,
+    "cv_monthly_qty":0.3194382825,
+    "trend_qty_slope":-0.1428571429,
+    "cluster":3
   },
   {
     "item_code":"96284025",
@@ -991,7 +991,7 @@
     "mean_monthly_qty":2.6,
     "cv_monthly_qty":0.521717691,
     "trend_qty_slope":0.5,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"G96197103",
@@ -1005,6 +1005,6 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.1,
-    "cluster":1
+    "cluster":3
   }
 ]

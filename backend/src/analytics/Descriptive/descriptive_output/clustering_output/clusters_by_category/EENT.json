@@ -11,7 +11,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"1900010056",
@@ -25,7 +25,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"300651439168",
@@ -39,7 +39,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"38464410122",
@@ -53,7 +53,7 @@
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.7272727273,
     "trend_qty_slope":-2.70154001e-16,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"42074398686",
@@ -67,7 +67,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800204001614",
@@ -81,7 +81,7 @@
     "mean_monthly_qty":2.4705882353,
     "cv_monthly_qty":0.6226998491,
     "trend_qty_slope":0.1200980392,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800261123823",
@@ -95,35 +95,35 @@
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.5084322977,
     "trend_qty_slope":0.0892857143,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800261123915",
     "description":"RAPIDAX OTIC SOLUTION 5ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":30.0,
-    "total_sales":5614.3,
-    "months_active":17.0,
-    "avg_price":187.1433333333,
-    "mean_monthly_qty":1.7647058824,
-    "cv_monthly_qty":0.8589399151,
-    "trend_qty_slope":-0.0735294118,
-    "cluster":3
+    "total_qty":29.0,
+    "total_sales":5414.3,
+    "months_active":16.0,
+    "avg_price":186.7,
+    "mean_monthly_qty":1.8125,
+    "cv_monthly_qty":0.8551446047,
+    "trend_qty_slope":-0.075,
+    "cluster":1
   },
   {
     "item_code":"4800261124356",
     "description":"TOBRASON (TOBRA + DEXA ) 3MG\/ML EYE DROPS",
     "category":"EENT",
     "tab":"OTC",
-    "total_qty":13.0,
-    "total_sales":3063.75,
-    "months_active":9.0,
-    "avg_price":235.6730769231,
-    "mean_monthly_qty":1.4444444444,
-    "cv_monthly_qty":0.3440104581,
-    "trend_qty_slope":6.198032019e-17,
-    "cluster":3
+    "total_qty":12.0,
+    "total_sales":2826.25,
+    "months_active":8.0,
+    "avg_price":235.5208333333,
+    "mean_monthly_qty":1.5,
+    "cv_monthly_qty":0.3333333333,
+    "trend_qty_slope":-9.544085625e-17,
+    "cluster":1
   },
   {
     "item_code":"4800318000176",
@@ -137,7 +137,7 @@
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-4.837423445e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800331300192",
@@ -151,7 +151,7 @@
     "mean_monthly_qty":1.6,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":0.2,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800331632330",
@@ -165,7 +165,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800331647051",
@@ -179,7 +179,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.0952380952,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4800331648355",
@@ -193,21 +193,21 @@
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.5714285714,
     "trend_qty_slope":-0.2,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4801010231103",
     "description":"VISINE ORIGINAL 15ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":8.0,
-    "total_sales":1291.75,
-    "months_active":8.0,
-    "avg_price":161.46875,
+    "total_qty":7.0,
+    "total_sales":1125.75,
+    "months_active":7.0,
+    "avg_price":160.8214285714,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":1.099298208e-17,
-    "cluster":3
+    "trend_qty_slope":-4.423599198e-17,
+    "cluster":1
   },
   {
     "item_code":"4806504269976",
@@ -235,7 +235,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806510138204",
@@ -249,7 +249,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450020",
@@ -263,35 +263,35 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450068",
     "description":"CELSUS PREDNISOLONE ACETATE 1% OPTHA DROPS 5ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":4.0,
-    "total_sales":877.8,
-    "months_active":4.0,
-    "avg_price":219.45,
+    "total_qty":3.0,
+    "total_sales":646.8,
+    "months_active":3.0,
+    "avg_price":215.6,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":-8.214889952e-17,
-    "cluster":3
+    "trend_qty_slope":8.985767264e-17,
+    "cluster":1
   },
   {
     "item_code":"4806513450075",
     "description":"CELSUS TIMOLOL MALEATE .05% 5ML EYE DROPS",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":13.0,
-    "total_sales":4858.4,
-    "months_active":10.0,
-    "avg_price":373.7230769231,
-    "mean_monthly_qty":1.3,
-    "cv_monthly_qty":0.3525058227,
-    "trend_qty_slope":-0.0545454545,
-    "cluster":3
+    "total_qty":12.0,
+    "total_sales":4524.0,
+    "months_active":9.0,
+    "avg_price":377.0,
+    "mean_monthly_qty":1.3333333333,
+    "cv_monthly_qty":0.3535533906,
+    "trend_qty_slope":-0.0666666667,
+    "cluster":1
   },
   {
     "item_code":"4806513450082",
@@ -305,20 +305,20 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450112",
     "description":"CELSUS TOBRAMYCIN+DEXAMETHASONE 3MG\/1MG (0.3% W\/V) 5ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":5.0,
-    "total_sales":1410.0,
-    "months_active":2.0,
+    "total_qty":1.0,
+    "total_sales":282.0,
+    "months_active":1.0,
     "avg_price":282.0,
-    "mean_monthly_qty":2.5,
-    "cv_monthly_qty":0.6,
-    "trend_qty_slope":3.0,
+    "mean_monthly_qty":1.0,
+    "cv_monthly_qty":0.0,
+    "trend_qty_slope":0.0,
     "cluster":1
   },
   {
@@ -333,7 +333,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450174",
@@ -347,7 +347,7 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450204",
@@ -361,7 +361,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450228",
@@ -375,7 +375,7 @@
     "mean_monthly_qty":2.1666666667,
     "cv_monthly_qty":0.6201736729,
     "trend_qty_slope":0.5428571429,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806513450273",
@@ -389,7 +389,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.1,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806513450297",
@@ -403,21 +403,21 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.2,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806518661384",
     "description":"OTOSOL EAR DROPS 10ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":36.0,
-    "total_sales":15042.45,
-    "months_active":22.0,
-    "avg_price":417.8458333333,
-    "mean_monthly_qty":1.6363636364,
-    "cv_monthly_qty":0.4339027598,
-    "trend_qty_slope":-0.0214568041,
-    "cluster":3
+    "total_qty":34.0,
+    "total_sales":14186.95,
+    "months_active":21.0,
+    "avg_price":417.2632352941,
+    "mean_monthly_qty":1.619047619,
+    "cv_monthly_qty":0.4460514967,
+    "trend_qty_slope":-0.0207792208,
+    "cluster":1
   },
   {
     "item_code":"4806521901620",
@@ -431,7 +431,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806524796841",
@@ -445,7 +445,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806525250175",
@@ -459,7 +459,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4472135955,
     "trend_qty_slope":-0.5,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806532940014",
@@ -473,7 +473,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4806533943816",
@@ -487,7 +487,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4897000501974",
@@ -501,7 +501,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4897000502148",
@@ -515,7 +515,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"4987084556066",
@@ -529,7 +529,7 @@
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.5821022034,
     "trend_qty_slope":0.0285714286,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"59497466828",
@@ -543,7 +543,7 @@
     "mean_monthly_qty":4.0714285714,
     "cv_monthly_qty":1.3403554698,
     "trend_qty_slope":0.0637362637,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"6221032332844",
@@ -557,34 +557,34 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"88087975567",
     "description":"NEBULIZER KIT W\/. MASK PEDIA",
     "category":"EENT",
     "tab":"PRESCRIPTION",
-    "total_qty":40.0,
-    "total_sales":2611.16,
-    "months_active":23.0,
-    "avg_price":65.279,
-    "mean_monthly_qty":1.7391304348,
-    "cv_monthly_qty":0.514781507,
-    "trend_qty_slope":-1.321828317e-17,
-    "cluster":3
+    "total_qty":38.0,
+    "total_sales":2481.16,
+    "months_active":22.0,
+    "avg_price":65.2936842105,
+    "mean_monthly_qty":1.7272727273,
+    "cv_monthly_qty":0.5289408222,
+    "trend_qty_slope":-0.0011293055,
+    "cluster":1
   },
   {
     "item_code":"8885015220115",
     "description":"EYE MO MOISTURIZING BLUE 7.5ML",
     "category":"EENT",
     "tab":"OTC",
-    "total_qty":150.0,
-    "total_sales":15257.02,
-    "months_active":32.0,
-    "avg_price":101.7134666667,
-    "mean_monthly_qty":4.6875,
-    "cv_monthly_qty":0.400666112,
-    "trend_qty_slope":0.0549853372,
+    "total_qty":145.0,
+    "total_sales":14767.92,
+    "months_active":31.0,
+    "avg_price":101.8477241379,
+    "mean_monthly_qty":4.6774193548,
+    "cv_monthly_qty":0.4077722896,
+    "trend_qty_slope":0.0564516129,
     "cluster":2
   },
   {
@@ -592,13 +592,13 @@
     "description":"EYE MO RED EYE FORMULA 7.5ML",
     "category":"EENT",
     "tab":"OTC",
-    "total_qty":130.0,
-    "total_sales":12453.0,
-    "months_active":34.0,
-    "avg_price":95.7923076923,
-    "mean_monthly_qty":3.8235294118,
-    "cv_monthly_qty":0.9003615316,
-    "trend_qty_slope":0.0595874714,
+    "total_qty":126.0,
+    "total_sales":12075.0,
+    "months_active":33.0,
+    "avg_price":95.8333333333,
+    "mean_monthly_qty":3.8181818182,
+    "cv_monthly_qty":0.9151450988,
+    "trend_qty_slope":0.0578208556,
     "cluster":2
   },
   {
@@ -613,7 +613,7 @@
     "mean_monthly_qty":1.625,
     "cv_monthly_qty":0.6105579949,
     "trend_qty_slope":0.0595238095,
-    "cluster":3
+    "cluster":1
   },
   {
     "item_code":"G60421692",
@@ -627,6 +627,6 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":3
+    "cluster":1
   }
 ]

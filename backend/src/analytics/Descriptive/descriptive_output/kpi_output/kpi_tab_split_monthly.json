@@ -720,54 +720,6 @@
     "total_qty":124.0
   },
   {
-    "month":"2023-08",
-    "tab":"F&B",
-    "total_sales":14466.58,
-    "total_qty":539.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"GENERICS",
-    "total_sales":49745.03,
-    "total_qty":6052.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"HOUSEHOLD GOODS",
-    "total_sales":5672.0,
-    "total_qty":63.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"MED-SURG",
-    "total_sales":97767.58,
-    "total_qty":633.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"OTC",
-    "total_sales":101245.47,
-    "total_qty":5600.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"PERSONAL CARE",
-    "total_sales":52813.57,
-    "total_qty":757.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"PRESCRIPTION",
-    "total_sales":226722.18,
-    "total_qty":8644.0
-  },
-  {
-    "month":"2023-08",
-    "tab":"PROMOTIONS",
-    "total_sales":2008.06,
-    "total_qty":94.0
-  },
-  {
     "month":"2023-09",
     "tab":"F&B",
     "total_sales":20614.21,

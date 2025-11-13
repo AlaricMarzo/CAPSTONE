@@ -4,14 +4,14 @@
     "description":"CARESS ADULT DIAPER M20+2",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":72.0,
-    "total_sales":24682.67,
-    "months_active":26.0,
-    "avg_price":342.8148611111,
-    "mean_monthly_qty":2.7692307692,
-    "cv_monthly_qty":0.5780181124,
-    "trend_qty_slope":-0.0082051282,
-    "cluster":0
+    "total_qty":69.0,
+    "total_sales":23646.17,
+    "months_active":25.0,
+    "avg_price":342.698115942,
+    "mean_monthly_qty":2.76,
+    "cv_monthly_qty":0.5911906682,
+    "trend_qty_slope":-0.0092307692,
+    "cluster":2
   },
   {
     "item_code":"23944552311",
@@ -25,7 +25,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800157155105",
@@ -39,63 +39,63 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488070016",
     "description":"CARESS ADULT DIAPER M10+1",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":240.0,
-    "total_sales":44514.9,
-    "months_active":34.0,
-    "avg_price":185.47875,
-    "mean_monthly_qty":7.0588235294,
-    "cv_monthly_qty":0.4918784854,
-    "trend_qty_slope":0.1521772345,
-    "cluster":0
+    "total_qty":229.0,
+    "total_sales":42543.9,
+    "months_active":33.0,
+    "avg_price":185.7812227074,
+    "mean_monthly_qty":6.9393939394,
+    "cv_monthly_qty":0.4978548978,
+    "trend_qty_slope":0.1610962567,
+    "cluster":2
   },
   {
     "item_code":"4800488070023",
     "description":"CARESS ADULT DIAPER M1",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":252.0,
-    "total_sales":5568.3,
-    "months_active":32.0,
-    "avg_price":22.0964285714,
-    "mean_monthly_qty":7.875,
-    "cv_monthly_qty":0.6558072464,
-    "trend_qty_slope":0.2485337243,
-    "cluster":2
+    "total_qty":249.0,
+    "total_sales":5508.3,
+    "months_active":31.0,
+    "avg_price":22.121686747,
+    "mean_monthly_qty":8.0322580645,
+    "cv_monthly_qty":0.643799026,
+    "trend_qty_slope":0.2532258065,
+    "cluster":0
   },
   {
     "item_code":"4800488070030",
     "description":"CARESS ADULT DIAPER L10+1",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":257.0,
-    "total_sales":59901.89,
-    "months_active":34.0,
-    "avg_price":233.0812840467,
-    "mean_monthly_qty":7.5588235294,
-    "cv_monthly_qty":0.5883211866,
-    "trend_qty_slope":0.15355233,
-    "cluster":4
+    "total_qty":240.0,
+    "total_sales":56037.39,
+    "months_active":33.0,
+    "avg_price":233.489125,
+    "mean_monthly_qty":7.2727272727,
+    "cv_monthly_qty":0.5767184466,
+    "trend_qty_slope":0.1620989305,
+    "cluster":1
   },
   {
     "item_code":"4800488070283",
     "description":"CARESS ADULT DIAPER XL10",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":303.0,
-    "total_sales":95672.51,
-    "months_active":35.0,
-    "avg_price":315.7508580858,
-    "mean_monthly_qty":8.6571428571,
-    "cv_monthly_qty":0.7383156212,
-    "trend_qty_slope":-0.0985994398,
-    "cluster":4
+    "total_qty":287.0,
+    "total_sales":90632.26,
+    "months_active":34.0,
+    "avg_price":315.7918466899,
+    "mean_monthly_qty":8.4411764706,
+    "cv_monthly_qty":0.7532017959,
+    "trend_qty_slope":-0.0967150497,
+    "cluster":1
   },
   {
     "item_code":"4800488070443",
@@ -109,7 +109,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4472135955,
     "trend_qty_slope":0.6,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800488070450",
@@ -123,7 +123,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488070467",
@@ -137,7 +137,7 @@
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.5150787536,
     "trend_qty_slope":0.0117647059,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488070474",
@@ -151,21 +151,21 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5477225575,
     "trend_qty_slope":-2.101584148e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488099741",
     "description":"CARESS UNDERPAD M10",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":31.0,
-    "total_sales":5922.0,
-    "months_active":15.0,
-    "avg_price":191.0322580645,
-    "mean_monthly_qty":2.0666666667,
-    "cv_monthly_qty":0.672021505,
-    "trend_qty_slope":-0.025,
-    "cluster":2
+    "total_qty":28.0,
+    "total_sales":5367.0,
+    "months_active":14.0,
+    "avg_price":191.6785714286,
+    "mean_monthly_qty":2.0,
+    "cv_monthly_qty":0.7071067812,
+    "trend_qty_slope":-0.0395604396,
+    "cluster":0
   },
   {
     "item_code":"4800488099758",
@@ -179,21 +179,21 @@
     "mean_monthly_qty":3.6206896552,
     "cv_monthly_qty":0.5637580414,
     "trend_qty_slope":0.0650246305,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800488129820",
     "description":"CARESS MATERNITY PADS 7+1",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":26.0,
-    "total_sales":2053.76,
-    "months_active":16.0,
-    "avg_price":78.9907692308,
-    "mean_monthly_qty":1.625,
-    "cv_monthly_qty":0.5273580462,
-    "trend_qty_slope":0.0588235294,
-    "cluster":2
+    "total_qty":24.0,
+    "total_sales":1905.72,
+    "months_active":15.0,
+    "avg_price":79.405,
+    "mean_monthly_qty":1.6,
+    "cv_monthly_qty":0.5496210816,
+    "trend_qty_slope":0.0642857143,
+    "cluster":0
   },
   {
     "item_code":"4800488958772",
@@ -207,7 +207,7 @@
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.8813963377,
     "trend_qty_slope":-0.2,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488958789",
@@ -221,21 +221,21 @@
     "mean_monthly_qty":1.3684210526,
     "cv_monthly_qty":0.5908573652,
     "trend_qty_slope":-0.0035087719,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488958796",
     "description":"EQ DRY L 4&#039;S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":59.0,
-    "total_sales":2565.25,
-    "months_active":26.0,
-    "avg_price":43.4788135593,
-    "mean_monthly_qty":2.2692307692,
-    "cv_monthly_qty":0.6056802842,
-    "trend_qty_slope":0.0570940171,
-    "cluster":2
+    "total_qty":57.0,
+    "total_sales":2477.75,
+    "months_active":25.0,
+    "avg_price":43.4692982456,
+    "mean_monthly_qty":2.28,
+    "cv_monthly_qty":0.6142856632,
+    "trend_qty_slope":0.0576923077,
+    "cluster":0
   },
   {
     "item_code":"4800488958802",
@@ -249,21 +249,21 @@
     "mean_monthly_qty":2.7058823529,
     "cv_monthly_qty":0.6048012062,
     "trend_qty_slope":0.1176470588,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488958819",
     "description":"EQ DRY XXL 3&#039;S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":54.0,
-    "total_sales":2254.5,
-    "months_active":25.0,
+    "total_qty":52.0,
+    "total_sales":2171.0,
+    "months_active":24.0,
     "avg_price":41.75,
-    "mean_monthly_qty":2.16,
-    "cv_monthly_qty":0.5017117476,
-    "trend_qty_slope":0.0284615385,
-    "cluster":2
+    "mean_monthly_qty":2.1666666667,
+    "cv_monthly_qty":0.5102499677,
+    "trend_qty_slope":0.0295652174,
+    "cluster":0
   },
   {
     "item_code":"4800488958826",
@@ -277,21 +277,21 @@
     "mean_monthly_qty":2.8823529412,
     "cv_monthly_qty":0.702823484,
     "trend_qty_slope":0.0588235294,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488958888",
     "description":"CARESS UNDERPADS XL8",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":190.0,
-    "total_sales":34071.84,
-    "months_active":31.0,
-    "avg_price":179.3254736842,
-    "mean_monthly_qty":6.1290322581,
-    "cv_monthly_qty":0.594434017,
-    "trend_qty_slope":0.0306451613,
-    "cluster":0
+    "total_qty":179.0,
+    "total_sales":32200.09,
+    "months_active":30.0,
+    "avg_price":179.8887709497,
+    "mean_monthly_qty":5.9666666667,
+    "cv_monthly_qty":0.6019277625,
+    "trend_qty_slope":0.0349276974,
+    "cluster":2
   },
   {
     "item_code":"4800488958932",
@@ -305,7 +305,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488958949",
@@ -319,7 +319,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4800488958970",
@@ -328,12 +328,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":2512.0,
-    "months_active":8.0,
+    "months_active":7.0,
     "avg_price":314.0,
-    "mean_monthly_qty":1.0,
-    "cv_monthly_qty":0.5,
-    "trend_qty_slope":-0.0476190476,
-    "cluster":2
+    "mean_monthly_qty":1.1428571429,
+    "cv_monthly_qty":0.3061862178,
+    "trend_qty_slope":0.0357142857,
+    "cluster":0
   },
   {
     "item_code":"4800488958994",
@@ -347,21 +347,21 @@
     "mean_monthly_qty":1.1666666667,
     "cv_monthly_qty":0.3194382825,
     "trend_qty_slope":-0.0285714286,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488959236",
     "description":"CARESS ADULT DIAPER L2",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":203.0,
-    "total_sales":9851.0,
-    "months_active":31.0,
-    "avg_price":48.5270935961,
-    "mean_monthly_qty":6.5483870968,
-    "cv_monthly_qty":0.724456215,
-    "trend_qty_slope":0.235483871,
-    "cluster":2
+    "total_qty":194.0,
+    "total_sales":9441.5,
+    "months_active":30.0,
+    "avg_price":48.6675257732,
+    "mean_monthly_qty":6.4666666667,
+    "cv_monthly_qty":0.7424112119,
+    "trend_qty_slope":0.2491657397,
+    "cluster":0
   },
   {
     "item_code":"4800488960270",
@@ -375,21 +375,21 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488960287",
     "description":"EQ PANTS M 10&#039;S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":3.0,
-    "total_sales":213.75,
-    "months_active":3.0,
+    "total_qty":2.0,
+    "total_sales":142.5,
+    "months_active":2.0,
     "avg_price":71.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "trend_qty_slope":-7.850462293e-17,
+    "cluster":0
   },
   {
     "item_code":"4800488960331",
@@ -403,7 +403,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488960362",
@@ -417,35 +417,35 @@
     "mean_monthly_qty":2.6,
     "cv_monthly_qty":0.4824330185,
     "trend_qty_slope":-0.0678571429,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488960379",
     "description":"HYPANTS ADULT DIAPER LARGE 10s",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":98.0,
-    "total_sales":26356.5,
-    "months_active":27.0,
-    "avg_price":268.943877551,
-    "mean_monthly_qty":3.6296296296,
-    "cv_monthly_qty":0.5717928868,
-    "trend_qty_slope":0.0702075702,
-    "cluster":0
+    "total_qty":97.0,
+    "total_sales":26086.5,
+    "months_active":26.0,
+    "avg_price":268.9329896907,
+    "mean_monthly_qty":3.7307692308,
+    "cv_monthly_qty":0.5491082056,
+    "trend_qty_slope":0.0721367521,
+    "cluster":2
   },
   {
     "item_code":"4800488960768",
     "description":"HYPANTS ADULT DIAPER XL 10s",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":116.0,
-    "total_sales":38598.43,
-    "months_active":25.0,
-    "avg_price":332.7450862069,
-    "mean_monthly_qty":4.64,
-    "cv_monthly_qty":1.021615377,
-    "trend_qty_slope":0.1784615385,
-    "cluster":0
+    "total_qty":114.0,
+    "total_sales":37966.43,
+    "months_active":24.0,
+    "avg_price":333.0388596491,
+    "mean_monthly_qty":4.75,
+    "cv_monthly_qty":1.0119325012,
+    "trend_qty_slope":0.1773913043,
+    "cluster":2
   },
   {
     "item_code":"4800488960799",
@@ -459,7 +459,7 @@
     "mean_monthly_qty":3.6666666667,
     "cv_monthly_qty":0.5378254348,
     "trend_qty_slope":-0.8,
-    "cluster":3
+    "cluster":4
   },
   {
     "item_code":"4800488961451",
@@ -473,35 +473,35 @@
     "mean_monthly_qty":2.3125,
     "cv_monthly_qty":0.6614723379,
     "trend_qty_slope":0.0573529412,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800488961468",
     "description":"EQ PANTS L 4&#039;S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":29.0,
-    "total_sales":942.5,
-    "months_active":14.0,
+    "total_qty":26.0,
+    "total_sales":845.0,
+    "months_active":13.0,
     "avg_price":32.5,
-    "mean_monthly_qty":2.0714285714,
-    "cv_monthly_qty":0.4639180706,
-    "trend_qty_slope":0.0373626374,
-    "cluster":2
+    "mean_monthly_qty":2.0,
+    "cv_monthly_qty":0.4803844614,
+    "trend_qty_slope":0.010989011,
+    "cluster":0
   },
   {
     "item_code":"4800488961932",
     "description":"EQ PANTS XL 4&#039;S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":38.0,
-    "total_sales":1358.5,
-    "months_active":12.0,
+    "total_qty":28.0,
+    "total_sales":1001.0,
+    "months_active":11.0,
     "avg_price":35.75,
-    "mean_monthly_qty":3.1666666667,
-    "cv_monthly_qty":0.9009075141,
-    "trend_qty_slope":0.2447552448,
-    "cluster":2
+    "mean_monthly_qty":2.5454545455,
+    "cv_monthly_qty":0.8096988606,
+    "trend_qty_slope":0.2090909091,
+    "cluster":0
   },
   {
     "item_code":"4802288802101",
@@ -515,7 +515,7 @@
     "mean_monthly_qty":11.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4802288883049",
@@ -529,7 +529,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806506315404",
@@ -543,11 +543,11 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506315428",
-    "description":"LAMPEIN JUMBO PACK L 54S",
+    "description":"LAMPEIN JUMBO PACK L 54s",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
     "total_qty":27.0,
@@ -557,7 +557,7 @@
     "mean_monthly_qty":1.5882352941,
     "cv_monthly_qty":0.485736187,
     "trend_qty_slope":-0.0465686275,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506315435",
@@ -571,7 +571,7 @@
     "mean_monthly_qty":1.625,
     "cv_monthly_qty":0.4803844614,
     "trend_qty_slope":-0.1117647059,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506315541",
@@ -585,7 +585,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319051",
@@ -599,21 +599,21 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.081396514e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319068",
     "description":"SUPER TWINS BABY PANTS L 8S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":14.0,
-    "total_sales":1264.2,
-    "months_active":8.0,
+    "total_qty":11.0,
+    "total_sales":993.3,
+    "months_active":7.0,
     "avg_price":90.3,
-    "mean_monthly_qty":1.75,
-    "cv_monthly_qty":0.5532833352,
-    "trend_qty_slope":-0.119047619,
-    "cluster":2
+    "mean_monthly_qty":1.5714285714,
+    "cv_monthly_qty":0.5749595746,
+    "trend_qty_slope":-0.0714285714,
+    "cluster":0
   },
   {
     "item_code":"4806506319075",
@@ -627,7 +627,7 @@
     "mean_monthly_qty":2.125,
     "cv_monthly_qty":0.4362469698,
     "trend_qty_slope":0.2023809524,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319150",
@@ -641,21 +641,21 @@
     "mean_monthly_qty":1.5555555556,
     "cv_monthly_qty":0.5345224838,
     "trend_qty_slope":0.1666666667,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319358",
     "description":"LAMPEIN XXL 4s",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":20.0,
-    "total_sales":1500.0,
-    "months_active":15.0,
+    "total_qty":19.0,
+    "total_sales":1425.0,
+    "months_active":14.0,
     "avg_price":75.0,
-    "mean_monthly_qty":1.3333333333,
-    "cv_monthly_qty":0.4472135955,
-    "trend_qty_slope":0.0607142857,
-    "cluster":2
+    "mean_monthly_qty":1.3571428571,
+    "cv_monthly_qty":0.4496844076,
+    "trend_qty_slope":0.0681318681,
+    "cluster":0
   },
   {
     "item_code":"4806506319617",
@@ -669,7 +669,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4806506319648",
@@ -683,21 +683,21 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319716",
     "description":"LAMPEIN S 4S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_qty":28.0,
-    "total_sales":691.93,
-    "months_active":15.0,
-    "avg_price":24.7117857143,
-    "mean_monthly_qty":1.8666666667,
-    "cv_monthly_qty":0.5824823725,
-    "trend_qty_slope":-0.1464285714,
-    "cluster":2
+    "total_qty":27.0,
+    "total_sales":666.93,
+    "months_active":14.0,
+    "avg_price":24.7011111111,
+    "mean_monthly_qty":1.9285714286,
+    "cv_monthly_qty":0.5701779377,
+    "trend_qty_slope":-0.178021978,
+    "cluster":0
   },
   {
     "item_code":"4806506319723",
@@ -711,7 +711,7 @@
     "mean_monthly_qty":1.2222222222,
     "cv_monthly_qty":0.6428243465,
     "trend_qty_slope":-0.1,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806506319730",
@@ -725,7 +725,7 @@
     "mean_monthly_qty":1.6923076923,
     "cv_monthly_qty":0.7100226978,
     "trend_qty_slope":3.484972493e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806511301256",
@@ -739,7 +739,7 @@
     "mean_monthly_qty":3.2,
     "cv_monthly_qty":0.8003905297,
     "trend_qty_slope":1.1,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4902430615211",
@@ -753,7 +753,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430615457",
@@ -767,7 +767,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430720113",
@@ -781,7 +781,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430720151",
@@ -795,7 +795,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":3
+    "cluster":4
   },
   {
     "item_code":"4902430720168",
@@ -809,7 +809,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430720175",
@@ -823,7 +823,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430720212",
@@ -837,7 +837,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4902430720236",
@@ -851,7 +851,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"8850087331384",
@@ -865,7 +865,7 @@
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.4472135955,
     "trend_qty_slope":2.151984947e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"FG002",
@@ -879,6 +879,6 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   }
 ]

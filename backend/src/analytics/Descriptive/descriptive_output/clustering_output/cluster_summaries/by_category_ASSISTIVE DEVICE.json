@@ -2,10 +2,10 @@
   {
     "cluster":0,
     "n":47,
-    "total_sales":1642585.6899999999,
-    "total_qty":554.0,
+    "total_sales":1581572.01,
+    "total_qty":539.0,
     "avg_price_med":1828.56,
-    "months_active_med":6.0,
+    "months_active_med":5.0,
     "mean_monthly_qty_med":1.1,
     "cv_monthly_qty_med":0.2727272727,
     "trend_qty_slope_med":0.0,

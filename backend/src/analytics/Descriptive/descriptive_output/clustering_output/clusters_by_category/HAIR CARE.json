@@ -11,7 +11,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800034080131",
@@ -25,7 +25,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119131659",
@@ -39,7 +39,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.7453559925,
     "trend_qty_slope":0.2571428571,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119131666",
@@ -53,21 +53,21 @@
     "mean_monthly_qty":1.5714285714,
     "cv_monthly_qty":0.6680426571,
     "trend_qty_slope":0.1785714286,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119131673",
     "description":"STYLEX STRONG HOLD (WHITE) 50G",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":26.0,
-    "total_sales":498.0,
-    "months_active":11.0,
-    "avg_price":19.1538461538,
-    "mean_monthly_qty":2.3636363636,
-    "cv_monthly_qty":0.6815401979,
-    "trend_qty_slope":0.0181818182,
-    "cluster":2
+    "total_qty":25.0,
+    "total_sales":479.0,
+    "months_active":10.0,
+    "avg_price":19.16,
+    "mean_monthly_qty":2.5,
+    "cv_monthly_qty":0.6511528238,
+    "trend_qty_slope":0.0424242424,
+    "cluster":0
   },
   {
     "item_code":"4800119131680",
@@ -81,7 +81,7 @@
     "mean_monthly_qty":1.875,
     "cv_monthly_qty":0.5617433182,
     "trend_qty_slope":0.1071428571,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119131697",
@@ -95,7 +95,7 @@
     "mean_monthly_qty":1.7777777778,
     "cv_monthly_qty":0.8291561976,
     "trend_qty_slope":0.3,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119213461",
@@ -109,7 +109,7 @@
     "mean_monthly_qty":2.1333333333,
     "cv_monthly_qty":0.5896238208,
     "trend_qty_slope":-0.1321428571,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119219159",
@@ -123,7 +123,7 @@
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4738035415,
     "trend_qty_slope":0.5,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800119236156",
@@ -137,7 +137,7 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.5,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800326628188",
@@ -151,7 +151,7 @@
     "mean_monthly_qty":1.2857142857,
     "cv_monthly_qty":0.3513641845,
     "trend_qty_slope":0.0357142857,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800326628584",
@@ -165,7 +165,7 @@
     "mean_monthly_qty":1.2307692308,
     "cv_monthly_qty":0.4677071733,
     "trend_qty_slope":0.021978022,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800326628782",
@@ -179,21 +179,21 @@
     "mean_monthly_qty":1.8181818182,
     "cv_monthly_qty":0.514781507,
     "trend_qty_slope":-0.0545454545,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800326628980",
     "description":"BIGEN CHESTNUT BROWN",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":12.0,
-    "total_sales":756.0,
-    "months_active":5.0,
+    "total_qty":11.0,
+    "total_sales":693.0,
+    "months_active":4.0,
     "avg_price":63.0,
-    "mean_monthly_qty":2.4,
-    "cv_monthly_qty":0.5651941653,
-    "trend_qty_slope":0.5,
-    "cluster":2
+    "mean_monthly_qty":2.75,
+    "cv_monthly_qty":0.472377493,
+    "trend_qty_slope":1.1,
+    "cluster":0
   },
   {
     "item_code":"4800417059655",
@@ -207,7 +207,7 @@
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":4.07711102e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800417060415",
@@ -221,7 +221,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800417084015",
@@ -235,7 +235,7 @@
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.1,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888138446",
@@ -249,7 +249,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888139467",
@@ -263,7 +263,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888139481",
@@ -277,7 +277,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888140838",
@@ -291,7 +291,7 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.5,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888140869",
@@ -305,7 +305,7 @@
     "mean_monthly_qty":1.6,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-0.5,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888140876",
@@ -319,7 +319,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888141194",
@@ -333,7 +333,7 @@
     "mean_monthly_qty":4.3333333333,
     "cv_monthly_qty":0.3922322703,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800888146830",
@@ -347,7 +347,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888151704",
@@ -361,7 +361,7 @@
     "mean_monthly_qty":4.25,
     "cv_monthly_qty":0.5359078576,
     "trend_qty_slope":-0.1,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888154347",
@@ -375,7 +375,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888154354",
@@ -389,7 +389,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-4.423599198e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888169709",
@@ -403,7 +403,7 @@
     "mean_monthly_qty":2.8,
     "cv_monthly_qty":0.3499271061,
     "trend_qty_slope":-1.356604153e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888169716",
@@ -417,7 +417,7 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":1.8,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888179593",
@@ -431,7 +431,7 @@
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.4843221048,
     "trend_qty_slope":-0.6,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888179616",
@@ -445,7 +445,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888206565",
@@ -459,7 +459,7 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888212900",
@@ -473,7 +473,7 @@
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.1111111111,
     "trend_qty_slope":-1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888214133",
@@ -487,7 +487,7 @@
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":5.769208098e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888214157",
@@ -501,7 +501,7 @@
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888217523",
@@ -529,7 +529,7 @@
     "mean_monthly_qty":6.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":1.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888240064",
@@ -543,7 +543,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.4183300133,
     "trend_qty_slope":-0.5,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888282965",
@@ -557,7 +557,7 @@
     "mean_monthly_qty":5.25,
     "cv_monthly_qty":1.0722219285,
     "trend_qty_slope":-1.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800888282996",
@@ -571,7 +571,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800888283122",
@@ -585,7 +585,7 @@
     "mean_monthly_qty":5.8,
     "cv_monthly_qty":0.8116277445,
     "trend_qty_slope":-2.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800888283139",
@@ -613,7 +613,7 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.4714045208,
     "trend_qty_slope":-0.2,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806524840292",
@@ -627,35 +627,35 @@
     "mean_monthly_qty":3.6666666667,
     "cv_monthly_qty":0.5142594772,
     "trend_qty_slope":-7.857552576e-16,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888004167",
     "description":"PALMOLIVE SHAMPOO PINK 15ML",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":176.0,
-    "total_sales":1012.0,
-    "months_active":13.0,
+    "total_qty":165.0,
+    "total_sales":948.75,
+    "months_active":12.0,
     "avg_price":5.75,
-    "mean_monthly_qty":13.5384615385,
-    "cv_monthly_qty":0.5031537933,
-    "trend_qty_slope":-0.4340659341,
-    "cluster":0
+    "mean_monthly_qty":13.75,
+    "cv_monthly_qty":0.5126498974,
+    "trend_qty_slope":-0.6678321678,
+    "cluster":2
   },
   {
     "item_code":"4808888004181",
     "description":"PALMOLIVE SHAMPOO VIOLET 15ML",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":150.0,
-    "total_sales":862.5,
-    "months_active":13.0,
+    "total_qty":147.0,
+    "total_sales":845.25,
+    "months_active":12.0,
     "avg_price":5.75,
-    "mean_monthly_qty":11.5384615385,
-    "cv_monthly_qty":0.6846247959,
-    "trend_qty_slope":0.0659340659,
-    "cluster":0
+    "mean_monthly_qty":12.25,
+    "cv_monthly_qty":0.6376802677,
+    "trend_qty_slope":-0.3041958042,
+    "cluster":2
   },
   {
     "item_code":"4808888004679",
@@ -669,7 +669,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888411583",
@@ -683,7 +683,7 @@
     "mean_monthly_qty":1.8,
     "cv_monthly_qty":0.6478835439,
     "trend_qty_slope":0.1,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888411705",
@@ -697,7 +697,7 @@
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.3748277841,
     "trend_qty_slope":0.1428571429,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888413594",
@@ -711,7 +711,7 @@
     "mean_monthly_qty":1.2222222222,
     "cv_monthly_qty":0.5142594772,
     "trend_qty_slope":0.1333333333,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888413709",
@@ -725,7 +725,7 @@
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.006993007,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888431222",
@@ -739,7 +739,7 @@
     "mean_monthly_qty":1.5714285714,
     "cv_monthly_qty":0.5749595746,
     "trend_qty_slope":0.2857142857,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4808888431444",
@@ -753,7 +753,7 @@
     "mean_monthly_qty":2.2222222222,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.05,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4809010919885",
@@ -767,7 +767,7 @@
     "mean_monthly_qty":5.375,
     "cv_monthly_qty":1.072544424,
     "trend_qty_slope":-1.3452380952,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4809014258508",
@@ -781,21 +781,21 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"5036631005201",
     "description":"NIZORAL (KETOCONAZOLE) 20MG\/G (2%) SHAMPOO 6ML",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":60.0,
-    "total_sales":4110.0,
-    "months_active":13.0,
+    "total_qty":58.0,
+    "total_sales":3973.0,
+    "months_active":12.0,
     "avg_price":68.5,
-    "mean_monthly_qty":4.6153846154,
-    "cv_monthly_qty":0.8730533902,
-    "trend_qty_slope":-0.1648351648,
-    "cluster":0
+    "mean_monthly_qty":4.8333333333,
+    "cv_monthly_qty":0.85235911,
+    "trend_qty_slope":-0.3356643357,
+    "cluster":2
   },
   {
     "item_code":"8904220114719",
@@ -809,7 +809,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.5964639392,
     "trend_qty_slope":-0.1538461538,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"95194097",
@@ -823,6 +823,6 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":2
+    "cluster":0
   }
 ]

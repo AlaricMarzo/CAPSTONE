@@ -1,18 +1,42 @@
 [
   {
     "cluster":0,
-    "n":6,
-    "total_sales":187220.78,
-    "total_qty":821.0,
-    "avg_price_med":227.2113137755,
-    "months_active_med":28.0,
-    "mean_monthly_qty_med":4.1348148148,
-    "cv_monthly_qty_med":0.5749054996,
-    "trend_qty_slope_med":0.0676161004,
-    "persona":"High-Sales, High-Volume, Premium, Rising"
+    "n":48,
+    "total_sales":83874.98,
+    "total_qty":1157.0,
+    "avg_price_med":76.3352941176,
+    "months_active_med":6.5,
+    "mean_monthly_qty_med":1.5798319328,
+    "cv_monthly_qty_med":0.4484490016,
+    "trend_qty_slope_med":0.0,
+    "persona":"High-Sales, High-Volume"
   },
   {
     "cluster":1,
+    "n":2,
+    "total_sales":146669.65,
+    "total_qty":527.0,
+    "avg_price_med":274.6404858449,
+    "months_active_med":33.5,
+    "mean_monthly_qty_med":7.8569518717,
+    "cv_monthly_qty_med":0.6649601213,
+    "trend_qty_slope_med":0.0326919404,
+    "persona":"High-Sales, High-Volume, Premium, Rising"
+  },
+  {
+    "cluster":2,
+    "n":6,
+    "total_sales":181439.53,
+    "total_qty":793.0,
+    "avg_price_med":227.3571061991,
+    "months_active_med":27.5,
+    "mean_monthly_qty_med":4.2403846154,
+    "cv_monthly_qty_med":0.5774743548,
+    "trend_qty_slope_med":0.0685806913,
+    "persona":"High-Sales, High-Volume, Premium, Rising"
+  },
+  {
+    "cluster":3,
     "n":5,
     "total_sales":1834.17,
     "total_qty":35.0,
@@ -24,19 +48,7 @@
     "persona":"Rising"
   },
   {
-    "cluster":2,
-    "n":48,
-    "total_sales":86115.67,
-    "total_qty":1197.0,
-    "avg_price_med":76.3352941176,
-    "months_active_med":7.0,
-    "mean_monthly_qty_med":1.6066176471,
-    "cv_monthly_qty_med":0.455565833,
-    "trend_qty_slope_med":0.0,
-    "persona":"High-Sales, High-Volume"
-  },
-  {
-    "cluster":3,
+    "cluster":4,
     "n":2,
     "total_sales":7854.58,
     "total_qty":25.0,
@@ -46,17 +58,5 @@
     "cv_monthly_qty_med":0.4355793841,
     "trend_qty_slope_med":-0.9,
     "persona":"Premium, Declining"
-  },
-  {
-    "cluster":4,
-    "n":2,
-    "total_sales":155574.4,
-    "total_qty":560.0,
-    "avg_price_med":274.4160710663,
-    "months_active_med":34.5,
-    "mean_monthly_qty_med":8.1079831933,
-    "cv_monthly_qty_med":0.6633184039,
-    "trend_qty_slope_med":0.0274764451,
-    "persona":"High-Sales, High-Volume, Premium, Rising"
   }
 ]
