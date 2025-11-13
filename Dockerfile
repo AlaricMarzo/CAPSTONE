@@ -33,8 +33,9 @@ RUN cd backend && npm install --verbose --no-optional || npm install --verbose -
 
 # Install frontend dependencies with specific flags to avoid SWC issues
 RUN cd frontend && \
-    npm install --verbose --no-optional --legacy-peer-deps || \
-    npm install --verbose --no-optional --legacy-peer-deps
+    rm -rf node_modules package-lock.json && \
+    npm install --verbose --legacy-peer-deps || \
+    npm install --verbose --legacy-peer-deps
 
 # Copy Python requirements and install
 COPY backend/requirements.txt ./backend/
