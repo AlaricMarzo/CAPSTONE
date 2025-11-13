@@ -28,30 +28,31 @@ function csvToJson(csvPath) {
     return []
   }
 
-  try {
-    const csvData = fs.readFileSync(csvPath, "utf8")
-    const lines = csvData.split("\n").filter((line) => line.trim() !== "")
-    if (lines.length < 2) return []
+    try {
+      const csvData = fs.readFileSync(csvPath, "utf8")
+      const lines = csvData.split("\n").filter((line) => line.trim() !== "")
+      if (lines.length < 2) return []
 
-    const headers = lines[0].split(",").map((h) => h.trim())
-    const rows = lines.slice(1).map((line) => {
-      const values = line.split(",").map((v) => v.trim())
-      const obj = {}
-      headers.forEach((header, index) => {
-        const value = values[index] || ""
-        if (!isNaN(value) && value !== "") {
-          obj[header] = Number.parseFloat(value)
-        } else {
-          obj[header] = value
-        }
+      const headers = lines[0].split(",").map((h) => h.trim())
+      const rows = lines.slice(1).map((line) => {
+        const values = line.split(",").map((v) => v.trim())
+        const obj = {}
+        headers.forEach((header, index) => {
+          const value = values[index] || ""
+          if (!isNaN(value) && value !== "") {
+            obj[header] = Number.parseFloat(value)
+          } else {
+            obj[header] = value
+          }
+        })
+        return obj
       })
-      return obj
-    })
 
-    return rows
-  } catch (error) {
-    console.error("[v0] Error parsing CSV:", error)
-    return []
+      return rows
+    } catch (error) {
+      console.error("[v0] Error parsing CSV:", error)
+      return []
+    }
   }
 }
 
