@@ -2,5 +2,17 @@
   {
     "month":"2023-01",
     "active_skus":878
+  },
+  {
+    "month":"2023-02",
+    "active_skus":838
+  },
+  {
+    "month":"2024-01",
+    "active_skus":1059
+  },
+  {
+    "month":"2025-02",
+    "active_skus":903
   }
 ]

@@ -1,19 +1,5 @@
 [
   {
-    "item_code":"26586339577",
-    "description":"FACE SHIELD",
-    "category":"MEMBERS EXCLUSIVE",
-    "tab":"PROMOTIONS",
-    "total_qty":38.0,
-    "total_sales":399.0,
-    "months_active":3.0,
-    "avg_price":10.5,
-    "mean_monthly_qty":12.6666666667,
-    "cv_monthly_qty":0.7129587992,
-    "trend_qty_slope":11.0,
-    "cluster":0
-  },
-  {
     "item_code":"89878823399",
     "description":"ACRYLIC FACE SHIELD",
     "category":"MEMBERS EXCLUSIVE",

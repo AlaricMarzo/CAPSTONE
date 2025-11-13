@@ -1,7 +1,17 @@
 [
   {
     "year":2023,
-    "total_sales":484838.94,
-    "total_qty":18417.0
+    "total_sales":1001564.03,
+    "total_qty":35621.0
+  },
+  {
+    "year":2024,
+    "total_sales":940426.91,
+    "total_qty":26414.0
+  },
+  {
+    "year":2025,
+    "total_sales":563519.4399999999,
+    "total_qty":17270.0
   }
 ]

@@ -1,50 +1,38 @@
 [
   {
-    "cluster":-1,
-    "n":14,
-    "total_sales":111300.93,
-    "total_qty":2765.0,
-    "avg_price_med":58.0607662429,
-    "months_active_med":10.0,
-    "mean_monthly_qty_med":9.625,
-    "cv_monthly_qty_med":0.6080248847,
-    "trend_qty_slope_med":0.2553571429,
-    "persona":"High-Sales, High-Volume, Premium, Rising"
-  },
-  {
     "cluster":0,
-    "n":12,
-    "total_sales":3767.09,
-    "total_qty":268.0,
-    "avg_price_med":62.625,
-    "months_active_med":1.0,
-    "mean_monthly_qty_med":2.8333333333,
-    "cv_monthly_qty_med":0.0,
-    "trend_qty_slope_med":0.0,
-    "persona":"Premium"
+    "n":2,
+    "total_sales":790.58,
+    "total_qty":194.0,
+    "avg_price_med":3.5508583333,
+    "months_active_med":2.5,
+    "mean_monthly_qty_med":36.5,
+    "cv_monthly_qty_med":0.6538129356,
+    "trend_qty_slope_med":-31.0,
+    "persona":"High-Volume, Declining"
   },
   {
     "cluster":1,
-    "n":8,
-    "total_sales":11758.9,
-    "total_qty":319.0,
-    "avg_price_med":44.1024305556,
-    "months_active_med":5.0,
-    "mean_monthly_qty_med":4.1111111111,
-    "cv_monthly_qty_med":0.44582902,
-    "trend_qty_slope_med":-0.25,
-    "persona":"High-Sales, Declining"
+    "n":1,
+    "total_sales":1249.2,
+    "total_qty":36.0,
+    "avg_price_med":34.7,
+    "months_active_med":2.0,
+    "mean_monthly_qty_med":18.0,
+    "cv_monthly_qty_med":0.8333333333,
+    "trend_qty_slope_med":30.0,
+    "persona":"High-Sales, Premium, Rising"
   },
   {
     "cluster":2,
-    "n":7,
-    "total_sales":6354.62,
-    "total_qty":1091.0,
-    "avg_price_med":13.9716981132,
-    "months_active_med":6.0,
-    "mean_monthly_qty_med":3.8,
-    "cv_monthly_qty_med":0.5921643331,
-    "trend_qty_slope_med":0.1340659341,
-    "persona":"High-Volume, Rising"
+    "n":21,
+    "total_sales":18782.25,
+    "total_qty":368.0,
+    "avg_price_med":57.5,
+    "months_active_med":1.0,
+    "mean_monthly_qty_med":4.0,
+    "cv_monthly_qty_med":0.0,
+    "trend_qty_slope_med":0.0,
+    "persona":"High-Sales, High-Volume, Premium"
   }
 ]

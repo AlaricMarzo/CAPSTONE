@@ -4,79 +4,79 @@
     "description":"VAXIRAB 2.5 IU 1ML",
     "category":"COLD CHAIN",
     "tab":"PRESCRIPTION",
-    "total_sales":1080064.0,
-    "total_qty":596.0
+    "total_sales":92664.0,
+    "total_qty":51.0
   },
   {
     "item_code":"77965633",
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":344871.06,
-    "total_qty":22.0
+    "total_sales":83850.0,
+    "total_qty":5.0
   },
   {
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":333887.27,
-    "total_qty":6784.0
+    "total_sales":43414.45,
+    "total_qty":887.0
   },
   {
     "item_code":"4809015142035",
     "description":"OHHIRAs PROPOLIS 600MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "total_sales":272148.93,
-    "total_qty":4234.0
+    "total_sales":38775.27,
+    "total_qty":621.0
   },
   {
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":231648.7,
-    "total_qty":622.0
+    "total_sales":38634.6,
+    "total_qty":105.0
   },
   {
-    "item_code":"4800307101044",
-    "description":"KLARYTH 250MG\/5ML SUSP 70ML",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "total_sales":162074.4,
-    "total_qty":130.0
+    "item_code":"99875334642",
+    "description":"OXYGEN TANK 15LBS",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":37250.85,
+    "total_qty":5.0
   },
   {
     "item_code":"33835549",
     "description":"RECLINING WHEELCHAIR WITH COMMODE",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":137086.86,
-    "total_qty":14.0
-  },
-  {
-    "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
-    "category":"ASSISTIVE DEVICE",
-    "tab":"MED-SURG",
-    "total_sales":124690.6,
-    "total_qty":32.0
-  },
-  {
-    "item_code":"4806504653348",
-    "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "total_sales":116764.5,
-    "total_qty":3381.0
+    "total_sales":32659.2,
+    "total_qty":3.0
   },
   {
     "item_code":"77939425",
     "description":"HOSPITAL BED 3 CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":116342.74,
-    "total_qty":4.0
+    "total_sales":30400.0,
+    "total_qty":1.0
+  },
+  {
+    "item_code":"230231506",
+    "description":"BAXTEL BP APP W\/ STETHOSCOPE",
+    "category":"MANUAL MEDICAL DEVICES",
+    "tab":"MED-SURG",
+    "total_sales":28944.0,
+    "total_qty":11.0
+  },
+  {
+    "item_code":"4806524781854",
+    "description":"NEPHROMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":22412.0,
+    "total_qty":1386.0
   }
 ]

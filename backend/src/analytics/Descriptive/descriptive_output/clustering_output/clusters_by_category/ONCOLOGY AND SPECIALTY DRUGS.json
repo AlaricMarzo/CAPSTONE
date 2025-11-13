@@ -1,16 +1,16 @@
 [
   {
     "item_code":"8806044013325",
-    "description":"PTERIN 2.5MG TAB 100&#039;S",
+    "description":"PTERIN 2.5MG TAB 100",
     "category":"ONCOLOGY AND SPECIALTY DRUGS",
     "tab":"PRESCRIPTION",
-    "total_qty":242.0,
-    "total_sales":2568.97,
-    "months_active":8.0,
-    "avg_price":10.6155785124,
-    "mean_monthly_qty":30.25,
-    "cv_monthly_qty":0.5506266184,
-    "trend_qty_slope":-0.7857142857,
+    "total_qty":30.0,
+    "total_sales":261.6,
+    "months_active":1.0,
+    "avg_price":8.72,
+    "mean_monthly_qty":30.0,
+    "cv_monthly_qty":0.0,
+    "trend_qty_slope":0.0,
     "cluster":0
   }
 ]

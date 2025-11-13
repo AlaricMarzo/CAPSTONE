@@ -3,5 +3,20 @@
     "month":"2023-01",
     "total_sales":484838.94,
     "total_qty":18417.0
+  },
+  {
+    "month":"2023-02",
+    "total_sales":516725.09,
+    "total_qty":17204.0
+  },
+  {
+    "month":"2024-01",
+    "total_sales":940426.91,
+    "total_qty":26414.0
+  },
+  {
+    "month":"2025-02",
+    "total_sales":563519.4399999999,
+    "total_qty":17270.0
   }
 ]
