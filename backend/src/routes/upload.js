@@ -43,7 +43,7 @@ const upload = multer({
 // -------------------- Helper: Run Python Script --------------------
 function runPythonScript(scriptPath, args = []) {
   return new Promise((resolve, reject) => {
-    const pythonCmd = process.env.PYTHON_CMD || "python";
+    const pythonCmd = process.env.PYTHON_CMD || "python3";
     const python = spawn(pythonCmd, [scriptPath, ...args], {
       env: { ...process.env, NON_INTERACTIVE: "1" }
     });

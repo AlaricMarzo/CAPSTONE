@@ -330,6 +330,7 @@
         { key: "monthly_sales_growth_rate", path: "fig_monthly_sales_growth_rate.png" },
         { key: "sales_month_vs_year", path: "fig_sales_month_vs_year.png" },
         { key: "qty_month_vs_year", path: "fig_qty_month_vs_year.png" },
+        { key: "season_index_heatmap", path: "fig_season_index_heatmap.png" },
       ]
       for (const img of imageFiles) {
         const imgPath = path.join(kpiDir, img.path)

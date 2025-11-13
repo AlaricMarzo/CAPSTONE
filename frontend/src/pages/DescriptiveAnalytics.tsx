@@ -69,6 +69,7 @@ interface DescriptiveData {
     monthly_sales_growth_rate: string | null
     sales_month_vs_year: string | null
     qty_month_vs_year: string | null
+    season_index_heatmap: string | null
   }
 }
 
@@ -490,6 +491,28 @@ export default function DescriptiveAnalytics() {
               </CardContent>
             </Card>
           </div>
+
+          {/* Seasonal Index Heatmap */}
+          {data.kpi_images.season_index_heatmap && (
+            <Card className="shadow-soft overflow-hidden">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg md:text-base">Seasonal Index Heatmap</CardTitle>
+                <CardDescription className="text-xs md:text-sm">
+                  Seasonal patterns by category and month (1.0 = category average; {'>'}1 above, {'<'}1 below)
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-0 md:p-6">
+                <div className="w-full overflow-x-auto">
+                  <img
+                    src={data.kpi_images.season_index_heatmap || "/placeholder.svg"}
+                    alt="Seasonal Index Heatmap"
+                    className="w-full h-auto max-w-full object-contain rounded border"
+                    style={{ maxHeight: '2000px' }}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          )}
         </TabsContent>
 
         <TabsContent value="products" className="space-y-6">
