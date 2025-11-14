@@ -34,7 +34,7 @@ import PrescriptiveAnalytics from "./PrescriptiveAnalytics"
 import InventoryRecommendations from "./InventoryRecommendations"
 import ReportsPage from "./Reports"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import {
+import { LineChart,
   Line,
   BarChart,
   Bar,
