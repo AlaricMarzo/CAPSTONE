@@ -46,8 +46,8 @@ export default function DataUploadPage() {
           rowsProcessed: data.cleaningResults?.rowsProcessed || 0,
         });
 
-        if (data.status === "completed" || data.status === "failed") {
-          if (data.status === "completed") {
+        if (data.status === "completed" || data.status === "completed_with_warnings" || data.status === "failed") {
+          if (data.status === "completed" || data.status === "completed_with_warnings") {
             setUploadProgress(100); // Ensure progress reaches 100% on completion
           }
           setUploading(false);
@@ -57,7 +57,7 @@ export default function DataUploadPage() {
           }
 
           // If upload completed successfully, trigger descriptive, predictive, and prescriptive analytics
-          if (data.status === "completed") {
+          if (data.status === "completed" || data.status === "completed_with_warnings") {
             // Run descriptive analytics
             runDescriptiveAnalytics().then(success => {
               console.log("Descriptive analytics run:", success ? "success" : "failed");
