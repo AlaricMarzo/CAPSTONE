@@ -43,9 +43,9 @@ const upload = multer({
 // -------------------- Helper: Run Python Script --------------------
 function runPythonScript(scriptPath, args = []) {
   return new Promise((resolve, reject) => {
-    const pythonCmd = process.env.PYTHON_CMD || "python3";
+    const pythonCmd = process.env.PYTHON_CMD || "/opt/venv/bin/python3";
     const python = spawn(pythonCmd, [scriptPath, ...args], {
-      env: { ...process.env, NON_INTERACTIVE: "1" }
+      env: { ...process.env, NON_INTERACTIVE: "1", PYTHONPATH: "/opt/venv/lib/python3.11/site-packages" }
     });
 
     let output = "";
