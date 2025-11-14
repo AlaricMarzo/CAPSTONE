@@ -27,9 +27,12 @@ app.use("/api", uploadRouter)
 app.use("/api/analytics", analyticsRouter)
 
 // Catch all handler: send back index.html for any non-API routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'))
-})
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api')) {
+    return next();
+  }
+  res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
+});
 
 import multer from "multer";
 

@@ -12,14 +12,23 @@ const firebaseConfig = {
 } satisfies FirebaseOptions;
 
 // Debug: Check if env vars are loaded
-console.log("Firebase Config Loaded:", {
-  apiKey: firebaseConfig.apiKey ? "Present" : "Missing",
+console.log("Firebase Config Values:", {
+  apiKey: firebaseConfig.apiKey,
   projectId: firebaseConfig.projectId,
   authDomain: firebaseConfig.authDomain,
+  appId: firebaseConfig.appId,
+  messagingSenderId: firebaseConfig.messagingSenderId,
+  storageBucket: firebaseConfig.storageBucket,
 });
 
-if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
-  console.error("Firebase configuration is incomplete. Please check your environment variables.");
+// Check if required Firebase config is present
+const requiredFields = ['apiKey', 'authDomain', 'projectId'];
+const missingFields = requiredFields.filter(field => !firebaseConfig[field as keyof FirebaseOptions]);
+
+if (missingFields.length > 0) {
+  console.error(`Firebase configuration is incomplete. Missing fields: ${missingFields.join(', ')}. Please check your environment variables.`);
+  // Don't initialize Firebase if config is incomplete
+  throw new Error(`Firebase configuration incomplete. Missing: ${missingFields.join(', ')}`);
 }
 
 const app = initializeApp(firebaseConfig);
