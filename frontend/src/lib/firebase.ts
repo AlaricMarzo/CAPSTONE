@@ -2,38 +2,55 @@
 import { initializeApp, type FirebaseOptions } from "firebase/app";
 import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 
-const firebaseConfig = {
+// 1) Read from Vite env
+const envConfig: FirebaseOptions = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-} satisfies FirebaseOptions;
+};
 
-// Debug: Check if env vars are loaded
-console.log("Firebase Config Values:", {
-  apiKey: firebaseConfig.apiKey,
+// 2) Hard-coded fallback from your Firebase console
+const fallbackConfig: FirebaseOptions = {
+  apiKey: "AIzaSyB_lxDmzlur2YjtOGeQCuzVoUf4Z2hkQOw",
+  authDomain: "capstone-b22c7.firebaseapp.com",
+  projectId: "capstone-b22c7",
+  storageBucket: "capstone-b22c7.firebasestorage.app",
+  messagingSenderId: "967980569103",
+  appId: "1:967980569103:web:2c80aa5743ad572248c97a",
+};
+
+// 3) Use env values when present, otherwise fallback
+const firebaseConfig: FirebaseOptions = {
+  apiKey: envConfig.apiKey || fallbackConfig.apiKey,
+  authDomain: envConfig.authDomain || fallbackConfig.authDomain,
+  projectId: envConfig.projectId || fallbackConfig.projectId,
+  storageBucket: envConfig.storageBucket || fallbackConfig.storageBucket,
+  messagingSenderId: envConfig.messagingSenderId || fallbackConfig.messagingSenderId,
+  appId: envConfig.appId || fallbackConfig.appId,
+};
+
+// Debug: see what actually ends up in the bundle
+console.log("Firebase Config Loaded:", {
+  fromEnv: !!envConfig.apiKey,
+  apiKey: firebaseConfig.apiKey ? "Present" : "Missing",
   projectId: firebaseConfig.projectId,
   authDomain: firebaseConfig.authDomain,
-  appId: firebaseConfig.appId,
-  messagingSenderId: firebaseConfig.messagingSenderId,
-  storageBucket: firebaseConfig.storageBucket,
 });
 
-// Check if required Firebase config is present
-const requiredFields = ['apiKey', 'authDomain', 'projectId'];
-const missingFields = requiredFields.filter(field => !firebaseConfig[field as keyof FirebaseOptions]);
-
-if (missingFields.length > 0) {
-  console.error(`Firebase configuration is incomplete. Missing fields: ${missingFields.join(', ')}. Please check your environment variables.`);
-  // Don't initialize Firebase if config is incomplete
-  throw new Error(`Firebase configuration incomplete. Missing: ${missingFields.join(', ')}`);
+// Only complain if even the fallback is broken
+if (!firebaseConfig.apiKey || !firebaseConfig.projectId || !firebaseConfig.authDomain) {
+  console.error("Firebase configuration is incomplete AFTER fallback. Check firebase.ts.");
+  throw new Error("Firebase configuration incomplete. Missing required fields.");
 }
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
-setPersistence(auth, browserLocalPersistence).catch(() => {});
+if (typeof window !== "undefined") {
+  setPersistence(auth, browserLocalPersistence).catch(() => {});
+}
 
 export default app;
