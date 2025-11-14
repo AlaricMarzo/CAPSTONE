@@ -96,7 +96,7 @@ function runPythonScript(scriptPath, args = []) {
 
 // -------------------- Upload Route (Async with Job Tracking) --------------------
 router.post(
-  "/upload",
+  "/",
   (req, res, next) => {
     upload.any()(req, res, (err) => {
       if (err) {

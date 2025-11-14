@@ -31,7 +31,7 @@ export default function DataUploadPage() {
 
   const pollJobStatus = async (jobId: string) => {
     try {
-      const response = await fetch(`/api/job/${jobId}`);
+      const response = await fetch(`/api/upload/job/${jobId}`);
       const data = await response.json();
 
       if (data.success) {

@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, '../../frontend/dist')))
 
 app.get("/health", (_, res) => res.json({ status: "OK" }))
 
-app.use("/api", uploadRouter)
+app.use("/api/upload", uploadRouter)
 app.use("/api/analytics", analyticsRouter)
 
 // Catch all handler: send back index.html for any non-API routes
