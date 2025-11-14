@@ -298,6 +298,8 @@ export default function DataUploadPage() {
                     ? "Filtering data quality..."
                     : uploadProgress < 100
                     ? "Running data cleaning script..."
+                    : uploadProgress === 100
+                    ? "Processing completed! Running analytics..."
                     : "Finalizing results..."}
                 </p>
               </div>
