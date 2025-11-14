@@ -16,6 +16,9 @@ COPY backend/ ./backend/
 # Install frontend dependencies
 RUN cd frontend && npm install
 
+# Install backend dependencies
+RUN cd backend && npm install
+
 # Build the application
 RUN npm run build
 
