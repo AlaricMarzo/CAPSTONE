@@ -26,7 +26,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the Excel file for product categories
-COPY "Product List as of 10232024.xlsx" ./
+COPY 'Product List as of 10232024.xlsx' ./
 
 # Copy frontend and backend source
 COPY frontend/ ./frontend/
