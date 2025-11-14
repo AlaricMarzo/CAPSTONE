@@ -3,8 +3,9 @@ FROM node:18-alpine
 # Install Python and pip
 RUN apk add --no-cache python3 py3-pip
 
-# Install pandas and required dependencies
-RUN pip3 install --no-cache-dir pandas openpyxl
+# Create a virtual environment and install pandas
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --no-cache-dir pandas openpyxl
 
 # Set working directory
 WORKDIR /app
@@ -31,5 +32,5 @@ RUN npm run build
 # Expose ports
 EXPOSE 8080 5050
 
-# Start the application
-CMD ["npm", "start"]
+# Start the application with virtual environment activated
+CMD ["/opt/venv/bin/python3", "-c", "import sys; sys.path.insert(0, '/opt/venv/lib/python3.11/site-packages'); import subprocess; subprocess.run(['npm', 'start'])"]
