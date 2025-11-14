@@ -192,25 +192,25 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <MetricCard
           title="Total Sales"
-          value={formatCurrency(data.descriptive.kpi_summary.total_sales)}
+          value={formatCurrency(data.descriptive?.kpi_summary?.total_sales ?? 0)}
           icon={DollarSign}
           trend="+12.5%"
         />
         <MetricCard
           title="Total Quantity"
-          value={data.descriptive.kpi_summary.total_quantity.toLocaleString()}
+          value={(data.descriptive?.kpi_summary?.total_quantity ?? 0).toLocaleString()}
           icon={Package}
           trend="+8.2%"
         />
         <MetricCard
           title="Active SKUs"
-          value={data.descriptive.kpi_summary.active_skus.toString()}
+          value={(data.descriptive?.kpi_summary?.active_skus ?? 0).toString()}
           icon={ShoppingCart}
           trend="+5.1%"
         />
         <MetricCard
           title="Growth Rate"
-          value={`${data.descriptive.kpi_summary.growth_rate.toFixed(1)}%`}
+          value={`${(data.descriptive?.kpi_summary?.growth_rate ?? 0).toFixed(1)}%`}
           icon={TrendingUp}
           trend="+2.3%"
         />
@@ -225,7 +225,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
-              <LineChart data={data.descriptive.monthly_sales}>
+              <LineChart data={data.descriptive?.monthly_sales ?? []}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis />
@@ -243,7 +243,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={data.descriptive.category_distribution}>
+              <BarChart data={data.descriptive?.category_distribution ?? []}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
@@ -273,7 +273,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
                 </tr>
               </thead>
               <tbody>
-                {data.descriptive.monthly_sales.map((item: any, idx: number) => (
+                {data.descriptive?.monthly_sales ?? [].map((item: any, idx: number) => (
                   <tr key={idx} className="border-b hover:bg-muted/50">
                     <td className="p-2 font-medium">{item.month}</td>
                     <td className="p-2 text-right">{formatCurrency(item.sales)}</td>
