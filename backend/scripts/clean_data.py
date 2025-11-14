@@ -4,8 +4,7 @@ from io import StringIO
 import re
 import os
 import sys
-import tkinter as tk
-from tkinter import filedialog
+import argparse
 from datetime import datetime
 import json  # Added json import for JSON output
 
@@ -1079,93 +1078,7 @@ def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
         print(f"{col}: {non_null_count} non-null values")
     return filename
 
-# Replaced browse_for_file with browse_for_files
-def browse_for_files():
-    """Browse for multiple CSV files"""
-    try:
-        root = tk.Tk()
-        root.withdraw()
-        root.attributes('-topmost', True)
-        print("Opening file browser for multiple files...")
-        file_paths = filedialog.askopenfilenames(
-            title="Select CSV Data Files (you can select multiple)",
-            filetypes=[("CSV files", "*.csv"),("All files", "*.*")],
-            initialdir=os.getcwd()
-        )
-        root.destroy()
-        if file_paths:
-            print(f"Selected {len(file_paths)} file(s):")
-            for fp in file_paths:
-                print(f"  - {fp}")
-            return list(file_paths)
-        else:
-            print("No files selected.")
-            return []
-    except Exception as e:
-        print(f"Error opening file browser: {e}")
-        print("File browser not available. Please enter file paths manually.")
-        return []
 
-# Replaced get_data_source with get_data_sources
-def get_data_sources():
-    """Get multiple data sources (files or URLs)"""
-    print("Data Cleaning Program")
-    print("=" * 50)
-    print("You can import data from:")
-    print("1. Browse for local CSV files (multiple selection)")
-    print("2. Enter file paths manually (comma-separated)")
-    print("3. Enter URLs to CSV files (comma-separated)")
-    print()
-    while True:
-        choice = input("Choose option (1/2/3) or press Enter to browse: ").strip()
-        if not choice or choice == '1':
-            sources = browse_for_files()
-            if sources:
-                return sources
-            else:
-                retry = input("Would you like to try a different method? (y/n): ").strip().lower()
-                if retry != 'y':
-                    return []
-                continue
-        elif choice == '2':
-            paths_input = input("Enter file paths (comma-separated): ").strip()
-            if not paths_input:
-                print("Please enter valid file paths.")
-                continue
-            sources = [p.strip() for p in paths_input.split(',')]
-            valid_sources = []
-            for source in sources:
-                if os.path.exists(source):
-                    print(f" File found: {source}")
-                    valid_sources.append(source)
-                else:
-                    print(f"[WARNING] File not found: {source}")
-            if valid_sources:
-                return valid_sources
-            else:
-                print("No valid files found.")
-                continue
-        elif choice == '3':
-            urls_input = input("Enter URLs (comma-separated): ").strip()
-            if not urls_input:
-                print("Please enter valid URLs.")
-                continue
-            sources = [u.strip() for u in urls_input.split(',')]
-            valid_sources = []
-            for source in sources:
-                if source.startswith(('http://', 'https://')):
-                    print(f" URL detected: {source}")
-                    valid_sources.append(source)
-                else:
-                    print(f"[WARNING] Invalid URL: {source}")
-            if valid_sources:
-                return valid_sources
-            else:
-                print("No valid URLs found.")
-                continue
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
-            continue
 
 # ==============================================
 # Driver
@@ -1220,28 +1133,22 @@ if __name__ == "__main__":
     NON_INTERACTIVE = os.getenv("NON_INTERACTIVE", "0") == "1"
 
     try:
-        # Node.js passes: [output_file_path, input_file1, input_file2, ...]
-        if len(sys.argv) > 2:
-            # First arg is output file path, rest are input files
-            output_file_path = sys.argv[1]
-            data_sources = sys.argv[2:]
-            print(f"Using {len(data_sources)} data source(s) from command line")
-            print(f"Output will be saved to: {output_file_path}")
-        elif len(sys.argv) == 2:
-            # Single argument - treat as input file, use default output
-            data_sources = [sys.argv[1]]
-            output_file_path = 'cleaned_sales_data_combined.csv'
-            print(f"Using 1 data source from command line")
-        elif NON_INTERACTIVE:
-            print("Running in NON_INTERACTIVE mode...")
-            data_sources = [default_url]
-            output_file_path = 'cleaned_sales_data_combined.csv'
-        else:
-            data_sources = get_data_sources()
-            if not data_sources:
-                print("No data sources provided. Using default test data...")
-                data_sources = [default_url]
-            output_file_path = 'cleaned_sales_data_combined.csv'
+        # Parse command-line arguments
+        parser = argparse.ArgumentParser(description="Clean and process sales data CSV files")
+        parser.add_argument("--input", required=True, help="Path to input CSV file")
+        parser.add_argument("--run-id", required=True, help="Run ID for this processing job")
+        parser.add_argument("--db-url", required=True, help="Database URL for loading data")
+        parser.add_argument("--output", default='cleaned_sales_data_combined.csv', help="Output file path")
+        args = parser.parse_args()
+
+        output_file_path = args.output
+        data_sources = [args.input]
+        run_id = args.run_id
+        db_url = args.db_url
+
+        print(f"Using input file: {args.input}")
+        print(f"Run ID: {run_id}")
+        print(f"Output will be saved to: {output_file_path}")
 
         # -------- CLEAN MULTIPLE FILES --------
         all_cleaned_dfs = []

@@ -186,7 +186,7 @@ async function processUpload(jobId, files) {
     let cleanResult
     try {
       console.log("[Backend] Starting Python script execution...")
-      cleanResult = await runPythonScript(cleanScriptPath, [outputPath, ...uploadedFiles])
+      cleanResult = await runPythonScript(cleanScriptPath, ["--input", uploadedFiles[0], "--run-id", jobId, "--db-url", process.env.DATABASE_URL, "--output", outputPath])
       console.log("[Backend] Python script finished. Result:", cleanResult)
     } catch (error) {
       console.error("[Backend] Error running cleaner/loader:", error.message)
