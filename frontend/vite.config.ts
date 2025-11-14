@@ -19,6 +19,9 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
+  preview: {
+    allowedHosts: ['capstone-production-812f.up.railway.app'],
+  },
   plugins: [
     react(),
     mode === 'development' &&
