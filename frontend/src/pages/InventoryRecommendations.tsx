@@ -87,7 +87,7 @@ export default function InventoryRecommendations() {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/prescriptive")
+        const response = await fetch("/api/analytics/prescriptive")
         if (!response.ok) throw new Error("Failed to fetch inventory recommendations")
         const result = await response.json()
         const processedData = {

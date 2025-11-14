@@ -31,7 +31,7 @@ export default function ReportsPage() {
   const fetchFiles = async () => {
     try {
       setLoading(true)
-      const response = await fetch("http://localhost:5050/api/analytics/files")
+      const response = await fetch("/api/analytics/files")
       if (!response.ok) throw new Error("Failed to fetch files")
       const result = await response.json()
       setFiles(result.files || {})
@@ -47,7 +47,7 @@ export default function ReportsPage() {
   const handleDownload = async (category: string, filename: string) => {
     try {
       setDownloading(`${category}-${filename}`)
-      const response = await fetch(`http://localhost:5050/api/analytics/download/${category}/${filename}`)
+      const response = await fetch(`/api/analytics/download/${category}/${filename}`)
       if (!response.ok) throw new Error("Failed to download file")
 
       const blob = await response.blob()
@@ -98,7 +98,7 @@ export default function ReportsPage() {
                     <div key={file.name} className="border border-border/50 rounded-lg p-4 bg-background/50 hover:bg-background/80 transition-colors duration-200">
                       <div className="aspect-video bg-muted/30 rounded flex items-center justify-center mb-3 overflow-hidden">
                         <img
-                          src={`http://localhost:5050/api/analytics/download/${category}/${file.name}`}
+                          src={`/api/analytics/download/${category}/${file.name}`}
                           alt={file.name}
                           className="max-w-full max-h-full object-contain rounded transition-transform duration-200 hover:scale-105"
                           onError={(e) => {

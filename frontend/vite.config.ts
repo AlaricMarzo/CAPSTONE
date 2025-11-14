@@ -8,16 +8,6 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5050',
-        changeOrigin: true,
-      },
-      '/descriptive_output': {
-        target: 'http://localhost:5050',
-        changeOrigin: true,
-      },
-    },
   },
   preview: {
     allowedHosts: ['capstone-production-812f.up.railway.app'],
