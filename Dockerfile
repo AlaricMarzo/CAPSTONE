@@ -1,5 +1,8 @@
 FROM node:18-alpine
 
+# Install Python and pip
+RUN apk add --no-cache python3 py3-pip
+
 # Set working directory
 WORKDIR /app
 
