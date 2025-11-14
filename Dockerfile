@@ -3,6 +3,9 @@ FROM node:18-alpine
 # Install Python and pip
 RUN apk add --no-cache python3 py3-pip
 
+# Install pandas and required dependencies
+RUN pip3 install --no-cache-dir pandas openpyxl
+
 # Set working directory
 WORKDIR /app
 
