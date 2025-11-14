@@ -3,9 +3,10 @@ FROM node:18-alpine
 # Install Python and pip
 RUN apk add --no-cache python3 py3-pip
 
-# Create a virtual environment and install pandas
-RUN python3 -m venv /opt/venv && \
-    /opt/venv/bin/pip install --no-cache-dir pandas openpyxl
+# Create a virtual environment and install packages
+RUN python3 -m venv /opt/venv
+COPY requirements.txt ./
+RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # Set working directory
 WORKDIR /app
