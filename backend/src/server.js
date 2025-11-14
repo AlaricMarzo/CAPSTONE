@@ -4,6 +4,11 @@ import dotenv from "dotenv"
 import morgan from "morgan"
 import uploadRouter from "./routes/upload.js"
 import analyticsRouter from "./routes/analytics.js"
+import path from "path"
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 dotenv.config()
 const app = express()
@@ -13,10 +18,18 @@ app.use(express.json())
 // Remove morgan logging to prevent terminal spam from polling
 // app.use(morgan("dev"))
 
+// Serve static files from the frontend build directory
+app.use(express.static(path.join(__dirname, '../../frontend/dist')))
+
 app.get("/health", (_, res) => res.json({ status: "OK" }))
 
 app.use("/api", uploadRouter)
 app.use("/api/analytics", analyticsRouter)
+
+// Catch all handler: send back index.html for any non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'))
+})
 
 import multer from "multer";
 
