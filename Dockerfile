@@ -3,35 +3,44 @@ FROM node:18-alpine
 # Install Python and pip
 RUN apk add --no-cache python3 py3-pip
 
-# Create a virtual environment and install packages
-RUN python3 -m venv /opt/venv
-COPY requirements.txt ./
-RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
-
-# Set working directory
+# All work happens under /app
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# --- Python setup (virtualenv + requirements) ---
 
-# Install dependencies
+# Create a virtual environment
+RUN python3 -m venv /opt/venv
+
+# Make the venv Python/pip the default in this container
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Copy Python requirements and install them into the venv
+# (adjust path if your requirements file is elsewhere)
+COPY backend/requirements.txt ./backend/requirements.txt
+RUN pip install --no-cache-dir -r backend/requirements.txt
+
+# --- Node / app setup ---
+
+# Copy root package files and install root deps
+COPY package*.json ./
 RUN npm install
 
-# Copy frontend and backend
+# Copy frontend and backend source
 COPY frontend/ ./frontend/
 COPY backend/ ./backend/
 
-# Install frontend dependencies
-RUN cd frontend && npm install
+# Install frontend deps and build frontend
+RUN cd frontend && npm install && npm run build
 
-# Install backend dependencies
+# Install backend deps
 RUN cd backend && npm install
 
-# Build the application
-RUN npm run build
-
-# Expose ports
+# Expose ports (frontend 8080, backend 5050)
 EXPOSE 8080 5050
 
-# Start the application with virtual environment activated
-CMD ["/opt/venv/bin/python3", "-c", "import sys; sys.path.insert(0, '/opt/venv/lib/python3.11/site-packages'); import subprocess; subprocess.run(['npm', 'start'])"]
+# Tell your Node backend which Python to use
+# (server.js reads process.env.PYTHON_CMD || 'python3')
+ENV PYTHON_CMD=python3
+
+# Start the app (root package.json "start" should start backend & serve frontend)
+CMD ["npm", "start"]
