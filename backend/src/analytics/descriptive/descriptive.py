@@ -114,7 +114,11 @@ def main():
     print("\n[3/3] Running Clustering (DBSCAN) ...")
     # NOTE: dbscan.cluster_all takes only (df, out_dir, random_state)
     clu_res = cluster_all(df, clu_out)
-    print(f"✓ Clustering done. Global n_clusters={clu_res['global']['n_clusters']}, n_noise={clu_res['global']['n_noise']}")
+    total_tab_clusters = sum(t["n_clusters"] for t in clu_res["by_tab"])
+    total_cat_clusters = sum(c["n_clusters"] for c in clu_res["by_category"])
+    print(f"✓ Clustering done. Tabs={len(clu_res['by_tab'])} (total clusters={total_tab_clusters}), "
+      f"Categories={len(clu_res['by_category'])} (total clusters={total_cat_clusters})")
+
 
     # ---------------- Manifest ------------------
     manifest = {
