@@ -1,28 +1,23 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import {
-  LineChart,
-  Line,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MetricCard } from "@/components/Dashboard/MetricCard"
-import { TrendingUp, Target, Zap, AlertCircle, Loader2, BarChart3, PieChart } from "lucide-react"
+import { TrendingUp, Target, Zap, AlertCircle, Loader2, BarChart3, PieChart, Image as ImageIcon, Brain, Activity, Eye, Layers, ChevronLeft, ChevronRight } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Badge } from "@/components/ui/badge"
 
 interface ModelMetrics {
   mae: number
   rmse: number
   r_squared: number
+}
+
+interface PredictiveImage {
+  name: string
+  image: string
+  model: string
+  type: string
 }
 
 interface PredictiveData {
@@ -65,6 +60,7 @@ interface PredictiveData {
       forecast: number
     }>
   }>
+  predictive_images: PredictiveImage[]
 }
 
 export default function PredictiveAnalytics() {
@@ -72,7 +68,7 @@ export default function PredictiveAnalytics() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selectedModel, setSelectedModel] = useState<string>("all")
-  const [selectedProduct, setSelectedProduct] = useState<string>("all")
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -97,6 +93,11 @@ export default function PredictiveAnalytics() {
     return () => window.removeEventListener("analyticsUpdated", handleUpdate)
   }, [])
 
+  // Reset image index when model filter changes
+  useEffect(() => {
+    setCurrentImageIndex(0)
+  }, [selectedModel])
+
   if (loading) {
     return (
       <div className="flex-1 space-y-6 p-8 pt-6">
@@ -116,403 +117,364 @@ export default function PredictiveAnalytics() {
     )
   }
 
+  // Group images by model
+  const groupedImages = data.predictive_images?.reduce((acc, image) => {
+    if (!acc[image.model]) acc[image.model] = []
+    acc[image.model].push(image)
+    return acc
+  }, {} as Record<string, PredictiveImage[]>) || {}
+
+  const getModelColor = (model: string) => {
+    switch (model) {
+      case 'sarima': return 'bg-orange-100 text-orange-800 border-orange-200'
+      case 'xgboost': return 'bg-green-100 text-green-800 border-green-200'
+      case 'random_forest': return 'bg-blue-100 text-blue-800 border-blue-200'
+      default: return 'bg-gray-100 text-gray-800 border-gray-200'
+    }
+  }
+
+  const getModelIcon = (model: string) => {
+    switch (model) {
+      case 'sarima': return <Activity className="h-4 w-4" />
+      case 'xgboost': return <Brain className="h-4 w-4" />
+      case 'random_forest': return <Layers className="h-4 w-4" />
+      default: return <BarChart3 className="h-4 w-4" />
+    }
+  }
+
+  const getFilteredImages = () => {
+    if (!data?.predictive_images) return []
+    return selectedModel === "all"
+      ? data.predictive_images
+      : data.predictive_images.filter(image => image.model === selectedModel)
+  }
+
+  const navigateImage = (direction: 'prev' | 'next') => {
+    const filteredImages = getFilteredImages()
+    if (filteredImages.length === 0) return
+
+    setCurrentImageIndex(prev => {
+      if (direction === 'next') {
+        return (prev + 1) % filteredImages.length
+      } else {
+        return (prev - 1 + filteredImages.length) % filteredImages.length
+      }
+    })
+  }
+
   return (
-    <div className="flex-1 space-y-6 p-8 pt-6">
-      <div>
-        <h1 className="text-3xl font-bold text-foreground">Predictive Analytics</h1>
-        <p className="text-muted-foreground">ML forecasts and model performance metrics</p>
+    <div className="flex-1 space-y-8 p-8 pt-6">
+      {/* Header Section */}
+      <div className="space-y-2">
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-primary/10 rounded-lg">
+            <TrendingUp className="h-6 w-6 text-primary" />
+          </div>
+          <div>
+            <h1 className="text-3xl font-bold text-foreground">Predictive Analytics Dashboard</h1>
+            <p className="text-muted-foreground">Advanced ML forecasting and predictive insights</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-1">
+            <Eye className="h-4 w-4" />
+            Last updated: {new Date().toLocaleDateString()}
+          </div>
+          <Badge variant="outline" className="text-xs">
+            {data.models_summary.total_models} Models Active
+          </Badge>
+        </div>
       </div>
 
-      {/* KPI Cards */}
+      {/* KPI Overview Cards */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <MetricCard
           title="Active Models"
           value={data.models_summary.total_models.toString()}
-          change="ensemble"
+          change="ML ensemble"
           changeType="positive"
           icon={Zap}
           color="success"
-          className="shadow-soft"
+          className="shadow-soft hover:shadow-elegant transition-shadow"
         />
         <MetricCard
-          title="Avg Accuracy (R²)"
+          title="Model Accuracy"
           value={`${(data.models_summary.avg_accuracy * 100).toFixed(1)}%`}
-          change="across models"
+          change="R² average"
           changeType="positive"
           icon={Target}
           color="info"
-          className="shadow-soft"
+          className="shadow-soft hover:shadow-elegant transition-shadow"
         />
         <MetricCard
           title="Total Forecasts"
           value={data.models_summary.total_forecasts.toString()}
-          change="generated"
+          change="predictions"
           changeType="positive"
           icon={TrendingUp}
           color="warning"
-          className="shadow-soft"
+          className="shadow-soft hover:shadow-elegant transition-shadow"
         />
         <MetricCard
-          title="Confidence"
-          value="95%"
-          change="intervals"
+          title="Products Analyzed"
+          value={data.models_summary.total_products_analyzed.toString()}
+          change="data points"
           changeType="positive"
           icon={AlertCircle}
-          color="success"
-          className="shadow-soft"
+          color="default"
+          className="shadow-soft hover:shadow-elegant transition-shadow"
         />
       </div>
 
-      {/* Combined Forecasts */}
-      <Card className="shadow-soft">
-        <CardHeader>
-          <CardTitle>Multi-Model Sales Forecast</CardTitle>
-          <CardDescription>Actual vs predicted with confidence intervals</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="h-80">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={data.forecast_data}>
-                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                <XAxis dataKey="date" />
-                <YAxis />
-                <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }} />
-                <Legend />
-                <Line type="monotone" dataKey="actual" stroke="#000" name="Actual" strokeWidth={2} />
-                <Line
-                  type="monotone"
-                  dataKey="rf_predicted"
-                  stroke="#3b82f6"
-                  name="Random Forest"
-                  strokeDasharray="5 5"
-                />
-                <Line type="monotone" dataKey="xgb_predicted" stroke="#10b981" name="XGBoost" strokeDasharray="5 5" />
-                <Line type="monotone" dataKey="sarima_predicted" stroke="#f59e0b" name="SARIMA" strokeDasharray="5 5" />
-                <Line
-                  type="monotone"
-                  dataKey="confidence_lower"
-                  stroke="#d1d5db"
-                  name="Lower Bound"
-                  strokeDasharray="3 3"
-                />
-                <Line
-                  type="monotone"
-                  dataKey="confidence_upper"
-                  stroke="#d1d5db"
-                  name="Upper Bound"
-                  strokeDasharray="3 3"
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        </CardContent>
-      </Card>
+      {/* Main Dashboard Content */}
+      <Tabs defaultValue="overview" className="space-y-6">
+        <TabsList className="grid w-full grid-cols-3 lg:w-auto lg:grid-cols-3">
+          <TabsTrigger value="overview" className="flex items-center gap-2">
+            <BarChart3 className="h-4 w-4" />
+            Overview
+          </TabsTrigger>
+          <TabsTrigger value="forecasts" className="flex items-center gap-2">
+            <ImageIcon className="h-4 w-4" />
+            Forecasts
+          </TabsTrigger>
+          <TabsTrigger value="insights" className="flex items-center gap-2">
+            <Eye className="h-4 w-4" />
+            Insights
+          </TabsTrigger>
+        </TabsList>
 
-      {/* Feature Importance */}
-      <Card className="shadow-soft">
-        <CardHeader>
-          <CardTitle>Feature Importance Rankings</CardTitle>
-          <CardDescription>Top variables influencing predictions</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="h-80">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.feature_importance} layout="vertical">
-                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                <XAxis type="number" />
-                <YAxis dataKey="feature" type="category" width={150} />
-                <Tooltip contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)" }} />
-                <Bar dataKey="importance" fill="#3b82f6" radius={[0, 4, 4, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Model Performance Comparison */}
-      <div className="grid gap-6 lg:grid-cols-3">
-        {[
-          { name: "Random Forest", model: data.model_performance.random_forest, color: "#3b82f6" },
-          { name: "XGBoost", model: data.model_performance.xgboost, color: "#10b981" },
-          { name: "SARIMA", model: data.model_performance.sarima, color: "#f59e0b" },
-        ].map((m) => (
-          <Card key={m.name} className="shadow-soft">
+        {/* Overview Tab */}
+        <TabsContent value="overview" className="space-y-6">
+          {/* Model Performance Summary */}
+          <Card className="shadow-soft">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded" style={{ backgroundColor: m.color }} />
-                {m.name}
+                <Activity className="h-5 w-5" />
+                Model Performance Overview
               </CardTitle>
+              <CardDescription>Comparative analysis of all predictive models</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="space-y-1">
-                <div className="text-sm text-muted-foreground">MAE</div>
-                <div className="text-2xl font-bold">{m.model.mae.toFixed(2)}</div>
-              </div>
-              <div className="space-y-1">
-                <div className="text-sm text-muted-foreground">RMSE</div>
-                <div className="text-2xl font-bold">{m.model.rmse.toFixed(2)}</div>
-              </div>
-              <div className="space-y-1">
-                <div className="text-sm text-muted-foreground">R² Score</div>
-                <div className="text-2xl font-bold">{m.model.r_squared.toFixed(4)}</div>
+            <CardContent>
+              <div className="grid gap-6 md:grid-cols-3">
+                {[
+                  { name: "Random Forest", model: data.model_performance.random_forest, color: "#3b82f6" },
+                  { name: "XGBoost", model: data.model_performance.xgboost, color: "#10b981" },
+                  { name: "SARIMA", model: data.model_performance.sarima, color: "#f59e0b" },
+                ].map((m) => (
+                  <div key={m.name} className="space-y-4 p-4 border rounded-lg bg-card/50">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full" style={{ backgroundColor: m.color }} />
+                      <h4 className="font-semibold">{m.name}</h4>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">MAE:</span>
+                        <span className="font-medium">{m.model.mae.toFixed(3)}</span>
+                      </div>
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">RMSE:</span>
+                        <span className="font-medium">{m.model.rmse.toFixed(3)}</span>
+                      </div>
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">R² Score:</span>
+                        <span className="font-medium">{m.model.r_squared.toFixed(3)}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
-        ))}
-      </div>
 
-      {/* Navigation Tabs for Model Forecasts */}
-      {data.model_forecasts && data.model_forecasts.length > 0 && (
-        <Card className="shadow-soft">
-          <CardHeader>
-            <CardTitle>Model Forecast Visualizations</CardTitle>
-            <CardDescription>Interactive forecast charts for individual models and products</CardDescription>
-            <div className="flex gap-4 mt-4">
-              <div className="flex items-center gap-2">
-                <label className="text-sm font-medium">Model:</label>
-                <Select value={selectedModel} onValueChange={setSelectedModel}>
-                  <SelectTrigger className="w-40">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Models</SelectItem>
-                    <SelectItem value="xgboost">XGBoost</SelectItem>
-                    <SelectItem value="random_forest">Random Forest</SelectItem>
-                    <SelectItem value="sarima">SARIMA</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="flex items-center gap-2">
-                <label className="text-sm font-medium">Product:</label>
-                <Select value={selectedProduct} onValueChange={setSelectedProduct}>
-                  <SelectTrigger className="w-48">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Products</SelectItem>
-                    {[...new Set(data.model_forecasts.map(f => f.sku))].map(sku => (
-                      <SelectItem key={sku} value={sku}>{sku}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <Tabs defaultValue="overview" className="w-full">
-              <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="overview" className="flex items-center gap-2">
-                  <BarChart3 className="h-4 w-4" />
-                  Overview
-                </TabsTrigger>
-                <TabsTrigger value="xgboost" className="flex items-center gap-2">
-                  <TrendingUp className="h-4 w-4" />
-                  XGBoost
-                </TabsTrigger>
-                <TabsTrigger value="random_forest" className="flex items-center gap-2">
-                  <PieChart className="h-4 w-4" />
-                  Random Forest
-                </TabsTrigger>
-                <TabsTrigger value="sarima" className="flex items-center gap-2">
-                  <Target className="h-4 w-4" />
-                  SARIMA
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="overview" className="mt-6">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {data.model_forecasts
-                    .filter(forecast =>
-                      (selectedModel === "all" || forecast.model === selectedModel) &&
-                      (selectedProduct === "all" || forecast.sku === selectedProduct)
-                    )
-                    .slice(0, 6)
-                    .map((forecast, index) => (
-                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
-                        <div className="mb-3">
-                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
-                          <p className="text-xs text-muted-foreground">Model: {forecast.model} | SKU: {forecast.sku}</p>
-                        </div>
-                        <div className="aspect-video bg-muted rounded overflow-hidden">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={forecast.data}>
-                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                              <YAxis tick={{ fontSize: 10 }} />
-                              <Tooltip
-                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
-                                labelStyle={{ color: "var(--foreground)" }}
-                              />
-                              <Line
-                                type="monotone"
-                                dataKey="forecast"
-                                stroke={forecast.model === 'xgboost' ? '#10b981' : forecast.model === 'random_forest' ? '#3b82f6' : '#f59e0b'}
-                                strokeWidth={2}
-                                dot={false}
-                                activeDot={{ r: 4, stroke: forecast.model === 'xgboost' ? '#10b981' : forecast.model === 'random_forest' ? '#3b82f6' : '#f59e0b', strokeWidth: 2 }}
-                              />
-                            </LineChart>
-                          </ResponsiveContainer>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </TabsContent>
-
-              <TabsContent value="xgboost" className="mt-6">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {data.model_forecasts
-                    .filter(forecast => forecast.model === 'xgboost' && (selectedProduct === "all" || forecast.sku === selectedProduct))
-                    .map((forecast, index) => (
-                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
-                        <div className="mb-3">
-                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
-                          <p className="text-xs text-muted-foreground">XGBoost | SKU: {forecast.sku}</p>
-                        </div>
-                        <div className="aspect-video bg-muted rounded overflow-hidden">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={forecast.data}>
-                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                              <YAxis tick={{ fontSize: 10 }} />
-                              <Tooltip
-                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
-                                labelStyle={{ color: "var(--foreground)" }}
-                              />
-                              <Line
-                                type="monotone"
-                                dataKey="forecast"
-                                stroke="#10b981"
-                                strokeWidth={3}
-                                dot={false}
-                                activeDot={{ r: 5, stroke: '#10b981', strokeWidth: 2 }}
-                              />
-                            </LineChart>
-                          </ResponsiveContainer>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </TabsContent>
-
-              <TabsContent value="random_forest" className="mt-6">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {data.model_forecasts
-                    .filter(forecast => forecast.model === 'random_forest' && (selectedProduct === "all" || forecast.sku === selectedProduct))
-                    .map((forecast, index) => (
-                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
-                        <div className="mb-3">
-                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
-                          <p className="text-xs text-muted-foreground">Random Forest | SKU: {forecast.sku}</p>
-                        </div>
-                        <div className="aspect-video bg-muted rounded overflow-hidden">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={forecast.data}>
-                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                              <YAxis tick={{ fontSize: 10 }} />
-                              <Tooltip
-                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
-                                labelStyle={{ color: "var(--foreground)" }}
-                              />
-                              <Line
-                                type="monotone"
-                                dataKey="forecast"
-                                stroke="#3b82f6"
-                                strokeWidth={3}
-                                dot={false}
-                                activeDot={{ r: 5, stroke: '#3b82f6', strokeWidth: 2 }}
-                              />
-                            </LineChart>
-                          </ResponsiveContainer>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </TabsContent>
-
-              <TabsContent value="sarima" className="mt-6">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {data.model_forecasts
-                    .filter(forecast => forecast.model === 'sarima' && (selectedProduct === "all" || forecast.sku === selectedProduct))
-                    .map((forecast, index) => (
-                      <div key={index} className="border rounded-lg p-4 bg-card hover:shadow-md transition-shadow">
-                        <div className="mb-3">
-                          <h4 className="font-semibold text-sm truncate">{forecast.name}</h4>
-                          <p className="text-xs text-muted-foreground">SARIMA | SKU: {forecast.sku}</p>
-                        </div>
-                        <div className="aspect-video bg-muted rounded overflow-hidden">
-                          <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={forecast.data}>
-                              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-                              <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                              <YAxis tick={{ fontSize: 10 }} />
-                              <Tooltip
-                                contentStyle={{ backgroundColor: "var(--card)", border: "1px solid var(--border)", fontSize: "12px" }}
-                                labelStyle={{ color: "var(--foreground)" }}
-                              />
-                              <Line
-                                type="monotone"
-                                dataKey="forecast"
-                                stroke="#f59e0b"
-                                strokeWidth={3}
-                                dot={false}
-                                activeDot={{ r: 5, stroke: '#f59e0b', strokeWidth: 2 }}
-                              />
-                            </LineChart>
-                          </ResponsiveContainer>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </TabsContent>
-            </Tabs>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Product Insights */}
-      <Card className="shadow-soft">
-        <CardHeader>
-          <CardTitle>Top Product Insights</CardTitle>
-          <CardDescription>Product-level performance with predictive demand forecasts</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            {data.product_insights.slice(0, 10).map((product, index) => (
-              <div key={index} className="border rounded-lg p-4 bg-card">
-                <div className="flex justify-between items-start mb-2">
-                  <h4 className="font-semibold text-lg">{product.product_name}</h4>
-                  <div className="text-right">
-                    <div className="text-sm text-muted-foreground">Profit Margin</div>
-                    <div className={`text-lg font-bold ${product.profit_margin_pct >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                      {product.profit_margin_pct.toFixed(1)}%
+          {/* Feature Importance */}
+          <Card className="shadow-soft">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Layers className="h-5 w-5" />
+                Feature Importance Analysis
+              </CardTitle>
+              <CardDescription>Key variables driving predictive performance</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {data.feature_importance && data.feature_importance.slice(0, 8).map((feature: any, index: number) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm font-medium">{feature.feature}</span>
+                      <span className="text-sm text-muted-foreground">
+                        {((feature.importance || 0) * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                    <div className="w-full bg-muted rounded-full h-2">
+                      <div
+                        className="bg-primary h-2 rounded-full transition-all duration-500"
+                        style={{ width: `${(feature.importance || 0) * 100}%` }}
+                      />
                     </div>
                   </div>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="text-muted-foreground">Total Sales</div>
-                    <div className="font-semibold">₱{product.total_sales.toLocaleString()}</div>
-                  </div>
-                  <div>
-                    <div className="text-muted-foreground">Quantity Sold</div>
-                    <div className="font-semibold">{product.total_quantity.toLocaleString()}</div>
-                  </div>
-                  <div>
-                    <div className="text-muted-foreground">Avg Unit Price</div>
-                    <div className="font-semibold">₱{product.avg_unit_price.toFixed(2)}</div>
-                  </div>
-                  <div>
-                    <div className="text-muted-foreground">Forecasted Demand</div>
-                    <div className="font-semibold">₱{product.forecasted_demand.toLocaleString()}</div>
-                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+
+
+        {/* Forecasts Tab */}
+        <TabsContent value="forecasts" className="space-y-6">
+          {data.predictive_images && data.predictive_images.length > 0 ? (
+            <div className="space-y-6">
+              {/* Model Filter */}
+              <div className="flex items-center gap-4">
+                <span className="text-sm font-medium">Filter by Model:</span>
+                <div className="flex gap-2">
+                  <Badge
+                    variant={selectedModel === "all" ? "default" : "outline"}
+                    className="cursor-pointer"
+                    onClick={() => setSelectedModel("all")}
+                  >
+                    All Models
+                  </Badge>
+                  {Object.keys(groupedImages).map(model => (
+                    <Badge
+                      key={model}
+                      variant={selectedModel === model ? "default" : "outline"}
+                      className={`cursor-pointer ${getModelColor(model)}`}
+                      onClick={() => setSelectedModel(model)}
+                    >
+                      {model.replace('_', ' ')}
+                    </Badge>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+
+              {/* Image Carousel */}
+              {(() => {
+                const filteredImages = getFilteredImages()
+                const currentImage = filteredImages[currentImageIndex]
+
+                if (!currentImage) {
+                  return (
+                    <Card className="shadow-soft">
+                      <CardContent className="flex flex-col items-center justify-center py-16">
+                        <ImageIcon className="h-16 w-16 text-muted-foreground mb-4" />
+                        <h3 className="text-lg font-semibold mb-2">No Images Available</h3>
+                        <p className="text-muted-foreground text-center max-w-md">
+                          No images match the selected filter criteria.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  )
+                }
+
+                return (
+                  <Card className="overflow-hidden shadow-soft">
+                    <CardHeader className="pb-3">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-4">
+                          <div>
+                            <CardTitle className="text-lg font-medium">{currentImage.name}</CardTitle>
+                            <CardDescription className="capitalize">
+                              Model: {currentImage.model} | Type: {currentImage.type.replace('_', ' ')}
+                            </CardDescription>
+                          </div>
+                        </div>
+                        {filteredImages.length > 1 && (
+                          <div className="flex items-center gap-2">
+                            <button
+                              onClick={() => navigateImage('prev')}
+                              className="p-2 rounded-md hover:bg-muted transition-colors"
+                              disabled={filteredImages.length <= 1}
+                            >
+                              <ChevronLeft className="h-5 w-5" />
+                            </button>
+                            <span className="text-sm text-muted-foreground min-w-[60px] text-center">
+                              {currentImageIndex + 1} of {filteredImages.length}
+                            </span>
+                            <button
+                              onClick={() => navigateImage('next')}
+                              className="p-2 rounded-md hover:bg-muted transition-colors"
+                              disabled={filteredImages.length <= 1}
+                            >
+                              <ChevronRight className="h-5 w-5" />
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <div className="aspect-[4/3] bg-muted/50">
+                        <img
+                          src={currentImage.image}
+                          alt={currentImage.name}
+                          className="w-full h-full object-contain p-4"
+                          loading="lazy"
+                        />
+                      </div>
+                    </CardContent>
+                  </Card>
+                )
+              })()}
+            </div>
+          ) : (
+            <Card className="shadow-soft">
+              <CardContent className="flex flex-col items-center justify-center py-16">
+                <ImageIcon className="h-16 w-16 text-muted-foreground mb-4" />
+                <h3 className="text-lg font-semibold mb-2">No Forecast Images Available</h3>
+                <p className="text-muted-foreground text-center max-w-md">
+                  Run predictive analytics to generate forecast plots and visualizations.
+                  Images will appear here once the analysis is complete.
+                </p>
+              </CardContent>
+            </Card>
+          )}
+        </TabsContent>
+
+        {/* Insights Tab */}
+        <TabsContent value="insights" className="space-y-6">
+          <Card className="shadow-soft">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Eye className="h-5 w-5" />
+                Product Performance Insights
+              </CardTitle>
+              <CardDescription>Top performing products with predictive demand analysis</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {data.product_insights && data.product_insights.slice(0, 8).map((product, index) => (
+                  <div key={index} className="border rounded-lg p-4 bg-card/50 hover:bg-card transition-colors">
+                    <div key={index} className="flex items-center justify-between mb-3">
+                      <h4 className="font-semibold text-base truncate pr-2">{product.product_name}</h4>
+                      <Badge variant={product.profit_margin_pct >= 0 ? "default" : "destructive"}>
+                        {product.profit_margin_pct >= 0 ? '+' : ''}{product.profit_margin_pct.toFixed(1)}% margin
+                      </Badge>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                      <div className="space-y-1">
+                        <div className="text-muted-foreground text-xs">Sales</div>
+                        <div className="font-semibold">₱{product.total_sales.toLocaleString()}</div>
+                      </div>
+                      <div className="space-y-1">
+                        <div className="text-muted-foreground text-xs">Quantity</div>
+                        <div className="font-semibold">{product.total_quantity.toLocaleString()}</div>
+                      </div>
+                      <div className="space-y-1">
+                        <div className="text-muted-foreground text-xs">Avg Price</div>
+                        <div className="font-semibold">₱{product.avg_unit_price.toFixed(2)}</div>
+                      </div>
+                      <div className="space-y-1">
+                        <div className="text-muted-foreground text-xs">Forecast</div>
+                        <div className="font-semibold">₱{product.forecasted_demand.toLocaleString()}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
     </div>
   )
 }

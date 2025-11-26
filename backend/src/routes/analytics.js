@@ -433,7 +433,7 @@
       await client.end()
 
       const sarimaDirPath = path.join(predictiveOutputDir, "ts_sarima-ets-sarimax(2,1,2)_v2", "anc_4_years_1")
-      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost", "anc_-_4_years___1_")
+      const xgbDirPath = path.join(predictiveOutputDir, "ml_xgboost_model", "anc_-_4_years__1_")
       const rfDirPath = path.join(predictiveOutputDir, "ml_random_forest", "database_data")
 
       // SARIMA Data - aggregate from individual forecast files
@@ -607,6 +607,60 @@
         }
       }
 
+      // Collect predictive images
+      const predictiveImages = []
+
+      // SARIMA images
+      if (fs.existsSync(sarimaDirPath)) {
+        const sarimaImageFiles = fs.readdirSync(sarimaDirPath).filter(f => f.endsWith('.png'))
+        for (const imageFile of sarimaImageFiles) {
+          const imagePath = path.join(sarimaDirPath, imageFile)
+          const imageData = encodeImageToBase64(imagePath)
+          if (imageData) {
+            predictiveImages.push({
+              name: `SARIMA - ${imageFile.replace('.png', '').replace(/_/g, ' ')}`,
+              image: imageData,
+              model: 'sarima',
+              type: 'forecast_plot'
+            })
+          }
+        }
+      }
+
+      // XGBoost images
+      if (fs.existsSync(xgbDirPath)) {
+        const xgbImageFiles = fs.readdirSync(xgbDirPath).filter(f => f.endsWith('.png'))
+        for (const imageFile of xgbImageFiles) {
+          const imagePath = path.join(xgbDirPath, imageFile)
+          const imageData = encodeImageToBase64(imagePath)
+          if (imageData) {
+            predictiveImages.push({
+              name: `XGBoost - ${imageFile.replace('.png', '').replace(/_/g, ' ')}`,
+              image: imageData,
+              model: 'xgboost',
+              type: 'forecast_plot'
+            })
+          }
+        }
+      }
+
+      // Random Forest images
+      if (fs.existsSync(rfDirPath)) {
+        const rfImageFiles = fs.readdirSync(rfDirPath).filter(f => f.endsWith('.png'))
+        for (const imageFile of rfImageFiles) {
+          const imagePath = path.join(rfDirPath, imageFile)
+          const imageData = encodeImageToBase64(imagePath)
+          if (imageData) {
+            predictiveImages.push({
+              name: `Random Forest - ${imageFile.replace('.png', '').replace(/_/g, ' ')}`,
+              image: imageData,
+              model: 'random_forest',
+              type: 'forecast_plot'
+            })
+          }
+        }
+      }
+
       const formattedData = {
         models_summary: {
           total_models: 3,
@@ -623,6 +677,7 @@
         model_performance: modelPerformance,
         product_insights: topProducts,
         model_forecasts: modelForecasts, // Add generated model forecast data for charts
+        predictive_images: predictiveImages, // Add generated images
       }
 
       res.json({ success: true, data: formattedData })
