@@ -8,9 +8,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 
 interface ModelMetrics {
-  mae: number
-  rmse: number
-  r_squared: number
+  mase: number
+  wape_pct: number
+  mpe_pct: number
 }
 
 interface PredictiveImage {
@@ -273,16 +273,16 @@ export default function PredictiveAnalytics() {
                     </div>
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">MAE:</span>
-                        <span className="font-medium">{m.model?.mae?.toFixed(3) || 'N/A'}</span>
+                        <span className="text-muted-foreground">MASE:</span>
+                        <span className="font-medium">{m.model?.mase?.toFixed(3) || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">RMSE:</span>
-                        <span className="font-medium">{m.model?.rmse?.toFixed(3) || 'N/A'}</span>
+                        <span className="text-muted-foreground">WAPE (%):</span>
+                        <span className="font-medium">{m.model?.wape_pct?.toFixed(2) || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">R² Score:</span>
-                        <span className="font-medium">{m.model?.r_squared?.toFixed(3) || 'N/A'}</span>
+                        <span className="text-muted-foreground">MPE (%):</span>
+                        <span className="font-medium">{m.model?.mpe_pct?.toFixed(2) || 'N/A'}</span>
                       </div>
                     </div>
                   </div>

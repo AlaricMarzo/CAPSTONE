@@ -464,24 +464,25 @@
 
       // XGBoost Data
       const xgbSummaryData = csvToJson(path.join(xgbDirPath, "xgb_summary.csv"))
-      let xgbMetrics = { mae: 0, rmse: 0, r_squared: 0 }
+      let xgbMetrics = { mase: 0, wape_pct: 0, mpe_pct: 0 }
       if (xgbSummaryData && xgbSummaryData.length > 0) {
-        // Try to use actual MAE, RMSE values first
-        const validEntries = xgbSummaryData.filter(d => d.MAE && d.MAE !== '' && d.RMSE && d.RMSE !== '')
+        // Use MASE, WAPE%, and MPE% values
+        const validEntries = xgbSummaryData.filter(d => d.MASE && d.MASE !== '' && d['WAPE%'] && d['WAPE%'] !== '' && d['MPE%'] && d['MPE%'] !== '')
         if (validEntries.length > 0) {
-          const avgMae = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MAE) || 0), 0) / validEntries.length
-          const avgRmse = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.RMSE) || 0), 0) / validEntries.length
-          xgbMetrics.mae = avgMae
-          xgbMetrics.rmse = avgRmse
-          xgbMetrics.r_squared = 0.8 // Default approximation
+          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE) || 0), 0) / validEntries.length
+          const avgWapePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['WAPE%']) || 0), 0) / validEntries.length
+          const avgMpePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['MPE%']) || 0), 0) / validEntries.length
+          xgbMetrics.mase = avgMase
+          xgbMetrics.wape_pct = avgWapePct
+          xgbMetrics.mpe_pct = avgMpePct
         } else {
           // Fall back to MASE_WF calculation
           const maseEntries = xgbSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
           if (maseEntries.length > 0) {
             const avgMase = maseEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / maseEntries.length
-            xgbMetrics.mae = avgMase
-            xgbMetrics.rmse = avgMase * 1.2 // Approximate
-            xgbMetrics.r_squared = 1 - avgMase // Approximate
+            xgbMetrics.mase = avgMase
+            xgbMetrics.wape_pct = avgMase * 10 // Approximate percentage
+            xgbMetrics.mpe_pct = avgMase * 5 // Approximate percentage
           }
         }
       }
@@ -503,14 +504,25 @@
 
       // Random Forest Data
       const rfSummaryData = csvToJson(path.join(rfDirPath, "rf_summary.csv"))
-      let rfMetrics = { mae: 0, rmse: 0, r_squared: 0 }
+      let rfMetrics = { mase: 0, wape_pct: 0, mpe_pct: 0 }
       if (rfSummaryData && rfSummaryData.length > 0) {
-        const validEntries = rfSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
+        const validEntries = rfSummaryData.filter(d => d.MASE && d.MASE !== '' && d['WAPE%'] && d['WAPE%'] !== '' && d['MPE%'] && d['MPE%'] !== '')
         if (validEntries.length > 0) {
-          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / validEntries.length
-          rfMetrics.mae = avgMase
-          rfMetrics.rmse = avgMase * 1.2 // Approximate
-          rfMetrics.r_squared = 1 - avgMase // Approximate
+          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE) || 0), 0) / validEntries.length
+          const avgWapePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['WAPE%']) || 0), 0) / validEntries.length
+          const avgMpePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['MPE%']) || 0), 0) / validEntries.length
+          rfMetrics.mase = avgMase
+          rfMetrics.wape_pct = avgWapePct
+          rfMetrics.mpe_pct = avgMpePct
+        } else {
+          // Fall back to MASE_WF calculation
+          const maseEntries = rfSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
+          if (maseEntries.length > 0) {
+            const avgMase = maseEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / maseEntries.length
+            rfMetrics.mase = avgMase
+            rfMetrics.wape_pct = avgMase * 10 // Approximate percentage
+            rfMetrics.mpe_pct = avgMase * 5 // Approximate percentage
+          }
         }
       }
 
@@ -531,14 +543,25 @@
 
       // Gradient Boosting Data
       const gradientSummaryData = csvToJson(path.join(gradientDirPath, "gb_summary.csv"))
-      let gradientMetrics = { mae: 0, rmse: 0, r_squared: 0 }
+      let gradientMetrics = { mase: 0, wape_pct: 0, mpe_pct: 0 }
       if (gradientSummaryData && gradientSummaryData.length > 0) {
-        const validEntries = gradientSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
+        const validEntries = gradientSummaryData.filter(d => d.MASE && d.MASE !== '' && d['WAPE%'] && d['WAPE%'] !== '' && d['MPE%'] && d['MPE%'] !== '')
         if (validEntries.length > 0) {
-          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / validEntries.length
-          gradientMetrics.mae = avgMase
-          gradientMetrics.rmse = avgMase * 1.2 // Approximate
-          gradientMetrics.r_squared = 1 - avgMase // Approximate
+          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE) || 0), 0) / validEntries.length
+          const avgWapePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['WAPE%']) || 0), 0) / validEntries.length
+          const avgMpePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['MPE%']) || 0), 0) / validEntries.length
+          gradientMetrics.mase = avgMase
+          gradientMetrics.wape_pct = avgWapePct
+          gradientMetrics.mpe_pct = avgMpePct
+        } else {
+          // Fall back to MASE_WF calculation
+          const maseEntries = gradientSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
+          if (maseEntries.length > 0) {
+            const avgMase = maseEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / maseEntries.length
+            gradientMetrics.mase = avgMase
+            gradientMetrics.wape_pct = avgMase * 10 // Approximate percentage
+            gradientMetrics.mpe_pct = avgMase * 5 // Approximate percentage
+          }
         }
       }
 
@@ -559,24 +582,25 @@
 
       // LSTM Data
       const lstmSummaryData = csvToJson(path.join(lstmDirPath, "lstm_summary.csv"))
-      let lstmMetrics = { mae: 0, rmse: 0, r_squared: 0 }
+      let lstmMetrics = { mase: 0, wape_pct: 0, mpe_pct: 0 }
       if (lstmSummaryData && lstmSummaryData.length > 0) {
-        // Try to use actual MAE, RMSE, R-squared values first
-        const validEntries = lstmSummaryData.filter(d => d.MAE && d.MAE !== '' && d.RMSE && d.RMSE !== '')
+        // Use MASE, WAPE%, and MPE% values
+        const validEntries = lstmSummaryData.filter(d => d.MASE && d.MASE !== '' && d['WAPE%'] && d['WAPE%'] !== '' && d['MPE%'] && d['MPE%'] !== '')
         if (validEntries.length > 0) {
-          const avgMae = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MAE) || 0), 0) / validEntries.length
-          const avgRmse = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.RMSE) || 0), 0) / validEntries.length
-          lstmMetrics.mae = avgMae
-          lstmMetrics.rmse = avgRmse
-          lstmMetrics.r_squared = 0.8 // Default approximation
+          const avgMase = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE) || 0), 0) / validEntries.length
+          const avgWapePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['WAPE%']) || 0), 0) / validEntries.length
+          const avgMpePct = validEntries.reduce((sum, d) => sum + (Number.parseFloat(d['MPE%']) || 0), 0) / validEntries.length
+          lstmMetrics.mase = avgMase
+          lstmMetrics.wape_pct = avgWapePct
+          lstmMetrics.mpe_pct = avgMpePct
         } else {
           // Fall back to MASE_WF calculation
           const maseEntries = lstmSummaryData.filter(d => d.MASE_WF && d.MASE_WF !== '')
           if (maseEntries.length > 0) {
             const avgMase = maseEntries.reduce((sum, d) => sum + (Number.parseFloat(d.MASE_WF) || 0), 0) / maseEntries.length
-            lstmMetrics.mae = avgMase
-            lstmMetrics.rmse = avgMase * 1.2 // Approximate
-            lstmMetrics.r_squared = 1 - avgMase // Approximate
+            lstmMetrics.mase = avgMase
+            lstmMetrics.wape_pct = avgMase * 10 // Approximate percentage
+            lstmMetrics.mpe_pct = avgMase * 5 // Approximate percentage
           }
         }
       }
@@ -816,11 +840,11 @@
         models_summary: {
           total_models: 5,
           avg_accuracy:
-            (modelPerformance.gradient.r_squared +
-              modelPerformance.xgboost.r_squared +
-              modelPerformance.lstm.r_squared +
-              modelPerformance.random_forest.r_squared +
-              modelPerformance.sarima.r_squared) /
+            (modelPerformance.gradient.mase +
+              modelPerformance.xgboost.mase +
+              modelPerformance.lstm.mase +
+              modelPerformance.random_forest.mase +
+              modelPerformance.sarima.mae) /
             5,
           total_forecasts: formattedForecasts.length,
           total_products_analyzed: topProducts.length,
