@@ -33,8 +33,9 @@ export default function PredictiveDashboard() {
   const [data, setData] = useState<PredictiveData | null>(null)
   const [loading, setLoading] = useState(true)
   const [currentImageIndex, setCurrentImageIndex] = useState<{ [key: string]: number }>({
-    sarima: 0,
+    gradient: 0,
     xgboost: 0,
+    lstm: 0,
     random_forest: 0
   })
 
@@ -129,14 +130,15 @@ export default function PredictiveDashboard() {
         </div>
 
         {data.predictive_images && data.predictive_images.length > 0 ? (
-          <Tabs defaultValue="sarima" className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="sarima">SARIMA</TabsTrigger>
+          <Tabs defaultValue="gradient" className="w-full">
+            <TabsList className="grid w-full grid-cols-4">
+              <TabsTrigger value="gradient">Gradient</TabsTrigger>
               <TabsTrigger value="xgboost">XGBoost</TabsTrigger>
+              <TabsTrigger value="lstm">LSTM</TabsTrigger>
               <TabsTrigger value="random_forest">Random Forest</TabsTrigger>
             </TabsList>
 
-            {(['sarima', 'xgboost', 'random_forest'] as const).map((model) => {
+            {(['gradient', 'xgboost', 'lstm', 'random_forest'] as const).map((model) => {
               const images = getImagesByModel(model)
               const currentImage = images[currentImageIndex[model]]
 

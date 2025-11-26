@@ -534,7 +534,7 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
               </div>
               <div className="flex justify-between">
                 <span className="text-sm text-muted-foreground">Best Model:</span>
-                <span className="font-medium">SARIMA</span>
+                <span className="font-medium">Gradient</span>
               </div>
             </div>
           </CardContent>

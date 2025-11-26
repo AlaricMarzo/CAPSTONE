@@ -36,13 +36,15 @@ interface PredictiveData {
     confidence_lower: number
     confidence_upper: number
   }>
-  feature_importance: Array<{ feature: string; importance: number }>
-  model_performance: {
-    random_forest: ModelMetrics
-    xgboost: ModelMetrics
-    sarima: ModelMetrics
+  feature_importance?: Array<{ feature: string; importance: number }>
+  model_performance?: {
+    gradient?: ModelMetrics
+    xgboost?: ModelMetrics
+    lstm?: ModelMetrics
+    random_forest?: ModelMetrics
+    sarima?: ModelMetrics
   }
-  product_insights: Array<{
+  product_insights?: Array<{
     product_name: string
     total_quantity: number
     total_sales: number
@@ -51,7 +53,7 @@ interface PredictiveData {
     profit_margin_pct: number
     forecasted_demand: number
   }>
-  model_forecasts: Array<{
+  model_forecasts?: Array<{
     model: string
     sku: string
     name: string
@@ -60,7 +62,7 @@ interface PredictiveData {
       forecast: number
     }>
   }>
-  predictive_images: PredictiveImage[]
+  predictive_images?: PredictiveImage[]
 }
 
 export default function PredictiveAnalytics() {
@@ -126,8 +128,9 @@ export default function PredictiveAnalytics() {
 
   const getModelColor = (model: string) => {
     switch (model) {
-      case 'sarima': return 'bg-orange-100 text-orange-800 border-orange-200'
+      case 'gradient': return 'bg-red-100 text-red-800 border-red-200'
       case 'xgboost': return 'bg-green-100 text-green-800 border-green-200'
+      case 'lstm': return 'bg-purple-100 text-purple-800 border-purple-200'
       case 'random_forest': return 'bg-blue-100 text-blue-800 border-blue-200'
       default: return 'bg-gray-100 text-gray-800 border-gray-200'
     }
@@ -135,8 +138,9 @@ export default function PredictiveAnalytics() {
 
   const getModelIcon = (model: string) => {
     switch (model) {
-      case 'sarima': return <Activity className="h-4 w-4" />
+      case 'gradient': return <TrendingUp className="h-4 w-4" />
       case 'xgboost': return <Brain className="h-4 w-4" />
+      case 'lstm': return <Activity className="h-4 w-4" />
       case 'random_forest': return <Layers className="h-4 w-4" />
       default: return <BarChart3 className="h-4 w-4" />
     }
@@ -255,11 +259,12 @@ export default function PredictiveAnalytics() {
               <CardDescription>Comparative analysis of all predictive models</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-4">
                 {[
-                  { name: "Random Forest", model: data.model_performance.random_forest, color: "#3b82f6" },
-                  { name: "XGBoost", model: data.model_performance.xgboost, color: "#10b981" },
-                  { name: "SARIMA", model: data.model_performance.sarima, color: "#f59e0b" },
+                  { name: "Gradient", model: data.model_performance?.gradient, color: "#dc2626" },
+                  { name: "XGBoost", model: data.model_performance?.xgboost, color: "#10b981" },
+                  { name: "LSTM", model: data.model_performance?.lstm, color: "#8b5cf6" },
+                  { name: "Random Forest", model: data.model_performance?.random_forest, color: "#3b82f6" },
                 ].map((m) => (
                   <div key={m.name} className="space-y-4 p-4 border rounded-lg bg-card/50">
                     <div className="flex items-center gap-2">
@@ -269,15 +274,15 @@ export default function PredictiveAnalytics() {
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">MAE:</span>
-                        <span className="font-medium">{m.model.mae.toFixed(3)}</span>
+                        <span className="font-medium">{m.model?.mae?.toFixed(3) || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">RMSE:</span>
-                        <span className="font-medium">{m.model.rmse.toFixed(3)}</span>
+                        <span className="font-medium">{m.model?.rmse?.toFixed(3) || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">R² Score:</span>
-                        <span className="font-medium">{m.model.r_squared.toFixed(3)}</span>
+                        <span className="font-medium">{m.model?.r_squared?.toFixed(3) || 'N/A'}</span>
                       </div>
                     </div>
                   </div>

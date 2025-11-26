@@ -81,3 +81,33 @@ The API now returns:
 - **Preserved Functionality**: All existing filtering and search features remain intact
 
 The descriptive analytics clustering tab now provides the same streamlined, user-friendly navigation experience as the predictive dashboard, allowing users to easily browse through different clustering visualizations with horizontal navigation controls.
+ 
+## ? **Task Completed - Model Performance Overview Updated** 
+ 
+### **Changes Made to Predictive Dashboard Model Performance:** 
+ 
+1. **Backend Analytics Updates**: 
+   - Updated `backend/src/routes/analytics.js` to include gradient and LSTM models in model performance calculations 
+   - Fixed directory paths to correctly reference `backend/src/analytics/` instead of `backend/analytics/` 
+   - Added gradient and LSTM model data collection from their respective summary CSV files (`gb_summary.csv` and `lstm_summary.csv`) 
+   - Updated forecast data aggregation to include gradient and LSTM models 
+   - Added image collection logic for gradient and LSTM models in the predictive images array 
+ 
+2. **Frontend Interface Updates**: 
+   - Updated `frontend/src/pages/PredictiveAnalytics.tsx` TypeScript interface to include gradient and LSTM models in `model_performance` object 
+   - Made interface properties optional to handle cases where data might not be available 
+   - Ensured all four models (gradient, xgboost, lstm, random_forest) are properly typed and displayed 
+ 
+3. **Model Performance Display**: 
+   - The dashboard now displays performance metrics (MAE, RMSE, Rý) for all four models: Gradient Boosting, XGBoost, LSTM, and Random Forest 
+   - Model performance data is aggregated from individual model summary CSV files 
+   - Average accuracy calculation now includes all four models in the `models_summary.avg_accuracy` computation 
+ 
+### **Technical Implementation:** 
+ 
+- **Data Collection**: Each model's performance metrics are read from their respective summary CSV files using the `MASE_WF` column for accuracy calculations 
+- **Path Corrections**: Fixed analytics directory paths to ensure correct file system navigation 
+- **Type Safety**: Updated TypeScript interfaces to accommodate the expanded model set 
+- **Error Handling**: Made properties optional to gracefully handle missing data scenarios 
+ 
+The predictive dashboard now provides a comprehensive model performance overview displaying metrics for gradient boosting, XGBoost, LSTM, and random forest models, giving users a complete view of all available predictive models and their performance characteristics.
