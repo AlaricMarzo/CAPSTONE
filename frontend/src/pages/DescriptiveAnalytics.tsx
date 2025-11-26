@@ -19,7 +19,7 @@ import { MetricCard } from "@/components/Dashboard/MetricCard"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import { DollarSign, TrendingUp, Package, AlertCircle, Loader2, Search, Filter } from "lucide-react"
+import { DollarSign, TrendingUp, Package, AlertCircle, Loader2, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react"
 
 interface DescriptiveData {
   kpi_summary: {
@@ -83,6 +83,7 @@ export default function DescriptiveAnalytics() {
   const [expandedProductQty, setExpandedProductQty] = useState(false)
   const [clusteringFilter, setClusteringFilter] = useState("all")
   const [clusteringSearch, setClusteringSearch] = useState("")
+  const [currentClusteringImageIndex, setCurrentClusteringImageIndex] = useState(0)
 
   useEffect(() => {
     const handleResize = () => {  
@@ -116,6 +117,11 @@ export default function DescriptiveAnalytics() {
     window.addEventListener("analyticsUpdated", handleUpdate)
     return () => window.removeEventListener("analyticsUpdated", handleUpdate)
   }, [])
+
+  // Reset clustering image index when filter changes
+  useEffect(() => {
+    setCurrentClusteringImageIndex(0)
+  }, [clusteringFilter, clusteringSearch])
 
   if (loading) {
     return (
@@ -768,7 +774,6 @@ export default function DescriptiveAnalytics() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Clustering</SelectItem>
-                  <SelectItem value="global">Global</SelectItem>
                   <SelectItem value="category">By Category</SelectItem>
                   <SelectItem value="tab">By Tab</SelectItem>
                 </SelectContent>
@@ -785,83 +790,134 @@ export default function DescriptiveAnalytics() {
             </div>
           </div>
 
-          {/* Clustering Images Grid */}
-          <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-            {data.clustering_images
-              .filter((item) => {
-                const matchesFilter =
-                  clusteringFilter === "all" ||
-                  (clusteringFilter === "global" && item.name === "Global Clustering") ||
-                  (clusteringFilter === "category" && item.name.includes("Clustering by Category")) ||
-                  (clusteringFilter === "tab" && item.name.includes("Clustering by Tab"))
+          {/* Clustering Images Carousel */}
+          {(() => {
+            const filteredClusteringImages = data.clustering_images.filter((item) => {
+              // Exclude global clustering
+              if (item.name === "Global Clustering") return false
 
-                const matchesSearch = clusteringSearch === "" ||
-                  item.name.toLowerCase().includes(clusteringSearch.toLowerCase())
+              const matchesFilter =
+                clusteringFilter === "all" ||
+                (clusteringFilter === "category" && item.name.includes("Clustering by Category")) ||
+                (clusteringFilter === "tab" && item.name.includes("Clustering by Tab"))
 
-                return matchesFilter && matchesSearch
-              })
-              .map((clusteringItem, index) => (
-                <Card key={index} className="shadow-soft overflow-hidden">
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-lg md:text-base">{clusteringItem.name}</CardTitle>
-                    <CardDescription className="text-xs md:text-sm">
-                      Product clustering visualization with detailed metrics
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="p-0 md:p-6 space-y-4">
-                    <div className="w-full overflow-x-auto">
-                      <img
-                        src={clusteringItem.image}
-                        alt={clusteringItem.name}
-                        className="w-full h-auto max-w-full object-contain rounded border"
-                      />
-                    </div>
+              const matchesSearch = clusteringSearch === "" ||
+                item.name.toLowerCase().includes(clusteringSearch.toLowerCase())
 
-                    {/* Clustering Summary Table */}
-                    {clusteringItem.summary && clusteringItem.summary.length > 0 && (
-                      <div className="space-y-2">
-                        <h4 className="text-sm font-medium text-foreground">Cluster Summary</h4>
-                        <div className="overflow-x-auto">
-                          <table className="w-full text-xs">
-                            <thead>
-                              <tr className="border-b border-border">
-                                <th className="text-left py-1 px-1 font-medium text-foreground">Cluster</th>
-                                <th className="text-right py-1 px-1 font-medium text-foreground">Count</th>
-                                <th className="text-right py-1 px-1 font-medium text-foreground">Avg Sales</th>
-                                <th className="text-right py-1 px-1 font-medium text-foreground">Avg Qty</th>
-                                <th className="text-left py-1 px-1 font-medium text-foreground">Persona</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {clusteringItem.summary.slice(0, 5).map((summary, idx) => (
-                                <tr key={idx} className="border-b border-border/50">
-                                  <td className="py-1 px-1 text-muted-foreground">{summary.cluster}</td>
-                                  <td className="py-1 px-1 text-right text-foreground">{summary.n}</td>
-                                  <td className="py-1 px-1 text-right text-foreground">
-                                    ₱{summary.total_sales?.toLocaleString() || "0"}
-                                  </td>
-                                  <td className="py-1 px-1 text-right text-foreground">
-                                    {summary.total_qty?.toLocaleString() || "0"}
-                                  </td>
-                                  <td className="py-1 px-1 text-foreground max-w-20 truncate" title={summary.persona}>
-                                    {summary.persona || "N/A"}
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    )}
+              return matchesFilter && matchesSearch
+            })
+
+            const currentClusteringImage = filteredClusteringImages[currentClusteringImageIndex]
+
+            if (!currentClusteringImage) {
+              return (
+                <Card className="shadow-soft">
+                  <CardContent className="flex flex-col items-center justify-center py-16">
+                    <Filter className="h-16 w-16 text-muted-foreground mb-4" />
+                    <h3 className="text-lg font-semibold mb-2">No Clustering Images Available</h3>
+                    <p className="text-muted-foreground text-center max-w-md">
+                      No clustering images match the selected filter criteria.
+                    </p>
                   </CardContent>
                 </Card>
-              ))}
-          </div>
+              )
+            }
+
+            return (
+              <Card className="overflow-hidden shadow-soft">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div>
+                        <CardTitle className="text-lg font-medium">{currentClusteringImage.name}</CardTitle>
+                        <CardDescription className="capitalize">
+                          Product clustering visualization with detailed metrics
+                        </CardDescription>
+                      </div>
+                    </div>
+                    {filteredClusteringImages.length > 1 && (
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => setCurrentClusteringImageIndex(prev =>
+                            prev === 0 ? filteredClusteringImages.length - 1 : prev - 1
+                          )}
+                          className="p-2 rounded-md hover:bg-muted transition-colors"
+                          disabled={filteredClusteringImages.length <= 1}
+                        >
+                          <ChevronLeft className="h-5 w-5" />
+                        </button>
+                        <span className="text-sm text-muted-foreground min-w-[60px] text-center">
+                          {currentClusteringImageIndex + 1} of {filteredClusteringImages.length}
+                        </span>
+                        <button
+                          onClick={() => setCurrentClusteringImageIndex(prev =>
+                            prev === filteredClusteringImages.length - 1 ? 0 : prev + 1
+                          )}
+                          className="p-2 rounded-md hover:bg-muted transition-colors"
+                          disabled={filteredClusteringImages.length <= 1}
+                        >
+                          <ChevronRight className="h-5 w-5" />
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </CardHeader>
+                <CardContent className="p-0 md:p-6 space-y-4">
+                  <div className="w-full overflow-x-auto">
+                    <img
+                      src={currentClusteringImage.image}
+                      alt={currentClusteringImage.name}
+                      className="w-full h-auto max-w-full object-contain rounded border"
+                    />
+                  </div>
+
+                  {/* Clustering Summary Table */}
+                  {currentClusteringImage.summary && currentClusteringImage.summary.length > 0 && (
+                    <div className="space-y-2">
+                      <h4 className="text-sm font-medium text-foreground">Cluster Summary</h4>
+                      <div className="overflow-x-auto">
+                        <table className="w-full text-xs">
+                          <thead>
+                            <tr className="border-b border-border">
+                              <th className="text-left py-1 px-1 font-medium text-foreground">Cluster</th>
+                              <th className="text-right py-1 px-1 font-medium text-foreground">Count</th>
+                              <th className="text-right py-1 px-1 font-medium text-foreground">Avg Sales</th>
+                              <th className="text-right py-1 px-1 font-medium text-foreground">Avg Qty</th>
+                              <th className="text-left py-1 px-1 font-medium text-foreground">Persona</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {currentClusteringImage.summary.slice(0, 5).map((summary, idx) => (
+                              <tr key={idx} className="border-b border-border/50">
+                                <td className="py-1 px-1 text-muted-foreground">{summary.cluster}</td>
+                                <td className="py-1 px-1 text-right text-foreground">{summary.n}</td>
+                                <td className="py-1 px-1 text-right text-foreground">
+                                  ₱{summary.total_sales?.toLocaleString() || "0"}
+                                </td>
+                                <td className="py-1 px-1 text-right text-foreground">
+                                  {summary.total_qty?.toLocaleString() || "0"}
+                                </td>
+                                <td className="py-1 px-1 text-foreground max-w-20 truncate" title={summary.persona}>
+                                  {summary.persona || "N/A"}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            )
+          })()}
 
           {data.clustering_images.filter((item) => {
+            // Exclude global clustering
+            if (item.name === "Global Clustering") return false
+
             const matchesFilter =
               clusteringFilter === "all" ||
-              (clusteringFilter === "global" && item.name === "Global Clustering") ||
               (clusteringFilter === "category" && item.name.includes("Clustering by Category")) ||
               (clusteringFilter === "tab" && item.name.includes("Clustering by Tab"))
 
