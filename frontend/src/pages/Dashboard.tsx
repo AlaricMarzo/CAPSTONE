@@ -91,7 +91,7 @@ interface PredictiveData {
   model_performance: any
 }
 
-function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }) {
+function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; onLogout: () => void }): JSX.Element {
   const [descriptiveData, setDescriptiveData] = useState<DescriptiveData | null>(null)
   const [predictiveData, setPredictiveData] = useState<PredictiveData | null>(null)
   const [prescriptiveData, setPrescriptiveData] = useState<PrescriptiveData | null>(null)
@@ -102,37 +102,48 @@ function HomePage({ onProfileClick, onLogout }: { onProfileClick: () => void; on
   const [searchTerm, setSearchTerm] = useState("")
 
 
+  const fetchAllData = async () => {
+    try {
+      setLoading(true)
+      const [descRes, predRes, prescRes] = await Promise.all([
+        fetch("http://localhost:5050/api/analytics/descriptive"),
+        fetch("http://localhost:5050/api/analytics/predictive"),
+        fetch("http://localhost:5050/api/analytics/prescriptive")
+      ])
+
+      if (!descRes.ok) throw new Error("Failed to fetch descriptive data")
+      if (!predRes.ok) throw new Error("Failed to fetch predictive data")
+      if (!prescRes.ok) throw new Error("Failed to fetch prescriptive data")
+
+      const descResult = await descRes.json()
+      const predResult = await predRes.json()
+      const prescResult = await prescRes.json()
+
+      setDescriptiveData(descResult.data)
+      setPredictiveData(predResult.data)
+      setPrescriptiveData(prescResult.data)
+      setError(null)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred")
+      console.error("[v0] Error fetching analytics data:", err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   useEffect(() => {
-    const fetchAllData = async () => {
-      try {
-        setLoading(true)
-        const [descRes, predRes, prescRes] = await Promise.all([
-          fetch("http://localhost:5050/api/analytics/descriptive"),
-          fetch("http://localhost:5050/api/analytics/predictive"),
-          fetch("http://localhost:5050/api/analytics/prescriptive")
-        ])
+    fetchAllData()
 
-        if (!descRes.ok) throw new Error("Failed to fetch descriptive data")
-        if (!predRes.ok) throw new Error("Failed to fetch predictive data")
-        if (!prescRes.ok) throw new Error("Failed to fetch prescriptive data")
-
-        const descResult = await descRes.json()
-        const predResult = await predRes.json()
-        const prescResult = await prescRes.json()
-
-        setDescriptiveData(descResult.data)
-        setPredictiveData(predResult.data)
-        setPrescriptiveData(prescResult.data)
-        setError(null)
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred")
-        console.error("[v0] Error fetching analytics data:", err)
-      } finally {
-        setLoading(false)
-      }
+    // Listen for analytics update events
+    const handleAnalyticsUpdate = () => {
+      fetchAllData()
     }
 
-    fetchAllData()
+    window.addEventListener("analyticsUpdated", handleAnalyticsUpdate)
+
+    return () => {
+      window.removeEventListener("analyticsUpdated", handleAnalyticsUpdate)
+    }
   }, [])
 
   const confirmLogout = () => {

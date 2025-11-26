@@ -6258,7 +6258,7 @@
     "support_pct":0.08
   },
   {
-    "item":"BEWELL-C 500MG CAP",
+    "item":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":20,
@@ -9863,7 +9863,7 @@
     "support_pct":0.04
   },
   {
-    "item":"TEMPRA 325MG TAB",
+    "item":"TEMPRA (PARACETAMOL) 325MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS",
     "item_tx":11,
@@ -22008,7 +22008,7 @@
     "support_pct":0.0
   },
   {
-    "item":"RENODIET-HP 32G",
+    "item":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B",
     "item_tx":1,
@@ -22750,7 +22750,7 @@
     "support_pct":0.0
   },
   {
-    "item":"ZINNAT SUSP 125MG 50ML",
+    "item":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":1,

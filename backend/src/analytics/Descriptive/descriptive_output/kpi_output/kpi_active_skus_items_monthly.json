@@ -51235,7 +51235,7 @@
   {
     "month":"2023-02",
     "item_code":"4800316227018",
-    "description":"ZINNAT SUSP 125MG 50ML",
+    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -64864,7 +64864,7 @@
   {
     "month":"2023-04",
     "item_code":"8906070820499",
-    "description":"RENODIET-HP 32G",
+    "description":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -70688,7 +70688,7 @@
   {
     "month":"2023-05",
     "item_code":"8906070820499",
-    "description":"RENODIET-HP 32G",
+    "description":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -110398,6 +110398,13 @@
   },
   {
     "month":"2023-11",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2023-11",
     "item_code":"8995201800554",
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
@@ -110409,13 +110416,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2023-11",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2023-11",
@@ -128004,7 +128004,7 @@
   {
     "month":"2024-02",
     "item_code":"4800316227018",
-    "description":"ZINNAT SUSP 125MG 50ML",
+    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -129971,7 +129971,7 @@
   {
     "month":"2024-02",
     "item_code":"8906070820499",
-    "description":"RENODIET-HP 32G",
+    "description":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -131818,17 +131818,17 @@
   },
   {
     "month":"2024-02",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-02",
     "item_code":"8995201800479",
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-02",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-02",
@@ -133562,7 +133562,7 @@
   {
     "month":"2024-02",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -139385,6 +139385,13 @@
   },
   {
     "month":"2024-03",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-03",
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -139396,13 +139403,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-03",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-03",
@@ -141031,7 +141031,7 @@
   {
     "month":"2024-03",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -148773,7 +148773,7 @@
   {
     "month":"2024-04",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -168589,6 +168589,13 @@
   },
   {
     "month":"2024-07",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-07",
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -168607,13 +168614,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-07",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-07",
@@ -170151,7 +170151,7 @@
   {
     "month":"2024-07",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -175939,6 +175939,13 @@
   },
   {
     "month":"2024-08",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-08",
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -175950,13 +175957,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-08",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-08",
@@ -177802,7 +177802,7 @@
   {
     "month":"2024-08",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -183751,6 +183751,13 @@
   },
   {
     "month":"2024-09",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-09",
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -183769,13 +183776,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-09",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-09",
@@ -193538,7 +193538,7 @@
   {
     "month":"2024-10",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -199382,6 +199382,13 @@
   },
   {
     "month":"2024-11",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2024-11",
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
@@ -199400,13 +199407,6 @@
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2024-11",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2024-11",
@@ -201126,7 +201126,7 @@
   {
     "month":"2024-11",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -208371,7 +208371,7 @@
   {
     "month":"2024-12",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -213410,17 +213410,17 @@
   },
   {
     "month":"2025-01",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2025-01",
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2025-01",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2025-01",
@@ -215266,7 +215266,7 @@
   {
     "month":"2025-01",
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -220095,6 +220095,13 @@
   },
   {
     "month":"2025-02",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2025-02",
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -220106,13 +220113,6 @@
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2025-02",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2025-02",
@@ -226703,17 +226703,17 @@
   },
   {
     "month":"2025-03",
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "month":"2025-03",
     "item_code":"8995201800554",
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "month":"2025-03",
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "month":"2025-03",

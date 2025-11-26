@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2025-11-14T05:30:16.323653",
+  "execution_timestamp": "2025-11-26T14:13:19.583800",
   "analysis_period": {
     "start_date": "2022-05-09 00:00:00",
     "end_date": "2025-03-31 00:00:00",
@@ -411,12 +411,12 @@
     "average_anomaly_score": -0.5696930507380633
   },
   "financial_summary": {
-    "total_sales": 20631838.85,
+    "total_sales": 20631838.849999998,
     "total_cost": 8268542.26,
     "total_profit": 3971686.85,
     "overall_profit_margin_pct": 19.250280495477988,
     "total_quantity_sold": 700727,
-    "average_transaction_value": 175.44677412497026,
+    "average_transaction_value": 175.4467741249702,
     "average_profit_per_transaction": 33.77399613932447
   },
   "top_products_summary": {

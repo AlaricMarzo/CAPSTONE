@@ -13309,7 +13309,7 @@
   {
     "year":2023,
     "item_code":"4800316227018",
-    "description":"ZINNAT SUSP 125MG 50ML",
+    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -17691,7 +17691,7 @@
   {
     "year":2023,
     "item_code":"8906070820499",
-    "description":"RENODIET-HP 32G",
+    "description":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -21442,6 +21442,13 @@
   },
   {
     "year":2023,
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2023,
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -21460,13 +21467,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -28499,7 +28499,7 @@
   {
     "year":2024,
     "item_code":"4800316227018",
-    "description":"ZINNAT SUSP 125MG 50ML",
+    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -35002,7 +35002,7 @@
   {
     "year":2024,
     "item_code":"8906070820499",
-    "description":"RENODIET-HP 32G",
+    "description":"RENO DIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -39460,6 +39460,13 @@
   },
   {
     "year":2024,
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2024,
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
@@ -39485,13 +39492,6 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "year":2024,
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "year":2024,
@@ -43598,7 +43598,7 @@
   {
     "year":2024,
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -52305,6 +52305,13 @@
   },
   {
     "year":2025,
+    "item_code":"8712045001479",
+    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2025,
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
@@ -52323,13 +52330,6 @@
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "year":2025,
-    "item_code":"8712045001479",
-    "description":"TEMPRA 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "year":2025,
@@ -54980,7 +54980,7 @@
   {
     "year":2025,
     "item_code":"4806520890307",
-    "description":"BEWELL-C 500MG CAP",
+    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
