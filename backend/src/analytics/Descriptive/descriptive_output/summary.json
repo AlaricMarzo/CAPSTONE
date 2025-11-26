@@ -54,7 +54,7 @@
       "global_n_noise": 626969.0,
       "tabs_analyzed": 8,
       "categories_analyzed": 41,
-      "dbscan_output_dir": "c:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Descriptive\\descriptive_output\\clustering_output"
+      "dbscan_output_dir": "C:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Descriptive\\descriptive_output\\clustering_output"
     },
     "kmeans": {
       "tabs_analyzed": 8,
@@ -62,5 +62,5 @@
     },
     "total_cluster_graphs_generated": 156
   },
-  "timestamp": "2025-11-26 14:34:41.633578"
+  "timestamp": "2025-11-26 16:02:11.713393"
 }
