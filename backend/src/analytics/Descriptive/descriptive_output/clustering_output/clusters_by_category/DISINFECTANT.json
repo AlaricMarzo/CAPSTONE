@@ -6,6 +6,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":4.0,
     "total_sales":276.0,
+    "total_profit":62.68,
     "months_active":3.0,
     "avg_price":69.0,
     "mean_monthly_qty":1.3333333333,
@@ -20,12 +21,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":1020.0,
+    "total_profit":360.0,
     "months_active":2.0,
     "avg_price":340.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800011120614",
@@ -34,12 +36,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":43.0,
     "total_sales":1515.75,
+    "total_profit":253.39,
     "months_active":13.0,
     "avg_price":35.25,
     "mean_monthly_qty":3.3076923077,
     "cv_monthly_qty":0.6851590634,
     "trend_qty_slope":-0.0164835165,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800011120621",
@@ -48,12 +51,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":38.0,
     "total_sales":1881.0,
+    "total_profit":328.7,
     "months_active":14.0,
     "avg_price":49.5,
     "mean_monthly_qty":2.7142857143,
     "cv_monthly_qty":0.5102820903,
     "trend_qty_slope":0.0175824176,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011121512",
@@ -62,12 +66,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":77.0,
     "total_sales":2780.38,
+    "total_profit":557.02,
     "months_active":29.0,
     "avg_price":36.1088311688,
     "mean_monthly_qty":2.6551724138,
     "cv_monthly_qty":0.5165501767,
     "trend_qty_slope":0.0674876847,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011121529",
@@ -76,12 +81,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":43.0,
     "total_sales":2042.5,
+    "total_profit":351.31,
     "months_active":14.0,
     "avg_price":47.5,
     "mean_monthly_qty":3.0714285714,
     "cv_monthly_qty":0.5960932846,
     "trend_qty_slope":0.0681318681,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011121536",
@@ -90,12 +96,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":38.0,
     "total_sales":3468.15,
+    "total_profit":582.33,
     "months_active":20.0,
     "avg_price":91.2671052632,
     "mean_monthly_qty":1.9,
     "cv_monthly_qty":0.4677997062,
     "trend_qty_slope":0.0676691729,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011121543",
@@ -104,12 +111,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":93.0,
     "total_sales":3415.91,
+    "total_profit":576.46,
     "months_active":29.0,
     "avg_price":36.7302150538,
     "mean_monthly_qty":3.2068965517,
     "cv_monthly_qty":0.9242309224,
     "trend_qty_slope":-0.0137931034,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011121550",
@@ -118,6 +126,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":19.0,
     "total_sales":988.0,
+    "total_profit":188.29,
     "months_active":10.0,
     "avg_price":52.0,
     "mean_monthly_qty":1.9,
@@ -132,12 +141,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":78.0,
     "total_sales":7363.33,
+    "total_profit":986.67,
     "months_active":29.0,
     "avg_price":94.4016666667,
     "mean_monthly_qty":2.6896551724,
     "cv_monthly_qty":0.6027004756,
     "trend_qty_slope":0.0738916256,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011122205",
@@ -146,12 +156,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":94.0,
     "total_sales":2319.43,
+    "total_profit":395.87,
     "months_active":15.0,
     "avg_price":24.674787234,
     "mean_monthly_qty":6.2666666667,
     "cv_monthly_qty":0.6124186368,
     "trend_qty_slope":-0.1285714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011122212",
@@ -160,12 +171,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":38.0,
     "total_sales":1387.0,
+    "total_profit":242.77,
     "months_active":12.0,
     "avg_price":36.5,
     "mean_monthly_qty":3.1666666667,
     "cv_monthly_qty":0.5289408222,
     "trend_qty_slope":-0.013986014,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800011122229",
@@ -174,12 +186,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":76.0,
     "total_sales":4418.0,
+    "total_profit":368.78,
     "months_active":29.0,
     "avg_price":58.1315789474,
     "mean_monthly_qty":2.6206896552,
     "cv_monthly_qty":0.6900058212,
     "trend_qty_slope":0.1034482759,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011122236",
@@ -188,12 +201,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":27.0,
     "total_sales":2484.0,
+    "total_profit":478.17,
     "months_active":12.0,
     "avg_price":92.0,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.5171940757,
     "trend_qty_slope":-0.0524475524,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800011131733",
@@ -202,12 +216,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":18.0,
     "total_sales":1566.0,
+    "total_profit":266.4,
     "months_active":4.0,
     "avg_price":87.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.3685138656,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":1
   },
   {
     "item_code":"4800011147734",
@@ -216,6 +231,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":20.0,
     "total_sales":205.0,
+    "total_profit":43.6,
     "months_active":13.0,
     "avg_price":10.25,
     "mean_monthly_qty":1.5384615385,
@@ -230,12 +246,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":66.0,
     "total_sales":1584.0,
+    "total_profit":289.48,
     "months_active":14.0,
     "avg_price":24.0,
     "mean_monthly_qty":4.7142857143,
     "cv_monthly_qty":0.7872958216,
     "trend_qty_slope":-0.1846153846,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800047820014",
@@ -244,12 +261,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":42.0,
     "total_sales":4095.0,
+    "total_profit":967.54,
     "months_active":19.0,
     "avg_price":97.5,
     "mean_monthly_qty":2.2105263158,
     "cv_monthly_qty":0.6326347741,
     "trend_qty_slope":-0.1263157895,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800047820021",
@@ -258,12 +276,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":24.0,
     "total_sales":1362.0,
+    "total_profit":355.44,
     "months_active":12.0,
     "avg_price":56.75,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":0.2307692308,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800047820182",
@@ -272,12 +291,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":191.0,
     "total_sales":18861.25,
+    "total_profit":3013.0,
     "months_active":33.0,
     "avg_price":98.75,
     "mean_monthly_qty":5.7878787879,
     "cv_monthly_qty":0.4516598288,
     "trend_qty_slope":0.0521390374,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800047820199",
@@ -286,12 +306,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":131.0,
     "total_sales":6824.25,
+    "total_profit":1162.94,
     "months_active":23.0,
     "avg_price":52.0935114504,
     "mean_monthly_qty":5.6956521739,
     "cv_monthly_qty":0.5136672929,
     "trend_qty_slope":0.0770750988,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800047820236",
@@ -300,12 +321,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":42.0,
     "total_sales":1575.0,
+    "total_profit":301.99,
     "months_active":16.0,
     "avg_price":37.5,
     "mean_monthly_qty":2.625,
     "cv_monthly_qty":0.8611019676,
     "trend_qty_slope":-0.0117647059,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800047820243",
@@ -314,12 +336,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":145.0,
     "total_sales":5473.75,
+    "total_profit":1191.59,
     "months_active":29.0,
     "avg_price":37.75,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.6643638388,
     "trend_qty_slope":0.184729064,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800047820250",
@@ -328,12 +351,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":189.0,
     "total_sales":4300.0,
+    "total_profit":1059.36,
     "months_active":31.0,
     "avg_price":22.7513227513,
     "mean_monthly_qty":6.0967741935,
     "cv_monthly_qty":0.5341033326,
     "trend_qty_slope":0.0161290323,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800047820557",
@@ -342,12 +366,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":6.0,
     "total_sales":684.0,
+    "total_profit":684.0,
     "months_active":3.0,
     "avg_price":114.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800047860706",
@@ -356,12 +381,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":64.0,
     "total_sales":4800.0,
+    "total_profit":925.26,
     "months_active":27.0,
     "avg_price":75.0,
     "mean_monthly_qty":2.3703703704,
     "cv_monthly_qty":0.6199010758,
     "trend_qty_slope":0.0757020757,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800067126905",
@@ -370,6 +396,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":11.0,
     "total_sales":385.0,
+    "total_profit":65.78,
     "months_active":6.0,
     "avg_price":35.0,
     "mean_monthly_qty":1.8333333333,
@@ -384,6 +411,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":23.0,
     "total_sales":1012.0,
+    "total_profit":277.15,
     "months_active":7.0,
     "avg_price":44.0,
     "mean_monthly_qty":3.2857142857,
@@ -398,12 +426,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":10.0,
     "total_sales":267.5,
+    "total_profit":77.5,
     "months_active":3.0,
     "avg_price":26.75,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.5099019514,
     "trend_qty_slope":2.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800067451700",
@@ -412,6 +441,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":7.0,
     "total_sales":941.5,
+    "total_profit":117.74,
     "months_active":5.0,
     "avg_price":134.5,
     "mean_monthly_qty":1.4,
@@ -426,12 +456,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":56.0,
     "total_sales":1736.0,
+    "total_profit":364.75,
     "months_active":24.0,
     "avg_price":31.0,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.6018678409,
     "trend_qty_slope":0.0104347826,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800067453544",
@@ -440,6 +471,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":226.0,
+    "total_profit":24.0,
     "months_active":6.0,
     "avg_price":28.25,
     "mean_monthly_qty":1.3333333333,
@@ -454,6 +486,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":35.25,
+    "total_profit":5.9,
     "months_active":1.0,
     "avg_price":35.25,
     "mean_monthly_qty":1.0,
@@ -468,6 +501,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":36.0,
     "total_sales":522.0,
+    "total_profit":108.0,
     "months_active":12.0,
     "avg_price":14.5,
     "mean_monthly_qty":3.0,
@@ -482,6 +516,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":296.0,
+    "total_profit":296.0,
     "months_active":4.0,
     "avg_price":37.0,
     "mean_monthly_qty":2.0,
@@ -496,6 +531,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":408.0,
+    "total_profit":408.0,
     "months_active":2.0,
     "avg_price":51.0,
     "mean_monthly_qty":4.0,
@@ -510,6 +546,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":9.0,
     "total_sales":387.0,
+    "total_profit":387.0,
     "months_active":1.0,
     "avg_price":43.0,
     "mean_monthly_qty":9.0,
@@ -524,6 +561,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":10.0,
     "total_sales":850.0,
+    "total_profit":850.0,
     "months_active":3.0,
     "avg_price":85.0,
     "mean_monthly_qty":3.3333333333,
@@ -538,6 +576,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":10.0,
     "total_sales":530.0,
+    "total_profit":530.0,
     "months_active":4.0,
     "avg_price":53.0,
     "mean_monthly_qty":2.5,
@@ -552,6 +591,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":736.0,
+    "total_profit":736.0,
     "months_active":4.0,
     "avg_price":92.0,
     "mean_monthly_qty":2.0,
@@ -566,12 +606,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":268.0,
+    "total_profit":38.08,
     "months_active":3.0,
     "avg_price":33.5,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":1.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800131291683",
@@ -580,6 +621,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":5.0,
     "total_sales":475.0,
+    "total_profit":89.05,
     "months_active":5.0,
     "avg_price":95.0,
     "mean_monthly_qty":1.0,
@@ -594,12 +636,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":36.0,
     "total_sales":3127.5,
+    "total_profit":346.5,
     "months_active":13.0,
     "avg_price":86.875,
     "mean_monthly_qty":2.7692307692,
     "cv_monthly_qty":0.6358623968,
     "trend_qty_slope":0.1318681319,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800131592759",
@@ -608,12 +651,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":84.0,
     "total_sales":2835.0,
+    "total_profit":526.18,
     "months_active":15.0,
     "avg_price":33.75,
     "mean_monthly_qty":5.6,
     "cv_monthly_qty":0.5125964319,
     "trend_qty_slope":0.2392857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"48037600",
@@ -622,12 +666,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":15.0,
     "total_sales":1265.26,
+    "total_profit":156.16,
     "months_active":8.0,
     "avg_price":84.3506666667,
     "mean_monthly_qty":1.875,
     "cv_monthly_qty":0.6218252702,
     "trend_qty_slope":0.1785714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809012730181",
@@ -636,6 +681,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":11.0,
     "total_sales":524.91,
+    "total_profit":524.91,
     "months_active":5.0,
     "avg_price":47.7190909091,
     "mean_monthly_qty":2.2,
@@ -650,6 +696,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":24.0,
+    "total_profit":24.0,
     "months_active":1.0,
     "avg_price":24.0,
     "mean_monthly_qty":1.0,
@@ -664,6 +711,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":35.0,
+    "total_profit":35.0,
     "months_active":1.0,
     "avg_price":35.0,
     "mean_monthly_qty":1.0,
@@ -678,6 +726,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":2.0,
     "total_sales":800.0,
+    "total_profit":800.0,
     "months_active":2.0,
     "avg_price":400.0,
     "mean_monthly_qty":1.0,
@@ -692,12 +741,13 @@
     "tab":"PERSONAL CARE",
     "total_qty":173.0,
     "total_sales":13480.0,
+    "total_profit":3840.0,
     "months_active":18.0,
     "avg_price":77.9190751445,
     "mean_monthly_qty":9.6111111111,
     "cv_monthly_qty":2.0571295253,
     "trend_qty_slope":-0.5913312693,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"745110103516",
@@ -706,12 +756,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":246.0,
     "total_sales":93630.05,
+    "total_profit":32130.05,
     "months_active":31.0,
     "avg_price":380.6099593496,
     "mean_monthly_qty":7.935483871,
     "cv_monthly_qty":0.6698318674,
     "trend_qty_slope":-0.502016129,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"8809305990243",
@@ -720,6 +771,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":417.75,
+    "total_profit":-139.24,
     "months_active":1.0,
     "avg_price":417.75,
     "mean_monthly_qty":1.0,
@@ -734,6 +786,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":2.0,
     "total_sales":126.0,
+    "total_profit":66.0,
     "months_active":2.0,
     "avg_price":63.0,
     "mean_monthly_qty":1.0,
@@ -748,6 +801,7 @@
     "tab":"PERSONAL CARE",
     "total_qty":10.0,
     "total_sales":775.0,
+    "total_profit":210.52,
     "months_active":2.0,
     "avg_price":77.5,
     "mean_monthly_qty":5.0,

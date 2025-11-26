@@ -6,6 +6,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":2.0,
     "total_sales":30.0,
+    "total_profit":30.0,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":1.0,
@@ -20,6 +21,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":17.0,
     "total_sales":357.0,
+    "total_profit":357.0,
     "months_active":5.0,
     "avg_price":21.0,
     "mean_monthly_qty":3.4,
@@ -34,12 +36,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":12.0,
     "total_sales":2778.35,
+    "total_profit":831.95,
     "months_active":9.0,
     "avg_price":231.5291666667,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-0.0666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806502351901",
@@ -48,12 +51,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":1807.0,
     "total_sales":33337.72,
+    "total_profit":6008.12,
     "months_active":35.0,
     "avg_price":18.4492086331,
     "mean_monthly_qty":51.6285714286,
     "cv_monthly_qty":0.4795476233,
     "trend_qty_slope":1.7862745098,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"4806502358672",
@@ -62,12 +66,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":49.0,
     "total_sales":5155.25,
+    "total_profit":1108.34,
     "months_active":12.0,
     "avg_price":105.2091836735,
     "mean_monthly_qty":4.0833333333,
     "cv_monthly_qty":0.7241304081,
     "trend_qty_slope":-0.2972027972,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806502359624",
@@ -76,12 +81,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":181.0,
     "total_sales":20852.8,
+    "total_profit":4281.71,
     "months_active":28.0,
     "avg_price":115.208839779,
     "mean_monthly_qty":6.4642857143,
     "cv_monthly_qty":0.9986866012,
     "trend_qty_slope":-0.0555555556,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"4806522730083",
@@ -90,6 +96,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":8.0,
     "total_sales":204.0,
+    "total_profit":204.0,
     "months_active":5.0,
     "avg_price":25.5,
     "mean_monthly_qty":1.6,
@@ -104,6 +111,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":5.0,
     "total_sales":87.5,
+    "total_profit":87.5,
     "months_active":3.0,
     "avg_price":17.5,
     "mean_monthly_qty":1.6666666667,
@@ -118,6 +126,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":1.0,
     "total_sales":35.5,
+    "total_profit":35.5,
     "months_active":1.0,
     "avg_price":35.5,
     "mean_monthly_qty":1.0,
@@ -132,6 +141,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":4.0,
     "total_sales":85.14,
+    "total_profit":85.14,
     "months_active":3.0,
     "avg_price":21.285,
     "mean_monthly_qty":1.3333333333,
@@ -146,6 +156,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":8.0,
     "total_sales":236.0,
+    "total_profit":236.0,
     "months_active":3.0,
     "avg_price":29.5,
     "mean_monthly_qty":2.6666666667,
@@ -160,6 +171,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":8.0,
     "total_sales":234.82,
+    "total_profit":234.82,
     "months_active":3.0,
     "avg_price":29.3525,
     "mean_monthly_qty":2.6666666667,
@@ -174,6 +186,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":6.0,
     "total_sales":177.0,
+    "total_profit":177.0,
     "months_active":2.0,
     "avg_price":29.5,
     "mean_monthly_qty":3.0,
@@ -188,12 +201,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":246.0,
     "total_sales":93630.05,
+    "total_profit":32130.05,
     "months_active":31.0,
     "avg_price":380.6099593496,
     "mean_monthly_qty":7.935483871,
     "cv_monthly_qty":0.6698318674,
     "trend_qty_slope":-0.502016129,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"82234584",
@@ -202,12 +216,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":7.0,
     "total_sales":712.25,
+    "total_profit":134.12,
     "months_active":2.0,
     "avg_price":101.75,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.7142857143,
     "trend_qty_slope":-5.0,
-    "cluster":3
+    "cluster":-1
   },
   {
     "item_code":"8850006494424",
@@ -216,6 +231,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":3.0,
     "total_sales":412.95,
+    "total_profit":125.7,
     "months_active":3.0,
     "avg_price":137.65,
     "mean_monthly_qty":1.0,
@@ -230,6 +246,7 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":3.0,
     "total_sales":30.0,
+    "total_profit":30.0,
     "months_active":3.0,
     "avg_price":10.0,
     "mean_monthly_qty":1.0,
@@ -244,12 +261,13 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":15.0,
     "total_sales":6150.0,
+    "total_profit":559.05,
     "months_active":7.0,
     "avg_price":410.0,
     "mean_monthly_qty":2.1428571429,
     "cv_monthly_qty":0.4618802154,
     "trend_qty_slope":-0.0714285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"9556111408088",
@@ -258,11 +276,12 @@
     "tab":"HOUSEHOLD GOODS",
     "total_qty":22.0,
     "total_sales":12540.0,
+    "total_profit":2139.94,
     "months_active":9.0,
     "avg_price":570.0,
     "mean_monthly_qty":2.4444444444,
     "cv_monthly_qty":1.1588680713,
     "trend_qty_slope":-0.3833333333,
-    "cluster":0
+    "cluster":-1
   }
 ]
