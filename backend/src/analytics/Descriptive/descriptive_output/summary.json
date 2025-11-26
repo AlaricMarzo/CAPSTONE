@@ -49,8 +49,18 @@
     "items": 3470
   },
   "clustering": {
-    "total_cluster_graphs_generated": 156,
-    "categories_analyzed": 41
+    "dbscan": {
+      "global_n_clusters": 87,
+      "global_n_noise": 626969.0,
+      "tabs_analyzed": 8,
+      "categories_analyzed": 41,
+      "dbscan_output_dir": "c:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Descriptive\\descriptive_output\\clustering_output"
+    },
+    "kmeans": {
+      "tabs_analyzed": 8,
+      "categories_analyzed": 41
+    },
+    "total_cluster_graphs_generated": 156
   },
-  "timestamp": "2025-11-26 14:15:14.118929"
+  "timestamp": "2025-11-26 14:34:41.633578"
 }

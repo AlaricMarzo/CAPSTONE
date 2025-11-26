@@ -154,13 +154,13 @@ def _fit_dbscan(feats: pd.DataFrame, random_state=42) -> Tuple[pd.DataFrame, Dic
     out = feats.copy()
     out["cluster"] = labels.astype(int)
 
-    # Compute number of clusters and noise points
+    # Compute number of clusters and noise points (noise as total_qty mass)
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
     n_noise = out[out["cluster"] == -1]["total_qty"].sum() if -1 in labels else 0
 
     return out, {"n_clusters": n_clusters, "n_noise": n_noise, "eps": eps, "min_samples": min_samples}
 
-# ============================ summaries & plotting ============================
+# ============================ summaries & personas ============================
 def _summarize(clusters_df: pd.DataFrame) -> pd.DataFrame:
     g = clusters_df.groupby("cluster", as_index=False).agg(
         n=("description","nunique"),
@@ -175,20 +175,22 @@ def _summarize(clusters_df: pd.DataFrame) -> pd.DataFrame:
 
     def tag(r):
         tags = []
-        if r["total_sales"] >= g["total_sales"].median(): tags.append("High-Sales")
-        if r["total_qty"] >= g["total_qty"].median():     tags.append("High-Volume")
-        if r["avg_price_med"] >= g["avg_price_med"].median(): tags.append("Premium")
-        if r["trend_qty_slope_med"] > 0: tags.append("Rising")
-        if r["trend_qty_slope_med"] < 0: tags.append("Declining")
+        if r["total_sales"] >= g["total_sales"].median():        tags.append("High-Sales")
+        if r["total_qty"] >= g["total_qty"].median():            tags.append("High-Volume")
+        if r["avg_price_med"] >= g["avg_price_med"].median():    tags.append("Premium")
+        if r["trend_qty_slope_med"] > 0:                         tags.append("Rising")
+        if r["trend_qty_slope_med"] < 0:                         tags.append("Declining")
         return ", ".join(tags) if tags else "Mixed"
 
     g["persona"] = g.apply(tag, axis=1)
     return g.sort_values("cluster").reset_index(drop=True)
 
-def _cluster_legend_blocks(df: pd.DataFrame, max_lines: int = 10) -> List[str]:
+def _cluster_legend_blocks(df: pd.DataFrame,
+                           summary: pd.DataFrame,
+                           max_lines: int = 10) -> List[str]:
     """
     Build human-readable text blocks per cluster for the side legend,
-    including the other features actually used by DBSCAN.
+    including persona + basic stats.
     """
     def rng(s):
         s = pd.to_numeric(s, errors="coerce")
@@ -206,8 +208,15 @@ def _cluster_legend_blocks(df: pd.DataFrame, max_lines: int = 10) -> List[str]:
         cv_med    = np.nanmedian(pd.to_numeric(sub["cv_monthly_qty"], errors="coerce"))
         slope_med = np.nanmedian(pd.to_numeric(sub["trend_qty_slope"], errors="coerce"))
 
-        cluster_label = "Noise" if c == -1 else f"Cluster {c}"
-        line1 = cluster_label
+        if c == -1:
+            persona = "Noise / Outliers"
+            header  = "Cluster -1: Noise / Outliers"
+        else:
+            row = summary.loc[summary["cluster"] == c]
+            persona = row["persona"].iloc[0] if not row.empty else "Mixed"
+            header  = f"Cluster {c}: {persona}"
+
+        line1 = header
         line2 = f"Qty: {qty_rng}"
         line3 = f"Sales: {sales_rng}"
         line4 = f"Med Price: ₱{price_med:,.2f}"
@@ -224,15 +233,26 @@ def _draw_side_legend(fig, title: str, blocks: List[str]):
     """
     Creates a text panel at the right side with cluster summaries.
     """
-    axp = fig.add_axes([0.78, 0.12, 0.20, 0.76])  # [left, bottom, width, height]
+    # slightly narrower, shifted right for readability
+    axp = fig.add_axes([0.80, 0.12, 0.18, 0.76])  # [left, bottom, width, height]
     axp.axis("off")
     txt = title + "\n\n" + "\n\n".join(blocks)
-    axp.text(0.0, 1.0, txt, va="top", ha="left", fontsize=10, family="monospace", wrap=True)
+    axp.text(
+        0.0, 1.0, txt,
+        va="top", ha="left",
+        fontsize=10,
+        family="monospace",
+    )
 
-def _scatter_plot(df: pd.DataFrame, title: str, out_png: Path, use_log: bool):
+# ============================ plotting (persona-colored) ============================
+def _scatter_plot(df: pd.DataFrame,
+                  summary: pd.DataFrame,
+                  title: str,
+                  out_png: Path,
+                  use_log: bool):
     """
-    Clean scatter with side legend and optional log scaling.
-    Saves to out_png. If use_log=True, appends '(log)' in the title.
+    Scatter with persona-based colors and side legend.
+    One distinct color per persona (no repeats).
     """
     if df.empty:
         return
@@ -242,7 +262,7 @@ def _scatter_plot(df: pd.DataFrame, title: str, out_png: Path, use_log: bool):
     x = df["total_sales"].astype(float).to_numpy()
     y = df["total_qty"].astype(float).to_numpy()
 
-    # Apply log scaling to both axes
+    # ---- axis scales ----
     if use_log:
         x = np.clip(x, a_min=0, a_max=None) + 1.0
         y = np.clip(y, a_min=0, a_max=None) + 1.0
@@ -254,7 +274,6 @@ def _scatter_plot(df: pd.DataFrame, title: str, out_png: Path, use_log: bool):
         ax.set_xlabel("Total Sales")
         ax.set_ylabel("Total Quantity")
 
-    # Set axis limits to zoom in on the data range
     x_25, x_75 = np.percentile(x, 25), np.percentile(x, 75)
     y_25, y_75 = np.percentile(y, 25), np.percentile(y, 75)
     x_iqr = x_75 - x_25
@@ -265,51 +284,96 @@ def _scatter_plot(df: pd.DataFrame, title: str, out_png: Path, use_log: bool):
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
-    # Scatter plot for clusters
-    clusters = sorted(df["cluster"].unique().tolist())
-    cmap = plt.cm.get_cmap("tab10", len(clusters))
+    # ---- PERSONA → COLOR mapping (unique) ----
+    personas = sorted(summary["persona"].dropna().unique().tolist())
+    n_personas = max(len(personas), 1)
+    cmap = plt.cm.get_cmap("tab20")
+    color_array = cmap(np.linspace(0, 1, n_personas))
 
-    for i, c in enumerate(clusters):
+    persona_colors: Dict[str, Any] = {
+        persona: color_array[i] for i, persona in enumerate(personas)
+    }
+
+    clusters = sorted(df["cluster"].unique().tolist())
+    handles, labels = [], []
+
+    for c in clusters:
         sub = df[df["cluster"] == c]
-        color = "gray" if c == -1 else cmap(i % 10)  # Gray for noise
-        label = "Noise" if c == -1 else f"Cluster {c}"
-        size = 30 if c == -1 else 50  # Smaller for noise
-        alpha = 0.6 if c == -1 else 0.85  # More transparent for noise
-        ax.scatter(
+
+        if c == -1:
+            persona = "Noise / Outliers"
+            color = "gray"
+        else:
+            row = summary.loc[summary["cluster"] == c]
+            persona = row["persona"].iloc[0] if not row.empty else "Mixed"
+            color = persona_colors.get(persona, "black")
+
+        size = 30 if c == -1 else 50
+        alpha = 0.6 if c == -1 else 0.85
+
+        sc = ax.scatter(
             sub["total_sales"], sub["total_qty"],
-            s=size, alpha=alpha, color=color, edgecolors="none", label=label
+            s=size, alpha=alpha, color=color, edgecolors="none"
         )
 
-    # Title & legend
+        # legend: one entry per persona
+        if persona not in labels:
+            handles.append(sc)
+            labels.append(persona)
+
+    # ---- title & legend ----
     full_title = title + (" (log view)" if use_log else " (linear view)")
     ax.set_title(full_title)
 
-    # Standard legend (color ↔ cluster id) under the chart
-    ax.legend(loc="upper center", bbox_to_anchor=(0.43, -0.12), ncol=min(5, len(clusters)), frameon=False)
+    ax.legend(
+        handles, labels,
+        loc="upper left",
+        bbox_to_anchor=(0.02, -0.22),
+        ncol=min(3, len(labels)),
+        frameon=False,
+        fontsize=8,
+        handletextpad=0.4,
+        columnspacing=0.8,
+    )
 
-    # Side legend with numeric ranges
-    _draw_side_legend(fig, "Cluster summaries:", _cluster_legend_blocks(df))
+    # right-side summaries (cluster id + persona + stats)
+    _draw_side_legend(fig, "Cluster summaries:",
+                      _cluster_legend_blocks(df, summary))
 
     fig.savefig(out_png, dpi=240, bbox_inches="tight")
     plt.close(fig)
 
-def _plot_both(df: pd.DataFrame, title_root: str, out_root: Path):
+def _plot_both(df: pd.DataFrame,
+               summary: pd.DataFrame,
+               title_root: str,
+               out_root: Path):
     """
     Saves two figures: linear and log-scale versions.
     """
-    _scatter_plot(df, title_root, out_root.with_suffix("").with_name(out_root.stem + "_linear.png"), use_log=False)
-    _scatter_plot(df, title_root, out_root.with_suffix("").with_name(out_root.stem + "_log.png"),    use_log=True)
+    _scatter_plot(
+        df, summary, title_root,
+        out_root.with_suffix("").with_name(out_root.stem + "_linear.png"),
+        use_log=False,
+    )
+    _scatter_plot(
+        df, summary, title_root,
+        out_root.with_suffix("").with_name(out_root.stem + "_log.png"),
+        use_log=True,
+    )
 
 # ============================ main driver ============================
 def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, Any]:
     """
     Produces:
-      clustering_output/
+      <out_dir>/
         clusters_global.(csv|json)
         clusters_by_tab/<tab>.csv|json
         clusters_by_category/<category>.csv|json
-        cluster_summaries/global.(csv|json), by_tab_<tab>.(csv|json), by_category_<cat>.(csv|json)
-        PNGs per group: *_linear.png and *_log.png (with side legend)
+        cluster_summaries/
+            global.(csv|json),
+            by_tab_<tab>.(csv|json),
+            by_category_<cat>.(csv|json)
+        PNGs per group: *_linear.png and *_log.png (persona-colored, side legend)
     """
     base = _ensure_dir(Path(out_dir))
     sub_global = base
@@ -327,51 +391,85 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
     global_df, meta_global = _fit_dbscan(feats, random_state=random_state)
     global_df.to_csv(sub_global / "clusters_global.csv", index=False, encoding="utf-8")
     _to_json(global_df, sub_global / "clusters_global.json")
+
     sm_global = _summarize(global_df)
     sm_global.to_csv(sub_sum / "global.csv", index=False, encoding="utf-8")
     _to_json(sm_global, sub_sum / "global.json")
+
     if -1 in sm_global["cluster"].values:
-        meta_global['n_noise'] = sm_global.loc[sm_global["cluster"] == -1, "total_qty"].iloc[0]
-    _plot_both(global_df, f"Global Clusters (n_clusters={meta_global['n_clusters']})",
-               sub_global / "fig_global.png")
+        meta_global["n_noise"] = sm_global.loc[sm_global["cluster"] == -1, "total_qty"].iloc[0]
+
+    _plot_both(
+        global_df, sm_global,
+        f"Global Clusters (n_clusters={meta_global['n_clusters']})",
+        sub_global / "fig_global.png",
+    )
 
     # -------- by TAB --------
     tabs_info = []
     for tab, sub in feats.groupby("tab", dropna=False):
         subk, meta = _fit_dbscan(sub, random_state=random_state)
         fn_root = f"{str(tab)}".replace("/", "_") if str(tab) != "" else "UNKNOWN"
+
+        # per-tab clusters & JSON
         subk.to_csv(sub_tab / f"{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(subk, sub_tab / f"{fn_root}.json")
+
+        # per-tab summary with personas
         sm = _summarize(subk)
         sm.to_csv(sub_sum / f"by_tab_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_tab_{fn_root}.json")
+
         if -1 in sm["cluster"].values:
-            meta['n_noise'] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
-        _plot_both(subk, f"TAB: {tab} (n_clusters={meta['n_clusters']})",
-                   sub_tab / f"fig_tab_{fn_root}.png")
-        tabs_info.append({"tab": str(tab), "n_clusters": meta["n_clusters"], "n_noise": meta["n_noise"]})
+            meta["n_noise"] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+
+        _plot_both(
+            subk, sm,
+            f"TAB: {tab} (n_clusters={meta['n_clusters']})",
+            sub_tab / f"fig_tab_{fn_root}.png",
+        )
+
+        tabs_info.append({
+            "tab": str(tab),
+            "n_clusters": meta["n_clusters"],
+            "n_noise": meta["n_noise"],
+        })
 
     # -------- by CATEGORY --------
     cats_info = []
     for cat, sub in feats.groupby("category", dropna=False):
         subk, meta = _fit_dbscan(sub, random_state=random_state)
         fn_root = f"{str(cat)}".replace("/", "_") if str(cat) != "" else "UNKNOWN"
+
+        # per-category clusters & JSON
         subk.to_csv(sub_cat / f"{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(subk, sub_cat / f"{fn_root}.json")
+
+        # per-category summary with personas
         sm = _summarize(subk)
         sm.to_csv(sub_sum / f"by_category_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_category_{fn_root}.json")
+
         if -1 in sm["cluster"].values:
-            meta['n_noise'] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
-        _plot_both(subk, f"CATEGORY: {cat} (n_clusters={meta['n_clusters']})",
-                   sub_cat / f"fig_cat_{fn_root}.png")
-        cats_info.append({"category": str(cat), "n_clusters": meta["n_clusters"], "n_noise": meta["n_noise"]})
+            meta["n_noise"] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+
+        _plot_both(
+            subk, sm,
+            f"CATEGORY: {cat} (n_clusters={meta['n_clusters']})",
+            sub_cat / f"fig_cat_{fn_root}.png",
+        )
+
+        cats_info.append({
+            "category": str(cat),
+            "n_clusters": meta["n_clusters"],
+            "n_noise": meta["n_noise"],
+        })
 
     return {
         "global": {"n_clusters": meta_global["n_clusters"], "n_noise": meta_global["n_noise"]},
         "by_tab": tabs_info,
         "by_category": cats_info,
-        "outputs_dir": str(base)
+        "outputs_dir": str(base),
     }
 
 # ============================ CLI ============================
