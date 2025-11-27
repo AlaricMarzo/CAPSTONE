@@ -1,32 +1,34 @@
 FROM node:18-alpine
 
-# Install Python 3
-RUN apk add --no-cache python3 py3-pip
+# 1) Install Python + pip + venv and create symlinks
+RUN apk add --no-cache python3 py3-pip python3-venv \
+    && ln -s /usr/bin/python3 /usr/local/bin/python \
+    && ln -s /usr/bin/python3 /usr/local/bin/python3
 
-# Set working directory
+# 2) Create Python virtual environment
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
 WORKDIR /app
 
-# Copy Python requirements and install
-COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+# 3) Install Python dependencies inside venv
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy root package files and install root dependencies
-COPY package*.json ./
+# 4) Install root Node dependencies
+COPY package*.json .
 RUN npm install
 
-# Copy and install frontend dependencies
-COPY frontend/package*.json ./frontend/
+# 5) Copy the whole project
+COPY . .
+
+# 6) Install frontend dependencies
 RUN cd frontend && npm install
 
-# Copy and install backend dependencies
-COPY backend/package*.json ./backend/
+# 7) Install backend dependencies
 RUN cd backend && npm install
 
-# Copy source code
-COPY frontend/ ./frontend/
+WORKDIR /app/backend
+EXPOSE 8080
 
-# Expose ports
-EXPOSE 8080 5050
-
-# Start the application
 CMD ["npm", "start"]
