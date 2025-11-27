@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
 import morgan from "morgan"
+import path from "path"
 import uploadRouter from "./routes/upload.js"
 import analyticsRouter from "./routes/analytics.js"
 
@@ -17,6 +18,14 @@ app.get("/health", (_, res) => res.json({ status: "OK" }))
 
 app.use("/api", uploadRouter)
 app.use("/api/analytics", analyticsRouter)
+
+// Serve static files from the frontend dist directory
+app.use(express.static(path.join(process.cwd(), '../frontend/dist')))
+
+// Catch-all handler: send back index.html for any non-API routes (for SPA routing)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '../frontend/dist/index.html'));
+});
 
 import multer from "multer";
 
