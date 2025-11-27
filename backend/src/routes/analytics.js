@@ -19,7 +19,7 @@
   // Helper function to read CSV and convert to JSON
   function csvToJson(csvPath) {
     if (!fs.existsSync(csvPath)) {
-      console.log("[v0] CSV file not found:", csvPath)
+      console.log("CSV file not found:", csvPath)
       return []
     }
 
@@ -45,7 +45,7 @@
 
       return rows
     } catch (error) {
-      console.error("[v0] Error parsing CSV:", error)
+      console.error("Error parsing CSV:", error)
       return []
     }
   }
@@ -53,14 +53,14 @@
   // Helper function to read JSON
   function jsonToArray(jsonPath) {
     if (!fs.existsSync(jsonPath)) {
-      console.log("[v0] JSON file not found:", jsonPath)
+      console.log("JSON file not found:", jsonPath)
       return []
     }
     try {
       const jsonData = fs.readFileSync(jsonPath, "utf8")
       return JSON.parse(jsonData)
     } catch (error) {
-      console.error("[v0] Error parsing JSON:", error)
+      console.error("Error parsing JSON:", error)
       return []
     }
   }
@@ -77,7 +77,7 @@
       const mimeType = ext === '.png' ? 'image/png' : 'image/jpeg'
       return `data:${mimeType};base64,${base64}`
     } catch (error) {
-      console.error("[v0] Error encoding image:", error)
+      console.error("Error encoding image:", error)
       return null
     }
   }
@@ -362,7 +362,7 @@
 
       res.json({ success: true, data: formattedData })
     } catch (error) {
-      console.error("[v0] Error fetching descriptive analytics:", error)
+      console.error("Error fetching descriptive analytics:", error)
       res.status(500).json({ success: false, error: error.message })
     }
   })
@@ -859,7 +859,7 @@
 
       res.json({ success: true, data: formattedData })
     } catch (error) {
-      console.error("[v0] Error fetching predictive analytics:", error)
+      console.error("Error fetching predictive analytics:", error)
       res.status(500).json({ success: false, error: error.message })
     }
   })
@@ -988,10 +988,10 @@
         model_images: modelImages,
       }
 
-      console.log("[v0] Prescriptive data formatted successfully")
+      console.log("Prescriptive data formatted successfully")
       return { success: true, data: formattedData }
     } catch (error) {
-      console.error("[v0] Error fetching prescriptive analytics:", error)
+      console.error("Error fetching prescriptive analytics:", error)
       return { success: false, error: error.message }
     }
   }
@@ -1031,18 +1031,18 @@
           if (code === 0) {
             resolve({ success: true, message: "Descriptive analytics completed successfully", output: stdout })
           } else {
-            console.error("[v0] Python script error:", stderr)
+            console.error("Python script error:", stderr)
             resolve({ success: false, error: "Descriptive analytics failed", details: stderr })
           }
         })
 
         pythonProcess.on("error", (error) => {
-          console.error("[v0] Failed to start Python process:", error)
+          console.error("Failed to start Python process:", error)
           resolve({ success: false, error: "Failed to execute descriptive analytics", details: error.message })
         })
       })
     } catch (error) {
-      console.error("[v0] Error running descriptive analytics:", error)
+      console.error("Error running descriptive analytics:", error)
       return { success: false, error: "Failed to run descriptive analytics" }
     }
   }
@@ -1082,18 +1082,18 @@
           if (code === 0) {
             resolve({ success: true, message: "Predictive analytics completed successfully", output: stdout })
           } else {
-            console.error("[v0] Python script error:", stderr)
+            console.error("Python script error:", stderr)
             resolve({ success: false, error: "Predictive analytics failed", details: stderr })
           }
         })
 
         pythonProcess.on("error", (error) => {
-          console.error("[v0] Failed to start Python process:", error)
+          console.error("Failed to start Python process:", error)
           resolve({ success: false, error: "Failed to execute predictive analytics", details: error.message })
         })
       })
     } catch (error) {
-      console.error("[v0] Error running predictive analytics:", error)
+      console.error("Error running predictive analytics:", error)
       return { success: false, error: "Failed to run predictive analytics" }
     }
   }
@@ -1134,18 +1134,18 @@
           if (code === 0) {
             resolve({ success: true, message: "Prescriptive analytics completed successfully", output: stdout })
           } else {
-            console.error("[v0] Python script error:", stderr)
+            console.error("Python script error:", stderr)
             resolve({ success: false, error: "Prescriptive analytics failed", details: stderr })
           }
         })
 
         pythonProcess.on("error", (error) => {
-          console.error("[v0] Failed to start Python process:", error)
+          console.error("Failed to start Python process:", error)
           resolve({ success: false, error: "Failed to execute prescriptive analytics", details: error.message })
         })
       })
     } catch (error) {
-      console.error("[v0] Error running prescriptive analytics:", error)
+      console.error("Error running prescriptive analytics:", error)
       return { success: false, error: "Failed to run prescriptive analytics" }
     }
   }
@@ -1273,7 +1273,7 @@
 
       res.json({ success: true, files })
     } catch (error) {
-      console.error("[v0] Error listing files:", error)
+      console.error("Error listing files:", error)
       res.status(500).json({ success: false, error: error.message })
     }
   })
@@ -1337,11 +1337,11 @@
       fileStream.pipe(res)
 
       fileStream.on('error', (error) => {
-        console.error("[v0] Error streaming file:", error)
+        console.error("Error streaming file:", error)
         res.status(500).json({ success: false, error: "Error downloading file" })
       })
     } catch (error) {
-      console.error("[v0] Error downloading file:", error)
+      console.error("Error downloading file:", error)
       res.status(500).json({ success: false, error: error.message })
     }
   })

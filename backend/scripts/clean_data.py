@@ -1339,18 +1339,18 @@ if __name__ == "__main__":
             file=sys.stderr,
         )
 
-        print(
-            json.dumps(
-                {
-                    "success": True,
-                    "message": f"Successfully processed {len(data_sources)} file(s) and loaded {len(combined_cleaned_df)} rows",
-                    "cleanedFile": output_file_path,
-                    "rowsProcessed": len(combined_cleaned_df),
-                    "filesProcessed": len(data_sources),
-                    "runId": run_id,
-                }
-            )
-        )
+        result = {
+            "success": True,
+            "message": f"Successfully processed {len(data_sources)} file(s) and loaded {len(combined_cleaned_df)} rows",
+            "cleanedFile": output_file_path,
+            # keep both keys so frontend/backend can use either
+            "rowsProcessed": len(combined_cleaned_df),
+            "rowsLoaded": len(combined_cleaned_df),
+            "filesProcessed": len(data_sources),
+            "runId": run_id
+        }
+
+        print(json.dumps(result))
 
     except Exception as e:
         print(f"[ERROR] Error occurred: {str(e)}", file=sys.stderr)
