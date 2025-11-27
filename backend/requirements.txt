@@ -5,3 +5,7 @@ psycopg2-binary
 python-dotenv
 matplotlib
 openpyxl
+scikit-learn
+python-dateutil
+pytz
+tzdata
