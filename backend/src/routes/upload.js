@@ -189,7 +189,7 @@ async function processUpload(jobId, files) {
 router.post("/upload", upload.array("files", 10), async (req, res) => {
   try {
     if (!req.files || req.files.length === 0) {
-      return res.status(400).json({ error: "No files uploaded" })
+      return res.status(400).json({ success: false, error: "No files uploaded" })
     }
 
     const jobId = uuidv4()
@@ -201,13 +201,14 @@ router.post("/upload", upload.array("files", 10), async (req, res) => {
     processUpload(jobId, req.files)
 
     res.json({
+      success: true,
       jobId,
       message: "Files uploaded successfully. Processing started.",
       status: jobData.status,
     })
   } catch (error) {
     console.error("[Backend] Upload error:", error)
-    res.status(500).json({ error: "Upload failed", details: error.message })
+    res.status(500).json({ success: false, error: "Upload failed", details: error.message })
   }
 })
 
