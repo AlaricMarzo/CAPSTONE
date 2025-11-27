@@ -212,6 +212,19 @@ router.post("/upload", upload.array("files", 10), async (req, res) => {
   }
 })
 
+// Simple job status route so the frontend polling doesn't 404
+// Since we process synchronously, we just report "completed".
+router.get("/job/:jobId", (req, res) => {
+  const { jobId } = req.params;
+
+  return res.json({
+    success: true,
+    jobId,
+    status: "completed",
+    message: "Processing completed.",
+  });
+});
+
 // Job status endpoint
 router.get("/status/:jobId", async (req, res) => {
   try {
