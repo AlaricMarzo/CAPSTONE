@@ -98,7 +98,7 @@ export default function ReportsPage() {
                     <div key={file.name} className="border border-border/50 rounded-lg p-4 bg-background/50 hover:bg-background/80 transition-colors duration-200">
                       <div className="aspect-video bg-muted/30 rounded flex items-center justify-center mb-3 overflow-hidden">
                         <img
-                          src={`http://localhost:8080/api/analytics/download/${category}/${file.name}`}
+                          src={`/api/analytics/download/${category}/${file.name}`}
                           alt={file.name}
                           className="max-w-full max-h-full object-contain rounded transition-transform duration-200 hover:scale-105"
                           onError={(e) => {
