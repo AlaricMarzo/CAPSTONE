@@ -222,23 +222,17 @@ async function processUpload(jobId, files) {
     jobs.set(jobId, { status: 'processing', progress: 95, message: 'Running descriptive, predictive, and prescriptive analytics...' })
 
     try {
+      // Import analytics functions directly to avoid HTTP calls
+      const { runDescriptiveAnalytics, runPredictiveAnalytics, runPrescriptiveAnalytics } = await import('./analytics.js')
+
       // Run descriptive analytics
-      const descResponse = await fetch('/api/analytics/run-descriptive', {
-        method: 'POST',
-      })
-      const descResult = await descResponse.json()
+      const descResult = await runDescriptiveAnalytics()
 
       // Run predictive analytics
-      const predResponse = await fetch('/api/analytics/run-predictive', {
-        method: 'POST',
-      })
-      const predResult = await predResponse.json()
+      const predResult = await runPredictiveAnalytics()
 
       // Run prescriptive analytics
-      const prescResponse = await fetch('/api/analytics/run-prescriptive', {
-        method: 'POST',
-      })
-      const prescResult = await prescResponse.json()
+      const prescResult = await runPrescriptiveAnalytics()
 
       const analyticsResults = {
         descriptive: descResult,

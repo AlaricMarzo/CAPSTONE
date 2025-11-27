@@ -864,7 +864,8 @@
     }
   })
 
-  router.get("/prescriptive", async (req, res) => {
+  // Function to get prescriptive analytics (for internal use)
+  export async function getPrescriptiveAnalytics() {
     try {
       const reorderData = csvToJson(path.join(prescriptiveOutputDir, "model_1_reorder_point.csv"))
       const eoqData = csvToJson(path.join(prescriptiveOutputDir, "model_2_eoq.csv"))
@@ -988,144 +989,171 @@
       }
 
       console.log("[v0] Prescriptive data formatted successfully")
-      res.json({ success: true, data: formattedData })
+      return { success: true, data: formattedData }
     } catch (error) {
       console.error("[v0] Error fetching prescriptive analytics:", error)
-      res.status(500).json({ success: false, error: error.message })
+      return { success: false, error: error.message }
     }
+  }
+
+  router.get("/prescriptive", async (req, res) => {
+    const result = await getPrescriptiveAnalytics()
+    res.json(result)
   })
 
-  // Route to run descriptive analytics
-  router.post("/run-descriptive", async (req, res) => {
+  // Function to run descriptive analytics (for internal use)
+  export async function runDescriptiveAnalytics() {
     try {
       const descriptiveDir = path.join(__dirname, "../analytics/Descriptive")
       const scriptPath = path.join(descriptiveDir, "descriptive.py")
       if (!fs.existsSync(scriptPath)) {
-        return res.status(404).json({ success: false, error: "Descriptive analytics script not found" })
+        return { success: false, error: "Descriptive analytics script not found" }
       }
 
-      const pythonProcess = spawn("python", ["descriptive.py"], {
-        cwd: descriptiveDir,
-        stdio: ["ignore", "pipe", "pipe"],
-      })
+      return new Promise((resolve) => {
+        const pythonProcess = spawn("python", ["descriptive.py"], {
+          cwd: descriptiveDir,
+          stdio: ["ignore", "pipe", "pipe"],
+        })
 
-      let stdout = ""
-      let stderr = ""
+        let stdout = ""
+        let stderr = ""
 
-      pythonProcess.stdout.on("data", (data) => {
-        stdout += data.toString()
-      })
+        pythonProcess.stdout.on("data", (data) => {
+          stdout += data.toString()
+        })
 
-      pythonProcess.stderr.on("data", (data) => {
-        stderr += data.toString()
-      })
+        pythonProcess.stderr.on("data", (data) => {
+          stderr += data.toString()
+        })
 
-      pythonProcess.on("close", (code) => {
-        if (code === 0) {
-          res.json({ success: true, message: "Descriptive analytics completed successfully", output: stdout })
-        } else {
-          console.error("[v0] Python script error:", stderr)
-          res.status(500).json({ success: false, error: "Descriptive analytics failed", details: stderr })
-        }
-      })
+        pythonProcess.on("close", (code) => {
+          if (code === 0) {
+            resolve({ success: true, message: "Descriptive analytics completed successfully", output: stdout })
+          } else {
+            console.error("[v0] Python script error:", stderr)
+            resolve({ success: false, error: "Descriptive analytics failed", details: stderr })
+          }
+        })
 
-      pythonProcess.on("error", (error) => {
-        console.error("[v0] Failed to start Python process:", error)
-        res.status(500).json({ success: false, error: "Failed to execute descriptive analytics", details: error.message })
+        pythonProcess.on("error", (error) => {
+          console.error("[v0] Failed to start Python process:", error)
+          resolve({ success: false, error: "Failed to execute descriptive analytics", details: error.message })
+        })
       })
     } catch (error) {
       console.error("[v0] Error running descriptive analytics:", error)
-      res.status(500).json({ success: false, error: "Failed to run descriptive analytics" })
+      return { success: false, error: "Failed to run descriptive analytics" }
     }
+  }
+
+  // Route to run descriptive analytics
+  router.post("/run-descriptive", async (req, res) => {
+    const result = await runDescriptiveAnalytics()
+    res.json(result)
   })
 
-  // Route to run predictive analytics
-  router.post("/run-predictive", async (req, res) => {
+  // Function to run predictive analytics (for internal use)
+  export async function runPredictiveAnalytics() {
     try {
       const scriptPath = path.join(__dirname, "../analytics/models.py")
       if (!fs.existsSync(scriptPath)) {
-        return res.status(404).json({ success: false, error: "Predictive analytics script not found" })
+        return { success: false, error: "Predictive analytics script not found" }
       }
 
-      const pythonProcess = spawn("python", [scriptPath], {
-        cwd: path.join(__dirname, "../analytics"),
-        stdio: ["ignore", "pipe", "pipe"],
-      })
+      return new Promise((resolve) => {
+        const pythonProcess = spawn("python", [scriptPath], {
+          cwd: path.join(__dirname, "../analytics"),
+          stdio: ["ignore", "pipe", "pipe"],
+        })
 
-      let stdout = ""
-      let stderr = ""
+        let stdout = ""
+        let stderr = ""
 
-      pythonProcess.stdout.on("data", (data) => {
-        stdout += data.toString()
-      })
+        pythonProcess.stdout.on("data", (data) => {
+          stdout += data.toString()
+        })
 
-      pythonProcess.stderr.on("data", (data) => {
-        stderr += data.toString()
-      })
+        pythonProcess.stderr.on("data", (data) => {
+          stderr += data.toString()
+        })
 
-      pythonProcess.on("close", (code) => {
-        if (code === 0) {
-          res.json({ success: true, message: "Predictive analytics completed successfully", output: stdout })
-        } else {
-          console.error("[v0] Python script error:", stderr)
-          res.status(500).json({ success: false, error: "Predictive analytics failed", details: stderr })
-        }
-      })
+        pythonProcess.on("close", (code) => {
+          if (code === 0) {
+            resolve({ success: true, message: "Predictive analytics completed successfully", output: stdout })
+          } else {
+            console.error("[v0] Python script error:", stderr)
+            resolve({ success: false, error: "Predictive analytics failed", details: stderr })
+          }
+        })
 
-      pythonProcess.on("error", (error) => {
-        console.error("[v0] Failed to start Python process:", error)
-        res.status(500).json({ success: false, error: "Failed to execute predictive analytics", details: error.message })
+        pythonProcess.on("error", (error) => {
+          console.error("[v0] Failed to start Python process:", error)
+          resolve({ success: false, error: "Failed to execute predictive analytics", details: error.message })
+        })
       })
     } catch (error) {
       console.error("[v0] Error running predictive analytics:", error)
-      res.status(500).json({ success: false, error: "Failed to run predictive analytics" })
+      return { success: false, error: "Failed to run predictive analytics" }
     }
+  }
+
+  // Route to run predictive analytics
+  router.post("/run-predictive", async (req, res) => {
+    const result = await runPredictiveAnalytics()
+    res.json(result)
   })
 
-  // Route to run prescriptive analytics
-  router.post("/run-prescriptive", async (req, res) => {
+  // Function to run prescriptive analytics (for internal use)
+  export async function runPrescriptiveAnalytics() {
     try {
       const prescriptiveDir = path.join(__dirname, "../analytics/prescriptive")
       const scriptPath = path.join(prescriptiveDir, "prescriptive.py")
       if (!fs.existsSync(scriptPath)) {
-        return res.status(404).json({ success: false, error: "Prescriptive analytics script not found" })
+        return { success: false, error: "Prescriptive analytics script not found" }
       }
 
-      const pythonProcess = spawn("python", ["prescriptive.py"], {
-        cwd: prescriptiveDir,
-        stdio: ["ignore", "pipe", "pipe"],
-      })
+      return new Promise((resolve) => {
+        const pythonProcess = spawn("python", ["prescriptive.py"], {
+          cwd: prescriptiveDir,
+          stdio: ["ignore", "pipe", "pipe"],
+        })
 
-      let stdout = ""
-      let stderr = ""
+        let stdout = ""
+        let stderr = ""
 
-      pythonProcess.stdout.on("data", (data) => {
-        stdout += data.toString()
-      })
+        pythonProcess.stdout.on("data", (data) => {
+          stdout += data.toString()
+        })
 
-      pythonProcess.stderr.on("data", (data) => {
-        stderr += data.toString()
-      })
+        pythonProcess.stderr.on("data", (data) => {
+          stderr += data.toString()
+        })
 
-      pythonProcess.on("close", (code) => {
-        if (code === 0) {
-          res.json({ success: true, message: "Prescriptive analytics completed successfully", output: stdout })
-        } else {
-          console.error("[v0] Python script error:", stderr)
-          res.status(500).json({ success: false, error: "Prescriptive analytics failed", details: stderr })
-        }
-      })
+        pythonProcess.on("close", (code) => {
+          if (code === 0) {
+            resolve({ success: true, message: "Prescriptive analytics completed successfully", output: stdout })
+          } else {
+            console.error("[v0] Python script error:", stderr)
+            resolve({ success: false, error: "Prescriptive analytics failed", details: stderr })
+          }
+        })
 
-      pythonProcess.on("error", (error) => {
-        console.error("[v0] Failed to start Python process:", error)
-        res
-          .status(500)
-          .json({ success: false, error: "Failed to execute prescriptive analytics", details: error.message })
+        pythonProcess.on("error", (error) => {
+          console.error("[v0] Failed to start Python process:", error)
+          resolve({ success: false, error: "Failed to execute prescriptive analytics", details: error.message })
+        })
       })
     } catch (error) {
       console.error("[v0] Error running prescriptive analytics:", error)
-      res.status(500).json({ success: false, error: "Failed to run prescriptive analytics" })
+      return { success: false, error: "Failed to run prescriptive analytics" }
     }
+  }
+
+  // Route to run prescriptive analytics
+  router.post("/run-prescriptive", async (req, res) => {
+    const result = await runPrescriptiveAnalytics()
+    res.json(result)
   })
 
   // Route to list available files for download
