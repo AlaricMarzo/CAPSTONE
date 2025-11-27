@@ -1224,88 +1224,103 @@ if __name__ == "__main__":
     NON_INTERACTIVE = os.getenv("NON_INTERACTIVE", "0") == "1"
 
     try:
-        # Node.js passes: [output_file_path, input_file1, input_file2, ...]
-        if len(sys.argv) > 2:
-            # First arg is output file path, rest are input files
-            output_file_path = sys.argv[1]
-            data_sources = sys.argv[2:]
+        # ARGUMENT CONVENTIONS
+        # - In production (Node backend), we call:
+        #     python clean_data.py <input_csv> <output_csv>
+        #   so: first arg = input, second = output.
+        # - If more than 2 args are ever passed, we treat:
+        #     all but last as inputs, last as output.
+        if len(sys.argv) >= 3:
+            # All args except last are input files, last is output file
+            data_sources = sys.argv[1:-1]
+            output_file_path = sys.argv[-1]
             print(f"Using {len(data_sources)} data source(s) from command line")
             print(f"Output will be saved to: {output_file_path}")
         elif len(sys.argv) == 2:
-            # Single argument - treat as input file, use default output
+            # Single argument → treat as input file, use default output name
             data_sources = [sys.argv[1]]
-            output_file_path = 'cleaned_sales_data_combined.csv'
-            print(f"Using 1 data source from command line")
+            output_file_path = "cleaned_sales_data_combined.csv"
+            print("Using 1 data source from command line")
         elif NON_INTERACTIVE:
             print("Running in NON_INTERACTIVE mode...")
             data_sources = [default_url]
-            output_file_path = 'cleaned_sales_data_combined.csv'
+            output_file_path = "cleaned_sales_data_combined.csv"
         else:
             data_sources = get_data_sources()
             if not data_sources:
                 print("No data sources provided. Using default test data...")
                 data_sources = [default_url]
-            output_file_path = 'cleaned_sales_data_combined.csv'
+            output_file_path = "cleaned_sales_data_combined.csv"
 
         # -------- CLEAN MULTIPLE FILES --------
         all_cleaned_dfs = []
         all_errors_dfs = []
-        
+
         print(f"\n{'='*60}")
         print(f"PROCESSING {len(data_sources)} FILE(S)")
         print(f"{'='*60}")
-        
+
         for idx, data_source in enumerate(data_sources, 1):
             print(f"\n[{idx}/{len(data_sources)}] Processing: {data_source}")
             print("-" * 60)
-            
+
             try:
                 cleaned_df, errors_df = fetch_and_clean_sales_data(data_source)
-                
+
                 # Add source file info to track which file each row came from
-                source_name = os.path.basename(data_source) if not data_source.startswith(('http://', 'https://')) else data_source
-                cleaned_df['_source_file'] = source_name
+                source_name = (
+                    os.path.basename(data_source)
+                    if not data_source.startswith(("http://", "https://"))
+                    else data_source
+                )
+                cleaned_df["_source_file"] = source_name
                 if not errors_df.empty:
-                    errors_df['_source_file'] = source_name
-                
+                    errors_df["_source_file"] = source_name
+
                 all_cleaned_dfs.append(cleaned_df)
                 all_errors_dfs.append(errors_df)
-                
+
                 print(f" Cleaned {len(cleaned_df)} rows from {source_name}")
-                
+
             except Exception as e:
                 print(f"[ERROR] Error processing {data_source}: {str(e)}")
                 import traceback
                 traceback.print_exc()
                 continue
-        
+
         if not all_cleaned_dfs:
             raise ValueError("No files were successfully processed!")
-        
+
         print(f"\n{'='*60}")
         print("COMBINING ALL CLEANED DATA")
         print(f"{'='*60}")
-        
+
         combined_cleaned_df = pd.concat(all_cleaned_dfs, ignore_index=True)
-        combined_errors_df = pd.concat(all_errors_dfs, ignore_index=True) if all_errors_dfs else pd.DataFrame()
-        
+        combined_errors_df = (
+            pd.concat(all_errors_dfs, ignore_index=True) if all_errors_dfs else pd.DataFrame()
+        )
+
         print(f" Combined {len(all_cleaned_dfs)} file(s) into {len(combined_cleaned_df)} total rows")
-        print(f"  Breakdown by file:")
-        for df in all_cleaned_dfs:
-            source = df['_source_file'].iloc[0] if '_source_file' in df.columns and len(df) > 0 else 'unknown'
-            print(f"    - {source}: {len(df)} rows")
-        
+        print("  Breakdown by file:")
+        for df_tmp in all_cleaned_dfs:
+            source = (
+                df_tmp["_source_file"].iloc[0]
+                if "_source_file" in df_tmp.columns and len(df_tmp) > 0
+                else "unknown"
+            )
+            print(f"    - {source}: {len(df_tmp)} rows")
+
         # Remove the helper column before saving
-        if '_source_file' in combined_cleaned_df.columns:
-            combined_cleaned_df = combined_cleaned_df.drop(columns=['_source_file'])
-        if '_source_file' in combined_errors_df.columns:
-            combined_errors_df = combined_errors_df.drop(columns=['_source_file'])
+        if "_source_file" in combined_cleaned_df.columns:
+            combined_cleaned_df = combined_cleaned_df.drop(columns=["_source_file"])
+        if "_source_file" in combined_errors_df.columns:
+            combined_errors_df = combined_errors_df.drop(columns=["_source_file"])
 
         save_cleaned_data(combined_cleaned_df, output_file_path)
-        errors_file = output_file_path.replace('.csv', '_errors.csv')
+        errors_file = output_file_path.replace(".csv", "_errors.csv")
         save_error_report(combined_errors_df, errors_file)
 
-        print(f"\n[SUCCESS] Data cleaning completed successfully!")
+        print("\n[SUCCESS] Data cleaning completed successfully!")
         print(f"[FILE] Combined output file: {output_file_path}")
         print(f"[FILE] Total cleaned rows: {len(combined_cleaned_df)}")
 
@@ -1315,30 +1330,32 @@ if __name__ == "__main__":
         print(f"\n[LOADING] Loading combined cleaned data into Postgres (CAPSTONE)...")
         run_id = run_full_load(
             file_name=file_name_for_run,
-            raw_df=combined_cleaned_df,       # <-- use raw_df
-            ensure_schema_once=False
+            raw_df=combined_cleaned_df,
+            ensure_schema_once=False,
         )
 
         print(f"[SUCCESS] ETL load completed. run_id = {run_id}")
-        print(f"   Loaded {len(combined_cleaned_df)} rows from {len(data_sources)} source file(s)", file=sys.stderr)
+        print(
+            f"   Loaded {len(combined_cleaned_df)} rows from {len(data_sources)} source file(s)",
+            file=sys.stderr,
+        )
 
-        print(json.dumps({
-            "success": True,
-            "message": f"Successfully processed {len(data_sources)} file(s) and loaded {len(combined_cleaned_df)} rows",
-            "cleanedFile": output_file_path,
-            "rowsProcessed": len(combined_cleaned_df),
-            "filesProcessed": len(data_sources),
-            "runId": run_id
-        }))
-
-
+        print(
+            json.dumps(
+                {
+                    "success": True,
+                    "message": f"Successfully processed {len(data_sources)} file(s) and loaded {len(combined_cleaned_df)} rows",
+                    "cleanedFile": output_file_path,
+                    "rowsProcessed": len(combined_cleaned_df),
+                    "filesProcessed": len(data_sources),
+                    "runId": run_id,
+                }
+            )
+        )
 
     except Exception as e:
         print(f"[ERROR] Error occurred: {str(e)}", file=sys.stderr)
         import traceback
         traceback.print_exc(file=sys.stderr)
-        print(json.dumps({
-            "success": False,
-            "error": str(e)
-        }))
+        print(json.dumps({"success": False, "error": str(e)}))
         sys.exit(1)
