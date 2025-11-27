@@ -1,3 +1,8 @@
+ENV OPENBLAS_NUM_THREADS=1
+ENV OMP_NUM_THREADS=1
+ENV MKL_NUM_THREADS=1
+ENV NUMBA_NUM_THREADS=1
+
 FROM node:18-alpine
 
 # Install Python 3, pip, and build deps for psycopg2
@@ -23,6 +28,9 @@ RUN npm install
 
 # Copy project
 COPY . .
+
+# Ensure cleaned directory exists
+RUN mkdir -p /app/backend/cleaned
 
 # Frontend: install deps AND build to /app/frontend/dist
 RUN cd frontend && npm install && npm run build

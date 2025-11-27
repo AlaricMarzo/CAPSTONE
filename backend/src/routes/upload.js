@@ -114,8 +114,7 @@ async function processUpload(jobId, files) {
     if (!fs.existsSync(cleanedDir)) fs.mkdirSync(cleanedDir, { recursive: true })
 
     const uploadedFiles = files.map((file) => file.path)
-    const timestamp = Date.now()
-    const outputPath = path.join(cleanedDir, `combined_cleaned_${timestamp}.csv`)
+    const outputPath = path.join(cleanedDir, "cleaned_sales_data_combined.csv")
     const cleanScriptPath = path.join(__dirname, "../../scripts/clean_data.py")
 
     console.log("[Backend] Starting data cleaning and loading...")
@@ -212,17 +211,35 @@ router.post("/upload", upload.array("files", 10), async (req, res) => {
   }
 })
 
-// Simple job status route so the frontend polling doesn't 404
-// Since we process synchronously, we just report "completed".
-router.get("/job/:jobId", (req, res) => {
-  const { jobId } = req.params;
+// Job status route for frontend polling
+router.get("/job/:jobId", async (req, res) => {
+  try {
+    const { jobId } = req.params
 
-  return res.json({
-    success: true,
-    jobId,
-    status: "completed",
-    message: "Processing completed.",
-  });
+    // Check in-memory first
+    let job = jobs.get(jobId)
+
+    // If not found in memory, check database
+    if (!job) {
+      job = await getJobFromDB(jobId)
+    }
+
+    if (!job) {
+      return res.status(404).json({ error: "Job not found" })
+    }
+
+    res.json({
+      success: true,
+      jobId,
+      status: job.status,
+      message: job.message,
+      progress: job.progress,
+      ...job
+    })
+  } catch (error) {
+    console.error("[Backend] Job status error:", error)
+    res.status(500).json({ error: "Failed to get job status", details: error.message })
+  }
 });
 
 // Job status endpoint

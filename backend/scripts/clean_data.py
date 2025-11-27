@@ -1078,7 +1078,6 @@ def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
     return filename
 
 # Replaced browse_for_file with browse_for_files
-# Replaced browse_for_file with browse_for_files
 def browse_for_files():
     """Browse for multiple CSV files (local desktop use only)."""
     try:
@@ -1239,18 +1238,18 @@ if __name__ == "__main__":
         elif len(sys.argv) == 2:
             # Single argument → treat as input file, use default output name
             data_sources = [sys.argv[1]]
-            output_file_path = "cleaned_sales_data_combined.csv"
+            output_file_path = "/app/backend/cleaned/cleaned_sales_data_combined.csv"
             print("Using 1 data source from command line")
         elif NON_INTERACTIVE:
             print("Running in NON_INTERACTIVE mode...")
             data_sources = [default_url]
-            output_file_path = "cleaned_sales_data_combined.csv"
+            output_file_path = "/app/backend/cleaned/cleaned_sales_data_combined.csv"
         else:
             data_sources = get_data_sources()
             if not data_sources:
                 print("No data sources provided. Using default test data...")
                 data_sources = [default_url]
-            output_file_path = "cleaned_sales_data_combined.csv"
+            output_file_path = "/app/backend/cleaned/cleaned_sales_data_combined.csv"
 
         # -------- CLEAN MULTIPLE FILES --------
         all_cleaned_dfs = []
