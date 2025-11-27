@@ -76,7 +76,7 @@ export default function PredictiveAnalytics() {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/predictive")
+        const response = await fetch("/api/analytics/predictive")
         if (!response.ok) throw new Error("Failed to fetch predictive analytics")
         const result = await response.json()
         setData(result.data)
