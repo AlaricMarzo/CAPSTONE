@@ -1,9 +1,10 @@
-ENV OPENBLAS_NUM_THREADS=1
-ENV OMP_NUM_THREADS=1
-ENV MKL_NUM_THREADS=1
-ENV NUMBA_NUM_THREADS=1
-
 FROM node:18-alpine
+
+# Limit NumPy / OpenBLAS threads so Railway doesn't explode
+ENV OPENBLAS_NUM_THREADS=1 \
+    OMP_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    NUMBA_NUM_THREADS=1
 
 # Install Python 3, pip, and build deps for psycopg2
 RUN apk add --no-cache python3 py3-pip python3-dev postgresql-dev gcc musl-dev
