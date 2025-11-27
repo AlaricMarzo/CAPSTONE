@@ -22,9 +22,13 @@ app.use("/api/analytics", analyticsRouter)
 // Serve static files from the frontend dist directory
 app.use(express.static(path.join(process.cwd(), '../frontend/dist')))
 
-// Catch-all handler: send back index.html for any non-API routes (for SPA routing)
-app.get('*', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '../frontend/dist/index.html'));
+// Catch-all handler: send back index.html for any non-API GET routes (for SPA routing)
+app.use((req, res, next) => {
+  if (req.method === 'GET' && !req.path.startsWith('/api') && !req.path.startsWith('/health')) {
+    res.sendFile(path.join(process.cwd(), '../frontend/dist/index.html'));
+  } else {
+    next();
+  }
 });
 
 import multer from "multer";
