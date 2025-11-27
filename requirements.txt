@@ -1,7 +1,19 @@
-pandas
-requests
+# Core scientific stack
 numpy
-psycopg2==2.9.9
+pandas
+scipy
+
+# Database + env
+psycopg2-binary
 python-dotenv
-matplotlib
+requests
+
+# Excel / file handling
 openpyxl
+
+# Plotting
+matplotlib
+seaborn
+
+# Machine learning (DBSCAN, clustering, etc.)
+scikit-learn
