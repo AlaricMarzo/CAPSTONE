@@ -142,7 +142,7 @@ async function processUpload(jobId, files) {
     await saveJobToDB(jobId, jobData5)
 
     // Run the Python cleaning script
-    const pythonProcess = spawn("python", [cleanScriptPath, ...uploadedFiles, outputPath], {
+    const pythonProcess = spawn("python3", [cleanScriptPath, ...uploadedFiles, outputPath], {
       stdio: ["ignore", "pipe", "pipe"],
     })
 

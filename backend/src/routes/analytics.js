@@ -1011,7 +1011,7 @@
       }
 
       return new Promise((resolve) => {
-        const pythonProcess = spawn("python", ["descriptive.py"], {
+        const pythonProcess = spawn("python3", ["descriptive.py"], {
           cwd: descriptiveDir,
           stdio: ["ignore", "pipe", "pipe"],
         })
@@ -1062,7 +1062,7 @@
       }
 
       return new Promise((resolve) => {
-        const pythonProcess = spawn("python", [scriptPath], {
+        const pythonProcess = spawn("python3", [scriptPath], {
           cwd: path.join(__dirname, "../analytics"),
           stdio: ["ignore", "pipe", "pipe"],
         })
@@ -1114,7 +1114,7 @@
       }
 
       return new Promise((resolve) => {
-        const pythonProcess = spawn("python", ["prescriptive.py"], {
+        const pythonProcess = spawn("python3", ["prescriptive.py"], {
           cwd: prescriptiveDir,
           stdio: ["ignore", "pipe", "pipe"],
         })

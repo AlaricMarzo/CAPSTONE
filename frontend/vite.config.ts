@@ -10,11 +10,11 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     proxy: mode === 'production' ? undefined : {
       '/api': {
-        target: 'http://localhost:5050',
+        target: 'http://localhost:8080',
         changeOrigin: true,
       },
       '/descriptive_output': {
-        target: 'http://localhost:5050',
+        target: 'http://localhost:8080',
         changeOrigin: true,
       },
     },
