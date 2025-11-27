@@ -1,9 +1,9 @@
 FROM node:18-alpine
 
-# Install Python 3 + pip
+# Install Python and pip
 RUN apk add --no-cache python3 py3-pip
 
-# Create symlinks so "python" and "python3" both work
+# Symlinks for python / python3
 RUN ln -s /usr/bin/python3 /usr/local/bin/python \
     && ln -s /usr/bin/python3 /usr/local/bin/python3
 
@@ -13,21 +13,21 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 WORKDIR /app
 
-# Install Python dependencies inside venv
+# Python deps (inside venv)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install root Node dependencies
+# Root Node deps
 COPY package*.json .
 RUN npm install
 
-# Copy full project
+# Copy project
 COPY . .
 
-# Install frontend dependencies
-RUN cd frontend && npm install
+# Frontend: install deps AND build to /app/frontend/dist
+RUN cd frontend && npm install && npm run build
 
-# Install backend dependencies
+# Backend deps
 RUN cd backend && npm install
 
 WORKDIR /app/backend
