@@ -4,8 +4,6 @@ from io import StringIO
 import re
 import os
 import sys
-import tkinter as tk
-from tkinter import filedialog
 from datetime import datetime
 import json  # Added json import for JSON output
 
@@ -1080,16 +1078,21 @@ def save_cleaned_data(df, filename='cleaned_sales_data.csv'):
     return filename
 
 # Replaced browse_for_file with browse_for_files
+# Replaced browse_for_file with browse_for_files
 def browse_for_files():
-    """Browse for multiple CSV files"""
+    """Browse for multiple CSV files (local desktop use only)."""
     try:
+        # Lazy import so production (without tkinter) does not fail at startup
+        import tkinter as tk
+        from tkinter import filedialog
+
         root = tk.Tk()
         root.withdraw()
         root.attributes('-topmost', True)
         print("Opening file browser for multiple files...")
         file_paths = filedialog.askopenfilenames(
             title="Select CSV Data Files (you can select multiple)",
-            filetypes=[("CSV files", "*.csv"),("All files", "*.*")],
+            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
             initialdir=os.getcwd()
         )
         root.destroy()
@@ -1102,9 +1105,10 @@ def browse_for_files():
             print("No files selected.")
             return []
     except Exception as e:
-        print(f"Error opening file browser: {e}")
-        print("File browser not available. Please enter file paths manually.")
+        print(f"Error opening file browser: {e}", file=sys.stderr)
+        print("File browser not available. Please enter file paths manually.", file=sys.stderr)
         return []
+
 
 # Replaced get_data_source with get_data_sources
 def get_data_sources():
