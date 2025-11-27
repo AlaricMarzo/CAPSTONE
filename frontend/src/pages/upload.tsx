@@ -43,7 +43,13 @@ export default function DataUploadPage() {
           cleaningResults: data.cleaningResults,
           message: data.message,
           runId: jobId,
-          rowsProcessed: data.cleaningResults?.rowsProcessed || 0,
+          rowsProcessed:
+            data.cleaningResults?.rowsInserted ??
+            data.cleaningResults?.rowsLoaded ??
+            data.cleaningResults?.rows ??
+            data.rowsInserted ??
+            data.rowsLoaded ??
+            0,
         });
 
         if (data.status === "completed" || data.status === "failed") {
