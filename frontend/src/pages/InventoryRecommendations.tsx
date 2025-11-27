@@ -84,26 +84,26 @@ export default function InventoryRecommendations() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true)
-        const response = await fetch("http://localhost:5050/api/analytics/prescriptive")
-        if (!response.ok) throw new Error("Failed to fetch inventory recommendations")
-        const result = await response.json()
-        const processedData = {
-          ...result.data,
-          key_metrics: result.data?.key_metrics || { total_products_optimized: 0, total_models: 0, total_cost_savings: 0 },
-          financial_summary: result.data?.financial_summary || { total_sales: 0, total_cost: 0, total_profit: 0, overall_profit_margin_pct: 0, total_quantity_sold: 0 }
-        }
-        setData(processedData)
-        setError(null)
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred")
-        console.error("[v0] Error fetching inventory data:", err)
-      } finally {
-        setLoading(false)
+  const fetchData = async () => {
+    try {
+      setLoading(true)
+      const response = await fetch("/api/analytics/prescriptive")
+      if (!response.ok) throw new Error("Failed to fetch inventory recommendations")
+      const result = await response.json()
+      const processedData = {
+        ...result.data,
+        key_metrics: result.data?.key_metrics || { total_products_optimized: 0, total_models: 0, total_cost_savings: 0 },
+        financial_summary: result.data?.financial_summary || { total_sales: 0, total_cost: 0, total_profit: 0, overall_profit_margin_pct: 0, total_quantity_sold: 0 }
       }
+      setData(processedData)
+      setError(null)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred")
+      console.error("[v0] Error fetching inventory data:", err)
+    } finally {
+      setLoading(false)
     }
+  }
 
     fetchData()
     const handleUpdate = () => fetchData()
