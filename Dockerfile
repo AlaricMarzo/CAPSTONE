@@ -24,10 +24,6 @@ RUN cd backend && npm install
 
 # Copy source code
 COPY frontend/ ./frontend/
-COPY backend/ ./backend/
-
-# Build the frontend (backend doesn't have a build script, so skip build:backend)
-RUN npm run build:frontend
 
 # Expose ports
 EXPOSE 8080 5050
