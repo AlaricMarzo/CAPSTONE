@@ -1,7 +1,14 @@
 FROM node:18-alpine
 
+# Install Python 3
+RUN apk add --no-cache python3 py3-pip
+
 # Set working directory
 WORKDIR /app
+
+# Copy Python requirements and install
+COPY requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy root package files and install root dependencies
 COPY package*.json ./
