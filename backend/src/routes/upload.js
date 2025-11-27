@@ -13,6 +13,9 @@ const __dirname = dirname(__filename)
 
 const router = express.Router()
 
+// Create a pool for database connections
+const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL })
+
 // In-memory job storage (fallback)
 const jobs = new Map()
 
@@ -43,37 +46,49 @@ async function saveJobToDB(jobId, jobData) {
   }
 }
 
+// helper to read job status from DB
 async function getJobFromDB(jobId) {
-  try {
-    const dsn = process.env.DATABASE_URL
-    if (!dsn) return null
+  const query = `
+    SELECT
+      id,
+      status,
+      rows_loaded,
+      total_rows,
+      total_files,
+      message,
+      run_id,
+      created_at,
+      updated_at
+    FROM job_tracking
+    WHERE id = $1
+  `;
 
-    const client = new pg.Client({ connectionString: dsn })
-    await client.connect()
+  const { rows } = await pool.query(query, [jobId]);
 
-    const result = await client.query(`
-      SELECT status, progress, message, data
-      FROM job_status
-      WHERE job_id = $1
-      ORDER BY updated_at DESC
-      LIMIT 1
-    `, [jobId])
-
-    await client.end()
-
-    if (result.rows.length > 0) {
-      const row = result.rows[0]
-      return {
-        status: row.status,
-        progress: row.progress,
-        message: row.message,
-        ...JSON.parse(row.data || '{}')
-      }
-    }
-  } catch (error) {
-    console.error("[Backend] Error getting job from DB:", error)
+  if (!rows.length) {
+    return null;
   }
-  return null
+
+  const row = rows[0];
+
+  // IMPORTANT: do NOT JSON.parse anything here.
+  // If you have a JSON/JSONB column (e.g. "details" or "meta"),
+  // pg already returns it as a JS object.
+  // If you want to surface it, just pass it through directly:
+  //   const details = row.details || row.meta || null;
+
+  return {
+    jobId: row.id,
+    status: row.status,
+    rowsLoaded: row.rows_loaded ?? 0,
+    totalRows: row.total_rows ?? 0,
+    totalFiles: row.total_files ?? 0,
+    message: row.message || "",
+    runId: row.run_id || null,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+    // details, // uncomment if you actually have that column
+  };
 }
 
 // Configure multer for file uploads
@@ -225,20 +240,22 @@ router.get("/job/:jobId", async (req, res) => {
     }
 
     if (!job) {
-      return res.status(404).json({ error: "Job not found" })
+      return res.status(404).json({
+        success: false,
+        message: "Job not found",
+      })
     }
 
-    res.json({
+    return res.json({
       success: true,
-      jobId,
-      status: job.status,
-      message: job.message,
-      progress: job.progress,
-      ...job
+      ...job,
     })
   } catch (error) {
     console.error("[Backend] Job status error:", error)
-    res.status(500).json({ error: "Failed to get job status", details: error.message })
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch job status",
+    })
   }
 });
 
