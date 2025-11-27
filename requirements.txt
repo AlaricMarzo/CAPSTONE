@@ -17,3 +17,14 @@ seaborn
 
 # Machine learning (DBSCAN, clustering, etc.)
 scikit-learn
+
+# Time series and forecasting
+statsmodels
+
+# Gradient boosting
+xgboost
+
+# Additional date/time utilities
+python-dateutil
+pytz
+tzdata

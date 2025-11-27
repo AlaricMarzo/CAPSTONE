@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid"
 import pg from "pg"
 import { fileURLToPath } from "url"
 import { dirname } from "path"
+import { runDescriptiveAnalytics, runPredictiveAnalytics, runPrescriptiveAnalytics } from "./analytics.js"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
