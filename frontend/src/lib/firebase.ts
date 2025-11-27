@@ -3,12 +3,13 @@ import { initializeApp, type FirebaseOptions } from "firebase/app";
 import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  apiKey: "AIzaSyB_lxDmzlur2YjtOGeQCuzVoUf4Z2hkQOw",
+  authDomain: "capstone-b22c7.firebaseapp.com",
+  projectId: "capstone-b22c7",
+  appId: "1:967980569103:web:2c80aa5743ad572248c97a",
+  messagingSenderId: "967980569103",
+  storageBucket: "capstone-b22c7.firebasestorage.app",
+  measurementId: "G-06DRV5ZKHM"
 } satisfies FirebaseOptions;
 
 // Debug: Check if env vars are loaded
