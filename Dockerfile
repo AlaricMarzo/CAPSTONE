@@ -7,7 +7,9 @@ ENV OPENBLAS_NUM_THREADS=1 \
     NUMBA_NUM_THREADS=1
 
 # Install Python 3, pip, and build deps for psycopg2
-RUN apt-get update && apt-get install -y python3 python3-pip python3-dev postgresql-dev gcc build-essential
+RUN apt-get update && apt-get install -y \
+    python3 python3-pip python3-dev libpq-dev gcc build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 # Symlinks for python / python3
 RUN ln -s /usr/bin/python3 /usr/local/bin/python \
@@ -35,11 +37,3 @@ RUN mkdir -p /app/backend/cleaned
 
 # Frontend: install deps AND build to /app/frontend/dist
 RUN cd frontend && npm install && npm run build
-
-# Backend deps
-RUN cd backend && npm install
-
-WORKDIR /app/backend
-EXPOSE 8080
-
-CMD ["npm", "start"]
