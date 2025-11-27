@@ -114,7 +114,7 @@
   {
     "year":2022,
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -3628,7 +3628,7 @@
   {
     "year":2022,
     "item_code":"4806506315428",
-    "description":"LAMPEIN JUMBO PACK L 54s",
+    "description":"LAMPEIN JUMBO PACK L 54S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE"
   },
@@ -4720,7 +4720,7 @@
   {
     "year":2022,
     "item_code":"4800011133430",
-    "description":"EFFICASCENT OIL EXTRA-S (METHYLSALICYLATE CHAMPOR + MENTHOL) 50ML",
+    "description":"EFFICASCENT OIL EXTRA STRENGTH 50ML",
     "category":"GALENICALS AND SOLUTIONS",
     "tab":"MED-SURG"
   },
@@ -6854,13 +6854,6 @@
   },
   {
     "year":2022,
-    "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2022,
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -6870,6 +6863,13 @@
     "year":2022,
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "year":2022,
+    "item_code":"4800489114344",
+    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -9010,6 +9010,13 @@
   },
   {
     "year":2022,
+    "item_code":"4806502850022",
+    "description":"SYMDEX D 60ML SYR",
+    "category":"RESPIRATORY",
+    "tab":"OTC"
+  },
+  {
+    "year":2022,
     "item_code":"4806502850015",
     "description":"SYMDEX D FORTE TAB",
     "category":"RESPIRATORY",
@@ -9026,13 +9033,6 @@
     "year":2022,
     "item_code":"4806502850039",
     "description":"SYMDEX DROPS 10ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC"
-  },
-  {
-    "year":2022,
-    "item_code":"4806502850022",
-    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC"
   },
@@ -9102,7 +9102,7 @@
   {
     "year":2022,
     "item_code":"4806523302500",
-    "description":"VENTREX-G (SALBUTAMOL + GUAIFENESIN) 2MG\/100MG CAP",
+    "description":"VENTREX (SALBUTAMOL) 2MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS"
   },
@@ -11089,17 +11089,17 @@
   },
   {
     "year":2022,
+    "item_code":"4806502367223",
+    "description":"FERN C PLUS (ASCORBIC ACID+ZINC) CAP",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2022,
     "item_code":"4806502367384",
     "description":"FERN-C GOLD CAP",
     "category":"VITAMINS",
     "tab":"GENERICS"
-  },
-  {
-    "year":2022,
-    "item_code":"4806502367223",
-    "description":"FERN-C PLUS CAP",
-    "category":"VITAMINS",
-    "tab":"OTC"
   },
   {
     "year":2022,
@@ -11321,7 +11321,7 @@
   {
     "year":2022,
     "item_code":"4806501130125",
-    "description":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "description":"MEDIFORTAN(AS)CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -11537,6 +11537,13 @@
   },
   {
     "year":2022,
+    "item_code":"4800204044727",
+    "description":"POTEN CEE NON-ACIDIC (SODIUM ASCORBATE) 562.50MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2022,
     "item_code":"4806032201004",
     "description":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
     "category":"VITAMINS",
@@ -11544,15 +11551,8 @@
   },
   {
     "year":2022,
-    "item_code":"4800204044727",
-    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2022,
     "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
+    "description":"POTEN CEE SUGAR COATED 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -12210,7 +12210,7 @@
   {
     "year":2023,
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -12584,13 +12584,6 @@
     "description":"DAZOMET TAB 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"100020009",
-    "description":"DIALOX (CLOXACILLIN) 250MG 60ML SUSPENSION",
-    "category":"ANTIBIOTICS",
-    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -13084,13 +13077,6 @@
   },
   {
     "year":2023,
-    "item_code":"4806520800610",
-    "description":"SANTE BARLEY POWDER 3G SACH",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
     "item_code":"4800308765108",
     "description":"SILGRAM 750MG",
     "category":"ANTIBIOTICS",
@@ -13309,7 +13295,7 @@
   {
     "year":2023,
     "item_code":"4800316227018",
-    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "description":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -13401,13 +13387,6 @@
     "year":2023,
     "item_code":"8964001206149",
     "description":"GETRYL (GLIMEPIRIDE) 2MG TAB",
-    "category":"ANTIDIABETICS",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"8964001206163",
-    "description":"GETRYL TAB 4MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION"
   },
@@ -13532,13 +13511,6 @@
   },
   {
     "year":2023,
-    "item_code":"8964001206187",
-    "description":"INSUGET N INJECTION (ISOPHANE INSULIN HUMAN) RDNA",
-    "category":"ANTIDIABETICS",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
     "item_code":"4800489118250",
     "description":"JANUMET (SITAGLIPTIN + METFORMIN) 50MG\/500MG TAB",
     "category":"ANTIDIABETICS",
@@ -13548,13 +13520,6 @@
     "year":2023,
     "item_code":"4800489426577",
     "description":"JANUMET 50\/1000MG TAB",
-    "category":"ANTIDIABETICS",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"4800489120079",
-    "description":"JANUMET XR (SITAGLIPTIN+METFORMIN) 100MG ER TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION"
   },
@@ -14232,6 +14197,13 @@
   },
   {
     "year":2023,
+    "item_code":"4806508830318",
+    "description":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2023,
     "item_code":"1900010074",
     "description":"ATORSAPH-10 (ATORVASTATIN) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
@@ -14631,13 +14603,6 @@
   },
   {
     "year":2023,
-    "item_code":"4806508830318",
-    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2023,
     "item_code":"4806520351105",
     "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
     "category":"CARDIOVASCULAR",
@@ -14675,13 +14640,6 @@
     "year":2023,
     "item_code":"1000200122",
     "description":"HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2023,
-    "item_code":"4809015596241",
-    "description":"HEMOBAS (TRANEXAMIC ACID) 100MG\/ML 5ML AMP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS"
   },
@@ -14773,13 +14731,6 @@
     "year":2023,
     "item_code":"4806518970264",
     "description":"ISMODIN 60MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2023,
-    "item_code":"4800304051489",
-    "description":"ISORDIL ORAL TAB 10MG",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS"
   },
@@ -15352,13 +15303,6 @@
   },
   {
     "year":2023,
-    "item_code":"68486235449",
-    "description":"SOCORRO (ISOSORBIDE DINITRATE) 5MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2023,
     "item_code":"4806524787047",
     "description":"SORBANCE-5 (ISOSORBIDE DINITRATRE) 5MG TAB",
     "category":"CARDIOVASCULAR",
@@ -15391,13 +15335,6 @@
     "description":"STABETA 40 (PROPRANOLOL HCI) 40 MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"8902269001137",
-    "description":"SWICH 200MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -15814,13 +15751,6 @@
   },
   {
     "year":2023,
-    "item_code":"82234584",
-    "description":"SANICARE BATHROOM TISSUE 4S",
-    "category":"COTTONS AND HYGIENE",
-    "tab":"HOUSEHOLD GOODS"
-  },
-  {
-    "year":2023,
     "item_code":"4806502352397",
     "description":"SANICARE CLEANSING WIPES - ALOE 15 SHEETS",
     "category":"COTTONS AND HYGIENE",
@@ -16074,13 +16004,6 @@
   {
     "year":2023,
     "item_code":"4800333160824",
-    "description":"DERMOVATE CREAM 5G",
-    "category":"DERMATOLOGICALS",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"4800333160848",
     "description":"DERMOVATE CREAM 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION"
@@ -16613,7 +16536,7 @@
   {
     "year":2023,
     "item_code":"4806506315428",
-    "description":"LAMPEIN JUMBO PACK L 54s",
+    "description":"LAMPEIN JUMBO PACK L 54S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE"
   },
@@ -17081,13 +17004,6 @@
   },
   {
     "year":2023,
-    "item_code":"40848630996",
-    "description":"GAUZE ROLL",
-    "category":"DISPOSABLES",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
     "item_code":"4806530871211",
     "description":"INDOPLAS DISP SYRINGE 1CC",
     "category":"DISPOSABLES",
@@ -17104,6 +17020,13 @@
     "year":2023,
     "item_code":"480011517018",
     "description":"MAMA&#039;S LOVE ABS COTTON 10GM",
+    "category":"DISPOSABLES",
+    "tab":"PERSONAL CARE"
+  },
+  {
+    "year":2023,
+    "item_code":"480011501086",
+    "description":"MAMA&#039;S LOVE ABS COTTON BALL 100&#039;S",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE"
   },
@@ -17127,13 +17050,6 @@
     "description":"MICROPORE 1\/2 INCH",
     "category":"DISPOSABLES",
     "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
-    "item_code":"480011501086",
-    "description":"ML ABS COTTON BALL 100&#039;S",
-    "category":"DISPOSABLES",
-    "tab":"PERSONAL CARE"
   },
   {
     "year":2023,
@@ -17691,7 +17607,7 @@
   {
     "year":2023,
     "item_code":"8906070820499",
-    "description":"RENO DIET-HP 32G",
+    "description":"RENODIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -17880,7 +17796,7 @@
   {
     "year":2023,
     "item_code":"4800011133430",
-    "description":"EFFICASCENT OIL EXTRA-S (METHYLSALICYLATE CHAMPOR + MENTHOL) 50ML",
+    "description":"EFFICASCENT OIL EXTRA STRENGTH 50ML",
     "category":"GALENICALS AND SOLUTIONS",
     "tab":"MED-SURG"
   },
@@ -18125,7 +18041,7 @@
   {
     "year":2023,
     "item_code":"4806517790375",
-    "description":"ANTAXID 40MG TAB",
+    "description":"ANTAXID (PANTAPRAZOLE) 40MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION"
   },
@@ -19720,13 +19636,6 @@
   },
   {
     "year":2023,
-    "item_code":"37297627971",
-    "description":"I.V CANNULA G22",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
     "item_code":"G31498432",
     "description":"I.V CANNULA G24",
     "category":"NEEDLES AND TUBINGS",
@@ -19799,13 +19708,6 @@
     "year":2023,
     "item_code":"32299253505",
     "description":"NGT F18",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
-    "item_code":"11593277501",
-    "description":"NGT FR8",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG"
   },
@@ -19897,20 +19799,6 @@
     "year":2023,
     "item_code":"72574300",
     "description":"TUDOR MACRO & INFUSION SET1ML=60GTT ADULT",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
-    "item_code":"55054072",
-    "description":"TUDOR MICRO & INFUSION SET1ML=60GTT PEDIA",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
-    "item_code":"9757231134",
-    "description":"Z-CANCARE IV CATH G24",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG"
   },
@@ -20280,13 +20168,6 @@
   },
   {
     "year":2023,
-    "item_code":"4717237612116",
-    "description":"ANKLE SUPPORT SMALL ES-901",
-    "category":"ORTHO SUPPORT",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
     "item_code":"606722893032",
     "description":"ARM SLING L",
     "category":"ORTHO SUPPORT",
@@ -20406,13 +20287,6 @@
   },
   {
     "year":2023,
-    "item_code":"71078465",
-    "description":"PHILADELPHIA ADJUSTABLE FITS ALL COLLAR",
-    "category":"ORTHO SUPPORT",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
     "item_code":"6582773211",
     "description":"STRESS BALL",
     "category":"ORTHO SUPPORT",
@@ -20436,13 +20310,6 @@
     "year":2023,
     "item_code":"500010127",
     "description":"TRIANGULAR BANDAGE",
-    "category":"ORTHO SUPPORT",
-    "tab":"MED-SURG"
-  },
-  {
-    "year":2023,
-    "item_code":"4717237078844",
-    "description":"WRIST BRACE IM WH301 L",
     "category":"ORTHO SUPPORT",
     "tab":"MED-SURG"
   },
@@ -20546,13 +20413,6 @@
   },
   {
     "year":2023,
-    "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -20562,6 +20422,13 @@
     "year":2023,
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "year":2023,
+    "item_code":"4800489114344",
+    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -20798,13 +20665,6 @@
   },
   {
     "year":2023,
-    "item_code":"9314057012925",
-    "description":"DIFFLAM STRAWBERRY (BENZYDAMINE HCL+CETYLPYRIDINIUM CL) 3MG\/1.33 LOZ",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
     "item_code":"27161753",
     "description":"DOCOR 250 (HYDROCORTISONE SODIUM SUCCINATE) 250MG\/ML VIAL",
     "category":"PAIN MANAGEMENT",
@@ -20949,13 +20809,6 @@
     "description":"FLANAX FORTE 550MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"4806533600603",
-    "description":"FUKOLAC (KETOROLAC) 30mg\/mL amp",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -21442,13 +21295,6 @@
   },
   {
     "year":2023,
-    "item_code":"8712045001479",
-    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2023,
     "item_code":"8995201800455",
     "description":"TEMPRA 100MG\/ML DROPS 15ML (ORANGE",
     "category":"PAIN MANAGEMENT",
@@ -21467,6 +21313,13 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
+  },
+  {
+    "year":2023,
+    "item_code":"8712045001479",
+    "description":"TEMPRA 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -21598,13 +21451,6 @@
     "year":2023,
     "item_code":"4800153151255",
     "description":"BONAKID 1+ 350G",
-    "category":"PEDIATRIC MILK",
-    "tab":"F&B"
-  },
-  {
-    "year":2023,
-    "item_code":"4800153151194",
-    "description":"BONAMIL 6-12 MONTHS 150G",
     "category":"PEDIATRIC MILK",
     "tab":"F&B"
   },
@@ -22275,13 +22121,6 @@
   },
   {
     "year":2023,
-    "item_code":"4806516030540",
-    "description":"BETADINE NASAL SPRAY 20ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
     "item_code":"4806516030199",
     "description":"BETADINE THROAT SPRAY 50ML",
     "category":"RESPIRATORY",
@@ -22314,13 +22153,6 @@
     "description":"BREZU SYR 5MCG\/ML 60ML..",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2023,
-    "item_code":"4806523430739",
-    "description":"BRONAST (MONTELUKAST) 5MG TAB",
-    "category":"RESPIRATORY",
-    "tab":"GENERICS"
   },
   {
     "year":2023,
@@ -23416,13 +23248,6 @@
   },
   {
     "year":2023,
-    "item_code":"4807788676030",
-    "description":"SOLMUX ADVANCE 500MG\/10MG\/5ML 60ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
     "item_code":"4807788557636",
     "description":"SOLMUX BRONCHO (SALBUTAMOL+CARBOCISTEINE) 2MG\/500MG PER 5ML 60ML",
     "category":"RESPIRATORY",
@@ -23500,6 +23325,13 @@
   },
   {
     "year":2023,
+    "item_code":"4806502850022",
+    "description":"SYMDEX D 60ML SYR",
+    "category":"RESPIRATORY",
+    "tab":"OTC"
+  },
+  {
+    "year":2023,
     "item_code":"4806502850015",
     "description":"SYMDEX D FORTE TAB",
     "category":"RESPIRATORY",
@@ -23514,15 +23346,8 @@
   },
   {
     "year":2023,
-    "item_code":"4806502850022",
-    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
     "item_code":"4806521161192",
-    "description":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "description":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION"
   },
@@ -23606,7 +23431,7 @@
   {
     "year":2023,
     "item_code":"4806523302500",
-    "description":"VENTREX-G (SALBUTAMOL + GUAIFENESIN) 2MG\/100MG CAP",
+    "description":"VENTREX (SALBUTAMOL) 2MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS"
   },
@@ -25251,7 +25076,7 @@
   {
     "year":2023,
     "item_code":"4800011586144",
-    "description":"ML ABS COTTON 20GM",
+    "description":"MAMA&#039;S LOVE ABS COTTON 20GM",
     "category":"SPECIAL CATEGORY 1",
     "tab":"PROMOTIONS"
   },
@@ -25803,13 +25628,6 @@
   },
   {
     "year":2023,
-    "item_code":"4807788707154",
-    "description":"ENERVON FILMTAB 30&#039;S PROMO",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
     "item_code":"4806527192664",
     "description":"ENOCEE (ASCORBIC ACID) 500MG TAB",
     "category":"VITAMINS",
@@ -25874,7 +25692,7 @@
   {
     "year":2023,
     "item_code":"4806502367223",
-    "description":"FERN-C PLUS CAP",
+    "description":"FERN C PLUS (ASCORBIC ACID+ZINC) CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -26133,7 +25951,7 @@
   {
     "year":2023,
     "item_code":"4806501130125",
-    "description":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "description":"MEDIFORTAN(AS)CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -26174,6 +25992,13 @@
   },
   {
     "year":2023,
+    "item_code":"4800135012109",
+    "description":"MYRA 400IU 2-WEEK TRIAL PACK 12+2",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2023,
     "item_code":"4800135000328",
     "description":"MYRA 400IU 30s CAP",
     "category":"VITAMINS",
@@ -26183,13 +26008,6 @@
     "year":2023,
     "item_code":"4800135011591",
     "description":"MYRA E (VITAMIN E) 12+2 SULIT PACK",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"4800135012109",
-    "description":"MYRA E 12+2 SULIT PACK",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -26281,13 +26099,6 @@
     "year":2023,
     "item_code":"4807788562166",
     "description":"NUTROPLEX 120ML SYR",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"4807788562128",
-    "description":"NUTROPLEX SYRUP 60ML",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -26419,6 +26230,13 @@
   },
   {
     "year":2023,
+    "item_code":"4800204044727",
+    "description":"POTEN CEE NON-ACIDIC (SODIUM ASCORBATE) 562.50MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2023,
     "item_code":"4800204049838",
     "description":"POTEN CEE NON-ACIDIC 500MG TAB",
     "category":"VITAMINS",
@@ -26433,22 +26251,15 @@
   },
   {
     "year":2023,
+    "item_code":"4800204005612",
+    "description":"POTEN CEE SUGAR COATED 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2023,
     "item_code":"4800204018711",
     "description":"POTEN CEE SUGAR FREE 500MG TAB",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"4800204044727",
-    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2023,
-    "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -27274,7 +27085,7 @@
   {
     "year":2024,
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -28499,7 +28310,7 @@
   {
     "year":2024,
     "item_code":"4800316227018",
-    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "description":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION"
   },
@@ -29947,6 +29758,13 @@
   },
   {
     "year":2024,
+    "item_code":"4806508830318",
+    "description":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2024,
     "item_code":"8904180804453",
     "description":"ATORBET (ATORVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
@@ -30361,13 +30179,6 @@
   {
     "year":2024,
     "item_code":"4806520351105",
-    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2024,
-    "item_code":"4806508830318",
     "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS"
@@ -32419,7 +32230,7 @@
   {
     "year":2024,
     "item_code":"4806506315428",
-    "description":"LAMPEIN JUMBO PACK L 54s",
+    "description":"LAMPEIN JUMBO PACK L 54S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE"
   },
@@ -33013,6 +32824,13 @@
   },
   {
     "year":2024,
+    "item_code":"480011501086",
+    "description":"MAMA&#039;S LOVE ABS COTTON BALL 100&#039;S",
+    "category":"DISPOSABLES",
+    "tab":"PERSONAL CARE"
+  },
+  {
+    "year":2024,
     "item_code":"4800011586151",
     "description":"MAMA&#039;S LOVE ABSORBENT COTTON 40G",
     "category":"DISPOSABLES",
@@ -33038,13 +32856,6 @@
     "description":"MICROPORE 1\/2 INCH",
     "category":"DISPOSABLES",
     "tab":"MED-SURG"
-  },
-  {
-    "year":2024,
-    "item_code":"480011501086",
-    "description":"ML ABS COTTON BALL 100&#039;S",
-    "category":"DISPOSABLES",
-    "tab":"PERSONAL CARE"
   },
   {
     "year":2024,
@@ -35002,7 +34813,7 @@
   {
     "year":2024,
     "item_code":"8906070820499",
-    "description":"RENO DIET-HP 32G",
+    "description":"RENODIET-HP 32G",
     "category":"FOOD",
     "tab":"F&B"
   },
@@ -35401,7 +35212,7 @@
   {
     "year":2024,
     "item_code":"4800011133430",
-    "description":"EFFICASCENT OIL EXTRA-S (METHYLSALICYLATE CHAMPOR + MENTHOL) 50ML",
+    "description":"EFFICASCENT OIL EXTRA STRENGTH 50ML",
     "category":"GALENICALS AND SOLUTIONS",
     "tab":"MED-SURG"
   },
@@ -35695,7 +35506,7 @@
   {
     "year":2024,
     "item_code":"4806517790375",
-    "description":"ANTAXID 40MG TAB",
+    "description":"ANTAXID (PANTAPRAZOLE) 40MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION"
   },
@@ -38557,13 +38368,6 @@
   },
   {
     "year":2024,
-    "item_code":"4800489114344",
-    "description":"ARCOXIA (ETORICOXIB) 90MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION"
-  },
-  {
-    "year":2024,
     "item_code":"4800489114368",
     "description":"ARCOXIA 120MG TAB",
     "category":"PAIN MANAGEMENT",
@@ -38580,6 +38384,13 @@
     "year":2024,
     "item_code":"4800489114320",
     "description":"ARCOXIA 60MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION"
+  },
+  {
+    "year":2024,
+    "item_code":"4800489114344",
+    "description":"ARCOXIA 90MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION"
   },
@@ -39460,13 +39271,6 @@
   },
   {
     "year":2024,
-    "item_code":"8712045001479",
-    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2024,
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
@@ -39492,6 +39296,13 @@
     "description":"TEMPRA 120MG SYRUP 60ML (ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
+  },
+  {
+    "year":2024,
+    "item_code":"8712045001479",
+    "description":"TEMPRA 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
   },
   {
     "year":2024,
@@ -41693,6 +41504,13 @@
   },
   {
     "year":2024,
+    "item_code":"4806502850022",
+    "description":"SYMDEX D 60ML SYR",
+    "category":"RESPIRATORY",
+    "tab":"OTC"
+  },
+  {
+    "year":2024,
     "item_code":"4806502850015",
     "description":"SYMDEX D FORTE TAB",
     "category":"RESPIRATORY",
@@ -41707,15 +41525,8 @@
   },
   {
     "year":2024,
-    "item_code":"4806502850022",
-    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC"
-  },
-  {
-    "year":2024,
     "item_code":"4806521161192",
-    "description":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "description":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION"
   },
@@ -41771,7 +41582,7 @@
   {
     "year":2024,
     "item_code":"4806523302500",
-    "description":"VENTREX-G (SALBUTAMOL + GUAIFENESIN) 2MG\/100MG CAP",
+    "description":"VENTREX (SALBUTAMOL) 2MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS"
   },
@@ -43450,15 +43261,15 @@
   },
   {
     "year":2024,
-    "item_code":"4806529430146",
-    "description":"MARLUXYN MG CAP",
+    "item_code":"4800011586144",
+    "description":"MAMA&#039;S LOVE ABS COTTON 20GM",
     "category":"SPECIAL CATEGORY 1",
     "tab":"PROMOTIONS"
   },
   {
     "year":2024,
-    "item_code":"4800011586144",
-    "description":"ML ABS COTTON 20GM",
+    "item_code":"4806529430146",
+    "description":"MARLUXYN MG CAP",
     "category":"SPECIAL CATEGORY 1",
     "tab":"PROMOTIONS"
   },
@@ -43598,7 +43409,7 @@
   {
     "year":2024,
     "item_code":"4806520890307",
-    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
+    "description":"BEWELL-C 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -44424,7 +44235,7 @@
   {
     "year":2024,
     "item_code":"4806501130125",
-    "description":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "description":"MEDIFORTAN(AS)CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -44738,6 +44549,13 @@
   },
   {
     "year":2024,
+    "item_code":"4800204044727",
+    "description":"POTEN CEE NON-ACIDIC (SODIUM ASCORBATE) 562.50MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2024,
     "item_code":"4800204049838",
     "description":"POTEN CEE NON-ACIDIC 500MG TAB",
     "category":"VITAMINS",
@@ -44745,22 +44563,15 @@
   },
   {
     "year":2024,
+    "item_code":"4800204005612",
+    "description":"POTEN CEE SUGAR COATED 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC"
+  },
+  {
+    "year":2024,
     "item_code":"4800204018711",
     "description":"POTEN CEE SUGAR FREE 500MG TAB",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2024,
-    "item_code":"4800204044727",
-    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
-    "category":"VITAMINS",
-    "tab":"OTC"
-  },
-  {
-    "year":2024,
-    "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -47013,6 +46824,13 @@
   },
   {
     "year":2025,
+    "item_code":"4806508830318",
+    "description":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS"
+  },
+  {
+    "year":2025,
     "item_code":"8906117651642",
     "description":"ATORMED -20 (ATORVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
@@ -47267,13 +47085,6 @@
     "year":2025,
     "item_code":"4806520351099",
     "description":"FUROSEMIDE DM 20MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2025,
-    "item_code":"4806508830318",
-    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS"
   },
@@ -49842,7 +49653,7 @@
   {
     "year":2025,
     "item_code":"4800011133430",
-    "description":"EFFICASCENT OIL EXTRA-S (METHYLSALICYLATE CHAMPOR + MENTHOL) 50ML",
+    "description":"EFFICASCENT OIL EXTRA STRENGTH 50ML",
     "category":"GALENICALS AND SOLUTIONS",
     "tab":"MED-SURG"
   },
@@ -50080,7 +49891,7 @@
   {
     "year":2025,
     "item_code":"4806517790375",
-    "description":"ANTAXID 40MG TAB",
+    "description":"ANTAXID (PANTAPRAZOLE) 40MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION"
   },
@@ -52305,13 +52116,6 @@
   },
   {
     "year":2025,
-    "item_code":"8712045001479",
-    "description":"TEMPRA (PARACETAMOL) 325MG TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"GENERICS"
-  },
-  {
-    "year":2025,
     "item_code":"8995201800462",
     "description":"TEMPRA (PARACETAMOL) STRAWBERRY 120MG\/5ML 60ML",
     "category":"PAIN MANAGEMENT",
@@ -52330,6 +52134,13 @@
     "description":"TEMPRA 100MG\/ML ORANGE 30ML DROPS",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC"
+  },
+  {
+    "year":2025,
+    "item_code":"8712045001479",
+    "description":"TEMPRA 325MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS"
   },
   {
     "year":2025,
@@ -53832,7 +53643,7 @@
   {
     "year":2025,
     "item_code":"4806521161192",
-    "description":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "description":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION"
   },
@@ -53874,7 +53685,7 @@
   {
     "year":2025,
     "item_code":"4806523302500",
-    "description":"VENTREX-G (SALBUTAMOL + GUAIFENESIN) 2MG\/100MG CAP",
+    "description":"VENTREX (SALBUTAMOL) 2MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS"
   },
@@ -54980,7 +54791,7 @@
   {
     "year":2025,
     "item_code":"4806520890307",
-    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
+    "description":"BEWELL-C 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -55449,7 +55260,7 @@
   {
     "year":2025,
     "item_code":"4806501130125",
-    "description":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "description":"MEDIFORTAN(AS)CAP",
     "category":"VITAMINS",
     "tab":"OTC"
   },
@@ -55609,15 +55420,15 @@
   },
   {
     "year":2025,
-    "item_code":"4800204018711",
-    "description":"POTEN CEE SUGAR FREE 500MG TAB",
+    "item_code":"4800204005612",
+    "description":"POTEN CEE SUGAR COATED 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC"
   },
   {
     "year":2025,
-    "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
+    "item_code":"4800204018711",
+    "description":"POTEN CEE SUGAR FREE 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC"
   },

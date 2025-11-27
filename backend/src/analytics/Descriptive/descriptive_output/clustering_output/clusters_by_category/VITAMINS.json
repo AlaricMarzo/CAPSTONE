@@ -6,13 +6,12 @@
     "tab":"OTC",
     "total_qty":6784.0,
     "total_sales":333887.27,
-    "total_profit":59162.47,
     "months_active":17.0,
     "avg_price":49.2168735259,
     "mean_monthly_qty":399.0588235294,
     "cv_monthly_qty":0.4056260955,
     "trend_qty_slope":-7.3995098039,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"1000010057",
@@ -21,13 +20,12 @@
     "tab":"GENERICS",
     "total_qty":159.0,
     "total_sales":6728.0,
-    "total_profit":164.84,
     "months_active":6.0,
     "avg_price":42.3144654088,
     "mean_monthly_qty":26.5,
     "cv_monthly_qty":0.6621718655,
     "trend_qty_slope":6.7142857143,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"11364946142",
@@ -36,13 +34,12 @@
     "tab":"GENERICS",
     "total_qty":49.0,
     "total_sales":155.54,
-    "total_profit":95.74,
     "months_active":8.0,
     "avg_price":3.1742857143,
     "mean_monthly_qty":6.125,
     "cv_monthly_qty":0.8421922564,
     "trend_qty_slope":-0.0119047619,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"18507644589",
@@ -51,13 +48,12 @@
     "tab":"GENERICS",
     "total_qty":272.0,
     "total_sales":8062.5,
-    "total_profit":1534.5,
     "months_active":5.0,
     "avg_price":29.6415441176,
     "mean_monthly_qty":54.4,
     "cv_monthly_qty":0.3386745869,
     "trend_qty_slope":1.3,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"1900010066",
@@ -66,43 +62,40 @@
     "tab":"OTC",
     "total_qty":1961.0,
     "total_sales":7712.56,
-    "total_profit":3855.91,
     "months_active":12.0,
     "avg_price":3.932972973,
     "mean_monthly_qty":163.4166666667,
     "cv_monthly_qty":1.7242906213,
     "trend_qty_slope":-12.6958041958,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"1900010077",
     "description":"CALCISAPH (CALCIUM CARBONATE) 500MG TAB",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":1158.0,
-    "total_sales":2314.5,
-    "total_profit":1705.51,
-    "months_active":14.0,
-    "avg_price":1.9987046632,
-    "mean_monthly_qty":82.7142857143,
-    "cv_monthly_qty":0.466302053,
-    "trend_qty_slope":0.8351648352,
-    "cluster":11
+    "total_qty":1041.0,
+    "total_sales":2072.0,
+    "months_active":13.0,
+    "avg_price":1.9903938521,
+    "mean_monthly_qty":80.0769230769,
+    "cv_monthly_qty":0.48441281,
+    "trend_qty_slope":-0.2747252747,
+    "cluster":2
   },
   {
     "item_code":"1900010217",
     "description":"OSCIVIT (CALCIUM CARBONATE + VIT D3",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":428.0,
-    "total_sales":1834.56,
-    "total_profit":606.42,
-    "months_active":10.0,
-    "avg_price":4.2863551402,
-    "mean_monthly_qty":42.8,
-    "cv_monthly_qty":1.2757009346,
-    "trend_qty_slope":12.0606060606,
-    "cluster":1
+    "total_qty":408.0,
+    "total_sales":1756.16,
+    "months_active":9.0,
+    "avg_price":4.3043137255,
+    "mean_monthly_qty":45.3333333333,
+    "cv_monthly_qty":1.2572024334,
+    "trend_qty_slope":13.8166666667,
+    "cluster":2
   },
   {
     "item_code":"1900010258",
@@ -111,7 +104,6 @@
     "tab":"GENERICS",
     "total_qty":529.0,
     "total_sales":1102.8,
-    "total_profit":831.99,
     "months_active":7.0,
     "avg_price":2.0846880907,
     "mean_monthly_qty":75.5714285714,
@@ -126,13 +118,12 @@
     "tab":"GENERICS",
     "total_qty":4.0,
     "total_sales":175.5,
-    "total_profit":81.42,
     "months_active":4.0,
     "avg_price":43.875,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"22968258",
@@ -141,13 +132,12 @@
     "tab":"OTC",
     "total_qty":34.0,
     "total_sales":1725.5,
-    "total_profit":89.08,
     "months_active":7.0,
     "avg_price":50.75,
     "mean_monthly_qty":4.8571428571,
     "cv_monthly_qty":0.6070519835,
     "trend_qty_slope":1.617950052e-16,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"2345665555556",
@@ -156,7 +146,6 @@
     "tab":"OTC",
     "total_qty":61.0,
     "total_sales":1084.0,
-    "total_profit":150.7,
     "months_active":7.0,
     "avg_price":17.7704918033,
     "mean_monthly_qty":8.7142857143,
@@ -171,13 +160,12 @@
     "tab":"OTC",
     "total_qty":237.0,
     "total_sales":2040.96,
-    "total_profit":140.47,
     "months_active":7.0,
     "avg_price":8.6116455696,
     "mean_monthly_qty":33.8571428571,
     "cv_monthly_qty":0.624244456,
     "trend_qty_slope":-1.0357142857,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"37827618",
@@ -186,43 +174,40 @@
     "tab":"GENERICS",
     "total_qty":46.0,
     "total_sales":115.0,
-    "total_profit":46.92,
     "months_active":1.0,
     "avg_price":2.5,
     "mean_monthly_qty":46.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"38218316",
     "description":"CHERIFER PGM CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":265.0,
-    "total_sales":5300.0,
-    "total_profit":786.27,
-    "months_active":11.0,
+    "total_qty":251.0,
+    "total_sales":5020.0,
+    "months_active":10.0,
     "avg_price":20.0,
-    "mean_monthly_qty":24.0909090909,
-    "cv_monthly_qty":0.8366642815,
-    "trend_qty_slope":1.3272727273,
-    "cluster":-1
+    "mean_monthly_qty":25.1,
+    "cv_monthly_qty":0.8316011372,
+    "trend_qty_slope":1.6545454545,
+    "cluster":2
   },
   {
     "item_code":"38875472",
     "description":"LIVOLIN (PHOSPHOLIPIDS+MULTIVITAMINS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":169.0,
-    "total_sales":4454.8,
-    "total_profit":337.96,
-    "months_active":7.0,
-    "avg_price":26.3597633136,
-    "mean_monthly_qty":24.1428571429,
-    "cv_monthly_qty":0.9239110175,
-    "trend_qty_slope":7.4285714286,
-    "cluster":-1
+    "total_qty":99.0,
+    "total_sales":2494.8,
+    "months_active":6.0,
+    "avg_price":25.2,
+    "mean_monthly_qty":16.5,
+    "cv_monthly_qty":0.793877706,
+    "trend_qty_slope":5.5714285714,
+    "cluster":2
   },
   {
     "item_code":"4019338608921",
@@ -231,13 +216,12 @@
     "tab":"OTC",
     "total_qty":22.0,
     "total_sales":1482.8,
-    "total_profit":-184.8,
     "months_active":2.0,
     "avg_price":67.4,
     "mean_monthly_qty":11.0,
     "cv_monthly_qty":0.3636363636,
     "trend_qty_slope":-8.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4019338608969",
@@ -246,58 +230,54 @@
     "tab":"OTC",
     "total_qty":250.0,
     "total_sales":8799.75,
-    "total_profit":634.75,
     "months_active":12.0,
     "avg_price":35.199,
     "mean_monthly_qty":20.8333333333,
     "cv_monthly_qty":0.5496762684,
     "trend_qty_slope":-1.7342657343,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800135000311",
     "description":"MYRA E 400 CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1296.0,
-    "total_sales":16151.2,
-    "total_profit":1592.1,
-    "months_active":34.0,
-    "avg_price":12.462345679,
-    "mean_monthly_qty":38.1176470588,
-    "cv_monthly_qty":0.5030556493,
-    "trend_qty_slope":-0.4333078686,
-    "cluster":-1
+    "total_qty":1259.0,
+    "total_sales":15688.7,
+    "months_active":33.0,
+    "avg_price":12.4612390786,
+    "mean_monthly_qty":38.1515151515,
+    "cv_monthly_qty":0.5101412684,
+    "trend_qty_slope":-0.4505347594,
+    "cluster":2
   },
   {
     "item_code":"4800135000328",
     "description":"MYRA 400IU 30s CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":34.0,
-    "total_sales":12045.95,
-    "total_profit":658.15,
-    "months_active":17.0,
-    "avg_price":354.2926470588,
-    "mean_monthly_qty":2.0,
-    "cv_monthly_qty":0.4850712501,
-    "trend_qty_slope":-0.0539215686,
-    "cluster":-1
+    "total_qty":33.0,
+    "total_sales":11678.45,
+    "months_active":16.0,
+    "avg_price":353.8924242424,
+    "mean_monthly_qty":2.0625,
+    "cv_monthly_qty":0.4684734798,
+    "trend_qty_slope":-0.0632352941,
+    "cluster":2
   },
   {
     "item_code":"4800135002278",
     "description":"MYRA ULTIMATE CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":47.0,
-    "total_sales":970.06,
-    "total_profit":115.6,
-    "months_active":7.0,
-    "avg_price":20.6395744681,
-    "mean_monthly_qty":6.7142857143,
-    "cv_monthly_qty":0.3623273695,
-    "trend_qty_slope":-0.3571428571,
-    "cluster":4
+    "total_qty":37.0,
+    "total_sales":762.56,
+    "months_active":6.0,
+    "avg_price":20.6097297297,
+    "mean_monthly_qty":6.1666666667,
+    "cv_monthly_qty":0.3554850389,
+    "trend_qty_slope":-0.6571428571,
+    "cluster":2
   },
   {
     "item_code":"4800135002292",
@@ -306,13 +286,12 @@
     "tab":"OTC",
     "total_qty":8.0,
     "total_sales":100.0,
-    "total_profit":17.36,
     "months_active":1.0,
     "avg_price":12.5,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800135010488",
@@ -321,43 +300,40 @@
     "tab":"OTC",
     "total_qty":17.0,
     "total_sales":2533.0,
-    "total_profit":230.35,
     "months_active":7.0,
     "avg_price":149.0,
     "mean_monthly_qty":2.4285714286,
     "cv_monthly_qty":0.5763505277,
     "trend_qty_slope":-0.5,
-    "cluster":5
+    "cluster":2
   },
   {
     "item_code":"4800135011591",
     "description":"MYRA E (VITAMIN E) 12+2 SULIT PACK",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":56.0,
-    "total_sales":8176.0,
-    "total_profit":697.76,
-    "months_active":19.0,
+    "total_qty":55.0,
+    "total_sales":8030.0,
+    "months_active":18.0,
     "avg_price":146.0,
-    "mean_monthly_qty":2.9473684211,
-    "cv_monthly_qty":0.5873887215,
-    "trend_qty_slope":-0.0789473684,
-    "cluster":-1
+    "mean_monthly_qty":3.0555555556,
+    "cv_monthly_qty":0.5612854197,
+    "trend_qty_slope":-0.0691434469,
+    "cluster":2
   },
   {
     "item_code":"4800135012109",
-    "description":"MYRA E 12+2 SULIT PACK",
+    "description":"MYRA 400IU 2-WEEK TRIAL PACK 12+2",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":11.0,
-    "total_sales":1606.0,
-    "total_profit":137.06,
-    "months_active":3.0,
+    "total_qty":8.0,
+    "total_sales":1168.0,
+    "months_active":2.0,
     "avg_price":146.0,
-    "mean_monthly_qty":3.6666666667,
-    "cv_monthly_qty":0.2571297386,
-    "trend_qty_slope":1.0,
-    "cluster":8
+    "mean_monthly_qty":4.0,
+    "cv_monthly_qty":0.25,
+    "trend_qty_slope":2.0,
+    "cluster":2
   },
   {
     "item_code":"4800136800088",
@@ -366,73 +342,68 @@
     "tab":"OTC",
     "total_qty":126.0,
     "total_sales":3465.0,
-    "total_profit":706.86,
     "months_active":14.0,
     "avg_price":27.5,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.985789686,
     "trend_qty_slope":1.0065934066,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4800140001181",
     "description":"BENADRYL SYR 60ML",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":6.0,
-    "total_sales":955.5,
-    "total_profit":154.98,
-    "months_active":6.0,
+    "total_qty":5.0,
+    "total_sales":796.25,
+    "months_active":5.0,
     "avg_price":159.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":7.951207132e-18,
-    "cluster":4
+    "trend_qty_slope":-1.050792074e-16,
+    "cluster":2
   },
   {
     "item_code":"4800153302152",
     "description":"CENTRUM ADVANCE TAB 30",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":29.0,
-    "total_sales":8680.06,
-    "total_profit":1011.7,
-    "months_active":17.0,
-    "avg_price":299.3124137931,
-    "mean_monthly_qty":1.7058823529,
-    "cv_monthly_qty":0.7183678157,
-    "trend_qty_slope":-0.0514705882,
-    "cluster":-1
+    "total_qty":25.0,
+    "total_sales":7432.06,
+    "months_active":16.0,
+    "avg_price":297.2824,
+    "mean_monthly_qty":1.5625,
+    "cv_monthly_qty":0.714422844,
+    "trend_qty_slope":-0.0691176471,
+    "cluster":2
   },
   {
     "item_code":"4800153302169",
     "description":"CENTRUM SILVER ADV TAB 30",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":31.0,
-    "total_sales":11197.14,
-    "total_profit":856.14,
-    "months_active":16.0,
-    "avg_price":361.1980645161,
-    "mean_monthly_qty":1.9375,
-    "cv_monthly_qty":0.4267340824,
-    "trend_qty_slope":0.0426470588,
-    "cluster":-1
+    "total_qty":29.0,
+    "total_sales":10475.14,
+    "months_active":15.0,
+    "avg_price":361.2117241379,
+    "mean_monthly_qty":1.9333333333,
+    "cv_monthly_qty":0.441594775,
+    "trend_qty_slope":0.0464285714,
+    "cluster":2
   },
   {
     "item_code":"4800153302220",
     "description":"CENTRUM(ADVANCE)TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":607.0,
-    "total_sales":6525.25,
-    "total_profit":711.97,
-    "months_active":26.0,
+    "total_qty":543.0,
+    "total_sales":5837.25,
+    "months_active":25.0,
     "avg_price":10.75,
-    "mean_monthly_qty":23.3461538462,
-    "cv_monthly_qty":0.6597298025,
-    "trend_qty_slope":0.8358974359,
-    "cluster":-1
+    "mean_monthly_qty":21.72,
+    "cv_monthly_qty":0.6141908327,
+    "trend_qty_slope":0.88,
+    "cluster":2
   },
   {
     "item_code":"4800153302374",
@@ -441,13 +412,12 @@
     "tab":"OTC",
     "total_qty":15.0,
     "total_sales":4697.0,
-    "total_profit":473.3,
     "months_active":11.0,
     "avg_price":313.1333333333,
     "mean_monthly_qty":1.3636363636,
     "cv_monthly_qty":0.6463573143,
     "trend_qty_slope":-0.0636363636,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800153302541",
@@ -456,13 +426,12 @@
     "tab":"OTC",
     "total_qty":163.0,
     "total_sales":456.75,
-    "total_profit":-541.28,
     "months_active":4.0,
     "avg_price":2.8021472393,
     "mean_monthly_qty":40.75,
     "cv_monthly_qty":0.8819645216,
     "trend_qty_slope":-29.1,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800153556173",
@@ -471,118 +440,110 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":2251.29,
-    "total_profit":-43.01,
     "months_active":5.0,
     "avg_price":225.129,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":-0.3,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
+    "description":"POTEN CEE SUGAR COATED 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1311.0,
-    "total_sales":8795.4,
-    "total_profit":1724.4,
-    "months_active":30.0,
-    "avg_price":6.7089244851,
-    "mean_monthly_qty":43.7,
-    "cv_monthly_qty":0.6449179507,
-    "trend_qty_slope":-0.30189099,
-    "cluster":-1
+    "total_qty":1248.0,
+    "total_sales":8354.4,
+    "months_active":29.0,
+    "avg_price":6.6942307692,
+    "mean_monthly_qty":43.0344827586,
+    "cv_monthly_qty":0.6606792817,
+    "trend_qty_slope":-0.2901477833,
+    "cluster":2
   },
   {
     "item_code":"4800204018711",
     "description":"POTEN CEE SUGAR FREE 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":734.0,
-    "total_sales":4612.75,
-    "total_profit":830.45,
-    "months_active":17.0,
-    "avg_price":6.284400545,
-    "mean_monthly_qty":43.1764705882,
-    "cv_monthly_qty":0.7672610374,
-    "trend_qty_slope":-2.2794117647,
-    "cluster":-1
+    "total_qty":624.0,
+    "total_sales":3842.75,
+    "months_active":16.0,
+    "avg_price":6.1582532051,
+    "mean_monthly_qty":39.0,
+    "cv_monthly_qty":0.7560842409,
+    "trend_qty_slope":-1.5529411765,
+    "cluster":2
   },
   {
     "item_code":"4800204031048",
     "description":"C-LIUM FIBRE CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":50.0,
-    "total_sales":146.4,
-    "total_profit":27.34,
-    "months_active":5.0,
-    "avg_price":2.928,
+    "total_qty":40.0,
+    "total_sales":116.4,
+    "months_active":4.0,
+    "avg_price":2.91,
     "mean_monthly_qty":10.0,
-    "cv_monthly_qty":0.3847076812,
-    "trend_qty_slope":1.3,
-    "cluster":0
+    "cv_monthly_qty":0.4301162634,
+    "trend_qty_slope":2.0,
+    "cluster":2
   },
   {
     "item_code":"4800204031239",
     "description":"C-LIUM FIBER FIBRE SACHET",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":41.0,
-    "total_sales":587.0,
-    "total_profit":108.47,
-    "months_active":7.0,
-    "avg_price":14.3170731707,
-    "mean_monthly_qty":5.8571428571,
-    "cv_monthly_qty":0.5276416501,
-    "trend_qty_slope":5.047894253e-16,
-    "cluster":0
+    "total_qty":31.0,
+    "total_sales":447.0,
+    "months_active":6.0,
+    "avg_price":14.4193548387,
+    "mean_monthly_qty":5.1666666667,
+    "cv_monthly_qty":0.5407436972,
+    "trend_qty_slope":0.1428571429,
+    "cluster":2
   },
   {
     "item_code":"4800204031512",
     "description":"PROPAN W\/IRON CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":667.0,
-    "total_sales":16253.33,
-    "total_profit":306.32,
-    "months_active":29.0,
-    "avg_price":24.3678110945,
-    "mean_monthly_qty":23.0,
-    "cv_monthly_qty":0.7501167803,
-    "trend_qty_slope":-0.6586206897,
-    "cluster":-1
+    "total_qty":602.0,
+    "total_sales":14541.89,
+    "months_active":28.0,
+    "avg_price":24.1559634551,
+    "mean_monthly_qty":21.5,
+    "cv_monthly_qty":0.7250978029,
+    "trend_qty_slope":-0.7208538588,
+    "cluster":2
   },
   {
     "item_code":"4800204044727",
-    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
+    "description":"POTEN CEE NON-ACIDIC (SODIUM ASCORBATE) 562.50MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":383.0,
     "total_sales":2393.75,
-    "total_profit":304.72,
     "months_active":10.0,
     "avg_price":6.25,
     "mean_monthly_qty":38.3,
     "cv_monthly_qty":1.0185478651,
     "trend_qty_slope":-7.2060606061,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4800204049838",
     "description":"POTEN CEE NON-ACIDIC 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":519.0,
-    "total_sales":3634.75,
-    "total_profit":326.57,
-    "months_active":17.0,
-    "avg_price":7.003371869,
-    "mean_monthly_qty":30.5294117647,
-    "cv_monthly_qty":0.790140498,
-    "trend_qty_slope":-0.3921568627,
-    "cluster":-1
+    "total_qty":493.0,
+    "total_sales":3465.75,
+    "months_active":16.0,
+    "avg_price":7.0299188641,
+    "mean_monthly_qty":30.8125,
+    "cv_monthly_qty":0.8060858052,
+    "trend_qty_slope":-0.5102941176,
+    "cluster":2
   },
   {
     "item_code":"4800204506027",
@@ -591,13 +552,12 @@
     "tab":"OTC",
     "total_qty":1424.0,
     "total_sales":6360.89,
-    "total_profit":809.72,
     "months_active":30.0,
     "avg_price":4.4669171348,
     "mean_monthly_qty":47.4666666667,
     "cv_monthly_qty":0.8925183317,
     "trend_qty_slope":0.10189099,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800253243751",
@@ -606,58 +566,54 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":477.5,
-    "total_profit":477.5,
     "months_active":2.0,
     "avg_price":238.75,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800253243836",
     "description":"NEUROBION TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1120.0,
-    "total_sales":24330.06,
-    "total_profit":919.65,
-    "months_active":24.0,
-    "avg_price":21.7232678571,
-    "mean_monthly_qty":46.6666666667,
-    "cv_monthly_qty":1.0499210369,
-    "trend_qty_slope":-3.8234782609,
-    "cluster":-1
+    "total_qty":1102.0,
+    "total_sales":23950.06,
+    "months_active":23.0,
+    "avg_price":21.7332667877,
+    "mean_monthly_qty":47.9130434783,
+    "cv_monthly_qty":1.0368005048,
+    "trend_qty_slope":-4.0079051383,
+    "cluster":2
   },
   {
     "item_code":"4800253243850",
     "description":"DOLO NEUROBION(PARACETAMOL + VITAMIN B1+ VITAMIN B6 + VITAMIN B12) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1072.0,
-    "total_sales":28030.98,
-    "total_profit":-9088.19,
-    "months_active":29.0,
-    "avg_price":26.1483022388,
-    "mean_monthly_qty":36.9655172414,
-    "cv_monthly_qty":0.6244275057,
-    "trend_qty_slope":-0.7034482759,
-    "cluster":-1
+    "total_qty":971.0,
+    "total_sales":25392.03,
+    "months_active":28.0,
+    "avg_price":26.1503913491,
+    "mean_monthly_qty":34.6785714286,
+    "cv_monthly_qty":0.5768307612,
+    "trend_qty_slope":-0.7769567597,
+    "cluster":2
   },
   {
     "item_code":"4800253243867",
     "description":"SANGOBION IRON+CAPSULE",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":538.0,
-    "total_sales":13500.58,
-    "total_profit":550.37,
-    "months_active":28.0,
-    "avg_price":25.0940148699,
-    "mean_monthly_qty":19.2142857143,
-    "cv_monthly_qty":0.7369882616,
-    "trend_qty_slope":0.6644772852,
-    "cluster":-1
+    "total_qty":505.0,
+    "total_sales":12716.83,
+    "months_active":27.0,
+    "avg_price":25.1818415842,
+    "mean_monthly_qty":18.7037037037,
+    "cv_monthly_qty":0.7573474366,
+    "trend_qty_slope":0.7136752137,
+    "cluster":2
   },
   {
     "item_code":"4800301902722",
@@ -666,13 +622,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":162.5,
-    "total_profit":97.5,
     "months_active":1.0,
     "avg_price":32.5,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800301903149",
@@ -681,28 +636,26 @@
     "tab":"OTC",
     "total_qty":497.0,
     "total_sales":1428.5,
-    "total_profit":558.75,
     "months_active":5.0,
     "avg_price":2.8742454728,
     "mean_monthly_qty":99.4,
     "cv_monthly_qty":0.9363943866,
     "trend_qty_slope":21.6,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800304010219",
     "description":"CENTRUM SILVER ADVANCE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1629.0,
-    "total_sales":20437.46,
-    "total_profit":1158.51,
-    "months_active":32.0,
-    "avg_price":12.5460159607,
-    "mean_monthly_qty":50.90625,
-    "cv_monthly_qty":0.6020390872,
-    "trend_qty_slope":0.5485703812,
-    "cluster":-1
+    "total_qty":1580.0,
+    "total_sales":19806.96,
+    "months_active":31.0,
+    "avg_price":12.5360506329,
+    "mean_monthly_qty":50.9677419355,
+    "cv_monthly_qty":0.6108962266,
+    "trend_qty_slope":0.5592741935,
+    "cluster":2
   },
   {
     "item_code":"4800307100597",
@@ -711,13 +664,12 @@
     "tab":"OTC",
     "total_qty":18.0,
     "total_sales":2107.5,
-    "total_profit":483.0,
     "months_active":7.0,
     "avg_price":117.0833333333,
     "mean_monthly_qty":2.5714285714,
     "cv_monthly_qty":0.3513641845,
     "trend_qty_slope":0.1785714286,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4800307100603",
@@ -726,13 +678,12 @@
     "tab":"OTC",
     "total_qty":39.0,
     "total_sales":7511.33,
-    "total_profit":1485.83,
     "months_active":10.0,
     "avg_price":192.5982051282,
     "mean_monthly_qty":3.9,
     "cv_monthly_qty":0.4205440889,
     "trend_qty_slope":0.1151515152,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800307100788",
@@ -741,28 +692,26 @@
     "tab":"OTC",
     "total_qty":16.0,
     "total_sales":2196.0,
-    "total_profit":2196.0,
     "months_active":6.0,
     "avg_price":137.25,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.4677071733,
     "trend_qty_slope":0.0571428571,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4800307854315",
     "description":"VIBEE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":883.0,
-    "total_sales":11339.64,
-    "total_profit":588.23,
-    "months_active":29.0,
-    "avg_price":12.8421744054,
-    "mean_monthly_qty":30.4482758621,
-    "cv_monthly_qty":0.9399773499,
-    "trend_qty_slope":1.7985221675,
-    "cluster":-1
+    "total_qty":873.0,
+    "total_sales":11199.04,
+    "months_active":28.0,
+    "avg_price":12.8282245132,
+    "mean_monthly_qty":31.1785714286,
+    "cv_monthly_qty":0.9256539635,
+    "trend_qty_slope":1.8798576902,
+    "cluster":2
   },
   {
     "item_code":"4800318001562",
@@ -771,13 +720,12 @@
     "tab":"OTC",
     "total_qty":180.0,
     "total_sales":1849.25,
-    "total_profit":1849.25,
     "months_active":7.0,
     "avg_price":10.2736111111,
     "mean_monthly_qty":25.7142857143,
     "cv_monthly_qty":0.6321138357,
     "trend_qty_slope":-5.8928571429,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4800318001579",
@@ -786,13 +734,12 @@
     "tab":"OTC",
     "total_qty":11.0,
     "total_sales":3192.8,
-    "total_profit":577.77,
     "months_active":6.0,
     "avg_price":290.2545454545,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.3748277841,
     "trend_qty_slope":-0.2,
-    "cluster":7
+    "cluster":2
   },
   {
     "item_code":"4800318001586",
@@ -801,13 +748,12 @@
     "tab":"OTC",
     "total_qty":26.0,
     "total_sales":2184.0,
-    "total_profit":162.5,
     "months_active":5.0,
     "avg_price":84.0,
     "mean_monthly_qty":5.2,
     "cv_monthly_qty":0.7236495278,
     "trend_qty_slope":-2.6,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4800318001609",
@@ -816,13 +762,12 @@
     "tab":"OTC",
     "total_qty":112.0,
     "total_sales":1579.35,
-    "total_profit":242.07,
     "months_active":3.0,
     "avg_price":14.1013392857,
     "mean_monthly_qty":37.3333333333,
     "cv_monthly_qty":0.4671955519,
     "trend_qty_slope":-18.5,
-    "cluster":8
+    "cluster":2
   },
   {
     "item_code":"4800318001616",
@@ -831,13 +776,12 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":3450.0,
-    "total_profit":3450.0,
     "months_active":4.0,
     "avg_price":345.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-0.2,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4800318001951",
@@ -846,13 +790,12 @@
     "tab":"OTC",
     "total_qty":508.0,
     "total_sales":5701.2,
-    "total_profit":1073.32,
     "months_active":8.0,
     "avg_price":11.2228346457,
     "mean_monthly_qty":63.5,
     "cv_monthly_qty":0.5810788891,
     "trend_qty_slope":-8.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800318001968",
@@ -861,43 +804,40 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":311.0,
-    "total_profit":311.0,
     "months_active":1.0,
     "avg_price":311.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800318002392",
     "description":"CALTRATE ADVANCE TAB 30s",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":23.0,
-    "total_sales":5745.8,
-    "total_profit":314.13,
-    "months_active":16.0,
-    "avg_price":249.8173913043,
-    "mean_monthly_qty":1.4375,
-    "cv_monthly_qty":0.4899751161,
-    "trend_qty_slope":-0.025,
-    "cluster":-1
+    "total_qty":21.0,
+    "total_sales":5249.8,
+    "months_active":15.0,
+    "avg_price":249.9904761905,
+    "mean_monthly_qty":1.4,
+    "cv_monthly_qty":0.5084322977,
+    "trend_qty_slope":-0.0321428571,
+    "cluster":2
   },
   {
     "item_code":"4800318002415",
     "description":"CALTRATE ADVANCE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":510.0,
-    "total_sales":4448.3,
-    "total_profit":-81501.96,
-    "months_active":19.0,
-    "avg_price":8.7221568627,
-    "mean_monthly_qty":26.8421052632,
-    "cv_monthly_qty":0.8182040704,
-    "trend_qty_slope":-2.001754386,
-    "cluster":-1
+    "total_qty":461.0,
+    "total_sales":4034.3,
+    "months_active":18.0,
+    "avg_price":8.7511930586,
+    "mean_monthly_qty":25.6111111111,
+    "cv_monthly_qty":0.8557559336,
+    "trend_qty_slope":-2.0257997936,
+    "cluster":2
   },
   {
     "item_code":"4800318002422",
@@ -906,43 +846,40 @@
     "tab":"OTC",
     "total_qty":25.0,
     "total_sales":273.7,
-    "total_profit":23.69,
     "months_active":6.0,
     "avg_price":10.948,
     "mean_monthly_qty":4.1666666667,
     "cv_monthly_qty":0.7255342859,
     "trend_qty_slope":-1.2857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800318570082",
     "description":"SCOTT&#039;S CHEWY VIT-C MIXED BERRIES 15s",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":33.0,
-    "total_sales":2598.75,
-    "total_profit":279.18,
-    "months_active":9.0,
+    "total_qty":29.0,
+    "total_sales":2283.75,
+    "months_active":8.0,
     "avg_price":78.75,
-    "mean_monthly_qty":3.6666666667,
-    "cv_monthly_qty":0.4453617714,
-    "trend_qty_slope":-0.5833333333,
-    "cluster":5
+    "mean_monthly_qty":3.625,
+    "cv_monthly_qty":0.4765612056,
+    "trend_qty_slope":-0.7261904762,
+    "cluster":2
   },
   {
     "item_code":"4800318570174",
     "description":"SCOTT&#039;S CHEWY VIT-C ORANGE 15s",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":13.0,
-    "total_sales":1023.75,
-    "total_profit":123.96,
-    "months_active":6.0,
+    "total_qty":11.0,
+    "total_sales":866.25,
+    "months_active":5.0,
     "avg_price":78.75,
-    "mean_monthly_qty":2.1666666667,
-    "cv_monthly_qty":0.3171619712,
-    "trend_qty_slope":-0.3142857143,
-    "cluster":4
+    "mean_monthly_qty":2.2,
+    "cv_monthly_qty":0.3401506715,
+    "trend_qty_slope":-0.5,
+    "cluster":2
   },
   {
     "item_code":"4800333161470",
@@ -951,43 +888,40 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":740.0,
-    "total_profit":74.1,
     "months_active":4.0,
     "avg_price":148.0,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800348110012",
     "description":"HERACLENE 1MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":460.0,
-    "total_sales":9436.0,
-    "total_profit":1755.72,
-    "months_active":18.0,
-    "avg_price":20.5130434783,
-    "mean_monthly_qty":25.5555555556,
-    "cv_monthly_qty":0.7216736482,
-    "trend_qty_slope":1.1723426213,
-    "cluster":-1
+    "total_qty":410.0,
+    "total_sales":8556.0,
+    "months_active":17.0,
+    "avg_price":20.8682926829,
+    "mean_monthly_qty":24.1176470588,
+    "cv_monthly_qty":0.7451049856,
+    "trend_qty_slope":1.318627451,
+    "cluster":2
   },
   {
     "item_code":"4800348114423",
     "description":"KELTICAN CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1301.0,
-    "total_sales":34590.1,
-    "total_profit":637.7,
-    "months_active":31.0,
-    "avg_price":26.5873174481,
-    "mean_monthly_qty":41.9677419355,
-    "cv_monthly_qty":0.6410693117,
-    "trend_qty_slope":0.7379032258,
-    "cluster":-1
+    "total_qty":1261.0,
+    "total_sales":33512.1,
+    "months_active":30.0,
+    "avg_price":26.5758128469,
+    "mean_monthly_qty":42.0333333333,
+    "cv_monthly_qty":0.6505913055,
+    "trend_qty_slope":0.7592880979,
+    "cluster":2
   },
   {
     "item_code":"4800348125610",
@@ -996,28 +930,26 @@
     "tab":"OTC",
     "total_qty":129.0,
     "total_sales":5509.62,
-    "total_profit":2862.82,
     "months_active":10.0,
     "avg_price":42.7102325581,
     "mean_monthly_qty":12.9,
     "cv_monthly_qty":0.6708450275,
     "trend_qty_slope":1.9696969697,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800360329065",
     "description":"ZINBEE (ZINC GLUCONATE) 70MG\/5ML SYR 120ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":4.0,
-    "total_sales":660.0,
-    "total_profit":84.0,
-    "months_active":3.0,
+    "total_qty":3.0,
+    "total_sales":495.0,
+    "months_active":2.0,
     "avg_price":165.0,
-    "mean_monthly_qty":1.3333333333,
-    "cv_monthly_qty":0.3535533906,
-    "trend_qty_slope":0.5,
-    "cluster":0
+    "mean_monthly_qty":1.5,
+    "cv_monthly_qty":0.3333333333,
+    "trend_qty_slope":1.0,
+    "cluster":2
   },
   {
     "item_code":"4800363011431",
@@ -1026,28 +958,26 @@
     "tab":"GENERICS",
     "total_qty":37.0,
     "total_sales":883.72,
-    "total_profit":62.91,
     "months_active":4.0,
     "avg_price":23.8843243243,
     "mean_monthly_qty":9.25,
     "cv_monthly_qty":0.2075985337,
     "trend_qty_slope":-0.5,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4800363011493",
     "description":"POLYNERV TAB 500MG",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":155.0,
-    "total_sales":5034.71,
-    "total_profit":-21.39,
-    "months_active":10.0,
-    "avg_price":32.482,
-    "mean_monthly_qty":15.5,
-    "cv_monthly_qty":0.9443407205,
-    "trend_qty_slope":0.2848484848,
-    "cluster":-1
+    "total_qty":148.0,
+    "total_sales":4831.71,
+    "months_active":9.0,
+    "avg_price":32.6466891892,
+    "mean_monthly_qty":16.4444444444,
+    "cv_monthly_qty":0.9205073711,
+    "trend_qty_slope":0.6666666667,
+    "cluster":2
   },
   {
     "item_code":"4800363013121",
@@ -1056,43 +986,40 @@
     "tab":"OTC",
     "total_qty":25.0,
     "total_sales":460.0,
-    "total_profit":46.25,
     "months_active":3.0,
     "avg_price":18.4,
     "mean_monthly_qty":8.3333333333,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":-3.687718289e-16,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800369000545",
     "description":"TERRAFERON CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":4509.0,
-    "total_sales":33848.98,
-    "total_profit":2458.79,
-    "months_active":35.0,
-    "avg_price":7.5069815924,
-    "mean_monthly_qty":128.8285714286,
-    "cv_monthly_qty":0.7321213704,
-    "trend_qty_slope":-1.9078431373,
-    "cluster":-1
+    "total_qty":4071.0,
+    "total_sales":30520.6,
+    "months_active":34.0,
+    "avg_price":7.4970768853,
+    "mean_monthly_qty":119.7352941176,
+    "cv_monthly_qty":0.6609764187,
+    "trend_qty_slope":-1.8244461421,
+    "cluster":2
   },
   {
     "item_code":"4800369000873",
     "description":"CENTRAVIM TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":675.0,
-    "total_sales":6785.75,
-    "total_profit":629.75,
-    "months_active":19.0,
-    "avg_price":10.052962963,
-    "mean_monthly_qty":35.5263157895,
-    "cv_monthly_qty":0.4369642124,
-    "trend_qty_slope":-0.0859649123,
-    "cluster":-1
+    "total_qty":633.0,
+    "total_sales":6370.62,
+    "months_active":18.0,
+    "avg_price":10.0641706161,
+    "mean_monthly_qty":35.1666666667,
+    "cv_monthly_qty":0.4513331629,
+    "trend_qty_slope":0.0092879257,
+    "cluster":2
   },
   {
     "item_code":"4800369002112",
@@ -1101,13 +1028,12 @@
     "tab":"OTC",
     "total_qty":202.0,
     "total_sales":1814.3,
-    "total_profit":519.48,
     "months_active":7.0,
     "avg_price":8.9816831683,
     "mean_monthly_qty":28.8571428571,
     "cv_monthly_qty":0.5414402401,
     "trend_qty_slope":-3.75,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4800369002587",
@@ -1116,28 +1042,26 @@
     "tab":"GENERICS",
     "total_qty":60.0,
     "total_sales":999.96,
-    "total_profit":29.76,
     "months_active":4.0,
     "avg_price":16.666,
     "mean_monthly_qty":15.0,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":-6.0,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4800435199432",
     "description":"B-PRIME (VIT B-COMPLEX) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":270.0,
-    "total_sales":2916.0,
-    "total_profit":580.5,
-    "months_active":10.0,
+    "total_qty":250.0,
+    "total_sales":2700.0,
+    "months_active":9.0,
     "avg_price":10.8,
-    "mean_monthly_qty":27.0,
-    "cv_monthly_qty":0.7626392697,
-    "trend_qty_slope":-0.9818181818,
-    "cluster":-1
+    "mean_monthly_qty":27.7777777778,
+    "cv_monthly_qty":0.7763504363,
+    "trend_qty_slope":-1.0333333333,
+    "cluster":2
   },
   {
     "item_code":"4800435200435",
@@ -1146,43 +1070,40 @@
     "tab":"OTC",
     "total_qty":264.0,
     "total_sales":6561.4,
-    "total_profit":761.32,
     "months_active":9.0,
     "avg_price":24.8537878788,
     "mean_monthly_qty":29.3333333333,
     "cv_monthly_qty":0.7941547823,
     "trend_qty_slope":-5.6666666667,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4801962122269",
     "description":"BEROCCA TAB 1&#039;S",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":282.0,
-    "total_sales":6437.4,
-    "total_profit":697.75,
-    "months_active":27.0,
-    "avg_price":22.8276595745,
-    "mean_monthly_qty":10.4444444444,
-    "cv_monthly_qty":0.6969506108,
-    "trend_qty_slope":-0.047008547,
-    "cluster":-1
+    "total_qty":279.0,
+    "total_sales":6368.15,
+    "months_active":26.0,
+    "avg_price":22.8249103943,
+    "mean_monthly_qty":10.7307692308,
+    "cv_monthly_qty":0.6772296865,
+    "trend_qty_slope":-0.0543589744,
+    "cluster":2
   },
   {
     "item_code":"4801962413152",
     "description":"BEROCCA EFF TAB ORANGE 15&#039;S TUBE",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":59.0,
-    "total_sales":16635.75,
-    "total_profit":1896.91,
-    "months_active":25.0,
-    "avg_price":281.9618644068,
-    "mean_monthly_qty":2.36,
-    "cv_monthly_qty":0.6328188035,
-    "trend_qty_slope":-0.0315384615,
-    "cluster":-1
+    "total_qty":56.0,
+    "total_sales":15780.75,
+    "months_active":24.0,
+    "avg_price":281.7991071429,
+    "mean_monthly_qty":2.3333333333,
+    "cv_monthly_qty":0.6507452557,
+    "trend_qty_slope":-0.0339130435,
+    "cluster":2
   },
   {
     "item_code":"4806011585743",
@@ -1191,28 +1112,26 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":148.75,
-    "total_profit":28.74,
     "months_active":2.0,
     "avg_price":29.75,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806011586146",
     "description":"NATAL PLUS 8+2 PACK",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":5.0,
-    "total_sales":630.0,
-    "total_profit":70.0,
-    "months_active":3.0,
+    "total_qty":4.0,
+    "total_sales":504.0,
+    "months_active":2.0,
     "avg_price":126.0,
-    "mean_monthly_qty":1.6666666667,
-    "cv_monthly_qty":0.5656854249,
-    "trend_qty_slope":1.0,
-    "cluster":0
+    "mean_monthly_qty":2.0,
+    "cv_monthly_qty":0.5,
+    "trend_qty_slope":2.0,
+    "cluster":2
   },
   {
     "item_code":"4806031902445",
@@ -1221,13 +1140,12 @@
     "tab":"OTC",
     "total_qty":211.0,
     "total_sales":973.75,
-    "total_profit":159.29,
     "months_active":5.0,
     "avg_price":4.61492891,
     "mean_monthly_qty":42.2,
     "cv_monthly_qty":1.2676639897,
     "trend_qty_slope":-12.5,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806032201004",
@@ -1236,13 +1154,12 @@
     "tab":"OTC",
     "total_qty":746.0,
     "total_sales":5860.0,
-    "total_profit":1230.74,
     "months_active":16.0,
     "avg_price":7.855227882,
     "mean_monthly_qty":46.625,
     "cv_monthly_qty":1.2775551432,
     "trend_qty_slope":-0.3676470588,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806032400285",
@@ -1251,27 +1168,25 @@
     "tab":"GENERICS",
     "total_qty":300.0,
     "total_sales":555.68,
-    "total_profit":375.68,
     "months_active":7.0,
     "avg_price":1.8522666667,
     "mean_monthly_qty":42.8571428571,
     "cv_monthly_qty":0.7272933078,
     "trend_qty_slope":-14.7857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806033300607",
     "description":"RM ASCORBIC ACID 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":539.0,
-    "total_sales":1317.5,
-    "total_profit":378.93,
-    "months_active":15.0,
-    "avg_price":2.4443413729,
-    "mean_monthly_qty":35.9333333333,
-    "cv_monthly_qty":0.6597732325,
-    "trend_qty_slope":1.9428571429,
+    "total_qty":509.0,
+    "total_sales":1257.5,
+    "months_active":14.0,
+    "avg_price":2.4705304519,
+    "mean_monthly_qty":36.3571428571,
+    "cv_monthly_qty":0.6734578059,
+    "trend_qty_slope":2.0153846154,
     "cluster":2
   },
   {
@@ -1281,28 +1196,26 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":165.0,
-    "total_profit":46.2,
     "months_active":1.0,
     "avg_price":55.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806035208246",
     "description":"SELCEE (ASCORBIC ACID) 500MG",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":2406.0,
-    "total_sales":4326.72,
-    "total_profit":3123.72,
-    "months_active":31.0,
-    "avg_price":1.7983042394,
-    "mean_monthly_qty":77.6129032258,
-    "cv_monthly_qty":1.0350837957,
-    "trend_qty_slope":-2.1431451613,
-    "cluster":-1
+    "total_qty":2256.0,
+    "total_sales":4046.72,
+    "months_active":30.0,
+    "avg_price":1.7937588652,
+    "mean_monthly_qty":75.2,
+    "cv_monthly_qty":1.0711593691,
+    "trend_qty_slope":-2.2687430478,
+    "cluster":2
   },
   {
     "item_code":"4806319103701",
@@ -1311,13 +1224,12 @@
     "tab":"GENERICS",
     "total_qty":933.0,
     "total_sales":4700.98,
-    "total_profit":1099.6,
     "months_active":7.0,
     "avg_price":5.0385637728,
     "mean_monthly_qty":133.2857142857,
     "cv_monthly_qty":0.6144443168,
     "trend_qty_slope":40.3214285714,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806501130019",
@@ -1326,13 +1238,12 @@
     "tab":"OTC",
     "total_qty":29.0,
     "total_sales":6548.6,
-    "total_profit":940.52,
     "months_active":15.0,
     "avg_price":225.8137931034,
     "mean_monthly_qty":1.9333333333,
     "cv_monthly_qty":0.5495647397,
     "trend_qty_slope":0.0392857143,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806501130026",
@@ -1341,43 +1252,40 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":287.0,
-    "total_profit":47.92,
     "months_active":2.0,
     "avg_price":143.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806501130125",
-    "description":"MEDIFORTAN-AS (MULTIVITAMINS + BUCLIZINE HCI ) CAP",
+    "description":"MEDIFORTAN(AS)CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2180.0,
-    "total_sales":43029.0,
-    "total_profit":3250.92,
-    "months_active":33.0,
-    "avg_price":19.7380733945,
-    "mean_monthly_qty":66.0606060606,
-    "cv_monthly_qty":0.6467590598,
-    "trend_qty_slope":-2.4301470588,
-    "cluster":-1
+    "total_qty":2170.0,
+    "total_sales":42840.6,
+    "months_active":32.0,
+    "avg_price":19.7422119816,
+    "mean_monthly_qty":67.8125,
+    "cv_monthly_qty":0.6223696375,
+    "trend_qty_slope":-2.5832111437,
+    "cluster":2
   },
   {
     "item_code":"4806501130156",
     "description":"MEDIFORTAN CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":279.0,
-    "total_sales":3634.0,
-    "total_profit":286.61,
-    "months_active":16.0,
-    "avg_price":13.0250896057,
-    "mean_monthly_qty":17.4375,
-    "cv_monthly_qty":0.5798813508,
-    "trend_qty_slope":1.1397058824,
-    "cluster":-1
+    "total_qty":256.0,
+    "total_sales":3405.75,
+    "months_active":15.0,
+    "avg_price":13.3037109375,
+    "mean_monthly_qty":17.0666666667,
+    "cv_monthly_qty":0.605708118,
+    "trend_qty_slope":1.225,
+    "cluster":2
   },
   {
     "item_code":"4806501131016",
@@ -1386,13 +1294,12 @@
     "tab":"OTC",
     "total_qty":17.0,
     "total_sales":5383.2,
-    "total_profit":805.11,
     "months_active":14.0,
     "avg_price":316.6588235294,
     "mean_monthly_qty":1.2142857143,
     "cv_monthly_qty":0.4594264515,
     "trend_qty_slope":-0.0637362637,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806501132013",
@@ -1401,28 +1308,26 @@
     "tab":"OTC",
     "total_qty":15.0,
     "total_sales":7365.15,
-    "total_profit":1100.39,
     "months_active":12.0,
     "avg_price":491.01,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.0384615385,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806502367223",
-    "description":"FERN-C PLUS CAP",
+    "description":"FERN C PLUS (ASCORBIC ACID+ZINC) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":465.0,
     "total_sales":3151.97,
-    "total_profit":-214.63,
     "months_active":11.0,
     "avg_price":6.7784301075,
     "mean_monthly_qty":42.2727272727,
     "cv_monthly_qty":0.6465933926,
     "trend_qty_slope":-5.5909090909,
-    "cluster":7
+    "cluster":2
   },
   {
     "item_code":"4806502367254",
@@ -1431,13 +1336,12 @@
     "tab":"GENERICS",
     "total_qty":8.0,
     "total_sales":564.29,
-    "total_profit":-16.91,
     "months_active":4.0,
     "avg_price":70.53625,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.6123724357,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806502367261",
@@ -1446,13 +1350,12 @@
     "tab":"GENERICS",
     "total_qty":4.0,
     "total_sales":920.0,
-    "total_profit":75.4,
     "months_active":4.0,
     "avg_price":230.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806502367384",
@@ -1461,7 +1364,6 @@
     "tab":"GENERICS",
     "total_qty":96.0,
     "total_sales":1152.0,
-    "total_profit":152.64,
     "months_active":5.0,
     "avg_price":12.0,
     "mean_monthly_qty":19.2,
@@ -1476,13 +1378,12 @@
     "tab":"OTC",
     "total_qty":7.0,
     "total_sales":27.44,
-    "total_profit":15.4,
     "months_active":1.0,
     "avg_price":3.92,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806503650478",
@@ -1491,13 +1392,12 @@
     "tab":"GENERICS",
     "total_qty":30.0,
     "total_sales":927.0,
-    "total_profit":154.5,
     "months_active":1.0,
     "avg_price":30.9,
     "mean_monthly_qty":30.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806504086139",
@@ -1506,27 +1406,25 @@
     "tab":"GENERICS",
     "total_qty":1023.0,
     "total_sales":4055.16,
-    "total_profit":2336.52,
     "months_active":18.0,
     "avg_price":3.9639882698,
     "mean_monthly_qty":56.8333333333,
     "cv_monthly_qty":0.9253163713,
     "trend_qty_slope":-5.4850361197,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806504087242",
     "description":"EURIVIT-M (MULTIVITAMINS + MINERALS) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":320.0,
-    "total_sales":1284.24,
-    "total_profit":712.22,
-    "months_active":6.0,
-    "avg_price":4.01325,
-    "mean_monthly_qty":53.3333333333,
-    "cv_monthly_qty":1.2550678518,
-    "trend_qty_slope":-10.2857142857,
+    "total_qty":275.0,
+    "total_sales":1125.84,
+    "months_active":5.0,
+    "avg_price":4.0939636364,
+    "mean_monthly_qty":55.0,
+    "cv_monthly_qty":1.3311276522,
+    "trend_qty_slope":-15.5,
     "cluster":2
   },
   {
@@ -1534,15 +1432,14 @@
     "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":7675.0,
-    "total_sales":109510.6,
-    "total_profit":11672.95,
-    "months_active":25.0,
-    "avg_price":14.2684820847,
-    "mean_monthly_qty":307.0,
-    "cv_monthly_qty":0.3125270946,
-    "trend_qty_slope":2.0584615385,
-    "cluster":-1
+    "total_qty":7346.0,
+    "total_sales":105286.6,
+    "months_active":24.0,
+    "avg_price":14.3325074871,
+    "mean_monthly_qty":306.0833333333,
+    "cv_monthly_qty":0.3195762718,
+    "trend_qty_slope":2.4834782609,
+    "cluster":2
   },
   {
     "item_code":"4806504260638",
@@ -1551,13 +1448,12 @@
     "tab":"OTC",
     "total_qty":133.0,
     "total_sales":25448.5,
-    "total_profit":3186.0,
     "months_active":10.0,
     "avg_price":191.3421052632,
     "mean_monthly_qty":13.3,
     "cv_monthly_qty":0.94572599,
     "trend_qty_slope":-1.4242424242,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806504261390",
@@ -1566,13 +1462,12 @@
     "tab":"OTC",
     "total_qty":341.0,
     "total_sales":5025.0,
-    "total_profit":2467.5,
     "months_active":9.0,
     "avg_price":14.7360703812,
     "mean_monthly_qty":37.8888888889,
     "cv_monthly_qty":0.678668663,
     "trend_qty_slope":2.65,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806504261499",
@@ -1581,13 +1476,12 @@
     "tab":"OTC",
     "total_qty":55.0,
     "total_sales":17960.8,
-    "total_profit":12881.32,
     "months_active":3.0,
     "avg_price":326.56,
     "mean_monthly_qty":18.3333333333,
     "cv_monthly_qty":0.4393834899,
     "trend_qty_slope":-8.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806504269808",
@@ -1596,73 +1490,68 @@
     "tab":"OTC",
     "total_qty":296.0,
     "total_sales":101543.75,
-    "total_profit":20143.75,
     "months_active":16.0,
     "avg_price":343.0532094595,
     "mean_monthly_qty":18.5,
     "cv_monthly_qty":0.7221832009,
     "trend_qty_slope":2.0441176471,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806504652587",
     "description":"ALANERV 920MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":325.0,
-    "total_sales":27836.47,
-    "total_profit":2997.77,
-    "months_active":14.0,
-    "avg_price":85.6506769231,
-    "mean_monthly_qty":23.2142857143,
-    "cv_monthly_qty":0.8699860572,
-    "trend_qty_slope":-1.2153846154,
-    "cluster":-1
+    "total_qty":315.0,
+    "total_sales":26943.97,
+    "months_active":13.0,
+    "avg_price":85.5364126984,
+    "mean_monthly_qty":24.2307692308,
+    "cv_monthly_qty":0.8505922529,
+    "trend_qty_slope":-1.1813186813,
+    "cluster":2
   },
   {
     "item_code":"4806504653164",
     "description":"RENAKULT CAP(PROBIOTIC",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":3358.0,
-    "total_sales":82385.46,
-    "total_profit":1887.2,
-    "months_active":27.0,
-    "avg_price":24.5340857653,
-    "mean_monthly_qty":124.3703703704,
-    "cv_monthly_qty":0.8163447974,
-    "trend_qty_slope":-8.8608058608,
-    "cluster":-1
+    "total_qty":3178.0,
+    "total_sales":78425.46,
+    "months_active":26.0,
+    "avg_price":24.6776148521,
+    "mean_monthly_qty":122.2307692308,
+    "cv_monthly_qty":0.8415565374,
+    "trend_qty_slope":-9.494017094,
+    "cluster":2
   },
   {
     "item_code":"4806504654802",
     "description":"QUATROFOL CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":731.0,
-    "total_sales":15351.0,
-    "total_profit":3969.76,
-    "months_active":19.0,
+    "total_qty":701.0,
+    "total_sales":14721.0,
+    "months_active":18.0,
     "avg_price":21.0,
-    "mean_monthly_qty":38.4736842105,
-    "cv_monthly_qty":0.6483633163,
-    "trend_qty_slope":0.1859649123,
-    "cluster":-1
+    "mean_monthly_qty":38.9444444444,
+    "cv_monthly_qty":0.6559650369,
+    "trend_qty_slope":0.1682146543,
+    "cluster":2
   },
   {
     "item_code":"4806505142124",
     "description":"FERRICORE (FERROUS SULFATE) 325MG TAB",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":1434.0,
-    "total_sales":2808.71,
-    "total_profit":1589.81,
-    "months_active":28.0,
-    "avg_price":1.9586541144,
-    "mean_monthly_qty":51.2142857143,
-    "cv_monthly_qty":1.3560079245,
-    "trend_qty_slope":-1.1784345922,
-    "cluster":-1
+    "total_qty":1424.0,
+    "total_sales":2788.71,
+    "months_active":27.0,
+    "avg_price":1.958363764,
+    "mean_monthly_qty":52.7407407407,
+    "cv_monthly_qty":1.3321497796,
+    "trend_qty_slope":-1.1752136752,
+    "cluster":2
   },
   {
     "item_code":"4806505341015",
@@ -1671,7 +1560,6 @@
     "tab":"OTC",
     "total_qty":89.0,
     "total_sales":1212.56,
-    "total_profit":140.11,
     "months_active":5.0,
     "avg_price":13.6242696629,
     "mean_monthly_qty":17.8,
@@ -1686,13 +1574,12 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":175.0,
-    "total_profit":175.0,
     "months_active":1.0,
     "avg_price":17.5,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806505758622",
@@ -1701,13 +1588,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":281.25,
-    "total_profit":56.25,
     "months_active":1.0,
     "avg_price":281.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806505759360",
@@ -1716,13 +1602,12 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":45.0,
-    "total_profit":45.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806505759377",
@@ -1731,13 +1616,12 @@
     "tab":"GENERICS",
     "total_qty":97.0,
     "total_sales":2018.71,
-    "total_profit":459.92,
     "months_active":5.0,
     "avg_price":20.811443299,
     "mean_monthly_qty":19.4,
     "cv_monthly_qty":0.8901869338,
     "trend_qty_slope":-0.3,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4806507930347",
@@ -1746,43 +1630,40 @@
     "tab":"OTC",
     "total_qty":272.0,
     "total_sales":505.92,
-    "total_profit":301.92,
     "months_active":6.0,
     "avg_price":1.86,
     "mean_monthly_qty":45.3333333333,
     "cv_monthly_qty":0.6558147552,
     "trend_qty_slope":4.6857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806509690539",
     "description":"JIMM&#039;S 5 IN 1 COFFEE 21G",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":144.0,
-    "total_sales":1704.0,
-    "total_profit":202.39,
-    "months_active":15.0,
-    "avg_price":11.8333333333,
-    "mean_monthly_qty":9.6,
-    "cv_monthly_qty":0.8102711595,
-    "trend_qty_slope":-0.3035714286,
-    "cluster":1
+    "total_qty":141.0,
+    "total_sales":1666.5,
+    "months_active":14.0,
+    "avg_price":11.8191489362,
+    "mean_monthly_qty":10.0714285714,
+    "cv_monthly_qty":0.7786252183,
+    "trend_qty_slope":-0.1472527473,
+    "cluster":2
   },
   {
     "item_code":"4806509690607",
     "description":"JIMM&#039;S 7N1 COFFEE MIX",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":473.0,
-    "total_sales":6740.25,
-    "total_profit":1113.61,
-    "months_active":23.0,
+    "total_qty":426.0,
+    "total_sales":6070.5,
+    "months_active":22.0,
     "avg_price":14.25,
-    "mean_monthly_qty":20.5652173913,
-    "cv_monthly_qty":0.6888415165,
-    "trend_qty_slope":-0.6156126482,
-    "cluster":-1
+    "mean_monthly_qty":19.3636363636,
+    "cv_monthly_qty":0.6862815667,
+    "trend_qty_slope":-0.5782044043,
+    "cluster":2
   },
   {
     "item_code":"4806509690829",
@@ -1791,13 +1672,12 @@
     "tab":"OTC",
     "total_qty":4.0,
     "total_sales":60.0,
-    "total_profit":7.64,
     "months_active":2.0,
     "avg_price":15.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806510461838",
@@ -1806,13 +1686,12 @@
     "tab":"OTC",
     "total_qty":6.0,
     "total_sales":3979.5,
-    "total_profit":-477.54,
     "months_active":3.0,
     "avg_price":663.25,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":-1.5,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510663515",
@@ -1821,13 +1700,12 @@
     "tab":"OTC",
     "total_qty":100.0,
     "total_sales":702.0,
-    "total_profit":106.0,
     "months_active":8.0,
     "avg_price":7.02,
     "mean_monthly_qty":12.5,
     "cv_monthly_qty":0.4363484846,
     "trend_qty_slope":-1.4761904762,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806510664055",
@@ -1836,28 +1714,26 @@
     "tab":"OTC",
     "total_qty":482.0,
     "total_sales":4713.0,
-    "total_profit":228.84,
     "months_active":12.0,
     "avg_price":9.7780082988,
     "mean_monthly_qty":40.1666666667,
     "cv_monthly_qty":0.9444643342,
     "trend_qty_slope":0.3776223776,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510690016",
     "description":"CHERIFER DROP 15ML\/230&#039;",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2.0,
-    "total_sales":172.0,
-    "total_profit":15.52,
-    "months_active":2.0,
+    "total_qty":1.0,
+    "total_sales":86.0,
+    "months_active":1.0,
     "avg_price":86.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "trend_qty_slope":0.0,
+    "cluster":2
   },
   {
     "item_code":"4806510690023",
@@ -1866,13 +1742,12 @@
     "tab":"OTC",
     "total_qty":6.0,
     "total_sales":934.5,
-    "total_profit":112.55,
     "months_active":6.0,
     "avg_price":155.75,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":7.951207132e-18,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806510690030",
@@ -1881,28 +1756,26 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":579.0,
-    "total_profit":78.99,
     "months_active":2.0,
     "avg_price":193.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806510690054",
     "description":"CHERIFER FORTE 120ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":10.0,
-    "total_sales":2045.0,
-    "total_profit":204.68,
-    "months_active":8.0,
-    "avg_price":204.5,
-    "mean_monthly_qty":1.25,
-    "cv_monthly_qty":0.3464101615,
-    "trend_qty_slope":0.0952380952,
-    "cluster":3
+    "total_qty":9.0,
+    "total_sales":1835.0,
+    "months_active":7.0,
+    "avg_price":203.8888888889,
+    "mean_monthly_qty":1.2857142857,
+    "cv_monthly_qty":0.3513641845,
+    "trend_qty_slope":0.1071428571,
+    "cluster":2
   },
   {
     "item_code":"4806510690061",
@@ -1911,13 +1784,12 @@
     "tab":"OTC",
     "total_qty":7.0,
     "total_sales":2563.5,
-    "total_profit":322.11,
     "months_active":7.0,
     "avg_price":366.2142857143,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-4.423599198e-17,
-    "cluster":5
+    "cluster":2
   },
   {
     "item_code":"4806510690160",
@@ -1926,13 +1798,12 @@
     "tab":"OTC",
     "total_qty":183.0,
     "total_sales":2058.75,
-    "total_profit":372.12,
     "months_active":10.0,
     "avg_price":11.25,
     "mean_monthly_qty":18.3,
     "cv_monthly_qty":0.8493884731,
     "trend_qty_slope":-0.7454545455,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4806510690290",
@@ -1941,7 +1812,6 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":1140.75,
-    "total_profit":190.44,
     "months_active":3.0,
     "avg_price":380.25,
     "mean_monthly_qty":1.0,
@@ -1956,13 +1826,12 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":1800.0,
-    "total_profit":217.14,
     "months_active":2.0,
     "avg_price":600.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4806510690313",
@@ -1971,7 +1840,6 @@
     "tab":"OTC",
     "total_qty":65.0,
     "total_sales":1267.5,
-    "total_profit":124.15,
     "months_active":6.0,
     "avg_price":19.5,
     "mean_monthly_qty":10.8333333333,
@@ -1986,13 +1854,12 @@
     "tab":"OTC",
     "total_qty":23.0,
     "total_sales":9614.5,
-    "total_profit":1113.2,
     "months_active":15.0,
     "avg_price":418.0217391304,
     "mean_monthly_qty":1.5333333333,
     "cv_monthly_qty":0.5768043114,
     "trend_qty_slope":0.0857142857,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510690344",
@@ -2001,13 +1868,12 @@
     "tab":"OTC",
     "total_qty":8.0,
     "total_sales":1712.25,
-    "total_profit":219.45,
     "months_active":7.0,
     "avg_price":214.03125,
     "mean_monthly_qty":1.1428571429,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":0.1071428571,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4806510690351",
@@ -2016,13 +1882,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":1924.0,
-    "total_profit":248.8,
     "months_active":5.0,
     "avg_price":384.8,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4806510690566",
@@ -2031,13 +1896,12 @@
     "tab":"OTC",
     "total_qty":6.0,
     "total_sales":882.75,
-    "total_profit":52.15,
     "months_active":6.0,
     "avg_price":147.125,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":7.951207132e-18,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806510690573",
@@ -2046,13 +1910,12 @@
     "tab":"OTC",
     "total_qty":18.0,
     "total_sales":2430.0,
-    "total_profit":201.57,
     "months_active":12.0,
     "avg_price":135.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.6938886665,
     "trend_qty_slope":0.1398601399,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4806510690580",
@@ -2061,13 +1924,12 @@
     "tab":"OTC",
     "total_qty":14.0,
     "total_sales":3402.0,
-    "total_profit":445.48,
     "months_active":9.0,
     "avg_price":243.0,
     "mean_monthly_qty":1.5555555556,
     "cv_monthly_qty":0.4403152859,
     "trend_qty_slope":1.90834523e-17,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4806510690672",
@@ -2076,13 +1938,12 @@
     "tab":"OTC",
     "total_qty":30.0,
     "total_sales":1477.5,
-    "total_profit":127.5,
     "months_active":5.0,
     "avg_price":49.25,
     "mean_monthly_qty":6.0,
     "cv_monthly_qty":0.6055300708,
     "trend_qty_slope":-0.6,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510699033",
@@ -2091,13 +1952,12 @@
     "tab":"OTC",
     "total_qty":15.0,
     "total_sales":2328.75,
-    "total_profit":303.75,
     "months_active":12.0,
     "avg_price":155.25,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.0244755245,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4806510699163",
@@ -2106,13 +1966,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":272.0,
-    "total_profit":37.0,
     "months_active":1.0,
     "avg_price":272.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806510960010",
@@ -2121,13 +1980,12 @@
     "tab":"OTC",
     "total_qty":130.0,
     "total_sales":32175.0,
-    "total_profit":7722.0,
     "months_active":10.0,
     "avg_price":247.5,
     "mean_monthly_qty":13.0,
     "cv_monthly_qty":0.8558880644,
     "trend_qty_slope":-2.9939393939,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510960416",
@@ -2136,13 +1994,12 @@
     "tab":"OTC",
     "total_qty":86.0,
     "total_sales":17888.0,
-    "total_profit":4128.0,
     "months_active":14.0,
     "avg_price":208.0,
     "mean_monthly_qty":6.1428571429,
     "cv_monthly_qty":0.5358938894,
     "trend_qty_slope":-0.1538461538,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806510960539",
@@ -2151,13 +2008,12 @@
     "tab":"OTC",
     "total_qty":270.0,
     "total_sales":3679.0,
-    "total_profit":34.0,
     "months_active":6.0,
     "avg_price":13.6259259259,
     "mean_monthly_qty":45.0,
     "cv_monthly_qty":0.3899984172,
     "trend_qty_slope":1.7714285714,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806512100070",
@@ -2166,13 +2022,12 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":412.5,
-    "total_profit":82.5,
     "months_active":2.0,
     "avg_price":137.5,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806512100087",
@@ -2181,13 +2036,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":1010.25,
-    "total_profit":200.25,
     "months_active":2.0,
     "avg_price":202.05,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-1.0,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4806513103445",
@@ -2196,13 +2050,12 @@
     "tab":"OTC",
     "total_qty":80.0,
     "total_sales":351.97,
-    "total_profit":-88.03,
     "months_active":4.0,
     "avg_price":4.399625,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":1.1045361017,
     "trend_qty_slope":2.4,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806516400756",
@@ -2211,28 +2064,26 @@
     "tab":"OTC",
     "total_qty":7.0,
     "total_sales":4149.75,
-    "total_profit":517.7,
     "months_active":7.0,
     "avg_price":592.8214285714,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-4.423599198e-17,
-    "cluster":10
+    "cluster":2
   },
   {
     "item_code":"4806516400831",
     "description":"DIAMAXIN 300MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":133.0,
-    "total_sales":5971.36,
-    "total_profit":550.81,
-    "months_active":5.0,
-    "avg_price":44.897443609,
-    "mean_monthly_qty":26.6,
-    "cv_monthly_qty":0.4668924721,
+    "total_qty":93.0,
+    "total_sales":4071.36,
+    "months_active":4.0,
+    "avg_price":43.7780645161,
+    "mean_monthly_qty":23.25,
+    "cv_monthly_qty":0.5028534603,
     "trend_qty_slope":2.7,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806516400978",
@@ -2241,7 +2092,6 @@
     "tab":"OTC",
     "total_qty":9.0,
     "total_sales":1129.0,
-    "total_profit":171.45,
     "months_active":8.0,
     "avg_price":125.4444444444,
     "mean_monthly_qty":1.125,
@@ -2256,13 +2106,12 @@
     "tab":"OTC",
     "total_qty":9.0,
     "total_sales":1618.5,
-    "total_profit":-689.64,
     "months_active":8.0,
     "avg_price":179.8333333333,
     "mean_monthly_qty":1.125,
     "cv_monthly_qty":0.2939723679,
     "trend_qty_slope":-0.0119047619,
-    "cluster":8
+    "cluster":2
   },
   {
     "item_code":"4806516400992",
@@ -2271,13 +2120,12 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":3466.1,
-    "total_profit":275.58,
     "months_active":7.0,
     "avg_price":346.61,
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-0.1428571429,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4806516401005",
@@ -2286,13 +2134,12 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":280.5,
-    "total_profit":48.21,
     "months_active":2.0,
     "avg_price":93.5,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806516401487",
@@ -2301,13 +2148,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":178.0,
-    "total_profit":178.0,
     "months_active":1.0,
     "avg_price":178.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806517242232",
@@ -2316,43 +2162,40 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":235.0,
-    "total_profit":22.06,
     "months_active":2.0,
     "avg_price":117.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806517242294",
     "description":"RESTOR-F CAPSULE",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":114.0,
-    "total_sales":2545.87,
-    "total_profit":48.07,
-    "months_active":6.0,
-    "avg_price":22.3321929825,
-    "mean_monthly_qty":19.0,
-    "cv_monthly_qty":0.6264410902,
-    "trend_qty_slope":-1.8285714286,
-    "cluster":5
+    "total_qty":104.0,
+    "total_sales":2275.87,
+    "months_active":5.0,
+    "avg_price":21.8833653846,
+    "mean_monthly_qty":20.8,
+    "cv_monthly_qty":0.5899177558,
+    "trend_qty_slope":-0.5,
+    "cluster":2
   },
   {
     "item_code":"4806517242362",
     "description":"FOLART CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":653.0,
-    "total_sales":6307.2,
-    "total_profit":534.89,
-    "months_active":26.0,
-    "avg_price":9.658805513,
-    "mean_monthly_qty":25.1153846154,
-    "cv_monthly_qty":0.7581449956,
-    "trend_qty_slope":0.4905982906,
-    "cluster":-1
+    "total_qty":643.0,
+    "total_sales":6209.7,
+    "months_active":25.0,
+    "avg_price":9.6573872473,
+    "mean_monthly_qty":25.72,
+    "cv_monthly_qty":0.7454080909,
+    "trend_qty_slope":0.5269230769,
+    "cluster":2
   },
   {
     "item_code":"4806517440188",
@@ -2361,58 +2204,54 @@
     "tab":"GENERICS",
     "total_qty":10.0,
     "total_sales":157.5,
-    "total_profit":27.7,
     "months_active":1.0,
     "avg_price":15.75,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806517790047",
     "description":"ULTIMA CAP 10s",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":68.0,
-    "total_sales":10976.62,
-    "total_profit":151.99,
-    "months_active":22.0,
-    "avg_price":161.4208823529,
-    "mean_monthly_qty":3.0909090909,
-    "cv_monthly_qty":0.7162232742,
-    "trend_qty_slope":0.0293619424,
-    "cluster":-1
+    "total_qty":66.0,
+    "total_sales":10451.09,
+    "months_active":21.0,
+    "avg_price":158.3498484848,
+    "mean_monthly_qty":3.1428571429,
+    "cv_monthly_qty":0.7167803741,
+    "trend_qty_slope":0.0233766234,
+    "cluster":2
   },
   {
     "item_code":"4806517790177",
     "description":"OMEGA GOLD CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":440.0,
-    "total_sales":12996.7,
-    "total_profit":1319.1,
-    "months_active":13.0,
-    "avg_price":29.5379545455,
-    "mean_monthly_qty":33.8461538462,
-    "cv_monthly_qty":1.2354776237,
-    "trend_qty_slope":-0.9175824176,
-    "cluster":-1
+    "total_qty":270.0,
+    "total_sales":8464.63,
+    "months_active":12.0,
+    "avg_price":31.3504814815,
+    "mean_monthly_qty":22.5,
+    "cv_monthly_qty":0.6603403537,
+    "trend_qty_slope":0.8461538462,
+    "cluster":2
   },
   {
     "item_code":"4806517790566",
     "description":"PRONERV (VITAMIN B COMPLEX) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1281.0,
-    "total_sales":33120.26,
-    "total_profit":7763.47,
-    "months_active":23.0,
-    "avg_price":25.8550039032,
-    "mean_monthly_qty":55.6956521739,
-    "cv_monthly_qty":0.6945854908,
-    "trend_qty_slope":2.5365612648,
-    "cluster":-1
+    "total_qty":1226.0,
+    "total_sales":31560.26,
+    "months_active":22.0,
+    "avg_price":25.7424632953,
+    "mean_monthly_qty":55.7272727273,
+    "cv_monthly_qty":0.7097879095,
+    "trend_qty_slope":2.6617730096,
+    "cluster":2
   },
   {
     "item_code":"4806517790634",
@@ -2421,13 +2260,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":160.0,
-    "total_profit":160.0,
     "months_active":1.0,
     "avg_price":32.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806517791044",
@@ -2436,13 +2274,12 @@
     "tab":"OTC",
     "total_qty":461.0,
     "total_sales":8829.93,
-    "total_profit":207.6,
     "months_active":13.0,
     "avg_price":19.1538611714,
     "mean_monthly_qty":35.4615384615,
     "cv_monthly_qty":1.5131702857,
     "trend_qty_slope":-3.3021978022,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806518900230",
@@ -2451,43 +2288,40 @@
     "tab":"OTC",
     "total_qty":110.0,
     "total_sales":2090.0,
-    "total_profit":218.9,
     "months_active":3.0,
     "avg_price":19.0,
     "mean_monthly_qty":36.6666666667,
     "cv_monthly_qty":0.2571297386,
     "trend_qty_slope":10.0,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4806518900391",
     "description":"ROBUST TAB 550MG",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":48.0,
-    "total_sales":6800.45,
-    "total_profit":869.45,
-    "months_active":22.0,
-    "avg_price":141.6760416667,
-    "mean_monthly_qty":2.1818181818,
-    "cv_monthly_qty":1.4337208778,
-    "trend_qty_slope":0.1219649915,
-    "cluster":-1
+    "total_qty":46.0,
+    "total_sales":6520.45,
+    "months_active":21.0,
+    "avg_price":141.7489130435,
+    "mean_monthly_qty":2.1904761905,
+    "cv_monthly_qty":1.4615422882,
+    "trend_qty_slope":0.1298701299,
+    "cluster":2
   },
   {
     "item_code":"4806518900773",
     "description":"ROBUST EXTREME 400MG TAB 2s",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":34.0,
-    "total_sales":9782.5,
-    "total_profit":1155.98,
-    "months_active":15.0,
-    "avg_price":287.7205882353,
-    "mean_monthly_qty":2.2666666667,
-    "cv_monthly_qty":0.3404657913,
-    "trend_qty_slope":0.0142857143,
-    "cluster":-1
+    "total_qty":32.0,
+    "total_sales":9222.5,
+    "months_active":14.0,
+    "avg_price":288.203125,
+    "mean_monthly_qty":2.2857142857,
+    "cv_monthly_qty":0.3479852727,
+    "trend_qty_slope":0.0087912088,
+    "cluster":2
   },
   {
     "item_code":"4806518970455",
@@ -2496,28 +2330,26 @@
     "tab":"OTC",
     "total_qty":62.0,
     "total_sales":1197.0,
-    "total_profit":-7348.15,
     "months_active":2.0,
     "avg_price":19.3064516129,
     "mean_monthly_qty":31.0,
     "cv_monthly_qty":0.9677419355,
     "trend_qty_slope":-60.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806518970462",
     "description":"HEPATEK CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":547.0,
-    "total_sales":16951.81,
-    "total_profit":2007.79,
-    "months_active":11.0,
-    "avg_price":30.990511883,
-    "mean_monthly_qty":49.7272727273,
-    "cv_monthly_qty":0.6888767912,
-    "trend_qty_slope":0.6636363636,
-    "cluster":-1
+    "total_qty":454.0,
+    "total_sales":14229.68,
+    "months_active":10.0,
+    "avg_price":31.342907489,
+    "mean_monthly_qty":45.4,
+    "cv_monthly_qty":0.7254825856,
+    "trend_qty_slope":1.0303030303,
+    "cluster":2
   },
   {
     "item_code":"4806520351181",
@@ -2526,7 +2358,6 @@
     "tab":"GENERICS",
     "total_qty":190.0,
     "total_sales":1244.1,
-    "total_profit":598.1,
     "months_active":3.0,
     "avg_price":6.5478947368,
     "mean_monthly_qty":63.3333333333,
@@ -2541,7 +2372,6 @@
     "tab":"GENERICS",
     "total_qty":100.0,
     "total_sales":100.0,
-    "total_profit":40.0,
     "months_active":2.0,
     "avg_price":1.0,
     "mean_monthly_qty":50.0,
@@ -2556,28 +2386,26 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":156.07,
-    "total_profit":15.82,
     "months_active":3.0,
     "avg_price":52.0233333333,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806520890307",
-    "description":"BEWELL-C (ASCORBIC ACID) 500MG CAP",
+    "description":"BEWELL-C 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":392.0,
     "total_sales":2196.5,
-    "total_profit":363.91,
     "months_active":9.0,
     "avg_price":5.6033163265,
     "mean_monthly_qty":43.5555555556,
     "cv_monthly_qty":0.72789513,
     "trend_qty_slope":-3.2666666667,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4806520890680",
@@ -2586,13 +2414,12 @@
     "tab":"OTC",
     "total_qty":8.0,
     "total_sales":600.0,
-    "total_profit":548.4,
     "months_active":4.0,
     "avg_price":75.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.8660254038,
     "trend_qty_slope":1.2,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806521500014",
@@ -2601,13 +2428,12 @@
     "tab":"OTC",
     "total_qty":330.0,
     "total_sales":16552.1,
-    "total_profit":2411.6,
     "months_active":4.0,
     "avg_price":50.1578787879,
     "mean_monthly_qty":82.5,
     "cv_monthly_qty":0.5547689565,
     "trend_qty_slope":18.2,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806523302456",
@@ -2616,13 +2442,12 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":105.84,
-    "total_profit":46.59,
     "months_active":2.0,
     "avg_price":35.28,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806523302487",
@@ -2631,13 +2456,12 @@
     "tab":"GENERICS",
     "total_qty":11.0,
     "total_sales":285.9,
-    "total_profit":139.12,
     "months_active":7.0,
     "avg_price":25.9909090909,
     "mean_monthly_qty":1.5714285714,
     "cv_monthly_qty":0.5749595746,
     "trend_qty_slope":-0.2142857143,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806523431804",
@@ -2646,13 +2470,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":75.0,
-    "total_profit":0.0,
     "months_active":1.0,
     "avg_price":15.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806524142891",
@@ -2661,7 +2484,6 @@
     "tab":"GENERICS",
     "total_qty":635.0,
     "total_sales":1208.06,
-    "total_profit":838.11,
     "months_active":14.0,
     "avg_price":1.9024566929,
     "mean_monthly_qty":45.3571428571,
@@ -2674,15 +2496,14 @@
     "description":"CALCITROL 500 1250MG\/250IU TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2382.0,
-    "total_sales":30962.94,
-    "total_profit":6614.72,
-    "months_active":28.0,
-    "avg_price":12.9987153652,
-    "mean_monthly_qty":85.0714285714,
-    "cv_monthly_qty":0.8241439113,
-    "trend_qty_slope":2.767925561,
-    "cluster":-1
+    "total_qty":2307.0,
+    "total_sales":30206.94,
+    "months_active":27.0,
+    "avg_price":13.0936020806,
+    "mean_monthly_qty":85.4444444444,
+    "cv_monthly_qty":0.835283806,
+    "trend_qty_slope":2.7362637363,
+    "cluster":2
   },
   {
     "item_code":"4806524146813",
@@ -2691,13 +2512,12 @@
     "tab":"OTC",
     "total_qty":336.0,
     "total_sales":9996.0,
-    "total_profit":2940.0,
     "months_active":10.0,
     "avg_price":29.75,
     "mean_monthly_qty":33.6,
     "cv_monthly_qty":0.5439512262,
     "trend_qty_slope":-0.5818181818,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806524147391",
@@ -2706,13 +2526,12 @@
     "tab":"GENERICS",
     "total_qty":1341.0,
     "total_sales":4229.19,
-    "total_profit":2920.69,
     "months_active":9.0,
     "avg_price":3.1537583893,
     "mean_monthly_qty":149.0,
     "cv_monthly_qty":1.0448600885,
     "trend_qty_slope":18.1166666667,
-    "cluster":10
+    "cluster":2
   },
   {
     "item_code":"4806524147988",
@@ -2721,7 +2540,6 @@
     "tab":"GENERICS",
     "total_qty":135.0,
     "total_sales":1086.3,
-    "total_profit":704.25,
     "months_active":4.0,
     "avg_price":8.0466666667,
     "mean_monthly_qty":33.75,
@@ -2734,15 +2552,14 @@
     "description":"AMBICAL (CALCIUM CARBONATE) 500MG TAB",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":501.0,
-    "total_sales":560.65,
-    "total_profit":285.1,
-    "months_active":8.0,
-    "avg_price":1.1190618762,
-    "mean_monthly_qty":62.625,
-    "cv_monthly_qty":0.5714546806,
-    "trend_qty_slope":-9.6071428571,
-    "cluster":0
+    "total_qty":451.0,
+    "total_sales":505.65,
+    "months_active":7.0,
+    "avg_price":1.1211751663,
+    "mean_monthly_qty":64.4285714286,
+    "cv_monthly_qty":0.5885069924,
+    "trend_qty_slope":-12.6071428571,
+    "cluster":2
   },
   {
     "item_code":"4806524149036",
@@ -2751,13 +2568,12 @@
     "tab":"GENERICS",
     "total_qty":640.0,
     "total_sales":1802.16,
-    "total_profit":1174.96,
     "months_active":11.0,
     "avg_price":2.815875,
     "mean_monthly_qty":58.1818181818,
     "cv_monthly_qty":0.6638032582,
     "trend_qty_slope":-5.4727272727,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4806524772517",
@@ -2766,7 +2582,6 @@
     "tab":"OTC",
     "total_qty":65.0,
     "total_sales":1287.0,
-    "total_profit":214.5,
     "months_active":3.0,
     "avg_price":19.8,
     "mean_monthly_qty":21.6666666667,
@@ -2781,13 +2596,12 @@
     "tab":"OTC",
     "total_qty":129.0,
     "total_sales":2193.0,
-    "total_profit":387.0,
     "months_active":6.0,
     "avg_price":17.0,
     "mean_monthly_qty":21.5,
     "cv_monthly_qty":0.3275136461,
     "trend_qty_slope":-1.0,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4806527190547",
@@ -2796,13 +2610,12 @@
     "tab":"GENERICS",
     "total_qty":18.0,
     "total_sales":402.23,
-    "total_profit":168.23,
     "months_active":5.0,
     "avg_price":22.3461111111,
     "mean_monthly_qty":3.6,
     "cv_monthly_qty":0.4513354669,
     "trend_qty_slope":0.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806527191216",
@@ -2811,13 +2624,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":22.5,
-    "total_profit":13.5,
     "months_active":1.0,
     "avg_price":4.5,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806527192022",
@@ -2826,28 +2638,26 @@
     "tab":"GENERICS",
     "total_qty":2051.0,
     "total_sales":4177.5,
-    "total_profit":3152.0,
     "months_active":6.0,
     "avg_price":2.0368113116,
     "mean_monthly_qty":341.8333333333,
     "cv_monthly_qty":2.0407348399,
     "trend_qty_slope":-270.6571428571,
-    "cluster":10
+    "cluster":1
   },
   {
     "item_code":"4806527192664",
     "description":"ENOCEE (ASCORBIC ACID) 500MG TAB",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":1043.0,
-    "total_sales":2005.84,
-    "total_profit":1567.78,
-    "months_active":11.0,
-    "avg_price":1.9231447747,
-    "mean_monthly_qty":94.8181818182,
-    "cv_monthly_qty":1.4146528972,
-    "trend_qty_slope":4.4090909091,
-    "cluster":3
+    "total_qty":543.0,
+    "total_sales":1005.84,
+    "months_active":10.0,
+    "avg_price":1.8523756906,
+    "mean_monthly_qty":54.3,
+    "cv_monthly_qty":0.7665235661,
+    "trend_qty_slope":-9.3757575758,
+    "cluster":2
   },
   {
     "item_code":"4806527192954",
@@ -2856,13 +2666,12 @@
     "tab":"GENERICS",
     "total_qty":277.0,
     "total_sales":2558.64,
-    "total_profit":1727.64,
     "months_active":8.0,
     "avg_price":9.236967509,
     "mean_monthly_qty":34.625,
     "cv_monthly_qty":0.8642496735,
     "trend_qty_slope":2.6071428571,
-    "cluster":5
+    "cluster":2
   },
   {
     "item_code":"4806527201373",
@@ -2871,13 +2680,12 @@
     "tab":"GENERICS",
     "total_qty":649.0,
     "total_sales":1507.0,
-    "total_profit":1169.52,
     "months_active":7.0,
     "avg_price":2.3220338983,
     "mean_monthly_qty":92.7142857143,
     "cv_monthly_qty":1.0938019325,
     "trend_qty_slope":-25.8214285714,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806527650270",
@@ -2886,28 +2694,26 @@
     "tab":"GENERICS",
     "total_qty":1085.0,
     "total_sales":2420.08,
-    "total_profit":1356.78,
     "months_active":13.0,
     "avg_price":2.2304884793,
     "mean_monthly_qty":83.4615384615,
     "cv_monthly_qty":0.7996378377,
     "trend_qty_slope":-8.0,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4806527651321",
     "description":"APPENTANYX (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":820.0,
-    "total_sales":4761.75,
-    "total_profit":1764.11,
-    "months_active":19.0,
-    "avg_price":5.8070121951,
-    "mean_monthly_qty":43.1578947368,
-    "cv_monthly_qty":0.6409044212,
-    "trend_qty_slope":-2.6964912281,
-    "cluster":-1
+    "total_qty":766.0,
+    "total_sales":4446.15,
+    "months_active":18.0,
+    "avg_price":5.8043733681,
+    "mean_monthly_qty":42.5555555556,
+    "cv_monthly_qty":0.6649305793,
+    "trend_qty_slope":-2.959752322,
+    "cluster":2
   },
   {
     "item_code":"4806528271009",
@@ -2916,13 +2722,12 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":557.68,
-    "total_profit":-14.88,
     "months_active":2.0,
     "avg_price":278.84,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806528380084",
@@ -2931,13 +2736,12 @@
     "tab":"GENERICS",
     "total_qty":32.0,
     "total_sales":1536.0,
-    "total_profit":384.0,
     "months_active":6.0,
     "avg_price":48.0,
     "mean_monthly_qty":5.3333333333,
     "cv_monthly_qty":0.3186887196,
     "trend_qty_slope":0.1142857143,
-    "cluster":8
+    "cluster":2
   },
   {
     "item_code":"4806529430320",
@@ -2946,28 +2750,26 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":175.0,
-    "total_profit":105.0,
     "months_active":1.0,
     "avg_price":35.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806529430337",
     "description":"FERLUM PLUS (FERROUS SULFATE + FOLIC ACID) 186MG\/400MCG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":1970.0,
-    "total_sales":5189.72,
-    "total_profit":3858.54,
-    "months_active":23.0,
-    "avg_price":2.6343756345,
-    "mean_monthly_qty":85.652173913,
-    "cv_monthly_qty":0.6284288561,
-    "trend_qty_slope":-2.0691699605,
-    "cluster":-1
+    "total_qty":1936.0,
+    "total_sales":5105.72,
+    "months_active":22.0,
+    "avg_price":2.6372520661,
+    "mean_monthly_qty":88.0,
+    "cv_monthly_qty":0.6121807038,
+    "trend_qty_slope":-2.6335403727,
+    "cluster":2
   },
   {
     "item_code":"4806529430498",
@@ -2976,27 +2778,25 @@
     "tab":"OTC",
     "total_qty":1143.0,
     "total_sales":3733.42,
-    "total_profit":2304.67,
     "months_active":19.0,
     "avg_price":3.2663342082,
     "mean_monthly_qty":60.1578947368,
     "cv_monthly_qty":0.7584913323,
     "trend_qty_slope":3.0789473684,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806529430719",
     "description":"RAMAVIT (VITAMIN B COMPLEX) TAB",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":716.0,
-    "total_sales":1202.76,
-    "total_profit":737.36,
-    "months_active":9.0,
-    "avg_price":1.6798324022,
-    "mean_monthly_qty":79.5555555556,
-    "cv_monthly_qty":0.4350732396,
-    "trend_qty_slope":4.2666666667,
+    "total_qty":562.0,
+    "total_sales":956.28,
+    "months_active":8.0,
+    "avg_price":1.7015658363,
+    "mean_monthly_qty":70.25,
+    "cv_monthly_qty":0.3393868663,
+    "trend_qty_slope":1.4523809524,
     "cluster":2
   },
   {
@@ -3006,13 +2806,12 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":133.5,
-    "total_profit":89.26,
     "months_active":2.0,
     "avg_price":66.75,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"48065294312259",
@@ -3021,13 +2820,12 @@
     "tab":"GENERICS",
     "total_qty":787.0,
     "total_sales":2382.1,
-    "total_profit":1909.9,
     "months_active":12.0,
     "avg_price":3.0268106734,
     "mean_monthly_qty":65.5833333333,
     "cv_monthly_qty":0.7502840391,
     "trend_qty_slope":-8.513986014,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4806529570316",
@@ -3036,13 +2834,12 @@
     "tab":"GENERICS",
     "total_qty":200.0,
     "total_sales":382.96,
-    "total_profit":232.96,
     "months_active":2.0,
     "avg_price":1.9148,
     "mean_monthly_qty":100.0,
     "cv_monthly_qty":0.1,
     "trend_qty_slope":20.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806529630171",
@@ -3051,73 +2848,68 @@
     "tab":"OTC",
     "total_qty":317.0,
     "total_sales":3391.2,
-    "total_profit":3391.2,
     "months_active":6.0,
     "avg_price":10.6977917981,
     "mean_monthly_qty":52.8333333333,
     "cv_monthly_qty":0.3596906237,
     "trend_qty_slope":-1.0,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4806531820744",
     "description":"BACIFLORA PROBIOTIC DIETARY SUPP 5ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":401.0,
-    "total_sales":12657.35,
-    "total_profit":2442.73,
-    "months_active":20.0,
-    "avg_price":31.5644638404,
-    "mean_monthly_qty":20.05,
-    "cv_monthly_qty":0.9445382004,
-    "trend_qty_slope":0.8233082707,
-    "cluster":-1
+    "total_qty":374.0,
+    "total_sales":11812.55,
+    "months_active":19.0,
+    "avg_price":31.5843582888,
+    "mean_monthly_qty":19.6842105263,
+    "cv_monthly_qty":0.9835793276,
+    "trend_qty_slope":0.8070175439,
+    "cluster":2
   },
   {
     "item_code":"4806531900347",
     "description":"COM-FEMIC (FERROUS SULFATE) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":70.0,
-    "total_sales":210.0,
-    "total_profit":108.5,
-    "months_active":3.0,
+    "total_qty":60.0,
+    "total_sales":180.0,
+    "months_active":2.0,
     "avg_price":3.0,
-    "mean_monthly_qty":23.3333333333,
-    "cv_monthly_qty":0.4040610178,
-    "trend_qty_slope":-10.0,
-    "cluster":0
+    "mean_monthly_qty":30.0,
+    "cv_monthly_qty":0.0,
+    "trend_qty_slope":-0.0,
+    "cluster":2
   },
   {
     "item_code":"4806532560229",
     "description":"FOLIDYN 5MG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":620.0,
-    "total_sales":4282.04,
-    "total_profit":481.44,
-    "months_active":15.0,
-    "avg_price":6.906516129,
-    "mean_monthly_qty":41.3333333333,
-    "cv_monthly_qty":0.7400572298,
-    "trend_qty_slope":-1.825,
-    "cluster":-1
+    "total_qty":604.0,
+    "total_sales":4170.04,
+    "months_active":14.0,
+    "avg_price":6.9040397351,
+    "mean_monthly_qty":43.1428571429,
+    "cv_monthly_qty":0.7156991973,
+    "trend_qty_slope":-2.3516483516,
+    "cluster":2
   },
   {
     "item_code":"4806532560274",
     "description":"PRENAREX PLUS CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1929.0,
-    "total_sales":22718.64,
-    "total_profit":2532.9,
-    "months_active":24.0,
-    "avg_price":11.7774183515,
-    "mean_monthly_qty":80.375,
-    "cv_monthly_qty":0.5612196585,
-    "trend_qty_slope":-0.6526086957,
-    "cluster":-1
+    "total_qty":1794.0,
+    "total_sales":21124.89,
+    "months_active":23.0,
+    "avg_price":11.7753010033,
+    "mean_monthly_qty":78.0,
+    "cv_monthly_qty":0.5716031194,
+    "trend_qty_slope":-0.6630434783,
+    "cluster":2
   },
   {
     "item_code":"4806532560366",
@@ -3126,13 +2918,12 @@
     "tab":"GENERICS",
     "total_qty":17.0,
     "total_sales":497.25,
-    "total_profit":101.49,
     "months_active":3.0,
     "avg_price":29.25,
     "mean_monthly_qty":5.6666666667,
     "cv_monthly_qty":0.6655122646,
     "trend_qty_slope":-4.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806533601754",
@@ -3141,13 +2932,12 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":156.0,
-    "total_profit":156.0,
     "months_active":1.0,
     "avg_price":15.6,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"480653361754",
@@ -3156,13 +2946,12 @@
     "tab":"OTC",
     "total_qty":30.0,
     "total_sales":585.0,
-    "total_profit":315.0,
     "months_active":3.0,
     "avg_price":19.5,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.4082482905,
     "trend_qty_slope":-5.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806534570301",
@@ -3171,13 +2960,12 @@
     "tab":"OTC",
     "total_qty":153.0,
     "total_sales":4896.0,
-    "total_profit":2677.5,
     "months_active":6.0,
     "avg_price":32.0,
     "mean_monthly_qty":25.5,
     "cv_monthly_qty":0.2382709299,
     "trend_qty_slope":-0.7142857143,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806534770008",
@@ -3186,13 +2974,12 @@
     "tab":"OTC",
     "total_qty":214.0,
     "total_sales":6964.25,
-    "total_profit":1128.58,
     "months_active":14.0,
     "avg_price":32.5432242991,
     "mean_monthly_qty":15.2857142857,
     "cv_monthly_qty":0.6907673829,
     "trend_qty_slope":-0.2065934066,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788058034",
@@ -3201,28 +2988,26 @@
     "tab":"OTC",
     "total_qty":23.0,
     "total_sales":3396.5,
-    "total_profit":424.86,
     "months_active":17.0,
     "avg_price":147.6739130435,
     "mean_monthly_qty":1.3529411765,
     "cv_monthly_qty":0.4347826087,
     "trend_qty_slope":-0.0049019608,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"4807788058850",
     "description":"UH FERSULFATE IRON 65MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":48.0,
-    "total_sales":8226.05,
-    "total_profit":1007.43,
-    "months_active":25.0,
-    "avg_price":171.3760416667,
-    "mean_monthly_qty":1.92,
-    "cv_monthly_qty":0.4868050602,
-    "trend_qty_slope":-0.0176923077,
-    "cluster":-1
+    "total_qty":47.0,
+    "total_sales":8066.85,
+    "months_active":24.0,
+    "avg_price":171.635106383,
+    "mean_monthly_qty":1.9583333333,
+    "cv_monthly_qty":0.4771842871,
+    "trend_qty_slope":-0.0195652174,
+    "cluster":2
   },
   {
     "item_code":"4807788344083",
@@ -3231,13 +3016,12 @@
     "tab":"OTC",
     "total_qty":3.0,
     "total_sales":96.0,
-    "total_profit":96.0,
     "months_active":1.0,
     "avg_price":32.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788400536",
@@ -3246,13 +3030,12 @@
     "tab":"OTC",
     "total_qty":43.0,
     "total_sales":989.0,
-    "total_profit":99.76,
     "months_active":4.0,
     "avg_price":23.0,
     "mean_monthly_qty":10.75,
     "cv_monthly_qty":1.0428877825,
     "trend_qty_slope":-6.9,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4807788401465",
@@ -3261,28 +3044,26 @@
     "tab":"OTC",
     "total_qty":202.0,
     "total_sales":4081.97,
-    "total_profit":174.5,
     "months_active":16.0,
     "avg_price":20.2077722772,
     "mean_monthly_qty":12.625,
     "cv_monthly_qty":1.1794651855,
     "trend_qty_slope":-0.7294117647,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788405043",
     "description":"CONZACE CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":290.0,
-    "total_sales":3805.39,
-    "total_profit":395.97,
-    "months_active":16.0,
-    "avg_price":13.1220344828,
-    "mean_monthly_qty":18.125,
-    "cv_monthly_qty":0.6964834381,
-    "trend_qty_slope":0.1617647059,
-    "cluster":-1
+    "total_qty":273.0,
+    "total_sales":3580.14,
+    "months_active":15.0,
+    "avg_price":13.1140659341,
+    "mean_monthly_qty":18.2,
+    "cv_monthly_qty":0.7161710818,
+    "trend_qty_slope":0.1142857143,
+    "cluster":2
   },
   {
     "item_code":"4807788416902",
@@ -3291,13 +3072,12 @@
     "tab":"OTC",
     "total_qty":4.0,
     "total_sales":637.75,
-    "total_profit":56.79,
     "months_active":4.0,
     "avg_price":159.4375,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788416919",
@@ -3306,13 +3086,12 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":561.0,
-    "total_profit":29.0,
     "months_active":2.0,
     "avg_price":280.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788519122",
@@ -3321,13 +3100,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":555.0,
-    "total_profit":55.51,
     "months_active":1.0,
     "avg_price":555.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788519191",
@@ -3336,13 +3114,12 @@
     "tab":"OTC",
     "total_qty":14.0,
     "total_sales":1030.19,
-    "total_profit":69.08,
     "months_active":9.0,
     "avg_price":73.585,
     "mean_monthly_qty":1.5555555556,
     "cv_monthly_qty":0.6144518048,
     "trend_qty_slope":-0.1166666667,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4807788519207",
@@ -3351,13 +3128,12 @@
     "tab":"OTC",
     "total_qty":14.0,
     "total_sales":1918.0,
-    "total_profit":191.42,
     "months_active":11.0,
     "avg_price":137.0,
     "mean_monthly_qty":1.2727272727,
     "cv_monthly_qty":0.3499271061,
     "trend_qty_slope":0.0181818182,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4807788519221",
@@ -3366,13 +3142,12 @@
     "tab":"OTC",
     "total_qty":33.0,
     "total_sales":4407.34,
-    "total_profit":434.4,
     "months_active":21.0,
     "avg_price":133.5557575758,
     "mean_monthly_qty":1.5714285714,
     "cv_monthly_qty":0.5749595746,
     "trend_qty_slope":7.14541679e-18,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788519238",
@@ -3381,7 +3156,6 @@
     "tab":"OTC",
     "total_qty":4.0,
     "total_sales":1104.26,
-    "total_profit":95.61,
     "months_active":4.0,
     "avg_price":276.065,
     "mean_monthly_qty":1.0,
@@ -3396,13 +3170,12 @@
     "tab":"OTC",
     "total_qty":12.0,
     "total_sales":4183.0,
-    "total_profit":418.0,
     "months_active":10.0,
     "avg_price":348.5833333333,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.0242424242,
-    "cluster":10
+    "cluster":2
   },
   {
     "item_code":"4807788519368",
@@ -3411,13 +3184,12 @@
     "tab":"OTC",
     "total_qty":20.0,
     "total_sales":1780.0,
-    "total_profit":169.2,
     "months_active":14.0,
     "avg_price":89.0,
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":0.0263736264,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4807788519382",
@@ -3426,13 +3198,12 @@
     "tab":"OTC",
     "total_qty":2.0,
     "total_sales":624.2,
-    "total_profit":78.98,
     "months_active":2.0,
     "avg_price":312.1,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788519559",
@@ -3441,13 +3212,12 @@
     "tab":"GENERICS",
     "total_qty":6.0,
     "total_sales":1864.5,
-    "total_profit":315.78,
     "months_active":5.0,
     "avg_price":310.75,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.2,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4807788519580",
@@ -3456,7 +3226,6 @@
     "tab":"OTC",
     "total_qty":17.0,
     "total_sales":1214.8,
-    "total_profit":143.8,
     "months_active":12.0,
     "avg_price":71.4588235294,
     "mean_monthly_qty":1.4166666667,
@@ -3471,13 +3240,12 @@
     "tab":"OTC",
     "total_qty":4.0,
     "total_sales":526.83,
-    "total_profit":60.74,
     "months_active":4.0,
     "avg_price":131.7075,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788519658",
@@ -3486,13 +3254,12 @@
     "tab":"OTC",
     "total_qty":4.0,
     "total_sales":804.0,
-    "total_profit":133.64,
     "months_active":3.0,
     "avg_price":201.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.5,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788519726",
@@ -3501,13 +3268,12 @@
     "tab":"OTC",
     "total_qty":6.0,
     "total_sales":994.5,
-    "total_profit":104.43,
     "months_active":5.0,
     "avg_price":165.75,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.1,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4807788519757",
@@ -3516,13 +3282,12 @@
     "tab":"OTC",
     "total_qty":7.0,
     "total_sales":583.0,
-    "total_profit":40.5,
     "months_active":5.0,
     "avg_price":83.2857142857,
     "mean_monthly_qty":1.4,
     "cv_monthly_qty":0.3499271061,
     "trend_qty_slope":-0.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788519764",
@@ -3531,43 +3296,40 @@
     "tab":"OTC",
     "total_qty":15.0,
     "total_sales":1961.1,
-    "total_profit":210.3,
     "months_active":12.0,
     "avg_price":130.74,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.0174825175,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4807788519771",
     "description":"NUTRILIN SYRUP 120ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":11.0,
-    "total_sales":2092.96,
-    "total_profit":190.29,
-    "months_active":10.0,
-    "avg_price":190.2690909091,
-    "mean_monthly_qty":1.1,
-    "cv_monthly_qty":0.2727272727,
-    "trend_qty_slope":-0.0060606061,
-    "cluster":3
+    "total_qty":10.0,
+    "total_sales":1911.21,
+    "months_active":9.0,
+    "avg_price":191.121,
+    "mean_monthly_qty":1.1111111111,
+    "cv_monthly_qty":0.2828427125,
+    "trend_qty_slope":-0.0166666667,
+    "cluster":2
   },
   {
     "item_code":"4807788519856",
     "description":"E-ZINC SYR 60ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":49.0,
-    "total_sales":5324.05,
-    "total_profit":441.59,
-    "months_active":28.0,
-    "avg_price":108.6540816327,
-    "mean_monthly_qty":1.75,
-    "cv_monthly_qty":0.5426422776,
-    "trend_qty_slope":0.0363984674,
-    "cluster":-1
+    "total_qty":47.0,
+    "total_sales":5105.8,
+    "months_active":27.0,
+    "avg_price":108.6340425532,
+    "mean_monthly_qty":1.7407407407,
+    "cv_monthly_qty":0.5548257366,
+    "trend_qty_slope":0.0390720391,
+    "cluster":2
   },
   {
     "item_code":"4807788519863",
@@ -3576,43 +3338,40 @@
     "tab":"OTC",
     "total_qty":23.0,
     "total_sales":2313.01,
-    "total_profit":179.29,
     "months_active":17.0,
     "avg_price":100.5656521739,
     "mean_monthly_qty":1.3529411765,
     "cv_monthly_qty":0.5032972566,
     "trend_qty_slope":0.0294117647,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4807788522078",
     "description":"LIVERPRIME CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":363.0,
-    "total_sales":11670.06,
-    "total_profit":-198.52,
-    "months_active":16.0,
-    "avg_price":32.1489256198,
-    "mean_monthly_qty":22.6875,
-    "cv_monthly_qty":1.0521793249,
-    "trend_qty_slope":-0.7073529412,
-    "cluster":-1
+    "total_qty":357.0,
+    "total_sales":11460.06,
+    "months_active":15.0,
+    "avg_price":32.1010084034,
+    "mean_monthly_qty":23.8,
+    "cv_monthly_qty":1.0188765192,
+    "trend_qty_slope":-0.6642857143,
+    "cluster":2
   },
   {
     "item_code":"4807788522283",
     "description":"REVICON FORTE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":1133.0,
-    "total_sales":6540.5,
-    "total_profit":613.29,
-    "months_active":32.0,
-    "avg_price":5.7727272727,
-    "mean_monthly_qty":35.40625,
-    "cv_monthly_qty":0.5619012514,
-    "trend_qty_slope":0.6768695015,
-    "cluster":-1
+    "total_qty":1123.0,
+    "total_sales":6483.45,
+    "months_active":31.0,
+    "avg_price":5.7733303651,
+    "mean_monthly_qty":36.2258064516,
+    "cv_monthly_qty":0.5431017551,
+    "trend_qty_slope":0.697983871,
+    "cluster":2
   },
   {
     "item_code":"4807788522290",
@@ -3621,28 +3380,26 @@
     "tab":"OTC",
     "total_qty":15.0,
     "total_sales":2336.25,
-    "total_profit":290.85,
     "months_active":9.0,
     "avg_price":155.75,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":0.0833333333,
-    "cluster":11
+    "cluster":2
   },
   {
     "item_code":"4807788523631",
     "description":"CEELIN PLUS SYR 60ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":30.0,
-    "total_sales":2577.5,
-    "total_profit":413.93,
-    "months_active":19.0,
-    "avg_price":85.9166666667,
-    "mean_monthly_qty":1.5789473684,
-    "cv_monthly_qty":0.5163977795,
-    "trend_qty_slope":0.0578947368,
-    "cluster":5
+    "total_qty":29.0,
+    "total_sales":2491.5,
+    "months_active":18.0,
+    "avg_price":85.9137931034,
+    "mean_monthly_qty":1.6111111111,
+    "cv_monthly_qty":0.5126230603,
+    "trend_qty_slope":0.0567595459,
+    "cluster":2
   },
   {
     "item_code":"4807788523648",
@@ -3651,28 +3408,26 @@
     "tab":"OTC",
     "total_qty":72.0,
     "total_sales":11639.75,
-    "total_profit":2080.83,
     "months_active":30.0,
     "avg_price":161.6631944444,
     "mean_monthly_qty":2.4,
     "cv_monthly_qty":0.4882887731,
     "trend_qty_slope":0.0142380423,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788523655",
     "description":"CEELIN PLUS SYR 250ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":40.0,
-    "total_sales":11738.0,
-    "total_profit":954.94,
-    "months_active":21.0,
-    "avg_price":293.45,
-    "mean_monthly_qty":1.9047619048,
-    "cv_monthly_qty":0.4834769901,
-    "trend_qty_slope":0.0506493506,
-    "cluster":-1
+    "total_qty":39.0,
+    "total_sales":11451.75,
+    "months_active":20.0,
+    "avg_price":293.6346153846,
+    "mean_monthly_qty":1.95,
+    "cv_monthly_qty":0.4721013497,
+    "trend_qty_slope":0.0518796992,
+    "cluster":2
   },
   {
     "item_code":"4807788525574",
@@ -3681,13 +3436,12 @@
     "tab":"OTC",
     "total_qty":473.0,
     "total_sales":8538.53,
-    "total_profit":760.26,
     "months_active":16.0,
     "avg_price":18.0518604651,
     "mean_monthly_qty":29.5625,
     "cv_monthly_qty":0.5623479944,
     "trend_qty_slope":-0.2191176471,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788525727",
@@ -3696,13 +3450,12 @@
     "tab":"OTC",
     "total_qty":71.0,
     "total_sales":1846.0,
-    "total_profit":198.09,
     "months_active":6.0,
     "avg_price":26.0,
     "mean_monthly_qty":11.8333333333,
     "cv_monthly_qty":0.852665401,
     "trend_qty_slope":0.8857142857,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4807788535542",
@@ -3711,13 +3464,12 @@
     "tab":"OTC",
     "total_qty":380.0,
     "total_sales":6110.36,
-    "total_profit":1114.64,
     "months_active":22.0,
     "avg_price":16.0798947368,
     "mean_monthly_qty":17.2727272727,
     "cv_monthly_qty":0.9970038217,
     "trend_qty_slope":1.2840203275,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788545251",
@@ -3726,13 +3478,12 @@
     "tab":"OTC",
     "total_qty":138.0,
     "total_sales":1976.6,
-    "total_profit":153.62,
     "months_active":13.0,
     "avg_price":14.3231884058,
     "mean_monthly_qty":10.6153846154,
     "cv_monthly_qty":0.716035903,
     "trend_qty_slope":0.2527472527,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4807788549150",
@@ -3741,13 +3492,12 @@
     "tab":"GENERICS",
     "total_qty":19.0,
     "total_sales":280.25,
-    "total_profit":42.96,
     "months_active":3.0,
     "avg_price":14.75,
     "mean_monthly_qty":6.3333333333,
     "cv_monthly_qty":0.6615686889,
     "trend_qty_slope":1.5,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788549648",
@@ -3756,13 +3506,12 @@
     "tab":"OTC",
     "total_qty":24.0,
     "total_sales":2231.25,
-    "total_profit":153.23,
     "months_active":14.0,
     "avg_price":92.96875,
     "mean_monthly_qty":1.7142857143,
     "cv_monthly_qty":0.5137011669,
     "trend_qty_slope":0.1142857143,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4807788549655",
@@ -3771,13 +3520,12 @@
     "tab":"OTC",
     "total_qty":18.0,
     "total_sales":2876.3,
-    "total_profit":183.33,
     "months_active":10.0,
     "avg_price":159.7944444444,
     "mean_monthly_qty":1.8,
     "cv_monthly_qty":0.544331054,
     "trend_qty_slope":0.0727272727,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788551160",
@@ -3786,28 +3534,26 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":98.5,
-    "total_profit":13.52,
     "months_active":1.0,
     "avg_price":98.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788551177",
     "description":"SUPRACID 650MG 100s BOTL",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":78.0,
-    "total_sales":10320.22,
-    "total_profit":305.23,
-    "months_active":31.0,
-    "avg_price":132.3105128205,
-    "mean_monthly_qty":2.5161290323,
-    "cv_monthly_qty":0.4267517174,
-    "trend_qty_slope":-0.0318548387,
-    "cluster":-1
+    "total_qty":76.0,
+    "total_sales":10067.02,
+    "months_active":30.0,
+    "avg_price":132.4607894737,
+    "mean_monthly_qty":2.5333333333,
+    "cv_monthly_qty":0.4291975376,
+    "trend_qty_slope":-0.0338153504,
+    "cluster":2
   },
   {
     "item_code":"4807788558466",
@@ -3816,13 +3562,12 @@
     "tab":"OTC",
     "total_qty":392.0,
     "total_sales":9152.42,
-    "total_profit":534.45,
     "months_active":19.0,
     "avg_price":23.3480102041,
     "mean_monthly_qty":20.6315789474,
     "cv_monthly_qty":0.7866248368,
     "trend_qty_slope":-0.3771929825,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788558626",
@@ -3831,28 +3576,26 @@
     "tab":"OTC",
     "total_qty":61.0,
     "total_sales":427.0,
-    "total_profit":64.05,
     "months_active":6.0,
     "avg_price":7.0,
     "mean_monthly_qty":10.1666666667,
     "cv_monthly_qty":0.8896369542,
     "trend_qty_slope":-3.5142857143,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788562128",
     "description":"NUTROPLEX SYRUP 60ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":10.0,
-    "total_sales":866.0,
-    "total_profit":79.4,
-    "months_active":7.0,
-    "avg_price":86.6,
-    "mean_monthly_qty":1.4285714286,
-    "cv_monthly_qty":0.3464101615,
-    "trend_qty_slope":0.0357142857,
-    "cluster":4
+    "total_qty":8.0,
+    "total_sales":693.5,
+    "months_active":6.0,
+    "avg_price":86.6875,
+    "mean_monthly_qty":1.3333333333,
+    "cv_monthly_qty":0.3535533906,
+    "trend_qty_slope":0.1714285714,
+    "cluster":2
   },
   {
     "item_code":"4807788562166",
@@ -3861,43 +3604,40 @@
     "tab":"OTC",
     "total_qty":12.0,
     "total_sales":1975.0,
-    "total_profit":181.84,
     "months_active":10.0,
     "avg_price":164.5833333333,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":0.0848484848,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4807788562593",
     "description":"IMMUNPRO 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":6210.0,
-    "total_sales":51408.11,
-    "total_profit":4007.24,
-    "months_active":35.0,
-    "avg_price":8.2782785829,
-    "mean_monthly_qty":177.4285714286,
-    "cv_monthly_qty":0.5976988484,
-    "trend_qty_slope":-1.5579831933,
-    "cluster":-1
+    "total_qty":6093.0,
+    "total_sales":50384.36,
+    "months_active":34.0,
+    "avg_price":8.2692204169,
+    "mean_monthly_qty":179.2058823529,
+    "cv_monthly_qty":0.5975367241,
+    "trend_qty_slope":-1.7547746371,
+    "cluster":2
   },
   {
     "item_code":"4807788562630",
     "description":"CALCIUMADE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2855.0,
-    "total_sales":30533.41,
-    "total_profit":-170708.13,
-    "months_active":35.0,
-    "avg_price":10.6947145359,
-    "mean_monthly_qty":81.5714285714,
-    "cv_monthly_qty":0.6978196432,
-    "trend_qty_slope":1.3647058824,
-    "cluster":-1
+    "total_qty":2560.0,
+    "total_sales":27395.41,
+    "months_active":34.0,
+    "avg_price":10.7013320313,
+    "mean_monthly_qty":75.2941176471,
+    "cv_monthly_qty":0.5874257142,
+    "trend_qty_slope":1.5520244461,
+    "cluster":2
   },
   {
     "item_code":"4807788563279",
@@ -3906,13 +3646,12 @@
     "tab":"OTC",
     "total_qty":8.0,
     "total_sales":540.0,
-    "total_profit":64.24,
     "months_active":5.0,
     "avg_price":67.5,
     "mean_monthly_qty":1.6,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":0.1,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788563286",
@@ -3921,28 +3660,26 @@
     "tab":"OTC",
     "total_qty":664.0,
     "total_sales":4381.29,
-    "total_profit":575.65,
     "months_active":15.0,
     "avg_price":6.5983283133,
     "mean_monthly_qty":44.2666666667,
     "cv_monthly_qty":0.7761125355,
     "trend_qty_slope":1.2035714286,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788568083",
     "description":"TIKI-TIKI 30ML DRP BOT",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":21.0,
-    "total_sales":1907.4,
-    "total_profit":209.74,
-    "months_active":16.0,
-    "avg_price":90.8285714286,
-    "mean_monthly_qty":1.3125,
-    "cv_monthly_qty":0.3531523089,
-    "trend_qty_slope":-0.0132352941,
-    "cluster":1
+    "total_qty":20.0,
+    "total_sales":1809.4,
+    "months_active":15.0,
+    "avg_price":90.47,
+    "mean_monthly_qty":1.3333333333,
+    "cv_monthly_qty":0.3535533906,
+    "trend_qty_slope":-0.0142857143,
+    "cluster":2
   },
   {
     "item_code":"4807788568090",
@@ -3951,43 +3688,40 @@
     "tab":"OTC",
     "total_qty":17.0,
     "total_sales":2053.58,
-    "total_profit":122.21,
     "months_active":11.0,
     "avg_price":120.7988235294,
     "mean_monthly_qty":1.5454545455,
     "cv_monthly_qty":0.3221897397,
     "trend_qty_slope":-0.0454545455,
-    "cluster":3
+    "cluster":2
   },
   {
     "item_code":"4807788568106",
     "description":"TIKI-TIKI 60ML BOT SYR",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":13.0,
-    "total_sales":895.36,
-    "total_profit":110.9,
-    "months_active":11.0,
-    "avg_price":68.8738461538,
-    "mean_monthly_qty":1.1818181818,
-    "cv_monthly_qty":0.4865042554,
-    "trend_qty_slope":-0.0727272727,
-    "cluster":4
+    "total_qty":12.0,
+    "total_sales":821.36,
+    "months_active":10.0,
+    "avg_price":68.4466666667,
+    "mean_monthly_qty":1.2,
+    "cv_monthly_qty":0.5,
+    "trend_qty_slope":-0.0848484848,
+    "cluster":2
   },
   {
     "item_code":"4807788580931",
     "description":"Z-ALGINA SUS",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":1346.0,
-    "total_sales":39378.5,
-    "total_profit":2959.3,
-    "months_active":33.0,
-    "avg_price":29.2559435364,
-    "mean_monthly_qty":40.7878787879,
-    "cv_monthly_qty":0.8159966284,
-    "trend_qty_slope":0.8135026738,
-    "cluster":-1
+    "total_qty":1307.0,
+    "total_sales":38219.5,
+    "months_active":32.0,
+    "avg_price":29.2421576129,
+    "mean_monthly_qty":40.84375,
+    "cv_monthly_qty":0.8274776524,
+    "trend_qty_slope":0.8223973607,
+    "cluster":2
   },
   {
     "item_code":"4807788590046",
@@ -3996,13 +3730,12 @@
     "tab":"OTC",
     "total_qty":93.0,
     "total_sales":297.75,
-    "total_profit":-9.15,
     "months_active":4.0,
     "avg_price":3.2016129032,
     "mean_monthly_qty":23.25,
     "cv_monthly_qty":0.9719740198,
     "trend_qty_slope":-5.9,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788662958",
@@ -4011,7 +3744,6 @@
     "tab":"OTC",
     "total_qty":146.0,
     "total_sales":1374.98,
-    "total_profit":449.34,
     "months_active":7.0,
     "avg_price":9.4176712329,
     "mean_monthly_qty":20.8571428571,
@@ -4026,42 +3758,39 @@
     "tab":"GENERICS",
     "total_qty":20.0,
     "total_sales":353.12,
-    "total_profit":-19.6,
     "months_active":2.0,
     "avg_price":17.656,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788707154",
     "description":"ENERVON FILMTAB 30&#039;S PROMO",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2.0,
-    "total_sales":390.0,
-    "total_profit":64.68,
-    "months_active":2.0,
+    "total_qty":1.0,
+    "total_sales":195.0,
+    "months_active":1.0,
     "avg_price":195.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "trend_qty_slope":0.0,
+    "cluster":2
   },
   {
     "item_code":"48077887095541KIT",
     "description":"REVICON FORTE 30&#039;S",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":7.0,
-    "total_sales":1155.0,
-    "total_profit":164.43,
-    "months_active":5.0,
+    "total_qty":5.0,
+    "total_sales":825.0,
+    "months_active":4.0,
     "avg_price":165.0,
-    "mean_monthly_qty":1.4,
-    "cv_monthly_qty":0.3499271061,
-    "trend_qty_slope":-0.2,
+    "mean_monthly_qty":1.25,
+    "cv_monthly_qty":0.3464101615,
+    "trend_qty_slope":-0.1,
     "cluster":2
   },
   {
@@ -4069,15 +3798,14 @@
     "description":"REVICON FORTE TAB 9+1 SET",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":35.0,
-    "total_sales":1610.0,
-    "total_profit":124.63,
-    "months_active":14.0,
+    "total_qty":29.0,
+    "total_sales":1334.0,
+    "months_active":13.0,
     "avg_price":46.0,
-    "mean_monthly_qty":2.5,
-    "cv_monthly_qty":0.6,
-    "trend_qty_slope":0.0901098901,
-    "cluster":8
+    "mean_monthly_qty":2.2307692308,
+    "cv_monthly_qty":0.5319740904,
+    "trend_qty_slope":0.043956044,
+    "cluster":2
   },
   {
     "item_code":"4807788734983",
@@ -4086,13 +3814,12 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":180.0,
-    "total_profit":78.82,
     "months_active":2.0,
     "avg_price":60.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788740212",
@@ -4101,13 +3828,12 @@
     "tab":"OTC",
     "total_qty":6.0,
     "total_sales":510.0,
-    "total_profit":129.12,
     "months_active":5.0,
     "avg_price":85.0,
     "mean_monthly_qty":1.2,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-0.2,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788741950",
@@ -4116,13 +3842,12 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":435.0,
-    "total_profit":38.76,
     "months_active":4.0,
     "avg_price":87.0,
     "mean_monthly_qty":1.25,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":0.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4807788766229",
@@ -4131,13 +3856,12 @@
     "tab":"OTC",
     "total_qty":48.0,
     "total_sales":8777.75,
-    "total_profit":2435.27,
     "months_active":14.0,
     "avg_price":182.8697916667,
     "mean_monthly_qty":3.4285714286,
     "cv_monthly_qty":0.6495190528,
     "trend_qty_slope":-0.1142857143,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4807788793959",
@@ -4146,13 +3870,12 @@
     "tab":"OTC",
     "total_qty":219.0,
     "total_sales":2180.0,
-    "total_profit":2180.0,
     "months_active":4.0,
     "avg_price":9.9543378995,
     "mean_monthly_qty":54.75,
     "cv_monthly_qty":0.6245366916,
     "trend_qty_slope":11.3,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"4807788827951",
@@ -4161,7 +3884,6 @@
     "tab":"OTC",
     "total_qty":22.0,
     "total_sales":1380.5,
-    "total_profit":122.98,
     "months_active":7.0,
     "avg_price":62.75,
     "mean_monthly_qty":3.1428571429,
@@ -4174,15 +3896,14 @@
     "description":"EYEBERRY CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":389.0,
-    "total_sales":6734.5,
-    "total_profit":782.8,
-    "months_active":25.0,
-    "avg_price":17.3123393316,
-    "mean_monthly_qty":15.56,
-    "cv_monthly_qty":1.3055076999,
-    "trend_qty_slope":0.0423076923,
-    "cluster":-1
+    "total_qty":384.0,
+    "total_sales":6649.5,
+    "months_active":24.0,
+    "avg_price":17.31640625,
+    "mean_monthly_qty":16.0,
+    "cv_monthly_qty":1.288470508,
+    "trend_qty_slope":-0.0017391304,
+    "cluster":2
   },
   {
     "item_code":"4809011851092",
@@ -4191,7 +3912,6 @@
     "tab":"OTC",
     "total_qty":20.0,
     "total_sales":1328.0,
-    "total_profit":-148.0,
     "months_active":1.0,
     "avg_price":66.4,
     "mean_monthly_qty":20.0,
@@ -4206,28 +3926,26 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":392.0,
-    "total_profit":392.0,
     "months_active":1.0,
     "avg_price":39.2,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4809012254458",
     "description":"LIVERAIDE CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":664.0,
-    "total_sales":12781.75,
-    "total_profit":1068.79,
-    "months_active":17.0,
-    "avg_price":19.249623494,
-    "mean_monthly_qty":39.0588235294,
-    "cv_monthly_qty":1.3096141694,
-    "trend_qty_slope":6.2524509804,
-    "cluster":-1
+    "total_qty":650.0,
+    "total_sales":12501.75,
+    "months_active":16.0,
+    "avg_price":19.2334615385,
+    "mean_monthly_qty":40.625,
+    "cv_monthly_qty":1.288106725,
+    "trend_qty_slope":6.8,
+    "cluster":2
   },
   {
     "item_code":"4809013407020",
@@ -4236,7 +3954,6 @@
     "tab":"GENERICS",
     "total_qty":125.0,
     "total_sales":686.8,
-    "total_profit":301.8,
     "months_active":2.0,
     "avg_price":5.4944,
     "mean_monthly_qty":62.5,
@@ -4251,13 +3968,12 @@
     "tab":"OTC",
     "total_qty":38.0,
     "total_sales":905.0,
-    "total_profit":905.0,
     "months_active":3.0,
     "avg_price":23.8157894737,
     "mean_monthly_qty":12.6666666667,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":-8.0,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"4809014206110",
@@ -4266,13 +3982,12 @@
     "tab":"GENERICS",
     "total_qty":459.0,
     "total_sales":23360.25,
-    "total_profit":410.25,
     "months_active":5.0,
     "avg_price":50.8937908497,
     "mean_monthly_qty":91.8,
     "cv_monthly_qty":1.406493157,
     "trend_qty_slope":75.1,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4809015142028",
@@ -4281,13 +3996,12 @@
     "tab":"OTC",
     "total_qty":107.0,
     "total_sales":5499.0,
-    "total_profit":1149.0,
     "months_active":6.0,
     "avg_price":51.3925233645,
     "mean_monthly_qty":17.8333333333,
     "cv_monthly_qty":1.2727105412,
     "trend_qty_slope":-0.7142857143,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4809015650233",
@@ -4296,13 +4010,12 @@
     "tab":"OTC",
     "total_qty":205.0,
     "total_sales":2818.75,
-    "total_profit":637.55,
     "months_active":4.0,
     "avg_price":13.75,
     "mean_monthly_qty":51.25,
     "cv_monthly_qty":0.6336771247,
     "trend_qty_slope":4.5,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"480915650233",
@@ -4311,13 +4024,12 @@
     "tab":"GENERICS",
     "total_qty":1203.0,
     "total_sales":16340.0,
-    "total_profit":3125.18,
     "months_active":15.0,
     "avg_price":13.5827098919,
     "mean_monthly_qty":80.2,
     "cv_monthly_qty":0.771405717,
     "trend_qty_slope":-3.3357142857,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4987176154484",
@@ -4326,13 +4038,12 @@
     "tab":"OTC",
     "total_qty":154.0,
     "total_sales":4162.5,
-    "total_profit":344.84,
     "months_active":4.0,
     "avg_price":27.0292207792,
     "mean_monthly_qty":38.5,
     "cv_monthly_qty":0.5064935065,
     "trend_qty_slope":17.4,
-    "cluster":10
+    "cluster":2
   },
   {
     "item_code":"609442044520",
@@ -4341,28 +4052,26 @@
     "tab":"OTC",
     "total_qty":99.0,
     "total_sales":902.4,
-    "total_profit":522.24,
     "months_active":5.0,
     "avg_price":9.1151515152,
     "mean_monthly_qty":19.8,
     "cv_monthly_qty":0.9342205761,
     "trend_qty_slope":10.6,
-    "cluster":4
+    "cluster":2
   },
   {
     "item_code":"61229488",
     "description":"CALCIFESAPH ( CALCIUM+VITAMIN D3) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":954.0,
-    "total_sales":3180.27,
-    "total_profit":1791.57,
-    "months_active":18.0,
-    "avg_price":3.3336163522,
-    "mean_monthly_qty":53.0,
-    "cv_monthly_qty":0.5044009473,
-    "trend_qty_slope":0.1981424149,
-    "cluster":7
+    "total_qty":894.0,
+    "total_sales":2988.27,
+    "months_active":17.0,
+    "avg_price":3.3425838926,
+    "mean_monthly_qty":52.5882352941,
+    "cv_monthly_qty":0.5220323309,
+    "trend_qty_slope":0.237745098,
+    "cluster":2
   },
   {
     "item_code":"66044802",
@@ -4371,28 +4080,26 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":76.5,
-    "total_profit":0.0,
     "months_active":2.0,
     "avg_price":25.5,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"69853920",
     "description":"ASCORSAPH ZEE(ASCORBIC ACID+ZN)500MG\/10MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":2710.0,
-    "total_sales":5938.0,
-    "total_profit":3732.0,
-    "months_active":13.0,
-    "avg_price":2.1911439114,
-    "mean_monthly_qty":208.4615384615,
-    "cv_monthly_qty":0.7253118359,
-    "trend_qty_slope":-1.2417582418,
-    "cluster":-1
+    "total_qty":2608.0,
+    "total_sales":5758.4,
+    "months_active":12.0,
+    "avg_price":2.2079754601,
+    "mean_monthly_qty":217.3333333333,
+    "cv_monthly_qty":0.7089955145,
+    "trend_qty_slope":-0.2237762238,
+    "cluster":2
   },
   {
     "item_code":"69883958",
@@ -4401,13 +4108,12 @@
     "tab":"GENERICS",
     "total_qty":142.0,
     "total_sales":372.9,
-    "total_profit":252.2,
     "months_active":7.0,
     "avg_price":2.626056338,
     "mean_monthly_qty":20.2857142857,
     "cv_monthly_qty":1.6141668489,
     "trend_qty_slope":7.2857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"70974850",
@@ -4416,58 +4122,54 @@
     "tab":"OTC",
     "total_qty":795.0,
     "total_sales":9073.5,
-    "total_profit":1521.0,
     "months_active":12.0,
     "avg_price":11.4132075472,
     "mean_monthly_qty":66.25,
     "cv_monthly_qty":0.7458886163,
     "trend_qty_slope":4.5979020979,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"710535105469",
     "description":"XANTHONE PLUS CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":330.0,
-    "total_sales":4330.0,
-    "total_profit":469.0,
-    "months_active":23.0,
-    "avg_price":13.1212121212,
-    "mean_monthly_qty":14.347826087,
-    "cv_monthly_qty":0.6604392339,
-    "trend_qty_slope":-0.5227272727,
-    "cluster":-1
+    "total_qty":322.0,
+    "total_sales":4222.0,
+    "months_active":22.0,
+    "avg_price":13.1118012422,
+    "mean_monthly_qty":14.6363636364,
+    "cv_monthly_qty":0.6551838263,
+    "trend_qty_slope":-0.5601355167,
+    "cluster":2
   },
   {
     "item_code":"72236079",
     "description":"MOSEGOR VITA CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
-    "total_qty":216.0,
-    "total_sales":11563.0,
-    "total_profit":210.4,
-    "months_active":20.0,
-    "avg_price":53.5324074074,
-    "mean_monthly_qty":10.8,
-    "cv_monthly_qty":0.7121809083,
-    "trend_qty_slope":0.0210526316,
-    "cluster":-1
+    "total_qty":186.0,
+    "total_sales":10285.0,
+    "months_active":19.0,
+    "avg_price":55.2956989247,
+    "mean_monthly_qty":9.7894736842,
+    "cv_monthly_qty":0.660831207,
+    "trend_qty_slope":0.1771929825,
+    "cluster":2
   },
   {
     "item_code":"745114069078",
     "description":"XANTHONE PLUS GOLD CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":493.0,
-    "total_sales":7852.49,
-    "total_profit":1542.09,
-    "months_active":30.0,
-    "avg_price":15.9279716024,
-    "mean_monthly_qty":16.4333333333,
-    "cv_monthly_qty":0.777331597,
-    "trend_qty_slope":0.0585094549,
-    "cluster":-1
+    "total_qty":478.0,
+    "total_sales":7604.99,
+    "months_active":29.0,
+    "avg_price":15.9100209205,
+    "mean_monthly_qty":16.4827586207,
+    "cv_monthly_qty":0.7880783961,
+    "trend_qty_slope":0.054679803,
+    "cluster":2
   },
   {
     "item_code":"8006540674383",
@@ -4476,13 +4178,12 @@
     "tab":"OTC",
     "total_qty":9.0,
     "total_sales":3527.91,
-    "total_profit":587.97,
     "months_active":3.0,
     "avg_price":391.99,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.4714045208,
     "trend_qty_slope":4.064777913e-16,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8006540674390",
@@ -4491,13 +4192,12 @@
     "tab":"OTC",
     "total_qty":10.0,
     "total_sales":3932.5,
-    "total_profit":418.8,
     "months_active":5.0,
     "avg_price":393.25,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.316227766,
     "trend_qty_slope":-0.2,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8006540685723",
@@ -4506,13 +4206,12 @@
     "tab":"OTC",
     "total_qty":132.0,
     "total_sales":3242.25,
-    "total_profit":398.97,
     "months_active":8.0,
     "avg_price":24.5625,
     "mean_monthly_qty":16.5,
     "cv_monthly_qty":0.7701978804,
     "trend_qty_slope":-3.8571428571,
-    "cluster":7
+    "cluster":2
   },
   {
     "item_code":"8006540685747",
@@ -4521,13 +4220,12 @@
     "tab":"OTC",
     "total_qty":27.0,
     "total_sales":661.5,
-    "total_profit":44.01,
     "months_active":1.0,
     "avg_price":24.5,
     "mean_monthly_qty":27.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8006540685761",
@@ -4536,13 +4234,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":57.5,
-    "total_profit":57.5,
     "months_active":1.0,
     "avg_price":57.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8850769007602",
@@ -4551,13 +4248,12 @@
     "tab":"OTC",
     "total_qty":174.0,
     "total_sales":4982.01,
-    "total_profit":-408.51,
     "months_active":6.0,
     "avg_price":28.6322413793,
     "mean_monthly_qty":29.0,
     "cv_monthly_qty":0.6527480857,
     "trend_qty_slope":1.7714285714,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8885010432315",
@@ -4566,13 +4262,12 @@
     "tab":"OTC",
     "total_qty":90.0,
     "total_sales":3397.5,
-    "total_profit":355.5,
     "months_active":5.0,
     "avg_price":37.75,
     "mean_monthly_qty":18.0,
     "cv_monthly_qty":0.544331054,
     "trend_qty_slope":-6.0,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"8901067035221",
@@ -4581,13 +4276,12 @@
     "tab":"GENERICS",
     "total_qty":19.0,
     "total_sales":12750.0,
-    "total_profit":400.0,
     "months_active":9.0,
     "avg_price":671.0526315789,
     "mean_monthly_qty":2.1111111111,
     "cv_monthly_qty":0.6488856845,
     "trend_qty_slope":-0.1833333333,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8902269272674",
@@ -4596,13 +4290,12 @@
     "tab":"OTC",
     "total_qty":97.0,
     "total_sales":3183.3,
-    "total_profit":3183.3,
     "months_active":4.0,
     "avg_price":32.8175257732,
     "mean_monthly_qty":24.25,
     "cv_monthly_qty":0.365797835,
     "trend_qty_slope":5.5,
-    "cluster":7
+    "cluster":2
   },
   {
     "item_code":"8904220118236",
@@ -4611,13 +4304,12 @@
     "tab":"OTC",
     "total_qty":410.0,
     "total_sales":3409.72,
-    "total_profit":875.92,
     "months_active":8.0,
     "avg_price":8.3163902439,
     "mean_monthly_qty":51.25,
     "cv_monthly_qty":0.7216710069,
     "trend_qty_slope":3.0714285714,
-    "cluster":9
+    "cluster":2
   },
   {
     "item_code":"8906043321633",
@@ -4626,13 +4318,12 @@
     "tab":"GENERICS",
     "total_qty":145.0,
     "total_sales":338.75,
-    "total_profit":266.25,
     "months_active":7.0,
     "avg_price":2.3362068966,
     "mean_monthly_qty":20.7142857143,
     "cv_monthly_qty":0.746422303,
     "trend_qty_slope":2.5,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8992916232038",
@@ -4641,28 +4332,26 @@
     "tab":"OTC",
     "total_qty":92.0,
     "total_sales":2259.74,
-    "total_profit":-92.54,
     "months_active":13.0,
     "avg_price":24.5623913043,
     "mean_monthly_qty":7.0769230769,
     "cv_monthly_qty":0.7608695652,
     "trend_qty_slope":-0.3296703297,
-    "cluster":6
+    "cluster":2
   },
   {
     "item_code":"8992916262035",
     "description":"IBERET FOLIC TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":228.0,
-    "total_sales":6071.4,
-    "total_profit":-132.67,
-    "months_active":16.0,
-    "avg_price":26.6289473684,
-    "mean_monthly_qty":14.25,
-    "cv_monthly_qty":0.8459342773,
-    "trend_qty_slope":0.6323529412,
-    "cluster":-1
+    "total_qty":207.0,
+    "total_sales":5581.9,
+    "months_active":15.0,
+    "avg_price":26.9657004831,
+    "mean_monthly_qty":13.8,
+    "cv_monthly_qty":0.8926877446,
+    "trend_qty_slope":0.6714285714,
+    "cluster":2
   },
   {
     "item_code":"8992916951502",
@@ -4671,43 +4360,40 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":665.09,
-    "total_profit":110.85,
     "months_active":1.0,
     "avg_price":665.09,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8994388100563",
     "description":"STIMUNO 25MG\/5ML SYRUP 60ML",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":39.0,
-    "total_sales":12834.0,
-    "total_profit":1622.28,
-    "months_active":23.0,
-    "avg_price":329.0769230769,
-    "mean_monthly_qty":1.6956521739,
-    "cv_monthly_qty":0.6607230116,
-    "trend_qty_slope":0.0385375494,
-    "cluster":-1
+    "total_qty":38.0,
+    "total_sales":12492.0,
+    "months_active":22.0,
+    "avg_price":328.7368421053,
+    "mean_monthly_qty":1.7272727273,
+    "cv_monthly_qty":0.6573682104,
+    "trend_qty_slope":0.0429136081,
+    "cluster":2
   },
   {
     "item_code":"8994388106237",
     "description":"STIMUNO 250MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_qty":3166.0,
-    "total_sales":45648.18,
-    "total_profit":9676.05,
-    "months_active":33.0,
-    "avg_price":14.4182501579,
-    "mean_monthly_qty":95.9393939394,
-    "cv_monthly_qty":0.5007364217,
-    "trend_qty_slope":1.2546791444,
-    "cluster":-1
+    "total_qty":3059.0,
+    "total_sales":43860.68,
+    "months_active":32.0,
+    "avg_price":14.3382412553,
+    "mean_monthly_qty":95.59375,
+    "cv_monthly_qty":0.5099159869,
+    "trend_qty_slope":1.290872434,
+    "cluster":2
   },
   {
     "item_code":"8994388106275",
@@ -4716,13 +4402,12 @@
     "tab":"OTC",
     "total_qty":42.0,
     "total_sales":20649.0,
-    "total_profit":4052.9,
     "months_active":20.0,
     "avg_price":491.6428571429,
     "mean_monthly_qty":2.1,
     "cv_monthly_qty":0.6546536707,
     "trend_qty_slope":0.0240601504,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8994388122985",
@@ -4731,13 +4416,12 @@
     "tab":"OTC",
     "total_qty":27.0,
     "total_sales":8505.0,
-    "total_profit":1080.0,
     "months_active":6.0,
     "avg_price":315.0,
     "mean_monthly_qty":4.5,
     "cv_monthly_qty":0.8388704928,
     "trend_qty_slope":-1.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8998898101409",
@@ -4746,13 +4430,12 @@
     "tab":"OTC",
     "total_qty":54.0,
     "total_sales":728.75,
-    "total_profit":42.95,
     "months_active":4.0,
     "avg_price":13.4953703704,
     "mean_monthly_qty":13.5,
     "cv_monthly_qty":0.6074525728,
     "trend_qty_slope":-2.6,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"96711170",
@@ -4761,13 +4444,12 @@
     "tab":"GENERICS",
     "total_qty":20.0,
     "total_sales":782.88,
-    "total_profit":-101.32,
     "months_active":1.0,
     "avg_price":39.144,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"96786390",
@@ -4776,7 +4458,6 @@
     "tab":"OTC",
     "total_qty":5.0,
     "total_sales":1256.25,
-    "total_profit":251.25,
     "months_active":2.0,
     "avg_price":251.25,
     "mean_monthly_qty":2.5,
@@ -4791,13 +4472,12 @@
     "tab":"OTC",
     "total_qty":300.0,
     "total_sales":4924.5,
-    "total_profit":1102.15,
     "months_active":9.0,
     "avg_price":16.415,
     "mean_monthly_qty":33.3333333333,
     "cv_monthly_qty":0.8695976081,
     "trend_qty_slope":0.3333333333,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"FG001",
@@ -4806,13 +4486,12 @@
     "tab":"OTC",
     "total_qty":1.0,
     "total_sales":0.0,
-    "total_profit":0.0,
     "months_active":1.0,
     "avg_price":0.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"G76764066",
@@ -4821,13 +4500,12 @@
     "tab":"GENERICS",
     "total_qty":100.0,
     "total_sales":192.7,
-    "total_profit":125.7,
     "months_active":2.0,
     "avg_price":1.927,
     "mean_monthly_qty":50.0,
     "cv_monthly_qty":0.4,
     "trend_qty_slope":40.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"G79317610",
@@ -4836,12 +4514,11 @@
     "tab":"OTC",
     "total_qty":177.0,
     "total_sales":1749.0,
-    "total_profit":67.5,
     "months_active":5.0,
     "avg_price":9.8813559322,
     "mean_monthly_qty":35.4,
     "cv_monthly_qty":0.9730972155,
     "trend_qty_slope":13.8,
-    "cluster":1
+    "cluster":2
   }
 ]

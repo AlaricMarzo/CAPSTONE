@@ -6,28 +6,26 @@
     "tab":"MED-SURG",
     "total_qty":137.0,
     "total_sales":411.0,
-    "total_profit":112.58,
     "months_active":6.0,
     "avg_price":3.0,
     "mean_monthly_qty":22.8333333333,
     "cv_monthly_qty":0.8818835402,
     "trend_qty_slope":5.6857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"39572141",
     "description":"ADVAN PREGNANCY TEST",
     "category":"DIAGNOSTIC",
     "tab":"MED-SURG",
-    "total_qty":231.0,
-    "total_sales":9280.0,
-    "total_profit":7122.4,
-    "months_active":25.0,
-    "avg_price":40.1731601732,
-    "mean_monthly_qty":9.24,
-    "cv_monthly_qty":0.7206719627,
-    "trend_qty_slope":-0.6846153846,
-    "cluster":-1
+    "total_qty":220.0,
+    "total_sales":8840.0,
+    "months_active":24.0,
+    "avg_price":40.1818181818,
+    "mean_monthly_qty":9.1666666667,
+    "cv_monthly_qty":0.7403372026,
+    "trend_qty_slope":-0.7260869565,
+    "cluster":0
   },
   {
     "item_code":"4806037102085",
@@ -36,13 +34,12 @@
     "tab":"MED-SURG",
     "total_qty":117.0,
     "total_sales":5820.0,
-    "total_profit":4884.0,
     "months_active":7.0,
     "avg_price":49.7435897436,
     "mean_monthly_qty":16.7142857143,
     "cv_monthly_qty":0.5628060729,
     "trend_qty_slope":1.8571428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806501890715",
@@ -51,13 +48,12 @@
     "tab":"MED-SURG",
     "total_qty":8.0,
     "total_sales":7074.0,
-    "total_profit":3474.0,
     "months_active":7.0,
     "avg_price":884.25,
     "mean_monthly_qty":1.1428571429,
     "cv_monthly_qty":0.3061862178,
     "trend_qty_slope":0.0357142857,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806501898889",
@@ -66,7 +62,6 @@
     "tab":"MED-SURG",
     "total_qty":21.0,
     "total_sales":1890.0,
-    "total_profit":630.0,
     "months_active":11.0,
     "avg_price":90.0,
     "mean_monthly_qty":1.9090909091,
@@ -81,13 +76,12 @@
     "tab":"MED-SURG",
     "total_qty":164.0,
     "total_sales":6694.4,
-    "total_profit":5052.4,
     "months_active":20.0,
     "avg_price":40.8195121951,
     "mean_monthly_qty":8.2,
     "cv_monthly_qty":0.5569847437,
     "trend_qty_slope":-0.2932330827,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806526298176",
@@ -96,13 +90,12 @@
     "tab":"MED-SURG",
     "total_qty":11.0,
     "total_sales":4400.0,
-    "total_profit":4400.0,
     "months_active":5.0,
     "avg_price":400.0,
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.7272727273,
     "trend_qty_slope":-0.8,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"50808076",
@@ -111,7 +104,6 @@
     "tab":"MED-SURG",
     "total_qty":243.0,
     "total_sales":732.96,
-    "total_profit":465.66,
     "months_active":12.0,
     "avg_price":3.0162962963,
     "mean_monthly_qty":20.25,
@@ -124,14 +116,13 @@
     "description":"TOURNIQUET FLAT BLUE",
     "category":"DIAGNOSTIC",
     "tab":"MED-SURG",
-    "total_qty":29.0,
-    "total_sales":435.0,
-    "total_profit":228.23,
-    "months_active":14.0,
+    "total_qty":28.0,
+    "total_sales":420.0,
+    "months_active":13.0,
     "avg_price":15.0,
-    "mean_monthly_qty":2.0714285714,
-    "cv_monthly_qty":0.5902497506,
-    "trend_qty_slope":0.1164835165,
+    "mean_monthly_qty":2.1538461538,
+    "cv_monthly_qty":0.5714285714,
+    "trend_qty_slope":0.1153846154,
     "cluster":0
   },
   {
@@ -141,7 +132,6 @@
     "tab":"MED-SURG",
     "total_qty":2.0,
     "total_sales":960.0,
-    "total_profit":400.0,
     "months_active":2.0,
     "avg_price":480.0,
     "mean_monthly_qty":1.0,
@@ -156,13 +146,12 @@
     "tab":"MED-SURG",
     "total_qty":124.0,
     "total_sales":434.0,
-    "total_profit":434.0,
     "months_active":4.0,
     "avg_price":3.5,
     "mean_monthly_qty":31.0,
     "cv_monthly_qty":1.1343194176,
     "trend_qty_slope":-13.2,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"81372879540",
@@ -171,7 +160,6 @@
     "tab":"MED-SURG",
     "total_qty":85.0,
     "total_sales":231.0,
-    "total_profit":129.0,
     "months_active":8.0,
     "avg_price":2.7176470588,
     "mean_monthly_qty":10.625,
@@ -186,7 +174,6 @@
     "tab":"MED-SURG",
     "total_qty":3.0,
     "total_sales":2610.0,
-    "total_profit":1260.0,
     "months_active":3.0,
     "avg_price":870.0,
     "mean_monthly_qty":1.0,

@@ -107,7 +107,7 @@
     "tab":"OTC",
     "total_sales":51671.6,
     "total_qty":1026.0,
-    "rank_sales":8.0
+    "rank_sales":6.0
   },
   {
     "year":2023,
@@ -115,8 +115,8 @@
     "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":57753.97,
-    "total_qty":15.0,
+    "total_sales":53838.97,
+    "total_qty":14.0,
     "rank_sales":5.0
   },
   {
@@ -125,8 +125,8 @@
     "description":"BACTIV 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":48511.5,
-    "total_qty":129.0,
+    "total_sales":45091.5,
+    "total_qty":120.0,
     "rank_sales":10.0
   },
   {
@@ -135,8 +135,8 @@
     "description":"CARESS ADULT DIAPER XL10",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_sales":55813.26,
-    "total_qty":178.0,
+    "total_sales":50773.01,
+    "total_qty":162.0,
     "rank_sales":7.0
   },
   {
@@ -145,8 +145,8 @@
     "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
-    "total_sales":51476.0,
-    "total_qty":1490.0,
+    "total_sales":46971.0,
+    "total_qty":1360.0,
     "rank_sales":9.0
   },
   {
@@ -155,9 +155,9 @@
     "description":"NEPHROMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":56120.0,
-    "total_qty":3456.0,
-    "rank_sales":6.0
+    "total_sales":47820.0,
+    "total_qty":2959.0,
+    "rank_sales":8.0
   },
   {
     "year":2023,
@@ -165,8 +165,8 @@
     "description":"OHHIRAs PROPOLIS 600MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "total_sales":171520.02,
-    "total_qty":2685.0,
+    "total_sales":161476.62,
+    "total_qty":2531.0,
     "rank_sales":3.0
   },
   {
@@ -175,8 +175,8 @@
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":219514.04,
-    "total_qty":14.0,
+    "total_sales":188314.04,
+    "total_qty":12.0,
     "rank_sales":2.0
   },
   {

@@ -4,15 +4,14 @@
     "description":"CLEENE CLIO TBRUSH ECONOMY",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":305.0,
-    "total_sales":4658.39,
-    "total_profit":1276.35,
-    "months_active":28.0,
-    "avg_price":15.2734098361,
-    "mean_monthly_qty":10.8928571429,
-    "cv_monthly_qty":0.6787677153,
-    "trend_qty_slope":0.1217843459,
-    "cluster":-1
+    "total_qty":288.0,
+    "total_sales":4403.39,
+    "months_active":27.0,
+    "avg_price":15.2895486111,
+    "mean_monthly_qty":10.6666666667,
+    "cv_monthly_qty":0.6969053618,
+    "trend_qty_slope":0.13003663,
+    "cluster":0
   },
   {
     "item_code":"4800067132067",
@@ -21,7 +20,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":13.0,
     "total_sales":1248.0,
-    "total_profit":201.37,
     "months_active":4.0,
     "avg_price":96.0,
     "mean_monthly_qty":3.25,
@@ -34,60 +32,56 @@
     "description":"CLEENE CLIO TBRUSH KIDDIE",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":148.0,
-    "total_sales":5846.0,
-    "total_profit":1184.0,
-    "months_active":27.0,
+    "total_qty":147.0,
+    "total_sales":5806.5,
+    "months_active":26.0,
     "avg_price":39.5,
-    "mean_monthly_qty":5.4814814815,
-    "cv_monthly_qty":1.3074280676,
-    "trend_qty_slope":-0.0213675214,
-    "cluster":-1
+    "mean_monthly_qty":5.6538461538,
+    "cv_monthly_qty":1.2819655243,
+    "trend_qty_slope":-0.0304273504,
+    "cluster":0
   },
   {
     "item_code":"4800067147085",
     "description":"CLIO DENTAL FLOSS 50M (CLEENE",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":25.0,
-    "total_sales":2210.0,
-    "total_profit":370.5,
-    "months_active":18.0,
-    "avg_price":88.4,
-    "mean_monthly_qty":1.3888888889,
-    "cv_monthly_qty":0.4252058325,
-    "trend_qty_slope":0.0216718266,
-    "cluster":-1
+    "total_qty":24.0,
+    "total_sales":2114.0,
+    "months_active":17.0,
+    "avg_price":88.0833333333,
+    "mean_monthly_qty":1.4117647059,
+    "cv_monthly_qty":0.4249182928,
+    "trend_qty_slope":0.0196078431,
+    "cluster":0
   },
   {
     "item_code":"4800140001082",
     "description":"BACTIDOL ORAL 60ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":149.0,
-    "total_sales":18837.53,
-    "total_profit":3212.73,
-    "months_active":28.0,
-    "avg_price":126.4263758389,
-    "mean_monthly_qty":5.3214285714,
-    "cv_monthly_qty":0.4766045846,
-    "trend_qty_slope":-0.0238095238,
-    "cluster":-1
+    "total_qty":145.0,
+    "total_sales":18335.03,
+    "months_active":27.0,
+    "avg_price":126.4484827586,
+    "mean_monthly_qty":5.3703703704,
+    "cv_monthly_qty":0.478503414,
+    "trend_qty_slope":-0.0244200244,
+    "cluster":0
   },
   {
     "item_code":"4800140001099",
     "description":"BACTIDOL ORAL120ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":92.0,
-    "total_sales":20530.36,
-    "total_profit":4907.63,
-    "months_active":26.0,
-    "avg_price":223.1560869565,
-    "mean_monthly_qty":3.5384615385,
-    "cv_monthly_qty":0.5153595474,
-    "trend_qty_slope":0.105982906,
-    "cluster":-1
+    "total_qty":89.0,
+    "total_sales":19859.36,
+    "months_active":25.0,
+    "avg_price":223.1388764045,
+    "mean_monthly_qty":3.56,
+    "cv_monthly_qty":0.5214742196,
+    "trend_qty_slope":0.1107692308,
+    "cluster":0
   },
   {
     "item_code":"4800140001105",
@@ -96,13 +90,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":35.0,
     "total_sales":13603.35,
-    "total_profit":2475.39,
     "months_active":23.0,
     "avg_price":388.6671428571,
     "mean_monthly_qty":1.5217391304,
     "cv_monthly_qty":0.4694764779,
     "trend_qty_slope":0.0296442688,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800140001112",
@@ -111,13 +104,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":7.0,
     "total_sales":4520.0,
-    "total_profit":423.36,
     "months_active":6.0,
     "avg_price":645.7142857143,
     "mean_monthly_qty":1.1666666667,
     "cv_monthly_qty":0.3194382825,
     "trend_qty_slope":-0.0285714286,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800204001713",
@@ -126,13 +118,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":49.0,
     "total_sales":6352.98,
-    "total_profit":701.89,
     "months_active":23.0,
     "avg_price":129.6526530612,
     "mean_monthly_qty":2.1304347826,
     "cv_monthly_qty":0.592188495,
     "trend_qty_slope":0.0760869565,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800204001720",
@@ -141,13 +132,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":28.0,
     "total_sales":5471.15,
-    "total_profit":670.41,
     "months_active":15.0,
     "avg_price":195.3982142857,
     "mean_monthly_qty":1.8666666667,
     "cv_monthly_qty":0.5125964319,
     "trend_qty_slope":-0.0142857143,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800204001737",
@@ -156,7 +146,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":5.0,
     "total_sales":1552.5,
-    "total_profit":167.35,
     "months_active":3.0,
     "avg_price":310.5,
     "mean_monthly_qty":1.6666666667,
@@ -169,15 +158,14 @@
     "description":"SENSODYNE GUM CARE 100G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":15.0,
-    "total_sales":2385.0,
-    "total_profit":398.1,
-    "months_active":11.0,
+    "total_qty":14.0,
+    "total_sales":2226.0,
+    "months_active":10.0,
     "avg_price":159.0,
-    "mean_monthly_qty":1.3636363636,
-    "cv_monthly_qty":0.5656854249,
-    "trend_qty_slope":-0.0545454545,
-    "cluster":-1
+    "mean_monthly_qty":1.4,
+    "cv_monthly_qty":0.5714285714,
+    "trend_qty_slope":-0.096969697,
+    "cluster":0
   },
   {
     "item_code":"4800360831568",
@@ -186,13 +174,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":4.0,
     "total_sales":645.0,
-    "total_profit":102.87,
     "months_active":4.0,
     "avg_price":161.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888113474",
@@ -201,13 +188,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":366.0,
-    "total_profit":366.0,
     "months_active":2.0,
     "avg_price":122.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4800888113559",
@@ -216,13 +202,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":2.0,
     "total_sales":244.0,
-    "total_profit":244.0,
     "months_active":1.0,
     "avg_price":122.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888113566",
@@ -231,13 +216,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":238.5,
-    "total_profit":238.5,
     "months_active":1.0,
     "avg_price":79.5,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888113658",
@@ -246,13 +230,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":412.5,
-    "total_profit":412.5,
     "months_active":3.0,
     "avg_price":137.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888113672",
@@ -261,13 +244,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":137.5,
-    "total_profit":137.5,
     "months_active":1.0,
     "avg_price":137.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888147240",
@@ -276,13 +258,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":16.0,
     "total_sales":216.0,
-    "total_profit":114.56,
     "months_active":6.0,
     "avg_price":13.5,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.4677071733,
     "trend_qty_slope":0.1714285714,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800888147288",
@@ -291,13 +272,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":25.0,
     "total_sales":300.0,
-    "total_profit":300.0,
     "months_active":5.0,
     "avg_price":12.0,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.438178046,
     "trend_qty_slope":0.8,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4801010217404",
@@ -306,13 +286,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":4.0,
     "total_sales":2184.0,
-    "total_profit":448.68,
     "months_active":4.0,
     "avg_price":546.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806506740022",
@@ -321,28 +300,26 @@
     "tab":"PERSONAL CARE",
     "total_qty":58.0,
     "total_sales":7612.5,
-    "total_profit":1271.35,
     "months_active":21.0,
     "avg_price":131.25,
     "mean_monthly_qty":2.7619047619,
     "cv_monthly_qty":0.8862136052,
     "trend_qty_slope":-0.0935064935,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806506749223",
     "description":"ORAHEX ALCOHOL FREE 120ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":62.0,
-    "total_sales":8479.75,
-    "total_profit":1737.76,
-    "months_active":20.0,
-    "avg_price":136.7701612903,
-    "mean_monthly_qty":3.1,
-    "cv_monthly_qty":0.8769211109,
-    "trend_qty_slope":-0.1353383459,
-    "cluster":-1
+    "total_qty":60.0,
+    "total_sales":8189.75,
+    "months_active":19.0,
+    "avg_price":136.4958333333,
+    "mean_monthly_qty":3.1578947368,
+    "cv_monthly_qty":0.8793937306,
+    "trend_qty_slope":-0.1473684211,
+    "cluster":0
   },
   {
     "item_code":"4808888201115",
@@ -351,7 +328,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":51.0,
     "total_sales":1275.0,
-    "total_profit":905.25,
     "months_active":8.0,
     "avg_price":25.0,
     "mean_monthly_qty":6.375,
@@ -366,7 +342,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":26.0,
     "total_sales":520.0,
-    "total_profit":148.98,
     "months_active":5.0,
     "avg_price":20.0,
     "mean_monthly_qty":5.2,
@@ -379,14 +354,13 @@
     "description":"ORAL-B CLS MEDIUM",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":11.0,
-    "total_sales":388.8,
-    "total_profit":76.18,
-    "months_active":3.0,
-    "avg_price":35.3454545455,
-    "mean_monthly_qty":3.6666666667,
-    "cv_monthly_qty":0.680301343,
-    "trend_qty_slope":1.0,
+    "total_qty":10.0,
+    "total_sales":360.0,
+    "months_active":2.0,
+    "avg_price":36.0,
+    "mean_monthly_qty":5.0,
+    "cv_monthly_qty":0.4,
+    "trend_qty_slope":-4.0,
     "cluster":1
   },
   {
@@ -396,13 +370,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":32.0,
     "total_sales":1856.2,
-    "total_profit":387.4,
     "months_active":8.0,
     "avg_price":58.00625,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":1.9843134833,
     "trend_qty_slope":-0.8571428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"59002277",
@@ -411,13 +384,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":89.0,
-    "total_profit":89.0,
     "months_active":1.0,
     "avg_price":89.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006304563",
@@ -426,13 +398,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":23.0,
     "total_sales":823.0,
-    "total_profit":156.69,
     "months_active":7.0,
     "avg_price":35.7826086957,
     "mean_monthly_qty":3.2857142857,
     "cv_monthly_qty":0.5070392952,
     "trend_qty_slope":0.3928571429,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006306772",
@@ -441,13 +412,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":15.0,
     "total_sales":543.0,
-    "total_profit":108.45,
     "months_active":5.0,
     "avg_price":36.2,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.7601169501,
     "trend_qty_slope":-0.1,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006320495",
@@ -456,13 +426,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":4.0,
     "total_sales":499.0,
-    "total_profit":46.8,
     "months_active":1.0,
     "avg_price":124.75,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006320501",
@@ -471,58 +440,54 @@
     "tab":"PERSONAL CARE",
     "total_qty":49.0,
     "total_sales":5994.75,
-    "total_profit":754.43,
     "months_active":24.0,
     "avg_price":122.3418367347,
     "mean_monthly_qty":2.0416666667,
     "cv_monthly_qty":0.5739739229,
     "trend_qty_slope":0.0230434783,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8850006320518",
     "description":"COLGATE GREAT REG FLAVOR 74G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":33.0,
-    "total_sales":2570.5,
-    "total_profit":436.46,
-    "months_active":13.0,
-    "avg_price":77.8939393939,
-    "mean_monthly_qty":2.5384615385,
-    "cv_monthly_qty":0.3661529083,
-    "trend_qty_slope":0.0714285714,
-    "cluster":-1
+    "total_qty":31.0,
+    "total_sales":2423.5,
+    "months_active":12.0,
+    "avg_price":78.1774193548,
+    "mean_monthly_qty":2.5833333333,
+    "cv_monthly_qty":0.3692104239,
+    "trend_qty_slope":0.0874125874,
+    "cluster":0
   },
   {
     "item_code":"8850006321133",
     "description":"COLGATE GREAT REGULAR FLAVOR 37G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":83.0,
-    "total_sales":4198.5,
-    "total_profit":458.36,
-    "months_active":25.0,
-    "avg_price":50.5843373494,
-    "mean_monthly_qty":3.32,
-    "cv_monthly_qty":0.4403775152,
-    "trend_qty_slope":-0.0184615385,
-    "cluster":-1
+    "total_qty":81.0,
+    "total_sales":4098.5,
+    "months_active":24.0,
+    "avg_price":50.5987654321,
+    "mean_monthly_qty":3.375,
+    "cv_monthly_qty":0.4345608866,
+    "trend_qty_slope":-0.0204347826,
+    "cluster":0
   },
   {
     "item_code":"8850006321522",
     "description":"COLGATE TRIPLE ACTION 193G (145ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":23.0,
-    "total_sales":3651.0,
-    "total_profit":643.8,
-    "months_active":14.0,
-    "avg_price":158.7391304348,
-    "mean_monthly_qty":1.6428571429,
-    "cv_monthly_qty":0.5447810472,
-    "trend_qty_slope":0.0681318681,
-    "cluster":-1
+    "total_qty":21.0,
+    "total_sales":3402.0,
+    "months_active":13.0,
+    "avg_price":162.0,
+    "mean_monthly_qty":1.6153846154,
+    "cv_monthly_qty":0.5714285714,
+    "trend_qty_slope":0.0769230769,
+    "cluster":0
   },
   {
     "item_code":"8850006321539",
@@ -531,13 +496,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":20.0,
     "total_sales":2496.0,
-    "total_profit":408.8,
     "months_active":12.0,
     "avg_price":124.8,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.3741657387,
     "trend_qty_slope":-0.0559440559,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8850006322963",
@@ -546,13 +510,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":118.0,
-    "total_profit":10.75,
     "months_active":1.0,
     "avg_price":118.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006325216",
@@ -561,13 +524,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":73.0,
     "total_sales":865.6,
-    "total_profit":186.7,
     "months_active":16.0,
     "avg_price":11.8575342466,
     "mean_monthly_qty":4.5625,
     "cv_monthly_qty":0.743142794,
     "trend_qty_slope":0.0573529412,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006327425",
@@ -576,27 +538,25 @@
     "tab":"PERSONAL CARE",
     "total_qty":5.0,
     "total_sales":729.04,
-    "total_profit":19.54,
     "months_active":5.0,
     "avg_price":145.808,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850006327463",
     "description":"COLGATE TRIPLE ACTION 169 FOR 2 TUBES",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":8.0,
-    "total_sales":1352.0,
-    "total_profit":64.48,
-    "months_active":7.0,
+    "total_qty":6.0,
+    "total_sales":1014.0,
+    "months_active":6.0,
     "avg_price":169.0,
-    "mean_monthly_qty":1.1428571429,
-    "cv_monthly_qty":0.3061862178,
-    "trend_qty_slope":0.1071428571,
+    "mean_monthly_qty":1.0,
+    "cv_monthly_qty":0.0,
+    "trend_qty_slope":7.951207132e-18,
     "cluster":0
   },
   {
@@ -606,7 +566,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":9.0,
     "total_sales":1251.0,
-    "total_profit":62.01,
     "months_active":5.0,
     "avg_price":139.0,
     "mean_monthly_qty":1.8,
@@ -621,13 +580,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":9.0,
     "total_sales":673.2,
-    "total_profit":111.24,
     "months_active":8.0,
     "avg_price":74.8,
     "mean_monthly_qty":1.125,
     "cv_monthly_qty":0.2939723679,
     "trend_qty_slope":-0.0595238095,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8850007812173",
@@ -636,7 +594,6 @@
     "tab":"PERSONAL CARE",
     "total_qty":8.0,
     "total_sales":1392.0,
-    "total_profit":24.68,
     "months_active":8.0,
     "avg_price":174.0,
     "mean_monthly_qty":1.0,
@@ -649,45 +606,42 @@
     "description":"LISTERINE COOL MINT 100ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":77.0,
-    "total_sales":4906.75,
-    "total_profit":735.85,
-    "months_active":26.0,
-    "avg_price":63.724025974,
-    "mean_monthly_qty":2.9615384615,
-    "cv_monthly_qty":0.4538027327,
-    "trend_qty_slope":0.0256410256,
-    "cluster":-1
+    "total_qty":76.0,
+    "total_sales":4841.75,
+    "months_active":25.0,
+    "avg_price":63.7072368421,
+    "mean_monthly_qty":3.04,
+    "cv_monthly_qty":0.4312097265,
+    "trend_qty_slope":0.0230769231,
+    "cluster":0
   },
   {
     "item_code":"8850007814313",
     "description":"LISTERINE FRESH BURST 100ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":81.0,
-    "total_sales":5362.28,
-    "total_profit":1024.57,
-    "months_active":28.0,
-    "avg_price":66.2009876543,
-    "mean_monthly_qty":2.8928571429,
-    "cv_monthly_qty":0.5253808106,
-    "trend_qty_slope":0.0648604269,
-    "cluster":-1
+    "total_qty":78.0,
+    "total_sales":5165.28,
+    "months_active":27.0,
+    "avg_price":66.2215384615,
+    "mean_monthly_qty":2.8888888889,
+    "cv_monthly_qty":0.5357072414,
+    "trend_qty_slope":0.0683760684,
+    "cluster":0
   },
   {
     "item_code":"8850007814382",
     "description":"LISTERINE TOTAL CARE 100ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":55.0,
-    "total_sales":5568.0,
-    "total_profit":773.3,
-    "months_active":25.0,
-    "avg_price":101.2363636364,
-    "mean_monthly_qty":2.2,
-    "cv_monthly_qty":0.6298366573,
-    "trend_qty_slope":0.0353846154,
-    "cluster":-1
+    "total_qty":53.0,
+    "total_sales":5364.0,
+    "months_active":24.0,
+    "avg_price":101.2075471698,
+    "mean_monthly_qty":2.2083333333,
+    "cv_monthly_qty":0.6401205832,
+    "trend_qty_slope":0.0369565217,
+    "cluster":0
   },
   {
     "item_code":"8888008109374",
@@ -696,13 +650,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":145.0,
-    "total_profit":145.0,
     "months_active":1.0,
     "avg_price":145.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8934839125677",
@@ -711,13 +664,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":2.0,
     "total_sales":290.0,
-    "total_profit":290.0,
     "months_active":2.0,
     "avg_price":145.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8934839125790",
@@ -726,13 +678,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":645.0,
-    "total_profit":124.65,
     "months_active":2.0,
     "avg_price":215.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8934839125806",
@@ -741,13 +692,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":435.0,
-    "total_profit":435.0,
     "months_active":2.0,
     "avg_price":145.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"8934839125813",
@@ -756,13 +706,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":1.0,
     "total_sales":215.0,
-    "total_profit":41.55,
     "months_active":1.0,
     "avg_price":215.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8934839125820",
@@ -771,28 +720,26 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":435.0,
-    "total_profit":435.0,
     "months_active":1.0,
     "avg_price":145.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8991991161332",
     "description":"SENSODYNE FRESHMINT 100G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":11.0,
-    "total_sales":1600.5,
-    "total_profit":267.3,
-    "months_active":9.0,
+    "total_qty":10.0,
+    "total_sales":1455.0,
+    "months_active":8.0,
     "avg_price":145.5,
-    "mean_monthly_qty":1.2222222222,
-    "cv_monthly_qty":0.3401506715,
-    "trend_qty_slope":3.628312094e-17,
-    "cluster":-1
+    "mean_monthly_qty":1.25,
+    "cv_monthly_qty":0.3464101615,
+    "trend_qty_slope":-7.814644065e-17,
+    "cluster":0
   },
   {
     "item_code":"8992725910356",
@@ -801,13 +748,12 @@
     "tab":"PERSONAL CARE",
     "total_qty":3.0,
     "total_sales":672.0,
-    "total_profit":102.15,
     "months_active":3.0,
     "avg_price":224.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"9310059050071",
@@ -816,27 +762,25 @@
     "tab":"PERSONAL CARE",
     "total_qty":20.0,
     "total_sales":2650.0,
-    "total_profit":351.44,
     "months_active":10.0,
     "avg_price":132.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5916079783,
     "trend_qty_slope":0.303030303,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"9310059050910",
     "description":"LISTERINE FRESH BURST 250ML",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":11.0,
-    "total_sales":1563.0,
-    "total_profit":304.53,
-    "months_active":7.0,
-    "avg_price":142.0909090909,
-    "mean_monthly_qty":1.5714285714,
-    "cv_monthly_qty":0.3149183286,
-    "trend_qty_slope":0.0357142857,
+    "total_qty":9.0,
+    "total_sales":1259.0,
+    "months_active":6.0,
+    "avg_price":139.8888888889,
+    "mean_monthly_qty":1.5,
+    "cv_monthly_qty":0.3333333333,
+    "trend_qty_slope":-0.0285714286,
     "cluster":0
   },
   {
@@ -844,15 +788,14 @@
     "description":"POLIDENT ADHESIVE 20G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
-    "total_qty":22.0,
-    "total_sales":3089.0,
-    "total_profit":387.2,
-    "months_active":17.0,
-    "avg_price":140.4090909091,
-    "mean_monthly_qty":1.2941176471,
-    "cv_monthly_qty":0.3520893951,
-    "trend_qty_slope":-0.0343137255,
-    "cluster":-1
+    "total_qty":21.0,
+    "total_sales":2948.25,
+    "months_active":16.0,
+    "avg_price":140.3928571429,
+    "mean_monthly_qty":1.3125,
+    "cv_monthly_qty":0.3531523089,
+    "trend_qty_slope":-0.0397058824,
+    "cluster":0
   },
   {
     "item_code":"9556019241107",
@@ -861,12 +804,11 @@
     "tab":"PERSONAL CARE",
     "total_qty":12.0,
     "total_sales":900.0,
-    "total_profit":86.12,
     "months_active":5.0,
     "avg_price":75.0,
     "mean_monthly_qty":2.4,
     "cv_monthly_qty":0.9718253158,
     "trend_qty_slope":-0.5,
-    "cluster":1
+    "cluster":0
   }
 ]

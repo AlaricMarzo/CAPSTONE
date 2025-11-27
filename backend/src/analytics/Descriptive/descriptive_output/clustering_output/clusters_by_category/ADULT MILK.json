@@ -6,13 +6,12 @@
     "tab":"F&B",
     "total_qty":16.0,
     "total_sales":415.4,
-    "total_profit":239.72,
     "months_active":3.0,
     "avg_price":25.9625,
     "mean_monthly_qty":5.3333333333,
     "cv_monthly_qty":1.0193441519,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"13330569",
@@ -21,13 +20,12 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":0.04,
-    "total_profit":0.04,
     "months_active":2.0,
     "avg_price":0.01,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"23605794",
@@ -36,13 +34,12 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":0.0,
-    "total_profit":0.0,
     "months_active":1.0,
     "avg_price":0.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800221244049",
@@ -51,13 +48,12 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":2026.35,
-    "total_profit":2026.35,
     "months_active":1.0,
     "avg_price":2026.35,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4800221244469",
@@ -66,13 +62,12 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":4159.35,
-    "total_profit":4159.35,
     "months_active":2.0,
     "avg_price":2079.675,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4800361379373",
@@ -81,13 +76,12 @@
     "tab":"F&B",
     "total_qty":7.0,
     "total_sales":1010.05,
-    "total_profit":100.68,
     "months_active":4.0,
     "avg_price":144.2928571429,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.2474358297,
     "trend_qty_slope":-0.3,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4800361396677",
@@ -96,13 +90,12 @@
     "tab":"F&B",
     "total_qty":48.0,
     "total_sales":922.5,
-    "total_profit":245.7,
     "months_active":6.0,
     "avg_price":19.21875,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":0.4330127019,
     "trend_qty_slope":-0.2285714286,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806501596235",
@@ -111,13 +104,12 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":448.0,
-    "total_profit":-53.76,
     "months_active":1.0,
     "avg_price":448.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806501596242",
@@ -126,13 +118,12 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":448.0,
-    "total_profit":-1623.95,
     "months_active":1.0,
     "avg_price":448.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806501596921",
@@ -141,13 +132,12 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":2104.36,
-    "total_profit":-120.7,
     "months_active":2.0,
     "avg_price":701.4533333333,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4806501597027",
@@ -156,28 +146,26 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":1014.55,
-    "total_profit":74.55,
     "months_active":6.0,
     "avg_price":101.455,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.4472135955,
     "trend_qty_slope":0.2857142857,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806501599755",
     "description":"ANMUM MATERNA LITE 10 SACHETS",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":6.0,
-    "total_sales":2490.0,
-    "total_profit":675.0,
-    "months_active":5.0,
+    "total_qty":5.0,
+    "total_sales":2075.0,
+    "months_active":4.0,
     "avg_price":415.0,
-    "mean_monthly_qty":1.2,
-    "cv_monthly_qty":0.3333333333,
-    "trend_qty_slope":0.2,
-    "cluster":1
+    "mean_monthly_qty":1.25,
+    "cv_monthly_qty":0.3464101615,
+    "trend_qty_slope":0.3,
+    "cluster":2
   },
   {
     "item_code":"4806511301393",
@@ -186,13 +174,12 @@
     "tab":"F&B",
     "total_qty":30.0,
     "total_sales":37422.0,
-    "total_profit":8022.0,
     "months_active":13.0,
     "avg_price":1247.4,
     "mean_monthly_qty":2.3076923077,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":0.2747252747,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806513681165",
@@ -201,13 +188,12 @@
     "tab":"F&B",
     "total_qty":29.0,
     "total_sales":58.0,
-    "total_profit":16.53,
     "months_active":4.0,
     "avg_price":2.0,
     "mean_monthly_qty":7.25,
     "cv_monthly_qty":0.5463096385,
     "trend_qty_slope":-3.1,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"4806521900432",
@@ -216,13 +202,12 @@
     "tab":"F&B",
     "total_qty":14.0,
     "total_sales":15771.41,
-    "total_profit":15771.41,
     "months_active":3.0,
     "avg_price":1126.5292857143,
     "mean_monthly_qty":4.6666666667,
     "cv_monthly_qty":0.3642156795,
     "trend_qty_slope":2.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806523302562",
@@ -231,13 +216,12 @@
     "tab":"F&B",
     "total_qty":260.0,
     "total_sales":2938.56,
-    "total_profit":1802.36,
     "months_active":9.0,
     "avg_price":11.3021538462,
     "mean_monthly_qty":28.8888888889,
     "cv_monthly_qty":0.6287020536,
     "trend_qty_slope":-0.2166666667,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"4806527201342",
@@ -246,28 +230,26 @@
     "tab":"F&B",
     "total_qty":3030.0,
     "total_sales":6060.0,
-    "total_profit":6060.0,
     "months_active":2.0,
     "avg_price":2.0,
     "mean_monthly_qty":1515.0,
     "cv_monthly_qty":0.9801980198,
     "trend_qty_slope":2970.0,
-    "cluster":-1
+    "cluster":1
   },
   {
     "item_code":"4806534570240",
     "description":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":2552.0,
-    "total_sales":7565.06,
-    "total_profit":6063.2,
-    "months_active":14.0,
-    "avg_price":2.9643652038,
-    "mean_monthly_qty":182.2857142857,
-    "cv_monthly_qty":0.4280826541,
-    "trend_qty_slope":-2.6681318681,
-    "cluster":-1
+    "total_qty":2324.0,
+    "total_sales":6884.06,
+    "months_active":13.0,
+    "avg_price":2.9621600688,
+    "mean_monthly_qty":178.7692307692,
+    "cv_monthly_qty":0.4469615569,
+    "trend_qty_slope":-3.1593406593,
+    "cluster":0
   },
   {
     "item_code":"4809015307564",
@@ -276,13 +258,12 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":2496.0,
-    "total_profit":376.0,
     "months_active":1.0,
     "avg_price":1248.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"4809015307571",
@@ -291,13 +272,12 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":7834.65,
-    "total_profit":1698.03,
     "months_active":3.0,
     "avg_price":2611.55,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"5000223074579",
@@ -306,13 +286,12 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":416.0,
-    "total_profit":156.0,
     "months_active":1.0,
     "avg_price":104.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"54142885510",
@@ -321,13 +300,12 @@
     "tab":"F&B",
     "total_qty":37.0,
     "total_sales":3468.75,
-    "total_profit":693.75,
     "months_active":4.0,
     "avg_price":93.75,
     "mean_monthly_qty":9.25,
     "cv_monthly_qty":0.7104561853,
     "trend_qty_slope":0.5,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"57282039539",
@@ -336,13 +314,12 @@
     "tab":"F&B",
     "total_qty":306.0,
     "total_sales":10281.6,
-    "total_profit":2937.6,
     "months_active":14.0,
     "avg_price":33.6,
     "mean_monthly_qty":21.8571428571,
     "cv_monthly_qty":0.7533370873,
     "trend_qty_slope":0.9846153846,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"6100010005",
@@ -351,13 +328,12 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":120.0,
-    "total_profit":61.0,
     "months_active":1.0,
     "avg_price":120.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8427030007571",
@@ -366,43 +342,40 @@
     "tab":"F&B",
     "total_qty":20.0,
     "total_sales":23044.34,
-    "total_profit":1200.64,
     "months_active":15.0,
     "avg_price":1152.217,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.5244044241,
     "trend_qty_slope":0.0285714286,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8427030007588",
     "description":"GLUCERNA VANILLA 900G",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":26.0,
-    "total_sales":59038.46,
-    "total_profit":4902.64,
-    "months_active":15.0,
-    "avg_price":2270.71,
-    "mean_monthly_qty":1.7333333333,
-    "cv_monthly_qty":0.7438107541,
-    "trend_qty_slope":-0.0928571429,
-    "cluster":-1
+    "total_qty":25.0,
+    "total_sales":57111.1,
+    "months_active":14.0,
+    "avg_price":2284.444,
+    "mean_monthly_qty":1.7857142857,
+    "cv_monthly_qty":0.7386474125,
+    "trend_qty_slope":-0.0945054945,
+    "cluster":2
   },
   {
     "item_code":"8710428016058",
     "description":"ENSURE GOLD CHOCO 400G",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":8.0,
-    "total_sales":7954.06,
-    "total_profit":680.72,
-    "months_active":7.0,
-    "avg_price":994.2575,
-    "mean_monthly_qty":1.1428571429,
-    "cv_monthly_qty":0.3061862178,
-    "trend_qty_slope":-0.0357142857,
-    "cluster":-1
+    "total_qty":7.0,
+    "total_sales":6949.82,
+    "months_active":6.0,
+    "avg_price":992.8314285714,
+    "mean_monthly_qty":1.1666666667,
+    "cv_monthly_qty":0.3194382825,
+    "trend_qty_slope":-0.0285714286,
+    "cluster":2
   },
   {
     "item_code":"8710428016065",
@@ -411,13 +384,12 @@
     "tab":"F&B",
     "total_qty":3.0,
     "total_sales":6103.88,
-    "total_profit":-55.3,
     "months_active":2.0,
     "avg_price":2034.6266666667,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8710428024763",
@@ -426,13 +398,12 @@
     "tab":"F&B",
     "total_qty":6.0,
     "total_sales":906.0,
-    "total_profit":104.7,
     "months_active":2.0,
     "avg_price":151.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"87413991",
@@ -441,28 +412,26 @@
     "tab":"F&B",
     "total_qty":1.0,
     "total_sales":668.8,
-    "total_profit":288.8,
     "months_active":1.0,
     "avg_price":668.8,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8886451003812",
     "description":"ENSURE GOLD VANILLA 400G",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":35.0,
-    "total_sales":32608.47,
-    "total_profit":3567.01,
-    "months_active":16.0,
-    "avg_price":931.6705714286,
-    "mean_monthly_qty":2.1875,
-    "cv_monthly_qty":0.4342481187,
-    "trend_qty_slope":-0.0720588235,
-    "cluster":-1
+    "total_qty":34.0,
+    "total_sales":31604.23,
+    "months_active":15.0,
+    "avg_price":929.5361764706,
+    "mean_monthly_qty":2.2666666667,
+    "cv_monthly_qty":0.4096584787,
+    "trend_qty_slope":-0.0607142857,
+    "cluster":2
   },
   {
     "item_code":"8886451003829",
@@ -471,13 +440,12 @@
     "tab":"F&B",
     "total_qty":9.0,
     "total_sales":17760.19,
-    "total_profit":1485.46,
     "months_active":9.0,
     "avg_price":1973.3544444444,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":6.63313892e-17,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8886451003843",
@@ -486,13 +454,12 @@
     "tab":"F&B",
     "total_qty":8.0,
     "total_sales":2958.0,
-    "total_profit":141.52,
     "months_active":3.0,
     "avg_price":369.75,
     "mean_monthly_qty":2.6666666667,
     "cv_monthly_qty":0.6373774392,
     "trend_qty_slope":0.5,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8906005113474",
@@ -501,13 +468,12 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":55.0,
-    "total_profit":23.0,
     "months_active":1.0,
     "avg_price":13.75,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8906081731128",
@@ -516,13 +482,12 @@
     "tab":"F&B",
     "total_qty":15.0,
     "total_sales":465.0,
-    "total_profit":355.65,
     "months_active":1.0,
     "avg_price":31.0,
     "mean_monthly_qty":15.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8992802618038",
@@ -531,13 +496,12 @@
     "tab":"F&B",
     "total_qty":2.0,
     "total_sales":720.0,
-    "total_profit":89.32,
     "months_active":2.0,
     "avg_price":360.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8992802618045",
@@ -546,13 +510,12 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":1440.0,
-    "total_profit":178.64,
     "months_active":3.0,
     "avg_price":360.0,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.5,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"8994388105483",
@@ -561,28 +524,26 @@
     "tab":"F&B",
     "total_qty":22.0,
     "total_sales":1128.96,
-    "total_profit":160.96,
     "months_active":4.0,
     "avg_price":51.3163636364,
     "mean_monthly_qty":5.5,
     "cv_monthly_qty":0.7441229793,
     "trend_qty_slope":2.6,
-    "cluster":0
+    "cluster":2
   },
   {
     "item_code":"9415007002888",
     "description":"ANMUM MATERNA VANILLA 180G",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":6.0,
-    "total_sales":1417.5,
-    "total_profit":169.46,
-    "months_active":6.0,
+    "total_qty":5.0,
+    "total_sales":1181.25,
+    "months_active":5.0,
     "avg_price":236.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
-    "trend_qty_slope":7.951207132e-18,
-    "cluster":0
+    "trend_qty_slope":-1.050792074e-16,
+    "cluster":2
   },
   {
     "item_code":"9415007005933",
@@ -591,28 +552,26 @@
     "tab":"F&B",
     "total_qty":10.0,
     "total_sales":2362.5,
-    "total_profit":326.08,
     "months_active":7.0,
     "avg_price":236.25,
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.3464101615,
     "trend_qty_slope":-3.497877511e-17,
-    "cluster":1
+    "cluster":2
   },
   {
     "item_code":"SD",
     "description":"Sales Discount Variance",
     "category":"ADULT MILK",
     "tab":"F&B",
-    "total_qty":98.0,
-    "total_sales":-178.01,
-    "total_profit":-178.01,
-    "months_active":32.0,
-    "avg_price":-1.8164285714,
-    "mean_monthly_qty":3.0625,
-    "cv_monthly_qty":0.5826164255,
-    "trend_qty_slope":0.0186950147,
-    "cluster":0
+    "total_qty":97.0,
+    "total_sales":-178.0,
+    "months_active":31.0,
+    "avg_price":-1.8350515464,
+    "mean_monthly_qty":3.1290322581,
+    "cv_monthly_qty":0.5667290774,
+    "trend_qty_slope":0.0189516129,
+    "cluster":2
   },
   {
     "item_code":"SDI",
@@ -621,12 +580,11 @@
     "tab":"F&B",
     "total_qty":4.0,
     "total_sales":-2452.4,
-    "total_profit":-2452.4,
     "months_active":2.0,
     "avg_price":-613.1,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":-1
+    "cluster":2
   }
 ]

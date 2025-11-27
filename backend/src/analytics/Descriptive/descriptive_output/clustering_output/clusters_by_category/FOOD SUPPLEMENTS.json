@@ -4,14 +4,14 @@
     "description":"KIRKLAND FISH OIL 1000IU",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":371.0,
-    "total_sales":1435.92,
-    "months_active":8.0,
-    "avg_price":3.8704043127,
-    "mean_monthly_qty":46.375,
-    "cv_monthly_qty":0.8653550554,
-    "trend_qty_slope":10.2261904762,
-    "cluster":0
+    "total_qty":245.0,
+    "total_sales":957.12,
+    "months_active":7.0,
+    "avg_price":3.9066122449,
+    "mean_monthly_qty":35.0,
+    "cv_monthly_qty":0.8108592426,
+    "trend_qty_slope":3.9642857143,
+    "cluster":1
   },
   {
     "item_code":"1076597085",
@@ -25,7 +25,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"2507732948",
@@ -39,7 +39,7 @@
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":-4.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"33680255",
@@ -53,7 +53,7 @@
     "mean_monthly_qty":31.5454545455,
     "cv_monthly_qty":0.87520812,
     "trend_qty_slope":-2.8181818182,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4000009375336",
@@ -74,14 +74,14 @@
     "description":"BIOFITEA (SENNA LEAVES SENNA POS) SAC",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":336.0,
-    "total_sales":2012.8,
-    "months_active":23.0,
-    "avg_price":5.9904761905,
-    "mean_monthly_qty":14.6086956522,
-    "cv_monthly_qty":0.8460446353,
-    "trend_qty_slope":-0.2509881423,
-    "cluster":0
+    "total_qty":333.0,
+    "total_sales":1997.5,
+    "months_active":22.0,
+    "avg_price":5.9984984985,
+    "mean_monthly_qty":15.1363636364,
+    "cv_monthly_qty":0.8179917799,
+    "trend_qty_slope":-0.3122529644,
+    "cluster":1
   },
   {
     "item_code":"4800428888817",
@@ -95,7 +95,7 @@
     "mean_monthly_qty":7.6666666667,
     "cv_monthly_qty":0.5702120456,
     "trend_qty_slope":0.2666666667,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806503650065",
@@ -109,21 +109,21 @@
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":-1.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806503650263",
     "description":"SLEEPWELL CAP",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":889.0,
-    "total_sales":15746.81,
-    "months_active":32.0,
-    "avg_price":17.7129471316,
-    "mean_monthly_qty":27.78125,
-    "cv_monthly_qty":1.0461452396,
-    "trend_qty_slope":0.6284824047,
-    "cluster":0
+    "total_qty":843.0,
+    "total_sales":14907.31,
+    "months_active":31.0,
+    "avg_price":17.6836417556,
+    "mean_monthly_qty":27.1935483871,
+    "cv_monthly_qty":1.0789512878,
+    "trend_qty_slope":0.6834677419,
+    "cluster":1
   },
   {
     "item_code":"4806503650843",
@@ -137,35 +137,35 @@
     "mean_monthly_qty":45.0,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":30.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806512430023",
     "description":"PAU D&#039; ARCO CAP",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":220.0,
-    "total_sales":3630.0,
-    "months_active":9.0,
+    "total_qty":200.0,
+    "total_sales":3300.0,
+    "months_active":8.0,
     "avg_price":16.5,
-    "mean_monthly_qty":24.4444444444,
-    "cv_monthly_qty":0.4064053263,
-    "trend_qty_slope":0.3333333333,
-    "cluster":0
+    "mean_monthly_qty":25.0,
+    "cv_monthly_qty":0.4161730409,
+    "trend_qty_slope":9.38309713e-17,
+    "cluster":1
   },
   {
     "item_code":"4806518900056",
     "description":"ATC FISH OIL 100MG",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":125.0,
-    "total_sales":916.5,
-    "months_active":9.0,
-    "avg_price":7.332,
-    "mean_monthly_qty":13.8888888889,
-    "cv_monthly_qty":0.6443849781,
-    "trend_qty_slope":1.9,
-    "cluster":0
+    "total_qty":115.0,
+    "total_sales":851.5,
+    "months_active":8.0,
+    "avg_price":7.4043478261,
+    "mean_monthly_qty":14.375,
+    "cv_monthly_qty":0.6525216464,
+    "trend_qty_slope":2.2976190476,
+    "cluster":1
   },
   {
     "item_code":"4806518900247",
@@ -179,7 +179,7 @@
     "mean_monthly_qty":31.25,
     "cv_monthly_qty":0.5469917732,
     "trend_qty_slope":1.1904761905,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806529431198",
@@ -193,7 +193,7 @@
     "mean_monthly_qty":11.25,
     "cv_monthly_qty":0.4802262841,
     "trend_qty_slope":3.3,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806529980160",
@@ -207,7 +207,7 @@
     "mean_monthly_qty":11.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806529980177",
@@ -221,7 +221,7 @@
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4806529980184",
@@ -235,7 +235,7 @@
     "mean_monthly_qty":5.6666666667,
     "cv_monthly_qty":0.6497271187,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4807788783691",
@@ -249,7 +249,7 @@
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":3
   },
   {
     "item_code":"4809012254687",
@@ -263,7 +263,7 @@
     "mean_monthly_qty":7.1428571429,
     "cv_monthly_qty":0.3544009029,
     "trend_qty_slope":0.1071428571,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809013160369",
@@ -277,21 +277,21 @@
     "mean_monthly_qty":12.5,
     "cv_monthly_qty":0.8671793355,
     "trend_qty_slope":3.5,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809013625004",
     "description":"MX3 CAP",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":823.0,
-    "total_sales":14219.01,
-    "months_active":28.0,
-    "avg_price":17.2770473876,
-    "mean_monthly_qty":29.3928571429,
-    "cv_monthly_qty":0.8572922932,
-    "trend_qty_slope":0.1004378763,
-    "cluster":0
+    "total_qty":811.0,
+    "total_sales":14013.01,
+    "months_active":27.0,
+    "avg_price":17.2786806412,
+    "mean_monthly_qty":30.037037037,
+    "cv_monthly_qty":0.8467298344,
+    "trend_qty_slope":0.0891330891,
+    "cluster":1
   },
   {
     "item_code":"4809013625028",
@@ -305,20 +305,20 @@
     "mean_monthly_qty":11.5,
     "cv_monthly_qty":0.7391304348,
     "trend_qty_slope":-17.0,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809013625080",
     "description":"MX3 COFFEE MIX 10G",
     "category":"FOOD SUPPLEMENTS",
     "tab":"F&B",
-    "total_qty":3623.0,
-    "total_sales":65192.4,
-    "months_active":34.0,
-    "avg_price":17.99403809,
-    "mean_monthly_qty":106.5588235294,
-    "cv_monthly_qty":0.4624024717,
-    "trend_qty_slope":0.6305576776,
+    "total_qty":3612.0,
+    "total_sales":64994.4,
+    "months_active":33.0,
+    "avg_price":17.9940199336,
+    "mean_monthly_qty":109.4545454545,
+    "cv_monthly_qty":0.4301117512,
+    "trend_qty_slope":0.5568181818,
     "cluster":2
   },
   {
@@ -333,7 +333,7 @@
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":1.0606601718,
     "trend_qty_slope":-4.5,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809015918098",
@@ -347,7 +347,7 @@
     "mean_monthly_qty":10.5,
     "cv_monthly_qty":0.2474358297,
     "trend_qty_slope":-1.8,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809015918180",
@@ -361,7 +361,7 @@
     "mean_monthly_qty":11.5,
     "cv_monthly_qty":0.839704692,
     "trend_qty_slope":-2.4,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4809015918210",
@@ -375,7 +375,7 @@
     "mean_monthly_qty":13.8333333333,
     "cv_monthly_qty":0.5084565746,
     "trend_qty_slope":0.1428571429,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"725765883124",
@@ -396,27 +396,27 @@
     "description":"IQURE HERBAL COFFEE 18 IN 1",
     "category":"FOOD SUPPLEMENTS",
     "tab":"F&B",
-    "total_qty":1225.0,
-    "total_sales":18345.0,
-    "months_active":20.0,
-    "avg_price":14.9755102041,
-    "mean_monthly_qty":61.25,
-    "cv_monthly_qty":0.4070801957,
-    "trend_qty_slope":1.2864661654,
-    "cluster":0
+    "total_qty":1172.0,
+    "total_sales":17550.0,
+    "months_active":19.0,
+    "avg_price":14.9744027304,
+    "mean_monthly_qty":61.6842105263,
+    "cv_monthly_qty":0.4135189415,
+    "trend_qty_slope":1.3561403509,
+    "cluster":1
   },
   {
     "item_code":"8994388106619",
     "description":"INBUMIN 250MG FC TAB",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "total_qty":1140.0,
-    "total_sales":48016.09,
-    "months_active":24.0,
-    "avg_price":42.119377193,
-    "mean_monthly_qty":47.5,
-    "cv_monthly_qty":0.5734024739,
-    "trend_qty_slope":-0.4304347826,
+    "total_qty":1095.0,
+    "total_sales":46115.25,
+    "months_active":23.0,
+    "avg_price":42.1143835616,
+    "mean_monthly_qty":47.6086956522,
+    "cv_monthly_qty":0.5842907815,
+    "trend_qty_slope":-0.4347826087,
     "cluster":2
   },
   {
@@ -431,7 +431,7 @@
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.7874007874,
     "trend_qty_slope":2.5,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"94974706",
@@ -445,7 +445,7 @@
     "mean_monthly_qty":16.3333333333,
     "cv_monthly_qty":1.3255098113,
     "trend_qty_slope":-1.3776223776,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"96619926626",
@@ -459,7 +459,7 @@
     "mean_monthly_qty":59.0,
     "cv_monthly_qty":1.4524939177,
     "trend_qty_slope":23.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"G14890901",
@@ -473,6 +473,6 @@
     "mean_monthly_qty":26.875,
     "cv_monthly_qty":0.5463681157,
     "trend_qty_slope":-2.0357142857,
-    "cluster":0
+    "cluster":1
   }
 ]

@@ -6,7 +6,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":34.0,
     "total_sales":8660.9,
-    "total_profit":3841.64,
     "months_active":12.0,
     "avg_price":254.7323529412,
     "mean_monthly_qty":2.8333333333,
@@ -19,30 +18,28 @@
     "description":"DIALOX (CLOXACILLIN) 250MG 60ML SUSPENSION",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":6.0,
-    "total_sales":405.0,
-    "total_profit":243.0,
-    "months_active":3.0,
+    "total_qty":4.0,
+    "total_sales":270.0,
+    "months_active":2.0,
     "avg_price":67.5,
     "mean_monthly_qty":2.0,
-    "cv_monthly_qty":0.4082482905,
-    "trend_qty_slope":0.5,
-    "cluster":1
+    "cv_monthly_qty":0.5,
+    "trend_qty_slope":2.0,
+    "cluster":0
   },
   {
     "item_code":"1000200140",
     "description":"PHILCLOX (CLOXACILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":297.0,
-    "total_sales":2376.0,
-    "total_profit":1603.8,
-    "months_active":6.0,
+    "total_qty":289.0,
+    "total_sales":2312.0,
+    "months_active":5.0,
     "avg_price":8.0,
-    "mean_monthly_qty":49.5,
-    "cv_monthly_qty":1.3698573647,
-    "trend_qty_slope":-24.8285714286,
-    "cluster":-1
+    "mean_monthly_qty":57.8,
+    "cv_monthly_qty":1.2360450549,
+    "trend_qty_slope":-34.7,
+    "cluster":0
   },
   {
     "item_code":"1000200180",
@@ -51,13 +48,12 @@
     "tab":"GENERICS",
     "total_qty":7.0,
     "total_sales":189.7,
-    "total_profit":113.75,
     "months_active":1.0,
     "avg_price":27.1,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"14162763",
@@ -66,13 +62,12 @@
     "tab":"GENERICS",
     "total_qty":21.0,
     "total_sales":89.25,
-    "total_profit":63.0,
     "months_active":2.0,
     "avg_price":4.25,
     "mean_monthly_qty":10.5,
     "cv_monthly_qty":0.0476190476,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"16773073",
@@ -81,28 +76,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":133.0,
     "total_sales":4930.61,
-    "total_profit":674.61,
     "months_active":6.0,
     "avg_price":37.0722556391,
     "mean_monthly_qty":22.1666666667,
     "cv_monthly_qty":0.7039216444,
     "trend_qty_slope":-3.1142857143,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"17540193",
     "description":"FLOXANOVA-500 FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":36.0,
-    "total_sales":350.8,
-    "total_profit":197.8,
-    "months_active":5.0,
-    "avg_price":9.7444444444,
-    "mean_monthly_qty":7.2,
-    "cv_monthly_qty":0.9718253158,
-    "trend_qty_slope":-0.6,
-    "cluster":1
+    "total_qty":15.0,
+    "total_sales":145.0,
+    "months_active":4.0,
+    "avg_price":9.6666666667,
+    "mean_monthly_qty":3.75,
+    "cv_monthly_qty":0.3464101615,
+    "trend_qty_slope":-0.9,
+    "cluster":0
   },
   {
     "item_code":"1900010130",
@@ -111,13 +104,12 @@
     "tab":"GENERICS",
     "total_qty":4.0,
     "total_sales":28.8,
-    "total_profit":20.6,
     "months_active":1.0,
     "avg_price":7.2,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"1900010168",
@@ -126,13 +118,12 @@
     "tab":"GENERICS",
     "total_qty":80.0,
     "total_sales":680.0,
-    "total_profit":505.6,
     "months_active":4.0,
     "avg_price":8.5,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.0612372436,
     "trend_qty_slope":0.6,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"1900010178",
@@ -141,13 +132,12 @@
     "tab":"GENERICS",
     "total_qty":449.0,
     "total_sales":3791.14,
-    "total_profit":2677.34,
     "months_active":20.0,
     "avg_price":8.443518931,
     "mean_monthly_qty":22.45,
     "cv_monthly_qty":0.649551807,
     "trend_qty_slope":-1.0939849624,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"1900010193",
@@ -156,13 +146,12 @@
     "tab":"GENERICS",
     "total_qty":208.0,
     "total_sales":9056.25,
-    "total_profit":2848.25,
     "months_active":8.0,
     "avg_price":43.5396634615,
     "mean_monthly_qty":26.0,
     "cv_monthly_qty":1.0038756259,
     "trend_qty_slope":-2.5476190476,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"1900010223",
@@ -171,13 +160,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":5.4,
-    "total_profit":3.1,
     "months_active":1.0,
     "avg_price":2.7,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"1900010256",
@@ -186,13 +174,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":70.0,
     "total_sales":448.93,
-    "total_profit":266.93,
     "months_active":4.0,
     "avg_price":6.4132857143,
     "mean_monthly_qty":17.5,
     "cv_monthly_qty":0.4130523513,
     "trend_qty_slope":-1.4,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"29253999",
@@ -201,13 +188,12 @@
     "tab":"GENERICS",
     "total_qty":821.0,
     "total_sales":21756.0,
-    "total_profit":14716.3,
     "months_active":11.0,
     "avg_price":26.4993909866,
     "mean_monthly_qty":74.6363636364,
     "cv_monthly_qty":0.4133689376,
     "trend_qty_slope":0.7636363636,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"36836673",
@@ -216,13 +202,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":472.0,
     "total_sales":4690.0,
-    "total_profit":914.0,
     "months_active":15.0,
     "avg_price":9.936440678,
     "mean_monthly_qty":31.4666666667,
     "cv_monthly_qty":0.7139107492,
     "trend_qty_slope":1.3678571429,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800136590026",
@@ -231,43 +216,40 @@
     "tab":"PRESCRIPTION",
     "total_qty":26.0,
     "total_sales":3781.52,
-    "total_profit":969.44,
     "months_active":13.0,
     "avg_price":145.4430769231,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":1.1929278784,
     "trend_qty_slope":0.2912087912,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4800136590033",
     "description":"FLAGYL FORTE 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":326.0,
-    "total_sales":14201.55,
-    "total_profit":28.0,
-    "months_active":14.0,
-    "avg_price":43.5630368098,
-    "mean_monthly_qty":23.2857142857,
-    "cv_monthly_qty":1.0554822032,
-    "trend_qty_slope":2.6725274725,
-    "cluster":-1
+    "total_qty":312.0,
+    "total_sales":13592.55,
+    "months_active":13.0,
+    "avg_price":43.5658653846,
+    "mean_monthly_qty":24.0,
+    "cv_monthly_qty":1.056876142,
+    "trend_qty_slope":2.9835164835,
+    "cluster":0
   },
   {
     "item_code":"4800153302398",
     "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":1743.0,
-    "total_sales":19062.73,
-    "total_profit":1553.21,
-    "months_active":30.0,
-    "avg_price":10.9367355135,
-    "mean_monthly_qty":58.1,
-    "cv_monthly_qty":0.5394224175,
-    "trend_qty_slope":-0.2978865406,
-    "cluster":-1
+    "total_qty":1662.0,
+    "total_sales":18171.73,
+    "months_active":29.0,
+    "avg_price":10.9336522262,
+    "mean_monthly_qty":57.3103448276,
+    "cv_monthly_qty":0.5510597733,
+    "trend_qty_slope":-0.3581280788,
+    "cluster":0
   },
   {
     "item_code":"4800261123885",
@@ -276,13 +258,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":1284.0,
-    "total_profit":784.0,
     "months_active":5.0,
     "avg_price":256.8,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4800284161031",
@@ -291,13 +272,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":14.0,
     "total_sales":4344.5,
-    "total_profit":774.64,
     "months_active":8.0,
     "avg_price":310.3214285714,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.6226998491,
     "trend_qty_slope":0.380952381,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800301902364",
@@ -306,13 +286,12 @@
     "tab":"GENERICS",
     "total_qty":17.0,
     "total_sales":863.18,
-    "total_profit":490.42,
     "months_active":7.0,
     "avg_price":50.7752941176,
     "mean_monthly_qty":2.4285714286,
     "cv_monthly_qty":1.1191939759,
     "trend_qty_slope":-0.7857142857,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800301902500",
@@ -321,13 +300,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":36.3,
-    "total_profit":21.8,
     "months_active":1.0,
     "avg_price":36.3,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800301902531",
@@ -336,13 +314,12 @@
     "tab":"GENERICS",
     "total_qty":21.0,
     "total_sales":84.0,
-    "total_profit":50.4,
     "months_active":1.0,
     "avg_price":4.0,
     "mean_monthly_qty":21.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800301902548",
@@ -351,13 +328,12 @@
     "tab":"GENERICS",
     "total_qty":14.0,
     "total_sales":151.2,
-    "total_profit":115.5,
     "months_active":1.0,
     "avg_price":10.8,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800301902845",
@@ -366,13 +342,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":224.0,
-    "total_profit":139.0,
     "months_active":1.0,
     "avg_price":44.8,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800304390113",
@@ -381,13 +356,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":42.0,
     "total_sales":5985.0,
-    "total_profit":1000.86,
     "months_active":5.0,
     "avg_price":142.5,
     "mean_monthly_qty":8.4,
     "cv_monthly_qty":0.7284313591,
     "trend_qty_slope":0.8,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800307101037",
@@ -396,28 +370,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":167.0,
     "total_sales":105809.8,
-    "total_profit":9077.04,
     "months_active":22.0,
     "avg_price":633.5916167665,
     "mean_monthly_qty":7.5909090909,
     "cv_monthly_qty":0.6760105112,
     "trend_qty_slope":-0.1439864483,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800307101044",
     "description":"KLARYTH 250MG\/5ML SUSP 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":130.0,
-    "total_sales":162074.4,
-    "total_profit":24600.32,
-    "months_active":23.0,
-    "avg_price":1246.7261538462,
-    "mean_monthly_qty":5.652173913,
-    "cv_monthly_qty":0.7050116454,
-    "trend_qty_slope":0.3122529644,
-    "cluster":-1
+    "total_qty":129.0,
+    "total_sales":160918.4,
+    "months_active":22.0,
+    "avg_price":1247.4294573643,
+    "mean_monthly_qty":5.8636363636,
+    "cv_monthly_qty":0.6729914509,
+    "trend_qty_slope":0.306606437,
+    "cluster":0
   },
   {
     "item_code":"4800307351111",
@@ -426,13 +398,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":52.0,
     "total_sales":16962.0,
-    "total_profit":3540.8,
     "months_active":13.0,
     "avg_price":326.1923076923,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.4160251472,
     "trend_qty_slope":-0.1208791209,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800307351517",
@@ -441,13 +412,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":77.0,
     "total_sales":33773.0,
-    "total_profit":13621.59,
     "months_active":15.0,
     "avg_price":438.6103896104,
     "mean_monthly_qty":5.1333333333,
     "cv_monthly_qty":0.6436109971,
     "trend_qty_slope":0.1892857143,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800308100138",
@@ -456,28 +426,26 @@
     "tab":"GENERICS",
     "total_qty":18.0,
     "total_sales":897.63,
-    "total_profit":101.31,
     "months_active":2.0,
     "avg_price":49.8683333333,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.5555555556,
     "trend_qty_slope":-10.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800308100473",
     "description":"BACTIV 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":622.0,
-    "total_sales":231648.7,
-    "total_profit":26729.6,
-    "months_active":24.0,
-    "avg_price":372.425562701,
-    "mean_monthly_qty":25.9166666667,
-    "cv_monthly_qty":0.6652374889,
-    "trend_qty_slope":1.5008695652,
-    "cluster":-1
+    "total_qty":613.0,
+    "total_sales":228228.7,
+    "months_active":23.0,
+    "avg_price":372.3143556281,
+    "mean_monthly_qty":26.652173913,
+    "cv_monthly_qty":0.6468142947,
+    "trend_qty_slope":1.4792490119,
+    "cluster":0
   },
   {
     "item_code":"4800308101326",
@@ -486,13 +454,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":62.0,
     "total_sales":8147.28,
-    "total_profit":1556.06,
     "months_active":4.0,
     "avg_price":131.4077419355,
     "mean_monthly_qty":15.5,
     "cv_monthly_qty":0.5743385102,
     "trend_qty_slope":5.4,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800308363038",
@@ -501,13 +468,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":100.0,
     "total_sales":4422.6,
-    "total_profit":648.18,
     "months_active":1.0,
     "avg_price":44.226,
     "mean_monthly_qty":100.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800308556003",
@@ -516,13 +482,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":133.0,
     "total_sales":62676.0,
-    "total_profit":10404.34,
     "months_active":19.0,
     "avg_price":471.2481203008,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.5733051892,
     "trend_qty_slope":0.4315789474,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800308765108",
@@ -531,13 +496,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":238.0,
     "total_sales":11979.1,
-    "total_profit":1218.97,
     "months_active":15.0,
     "avg_price":50.3323529412,
     "mean_monthly_qty":15.8666666667,
     "cv_monthly_qty":0.9648874013,
     "trend_qty_slope":1.6071428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800308805309",
@@ -546,43 +510,40 @@
     "tab":"PRESCRIPTION",
     "total_qty":26.0,
     "total_sales":1750.7,
-    "total_profit":170.94,
     "months_active":4.0,
     "avg_price":67.3346153846,
     "mean_monthly_qty":6.5,
     "cv_monthly_qty":0.6389710664,
     "trend_qty_slope":3.0,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4800316227018",
-    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "description":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":1730.0,
-    "total_profit":288.0,
     "months_active":2.0,
     "avg_price":346.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4800318120027",
-    "description":"AMOXIL (AMOXICILLIN) 500MG CAP",
+    "description":"AMOXIL CAP 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":152.0,
     "total_sales":2646.0,
-    "total_profit":483.73,
     "months_active":7.0,
     "avg_price":17.4078947368,
     "mean_monthly_qty":21.7142857143,
     "cv_monthly_qty":0.7891446683,
     "trend_qty_slope":-2.4285714286,
-    "cluster":5
+    "cluster":0
   },
   {
     "item_code":"4800318120072",
@@ -591,13 +552,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":549.0,
-    "total_profit":73.84,
     "months_active":3.0,
     "avg_price":137.25,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800318210162",
@@ -606,13 +566,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":1272.5,
-    "total_profit":219.4,
     "months_active":3.0,
     "avg_price":127.25,
     "mean_monthly_qty":3.3333333333,
     "cv_monthly_qty":0.2828427125,
     "trend_qty_slope":1.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4800319890042",
@@ -621,13 +580,12 @@
     "tab":"GENERICS",
     "total_qty":14.0,
     "total_sales":343.2,
-    "total_profit":-20.39,
     "months_active":1.0,
     "avg_price":24.5142857143,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800332237633",
@@ -636,13 +594,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":622.0,
     "total_sales":61040.76,
-    "total_profit":4122.06,
     "months_active":25.0,
     "avg_price":98.1362700965,
     "mean_monthly_qty":24.88,
     "cv_monthly_qty":0.7588969407,
     "trend_qty_slope":0.6707692308,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800333162484",
@@ -651,28 +608,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":262.0,
     "total_sales":12940.0,
-    "total_profit":1718.39,
     "months_active":15.0,
     "avg_price":49.3893129771,
     "mean_monthly_qty":17.4666666667,
     "cv_monthly_qty":0.5974958914,
     "trend_qty_slope":0.0035714286,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800333162491",
     "description":"AUGMENTIN 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":1375.0,
-    "total_sales":76342.55,
-    "total_profit":6113.93,
-    "months_active":31.0,
-    "avg_price":55.5218545455,
-    "mean_monthly_qty":44.3548387097,
-    "cv_monthly_qty":0.6299088744,
-    "trend_qty_slope":-0.6064516129,
-    "cluster":-1
+    "total_qty":1297.0,
+    "total_sales":71799.05,
+    "months_active":30.0,
+    "avg_price":55.3577872012,
+    "mean_monthly_qty":43.2333333333,
+    "cv_monthly_qty":0.6408577616,
+    "trend_qty_slope":-0.5982202447,
+    "cluster":0
   },
   {
     "item_code":"4800333272145",
@@ -681,13 +636,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":727.92,
-    "total_profit":66.17,
     "months_active":1.0,
     "avg_price":727.92,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800333900420",
@@ -696,13 +650,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":3426.5,
-    "total_profit":559.7,
     "months_active":6.0,
     "avg_price":311.5,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.5821022034,
     "trend_qty_slope":-0.0857142857,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800333900437",
@@ -711,13 +664,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":31.0,
     "total_sales":12029.0,
-    "total_profit":1491.83,
     "months_active":13.0,
     "avg_price":388.0322580645,
     "mean_monthly_qty":2.3846153846,
     "cv_monthly_qty":0.668917463,
     "trend_qty_slope":-0.1208791209,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800333900741",
@@ -726,13 +678,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":562.0,
-    "total_profit":51.2,
     "months_active":2.0,
     "avg_price":281.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800333900758",
@@ -741,13 +692,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":420.0,
-    "total_profit":42.0,
     "months_active":2.0,
     "avg_price":210.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800333900765",
@@ -756,13 +706,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":23.0,
     "total_sales":1668.5,
-    "total_profit":1668.5,
     "months_active":1.0,
     "avg_price":72.5434782609,
     "mean_monthly_qty":23.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4800338132833",
@@ -771,13 +720,12 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":806.4,
-    "total_profit":551.4,
     "months_active":2.0,
     "avg_price":268.8,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800338594365",
@@ -786,13 +734,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":90.0,
     "total_sales":1135.26,
-    "total_profit":550.26,
     "months_active":4.0,
     "avg_price":12.614,
     "mean_monthly_qty":22.5,
     "cv_monthly_qty":0.2484519975,
     "trend_qty_slope":0.4,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4800343860769",
@@ -801,13 +748,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":371.45,
-    "total_profit":141.45,
     "months_active":2.0,
     "avg_price":185.725,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800343860776",
@@ -816,13 +762,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
     "total_sales":2110.88,
-    "total_profit":774.88,
     "months_active":4.0,
     "avg_price":263.86,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":0.4,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800348112726",
@@ -831,13 +776,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":844.53,
-    "total_profit":157.49,
     "months_active":4.0,
     "avg_price":211.1325,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800348112733",
@@ -846,43 +790,40 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":539.48,
-    "total_profit":116.65,
     "months_active":2.0,
     "avg_price":269.74,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4800348112740",
     "description":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":189.0,
-    "total_sales":72342.67,
-    "total_profit":12791.34,
-    "months_active":25.0,
-    "avg_price":382.7654497354,
-    "mean_monthly_qty":7.56,
-    "cv_monthly_qty":0.571183565,
-    "trend_qty_slope":0.0546153846,
-    "cluster":-1
+    "total_qty":188.0,
+    "total_sales":71975.17,
+    "months_active":24.0,
+    "avg_price":382.8466489362,
+    "mean_monthly_qty":7.8333333333,
+    "cv_monthly_qty":0.534885323,
+    "trend_qty_slope":0.0330434783,
+    "cluster":0
   },
   {
     "item_code":"4800348112757",
     "description":"NATRAVOX 457MG\/5ML 35ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":112.0,
-    "total_sales":32340.02,
-    "total_profit":6544.52,
-    "months_active":26.0,
-    "avg_price":288.7501785714,
-    "mean_monthly_qty":4.3076923077,
-    "cv_monthly_qty":0.655870274,
-    "trend_qty_slope":-0.0464957265,
-    "cluster":-1
+    "total_qty":108.0,
+    "total_sales":31188.02,
+    "months_active":25.0,
+    "avg_price":288.777962963,
+    "mean_monthly_qty":4.32,
+    "cv_monthly_qty":0.6667952551,
+    "trend_qty_slope":-0.0607692308,
+    "cluster":0
   },
   {
     "item_code":"4800348112788",
@@ -891,13 +832,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":18.0,
     "total_sales":5978.7,
-    "total_profit":1377.0,
     "months_active":8.0,
     "avg_price":332.15,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.5328701693,
     "trend_qty_slope":-0.2619047619,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800348113419",
@@ -906,43 +846,40 @@
     "tab":"PRESCRIPTION",
     "total_qty":21.0,
     "total_sales":2080.65,
-    "total_profit":67.8,
     "months_active":4.0,
     "avg_price":99.0785714286,
     "mean_monthly_qty":5.25,
     "cv_monthly_qty":0.3400680204,
     "trend_qty_slope":-0.3,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800348124316",
     "description":"NATRAVOX 625MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":713.0,
-    "total_sales":33442.85,
-    "total_profit":4961.85,
-    "months_active":18.0,
-    "avg_price":46.9044179523,
-    "mean_monthly_qty":39.6111111111,
-    "cv_monthly_qty":0.6126399953,
-    "trend_qty_slope":1.3777089783,
-    "cluster":-1
+    "total_qty":699.0,
+    "total_sales":32770.85,
+    "months_active":17.0,
+    "avg_price":46.8824749642,
+    "mean_monthly_qty":41.1176470588,
+    "cv_monthly_qty":0.5870718937,
+    "trend_qty_slope":1.1544117647,
+    "cluster":0
   },
   {
     "item_code":"4800369001252",
     "description":"XIPRO TAB 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":1170.0,
-    "total_sales":45019.43,
-    "total_profit":4921.47,
-    "months_active":34.0,
-    "avg_price":38.4781452991,
-    "mean_monthly_qty":34.4117647059,
-    "cv_monthly_qty":0.6069964882,
-    "trend_qty_slope":0.5298701299,
-    "cluster":-1
+    "total_qty":1138.0,
+    "total_sales":43747.43,
+    "months_active":33.0,
+    "avg_price":38.4423813708,
+    "mean_monthly_qty":34.4848484848,
+    "cv_monthly_qty":0.6146948106,
+    "trend_qty_slope":0.5611631016,
+    "cluster":0
   },
   {
     "item_code":"4800369002341",
@@ -951,13 +888,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":71.0,
     "total_sales":4535.72,
-    "total_profit":1040.39,
     "months_active":6.0,
     "avg_price":63.8833802817,
     "mean_monthly_qty":11.8333333333,
     "cv_monthly_qty":0.5863284027,
     "trend_qty_slope":-1.2857142857,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4800435122157",
@@ -966,13 +902,12 @@
     "tab":"GENERICS",
     "total_qty":62.0,
     "total_sales":2604.0,
-    "total_profit":520.18,
     "months_active":4.0,
     "avg_price":42.0,
     "mean_monthly_qty":15.5,
     "cv_monthly_qty":0.3577592421,
     "trend_qty_slope":0.2,
-    "cluster":5
+    "cluster":0
   },
   {
     "item_code":"4800489051632",
@@ -981,13 +916,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
     "total_sales":3068.0,
-    "total_profit":289.84,
     "months_active":14.0,
     "avg_price":153.4,
     "mean_monthly_qty":1.4285714286,
     "cv_monthly_qty":0.4358898944,
     "trend_qty_slope":0.021978022,
-    "cluster":6
+    "cluster":0
   },
   {
     "item_code":"4801962207751",
@@ -996,13 +930,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":94.0,
     "total_sales":4059.0,
-    "total_profit":386.23,
     "months_active":12.0,
     "avg_price":43.1808510638,
     "mean_monthly_qty":7.8333333333,
     "cv_monthly_qty":0.5822949865,
     "trend_qty_slope":0.6363636364,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4801962608169",
@@ -1011,13 +944,12 @@
     "tab":"GENERICS",
     "total_qty":23.0,
     "total_sales":517.5,
-    "total_profit":48.84,
     "months_active":4.0,
     "avg_price":22.5,
     "mean_monthly_qty":5.75,
     "cv_monthly_qty":0.655066051,
     "trend_qty_slope":1.9,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806011583848",
@@ -1026,13 +958,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":9.0,
     "total_sales":4231.0,
-    "total_profit":555.49,
     "months_active":8.0,
     "avg_price":470.1111111111,
     "mean_monthly_qty":1.125,
     "cv_monthly_qty":0.2939723679,
     "trend_qty_slope":-0.0357142857,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033300270",
@@ -1041,13 +972,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":446.0,
     "total_sales":16587.35,
-    "total_profit":4312.59,
     "months_active":12.0,
     "avg_price":37.191367713,
     "mean_monthly_qty":37.1666666667,
     "cv_monthly_qty":1.1145008965,
     "trend_qty_slope":-5.8601398601,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033300409",
@@ -1056,7 +986,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":165.0,
     "total_sales":8712.0,
-    "total_profit":697.44,
     "months_active":9.0,
     "avg_price":52.8,
     "mean_monthly_qty":18.3333333333,
@@ -1071,13 +1000,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":37.0,
     "total_sales":277.5,
-    "total_profit":61.05,
     "months_active":1.0,
     "avg_price":7.5,
     "mean_monthly_qty":37.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806033300775",
@@ -1086,7 +1014,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":107.0,
     "total_sales":8658.03,
-    "total_profit":1146.63,
     "months_active":6.0,
     "avg_price":80.9161682243,
     "mean_monthly_qty":17.8333333333,
@@ -1101,13 +1028,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":240.0,
     "total_sales":7491.28,
-    "total_profit":3706.48,
     "months_active":10.0,
     "avg_price":31.2136666667,
     "mean_monthly_qty":24.0,
     "cv_monthly_qty":0.455292946,
     "trend_qty_slope":-1.2727272727,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033300850",
@@ -1116,28 +1042,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":188.0,
     "total_sales":3243.0,
-    "total_profit":750.12,
     "months_active":4.0,
     "avg_price":17.25,
     "mean_monthly_qty":47.0,
     "cv_monthly_qty":0.700190752,
     "trend_qty_slope":7.6,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033300928",
     "description":"RM ERYTHROMYCIN STEARATE 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":48.0,
-    "total_sales":615.58,
-    "total_profit":38.62,
-    "months_active":6.0,
-    "avg_price":12.8245833333,
-    "mean_monthly_qty":8.0,
-    "cv_monthly_qty":0.3886407939,
-    "trend_qty_slope":0.0571428571,
-    "cluster":1
+    "total_qty":41.0,
+    "total_sales":522.48,
+    "months_active":5.0,
+    "avg_price":12.7434146341,
+    "mean_monthly_qty":8.2,
+    "cv_monthly_qty":0.4110316963,
+    "trend_qty_slope":-0.2,
+    "cluster":0
   },
   {
     "item_code":"4806033301116",
@@ -1146,13 +1070,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":29.0,
     "total_sales":406.0,
-    "total_profit":123.25,
     "months_active":2.0,
     "avg_price":14.0,
     "mean_monthly_qty":14.5,
     "cv_monthly_qty":0.1724137931,
     "trend_qty_slope":-5.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806033301284",
@@ -1161,13 +1084,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":156.0,
     "total_sales":2898.72,
-    "total_profit":730.55,
     "months_active":11.0,
     "avg_price":18.5815384615,
     "mean_monthly_qty":14.1818181818,
     "cv_monthly_qty":0.6475310923,
     "trend_qty_slope":0.3818181818,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033301291",
@@ -1176,13 +1098,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":45.0,
     "total_sales":1561.4,
-    "total_profit":271.7,
     "months_active":3.0,
     "avg_price":34.6977777778,
     "mean_monthly_qty":15.0,
     "cv_monthly_qty":0.6820448557,
     "trend_qty_slope":-5.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033301734",
@@ -1191,28 +1112,26 @@
     "tab":"GENERICS",
     "total_qty":665.0,
     "total_sales":26540.58,
-    "total_profit":4099.89,
     "months_active":19.0,
     "avg_price":39.9106466165,
     "mean_monthly_qty":35.0,
     "cv_monthly_qty":0.7735143065,
     "trend_qty_slope":1.2,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806033307941",
     "description":"RM AZITHROMYCIN DIHYDRATE 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":365.0,
-    "total_sales":34426.0,
-    "total_profit":9277.5,
-    "months_active":19.0,
-    "avg_price":94.3178082192,
-    "mean_monthly_qty":19.2105263158,
-    "cv_monthly_qty":1.0391185259,
-    "trend_qty_slope":-0.6298245614,
-    "cluster":-1
+    "total_qty":362.0,
+    "total_sales":34190.8,
+    "months_active":18.0,
+    "avg_price":94.4497237569,
+    "mean_monthly_qty":20.1111111111,
+    "cv_monthly_qty":1.000930552,
+    "trend_qty_slope":-1.0588235294,
+    "cluster":0
   },
   {
     "item_code":"4806037100449",
@@ -1221,13 +1140,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":451.0,
     "total_sales":6253.24,
-    "total_profit":4065.89,
     "months_active":11.0,
     "avg_price":13.8652771619,
     "mean_monthly_qty":41.0,
     "cv_monthly_qty":0.5550150899,
     "trend_qty_slope":-2.7909090909,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806037100845",
@@ -1236,13 +1154,12 @@
     "tab":"GENERICS",
     "total_qty":42.0,
     "total_sales":1302.0,
-    "total_profit":840.0,
     "months_active":3.0,
     "avg_price":31.0,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.733436814e-16,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806037102092",
@@ -1251,13 +1168,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":1275.92,
-    "total_profit":491.92,
     "months_active":2.0,
     "avg_price":318.98,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.570092459e-16,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806037104461",
@@ -1266,13 +1182,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":266.0,
     "total_sales":7226.4,
-    "total_profit":4377.54,
     "months_active":2.0,
     "avg_price":27.1669172932,
     "mean_monthly_qty":133.0,
     "cv_monthly_qty":0.7894736842,
     "trend_qty_slope":210.0,
-    "cluster":-1
+    "cluster":1
   },
   {
     "item_code":"4806503122197",
@@ -1281,28 +1196,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":3025.0,
-    "total_profit":1394.58,
     "months_active":8.0,
     "avg_price":275.0,
     "mean_monthly_qty":1.375,
     "cv_monthly_qty":0.3520893951,
     "trend_qty_slope":0.0595238095,
-    "cluster":6
+    "cluster":0
   },
   {
     "item_code":"4806505140656",
     "description":"ZEFALEX (CEFALEXIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":180.0,
-    "total_sales":1002.06,
-    "total_profit":593.46,
-    "months_active":9.0,
-    "avg_price":5.567,
-    "mean_monthly_qty":20.0,
-    "cv_monthly_qty":0.4859126579,
-    "trend_qty_slope":2.0666666667,
-    "cluster":1
+    "total_qty":159.0,
+    "total_sales":882.36,
+    "months_active":8.0,
+    "avg_price":5.5494339623,
+    "mean_monthly_qty":19.875,
+    "cv_monthly_qty":0.518286314,
+    "trend_qty_slope":2.6547619048,
+    "cluster":0
   },
   {
     "item_code":"4806505141264",
@@ -1311,13 +1224,12 @@
     "tab":"GENERICS",
     "total_qty":52.0,
     "total_sales":367.0,
-    "total_profit":302.0,
     "months_active":4.0,
     "avg_price":7.0576923077,
     "mean_monthly_qty":13.0,
     "cv_monthly_qty":0.1332346775,
     "trend_qty_slope":1.2,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806505754761",
@@ -1326,13 +1238,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":100.0,
     "total_sales":4337.9,
-    "total_profit":437.9,
     "months_active":4.0,
     "avg_price":43.379,
     "mean_monthly_qty":25.0,
     "cv_monthly_qty":0.6675327707,
     "trend_qty_slope":14.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806508322066",
@@ -1341,13 +1252,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":7029.92,
-    "total_profit":908.42,
     "months_active":8.0,
     "avg_price":639.0836363636,
     "mean_monthly_qty":1.375,
     "cv_monthly_qty":0.3520893951,
     "trend_qty_slope":0.0595238095,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806509863353",
@@ -1356,13 +1266,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":21.4,
-    "total_profit":12.83,
     "months_active":1.0,
     "avg_price":21.4,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806510660620",
@@ -1371,13 +1280,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
     "total_sales":154.75,
-    "total_profit":27.19,
     "months_active":1.0,
     "avg_price":12.8958333333,
     "mean_monthly_qty":12.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806510660644",
@@ -1386,13 +1294,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
     "total_sales":3193.09,
-    "total_profit":139.49,
     "months_active":6.0,
     "avg_price":399.13625,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.0571428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806510660651",
@@ -1401,13 +1308,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":718.0,
-    "total_profit":143.42,
     "months_active":2.0,
     "avg_price":359.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806510661696",
@@ -1416,13 +1322,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":100.0,
     "total_sales":1146.31,
-    "total_profit":187.77,
     "months_active":7.0,
     "avg_price":11.4631,
     "mean_monthly_qty":14.2857142857,
     "cv_monthly_qty":0.4772839826,
     "trend_qty_slope":-0.7142857143,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806511990665",
@@ -1431,13 +1336,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":536.0,
-    "total_profit":536.0,
     "months_active":2.0,
     "avg_price":268.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806513980091",
@@ -1446,13 +1350,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":249.0,
     "total_sales":7281.6,
-    "total_profit":1753.8,
     "months_active":14.0,
     "avg_price":29.243373494,
     "mean_monthly_qty":17.7857142857,
     "cv_monthly_qty":0.6734186555,
     "trend_qty_slope":0.2835164835,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806517790160",
@@ -1461,13 +1364,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":223.0,
     "total_sales":10727.96,
-    "total_profit":3079.06,
     "months_active":16.0,
     "avg_price":48.1074439462,
     "mean_monthly_qty":13.9375,
     "cv_monthly_qty":0.7445431804,
     "trend_qty_slope":0.7073529412,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806517790795",
@@ -1476,13 +1378,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":65.0,
     "total_sales":5890.0,
-    "total_profit":5890.0,
     "months_active":6.0,
     "avg_price":90.6153846154,
     "mean_monthly_qty":10.8333333333,
     "cv_monthly_qty":0.4597400861,
     "trend_qty_slope":-1.5714285714,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806517791105",
@@ -1491,28 +1392,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":540.0,
     "total_sales":22607.0,
-    "total_profit":5597.0,
     "months_active":13.0,
     "avg_price":41.8648148148,
     "mean_monthly_qty":41.5384615385,
     "cv_monthly_qty":0.5746532323,
     "trend_qty_slope":-0.6813186813,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806518970202",
     "description":"NORMIX (RIFAXIMIN) 200MG FCT",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":134.0,
-    "total_sales":11038.0,
-    "total_profit":1971.82,
-    "months_active":12.0,
-    "avg_price":82.3731343284,
-    "mean_monthly_qty":11.1666666667,
-    "cv_monthly_qty":0.9876718362,
-    "trend_qty_slope":-0.2237762238,
-    "cluster":-1
+    "total_qty":133.0,
+    "total_sales":10958.0,
+    "months_active":11.0,
+    "avg_price":82.3909774436,
+    "mean_monthly_qty":12.0909090909,
+    "cv_monthly_qty":0.9151954319,
+    "trend_qty_slope":-0.4,
+    "cluster":0
   },
   {
     "item_code":"4806519380444",
@@ -1521,13 +1420,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":282.0,
     "total_sales":3465.62,
-    "total_profit":3465.62,
     "months_active":7.0,
     "avg_price":12.2894326241,
     "mean_monthly_qty":40.2857142857,
     "cv_monthly_qty":0.7198843583,
     "trend_qty_slope":0.9285714286,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806519380468",
@@ -1536,13 +1434,12 @@
     "tab":"GENERICS",
     "total_qty":19.0,
     "total_sales":209.0,
-    "total_profit":140.6,
     "months_active":1.0,
     "avg_price":11.0,
     "mean_monthly_qty":19.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806520083242",
@@ -1551,13 +1448,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":106.0,
     "total_sales":988.03,
-    "total_profit":532.58,
     "months_active":6.0,
     "avg_price":9.3210377358,
     "mean_monthly_qty":17.6666666667,
     "cv_monthly_qty":0.6434487889,
     "trend_qty_slope":-1.8285714286,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806520351464",
@@ -1566,13 +1462,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":65.0,
-    "total_profit":27.0,
     "months_active":2.0,
     "avg_price":32.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806520351815",
@@ -1581,13 +1476,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":20.8,
-    "total_profit":14.4,
     "months_active":1.0,
     "avg_price":5.2,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806520351938",
@@ -1596,28 +1490,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":47.14,
-    "total_profit":32.14,
     "months_active":5.0,
     "avg_price":9.428,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":0.4,
-    "cluster":1
-  },
-  {
-    "item_code":"4806520800610",
-    "description":"SANTE BARLEY POWDER 3G SACH",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "total_qty":3.0,
-    "total_sales":198.0,
-    "total_profit":34.2,
-    "months_active":1.0,
-    "avg_price":66.0,
-    "mean_monthly_qty":3.0,
-    "cv_monthly_qty":0.0,
-    "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806521190400",
@@ -1626,13 +1504,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":97.72,
-    "total_profit":63.33,
     "months_active":3.0,
     "avg_price":48.86,
     "mean_monthly_qty":0.6666666667,
     "cv_monthly_qty":0.7071067812,
     "trend_qty_slope":-0.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523201285",
@@ -1641,28 +1518,26 @@
     "tab":"GENERICS",
     "total_qty":291.0,
     "total_sales":4428.11,
-    "total_profit":617.81,
     "months_active":5.0,
     "avg_price":15.2168728522,
     "mean_monthly_qty":58.2,
     "cv_monthly_qty":0.800576663,
     "trend_qty_slope":-7.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806523301312",
     "description":"AXMEL (AMOXICILLIN TRIHYDRATE) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":3124.0,
-    "total_sales":9641.86,
-    "total_profit":4552.24,
-    "months_active":29.0,
-    "avg_price":3.0863828425,
-    "mean_monthly_qty":107.724137931,
-    "cv_monthly_qty":1.3847544668,
-    "trend_qty_slope":-5.2512315271,
-    "cluster":-1
+    "total_qty":3046.0,
+    "total_sales":9388.36,
+    "months_active":28.0,
+    "avg_price":3.0821930401,
+    "mean_monthly_qty":108.7857142857,
+    "cv_monthly_qty":1.3945233012,
+    "trend_qty_slope":-5.4400656814,
+    "cluster":0
   },
   {
     "item_code":"4806523301336",
@@ -1671,13 +1546,12 @@
     "tab":"GENERICS",
     "total_qty":9.0,
     "total_sales":337.5,
-    "total_profit":184.5,
     "months_active":4.0,
     "avg_price":37.5,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":1.1,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301343",
@@ -1686,13 +1560,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":73.0,
-    "total_profit":39.96,
     "months_active":1.0,
     "avg_price":36.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301350",
@@ -1701,13 +1574,12 @@
     "tab":"GENERICS",
     "total_qty":7.0,
     "total_sales":200.1,
-    "total_profit":98.5,
     "months_active":3.0,
     "avg_price":28.5857142857,
     "mean_monthly_qty":2.3333333333,
     "cv_monthly_qty":0.2020305089,
     "trend_qty_slope":0.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301787",
@@ -1716,13 +1588,12 @@
     "tab":"GENERICS",
     "total_qty":91.0,
     "total_sales":978.0,
-    "total_profit":691.82,
     "months_active":11.0,
     "avg_price":10.7472527473,
     "mean_monthly_qty":8.2727272727,
     "cv_monthly_qty":1.3618395396,
     "trend_qty_slope":2.1272727273,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301794",
@@ -1731,13 +1602,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":434.3,
-    "total_profit":232.57,
     "months_active":8.0,
     "avg_price":39.4818181818,
     "mean_monthly_qty":1.375,
     "cv_monthly_qty":0.5061603966,
     "trend_qty_slope":-0.130952381,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301855",
@@ -1746,13 +1616,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":104.16,
-    "total_profit":74.16,
     "months_active":1.0,
     "avg_price":52.08,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301862",
@@ -1761,13 +1630,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":85.0,
-    "total_profit":51.0,
     "months_active":1.0,
     "avg_price":42.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301879",
@@ -1776,13 +1644,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":21.0,
     "total_sales":1333.12,
-    "total_profit":830.08,
     "months_active":10.0,
     "avg_price":63.4819047619,
     "mean_monthly_qty":2.1,
     "cv_monthly_qty":0.4492371968,
     "trend_qty_slope":-0.0424242424,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806523301893",
@@ -1791,28 +1658,26 @@
     "tab":"GENERICS",
     "total_qty":10.0,
     "total_sales":68.0,
-    "total_profit":41.0,
     "months_active":2.0,
     "avg_price":6.8,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":1.0,
     "trend_qty_slope":10.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523301992",
     "description":"CIPRODIN-FC (CIPROFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":815.0,
-    "total_sales":4709.8,
-    "total_profit":2837.9,
-    "months_active":19.0,
-    "avg_price":5.7788957055,
-    "mean_monthly_qty":42.8947368421,
-    "cv_monthly_qty":0.5537998445,
-    "trend_qty_slope":-0.8719298246,
-    "cluster":7
+    "total_qty":766.0,
+    "total_sales":4513.8,
+    "months_active":18.0,
+    "avg_price":5.892689295,
+    "mean_monthly_qty":42.5555555556,
+    "cv_monthly_qty":0.5724569131,
+    "trend_qty_slope":-0.8771929825,
+    "cluster":0
   },
   {
     "item_code":"4806523302005",
@@ -1821,13 +1686,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":65.0,
-    "total_profit":39.0,
     "months_active":1.0,
     "avg_price":32.5,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523302036",
@@ -1836,13 +1700,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":58.0,
-    "total_profit":31.0,
     "months_active":1.0,
     "avg_price":58.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523302050",
@@ -1851,13 +1714,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":21.0,
-    "total_profit":12.8,
     "months_active":1.0,
     "avg_price":2.1,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523302067",
@@ -1866,43 +1728,40 @@
     "tab":"GENERICS",
     "total_qty":218.0,
     "total_sales":1705.6,
-    "total_profit":1348.71,
     "months_active":11.0,
     "avg_price":7.823853211,
     "mean_monthly_qty":19.8181818182,
     "cv_monthly_qty":0.8032632712,
     "trend_qty_slope":-2.9636363636,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4806523302241",
     "description":"FLAGEX (METRONIDAZOLE) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":573.0,
-    "total_sales":2572.59,
-    "total_profit":1970.15,
-    "months_active":21.0,
-    "avg_price":4.4896858639,
-    "mean_monthly_qty":27.2857142857,
-    "cv_monthly_qty":0.5031628807,
-    "trend_qty_slope":-0.0311688312,
-    "cluster":5
+    "total_qty":564.0,
+    "total_sales":2550.99,
+    "months_active":20.0,
+    "avg_price":4.5230319149,
+    "mean_monthly_qty":28.2,
+    "cv_monthly_qty":0.4762346657,
+    "trend_qty_slope":-0.0466165414,
+    "cluster":0
   },
   {
     "item_code":"4806523303088",
     "description":"CLIN-GEN (CLINDAMYCIN) 300MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":1667.0,
-    "total_sales":24480.93,
-    "total_profit":6787.61,
-    "months_active":31.0,
-    "avg_price":14.6856208758,
-    "mean_monthly_qty":53.7741935484,
-    "cv_monthly_qty":0.5232969073,
-    "trend_qty_slope":-0.039516129,
-    "cluster":-1
+    "total_qty":1578.0,
+    "total_sales":23418.43,
+    "months_active":30.0,
+    "avg_price":14.8405766793,
+    "mean_monthly_qty":52.6,
+    "cv_monthly_qty":0.5294281431,
+    "trend_qty_slope":0.0031145717,
+    "cluster":0
   },
   {
     "item_code":"4806523303095",
@@ -1911,28 +1770,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":530.0,
     "total_sales":2807.46,
-    "total_profit":2076.91,
     "months_active":20.0,
     "avg_price":5.2970943396,
     "mean_monthly_qty":26.5,
     "cv_monthly_qty":0.7254220117,
     "trend_qty_slope":-0.3669172932,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806523340564",
     "description":"ZUNAMYN (SULTAMICILLIN) 750MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":210.0,
-    "total_sales":13005.64,
-    "total_profit":7545.64,
-    "months_active":11.0,
-    "avg_price":61.9316190476,
-    "mean_monthly_qty":19.0909090909,
-    "cv_monthly_qty":0.4109057525,
-    "trend_qty_slope":0.4454545455,
-    "cluster":-1
+    "total_qty":189.0,
+    "total_sales":11796.64,
+    "months_active":10.0,
+    "avg_price":62.4160846561,
+    "mean_monthly_qty":18.9,
+    "cv_monthly_qty":0.434023715,
+    "trend_qty_slope":0.5151515152,
+    "cluster":0
   },
   {
     "item_code":"4806523430074",
@@ -1941,28 +1798,26 @@
     "tab":"GENERICS",
     "total_qty":28.0,
     "total_sales":806.0,
-    "total_profit":555.96,
     "months_active":2.0,
     "avg_price":28.7857142857,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.9285714286,
     "trend_qty_slope":-26.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523430104",
     "description":"CEFUROX (CEFUROXIME) 250MG\/5ML 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":27.0,
-    "total_sales":5404.0,
-    "total_profit":3118.0,
-    "months_active":15.0,
-    "avg_price":200.1481481481,
-    "mean_monthly_qty":1.8,
-    "cv_monthly_qty":0.4625924443,
-    "trend_qty_slope":0.0428571429,
-    "cluster":-1
+    "total_qty":26.0,
+    "total_sales":5204.0,
+    "months_active":14.0,
+    "avg_price":200.1538461538,
+    "mean_monthly_qty":1.8571428571,
+    "cv_monthly_qty":0.4485347611,
+    "trend_qty_slope":0.0351648352,
+    "cluster":0
   },
   {
     "item_code":"4806523430111",
@@ -1971,13 +1826,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":356.0,
-    "total_profit":178.0,
     "months_active":1.0,
     "avg_price":178.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806523435680",
@@ -1986,13 +1840,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":224.0,
     "total_sales":5979.6,
-    "total_profit":4337.68,
     "months_active":4.0,
     "avg_price":26.6946428571,
     "mean_monthly_qty":56.0,
     "cv_monthly_qty":0.7797051052,
     "trend_qty_slope":-13.8,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806524140149",
@@ -2001,28 +1854,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":94.0,
     "total_sales":3816.0,
-    "total_profit":2458.49,
     "months_active":5.0,
     "avg_price":40.5957446809,
     "mean_monthly_qty":18.8,
     "cv_monthly_qty":0.8852188963,
     "trend_qty_slope":-6.4,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806524140477",
     "description":"CYFROX (CIPROFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":322.0,
-    "total_sales":1563.5,
-    "total_profit":1023.96,
-    "months_active":10.0,
-    "avg_price":4.8555900621,
-    "mean_monthly_qty":32.2,
-    "cv_monthly_qty":0.7695098211,
-    "trend_qty_slope":-4.0242424242,
-    "cluster":-1
+    "total_qty":319.0,
+    "total_sales":1548.5,
+    "months_active":9.0,
+    "avg_price":4.8542319749,
+    "mean_monthly_qty":35.4444444444,
+    "cv_monthly_qty":0.6776527537,
+    "trend_qty_slope":-3.1,
+    "cluster":0
   },
   {
     "item_code":"4806524140941",
@@ -2031,13 +1882,12 @@
     "tab":"GENERICS",
     "total_qty":113.0,
     "total_sales":814.4,
-    "total_profit":498.0,
     "months_active":4.0,
     "avg_price":7.207079646,
     "mean_monthly_qty":28.25,
     "cv_monthly_qty":0.0153278833,
     "trend_qty_slope":-0.3,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806524141740",
@@ -2046,13 +1896,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":70.0,
     "total_sales":420.0,
-    "total_profit":329.0,
     "months_active":3.0,
     "avg_price":6.0,
     "mean_monthly_qty":23.3333333333,
     "cv_monthly_qty":1.3536044097,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806524781588",
@@ -2061,28 +1910,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":120.0,
     "total_sales":17333.25,
-    "total_profit":2813.25,
     "months_active":9.0,
     "avg_price":144.44375,
     "mean_monthly_qty":13.3333333333,
     "cv_monthly_qty":0.4153311931,
     "trend_qty_slope":0.4,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806524781854",
     "description":"NEPHROMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":4868.0,
-    "total_sales":82853.12,
-    "total_profit":14701.12,
-    "months_active":13.0,
-    "avg_price":17.0199506984,
-    "mean_monthly_qty":374.4615384615,
-    "cv_monthly_qty":0.5713764929,
-    "trend_qty_slope":5.9065934066,
-    "cluster":-1
+    "total_qty":4371.0,
+    "total_sales":74553.12,
+    "months_active":12.0,
+    "avg_price":17.0563074811,
+    "mean_monthly_qty":364.25,
+    "cv_monthly_qty":0.6029661461,
+    "trend_qty_slope":3.8076923077,
+    "cluster":0
   },
   {
     "item_code":"4806524840124",
@@ -2091,13 +1938,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":9.0,
     "total_sales":3795.6,
-    "total_profit":546.6,
     "months_active":4.0,
     "avg_price":421.7333333333,
     "mean_monthly_qty":2.25,
     "cv_monthly_qty":0.3685138656,
     "trend_qty_slope":0.7,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806524840131",
@@ -2106,13 +1952,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":790.8,
-    "total_profit":176.86,
     "months_active":1.0,
     "avg_price":395.4,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806524840148",
@@ -2121,13 +1966,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":34.0,
     "total_sales":22199.1,
-    "total_profit":2906.5,
     "months_active":13.0,
     "avg_price":652.9147058824,
     "mean_monthly_qty":2.6153846154,
     "cv_monthly_qty":0.9430129142,
     "trend_qty_slope":0.3076923077,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806525170701",
@@ -2136,13 +1980,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":48.0,
     "total_sales":1376.4,
-    "total_profit":880.56,
     "months_active":3.0,
     "avg_price":28.675,
     "mean_monthly_qty":16.0,
     "cv_monthly_qty":0.5327796605,
     "trend_qty_slope":-8.5,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4806525171364",
@@ -2151,13 +1994,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":462.5,
-    "total_profit":277.5,
     "months_active":3.0,
     "avg_price":92.5,
     "mean_monthly_qty":1.6666666667,
     "cv_monthly_qty":0.5656854249,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806525173566",
@@ -2166,13 +2008,12 @@
     "tab":"GENERICS",
     "total_qty":124.0,
     "total_sales":5088.96,
-    "total_profit":2174.96,
     "months_active":8.0,
     "avg_price":41.04,
     "mean_monthly_qty":15.5,
     "cv_monthly_qty":0.5868840451,
     "trend_qty_slope":-0.7142857143,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806525174013",
@@ -2181,13 +2022,12 @@
     "tab":"GENERICS",
     "total_qty":72.0,
     "total_sales":151.2,
-    "total_profit":90.0,
     "months_active":2.0,
     "avg_price":2.1,
     "mean_monthly_qty":36.0,
     "cv_monthly_qty":0.4166666667,
     "trend_qty_slope":30.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806525870083",
@@ -2196,13 +2036,12 @@
     "tab":"GENERICS",
     "total_qty":97.0,
     "total_sales":3798.1,
-    "total_profit":2505.09,
     "months_active":6.0,
     "avg_price":39.1556701031,
     "mean_monthly_qty":16.1666666667,
     "cv_monthly_qty":0.481013738,
     "trend_qty_slope":-3.6857142857,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806525870298",
@@ -2211,13 +2050,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":496.5,
-    "total_profit":204.5,
     "months_active":1.0,
     "avg_price":496.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806527190431",
@@ -2226,13 +2064,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":126.25,
-    "total_profit":10.41,
     "months_active":5.0,
     "avg_price":25.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":-0.1,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806527191445",
@@ -2241,13 +2078,12 @@
     "tab":"GENERICS",
     "total_qty":6.0,
     "total_sales":156.0,
-    "total_profit":78.0,
     "months_active":4.0,
     "avg_price":26.0,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.5773502692,
     "trend_qty_slope":0.2,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806527650256",
@@ -2256,13 +2092,12 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":136.5,
-    "total_profit":96.0,
     "months_active":2.0,
     "avg_price":45.5,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806528271023",
@@ -2271,7 +2106,6 @@
     "tab":"PRESCRIPTION",
     "total_qty":60.0,
     "total_sales":8654.11,
-    "total_profit":704.11,
     "months_active":7.0,
     "avg_price":144.2351666667,
     "mean_monthly_qty":8.5714285714,
@@ -2286,28 +2120,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":50.0,
     "total_sales":2435.86,
-    "total_profit":92.36,
     "months_active":5.0,
     "avg_price":48.7172,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.5059644256,
     "trend_qty_slope":-1.6,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806528271337",
     "description":"ALCLAV NEO 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":1519.0,
-    "total_sales":36870.23,
-    "total_profit":12231.16,
-    "months_active":17.0,
-    "avg_price":24.2726991442,
-    "mean_monthly_qty":89.3529411765,
-    "cv_monthly_qty":0.5448210852,
-    "trend_qty_slope":0.9730392157,
-    "cluster":-1
+    "total_qty":1477.0,
+    "total_sales":35977.03,
+    "months_active":16.0,
+    "avg_price":24.3581787407,
+    "mean_monthly_qty":92.3125,
+    "cv_monthly_qty":0.5272665894,
+    "trend_qty_slope":0.9044117647,
+    "cluster":0
   },
   {
     "item_code":"4806529430276",
@@ -2316,13 +2148,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":100.0,
-    "total_profit":62.0,
     "months_active":1.0,
     "avg_price":100.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806529600747",
@@ -2331,13 +2162,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":93.0,
     "total_sales":51150.0,
-    "total_profit":16075.81,
     "months_active":12.0,
     "avg_price":550.0,
     "mean_monthly_qty":7.75,
     "cv_monthly_qty":0.4185268915,
     "trend_qty_slope":0.1923076923,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806529600785",
@@ -2346,13 +2176,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
     "total_sales":3852.0,
-    "total_profit":3852.0,
     "months_active":4.0,
     "avg_price":321.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.5270462767,
     "trend_qty_slope":-0.2,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4806529630393",
@@ -2361,13 +2190,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":281.0,
     "total_sales":25043.04,
-    "total_profit":2019.34,
     "months_active":20.0,
     "avg_price":89.12113879,
     "mean_monthly_qty":14.05,
     "cv_monthly_qty":0.7537346385,
     "trend_qty_slope":0.1571428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806529710095",
@@ -2376,13 +2204,12 @@
     "tab":"GENERICS",
     "total_qty":79.0,
     "total_sales":5119.65,
-    "total_profit":2907.65,
     "months_active":3.0,
     "avg_price":64.8056962025,
     "mean_monthly_qty":26.3333333333,
     "cv_monthly_qty":0.638707636,
     "trend_qty_slope":-15.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806530500104",
@@ -2391,13 +2218,12 @@
     "tab":"GENERICS",
     "total_qty":5.0,
     "total_sales":350.0,
-    "total_profit":230.0,
     "months_active":2.0,
     "avg_price":70.0,
     "mean_monthly_qty":2.5,
     "cv_monthly_qty":0.2,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806530500166",
@@ -2406,13 +2232,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":216.0,
-    "total_profit":120.0,
     "months_active":1.0,
     "avg_price":216.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806531820812",
@@ -2421,13 +2246,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1588.0,
     "total_sales":23100.47,
-    "total_profit":947.87,
     "months_active":4.0,
     "avg_price":14.546895466,
     "mean_monthly_qty":397.0,
     "cv_monthly_qty":0.3631225031,
     "trend_qty_slope":-1.6,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806532430034",
@@ -2436,13 +2260,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
     "total_sales":1035.73,
-    "total_profit":165.73,
     "months_active":2.0,
     "avg_price":34.5243333333,
     "mean_monthly_qty":15.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":20.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806532560120",
@@ -2451,13 +2274,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":951.0,
-    "total_profit":159.0,
     "months_active":2.0,
     "avg_price":475.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806532560410",
@@ -2466,13 +2288,12 @@
     "tab":"GENERICS",
     "total_qty":24.0,
     "total_sales":1428.0,
-    "total_profit":284.88,
     "months_active":3.0,
     "avg_price":59.5,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":0.4448782605,
     "trend_qty_slope":4.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806533434102",
@@ -2481,13 +2302,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
     "total_sales":357.84,
-    "total_profit":199.08,
     "months_active":5.0,
     "avg_price":12.78,
     "mean_monthly_qty":5.6,
     "cv_monthly_qty":0.3499271061,
     "trend_qty_slope":0.6,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806533600337",
@@ -2496,13 +2316,12 @@
     "tab":"GENERICS",
     "total_qty":80.0,
     "total_sales":1730.0,
-    "total_profit":1274.0,
     "months_active":10.0,
     "avg_price":21.625,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":0.7479137651,
     "trend_qty_slope":0.9090909091,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4806533602195",
@@ -2511,13 +2330,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":309.0,
     "total_sales":7249.05,
-    "total_profit":6555.74,
     "months_active":9.0,
     "avg_price":23.4597087379,
     "mean_monthly_qty":34.3333333333,
     "cv_monthly_qty":0.8666374215,
     "trend_qty_slope":-3.8833333333,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806533603000",
@@ -2526,13 +2344,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":752.86,
-    "total_profit":752.86,
     "months_active":2.0,
     "avg_price":250.9533333333,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806534570103",
@@ -2541,28 +2358,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":213.0,
     "total_sales":5695.2,
-    "total_profit":5695.2,
     "months_active":1.0,
     "avg_price":26.738028169,
     "mean_monthly_qty":213.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4806534570431",
     "description":"AZITOBACT (AZITHROMYCIN) 500 FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":82.0,
-    "total_sales":2632.0,
-    "total_profit":1775.1,
-    "months_active":3.0,
-    "avg_price":32.0975609756,
-    "mean_monthly_qty":27.3333333333,
-    "cv_monthly_qty":0.3977928398,
-    "trend_qty_slope":11.0,
-    "cluster":5
+    "total_qty":70.0,
+    "total_sales":2212.0,
+    "months_active":2.0,
+    "avg_price":31.6,
+    "mean_monthly_qty":35.0,
+    "cv_monthly_qty":0.0285714286,
+    "trend_qty_slope":-2.0,
+    "cluster":0
   },
   {
     "item_code":"4806534571179",
@@ -2571,13 +2386,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":270.0,
     "total_sales":5116.0,
-    "total_profit":5116.0,
     "months_active":3.0,
     "avg_price":18.9481481481,
     "mean_monthly_qty":90.0,
     "cv_monthly_qty":0.8171515315,
     "trend_qty_slope":21.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788056402",
@@ -2586,13 +2400,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
     "total_sales":3821.25,
-    "total_profit":3821.25,
     "months_active":2.0,
     "avg_price":636.875,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.6666666667,
     "trend_qty_slope":-4.0,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4807788401915",
@@ -2601,13 +2414,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":428.0,
     "total_sales":24030.8,
-    "total_profit":2943.24,
     "months_active":9.0,
     "avg_price":56.146728972,
     "mean_monthly_qty":47.5555555556,
     "cv_monthly_qty":0.3222944318,
     "trend_qty_slope":-0.4166666667,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788402059",
@@ -2616,28 +2428,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":66.0,
     "total_sales":3543.75,
-    "total_profit":396.21,
     "months_active":4.0,
     "avg_price":53.6931818182,
     "mean_monthly_qty":16.5,
     "cv_monthly_qty":0.472377493,
     "trend_qty_slope":-1.8,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788406019",
     "description":"DAZOMET TAB 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":740.0,
-    "total_sales":16682.41,
-    "total_profit":945.85,
-    "months_active":24.0,
-    "avg_price":22.5437972973,
-    "mean_monthly_qty":30.8333333333,
-    "cv_monthly_qty":0.6036170497,
-    "trend_qty_slope":0.7226086957,
-    "cluster":-1
+    "total_qty":707.0,
+    "total_sales":15924.57,
+    "months_active":23.0,
+    "avg_price":22.5241442716,
+    "mean_monthly_qty":30.7391304348,
+    "cv_monthly_qty":0.6183069267,
+    "trend_qty_slope":0.7816205534,
+    "cluster":0
   },
   {
     "item_code":"4807788409782",
@@ -2646,13 +2456,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":1687.26,
-    "total_profit":121.98,
     "months_active":2.0,
     "avg_price":421.815,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":2.0,
-    "cluster":4
+    "cluster":0
   },
   {
     "item_code":"4807788409805",
@@ -2661,13 +2470,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
     "total_sales":6110.0,
-    "total_profit":1019.84,
     "months_active":4.0,
     "avg_price":763.75,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.6123724357,
     "trend_qty_slope":-0.6,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788409829",
@@ -2676,28 +2484,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":421.0,
-    "total_profit":42.82,
     "months_active":2.0,
     "avg_price":421.0,
     "mean_monthly_qty":0.5,
     "cv_monthly_qty":1.0,
     "trend_qty_slope":1.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788410016",
     "description":"ENERVON TAB 30",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":58.0,
-    "total_sales":9243.45,
-    "total_profit":-58.99,
-    "months_active":19.0,
-    "avg_price":159.3698275862,
-    "mean_monthly_qty":3.0526315789,
-    "cv_monthly_qty":0.9294366877,
-    "trend_qty_slope":0.0438596491,
-    "cluster":-1
+    "total_qty":45.0,
+    "total_sales":9154.15,
+    "months_active":18.0,
+    "avg_price":203.4255555556,
+    "mean_monthly_qty":2.5,
+    "cv_monthly_qty":0.6565905201,
+    "trend_qty_slope":-0.0113519092,
+    "cluster":0
   },
   {
     "item_code":"4807788410023",
@@ -2706,13 +2512,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":445.0,
     "total_sales":3095.5,
-    "total_profit":297.13,
     "months_active":16.0,
     "avg_price":6.9561797753,
     "mean_monthly_qty":27.8125,
     "cv_monthly_qty":0.7088275961,
     "trend_qty_slope":-1.9073529412,
-    "cluster":6
+    "cluster":0
   },
   {
     "item_code":"4807788410566",
@@ -2721,13 +2526,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":19.0,
     "total_sales":3014.25,
-    "total_profit":276.37,
     "months_active":3.0,
     "avg_price":158.6447368421,
     "mean_monthly_qty":6.3333333333,
     "cv_monthly_qty":0.1488645855,
     "trend_qty_slope":-6.236939886e-16,
-    "cluster":6
+    "cluster":0
   },
   {
     "item_code":"4807788411877",
@@ -2736,13 +2540,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
     "total_sales":1972.53,
-    "total_profit":219.5,
     "months_active":4.0,
     "avg_price":328.755,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-0.2,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788411884",
@@ -2751,13 +2554,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":781.25,
-    "total_profit":130.23,
     "months_active":1.0,
     "avg_price":781.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788411891",
@@ -2766,28 +2568,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
     "total_sales":13243.0,
-    "total_profit":1614.76,
     "months_active":9.0,
     "avg_price":1103.5833333333,
     "mean_monthly_qty":1.3333333333,
     "cv_monthly_qty":0.3535533906,
     "trend_qty_slope":-0.0166666667,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788411914",
     "description":"TERGECEF CAP 200MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":232.0,
-    "total_sales":35995.56,
-    "total_profit":3818.87,
-    "months_active":20.0,
-    "avg_price":155.1532758621,
-    "mean_monthly_qty":11.6,
-    "cv_monthly_qty":0.6510761237,
-    "trend_qty_slope":0.1593984962,
-    "cluster":-1
+    "total_qty":225.0,
+    "total_sales":35023.96,
+    "months_active":19.0,
+    "avg_price":155.6620444444,
+    "mean_monthly_qty":11.8421052632,
+    "cv_monthly_qty":0.6479140318,
+    "trend_qty_slope":0.1403508772,
+    "cluster":0
   },
   {
     "item_code":"4807788411938",
@@ -2796,13 +2596,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":25.0,
     "total_sales":3952.0,
-    "total_profit":407.16,
     "months_active":13.0,
     "avg_price":158.08,
     "mean_monthly_qty":1.9230769231,
     "cv_monthly_qty":0.4308131846,
     "trend_qty_slope":0.0714285714,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788411945",
@@ -2811,13 +2610,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":31.0,
     "total_sales":5356.0,
-    "total_profit":263.01,
     "months_active":13.0,
     "avg_price":172.7741935484,
     "mean_monthly_qty":2.3846153846,
     "cv_monthly_qty":0.4806343363,
     "trend_qty_slope":-0.1373626374,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788413321",
@@ -2826,13 +2624,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":41.0,
     "total_sales":3761.75,
-    "total_profit":519.76,
     "months_active":8.0,
     "avg_price":91.75,
     "mean_monthly_qty":5.125,
     "cv_monthly_qty":0.4301266363,
     "trend_qty_slope":-0.2738095238,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4807788413338",
@@ -2841,13 +2638,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":33.0,
     "total_sales":5038.5,
-    "total_profit":751.92,
     "months_active":14.0,
     "avg_price":152.6818181818,
     "mean_monthly_qty":2.3571428571,
     "cv_monthly_qty":0.5462956478,
     "trend_qty_slope":-0.0989010989,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788413345",
@@ -2856,13 +2652,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":700.25,
-    "total_profit":700.25,
     "months_active":2.0,
     "avg_price":175.0625,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.5,
     "trend_qty_slope":-2.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788518767",
@@ -2871,13 +2666,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":3759.75,
-    "total_profit":365.05,
     "months_active":3.0,
     "avg_price":1253.25,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"4807788519399",
@@ -2886,13 +2680,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":619.5,
-    "total_profit":103.48,
     "months_active":2.0,
     "avg_price":309.75,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788519542",
@@ -2901,28 +2694,26 @@
     "tab":"GENERICS",
     "total_qty":3.0,
     "total_sales":594.0,
-    "total_profit":45.57,
     "months_active":1.0,
     "avg_price":198.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788520463",
     "description":"HIMOX 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":1056.0,
-    "total_sales":19239.9,
-    "total_profit":1788.13,
-    "months_active":31.0,
-    "avg_price":18.2196022727,
-    "mean_monthly_qty":34.064516129,
-    "cv_monthly_qty":0.6474212351,
-    "trend_qty_slope":0.6576612903,
-    "cluster":-1
+    "total_qty":999.0,
+    "total_sales":18194.4,
+    "months_active":30.0,
+    "avg_price":18.2126126126,
+    "mean_monthly_qty":33.3,
+    "cv_monthly_qty":0.6609859059,
+    "trend_qty_slope":0.7228031146,
+    "cluster":0
   },
   {
     "item_code":"4807788520470",
@@ -2931,13 +2722,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":1184.75,
-    "total_profit":115.67,
     "months_active":6.0,
     "avg_price":107.7045454545,
     "mean_monthly_qty":1.8333333333,
     "cv_monthly_qty":0.489560437,
     "trend_qty_slope":-0.4857142857,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4807788520494",
@@ -2946,13 +2736,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":17.0,
     "total_sales":1593.25,
-    "total_profit":134.63,
     "months_active":8.0,
     "avg_price":93.7205882353,
     "mean_monthly_qty":2.125,
     "cv_monthly_qty":0.5969936215,
     "trend_qty_slope":0.0595238095,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788520890",
@@ -2961,28 +2750,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":45.0,
     "total_sales":13811.6,
-    "total_profit":1229.15,
     "months_active":14.0,
     "avg_price":306.9244444444,
     "mean_monthly_qty":3.2142857143,
     "cv_monthly_qty":0.6874537021,
     "trend_qty_slope":-0.1032967033,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788520906",
     "description":"AMOCLAV 457 SUSPENSION 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":70.0,
-    "total_sales":33613.0,
-    "total_profit":2639.93,
-    "months_active":23.0,
-    "avg_price":480.1857142857,
-    "mean_monthly_qty":3.0434782609,
-    "cv_monthly_qty":0.8017837257,
-    "trend_qty_slope":0.0800395257,
-    "cluster":-1
+    "total_qty":63.0,
+    "total_sales":30120.0,
+    "months_active":22.0,
+    "avg_price":478.0952380952,
+    "mean_monthly_qty":2.8636363636,
+    "cv_monthly_qty":0.8175758895,
+    "trend_qty_slope":0.0931677019,
+    "cluster":0
   },
   {
     "item_code":"4807788524874",
@@ -2991,13 +2778,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":754.0,
-    "total_profit":56.51,
     "months_active":1.0,
     "avg_price":188.5,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788524881",
@@ -3006,13 +2792,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":33.0,
     "total_sales":10813.5,
-    "total_profit":1173.5,
     "months_active":15.0,
     "avg_price":327.6818181818,
     "mean_monthly_qty":2.2,
     "cv_monthly_qty":0.6883525268,
     "trend_qty_slope":0.1464285714,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788525031",
@@ -3021,43 +2806,40 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":478.5,
-    "total_profit":24.0,
     "months_active":1.0,
     "avg_price":159.5,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788527639",
     "description":"ZENITH 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":313.0,
-    "total_sales":45874.15,
-    "total_profit":3489.56,
-    "months_active":21.0,
-    "avg_price":146.5627795527,
-    "mean_monthly_qty":14.9047619048,
-    "cv_monthly_qty":0.5590050115,
-    "trend_qty_slope":0.2896103896,
-    "cluster":-1
+    "total_qty":305.0,
+    "total_sales":44672.15,
+    "months_active":20.0,
+    "avg_price":146.4660655738,
+    "mean_monthly_qty":15.25,
+    "cv_monthly_qty":0.550145958,
+    "trend_qty_slope":0.2939849624,
+    "cluster":0
   },
   {
     "item_code":"4807788530929",
     "description":"ZENITH (AZITHROMYCIN MONOHYDRATE) 200MG\/5ML SUSP 20ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":59.0,
-    "total_sales":37309.0,
-    "total_profit":8976.61,
-    "months_active":15.0,
-    "avg_price":632.3559322034,
-    "mean_monthly_qty":3.9333333333,
-    "cv_monthly_qty":0.5757724662,
-    "trend_qty_slope":0.1107142857,
-    "cluster":-1
+    "total_qty":57.0,
+    "total_sales":36018.0,
+    "months_active":14.0,
+    "avg_price":631.8947368421,
+    "mean_monthly_qty":4.0714285714,
+    "cv_monthly_qty":0.5605805371,
+    "trend_qty_slope":0.0725274725,
+    "cluster":0
   },
   {
     "item_code":"4807788547613",
@@ -3066,13 +2848,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":9.0,
     "total_sales":1062.0,
-    "total_profit":111.06,
     "months_active":3.0,
     "avg_price":118.0,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.7200822998,
     "trend_qty_slope":2.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788547767",
@@ -3081,28 +2862,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":572.75,
-    "total_profit":-55.64,
     "months_active":2.0,
     "avg_price":81.8214285714,
     "mean_monthly_qty":3.5,
     "cv_monthly_qty":0.7142857143,
     "trend_qty_slope":5.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788549501",
     "description":"TERGECEF OD 400MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":28.0,
-    "total_sales":4691.01,
-    "total_profit":-356.97,
-    "months_active":4.0,
-    "avg_price":167.5360714286,
-    "mean_monthly_qty":7.0,
-    "cv_monthly_qty":0.6624013211,
-    "trend_qty_slope":-2.6,
-    "cluster":7
+    "total_qty":22.0,
+    "total_sales":3497.01,
+    "months_active":3.0,
+    "avg_price":158.955,
+    "mean_monthly_qty":7.3333333333,
+    "cv_monthly_qty":0.7244262478,
+    "trend_qty_slope":-3.5,
+    "cluster":0
   },
   {
     "item_code":"4807788552273",
@@ -3111,13 +2890,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":38.0,
     "total_sales":40413.0,
-    "total_profit":2642.2,
     "months_active":15.0,
     "avg_price":1063.5,
     "mean_monthly_qty":2.5333333333,
     "cv_monthly_qty":0.5367388962,
     "trend_qty_slope":-0.15,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788552280",
@@ -3126,13 +2904,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":17.0,
     "total_sales":11972.74,
-    "total_profit":1489.82,
     "months_active":10.0,
     "avg_price":704.2788235294,
     "mean_monthly_qty":1.7,
     "cv_monthly_qty":0.4594264515,
     "trend_qty_slope":0.0424242424,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788552297",
@@ -3141,13 +2918,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":16.0,
     "total_sales":4809.66,
-    "total_profit":768.16,
     "months_active":9.0,
     "avg_price":300.60375,
     "mean_monthly_qty":1.7777777778,
     "cv_monthly_qty":0.2338535867,
     "trend_qty_slope":0.0166666667,
-    "cluster":7
+    "cluster":0
   },
   {
     "item_code":"4807788554680",
@@ -3156,13 +2932,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":3612.5,
-    "total_profit":362.0,
     "months_active":5.0,
     "avg_price":722.5,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.632455532,
     "trend_qty_slope":0.1,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4807788554697",
@@ -3171,28 +2946,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":1244.75,
-    "total_profit":63.53,
     "months_active":3.0,
     "avg_price":414.9166666667,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.8164965809,
     "trend_qty_slope":-0.5,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4807788559647",
     "description":"DOXIN 100MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":209.0,
-    "total_sales":23188.95,
-    "total_profit":3820.89,
-    "months_active":13.0,
-    "avg_price":110.9519138756,
-    "mean_monthly_qty":16.0769230769,
-    "cv_monthly_qty":0.6949832824,
-    "trend_qty_slope":0.5054945055,
-    "cluster":-1
+    "total_qty":195.0,
+    "total_sales":21631.45,
+    "months_active":12.0,
+    "avg_price":110.9305128205,
+    "mean_monthly_qty":16.25,
+    "cv_monthly_qty":0.7146260108,
+    "trend_qty_slope":0.548951049,
+    "cluster":0
   },
   {
     "item_code":"4807788654021",
@@ -3201,27 +2974,25 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":578.0,
-    "total_profit":31.02,
     "months_active":2.0,
     "avg_price":289.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4807788654045",
     "description":"SUMAPEN 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":521.0,
-    "total_sales":8692.63,
-    "total_profit":148.82,
-    "months_active":27.0,
-    "avg_price":16.6845105566,
-    "mean_monthly_qty":19.2962962963,
-    "cv_monthly_qty":0.4700888911,
-    "trend_qty_slope":0.7673992674,
+    "total_qty":504.0,
+    "total_sales":8361.13,
+    "months_active":26.0,
+    "avg_price":16.5895436508,
+    "mean_monthly_qty":19.3846153846,
+    "cv_monthly_qty":0.476273141,
+    "trend_qty_slope":0.8041025641,
     "cluster":0
   },
   {
@@ -3231,13 +3002,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":248.0,
     "total_sales":18589.79,
-    "total_profit":2551.63,
     "months_active":6.0,
     "avg_price":74.9588306452,
     "mean_monthly_qty":41.3333333333,
     "cv_monthly_qty":0.5512850374,
     "trend_qty_slope":4.8571428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"4809010672773",
@@ -3246,13 +3016,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":1148.25,
-    "total_profit":115.38,
     "months_active":2.0,
     "avg_price":382.75,
     "mean_monthly_qty":1.5,
     "cv_monthly_qty":0.3333333333,
     "trend_qty_slope":-1.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4809015596012",
@@ -3261,13 +3030,12 @@
     "tab":"GENERICS",
     "total_qty":95.0,
     "total_sales":1296.4,
-    "total_profit":821.4,
     "months_active":5.0,
     "avg_price":13.6463157895,
     "mean_monthly_qty":19.0,
     "cv_monthly_qty":0.7435782321,
     "trend_qty_slope":-7.7,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"4809015596180",
@@ -3276,13 +3044,12 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":88.0,
-    "total_profit":13.0,
     "months_active":1.0,
     "avg_price":88.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4809015705377",
@@ -3291,28 +3058,26 @@
     "tab":"GENERICS",
     "total_qty":29.0,
     "total_sales":3038.26,
-    "total_profit":-47.34,
     "months_active":6.0,
     "avg_price":104.7675862069,
     "mean_monthly_qty":4.8333333333,
     "cv_monthly_qty":0.6905167033,
     "trend_qty_slope":-1.0,
-    "cluster":6
+    "cluster":0
   },
   {
     "item_code":"5415062354940",
     "description":"ZITHROMAX 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":214.0,
-    "total_sales":32807.53,
-    "total_profit":4875.04,
-    "months_active":25.0,
-    "avg_price":153.3062149533,
-    "mean_monthly_qty":8.56,
-    "cv_monthly_qty":0.5369563522,
-    "trend_qty_slope":0.2069230769,
-    "cluster":-1
+    "total_qty":209.0,
+    "total_sales":32016.28,
+    "months_active":24.0,
+    "avg_price":153.1879425837,
+    "mean_monthly_qty":8.7083333333,
+    "cv_monthly_qty":0.5319188488,
+    "trend_qty_slope":0.2091304348,
+    "cluster":0
   },
   {
     "item_code":"5415062365786",
@@ -3321,13 +3086,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":22.0,
     "total_sales":9776.47,
-    "total_profit":885.99,
     "months_active":9.0,
     "avg_price":444.385,
     "mean_monthly_qty":2.4444444444,
     "cv_monthly_qty":0.6132153438,
     "trend_qty_slope":0.0333333333,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"62336575530",
@@ -3336,13 +3100,12 @@
     "tab":"GENERICS",
     "total_qty":4.0,
     "total_sales":1188.0,
-    "total_profit":438.04,
     "months_active":4.0,
     "avg_price":297.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"63305196712",
@@ -3351,43 +3114,40 @@
     "tab":"GENERICS",
     "total_qty":1.0,
     "total_sales":1920.0,
-    "total_profit":720.0,
     "months_active":2.0,
     "avg_price":1920.0,
     "mean_monthly_qty":0.5,
     "cv_monthly_qty":1.0,
     "trend_qty_slope":1.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"6920557238456",
     "description":"GENTAM (GENTAMICIN) 80MG\/2ML (40MG\/ML) 2ML AMP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":89.0,
-    "total_sales":2251.2,
-    "total_profit":1895.2,
-    "months_active":9.0,
-    "avg_price":25.2943820225,
-    "mean_monthly_qty":9.8888888889,
-    "cv_monthly_qty":0.4941265939,
-    "trend_qty_slope":0.5333333333,
-    "cluster":-1
+    "total_qty":69.0,
+    "total_sales":1803.2,
+    "months_active":8.0,
+    "avg_price":26.1333333333,
+    "mean_monthly_qty":8.625,
+    "cv_monthly_qty":0.4096606964,
+    "trend_qty_slope":-0.3214285714,
+    "cluster":0
   },
   {
     "item_code":"72945360",
     "description":"AXALAV (CO-AMOXICLAV) 500MG\/125MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":398.0,
-    "total_sales":8863.49,
-    "total_profit":5297.41,
-    "months_active":10.0,
-    "avg_price":22.2700753769,
-    "mean_monthly_qty":39.8,
-    "cv_monthly_qty":1.1632270389,
-    "trend_qty_slope":-6.5939393939,
-    "cluster":-1
+    "total_qty":363.0,
+    "total_sales":8382.24,
+    "months_active":9.0,
+    "avg_price":23.0915702479,
+    "mean_monthly_qty":40.3333333333,
+    "cv_monthly_qty":1.2092126386,
+    "trend_qty_slope":-8.2333333333,
+    "cluster":0
   },
   {
     "item_code":"75502188",
@@ -3396,13 +3156,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
     "total_sales":1005.0,
-    "total_profit":647.8,
     "months_active":2.0,
     "avg_price":50.25,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.4,
     "trend_qty_slope":-8.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"75626105",
@@ -3411,28 +3170,26 @@
     "tab":"GENERICS",
     "total_qty":40.0,
     "total_sales":553.0,
-    "total_profit":219.85,
     "months_active":3.0,
     "avg_price":13.825,
     "mean_monthly_qty":13.3333333333,
     "cv_monthly_qty":0.6133922073,
     "trend_qty_slope":-4.5,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"78901964",
     "description":"AZISAPH (AZITHROMYCIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":287.0,
-    "total_sales":4805.48,
-    "total_profit":3252.38,
-    "months_active":13.0,
-    "avg_price":16.7438327526,
-    "mean_monthly_qty":22.0769230769,
-    "cv_monthly_qty":0.5568811993,
-    "trend_qty_slope":0.4285714286,
-    "cluster":7
+    "total_qty":281.0,
+    "total_sales":4698.98,
+    "months_active":12.0,
+    "avg_price":16.7223487544,
+    "mean_monthly_qty":23.4166666667,
+    "cv_monthly_qty":0.5060267975,
+    "trend_qty_slope":1.2762237762,
+    "cluster":0
   },
   {
     "item_code":"83189913",
@@ -3441,13 +3198,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":100.0,
     "total_sales":4750.0,
-    "total_profit":950.0,
     "months_active":6.0,
     "avg_price":47.5,
     "mean_monthly_qty":16.6666666667,
     "cv_monthly_qty":0.6660330322,
     "trend_qty_slope":-1.6571428571,
-    "cluster":7
+    "cluster":0
   },
   {
     "item_code":"83379833",
@@ -3456,13 +3212,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":21.0,
     "total_sales":1440.6,
-    "total_profit":1440.6,
     "months_active":1.0,
     "avg_price":68.6,
     "mean_monthly_qty":21.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8902269000208",
@@ -3471,28 +3226,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":678.57,
-    "total_profit":576.61,
     "months_active":1.0,
     "avg_price":678.57,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8902269001182",
     "description":"ZOCEF 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":600.0,
-    "total_sales":18275.0,
-    "total_profit":10511.7,
-    "months_active":18.0,
-    "avg_price":30.4583333333,
-    "mean_monthly_qty":33.3333333333,
-    "cv_monthly_qty":0.8019975062,
-    "trend_qty_slope":-0.4416924665,
-    "cluster":-1
+    "total_qty":582.0,
+    "total_sales":17712.5,
+    "months_active":17.0,
+    "avg_price":30.4338487973,
+    "mean_monthly_qty":34.2352941176,
+    "cv_monthly_qty":0.7956940601,
+    "trend_qty_slope":-0.2058823529,
+    "cluster":0
   },
   {
     "item_code":"8902269002196",
@@ -3501,28 +3254,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":84.0,
     "total_sales":5279.04,
-    "total_profit":743.0,
     "months_active":5.0,
     "avg_price":62.8457142857,
     "mean_monthly_qty":16.8,
     "cv_monthly_qty":0.3657688451,
     "trend_qty_slope":0.4,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8902269016674",
     "description":"ALCLAV 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":2373.0,
-    "total_sales":55661.56,
-    "total_profit":24279.89,
-    "months_active":23.0,
-    "avg_price":23.4561989043,
-    "mean_monthly_qty":103.1739130435,
-    "cv_monthly_qty":0.6838247962,
-    "trend_qty_slope":-4.0830039526,
-    "cluster":-1
+    "total_qty":2315.0,
+    "total_sales":54385.56,
+    "months_active":22.0,
+    "avg_price":23.4926825054,
+    "mean_monthly_qty":105.2272727273,
+    "cv_monthly_qty":0.6791322446,
+    "trend_qty_slope":-4.3382269904,
+    "cluster":0
   },
   {
     "item_code":"8902269016681",
@@ -3531,13 +3282,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":517.9,
-    "total_profit":39.4,
     "months_active":1.0,
     "avg_price":51.79,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8902269040242",
@@ -3546,13 +3296,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":1232.14,
-    "total_profit":93.64,
     "months_active":1.0,
     "avg_price":616.07,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"8902297026072",
@@ -3561,13 +3310,12 @@
     "tab":"GENERICS",
     "total_qty":235.0,
     "total_sales":3202.65,
-    "total_profit":3202.65,
     "months_active":5.0,
     "avg_price":13.6282978723,
     "mean_monthly_qty":47.0,
     "cv_monthly_qty":0.5235944992,
     "trend_qty_slope":-0.8,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8902399204811",
@@ -3576,13 +3324,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":140.0,
     "total_sales":10206.0,
-    "total_profit":2366.0,
     "months_active":2.0,
     "avg_price":72.9,
     "mean_monthly_qty":70.0,
     "cv_monthly_qty":0.7571428571,
     "trend_qty_slope":106.0,
-    "cluster":-1
+    "cluster":2
   },
   {
     "item_code":"8902399469852",
@@ -3591,13 +3338,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":385.0,
     "total_sales":25582.83,
-    "total_profit":4600.33,
     "months_active":8.0,
     "avg_price":66.4489090909,
     "mean_monthly_qty":48.125,
     "cv_monthly_qty":0.6487841685,
     "trend_qty_slope":-0.0119047619,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8903726135198",
@@ -3606,13 +3352,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":1176.0,
-    "total_profit":1176.0,
     "months_active":1.0,
     "avg_price":168.0,
     "mean_monthly_qty":7.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"8904130421273",
@@ -3621,13 +3366,12 @@
     "tab":"GENERICS",
     "total_qty":6.0,
     "total_sales":297.0,
-    "total_profit":297.0,
     "months_active":1.0,
     "avg_price":49.5,
     "mean_monthly_qty":6.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904182010395",
@@ -3636,13 +3380,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":94.0,
     "total_sales":905.1,
-    "total_profit":636.26,
     "months_active":7.0,
     "avg_price":9.6287234043,
     "mean_monthly_qty":13.4285714286,
     "cv_monthly_qty":0.6623141454,
     "trend_qty_slope":-0.6428571429,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904182011897",
@@ -3651,13 +3394,12 @@
     "tab":"GENERICS",
     "total_qty":100.0,
     "total_sales":710.0,
-    "total_profit":710.0,
     "months_active":5.0,
     "avg_price":7.1,
     "mean_monthly_qty":20.0,
     "cv_monthly_qty":0.4647580015,
     "trend_qty_slope":-2.2,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904182012344",
@@ -3666,13 +3408,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
     "total_sales":360.0,
-    "total_profit":360.0,
     "months_active":1.0,
     "avg_price":36.0,
     "mean_monthly_qty":10.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904182012818",
@@ -3681,13 +3422,12 @@
     "tab":"GENERICS",
     "total_qty":75.0,
     "total_sales":2892.0,
-    "total_profit":2892.0,
     "months_active":3.0,
     "avg_price":38.56,
     "mean_monthly_qty":25.0,
     "cv_monthly_qty":0.8125679459,
     "trend_qty_slope":8.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8904198503386",
@@ -3696,13 +3436,12 @@
     "tab":"GENERICS",
     "total_qty":30.0,
     "total_sales":702.0,
-    "total_profit":-90.0,
     "months_active":1.0,
     "avg_price":23.4,
     "mean_monthly_qty":30.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904220107728",
@@ -3711,13 +3450,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":726.0,
-    "total_profit":226.0,
     "months_active":2.0,
     "avg_price":363.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-7.850462293e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8904220113644",
@@ -3726,13 +3464,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
     "total_sales":2145.0,
-    "total_profit":2145.0,
     "months_active":3.0,
     "avg_price":195.0,
     "mean_monthly_qty":3.6666666667,
     "cv_monthly_qty":0.560401273,
     "trend_qty_slope":1.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8904220119622",
@@ -3741,13 +3478,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":184.0,
-    "total_profit":79.28,
     "months_active":1.0,
     "avg_price":46.0,
     "mean_monthly_qty":4.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8906000526699",
@@ -3756,13 +3492,12 @@
     "tab":"GENERICS",
     "total_qty":1270.0,
     "total_sales":85258.75,
-    "total_profit":17948.75,
     "months_active":15.0,
     "avg_price":67.1328740157,
     "mean_monthly_qty":84.6666666667,
     "cv_monthly_qty":0.5323032657,
     "trend_qty_slope":-2.9214285714,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906007510493",
@@ -3771,27 +3506,25 @@
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
     "total_sales":1813.0,
-    "total_profit":1813.0,
     "months_active":2.0,
     "avg_price":64.75,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-0.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906011513497",
     "description":"SANIX (CEFIXIME) 200MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":634.0,
-    "total_sales":8761.1,
-    "total_profit":5908.1,
-    "months_active":19.0,
-    "avg_price":13.8187697161,
-    "mean_monthly_qty":33.3684210526,
-    "cv_monthly_qty":0.6126455857,
-    "trend_qty_slope":2.4666666667,
+    "total_qty":550.0,
+    "total_sales":7702.7,
+    "months_active":18.0,
+    "avg_price":14.0049090909,
+    "mean_monthly_qty":30.5555555556,
+    "cv_monthly_qty":0.5580959365,
+    "trend_qty_slope":2.2394220846,
     "cluster":0
   },
   {
@@ -3801,13 +3534,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":4.0,
     "total_sales":920.0,
-    "total_profit":520.0,
     "months_active":4.0,
     "avg_price":230.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-8.214889952e-17,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8906016610115",
@@ -3816,13 +3548,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":468.0,
     "total_sales":9613.0,
-    "total_profit":5793.0,
     "months_active":10.0,
     "avg_price":20.5405982906,
     "mean_monthly_qty":46.8,
     "cv_monthly_qty":0.8021106827,
     "trend_qty_slope":3.8060606061,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906016613499",
@@ -3831,13 +3562,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":219.0,
     "total_sales":3808.8,
-    "total_profit":1785.24,
     "months_active":6.0,
     "avg_price":17.3917808219,
     "mean_monthly_qty":36.5,
     "cv_monthly_qty":0.9622576714,
     "trend_qty_slope":-3.4,
-    "cluster":2
+    "cluster":0
   },
   {
     "item_code":"8906016614199",
@@ -3846,13 +3576,12 @@
     "tab":"GENERICS",
     "total_qty":16.0,
     "total_sales":436.8,
-    "total_profit":280.0,
     "months_active":2.0,
     "avg_price":27.3,
     "mean_monthly_qty":8.0,
     "cv_monthly_qty":0.75,
     "trend_qty_slope":-12.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8906043320179",
@@ -3861,13 +3590,12 @@
     "tab":"GENERICS",
     "total_qty":269.0,
     "total_sales":7263.2,
-    "total_profit":5165.0,
     "months_active":4.0,
     "avg_price":27.0007434944,
     "mean_monthly_qty":67.25,
     "cv_monthly_qty":0.5823393673,
     "trend_qty_slope":-14.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906043320186",
@@ -3876,13 +3604,12 @@
     "tab":"GENERICS",
     "total_qty":70.0,
     "total_sales":966.0,
-    "total_profit":966.0,
     "months_active":1.0,
     "avg_price":13.8,
     "mean_monthly_qty":70.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8906043326010",
@@ -3891,13 +3618,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":9.0,
     "total_sales":2286.67,
-    "total_profit":2286.67,
     "months_active":3.0,
     "avg_price":254.0744444444,
     "mean_monthly_qty":3.0,
     "cv_monthly_qty":0.4714045208,
     "trend_qty_slope":-1.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906043326614",
@@ -3906,28 +3632,26 @@
     "tab":"GENERICS",
     "total_qty":34.0,
     "total_sales":2040.0,
-    "total_profit":2040.0,
     "months_active":3.0,
     "avg_price":60.0,
     "mean_monthly_qty":11.3333333333,
     "cv_monthly_qty":0.3327561323,
     "trend_qty_slope":4.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906045604321",
     "description":"THEOROXIME (CEFUROXIME) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":1203.0,
-    "total_sales":32146.4,
-    "total_profit":17827.14,
-    "months_active":16.0,
-    "avg_price":26.7218620116,
-    "mean_monthly_qty":75.1875,
-    "cv_monthly_qty":0.6341681787,
-    "trend_qty_slope":5.8955882353,
-    "cluster":-1
+    "total_qty":1115.0,
+    "total_sales":29738.4,
+    "months_active":15.0,
+    "avg_price":26.6712107623,
+    "mean_monthly_qty":74.3333333333,
+    "cv_monthly_qty":0.6608958812,
+    "trend_qty_slope":6.2892857143,
+    "cluster":0
   },
   {
     "item_code":"8906045605397",
@@ -3936,13 +3660,12 @@
     "tab":"GENERICS",
     "total_qty":266.0,
     "total_sales":11187.97,
-    "total_profit":7995.97,
     "months_active":10.0,
     "avg_price":42.060037594,
     "mean_monthly_qty":26.6,
     "cv_monthly_qty":0.6572392008,
     "trend_qty_slope":-4.1939393939,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"89061125300519",
@@ -3951,13 +3674,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
     "total_sales":252.0,
-    "total_profit":252.0,
     "months_active":1.0,
     "avg_price":21.0,
     "mean_monthly_qty":12.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8906143082854",
@@ -3966,13 +3688,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":542.0,
     "total_sales":14879.2,
-    "total_profit":10765.42,
     "months_active":7.0,
     "avg_price":27.452398524,
     "mean_monthly_qty":77.4285714286,
     "cv_monthly_qty":0.6050197825,
     "trend_qty_slope":-1.1071428571,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8906143083912",
@@ -3981,13 +3702,12 @@
     "tab":"GENERICS",
     "total_qty":56.0,
     "total_sales":1489.6,
-    "total_profit":1489.6,
     "months_active":1.0,
     "avg_price":26.6,
     "mean_monthly_qty":56.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8964001206057",
@@ -3996,13 +3716,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":288.0,
-    "total_profit":48.0,
     "months_active":1.0,
     "avg_price":288.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8964001206064",
@@ -4011,13 +3730,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":2305.6,
-    "total_profit":245.53,
     "months_active":7.0,
     "avg_price":329.3714285714,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-4.423599198e-17,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"8964001206088",
@@ -4026,28 +3744,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":613.75,
-    "total_profit":157.45,
     "months_active":1.0,
     "avg_price":122.75,
     "mean_monthly_qty":5.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"8964001206101",
     "description":"CLARIGET TAB 500MG",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":133.0,
-    "total_sales":7600.1,
-    "total_profit":1140.8,
-    "months_active":14.0,
-    "avg_price":57.1436090226,
-    "mean_monthly_qty":9.5,
-    "cv_monthly_qty":0.7013469995,
-    "trend_qty_slope":0.7934065934,
-    "cluster":-1
+    "total_qty":119.0,
+    "total_sales":6746.1,
+    "months_active":13.0,
+    "avg_price":56.6899159664,
+    "mean_monthly_qty":9.1538461538,
+    "cv_monthly_qty":0.7419744556,
+    "trend_qty_slope":0.9120879121,
+    "cluster":0
   },
   {
     "item_code":"8964001206224",
@@ -4056,13 +3772,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":75.0,
     "total_sales":4534.69,
-    "total_profit":-38.36,
     "months_active":9.0,
     "avg_price":60.4625333333,
     "mean_monthly_qty":8.3333333333,
     "cv_monthly_qty":0.5513619501,
     "trend_qty_slope":-0.25,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"90346415",
@@ -4071,28 +3786,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
     "total_sales":671.46,
-    "total_profit":-85.06,
     "months_active":2.0,
     "avg_price":23.9807142857,
     "mean_monthly_qty":14.0,
     "cv_monthly_qty":0.3571428571,
     "trend_qty_slope":10.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"93070409",
     "description":"PYRESAPH (PARACETAMOL) 125MG\/5ML 60ML",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_qty":4.0,
-    "total_sales":100.0,
-    "total_profit":48.92,
-    "months_active":3.0,
+    "total_qty":3.0,
+    "total_sales":75.0,
+    "months_active":2.0,
     "avg_price":25.0,
-    "mean_monthly_qty":1.3333333333,
-    "cv_monthly_qty":0.3535533906,
-    "trend_qty_slope":-0.5,
-    "cluster":1
+    "mean_monthly_qty":1.5,
+    "cv_monthly_qty":0.3333333333,
+    "trend_qty_slope":-1.0,
+    "cluster":0
   },
   {
     "item_code":"99813799755",
@@ -4101,13 +3814,12 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":1166.0,
-    "total_profit":636.0,
     "months_active":1.0,
     "avg_price":583.0,
     "mean_monthly_qty":2.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":0
   },
   {
     "item_code":"G23610491",
@@ -4116,13 +3828,12 @@
     "tab":"PRESCRIPTION",
     "total_qty":60.0,
     "total_sales":31600.8,
-    "total_profit":5200.8,
     "months_active":5.0,
     "avg_price":526.68,
     "mean_monthly_qty":12.0,
     "cv_monthly_qty":0.2173067468,
     "trend_qty_slope":1.5,
-    "cluster":-1
+    "cluster":0
   },
   {
     "item_code":"G27927274",
@@ -4131,28 +3842,26 @@
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
     "total_sales":2595.0,
-    "total_profit":195.0,
     "months_active":3.0,
     "avg_price":865.0,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":8.985767264e-17,
-    "cluster":5
+    "cluster":0
   },
   {
     "item_code":"G3805523855",
     "description":"FLOXANOVA-500 (LEVOFLOXACIN) 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_qty":147.0,
-    "total_sales":1949.8,
-    "total_profit":1251.76,
-    "months_active":9.0,
-    "avg_price":13.2639455782,
-    "mean_monthly_qty":16.3333333333,
-    "cv_monthly_qty":0.642776153,
-    "trend_qty_slope":-1.7166666667,
-    "cluster":-1
+    "total_qty":141.0,
+    "total_sales":1885.0,
+    "months_active":8.0,
+    "avg_price":13.3687943262,
+    "mean_monthly_qty":17.625,
+    "cv_monthly_qty":0.5923153577,
+    "trend_qty_slope":-3.5595238095,
+    "cluster":0
   },
   {
     "item_code":"G90955549",
@@ -4161,12 +3870,11 @@
     "tab":"PRESCRIPTION",
     "total_qty":19.0,
     "total_sales":1099.98,
-    "total_profit":52.51,
     "months_active":1.0,
     "avg_price":57.8936842105,
     "mean_monthly_qty":19.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":0.0,
-    "cluster":3
+    "cluster":0
   }
 ]

@@ -2,12 +2,12 @@
   {
     "cluster":0,
     "n":69,
-    "total_sales":952463.0,
-    "total_qty":23394.0,
+    "total_sales":911459.02,
+    "total_qty":22254.0,
     "avg_price_med":30.25,
-    "months_active_med":9.0,
+    "months_active_med":8.0,
     "mean_monthly_qty_med":15.6666666667,
-    "cv_monthly_qty_med":0.5720053738,
+    "cv_monthly_qty_med":0.5739665022,
     "trend_qty_slope_med":0.0,
     "persona":"High-Sales, High-Volume, Premium"
   },
