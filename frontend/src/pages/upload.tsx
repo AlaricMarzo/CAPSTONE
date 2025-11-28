@@ -34,54 +34,70 @@ export default function DataUploadPage() {
       const response = await fetch(`/api/job/${jobId}`);
       const data = await response.json();
 
-      if (data.success) {
-        setUploadProgress(data.progress);
-        setResult({
-          success: data.status === "completed",
-          error: data.error,
-          filesProcessed: data.filesProcessed,
-          cleaningResults: data.cleaningResults,
-          message: data.message,
-          runId: jobId,
-          rowsProcessed:
-            data.cleaningResults?.rowsInserted ??
-            data.cleaningResults?.rowsLoaded ??
-            data.cleaningResults?.rows ??
-            data.rowsInserted ??
-            data.rowsLoaded ??
-            0,
-        });
+      // 👀 TEMP: see exactly what the backend returns
+      console.log("Job status response:", data);
 
-        if (data.status === "completed" || data.status === "failed") {
-          if (data.status === "completed") {
-            setUploadProgress(100); // Ensure progress reaches 100% on completion
-          }
-          setUploading(false);
-          if (pollingInterval) {
-            clearInterval(pollingInterval);
-            setPollingInterval(null);
-          }
+      if (!data.success) {
+        return;
+      }
 
-          // If upload completed successfully, trigger descriptive, predictive, and prescriptive analytics
-          if (data.status === "completed") {
-            // Run descriptive analytics
-            runDescriptiveAnalytics().then(success => {
-              console.log("Descriptive analytics run:", success ? "success" : "failed");
+      const cleaning = data.cleaningResults || {};
 
-              // After descriptive completes, run predictive
-              runPredictiveAnalytics().then(success => {
-                console.log("Predictive analytics run:", success ? "success" : "failed");
+      // Try multiple possible field names for row count
+      const rowsLoaded =
+        cleaning.rowsInserted ??
+        cleaning.rows_loaded ??
+        cleaning.rowsLoaded ??
+        cleaning.total_rows ??
+        cleaning.rows ??
+        data.rowsInserted ??
+        data.rows_loaded ??
+        data.rowsLoaded ??
+        data.total_rows ??
+        data.rows ??
+        0;
 
-                // After predictive completes, run prescriptive
-                runPrescriptiveAnalytics().then(success => {
-                  console.log("Prescriptive analytics run:", success ? "success" : "failed");
+      const filesProcessed =
+        cleaning.filesProcessed ??
+        cleaning.files_processed ??
+        data.filesProcessed ??
+        data.files_processed ??
+        0;
 
-                  // Dispatch event to update graphs in tabs
-                  window.dispatchEvent(new CustomEvent('analyticsUpdated'));
-                });
+      setUploadProgress(typeof data.progress === "number" ? data.progress : 100);
+
+      setResult({
+        success: data.status === "completed",
+        error: data.error,
+        filesProcessed,
+        cleaningResults: cleaning,
+        message: data.message,
+        runId: jobId,
+        rowsProcessed: rowsLoaded,
+      });
+
+      if (data.status === "completed" || data.status === "failed") {
+        if (data.status === "completed") {
+          setUploadProgress(100);
+        }
+        setUploading(false);
+        if (pollingInterval) {
+          clearInterval(pollingInterval);
+          setPollingInterval(null);
+        }
+
+        if (data.status === "completed") {
+          // Run analytics chain
+          runDescriptiveAnalytics().then((success) => {
+            console.log("Descriptive analytics run:", success ? "success" : "failed");
+            runPredictiveAnalytics().then((success) => {
+              console.log("Predictive analytics run:", success ? "success" : "failed");
+              runPrescriptiveAnalytics().then((success) => {
+                console.log("Prescriptive analytics run:", success ? "success" : "failed");
+                window.dispatchEvent(new CustomEvent("analyticsUpdated"));
               });
             });
-          }
+          });
         }
       }
     } catch (error) {
