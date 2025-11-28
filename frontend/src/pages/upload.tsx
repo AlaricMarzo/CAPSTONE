@@ -50,8 +50,9 @@ export default function DataUploadPage() {
         data.results ||
         {};
 
-      // Very defensive: try a bunch of possible names for "rows loaded"
+      // 🔧 Super defensive mapping for "rows loaded"
       const rowsProcessed =
+        // prefer anything inside cleaningResults...
         cleaning.rowsProcessed ??
         cleaning.rows_processed ??
         cleaning.rowsInserted ??
@@ -62,10 +63,21 @@ export default function DataUploadPage() {
         cleaning.totalRows ??
         cleaning.insertedRows ??
         cleaning.inserted_rows ??
+        cleaning.loaded_rows ??
+        cleaning.loadedRows ??
+        // ...then check top-level fields, including snake_case
         data.rowsProcessed ??
+        data.rows_processed ??
         data.rowsInserted ??
+        data.rows_inserted ??
         data.rowsLoaded ??
+        data.rows_loaded ??
         data.total_rows ??
+        data.totalRows ??
+        data.insertedRows ??
+        data.inserted_rows ??
+        data.loaded_rows ??
+        data.loadedRows ??
         data.rows ??
         0;
 

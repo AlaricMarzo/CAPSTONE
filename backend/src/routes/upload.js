@@ -263,6 +263,8 @@ router.get("/job/:jobId", async (req, res) => {
     return res.json({
       success: true,
       ...job,
+      rowsInserted: job.rowsLoaded,    // 👈 camelCase version
+      rows_inserted: job.rowsLoaded,   // 👈 keep snake_case too if you like
     })
   } catch (error) {
     console.error("[Backend] Job status error:", error)
