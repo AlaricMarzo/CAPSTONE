@@ -34,50 +34,61 @@ export default function DataUploadPage() {
       const response = await fetch(`/api/job/${jobId}`);
       const data = await response.json();
 
-      // 👀 TEMP: see exactly what the backend returns
-      console.log("Job status response:", data);
+      // 👀 So you can see exactly what the backend returns in DevTools
+      console.log("Job status raw response:", data);
 
-      if (!data.success) {
-        return;
-      }
+      if (!data.success) return;
 
-      const cleaning = data.cleaningResults || {};
+      const status = data.status || data.jobStatus || "completed";
+      const progress = data.progress ?? data.percentage ?? (status === "completed" ? 100 : 0);
 
-      // Try multiple possible field names for row count
-      const rowsLoaded =
+      // Some backends nest the details under 'cleaningResults' or similar
+      const cleaning =
+        data.cleaningResults ||
+        data.cleaningResult ||
+        data.cleaning_results ||
+        data.results ||
+        {};
+
+      // Very defensive: try a bunch of possible names for "rows loaded"
+      const rowsProcessed =
+        cleaning.rowsProcessed ??
+        cleaning.rows_processed ??
         cleaning.rowsInserted ??
-        cleaning.rows_loaded ??
+        cleaning.rows_inserted ??
         cleaning.rowsLoaded ??
+        cleaning.rows_loaded ??
         cleaning.total_rows ??
-        cleaning.rows ??
+        cleaning.totalRows ??
+        cleaning.insertedRows ??
+        cleaning.inserted_rows ??
+        data.rowsProcessed ??
         data.rowsInserted ??
-        data.rows_loaded ??
         data.rowsLoaded ??
         data.total_rows ??
         data.rows ??
         0;
 
       const filesProcessed =
+        data.filesProcessed ??
         cleaning.filesProcessed ??
         cleaning.files_processed ??
-        data.filesProcessed ??
-        data.files_processed ??
-        0;
+        (Array.isArray(cleaning.files) ? cleaning.files.length : (status === "completed" ? (selectedFiles.length || 1) : 0));
 
-      setUploadProgress(typeof data.progress === "number" ? data.progress : 100);
+      setUploadProgress(progress);
 
       setResult({
-        success: data.status === "completed",
+        success: status === "completed",
         error: data.error,
-        filesProcessed,
+        filesProcessed: filesProcessed ?? 0,
         cleaningResults: cleaning,
         message: data.message,
         runId: jobId,
-        rowsProcessed: rowsLoaded,
+        rowsProcessed, // 👈 this is what your UI shows as "Rows Loaded"
       });
 
-      if (data.status === "completed" || data.status === "failed") {
-        if (data.status === "completed") {
+      if (status === "completed" || status === "failed") {
+        if (status === "completed") {
           setUploadProgress(100);
         }
         setUploading(false);
@@ -86,18 +97,24 @@ export default function DataUploadPage() {
           setPollingInterval(null);
         }
 
-        if (data.status === "completed") {
-          // Run analytics chain
-          runDescriptiveAnalytics().then((success) => {
-            console.log("Descriptive analytics run:", success ? "success" : "failed");
-            runPredictiveAnalytics().then((success) => {
+        if (status === "completed") {
+          // Chain analytics just like before
+          runDescriptiveAnalytics()
+            .then(success => {
+              console.log("Descriptive analytics run:", success ? "success" : "failed");
+              return runPredictiveAnalytics();
+            })
+            .then(success => {
               console.log("Predictive analytics run:", success ? "success" : "failed");
-              runPrescriptiveAnalytics().then((success) => {
-                console.log("Prescriptive analytics run:", success ? "success" : "failed");
-                window.dispatchEvent(new CustomEvent("analyticsUpdated"));
-              });
+              return runPrescriptiveAnalytics();
+            })
+            .then(success => {
+              console.log("Prescriptive analytics run:", success ? "success" : "failed");
+              window.dispatchEvent(new CustomEvent("analyticsUpdated"));
+            })
+            .catch(err => {
+              console.error("Error in analytics chain:", err);
             });
-          });
         }
       }
     } catch (error) {
