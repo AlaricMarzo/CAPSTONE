@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Upload, FileText, CheckCircle, XCircle, Loader2, Shield, Database } from "lucide-react";
 
 export default function DataUploadPage() {
@@ -10,17 +10,20 @@ export default function DataUploadPage() {
   const [uploadProgress, setUploadProgress] = useState<number>(0);
   const [result, setResult] = useState<any>(null);
   const [jobId, setJobId] = useState<string | null>(null);
-  const [pollingInterval, setPollingInterval] = useState<number | null>(null);
-  const [hasTriggeredAnalytics, setHasTriggeredAnalytics] = useState(false);
+
+  // useRef instead of state to avoid stale closures
+  const pollingRef = useRef<number | null>(null);
+  const analyticsTriggeredRef = useRef<boolean>(false);
 
   const resetForm = () => {
     setSelectedFiles([]);
     setResult(null);
     setJobId(null);
-    setHasTriggeredAnalytics(false);
-    if (pollingInterval) {
-      clearInterval(pollingInterval);
-      setPollingInterval(null);
+    analyticsTriggeredRef.current = false;
+
+    if (pollingRef.current !== null) {
+      clearInterval(pollingRef.current);
+      pollingRef.current = null;
     }
   };
 
@@ -102,15 +105,17 @@ export default function DataUploadPage() {
       });
 
       // Job finished? stop polling
-      if ((status === "completed" || status === "failed") && pollingInterval) {
-        clearInterval(pollingInterval);
-        setPollingInterval(null);
+      if (status === "completed" || status === "failed") {
+        if (pollingRef.current !== null) {
+          clearInterval(pollingRef.current);
+          pollingRef.current = null;
+        }
         setUploading(false);
       }
 
       // Run analytics ONCE when completed
-      if (status === "completed" && !hasTriggeredAnalytics) {
-        setHasTriggeredAnalytics(true);
+      if (status === "completed" && !analyticsTriggeredRef.current) {
+        analyticsTriggeredRef.current = true;
         try {
           const descOk = await runDescriptiveAnalytics();
           console.log("Descriptive analytics run:", descOk ? "success" : "failed");
@@ -188,7 +193,7 @@ export default function DataUploadPage() {
     setUploadProgress(0);
     setResult(null);
     setJobId(null);
-    setHasTriggeredAnalytics(false);
+    analyticsTriggeredRef.current = false;
 
     const formData = new FormData();
     selectedFiles.forEach((file) => {
@@ -205,7 +210,7 @@ export default function DataUploadPage() {
         if (data.success && data.jobId) {
           setJobId(data.jobId);
           const interval = setInterval(() => pollJobStatus(data.jobId), 1000);
-          setPollingInterval(interval as unknown as number);
+          pollingRef.current = interval;
         } else {
           setResult({ success: false, error: data.error || "Upload failed" });
           setUploading(false);
