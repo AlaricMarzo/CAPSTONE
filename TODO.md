@@ -1,5 +1,8 @@
 # Fix ERR_CONNECTION_REFUSED and Python Spawn Issues
 
+## Code Quality Improvements
+- [x] Make runPrescriptiveAnalytics function internal in analytics.js
+
 ## Frontend Port Fixes
 - [ ] Update vite.config.ts proxy targets from 5050 to 8080
 - [ ] Update Reports.tsx hardcoded localhost:5050 to 8080

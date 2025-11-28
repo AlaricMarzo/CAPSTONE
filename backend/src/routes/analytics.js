@@ -876,7 +876,7 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to get prescriptive analytics (for internal use)
-  export async function getPrescriptiveAnalytics() {
+  async function getPrescriptiveAnalytics() {
     try {
       const reorderData = csvToJson(path.join(prescriptiveOutputDir, "model_1_reorder_point.csv"))
       const eoqData = csvToJson(path.join(prescriptiveOutputDir, "model_2_eoq.csv"))
@@ -1013,7 +1013,7 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run descriptive analytics (for internal use)
-  export async function runDescriptiveAnalytics() {
+  async function runDescriptiveAnalytics() {
     try {
       const scriptPath = path.join(__dirname, "../analytics/Descriptive/descriptive.py")
       if (!fs.existsSync(scriptPath)) {
@@ -1036,7 +1036,7 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run predictive analytics (for internal use)
-  export async function runPredictiveAnalytics() {
+  async function runPredictiveAnalytics() {
     try {
       const scriptPath = path.join(__dirname, "../analytics/models.py")
       if (!fs.existsSync(scriptPath)) {
@@ -1062,7 +1062,7 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run prescriptive analytics (for internal use)
-  export async function runPrescriptiveAnalytics() {
+  async function runPrescriptiveAnalytics() {
     try {
       const prescriptiveDir = path.join(__dirname, "../analytics/prescriptive")
       const scriptPath = path.join(prescriptiveDir, "prescriptive.py")
