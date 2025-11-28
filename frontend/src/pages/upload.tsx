@@ -11,11 +11,13 @@ export default function DataUploadPage() {
   const [result, setResult] = useState<any>(null);
   const [jobId, setJobId] = useState<string | null>(null);
   const [pollingInterval, setPollingInterval] = useState<number | null>(null);
+  const [hasTriggeredAnalytics, setHasTriggeredAnalytics] = useState(false);
 
   const resetForm = () => {
     setSelectedFiles([]);
     setResult(null);
     setJobId(null);
+    setHasTriggeredAnalytics(false);
     if (pollingInterval) {
       clearInterval(pollingInterval);
       setPollingInterval(null);
@@ -99,34 +101,31 @@ export default function DataUploadPage() {
         rowsProcessed, // 👈 this is what your UI shows as "Rows Loaded"
       });
 
-      if (status === "completed" || status === "failed") {
-        if (status === "completed") {
-          setUploadProgress(100);
-        }
+      // Job finished? stop polling
+      if ((status === "completed" || status === "failed") && pollingInterval) {
+        clearInterval(pollingInterval);
+        setPollingInterval(null);
         setUploading(false);
-        if (pollingInterval) {
-          clearInterval(pollingInterval);
-          setPollingInterval(null);
-        }
+      }
 
-        if (status === "completed") {
-          // Chain analytics just like before
-          runDescriptiveAnalytics()
-            .then(success => {
-              console.log("Descriptive analytics run:", success ? "success" : "failed");
-              return runPredictiveAnalytics();
-            })
-            .then(success => {
-              console.log("Predictive analytics run:", success ? "success" : "failed");
-              return runPrescriptiveAnalytics();
-            })
-            .then(success => {
-              console.log("Prescriptive analytics run:", success ? "success" : "failed");
-              window.dispatchEvent(new CustomEvent("analyticsUpdated"));
-            })
-            .catch(err => {
-              console.error("Error in analytics chain:", err);
-            });
+      // Run analytics ONCE when completed
+      if (status === "completed" && !hasTriggeredAnalytics) {
+        setHasTriggeredAnalytics(true);
+        try {
+          const descOk = await runDescriptiveAnalytics();
+          console.log("Descriptive analytics run:", descOk ? "success" : "failed");
+
+          const predOk = await runPredictiveAnalytics();
+          console.log("Predictive analytics run:", predOk ? "success" : "failed");
+
+          const prescOk = await runPrescriptiveAnalytics();
+          console.log("Prescriptive analytics run:", prescOk ? "success" : "failed");
+
+          if (descOk && predOk && prescOk) {
+            window.dispatchEvent(new CustomEvent("analyticsUpdated"));
+          }
+        } catch (err) {
+          console.error("Error in analytics chain:", err);
         }
       }
     } catch (error) {
@@ -189,6 +188,7 @@ export default function DataUploadPage() {
     setUploadProgress(0);
     setResult(null);
     setJobId(null);
+    setHasTriggeredAnalytics(false);
 
     const formData = new FormData();
     selectedFiles.forEach((file) => {
