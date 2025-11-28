@@ -1,11 +1,12 @@
-      import express from "express"
-  import fs from "fs"
-  import path from "path"
-  import { fileURLToPath } from "url"
-  import { dirname } from "path"
-  import { spawn } from "child_process"
-  import pg from "pg"
-  import dotenv from "dotenv"
+import express from "express"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+import { dirname } from "path"
+import { spawn } from "child_process"
+import pg from "pg"
+import dotenv from "dotenv"
+import { runPythonScript } from "../utils/runPythonScript.js"
 
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = dirname(__filename)
@@ -1014,43 +1015,17 @@
   // Function to run descriptive analytics (for internal use)
   export async function runDescriptiveAnalytics() {
     try {
-      const descriptiveDir = path.join(__dirname, "../analytics/Descriptive")
-      const scriptPath = path.join(descriptiveDir, "descriptive.py")
+      const scriptPath = path.join(__dirname, "../analytics/Descriptive/descriptive.py")
       if (!fs.existsSync(scriptPath)) {
         return { success: false, error: "Descriptive analytics script not found" }
       }
 
-      return new Promise((resolve) => {
-        const pythonProcess = spawn("python3", ["descriptive.py"], {
-          cwd: descriptiveDir,
-          stdio: ["ignore", "pipe", "pipe"],
-        })
-
-        let stdout = ""
-        let stderr = ""
-
-        pythonProcess.stdout.on("data", (data) => {
-          stdout += data.toString()
-        })
-
-        pythonProcess.stderr.on("data", (data) => {
-          stderr += data.toString()
-        })
-
-        pythonProcess.on("close", (code) => {
-          if (code === 0) {
-            resolve({ success: true, message: "Descriptive analytics completed successfully", output: stdout })
-          } else {
-            console.error("Python script error:", stderr)
-            resolve({ success: false, error: "Descriptive analytics failed", details: stderr })
-          }
-        })
-
-        pythonProcess.on("error", (error) => {
-          console.error("Failed to start Python process:", error)
-          resolve({ success: false, error: "Failed to execute descriptive analytics", details: error.message })
-        })
-      })
+      const result = await runPythonScript("analytics/Descriptive/descriptive.py")
+      if (result.success) {
+        return { success: true, message: "Descriptive analytics completed successfully", output: result.rawOutput || "" }
+      } else {
+        return { success: false, error: "Descriptive analytics failed", details: result.error }
+      }
     } catch (error) {
       console.error("Error running descriptive analytics:", error)
       return { success: false, error: "Failed to run descriptive analytics" }
@@ -1071,37 +1046,12 @@
         return { success: false, error: "Predictive analytics script not found" }
       }
 
-      return new Promise((resolve) => {
-        const pythonProcess = spawn("python3", [scriptPath], {
-          cwd: path.join(__dirname, "../analytics"),
-          stdio: ["ignore", "pipe", "pipe"],
-        })
-
-        let stdout = ""
-        let stderr = ""
-
-        pythonProcess.stdout.on("data", (data) => {
-          stdout += data.toString()
-        })
-
-        pythonProcess.stderr.on("data", (data) => {
-          stderr += data.toString()
-        })
-
-        pythonProcess.on("close", (code) => {
-          if (code === 0) {
-            resolve({ success: true, message: "Predictive analytics completed successfully", output: stdout })
-          } else {
-            console.error("Python script error:", stderr)
-            resolve({ success: false, error: "Predictive analytics failed", details: stderr })
-          }
-        })
-
-        pythonProcess.on("error", (error) => {
-          console.error("Failed to start Python process:", error)
-          resolve({ success: false, error: "Failed to execute predictive analytics", details: error.message })
-        })
-      })
+      const result = await runPythonScript("analytics/models.py")
+      if (result.success) {
+        return { success: true, message: "Predictive analytics completed successfully", output: result.rawOutput || "" }
+      } else {
+        return { success: false, error: "Predictive analytics failed", details: result.error }
+      }
     } catch (error) {
       console.error("Error running predictive analytics:", error)
       return { success: false, error: "Failed to run predictive analytics" }
