@@ -1013,15 +1013,20 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run descriptive analytics (for internal use)
-  async function runDescriptiveAnalytics() {
+  export async function runDescriptiveAnalytics() {
     try {
-      const scriptPath = path.join(__dirname, "../analytics/Descriptive/descriptive.py")
+      // Absolute path to the script inside backend/src
+      const scriptPath = path.join(process.cwd(), "src/analytics/Descriptive/descriptive.py")
+
       if (!fs.existsSync(scriptPath)) {
         console.log("[Analytics] Descriptive analytics script not found, skipping...")
         return { success: true, message: "Descriptive analytics skipped - script not available", output: "" }
       }
 
-      const { stdout } = await runPythonScript(scriptPath)
+      // Pass a path relative to backend/ into runPythonScript
+      const relativePath = path.relative(process.cwd(), scriptPath)
+      const { stdout } = await runPythonScript(relativePath)
+
       return { success: true, message: "Descriptive analytics completed successfully", output: stdout }
     } catch (error) {
       console.error("Error running descriptive analytics:", error)
@@ -1036,23 +1041,32 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run predictive analytics (for internal use)
-  async function runPredictiveAnalytics() {
+  export async function runPredictiveAnalytics() {
     try {
-      const scriptPath = path.join(__dirname, "../analytics/models.py")
+      // Adjusted to point to src/analytics/models.py
+      const scriptPath = path.join(process.cwd(), "src/analytics/models.py")
+
       if (!fs.existsSync(scriptPath)) {
         console.log("[Analytics] Predictive analytics script not found, skipping...")
         return { success: true, message: "Predictive analytics skipped - script not available", output: "" }
       }
 
-      const result = await runPythonScript(scriptPath)
+      const relativePath = path.relative(process.cwd(), scriptPath)
+      const result = await runPythonScript(relativePath)
+
       if (result.success) {
-        return { success: true, message: "Predictive analytics completed successfully", output: result.rawOutput || "" }
+        return {
+          success: true,
+          message: "Predictive analytics completed successfully",
+          output: result.rawOutput || "",
+        }
       } else {
         return { success: false, error: "Predictive analytics failed", details: result.error }
       }
-  } catch (error) {
-    console.error("Error running predictive analytics:", error)
-    return { success: false, error: "Failed to run predictive analytics" }
+    } catch (error) {
+      console.error("Error running predictive analytics:", error)
+      return { success: false, error: "Failed to run predictive analytics" }
+    }
   }
 
   // Route to run predictive analytics
@@ -1062,10 +1076,12 @@ import runPythonScript from "../utils/runPythonScript.js"
   })
 
   // Function to run prescriptive analytics (for internal use)
-  async function runPrescriptiveAnalytics() {
+  export async function runPrescriptiveAnalytics() {
     try {
-      const prescriptiveDir = path.join(__dirname, "../analytics/prescriptive")
+      // Prescriptive scripts live in src/analytics/prescriptive
+      const prescriptiveDir = path.join(process.cwd(), "src/analytics/prescriptive")
       const scriptPath = path.join(prescriptiveDir, "prescriptive.py")
+
       if (!fs.existsSync(scriptPath)) {
         return { success: false, error: "Prescriptive analytics script not found" }
       }
@@ -1089,16 +1105,28 @@ import runPythonScript from "../utils/runPythonScript.js"
 
         pythonProcess.on("close", (code) => {
           if (code === 0) {
-            resolve({ success: true, message: "Prescriptive analytics completed successfully", output: stdout })
+            resolve({
+              success: true,
+              message: "Prescriptive analytics completed successfully",
+              output: stdout,
+            })
           } else {
             console.error("Python script error:", stderr)
-            resolve({ success: false, error: "Prescriptive analytics failed", details: stderr })
+            resolve({
+              success: false,
+              error: "Prescriptive analytics failed",
+              details: stderr,
+            })
           }
         })
 
         pythonProcess.on("error", (error) => {
           console.error("Failed to start Python process:", error)
-          resolve({ success: false, error: "Failed to execute prescriptive analytics", details: error.message })
+          resolve({
+            success: false,
+            error: "Failed to execute prescriptive analytics",
+            details: error.message,
+          })
         })
       })
     } catch (error) {
