@@ -188,29 +188,7 @@ async function processUpload(jobId, files) {
     pythonProcess.on("close", async (code) => {
       if (code === 0) {
         console.log("[Backend] Data cleaning completed successfully")
-
-        // Parse the JSON output from Python script to get row count
-        let result = null
-        try {
-          const jsonOutput = stdout.trim().split('\n').pop() // Get last line (JSON result)
-          result = JSON.parse(jsonOutput)
-        } catch (e) {
-          console.warn("[Backend] Could not parse Python script JSON output:", e)
-        }
-
-        const rowsLoaded = result?.rowsLoaded || result?.rowsProcessed || 0
-        const filesProcessed = result?.filesProcessed || (selectedFiles ? selectedFiles.length : 1)
-        const runId = result?.runId || null
-
-        const jobData6 = {
-          status: 'completed',
-          progress: 100,
-          message: 'Data cleaning and database loading completed successfully',
-          outputPath,
-          rowsLoaded,
-          filesProcessed,
-          runId
-        }
+        const jobData6 = { status: 'completed', progress: 100, message: 'Data cleaning completed successfully', outputPath }
         jobs.set(jobId, jobData6)
         await saveJobToDB(jobId, jobData6)
       } else {
