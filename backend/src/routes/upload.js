@@ -15,7 +15,15 @@ const __dirname = dirname(__filename)
 const router = express.Router()
 
 // Create a pool for database connections
-const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL })
+const pool = new pg.Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // needed for Neon on Railway
+  },
+  // Optional: limit connections so you don't hit Neon's caps
+  max: 5,
+  idleTimeoutMillis: 30000,
+})
 
 // In-memory job storage (fallback)
 const jobs = new Map()
@@ -26,7 +34,12 @@ async function saveJobToDB(jobId, jobData) {
     const dsn = process.env.DATABASE_URL
     if (!dsn) return // Skip if no database
 
-    const client = new pg.Client({ connectionString: dsn })
+    const client = new pg.Client({
+      connectionString: dsn,
+      ssl: {
+        rejectUnauthorized: false, // needed for Neon on Railway
+      },
+    })
     await client.connect()
 
     await client.query(`

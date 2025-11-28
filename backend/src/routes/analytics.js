@@ -114,7 +114,12 @@
         throw new Error("DATABASE_URL not set in environment variables")
       }
 
-      const client = new pg.Client({ connectionString: dsn })
+      const client = new pg.Client({
+        connectionString: dsn,
+        ssl: {
+          rejectUnauthorized: false, // needed for Neon on Railway
+        },
+      })
       await client.connect()
 
       // Query for top products by sales
@@ -375,7 +380,12 @@
         throw new Error("DATABASE_URL not set in environment variables")
       }
 
-      const client = new pg.Client({ connectionString: dsn })
+      const client = new pg.Client({
+        connectionString: dsn,
+        ssl: {
+          rejectUnauthorized: false, // needed for Neon on Railway
+        },
+      })
       await client.connect()
 
       // Query for top products by sales and quantity with predictive metrics
