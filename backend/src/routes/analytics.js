@@ -1020,15 +1020,11 @@ import runPythonScript from "../utils/runPythonScript.js"
         return { success: false, error: "Descriptive analytics script not found" }
       }
 
-      const result = await runPythonScript("analytics/Descriptive/descriptive.py")
-      if (result.success) {
-        return { success: true, message: "Descriptive analytics completed successfully", output: result.rawOutput || "" }
-      } else {
-        return { success: false, error: "Descriptive analytics failed", details: result.error }
-      }
+      const { stdout } = await runPythonScript("analytics/Descriptive/descriptive.py")
+      return { success: true, message: "Descriptive analytics completed successfully", output: stdout }
     } catch (error) {
       console.error("Error running descriptive analytics:", error)
-      return { success: false, error: "Failed to run descriptive analytics" }
+      return { success: false, error: "Descriptive analytics failed", details: error.message }
     }
   }
 
