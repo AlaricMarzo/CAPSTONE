@@ -6,7 +6,7 @@ import { dirname } from "path"
 import { spawn } from "child_process"
 import pg from "pg"
 import dotenv from "dotenv"
-import { runPythonScript } from "../utils/runPythonScript.js"
+import runPythonScript from "../utils/runPythonScript.js"
 
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = dirname(__filename)
