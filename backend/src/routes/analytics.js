@@ -1017,10 +1017,11 @@ import runPythonScript from "../utils/runPythonScript.js"
     try {
       const scriptPath = path.join(__dirname, "../analytics/Descriptive/descriptive.py")
       if (!fs.existsSync(scriptPath)) {
-        return { success: false, error: "Descriptive analytics script not found" }
+        console.log("[Analytics] Descriptive analytics script not found, skipping...")
+        return { success: true, message: "Descriptive analytics skipped - script not available", output: "" }
       }
 
-      const { stdout } = await runPythonScript("analytics/Descriptive/descriptive.py")
+      const { stdout } = await runPythonScript(scriptPath)
       return { success: true, message: "Descriptive analytics completed successfully", output: stdout }
     } catch (error) {
       console.error("Error running descriptive analytics:", error)
@@ -1039,19 +1040,19 @@ import runPythonScript from "../utils/runPythonScript.js"
     try {
       const scriptPath = path.join(__dirname, "../analytics/models.py")
       if (!fs.existsSync(scriptPath)) {
-        return { success: false, error: "Predictive analytics script not found" }
+        console.log("[Analytics] Predictive analytics script not found, skipping...")
+        return { success: true, message: "Predictive analytics skipped - script not available", output: "" }
       }
 
-      const result = await runPythonScript("analytics/models.py")
+      const result = await runPythonScript(scriptPath)
       if (result.success) {
         return { success: true, message: "Predictive analytics completed successfully", output: result.rawOutput || "" }
       } else {
         return { success: false, error: "Predictive analytics failed", details: result.error }
       }
-    } catch (error) {
-      console.error("Error running predictive analytics:", error)
-      return { success: false, error: "Failed to run predictive analytics" }
-    }
+  } catch (error) {
+    console.error("Error running predictive analytics:", error)
+    return { success: false, error: "Failed to run predictive analytics" }
   }
 
   // Route to run predictive analytics
