@@ -694,7 +694,7 @@ def run_full_load(file_name: str, raw_df: pd.DataFrame, ensure_schema_once: bool
                 notes=None
             )
 
-            return run_id  # Return the run ID for tracking
+            return run_id, rows_out  # Return the run ID and rows loaded for tracking
 
         except Exception as e:
             # If there's an error, finalize the run with failure status

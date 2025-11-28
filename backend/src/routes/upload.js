@@ -64,17 +64,14 @@ async function saveJobToDB(jobId, jobData) {
 async function getJobFromDB(jobId) {
   const query = `
     SELECT
-      id,
+      job_id,
       status,
-      rows_loaded,
-      total_rows,
-      total_files,
+      progress,
       message,
-      run_id,
-      created_at,
+      data,
       updated_at
-    FROM job_tracking
-    WHERE id = $1
+    FROM job_status
+    WHERE job_id = $1
   `;
 
   const { rows } = await pool.query(query, [jobId]);
@@ -84,24 +81,24 @@ async function getJobFromDB(jobId) {
   }
 
   const row = rows[0];
-
-  // IMPORTANT: do NOT JSON.parse anything here.
-  // If you have a JSON/JSONB column (e.g. "details" or "meta"),
-  // pg already returns it as a JS object.
-  // If you want to surface it, just pass it through directly:
-  //   const details = row.details || row.meta || null;
+  let data = {};
+  try {
+    data = JSON.parse(row.data || '{}');
+  } catch (e) {
+    console.warn("[Backend] Could not parse job data JSON:", e);
+  }
 
   return {
-    jobId: row.id,
+    jobId: row.job_id,
     status: row.status,
-    rowsLoaded: row.rows_loaded ?? 0,
-    totalRows: row.total_rows ?? 0,
-    totalFiles: row.total_files ?? 0,
+    progress: row.progress || 0,
     message: row.message || "",
-    runId: row.run_id || null,
-    createdAt: row.created_at,
+    rowsLoaded: data.rowsLoaded || data.rowsProcessed || 0,
+    totalRows: data.totalRows || data.rowsLoaded || data.rowsProcessed || 0,
+    totalFiles: data.totalFiles || data.filesProcessed || 0,
+    runId: data.runId || null,
+    createdAt: row.updated_at, // Use updated_at as created_at since we don't have created_at in job_status
     updatedAt: row.updated_at,
-    // details, // uncomment if you actually have that column
   };
 }
 
@@ -188,7 +185,32 @@ async function processUpload(jobId, files) {
     pythonProcess.on("close", async (code) => {
       if (code === 0) {
         console.log("[Backend] Data cleaning completed successfully")
-        const jobData6 = { status: 'completed', progress: 100, message: 'Data cleaning completed successfully', outputPath }
+
+        // Parse the JSON output from Python script to get row counts
+        let rowsLoaded = 0
+        let filesProcessed = files.length
+        try {
+          const result = JSON.parse(stdout.trim().split('\n').pop()) // Get last line which should be JSON
+          rowsLoaded = result.rowsLoaded || result.rowsProcessed || 0
+          filesProcessed = result.filesProcessed || files.length
+        } catch (parseError) {
+          console.warn("[Backend] Could not parse Python script output for row counts:", parseError)
+          // Fallback: try to extract from stdout
+          const match = stdout.match(/Total cleaned rows: (\d+)/)
+          if (match) {
+            rowsLoaded = parseInt(match[1], 10)
+          }
+        }
+
+        const jobData6 = {
+          status: 'completed',
+          progress: 100,
+          message: 'Data cleaning completed successfully',
+          outputPath,
+          rowsLoaded,
+          filesProcessed,
+          totalRows: rowsLoaded // For compatibility
+        }
         jobs.set(jobId, jobData6)
         await saveJobToDB(jobId, jobData6)
       } else {

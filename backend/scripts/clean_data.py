@@ -1327,7 +1327,7 @@ if __name__ == "__main__":
         file_name_for_run = f"Combined_{len(data_sources)}_files_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
         print(f"\n[LOADING] Loading combined cleaned data into Postgres (CAPSTONE)...")
-        run_id = run_full_load(
+        run_id, rows_loaded = run_full_load(
             file_name=file_name_for_run,
             raw_df=combined_cleaned_df,
             ensure_schema_once=False,
@@ -1335,17 +1335,17 @@ if __name__ == "__main__":
 
         print(f"[SUCCESS] ETL load completed. run_id = {run_id}")
         print(
-            f"   Loaded {len(combined_cleaned_df)} rows from {len(data_sources)} source file(s)",
+            f"   Loaded {rows_loaded} rows from {len(data_sources)} source file(s)",
             file=sys.stderr,
         )
 
         result = {
             "success": True,
-            "message": f"Successfully processed {len(data_sources)} file(s) and loaded {len(combined_cleaned_df)} rows",
+            "message": f"Successfully processed {len(data_sources)} file(s) and loaded {rows_loaded} rows",
             "cleanedFile": output_file_path,
             # keep both keys so frontend/backend can use either
             "rowsProcessed": len(combined_cleaned_df),
-            "rowsLoaded": len(combined_cleaned_df),
+            "rowsLoaded": rows_loaded,
             "filesProcessed": len(data_sources),
             "runId": run_id
         }
