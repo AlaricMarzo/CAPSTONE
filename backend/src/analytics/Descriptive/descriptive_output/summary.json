@@ -1,66 +1,60 @@
 {
   "data_overview": {
-    "total_rows_analyzed": 116778,
-    "total_sales": 20065607.9,
-    "total_quantity": 678394,
-    "total_profit": 3862129.06,
-    "avg_profit_margin_pct": 30.882524945114692
+    "total_rows_analyzed": 52115,
+    "total_sales": 9177505.309999999,
+    "total_quantity": 311883,
+    "total_profit": 1795158.83,
+    "avg_profit_margin_pct": 29.18671945443772
   },
   "top_5_products": [
     {
       "medicine": "VAXIRAB 2.5 IU 1ML",
-      "total_sales": 1080064.0,
-      "total_qty": 596.0,
-      "profit_margin": 15.679141236074901
-    },
-    {
-      "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-      "total_sales": 333887.27,
-      "total_qty": 6784.0,
-      "profit_margin": 17.71929489854465
+      "total_sales": 458200.0,
+      "total_qty": 254.0,
+      "profit_margin": 22.391968572675687
     },
     {
       "medicine": "HOSPITAL BED 2-CRANKS MANUAL",
-      "total_sales": 313671.06,
-      "total_qty": 20.0,
-      "profit_margin": 36.74647575074347
+      "total_sales": 224807.02000000002,
+      "total_qty": 14.0,
+      "profit_margin": 38.334665883654345
+    },
+    {
+      "medicine": "OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+      "total_sales": 151106.93,
+      "total_qty": 3030.0,
+      "profit_margin": 19.79189835965829
     },
     {
       "medicine": "OHHIRAs PROPOLIS 600MG CAP",
-      "total_sales": 262105.53,
-      "total_qty": 4080.0,
-      "profit_margin": 8.871438156989667
+      "total_sales": 111792.27,
+      "total_qty": 1766.0,
+      "profit_margin": 7.281603638605782
     },
     {
-      "medicine": "BACTIV 457MG/5ML 70ML",
-      "total_sales": 228228.7,
-      "total_qty": 613.0,
-      "profit_margin": 11.43986273417848
+      "medicine": "BACTIV (CO-AMOXICLAV) 457MG/5ML 70ML",
+      "total_sales": 94935.75,
+      "total_qty": 252.0,
+      "profit_margin": 12.769004300276768
     }
   ],
   "kpi_analysis": {
     "kpi_metrics_generated": 15,
-    "avg_monthly_growth_rate_cagr": 0.02392279775519701,
-    "avg_monthly_growth_rate_mean": 0.03951758888542176
+    "avg_monthly_growth_rate_cagr": 0.05280966197381454,
+    "avg_monthly_growth_rate_mean": 0.07510165693741142
   },
   "market_basket_analysis": {
-    "rules_generated": 101,
-    "transactions": 24602,
-    "items": 3465
+    "rules_generated": 177,
+    "transactions": 10994,
+    "items": 3013
   },
   "clustering": {
     "dbscan": {
-      "global_n_clusters": 79,
-      "global_n_noise": 610175.0,
       "tabs_analyzed": 8,
       "categories_analyzed": 41,
-      "dbscan_output_dir": "C:\\Users\\Pierre Marzo\\OneDrive\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Descriptive\\descriptive_output\\clustering_output"
+      "dbscan_output_dir": "c:\\Users\\admin\\Documents\\GitHub\\CAPSTONE\\backend\\src\\analytics\\Descriptive\\descriptive_output\\clustering_output"
     },
-    "kmeans": {
-      "tabs_analyzed": 8,
-      "categories_analyzed": 41
-    },
-    "total_cluster_graphs_generated": 156
+    "total_cluster_graphs_generated": 98
   },
-  "timestamp": "2025-11-27 14:25:41.729033"
+  "timestamp": "2025-12-02 14:31:57.956571"
 }

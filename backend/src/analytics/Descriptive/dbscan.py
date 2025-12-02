@@ -251,8 +251,8 @@ def _scatter_plot(df: pd.DataFrame,
                   out_png: Path,
                   use_log: bool):
     """
-    Scatter with persona-based colors and side legend.
-    One distinct color per persona (no repeats).
+    Scatter with cluster-based colors and side legend.
+    One distinct color per cluster.
     """
     if df.empty:
         return
@@ -284,42 +284,26 @@ def _scatter_plot(df: pd.DataFrame,
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
-    # ---- PERSONA → COLOR mapping (unique) ----
-    personas = sorted(summary["persona"].dropna().unique().tolist())
-    n_personas = max(len(personas), 1)
-    cmap = plt.cm.get_cmap("tab20")
-    color_array = cmap(np.linspace(0, 1, n_personas))
-
-    persona_colors: Dict[str, Any] = {
-        persona: color_array[i] for i, persona in enumerate(personas)
-    }
-
+    # ---- CLUSTER → COLOR mapping ----
     clusters = sorted(df["cluster"].unique().tolist())
+    n_clusters = len(clusters)
+    cmap = plt.cm.get_cmap("tab20", n_clusters)
     handles, labels = [], []
 
-    for c in clusters:
+    for i, c in enumerate(clusters):
         sub = df[df["cluster"] == c]
-
-        if c == -1:
-            persona = "Noise / Outliers"
-            color = "gray"
-        else:
-            row = summary.loc[summary["cluster"] == c]
-            persona = row["persona"].iloc[0] if not row.empty else "Mixed"
-            color = persona_colors.get(persona, "black")
 
         size = 30 if c == -1 else 50
         alpha = 0.6 if c == -1 else 0.85
+        color = cmap(i)
 
         sc = ax.scatter(
             sub["total_sales"], sub["total_qty"],
             s=size, alpha=alpha, color=color, edgecolors="none"
         )
 
-        # legend: one entry per persona
-        if persona not in labels:
-            handles.append(sc)
-            labels.append(persona)
+        handles.append(sc)
+        labels.append(f"Cluster {c}" if c != -1 else "Noise")
 
     # ---- title & legend ----
     full_title = title + (" (log view)" if use_log else " (linear view)")

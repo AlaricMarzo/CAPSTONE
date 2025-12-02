@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from kpi import compute_kpis
 from mba import run_mba
 from dbscan import cluster_all as dbscan_cluster_all
-from clustering import cluster_all as kmeans_cluster_all
 
 # ---------------- CSV helpers (kept for potential reuse/debug) ----------------
 def _read_csv_robust(path_or_buf):
@@ -132,8 +131,8 @@ def main():
     mba_res = run_mba(df, mba_out)
     print(f" MBA done. Rules generated: {mba_res.get('rules_count')}")
 
-    # -------- [3a/3] DBSCAN Clustering (by_tab/by_category structure) --------
-    print("\n[3a/3] Running DBSCAN Clustering ...")
+    # -------- [3/3] DBSCAN Clustering (by_tab/by_category structure) --------
+    print("\n[3/3] Running DBSCAN Clustering ...")
     dbscan_res = dbscan_cluster_all(df, clustering_out)
 
     dbscan_by_cat = dbscan_res.get("by_category", []) or []
@@ -142,13 +141,6 @@ def main():
         " DBSCAN done. "
         f"Categories with graphs={len(dbscan_by_cat)}"
     )
-
-    # -------- [3b/3] KMeans Clustering (unchanged) --------
-    print("\n[3b/3] Running KMeans Clustering ...")
-    kmeans_res = kmeans_cluster_all(df, clustering_out)
-    kmeans_by_cat = kmeans_res.get("by_category", []) or []
-    print(f" KMeans done. Categories with graphs: {len(kmeans_by_cat)}")
-
     # ---------------- Manifest ------------------
     manifest = {
         "kpi_outputs": [str(p) for p in Path(kpi_out).glob("*.*")],
@@ -186,11 +178,6 @@ def main():
                 "tabs_analyzed": len(dbscan_res.get("by_tab", []) or []),
                 "categories_analyzed": len(dbscan_by_cat),
                 "dbscan_output_dir": dbscan_res.get("outputs_dir"),
-            },
-            "kmeans": {
-                "tabs_analyzed": len(kmeans_res.get("by_tab", []) or []),
-                "categories_analyzed": len(kmeans_by_cat),
-                # you can add more KMeans stats here later if your kmeans.cluster_all returns them
             },
             "total_cluster_graphs_generated": len(
                 list(Path(clustering_out).rglob("fig_*.png"))

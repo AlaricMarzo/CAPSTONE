@@ -4,79 +4,79 @@
     "description":"VAXIRAB 2.5 IU 1ML",
     "category":"COLD CHAIN",
     "tab":"PRESCRIPTION",
-    "total_sales":1080064.0,
-    "total_qty":596.0
-  },
-  {
-    "item_code":"0725765883117",
-    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":333887.27,
-    "total_qty":6784.0
+    "total_sales":458200.0,
+    "total_qty":254.0
   },
   {
     "item_code":"77965633",
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":313671.06,
-    "total_qty":20.0
+    "total_sales":224807.02,
+    "total_qty":14.0
+  },
+  {
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":151106.93,
+    "total_qty":3030.0
   },
   {
     "item_code":"4809015142035",
     "description":"OHHIRAs PROPOLIS 600MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "total_sales":262105.53,
-    "total_qty":4080.0
+    "total_sales":111792.27,
+    "total_qty":1766.0
   },
   {
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":228228.7,
-    "total_qty":613.0
-  },
-  {
-    "item_code":"4800307101044",
-    "description":"KLARYTH 250MG\/5ML SUSP 70ML",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "total_sales":160918.4,
-    "total_qty":129.0
+    "total_sales":94935.75,
+    "total_qty":252.0
   },
   {
     "item_code":"33835549",
     "description":"RECLINING WHEELCHAIR WITH COMMODE",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":127051.66,
-    "total_qty":13.0
+    "total_sales":70764.77,
+    "total_qty":7.0
   },
   {
-    "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "item_code":"31489881",
+    "description":"ELECTRIC WHEELCHAIR",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":120775.6,
-    "total_qty":31.0
+    "total_sales":68000.0,
+    "total_qty":1.0
   },
   {
     "item_code":"77939425",
     "description":"HOSPITAL BED 3 CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":116342.74,
-    "total_qty":4.0
+    "total_sales":61200.0,
+    "total_qty":2.0
   },
   {
-    "item_code":"4806504653348",
-    "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
-    "category":"GUT AND HORMONES",
+    "item_code":"4800234406465",
+    "description":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
-    "total_sales":112259.5,
-    "total_qty":3251.0
+    "total_sales":56294.8,
+    "total_qty":1517.0
+  },
+  {
+    "item_code":"40617298136",
+    "description":"OXYGEN CONCENTRATOR OWGEL(PARTNERS) 10L",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":50000.0,
+    "total_qty":1.0
   }
 ]

@@ -1,2 +1,2 @@
-item_code,description,category,tab,total_qty,total_sales,months_active,avg_price,mean_monthly_qty,cv_monthly_qty,trend_qty_slope,cluster
-6948909300224,STERILE WATER FOR INJECTION 50ML,PARENTERALS,GENERICS,4.0,340.0,1.0,85.0,4.0,0.0,0.0,0
+item_code,description,category,tab,total_qty,total_sales,total_profit,months_active,avg_price,mean_monthly_qty,cv_monthly_qty,trend_qty_slope,cluster
+6948909300224,STERILE WATER FOR INJECTION 50ML,PARENTERALS,GENERICS,4.0,340.0,208.0,1.0,85.0,4.0,0.0,0.0,0
