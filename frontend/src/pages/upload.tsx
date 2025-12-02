@@ -257,7 +257,7 @@ export default function DataUploadPage() {
                 <Upload className="h-4 w-4" />
                 Select Files
               </label>
-              <input id="file-input" type="file" multiple accept=".csv" onChange={handleFileChange} className="hidden" />
+              <input id="file-input" name="file" type="file" multiple accept=".csv" onChange={handleFileChange} className="hidden" />
               <span className="text-sm text-muted-foreground">
                 {selectedFiles.length === 0 ? "No files selected" : `${selectedFiles.length} file(s) selected`}
               </span>
