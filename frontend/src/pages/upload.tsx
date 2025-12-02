@@ -200,7 +200,7 @@ export default function DataUploadPage() {
 
     const formData = new FormData();
     selectedFiles.forEach((file) => {
-      formData.append("file", file);
+      formData.append("file", file, file.name);
     });
 
     // Fixed endpoint to match backend URL
