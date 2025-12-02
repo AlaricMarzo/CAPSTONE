@@ -236,7 +236,7 @@ async function processUpload(jobId, files) {
 }
 
 // Upload endpoint
-router.post("/upload", upload.array("files", 10), async (req, res) => {
+router.post("/upload", upload.array("file", 10), async (req, res) => {
   try {
     if (!req.files || req.files.length === 0) {
       return res.status(400).json({ success: false, error: "No files uploaded" })

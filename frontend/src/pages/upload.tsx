@@ -197,7 +197,7 @@ export default function DataUploadPage() {
 
     const formData = new FormData();
     selectedFiles.forEach((file) => {
-      formData.append("files", file);
+      formData.append("file", file);
     });
 
     // Fixed endpoint to match backend port (5050)
