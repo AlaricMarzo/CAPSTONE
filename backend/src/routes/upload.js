@@ -119,7 +119,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 50 * 1024 * 1024 }, // 50MB limit
+  limits: {
+    fileSize: 50 * 1024 * 1024, // 50MB per file
+    files: 20, // allow up to 20 files
+  },
   fileFilter: (req, file, cb) => {
     if (file.mimetype === "text/csv" || file.originalname.endsWith(".csv")) {
       cb(null, true)
