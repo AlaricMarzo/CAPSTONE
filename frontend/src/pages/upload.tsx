@@ -36,7 +36,8 @@ export default function DataUploadPage() {
 
   const pollJobStatus = async (jobId: string) => {
     try {
-      const response = await fetch(`/api/job/${jobId}`);
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://capstone-production-812f.up.railway.app';
+      const response = await fetch(`${backendUrl}/api/job/${jobId}`);
       const data = await response.json();
 
       // 👀 So you can see exactly what the backend returns in DevTools
@@ -140,7 +141,8 @@ export default function DataUploadPage() {
 
   const runDescriptiveAnalytics = async () => {
     try {
-      const response = await fetch('/api/analytics/run-descriptive', {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://capstone-production-812f.up.railway.app';
+      const response = await fetch(`${backendUrl}/api/analytics/run-descriptive`, {
         method: 'POST',
       });
       if (!response.ok) {
@@ -172,7 +174,8 @@ export default function DataUploadPage() {
 
   const runPrescriptiveAnalytics = async () => {
     try {
-      const response = await fetch('/api/analytics/run-prescriptive', {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://capstone-production-812f.up.railway.app';
+      const response = await fetch(`${backendUrl}/api/analytics/run-prescriptive`, {
         method: 'POST',
       });
       if (!response.ok) {
@@ -200,8 +203,9 @@ export default function DataUploadPage() {
       formData.append("file", file);
     });
 
-    // Fixed endpoint to match backend port (5050)
-    fetch("/api/upload", {
+    // Fixed endpoint to match backend URL
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://capstone-production-812f.up.railway.app';
+    fetch(`${backendUrl}/api/upload`, {
       method: "POST",
       body: formData,
     })
