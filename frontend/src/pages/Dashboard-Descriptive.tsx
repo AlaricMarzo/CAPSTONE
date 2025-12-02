@@ -29,12 +29,19 @@ interface KPIData {
   mbaRuleCount: number
 }
 
+interface ClusteringImage {
+  name: string
+  image: string
+  summary?: any[]
+}
+
 interface DescriptiveData {
   kpi: KPIData
   monthlySales: any[]
   categoryDistribution: any[]
   clusteringSummary: any[]
   mbaTopRules: any[]
+  clustering_images?: ClusteringImage[]
 }
 
 export default function DescriptiveDashboard() {
