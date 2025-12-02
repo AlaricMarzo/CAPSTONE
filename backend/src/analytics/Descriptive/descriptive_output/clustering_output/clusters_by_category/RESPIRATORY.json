@@ -241,7 +241,7 @@
   },
   {
     "item_code":"4800140000085",
-    "description":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
+    "description":"BENADRYL AH (DIPHENHYDRAMINE) 25MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":131.0,
@@ -286,7 +286,7 @@
   },
   {
     "item_code":"4800153953231",
-    "description":"ROBITUSSIN EXPECTORANT 60ML",
+    "description":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":46.0,
@@ -301,7 +301,7 @@
   },
   {
     "item_code":"4800153953262",
-    "description":"ROBITUSSIN REG 120ML",
+    "description":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 120ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":34.0,
@@ -421,7 +421,7 @@
   },
   {
     "item_code":"4800261123755",
-    "description":"POLY+NEO+DEXA EYE DROP (ISORE",
+    "description":"ISORE OPHTALMIC SOLUTION 5ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":25.0,
@@ -676,7 +676,7 @@
   },
   {
     "item_code":"4800308741317",
-    "description":"PULMODUAL(IPRATROPIUM SALBUTAMOL)500MCG\/2.5MG\/2.5ML 20ML",
+    "description":"PULMODUAL (IPRATROPIUM SALBUTAMOL) 500MCG\/2.5MG\/2.5ML 20ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
@@ -796,7 +796,7 @@
   },
   {
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE TAB 50MG",
+    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":1119.0,
@@ -871,7 +871,7 @@
   },
   {
     "item_code":"4800333161852",
-    "description":"SERETIDE DISKUS 100 50MCG\/100MCG",
+    "description":"SERETIDE 50MCG\/100MCG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
@@ -1051,7 +1051,7 @@
   },
   {
     "item_code":"4800333900642",
-    "description":"VENTOLIN EXPECTORANT SYR 50MG\/5ML SYRUP 100ML",
+    "description":"VENTOLIN EXPECTORANT (SALBUTAMOL GUAIFENESIN) 1MG\/50MG\/5ML SYRUP 100ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
@@ -1156,7 +1156,7 @@
   },
   {
     "item_code":"4800348114515",
-    "description":"BREZU SYR 5MCG\/ML 60ML..",
+    "description":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":355.0,
@@ -1276,7 +1276,7 @@
   },
   {
     "item_code":"48003603022041",
-    "description":"SALINASE DRP 30ML",
+    "description":"SALINASE DROP 30ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":9.0,
@@ -1321,7 +1321,7 @@
   },
   {
     "item_code":"4800369000286",
-    "description":"ASFRENONSYR 2MG 60ML SYR",
+    "description":"ASFRENON SYR 2MG 60ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":178.0,
@@ -1381,7 +1381,7 @@
   },
   {
     "item_code":"4800562011812",
-    "description":"ECTRIN 300 MG CAP",
+    "description":"ECTRIN (ERDOSTEINE)300 MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":102.0,
@@ -1456,7 +1456,7 @@
   },
   {
     "item_code":"4800573055195",
-    "description":"HIVENT PLUS 2.5MG+500MCG\/2.5ML AMP",
+    "description":"HIVENT PLUS (SALBUTAMOL+IPRATROPIUM BROMIDE) 2.5MG+500MCG\/2.5ML AMP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":293.0,
@@ -1471,7 +1471,7 @@
   },
   {
     "item_code":"4801010206118",
-    "description":"BENADRYL AH CAP",
+    "description":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":170.0,
@@ -1651,7 +1651,7 @@
   },
   {
     "item_code":"4806037100579",
-    "description":"SPIROPHIL(SPIRONOLACTONE 25MG TAB 100&#039;s",
+    "description":"SPIROPHIL 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":200.0,
@@ -1666,7 +1666,7 @@
   },
   {
     "item_code":"4806037101361",
-    "description":"EMICOX (CELECOXIB) 400MG TAB 100&#039;S",
+    "description":"EMICOX (CELECOXIB) 400MG TAB 100",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":143.0,
@@ -1756,7 +1756,7 @@
   },
   {
     "item_code":"4806502850022",
-    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
+    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":33.0,
@@ -1921,7 +1921,7 @@
   },
   {
     "item_code":"4806505140724",
-    "description":"KARVIDOL 25MG TAB",
+    "description":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":509.0,
@@ -2146,7 +2146,7 @@
   },
   {
     "item_code":"4806515270190",
-    "description":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
+    "description":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
@@ -2341,7 +2341,7 @@
   },
   {
     "item_code":"4806519380079",
-    "description":"ANALMIN 500MG CAP",
+    "description":"ANALMIN (MEFENAMIC ACID) 500MG CAP",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":499.0,
@@ -2536,7 +2536,7 @@
   },
   {
     "item_code":"4806521161192",
-    "description":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "description":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":409.0,
@@ -2701,7 +2701,7 @@
   },
   {
     "item_code":"4806523302708",
-    "description":"MYREX (CETIRIZINE) 5MG\/5ML 60ML SYR",
+    "description":"CETIREX (CETIRIZINE) 5MG\/5ML SYRUP 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":53.0,
@@ -2986,7 +2986,7 @@
   },
   {
     "item_code":"4806528271030",
-    "description":"DOXOKEM 400MG",
+    "description":"DOXOKEM (DOXOFYLLINE) 400MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":82.0,
@@ -3211,7 +3211,7 @@
   },
   {
     "item_code":"4806532560489",
-    "description":"NASATAPP NO DROWSE 500MG\/25MG TAB",
+    "description":"NASATAPP NO DROWSE (PARACETAMOL + PHENYLEPHRINE HYDROCHLORIDE) 500MG\/25MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":442.0,
@@ -3286,7 +3286,7 @@
   },
   {
     "item_code":"4807788107947",
-    "description":"KASTAIR 10MG TAB",
+    "description":"KASTAIR (MONTELUKAST) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":98.0,
@@ -3616,7 +3616,7 @@
   },
   {
     "item_code":"4807788523785",
-    "description":"MYRACOF TAB 30MG",
+    "description":"MYRACOF (AMBROXOL HCI) 30MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":87.0,
@@ -3796,7 +3796,7 @@
   },
   {
     "item_code":"4807788557384",
-    "description":"SOLMUX BRONCHO CAP",
+    "description":"SOLMUX BRONCHO (SALBUTAMOL SULFATE + CARBOCISTEINE) CAP",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":432.0,
@@ -3841,7 +3841,7 @@
   },
   {
     "item_code":"4807788559593",
-    "description":"NEOZEP FORTE TAB",
+    "description":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":2809.0,
@@ -3946,7 +3946,7 @@
   },
   {
     "item_code":"4807788564191",
-    "description":"SOLMUX ADVANCE 500MG",
+    "description":"SOLMUX ADVANCE (CARBOCISTEINE + ZINC) 500MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":320.0,
@@ -4411,7 +4411,7 @@
   },
   {
     "item_code":"8002660027818",
-    "description":"CHOLIB 145MG\/20MG",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":174.0,
@@ -4486,7 +4486,7 @@
   },
   {
     "item_code":"8901530004310",
-    "description":"LORIN 10MG TAB",
+    "description":"LORIN 10MG (LORATADINE) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":66.0,
@@ -4516,7 +4516,7 @@
   },
   {
     "item_code":"8902319019235",
-    "description":"INFEN-25 25MG TAB",
+    "description":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":124.0,
@@ -4936,7 +4936,7 @@
   },
   {
     "item_code":"8964001206293",
-    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
+    "description":"MONTIGET TAB 10MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":419.0,
@@ -4951,7 +4951,7 @@
   },
   {
     "item_code":"8964001206309",
-    "description":"MONTIGET TAB 4MG",
+    "description":"MONTIGET 4MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":442.0,
@@ -4966,7 +4966,7 @@
   },
   {
     "item_code":"8964001206316",
-    "description":"MONTIGET TAB 5MG",
+    "description":"MONTIGET 5MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":253.0,

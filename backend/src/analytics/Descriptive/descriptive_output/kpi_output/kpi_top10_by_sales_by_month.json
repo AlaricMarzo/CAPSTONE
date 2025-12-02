@@ -22,7 +22,7 @@
   {
     "month":"2022-05",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":10324.5,
@@ -92,7 +92,7 @@
   {
     "month":"2022-05",
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":3718.12,
@@ -102,7 +102,7 @@
   {
     "month":"2022-06",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":4350.0,
@@ -142,7 +142,7 @@
   {
     "month":"2022-06",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4865.76,
@@ -182,7 +182,7 @@
   {
     "month":"2022-06",
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":4078.55,
@@ -212,7 +212,7 @@
   {
     "month":"2022-07",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":19575.0,
@@ -242,7 +242,7 @@
   {
     "month":"2022-07",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13548.24,
@@ -352,7 +352,7 @@
   {
     "month":"2022-08",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4999.68,
@@ -532,7 +532,7 @@
   {
     "month":"2022-10",
     "item_code":"4800304050079",
-    "description":"NORVASC TAB 10MG",
+    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":5287.5,
@@ -632,7 +632,7 @@
   {
     "month":"2022-11",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":16157.13,
@@ -702,7 +702,7 @@
   {
     "month":"2022-12",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":8700.0,
@@ -832,7 +832,7 @@
   {
     "month":"2023-01",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":6796.84,
@@ -842,7 +842,7 @@
   {
     "month":"2023-01",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":9360.0,
@@ -952,7 +952,7 @@
   {
     "month":"2023-02",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13052.0,
@@ -1022,7 +1022,7 @@
   {
     "month":"2023-03",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":6699.0,
@@ -1202,7 +1202,7 @@
   {
     "month":"2023-05",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":14852.13,
@@ -1262,7 +1262,7 @@
   {
     "month":"2023-05",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":8112.0,
@@ -1302,7 +1302,7 @@
   {
     "month":"2023-06",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":7395.0,
@@ -1432,7 +1432,7 @@
   {
     "month":"2023-07",
     "item_code":"4806521246004",
-    "description":"DYPOTIN 4000IU\/ML IV\/SC",
+    "description":"DYPOTIN (EPOETIN ALFA) 4000IU\/ML IV\/SC",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_sales":5280.0,
@@ -1442,7 +1442,7 @@
   {
     "month":"2023-07",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":5280.0,
@@ -1522,7 +1522,7 @@
   {
     "month":"2023-08",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":8300.0,
@@ -1702,7 +1702,7 @@
   {
     "month":"2023-10",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":6696.0,
@@ -1722,7 +1722,7 @@
   {
     "month":"2023-10",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":15960.0,
@@ -1812,7 +1812,7 @@
   {
     "month":"2023-11",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":11160.0,
@@ -1822,7 +1822,7 @@
   {
     "month":"2023-11",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":12920.0,
@@ -1852,7 +1852,7 @@
   {
     "month":"2023-11",
     "item_code":"4809014206110",
-    "description":"OMX PROBIOTIC CAP",
+    "description":"OMX (PROBIOTICS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_sales":17144.75,
@@ -1912,7 +1912,7 @@
   {
     "month":"2023-12",
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":12180.0,
@@ -1922,7 +1922,7 @@
   {
     "month":"2023-12",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":12400.0,
@@ -1932,7 +1932,7 @@
   {
     "month":"2023-12",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":9804.0,
@@ -2032,7 +2032,7 @@
   {
     "month":"2024-01",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":17480.0,
@@ -2122,7 +2122,7 @@
   {
     "month":"2024-02",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":6200.0,
@@ -2132,7 +2132,7 @@
   {
     "month":"2024-02",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":10260.0,
@@ -2232,7 +2232,7 @@
   {
     "month":"2024-03",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":17480.0,
@@ -2332,7 +2332,7 @@
   {
     "month":"2024-04",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13680.0,
@@ -2422,7 +2422,7 @@
   {
     "month":"2024-05",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":6460.0,
@@ -2542,7 +2542,7 @@
   {
     "month":"2024-06",
     "item_code":"4800333161852",
-    "description":"SERETIDE DISKUS 100 50MCG\/100MCG",
+    "description":"SERETIDE 50MCG\/100MCG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_sales":5775.0,
@@ -2722,7 +2722,7 @@
   {
     "month":"2024-08",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":6460.0,
@@ -2842,7 +2842,7 @@
   {
     "month":"2024-09",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13984.0,
@@ -2882,7 +2882,7 @@
   {
     "month":"2024-09",
     "item_code":"4807788416537",
-    "description":"AMVASC BE TAB 5MG",
+    "description":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":25668.0,
@@ -2922,7 +2922,7 @@
   {
     "month":"2024-10",
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":7486.0,
@@ -2942,7 +2942,7 @@
   {
     "month":"2024-10",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":18544.0,
@@ -3022,7 +3022,7 @@
   {
     "month":"2024-11",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":11324.0,
@@ -3032,7 +3032,7 @@
   {
     "month":"2024-11",
     "item_code":"4800332237633",
-    "description":"DALACIN C CAP 300MG",
+    "description":"DALACIN C (CLINDAMYCIN) 300MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":5676.0,
@@ -3042,7 +3042,7 @@
   {
     "month":"2024-11",
     "item_code":"4800348114515",
-    "description":"BREZU SYR 5MCG\/ML 60ML..",
+    "description":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_sales":7943.36,
@@ -3072,7 +3072,7 @@
   {
     "month":"2024-11",
     "item_code":"4806528271337",
-    "description":"ALCLAV NEO 625MG TAB",
+    "description":"ALCLAV NEO (CO-AMOXICLAV) 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":5747.4,
@@ -3132,7 +3132,7 @@
   {
     "month":"2024-12",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":17689.0,
@@ -3142,7 +3142,7 @@
   {
     "month":"2024-12",
     "item_code":"4800348114515",
-    "description":"BREZU SYR 5MCG\/ML 60ML..",
+    "description":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_sales":7471.0,
@@ -3232,7 +3232,7 @@
   {
     "month":"2025-01",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":7581.0,
@@ -3342,7 +3342,7 @@
   {
     "month":"2025-02",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":21154.6,
@@ -3362,7 +3362,7 @@
   {
     "month":"2025-02",
     "item_code":"4800348114515",
-    "description":"BREZU SYR 5MCG\/ML 60ML..",
+    "description":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_sales":6266.0,
@@ -3422,7 +3422,7 @@
   {
     "month":"2025-03",
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13212.6,

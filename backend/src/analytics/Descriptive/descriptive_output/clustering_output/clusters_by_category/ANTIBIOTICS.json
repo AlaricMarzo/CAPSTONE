@@ -91,7 +91,7 @@
   },
   {
     "item_code":"17540193",
-    "description":"FLOXANOVA-500 FC TAB",
+    "description":"FLOXANOVA-500 (LEVOFLOXACIN) 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":36.0,
@@ -256,7 +256,7 @@
   },
   {
     "item_code":"4800153302398",
-    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
+    "description":"STRESSTABS WIRON TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1743.0,
@@ -391,7 +391,7 @@
   },
   {
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":167.0,
@@ -466,7 +466,7 @@
   },
   {
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":622.0,
@@ -526,7 +526,7 @@
   },
   {
     "item_code":"4800308765108",
-    "description":"SILGRAM 750MG",
+    "description":"SILGRAM (SULTAMICILLIN) 750MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":238.0,
@@ -556,7 +556,7 @@
   },
   {
     "item_code":"4800316227018",
-    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "description":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
@@ -601,7 +601,7 @@
   },
   {
     "item_code":"4800318210162",
-    "description":"AMOXIL DROP 20ML",
+    "description":"AMOXIL (AMOXICILLIN) 20ML DROP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -631,7 +631,7 @@
   },
   {
     "item_code":"4800332237633",
-    "description":"DALACIN C CAP 300MG",
+    "description":"DALACIN C (CLINDAMYCIN) 300MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":622.0,
@@ -646,7 +646,7 @@
   },
   {
     "item_code":"4800333162484",
-    "description":"AUGMENTIN 375MG TAB",
+    "description":"AUGMENTIN (CO-AMOXICLAV) 375MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":262.0,
@@ -871,7 +871,7 @@
   },
   {
     "item_code":"4800348112757",
-    "description":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "description":"NATRAVOX 457MG\/5ML 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":112.0,
@@ -961,7 +961,7 @@
   },
   {
     "item_code":"4800435122157",
-    "description":"CEPHORAL 500MG CAP (CEFALEXIN",
+    "description":"CEPHORAL (CEFALEXIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "total_qty":62.0,
@@ -976,7 +976,7 @@
   },
   {
     "item_code":"4800489051632",
-    "description":"MARVELON TAB 28&#039;",
+    "description":"MARVELON (DESOGESTRYL ETHINYLESTRDIOL) TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
@@ -1381,7 +1381,7 @@
   },
   {
     "item_code":"4806510660644",
-    "description":"CIMEX 25MG\/5ML 50ML SUSP",
+    "description":"CIMEX (CEFUROXIME AXETIL) 25MG\/5ML 50ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
@@ -2071,7 +2071,7 @@
   },
   {
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":4868.0,
@@ -2221,7 +2221,7 @@
   },
   {
     "item_code":"4806527190431",
-    "description":"TEMPAID 125MG\/5ML 60ML SYR",
+    "description":"TEMPAID (PARACETAMOL) 125MG\/5ML 60ML SYR",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "total_qty":5.0,
@@ -2296,7 +2296,7 @@
   },
   {
     "item_code":"4806528271337",
-    "description":"ALCLAV NEO 625MG TAB",
+    "description":"ALCLAV NEO (CO-AMOXICLAV) 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1519.0,
@@ -2626,7 +2626,7 @@
   },
   {
     "item_code":"4807788406019",
-    "description":"DAZOMET TAB 500MG",
+    "description":"DAZOMET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":740.0,
@@ -2686,7 +2686,7 @@
   },
   {
     "item_code":"4807788410016",
-    "description":"ENERVON TAB 30",
+    "description":"ENERVON 30s TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":58.0,
@@ -2911,7 +2911,7 @@
   },
   {
     "item_code":"4807788520463",
-    "description":"HIMOX 500MG CAP",
+    "description":"HIMOX (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1056.0,
@@ -3166,7 +3166,7 @@
   },
   {
     "item_code":"4807788554697",
-    "description":"KLAZ (CLARITHROMYCIN) 125MG\/5ML SUS 35ML",
+    "description":"KLAZ (CLARITHROMYCIN) 125MG\/5ML 35ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
@@ -3481,7 +3481,7 @@
   },
   {
     "item_code":"8902269001182",
-    "description":"ZOCEF 500MG TAB",
+    "description":"ZOCEF (CEFUROXIME) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":600.0,
@@ -4006,7 +4006,7 @@
   },
   {
     "item_code":"8964001206064",
-    "description":"CLARIGET GRANULES 125MG\/5ML 50ML",
+    "description":"CLARIGET 125ML\/5ML GRANULES SUSP 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
@@ -4036,7 +4036,7 @@
   },
   {
     "item_code":"8964001206101",
-    "description":"CLARIGET TAB 500MG",
+    "description":"CLARIGET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":133.0,
@@ -4051,7 +4051,7 @@
   },
   {
     "item_code":"8964001206224",
-    "description":"LEVOCIN TAB 500MG",
+    "description":"LEVOCIN (LEVOFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":75.0,

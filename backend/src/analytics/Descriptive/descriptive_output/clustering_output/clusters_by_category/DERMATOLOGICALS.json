@@ -136,7 +136,7 @@
   },
   {
     "item_code":"4800304910021",
-    "description":"TROSYD CREAM 5G",
+    "description":"TROSYD CREAM (TIOCONAZOLE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":22.0,
@@ -166,7 +166,7 @@
   },
   {
     "item_code":"4800318150024",
-    "description":"BACTROBAN OINTMENT 5G",
+    "description":"BACTROBAN (MUPIROCIN) OINTMENT 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":20.0,
@@ -211,7 +211,7 @@
   },
   {
     "item_code":"4800333160824",
-    "description":"DERMOVATE CREAM 5G",
+    "description":"DERMOVATE (CLOBETASOL PROPIONATE) 5G CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":15.0,
@@ -376,7 +376,7 @@
   },
   {
     "item_code":"4801962612159",
-    "description":"ELICA CREAM 5G",
+    "description":"ELICA CREAM (MOMETASONE FUROATE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
@@ -451,7 +451,7 @@
   },
   {
     "item_code":"4806512120160",
-    "description":"CANDIBEC 10MG\/G\/250MCG2G CREAM",
+    "description":"#EXP2024-12-30",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
@@ -481,7 +481,7 @@
   },
   {
     "item_code":"4806512120535",
-    "description":"FOSKINA B 20MG\/500MCG 5G",
+    "description":"FOSKINA B (MUPIROCIN+BETAMETHASONE) 20MG\/500MCG 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -646,7 +646,7 @@
   },
   {
     "item_code":"4806533601525",
-    "description":"SILDIAZ 10MG\/G 1% 20G",
+    "description":"SILDIAZ (SILVER SULFADIAZINE) 10MG\/G 1% 20G",
     "category":"DERMATOLOGICALS",
     "tab":"GENERICS",
     "total_qty":55.0,
@@ -931,7 +931,7 @@
   },
   {
     "item_code":"72355794",
-    "description":"MUPISAPH 20MG\/G 5G OINMENT",
+    "description":"MUPISAPH (MUPIROCIN) 20MG\/G 5G OINMENT",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":80.0,
@@ -1036,7 +1036,7 @@
   },
   {
     "item_code":"9314057007990",
-    "description":"CALADRYL LOTION 30ML",
+    "description":"CALADRYL (CALAMINE + ZINC OXIDE) 30ML LOTION",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":9.0,

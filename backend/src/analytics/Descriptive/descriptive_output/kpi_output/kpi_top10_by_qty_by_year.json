@@ -42,7 +42,7 @@
   {
     "year":2022,
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":26733.12,
@@ -122,7 +122,7 @@
   {
     "year":2023,
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":56120.0,
@@ -132,7 +132,7 @@
   {
     "year":2023,
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":6133.0,
@@ -242,7 +242,7 @@
   {
     "year":2024,
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":22111.75,

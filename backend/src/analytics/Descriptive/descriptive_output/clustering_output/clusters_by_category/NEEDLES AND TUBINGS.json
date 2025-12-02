@@ -301,7 +301,7 @@
   },
   {
     "item_code":"40811509252",
-    "description":"INSULIN SYRINGE TERUMO 29GX1\/2G 1\/2CC",
+    "description":"INSULIN SYRINGE TERUMO 29 1\/2G",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
     "total_qty":72.0,
@@ -571,7 +571,7 @@
   },
   {
     "item_code":"500010220",
-    "description":"KING MED LANCETS STERILE 23G 200s",
+    "description":"BLOOD LANCETS (KING MED",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
     "total_qty":10.0,
@@ -691,7 +691,7 @@
   },
   {
     "item_code":"6590718820",
-    "description":"Z-CANCARE IV CATH G20",
+    "description":"CANCARE IV CATH G20",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
     "total_qty":10.0,
@@ -961,7 +961,7 @@
   },
   {
     "item_code":"9757231134",
-    "description":"Z-CANCARE IV CATH G24",
+    "description":"CANCARE IV CATH G24",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
     "total_qty":25.0,

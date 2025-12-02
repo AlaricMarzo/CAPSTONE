@@ -82,7 +82,7 @@
   {
     "month":"2022-05",
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":3718.12,
@@ -102,7 +102,7 @@
   {
     "month":"2022-06",
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS 500MG CAP",
+    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":1096.0,
@@ -152,7 +152,7 @@
   {
     "month":"2022-06",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4865.76,
@@ -182,7 +182,7 @@
   {
     "month":"2022-06",
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":4078.55,
@@ -202,7 +202,7 @@
   {
     "month":"2022-07",
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS 500MG CAP",
+    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":800.0,
@@ -242,7 +242,7 @@
   {
     "month":"2022-07",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13548.24,
@@ -352,7 +352,7 @@
   {
     "month":"2022-08",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4999.68,
@@ -832,7 +832,7 @@
   {
     "month":"2023-01",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":9360.0,
@@ -902,7 +902,7 @@
   {
     "month":"2023-02",
     "item_code":"4800289821510",
-    "description":"Z-NEOFORM 500MG TAB",
+    "description":"NEOFORM 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":536.0,
@@ -932,7 +932,7 @@
   {
     "month":"2023-02",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13052.0,
@@ -1032,7 +1032,7 @@
   {
     "month":"2023-03",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4000.0,
@@ -1242,7 +1242,7 @@
   {
     "month":"2023-05",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":8112.0,
@@ -1342,7 +1342,7 @@
   {
     "month":"2023-06",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4320.0,
@@ -1432,7 +1432,7 @@
   {
     "month":"2023-07",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":5280.0,
@@ -1522,7 +1522,7 @@
   {
     "month":"2023-08",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":8300.0,
@@ -1542,7 +1542,7 @@
   {
     "month":"2023-08",
     "item_code":"4806527194125",
-    "description":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "description":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_sales":445.6,
@@ -1632,7 +1632,7 @@
   {
     "month":"2023-09",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":3696.0,
@@ -1642,7 +1642,7 @@
   {
     "month":"2023-09",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1142.5,
@@ -1732,7 +1732,7 @@
   {
     "month":"2023-10",
     "item_code":"4806527194125",
-    "description":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "description":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_sales":720.0,
@@ -1742,7 +1742,7 @@
   {
     "month":"2023-10",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1188.0,
@@ -1842,7 +1842,7 @@
   {
     "month":"2023-11",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1772.5,
@@ -1862,7 +1862,7 @@
   {
     "month":"2023-11",
     "item_code":"4809014206110",
-    "description":"OMX PROBIOTIC CAP",
+    "description":"OMX (PROBIOTICS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_sales":17144.75,
@@ -1942,7 +1942,7 @@
   {
     "month":"2023-12",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":2030.0,
@@ -2052,7 +2052,7 @@
   {
     "month":"2024-01",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":2147.5,
@@ -2152,7 +2152,7 @@
   {
     "month":"2024-02",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1610.0,
@@ -2212,7 +2212,7 @@
   {
     "month":"2024-03",
     "item_code":"4806518970615",
-    "description":"AMINOLOG FC TAB",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_sales":7669.15,
@@ -2252,7 +2252,7 @@
   {
     "month":"2024-03",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":2640.25,
@@ -2352,7 +2352,7 @@
   {
     "month":"2024-04",
     "item_code":"4806518970615",
-    "description":"AMINOLOG FC TAB",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_sales":4272.04,
@@ -2372,7 +2372,7 @@
   {
     "month":"2024-04",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":3599.0,
@@ -2442,7 +2442,7 @@
   {
     "month":"2024-05",
     "item_code":"4806518970615",
-    "description":"AMINOLOG FC TAB",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_sales":3571.2,
@@ -2462,7 +2462,7 @@
   {
     "month":"2024-05",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1992.5,
@@ -2522,7 +2522,7 @@
   {
     "month":"2024-06",
     "item_code":"4806524149074",
-    "description":"FREDTOR 10MG TAB",
+    "description":"FREDTOR (ATORVASTATIN) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_sales":450.0,
@@ -2562,7 +2562,7 @@
   {
     "month":"2024-06",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":2417.5,
@@ -2612,7 +2612,7 @@
   {
     "month":"2024-07",
     "item_code":"4806031902445",
-    "description":"Z-PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
+    "description":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":679.25,
@@ -2662,7 +2662,7 @@
   {
     "month":"2024-07",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1437.5,
@@ -2752,7 +2752,7 @@
   {
     "month":"2024-08",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1936.5,
@@ -2812,7 +2812,7 @@
   {
     "month":"2024-09",
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS 500MG CAP",
+    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":4192.0,
@@ -2842,7 +2842,7 @@
   {
     "month":"2024-09",
     "item_code":"4806035205207",
-    "description":"AMLOPIGEN 5MG (AMLODIPINE BESILATE",
+    "description":"#EXP2027-01-30",
     "category":"ORTHO SUPPORT",
     "tab":"MED-SURG",
     "total_sales":662.3,
@@ -2852,7 +2852,7 @@
   {
     "month":"2024-09",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":2136.5,
@@ -2872,7 +2872,7 @@
   {
     "month":"2024-09",
     "item_code":"4807788416537",
-    "description":"AMVASC BE TAB 5MG",
+    "description":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":25668.0,
@@ -2952,7 +2952,7 @@
   {
     "month":"2024-10",
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_sales":1973.0,

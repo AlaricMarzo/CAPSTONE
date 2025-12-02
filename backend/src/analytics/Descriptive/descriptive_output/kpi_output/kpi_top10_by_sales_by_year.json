@@ -22,7 +22,7 @@
   {
     "year":2022,
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":59106.63,
@@ -52,7 +52,7 @@
   {
     "year":2022,
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":26733.12,
@@ -112,7 +112,7 @@
   {
     "year":2023,
     "item_code":"4300010005",
-    "description":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "total_sales":57753.97,
@@ -122,7 +122,7 @@
   {
     "year":2023,
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":48511.5,
@@ -152,7 +152,7 @@
   {
     "year":2023,
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":56120.0,
@@ -232,7 +232,7 @@
   {
     "year":2024,
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":141189.0,
@@ -332,7 +332,7 @@
   {
     "year":2025,
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":41948.2,

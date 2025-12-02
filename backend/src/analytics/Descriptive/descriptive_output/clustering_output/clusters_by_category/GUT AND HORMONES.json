@@ -6,6 +6,7 @@
     "tab":"GENERICS",
     "total_qty":214.0,
     "total_sales":2193.9,
+    "total_profit":1248.02,
     "months_active":6.0,
     "avg_price":10.2518691589,
     "mean_monthly_qty":35.6666666667,
@@ -20,6 +21,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
     "total_sales":155.0,
+    "total_profit":25.92,
     "months_active":2.0,
     "avg_price":7.75,
     "mean_monthly_qty":10.0,
@@ -34,12 +36,13 @@
     "tab":"OTC",
     "total_qty":266.0,
     "total_sales":13970.75,
+    "total_profit":2001.46,
     "months_active":35.0,
     "avg_price":52.5216165414,
     "mean_monthly_qty":7.6,
     "cv_monthly_qty":0.3943607231,
     "trend_qty_slope":0.0016806723,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800064630023",
@@ -48,12 +51,13 @@
     "tab":"OTC",
     "total_qty":241.0,
     "total_sales":11728.56,
+    "total_profit":2009.03,
     "months_active":35.0,
     "avg_price":48.6662240664,
     "mean_monthly_qty":6.8857142857,
     "cv_monthly_qty":0.4894507034,
     "trend_qty_slope":-0.0207282913,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800064630061",
@@ -62,12 +66,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":73.0,
     "total_sales":34221.75,
+    "total_profit":4700.38,
     "months_active":29.0,
     "avg_price":468.7910958904,
     "mean_monthly_qty":2.5172413793,
     "cv_monthly_qty":0.6138453836,
     "trend_qty_slope":-0.0216748768,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800064630108",
@@ -76,6 +81,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":33.0,
     "total_sales":4907.4,
+    "total_profit":2048.46,
     "months_active":23.0,
     "avg_price":148.7090909091,
     "mean_monthly_qty":1.4347826087,
@@ -90,12 +96,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":1649.0,
     "total_sales":14588.02,
+    "total_profit":2976.18,
     "months_active":33.0,
     "avg_price":8.8465858096,
     "mean_monthly_qty":49.9696969697,
     "cv_monthly_qty":0.6206886054,
     "trend_qty_slope":1.613302139,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800253240644",
@@ -104,6 +111,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":357.0,
     "total_sales":2479.79,
+    "total_profit":213.74,
     "months_active":27.0,
     "avg_price":6.9461904762,
     "mean_monthly_qty":13.2222222222,
@@ -118,12 +126,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":1462.0,
     "total_sales":13003.98,
+    "total_profit":819.83,
     "months_active":30.0,
     "avg_price":8.8946511628,
     "mean_monthly_qty":48.7333333333,
     "cv_monthly_qty":0.8400098898,
     "trend_qty_slope":-1.2427141268,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800253240675",
@@ -132,12 +141,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":654.0,
     "total_sales":9669.73,
+    "total_profit":115.34,
     "months_active":28.0,
     "avg_price":14.7855198777,
     "mean_monthly_qty":23.3571428571,
     "cv_monthly_qty":0.9475928835,
     "trend_qty_slope":0.223316913,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800253247001",
@@ -146,6 +156,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":35.0,
     "total_sales":817.5,
+    "total_profit":23.7,
     "months_active":3.0,
     "avg_price":23.3571428571,
     "mean_monthly_qty":11.6666666667,
@@ -160,6 +171,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":32.0,
     "total_sales":1616.0,
+    "total_profit":369.6,
     "months_active":1.0,
     "avg_price":50.5,
     "mean_monthly_qty":32.0,
@@ -174,12 +186,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":503.0,
     "total_sales":16870.08,
+    "total_profit":3074.59,
     "months_active":18.0,
     "avg_price":33.5389264414,
     "mean_monthly_qty":27.9444444444,
     "cv_monthly_qty":0.6463923587,
     "trend_qty_slope":1.4643962848,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800286242110",
@@ -188,6 +201,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
     "total_sales":742.5,
+    "total_profit":74.4,
     "months_active":4.0,
     "avg_price":24.75,
     "mean_monthly_qty":7.5,
@@ -202,12 +216,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":1308.0,
     "total_sales":112219.7,
+    "total_profit":-14235.84,
     "months_active":32.0,
     "avg_price":85.7948776758,
     "mean_monthly_qty":40.875,
     "cv_monthly_qty":0.5731559137,
     "trend_qty_slope":0.9384164223,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800304990252",
@@ -216,12 +231,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":372.0,
     "total_sales":32684.59,
+    "total_profit":2528.65,
     "months_active":25.0,
     "avg_price":87.8618010753,
     "mean_monthly_qty":14.88,
     "cv_monthly_qty":0.9092858661,
     "trend_qty_slope":0.4469230769,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800306590078",
@@ -230,12 +246,13 @@
     "tab":"OTC",
     "total_qty":247.0,
     "total_sales":10052.12,
+    "total_profit":-397.98,
     "months_active":14.0,
     "avg_price":40.6968421053,
     "mean_monthly_qty":17.6428571429,
     "cv_monthly_qty":1.0419655824,
     "trend_qty_slope":-2.2967032967,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4800308616158",
@@ -244,6 +261,7 @@
     "tab":"GENERICS",
     "total_qty":26.0,
     "total_sales":1581.89,
+    "total_profit":25.79,
     "months_active":2.0,
     "avg_price":60.8419230769,
     "mean_monthly_qty":13.0,
@@ -258,12 +276,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":199.0,
     "total_sales":13962.29,
+    "total_profit":-1210.22,
     "months_active":17.0,
     "avg_price":70.1622613065,
     "mean_monthly_qty":11.7058823529,
     "cv_monthly_qty":0.5013554517,
     "trend_qty_slope":-0.0073529412,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4800343860998",
@@ -272,26 +291,28 @@
     "tab":"PRESCRIPTION",
     "total_qty":620.0,
     "total_sales":14868.86,
+    "total_profit":3243.86,
     "months_active":19.0,
     "avg_price":23.9820322581,
     "mean_monthly_qty":32.6315789474,
     "cv_monthly_qty":0.568488329,
     "trend_qty_slope":0.7859649123,
-    "cluster":0
+    "cluster":1
   },
   {
     "item_code":"4801962113106",
-    "description":"DIANE 35 TAB 21&#039;..",
+    "description":"DIANE 35 TAB 21",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":49.0,
     "total_sales":33502.0,
+    "total_profit":2918.25,
     "months_active":28.0,
     "avg_price":683.7142857143,
     "mean_monthly_qty":1.75,
     "cv_monthly_qty":0.4978086089,
     "trend_qty_slope":0.0281882868,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4801962769204",
@@ -300,12 +321,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
     "total_sales":11639.95,
+    "total_profit":1888.95,
     "months_active":5.0,
     "avg_price":2327.99,
     "mean_monthly_qty":1.0,
     "cv_monthly_qty":0.0,
     "trend_qty_slope":-1.050792074e-16,
-    "cluster":2
+    "cluster":-1
   },
   {
     "item_code":"4806011585392",
@@ -314,6 +336,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
     "total_sales":4732.2,
+    "total_profit":788.7,
     "months_active":3.0,
     "avg_price":157.74,
     "mean_monthly_qty":10.0,
@@ -328,6 +351,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
     "total_sales":552.82,
+    "total_profit":140.33,
     "months_active":2.0,
     "avg_price":27.641,
     "mean_monthly_qty":10.0,
@@ -342,12 +366,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":59.0,
     "total_sales":25960.0,
+    "total_profit":2360.0,
     "months_active":7.0,
     "avg_price":440.0,
     "mean_monthly_qty":8.4285714286,
     "cv_monthly_qty":0.4987775922,
     "trend_qty_slope":-0.1785714286,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806502360330",
@@ -356,6 +381,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":13.0,
     "total_sales":170.87,
+    "total_profit":-30.63,
     "months_active":1.0,
     "avg_price":13.1438461538,
     "mean_monthly_qty":13.0,
@@ -370,6 +396,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":69.0,
     "total_sales":517.5,
+    "total_profit":310.5,
     "months_active":7.0,
     "avg_price":7.5,
     "mean_monthly_qty":9.8571428571,
@@ -384,6 +411,7 @@
     "tab":"GENERICS",
     "total_qty":338.0,
     "total_sales":2503.5,
+    "total_profit":1019.37,
     "months_active":15.0,
     "avg_price":7.4068047337,
     "mean_monthly_qty":22.5333333333,
@@ -393,17 +421,18 @@
   },
   {
     "item_code":"4806504653065",
-    "description":"RENALOG FC TAB",
+    "description":"RENALOG (KETOANALOGUE+AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":606.0,
     "total_sales":19496.4,
+    "total_profit":1619.4,
     "months_active":13.0,
     "avg_price":32.1722772277,
     "mean_monthly_qty":46.6153846154,
     "cv_monthly_qty":0.9910061851,
     "trend_qty_slope":0.6208791209,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806504653348",
@@ -412,12 +441,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":3381.0,
     "total_sales":116764.5,
+    "total_profit":13508.76,
     "months_active":29.0,
     "avg_price":34.5354924579,
     "mean_monthly_qty":116.5862068966,
     "cv_monthly_qty":0.3795381868,
     "trend_qty_slope":-2.0620689655,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806508321885",
@@ -426,6 +456,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":184.0,
     "total_sales":3181.28,
+    "total_profit":437.0,
     "months_active":17.0,
     "avg_price":17.2895652174,
     "mean_monthly_qty":10.8235294118,
@@ -440,6 +471,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":37.0,
     "total_sales":307.84,
+    "total_profit":163.05,
     "months_active":3.0,
     "avg_price":8.32,
     "mean_monthly_qty":12.3333333333,
@@ -454,20 +486,22 @@
     "tab":"PRESCRIPTION",
     "total_qty":600.0,
     "total_sales":9736.2,
+    "total_profit":2836.2,
     "months_active":3.0,
     "avg_price":16.227,
     "mean_monthly_qty":200.0,
     "cv_monthly_qty":1.0611393248,
     "trend_qty_slope":-43.0,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"4806514620026",
-    "description":"TAPDIN 5MG TAB",
+    "description":"TAPDIN (METHIMAZOLE) 5MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":205.0,
     "total_sales":1318.23,
+    "total_profit":168.42,
     "months_active":9.0,
     "avg_price":6.4303902439,
     "mean_monthly_qty":22.7777777778,
@@ -477,17 +511,18 @@
   },
   {
     "item_code":"4806514620057",
-    "description":"TAPDIN TAB 20MG",
+    "description":"TAPDIN (METHIMAZOLE) 20MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":263.0,
     "total_sales":7348.7,
+    "total_profit":1073.37,
     "months_active":13.0,
     "avg_price":27.9418250951,
     "mean_monthly_qty":20.2307692308,
     "cv_monthly_qty":0.9272110844,
     "trend_qty_slope":-0.9175824176,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806515030213",
@@ -496,6 +531,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":2.0,
     "total_sales":360.0,
+    "total_profit":131.12,
     "months_active":1.0,
     "avg_price":180.0,
     "mean_monthly_qty":2.0,
@@ -505,17 +541,18 @@
   },
   {
     "item_code":"4806518970615",
-    "description":"AMINOLOG FC TAB",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":1353.0,
     "total_sales":26860.41,
+    "total_profit":-5872.17,
     "months_active":11.0,
     "avg_price":19.8524833703,
     "mean_monthly_qty":123.0,
     "cv_monthly_qty":0.9808616953,
     "trend_qty_slope":1.9818181818,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806519150931",
@@ -524,6 +561,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":3934.0,
+    "total_profit":3934.0,
     "months_active":4.0,
     "avg_price":562.0,
     "mean_monthly_qty":1.75,
@@ -538,6 +576,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":15.0,
     "total_sales":282.0,
+    "total_profit":164.4,
     "months_active":2.0,
     "avg_price":18.8,
     "mean_monthly_qty":7.5,
@@ -547,11 +586,12 @@
   },
   {
     "item_code":"4806521160577",
-    "description":"TAMPLUS CAP 200MCG\/5MG",
+    "description":"TAMPLUS (TAMSULOSIN + FINASTERIDE) 200MCG\/5MG CAP",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":40.0,
     "total_sales":1440.0,
+    "total_profit":-126.36,
     "months_active":2.0,
     "avg_price":36.0,
     "mean_monthly_qty":20.0,
@@ -566,26 +606,28 @@
     "tab":"PRESCRIPTION",
     "total_qty":530.0,
     "total_sales":21913.41,
+    "total_profit":-397.02,
     "months_active":17.0,
     "avg_price":41.3460566038,
     "mean_monthly_qty":31.1764705882,
     "cv_monthly_qty":0.942452358,
     "trend_qty_slope":-1.5196078431,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806521246004",
-    "description":"DYPOTIN 4000IU\/ML IV\/SC",
+    "description":"DYPOTIN (EPOETIN ALFA) 4000IU\/ML IV\/SC",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":41.0,
     "total_sales":18260.0,
+    "total_profit":-2340.0,
     "months_active":5.0,
     "avg_price":445.3658536585,
     "mean_monthly_qty":8.2,
     "cv_monthly_qty":0.3887165232,
     "trend_qty_slope":-1.1,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806522631175",
@@ -594,12 +636,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":343.0,
     "total_sales":11256.4,
+    "total_profit":627.06,
     "months_active":22.0,
     "avg_price":32.8174927114,
     "mean_monthly_qty":15.5909090909,
     "cv_monthly_qty":0.6554322328,
     "trend_qty_slope":0.4116318464,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806522832336",
@@ -608,6 +651,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":1.0,
     "total_sales":890.0,
+    "total_profit":890.0,
     "months_active":1.0,
     "avg_price":890.0,
     "mean_monthly_qty":1.0,
@@ -622,12 +666,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":100.0,
     "total_sales":1713.44,
+    "total_profit":802.44,
     "months_active":3.0,
     "avg_price":17.1344,
     "mean_monthly_qty":33.3333333333,
     "cv_monthly_qty":0.9899494937,
     "trend_qty_slope":-35.0,
-    "cluster":1
+    "cluster":0
   },
   {
     "item_code":"4806524780482",
@@ -636,12 +681,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":1242.0,
     "total_sales":26292.96,
+    "total_profit":10146.96,
     "months_active":4.0,
     "avg_price":21.1698550725,
     "mean_monthly_qty":310.5,
     "cv_monthly_qty":0.4935239682,
     "trend_qty_slope":-114.0,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"4806524786057",
@@ -650,12 +696,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":544.0,
     "total_sales":9473.25,
+    "total_profit":5202.85,
     "months_active":8.0,
     "avg_price":17.4140625,
     "mean_monthly_qty":68.0,
     "cv_monthly_qty":0.6323529412,
     "trend_qty_slope":-4.8333333333,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806525175522",
@@ -664,12 +711,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":314.0,
     "total_sales":24492.0,
+    "total_profit":3733.1,
     "months_active":13.0,
     "avg_price":78.0,
     "mean_monthly_qty":24.1538461538,
     "cv_monthly_qty":0.8801801106,
     "trend_qty_slope":-1.3681318681,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806525570105",
@@ -678,6 +726,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
     "total_sales":360.0,
+    "total_profit":38.7,
     "months_active":1.0,
     "avg_price":12.0,
     "mean_monthly_qty":30.0,
@@ -692,6 +741,7 @@
     "tab":"GENERICS",
     "total_qty":92.0,
     "total_sales":869.4,
+    "total_profit":611.8,
     "months_active":3.0,
     "avg_price":9.45,
     "mean_monthly_qty":30.6666666667,
@@ -706,6 +756,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":60.0,
     "total_sales":2376.9,
+    "total_profit":1548.9,
     "months_active":2.0,
     "avg_price":39.615,
     "mean_monthly_qty":30.0,
@@ -720,20 +771,22 @@
     "tab":"PRESCRIPTION",
     "total_qty":45.0,
     "total_sales":18100.0,
+    "total_profit":-800.0,
     "months_active":5.0,
     "avg_price":402.2222222222,
     "mean_monthly_qty":9.0,
     "cv_monthly_qty":0.5305482838,
     "trend_qty_slope":-2.0,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4806532560243",
-    "description":"MICROPIL 21s TAB",
+    "description":"MICROPIL (NORETHISTERONE+ ETHINYL ESTRADIOL) 400MCG\/35MCG 21s TAB",
     "category":"GUT AND HORMONES",
     "tab":"OTC",
     "total_qty":12.0,
     "total_sales":901.84,
+    "total_profit":82.22,
     "months_active":9.0,
     "avg_price":75.1533333333,
     "mean_monthly_qty":1.3333333333,
@@ -748,6 +801,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":47.0,
     "total_sales":1421.75,
+    "total_profit":289.99,
     "months_active":3.0,
     "avg_price":30.25,
     "mean_monthly_qty":15.6666666667,
@@ -762,6 +816,7 @@
     "tab":"GENERICS",
     "total_qty":59.0,
     "total_sales":758.8,
+    "total_profit":404.8,
     "months_active":7.0,
     "avg_price":12.8610169492,
     "mean_monthly_qty":8.4285714286,
@@ -776,12 +831,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":202.0,
     "total_sales":12458.78,
+    "total_profit":437.8,
     "months_active":14.0,
     "avg_price":61.6771287129,
     "mean_monthly_qty":14.4285714286,
     "cv_monthly_qty":1.1453524232,
     "trend_qty_slope":-0.2461538462,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807788535719",
@@ -790,20 +846,22 @@
     "tab":"GENERICS",
     "total_qty":892.0,
     "total_sales":69733.22,
+    "total_profit":8248.96,
     "months_active":24.0,
     "avg_price":78.1762556054,
     "mean_monthly_qty":37.1666666667,
     "cv_monthly_qty":0.6305513181,
     "trend_qty_slope":0.6486956522,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807788554550",
-    "description":"TASCIT 10MEQ (POTASSIUM CITRATE",
+    "description":"TASCIT 10MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":144.0,
     "total_sales":3486.2,
+    "total_profit":525.01,
     "months_active":9.0,
     "avg_price":24.2097222222,
     "mean_monthly_qty":16.0,
@@ -818,26 +876,28 @@
     "tab":"PRESCRIPTION",
     "total_qty":247.0,
     "total_sales":6349.5,
+    "total_profit":626.87,
     "months_active":9.0,
     "avg_price":25.7064777328,
     "mean_monthly_qty":27.4444444444,
     "cv_monthly_qty":1.0222812361,
     "trend_qty_slope":-1.35,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807788562043",
-    "description":"TASCIT 15MEQ (POTASSIUM CITRATE",
+    "description":"TASCIT 15MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":253.0,
     "total_sales":6104.86,
+    "total_profit":-452.9,
     "months_active":9.0,
     "avg_price":24.1298814229,
     "mean_monthly_qty":28.1111111111,
     "cv_monthly_qty":1.0165098097,
     "trend_qty_slope":-8.2166666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4807788618153",
@@ -846,12 +906,13 @@
     "tab":"GENERICS",
     "total_qty":233.0,
     "total_sales":6783.4,
+    "total_profit":-139.03,
     "months_active":15.0,
     "avg_price":29.113304721,
     "mean_monthly_qty":15.5333333333,
     "cv_monthly_qty":1.2456411504,
     "trend_qty_slope":0.3892857143,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"4809015705865",
@@ -860,12 +921,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":2000.0,
     "total_sales":30315.0,
+    "total_profit":18603.96,
     "months_active":8.0,
     "avg_price":15.1575,
     "mean_monthly_qty":250.0,
     "cv_monthly_qty":0.8016058882,
     "trend_qty_slope":-60.4047619048,
-    "cluster":1
+    "cluster":-1
   },
   {
     "item_code":"54021235",
@@ -874,12 +936,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":2830.0,
     "total_sales":43380.8,
+    "total_profit":24985.8,
     "months_active":6.0,
     "avg_price":15.3289045936,
     "mean_monthly_qty":471.6666666667,
     "cv_monthly_qty":0.4780776391,
     "trend_qty_slope":19.3714285714,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"61400382",
@@ -888,12 +951,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":343.0,
     "total_sales":5062.32,
+    "total_profit":3555.01,
     "months_active":13.0,
     "avg_price":14.7589504373,
     "mean_monthly_qty":26.3846153846,
     "cv_monthly_qty":0.7216553243,
     "trend_qty_slope":-0.7967032967,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"70537970",
@@ -902,12 +966,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":174.0,
     "total_sales":78287.0,
+    "total_profit":8687.0,
     "months_active":9.0,
     "avg_price":449.9252873563,
     "mean_monthly_qty":19.3333333333,
     "cv_monthly_qty":0.4152273993,
     "trend_qty_slope":0.7666666667,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"80737636",
@@ -916,6 +981,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":95.0,
     "total_sales":1116.5,
+    "total_profit":356.5,
     "months_active":4.0,
     "avg_price":11.7526315789,
     "mean_monthly_qty":23.75,
@@ -930,6 +996,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":21.0,
     "total_sales":1050.0,
+    "total_profit":1050.0,
     "months_active":1.0,
     "avg_price":50.0,
     "mean_monthly_qty":21.0,
@@ -944,6 +1011,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":90.0,
     "total_sales":3465.0,
+    "total_profit":324.0,
     "months_active":1.0,
     "avg_price":38.5,
     "mean_monthly_qty":90.0,
@@ -958,12 +1026,13 @@
     "tab":"PRESCRIPTION",
     "total_qty":670.0,
     "total_sales":40419.06,
+    "total_profit":-948.94,
     "months_active":21.0,
     "avg_price":60.3269552239,
     "mean_monthly_qty":31.9047619048,
     "cv_monthly_qty":0.7917428629,
     "trend_qty_slope":-0.2038961039,
-    "cluster":0
+    "cluster":-1
   },
   {
     "item_code":"8904220104840",
@@ -972,6 +1041,7 @@
     "tab":"GENERICS",
     "total_qty":10.0,
     "total_sales":774.0,
+    "total_profit":324.0,
     "months_active":3.0,
     "avg_price":77.4,
     "mean_monthly_qty":3.3333333333,
@@ -986,6 +1056,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
     "total_sales":119.0,
+    "total_profit":71.4,
     "months_active":3.0,
     "avg_price":17.0,
     "mean_monthly_qty":2.3333333333,
@@ -1000,6 +1071,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
     "total_sales":312.0,
+    "total_profit":156.0,
     "months_active":1.0,
     "avg_price":15.6,
     "mean_monthly_qty":20.0,
@@ -1014,6 +1086,7 @@
     "tab":"GENERICS",
     "total_qty":2.0,
     "total_sales":20.43,
+    "total_profit":9.03,
     "months_active":1.0,
     "avg_price":10.215,
     "mean_monthly_qty":2.0,
@@ -1028,6 +1101,7 @@
     "tab":"PRESCRIPTION",
     "total_qty":31.0,
     "total_sales":900.52,
+    "total_profit":-144.13,
     "months_active":3.0,
     "avg_price":29.0490322581,
     "mean_monthly_qty":10.3333333333,

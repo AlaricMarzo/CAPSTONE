@@ -251,8 +251,8 @@ def _scatter_plot(df: pd.DataFrame,
                   out_png: Path,
                   use_log: bool):
     """
-    Scatter with persona-based colors and side legend.
-    One distinct color per persona (no repeats).
+    Scatter with cluster-based colors and side legend.
+    One distinct color per cluster.
     """
     if df.empty:
         return
@@ -284,42 +284,26 @@ def _scatter_plot(df: pd.DataFrame,
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
-    # ---- PERSONA → COLOR mapping (unique) ----
-    personas = sorted(summary["persona"].dropna().unique().tolist())
-    n_personas = max(len(personas), 1)
-    cmap = plt.cm.get_cmap("tab20")
-    color_array = cmap(np.linspace(0, 1, n_personas))
-
-    persona_colors: Dict[str, Any] = {
-        persona: color_array[i] for i, persona in enumerate(personas)
-    }
-
+    # ---- CLUSTER → COLOR mapping ----
     clusters = sorted(df["cluster"].unique().tolist())
+    n_clusters = len(clusters)
+    cmap = plt.cm.get_cmap("tab20", n_clusters)
     handles, labels = [], []
 
-    for c in clusters:
+    for i, c in enumerate(clusters):
         sub = df[df["cluster"] == c]
-
-        if c == -1:
-            persona = "Noise / Outliers"
-            color = "gray"
-        else:
-            row = summary.loc[summary["cluster"] == c]
-            persona = row["persona"].iloc[0] if not row.empty else "Mixed"
-            color = persona_colors.get(persona, "black")
 
         size = 30 if c == -1 else 50
         alpha = 0.6 if c == -1 else 0.85
+        color = cmap(i)
 
         sc = ax.scatter(
             sub["total_sales"], sub["total_qty"],
             s=size, alpha=alpha, color=color, edgecolors="none"
         )
 
-        # legend: one entry per persona
-        if persona not in labels:
-            handles.append(sc)
-            labels.append(persona)
+        handles.append(sc)
+        labels.append(f"Cluster {c}" if c != -1 else "Noise")
 
     # ---- title & legend ----
     full_title = title + (" (log view)" if use_log else " (linear view)")
@@ -364,19 +348,16 @@ def _plot_both(df: pd.DataFrame,
 # ============================ main driver ============================
 def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, Any]:
     """
-    Produces:
+    Produces (no global clustering):
       <out_dir>/
-        clusters_global.(csv|json)
         clusters_by_tab/<tab>.csv|json
         clusters_by_category/<category>.csv|json
         cluster_summaries/
-            global.(csv|json),
             by_tab_<tab>.(csv|json),
             by_category_<cat>.(csv|json)
-        PNGs per group: *_linear.png and *_log.png (persona-colored, side legend)
+        PNGs per group: fig_tab_*_{linear,log}.png, fig_cat_*_{linear,log}.png
     """
     base = _ensure_dir(Path(out_dir))
-    sub_global = base
     sub_tab = _ensure_dir(base / "clusters_by_tab")
     sub_cat = _ensure_dir(base / "clusters_by_category")
     sub_sum = _ensure_dir(base / "cluster_summaries")
@@ -384,26 +365,12 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
     df = _normalize(df)
     feats = _build_feature_table(df)
     if feats.empty:
-        (sub_global / "clusters_global.csv").write_text("", encoding="utf-8")
-        return {"n_clusters": 0, "n_noise": 0, "outputs": []}
-
-    # -------- global --------
-    global_df, meta_global = _fit_dbscan(feats, random_state=random_state)
-    global_df.to_csv(sub_global / "clusters_global.csv", index=False, encoding="utf-8")
-    _to_json(global_df, sub_global / "clusters_global.json")
-
-    sm_global = _summarize(global_df)
-    sm_global.to_csv(sub_sum / "global.csv", index=False, encoding="utf-8")
-    _to_json(sm_global, sub_sum / "global.json")
-
-    if -1 in sm_global["cluster"].values:
-        meta_global["n_noise"] = sm_global.loc[sm_global["cluster"] == -1, "total_qty"].iloc[0]
-
-    _plot_both(
-        global_df, sm_global,
-        f"Global Clusters (n_clusters={meta_global['n_clusters']})",
-        sub_global / "fig_global.png",
-    )
+        # Nothing to cluster
+        return {
+            "by_tab": [],
+            "by_category": [],
+            "outputs_dir": str(base),
+        }
 
     # -------- by TAB --------
     tabs_info = []
@@ -466,7 +433,6 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
         })
 
     return {
-        "global": {"n_clusters": meta_global["n_clusters"], "n_noise": meta_global["n_noise"]},
         "by_tab": tabs_info,
         "by_category": cats_info,
         "outputs_dir": str(base),

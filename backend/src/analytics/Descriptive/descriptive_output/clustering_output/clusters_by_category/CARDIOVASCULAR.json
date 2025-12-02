@@ -211,7 +211,7 @@
   },
   {
     "item_code":"1900010093",
-    "description":"Z-HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
+    "description":"HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":291.0,
@@ -406,7 +406,7 @@
   },
   {
     "item_code":"4800136010210",
-    "description":"CO-APROVEL TAB 150MG\/12.5MG",
+    "description":"CO-APROVEL (IRBESARTAN HYDROCHLOROTHIAZIDE) 150MG\/12.5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":51.0,
@@ -421,7 +421,7 @@
   },
   {
     "item_code":"4800136310020",
-    "description":"APROVASC 150MG\/5MG TAB",
+    "description":"APROVASC (IRBESARTAN + AMLODIPINE) 150MG\/5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":454.0,
@@ -436,7 +436,7 @@
   },
   {
     "item_code":"4800136310037",
-    "description":"APROVASC 300MG\/10MG TAB",
+    "description":"APROVASC (IRBESARTAN+ AMLODIPINE) 300MG\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":50.0,
@@ -541,7 +541,7 @@
   },
   {
     "item_code":"4800289820711",
-    "description":"NEOBLOC 50MG TAB",
+    "description":"NEOBLOC (METOPROLOL) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":1324.0,
@@ -751,7 +751,7 @@
   },
   {
     "item_code":"4800304050079",
-    "description":"NORVASC TAB 10MG",
+    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":321.0,
@@ -766,7 +766,7 @@
   },
   {
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL TAB 10MG",
+    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":33.0,
@@ -976,7 +976,7 @@
   },
   {
     "item_code":"4800319890035",
-    "description":"DIOVAN TAB 80MG",
+    "description":"DIOVAN CAP 80MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":75.0,
@@ -991,7 +991,7 @@
   },
   {
     "item_code":"4800324090710",
-    "description":"PARIET 10MG FC TAB",
+    "description":"PARIET (RABEPRAZOLE SODIUM) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":27.0,
@@ -1066,7 +1066,7 @@
   },
   {
     "item_code":"4800348113020",
-    "description":"NATRAPHARM ATORVAST TAB 20MG",
+    "description":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
@@ -1141,7 +1141,7 @@
   },
   {
     "item_code":"4806030400676",
-    "description":"HYPACE TAB 5MG",
+    "description":"HYPACE (ENALAPRIL MALEATE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":71.0,
@@ -1546,7 +1546,7 @@
   },
   {
     "item_code":"4806037100289",
-    "description":"ROZATIN-10 (ROSUVASTATIN) 10MG TAB",
+    "description":"ROZATIN-10 (ROSUVASTATIN) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":915.0,
@@ -1561,7 +1561,7 @@
   },
   {
     "item_code":"4806037100296",
-    "description":"ROZATIN-20(ROSUVASTATIN) 20MG FC TAB",
+    "description":"ROZATIN-20 FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":912.0,
@@ -1786,7 +1786,7 @@
   },
   {
     "item_code":"4806508830318",
-    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
+    "description":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":109.0,
@@ -2161,7 +2161,7 @@
   },
   {
     "item_code":"4806517790504",
-    "description":"LUSTATIN 40MG (ROSUVASTATIN",
+    "description":"#EXP2025-03-30",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -2461,7 +2461,7 @@
   },
   {
     "item_code":"4806520352621",
-    "description":"CLODIN(CLONIDINE) 75MCG TAB",
+    "description":"CLODIN (CLONIDINE) 75MCG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":416.0,
@@ -2521,7 +2521,7 @@
   },
   {
     "item_code":"4806521160591",
-    "description":"FENOSTAT 10MG\/160MG TAB",
+    "description":"FENOSTAT (ATORVASTIN+FENOFIBRATE) 10MG\/160MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":600.0,
@@ -2536,7 +2536,7 @@
   },
   {
     "item_code":"4806521161109",
-    "description":"ROSUFEN 160\/10MG TAB",
+    "description":"ROSUFEN (FENOFIBRATE + ROSUVASTATIN CA) 160\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":77.0,
@@ -2686,7 +2686,7 @@
   },
   {
     "item_code":"4806524146776",
-    "description":"LOSAAR 100MG TAB",
+    "description":"LOSAAR (LOSARTAN) 100MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":620.0,
@@ -2701,7 +2701,7 @@
   },
   {
     "item_code":"4806524149074",
-    "description":"FREDTOR 10MG TAB",
+    "description":"FREDTOR (ATORVASTATIN) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":740.0,
@@ -2956,7 +2956,7 @@
   },
   {
     "item_code":"4806527194125",
-    "description":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "description":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":866.0,
@@ -3001,7 +3001,7 @@
   },
   {
     "item_code":"4806528380022",
-    "description":"ROSUSTAT 20 FC TAB",
+    "description":"ROSUSTAT 20 (ROSUVASTATIN CALCIUM) FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":60.0,
@@ -3016,7 +3016,7 @@
   },
   {
     "item_code":"4806529710057",
-    "description":"GETZAR TAB 50MG 100&#039;",
+    "description":"GETZAR (LOSARTAN POTASSIUM) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":971.0,
@@ -3121,7 +3121,7 @@
   },
   {
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":11709.0,
@@ -3211,7 +3211,7 @@
   },
   {
     "item_code":"4807788067067",
-    "description":"HEMOSTAN 500MG CAP",
+    "description":"HEMOSTAN (TRANEXAMIC ACID) 500MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":538.0,
@@ -3331,7 +3331,7 @@
   },
   {
     "item_code":"4807788414021",
-    "description":"PLOGREL 75MG TAB",
+    "description":"PLOGREL (CLOPIDOGREL) 75MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":640.0,
@@ -3346,7 +3346,7 @@
   },
   {
     "item_code":"4807788416520",
-    "description":"AMVASC BE TAB 10MG",
+    "description":"AMVASC BE (AMLODIPINE) TAB 10MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":77.0,
@@ -3361,7 +3361,7 @@
   },
   {
     "item_code":"4807788416537",
-    "description":"AMVASC BE TAB 5MG",
+    "description":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":2024.0,
@@ -3496,7 +3496,7 @@
   },
   {
     "item_code":"4807788554734",
-    "description":"FENOFLEX 160MG",
+    "description":"FENOFLEX (FENOFIBRATE) 160MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":662.0,
@@ -3571,7 +3571,7 @@
   },
   {
     "item_code":"4807788562432",
-    "description":"CARVID 6.25MG TAB",
+    "description":"CARVID (CARVEDILOL) 6.25MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":1369.0,
@@ -3661,7 +3661,7 @@
   },
   {
     "item_code":"59646549",
-    "description":"SAPHORBIDE 30MG PR TAB",
+    "description":"SAPHORBIDE (ISOSORBIDE MONONITRATE) 30MG PR TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":611.0,
@@ -3706,7 +3706,7 @@
   },
   {
     "item_code":"8002660027825",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTANIN) 145MG\/40MG FCT",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":285.0,
@@ -3736,7 +3736,7 @@
   },
   {
     "item_code":"83770586",
-    "description":"FENOSAPH-200 CAP",
+    "description":"FENOSAPH-200 (FENOFIBRATE) 200MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":50.0,
@@ -3781,7 +3781,7 @@
   },
   {
     "item_code":"8853935018983",
-    "description":"BISCORE 2.5 FC TAB",
+    "description":"BISCORE 2.5 (BISOPROPOL FUMARATE) 2.5MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":418.0,
@@ -4201,7 +4201,7 @@
   },
   {
     "item_code":"8906002050963",
-    "description":"QUANIL (CITICOLINE) 500MG TAB 30&#039;S",
+    "description":"QUANIL (CITICOLINE) 500MG TAB 30",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":242.0,
@@ -4561,7 +4561,7 @@
   },
   {
     "item_code":"8964001206330",
-    "description":"NEBILET TAB 5MG",
+    "description":"NEBIL 5MG (NEBIVOLOL) TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":577.0,
@@ -4621,7 +4621,7 @@
   },
   {
     "item_code":"8964001206439",
-    "description":"ROVISTA TAB 20MG",
+    "description":"ROVISTA (ROSUVASTATIN)20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":731.0,
@@ -4651,7 +4651,7 @@
   },
   {
     "item_code":"8964001206460",
-    "description":"SIMVOGET TAB 20MG 10&#039;",
+    "description":"SIMVOGET (SIMVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":175.0,

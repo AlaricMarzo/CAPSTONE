@@ -1,4 +1,0 @@
-cluster,n,total_sales,total_qty,avg_price_med,months_active_med,mean_monthly_qty_med,cv_monthly_qty_med,trend_qty_slope_med,persona
-0,24,1460.56,89.0,30.119999999999997,1.0,1.0,0.0,0.0,"High-Sales, High-Volume, Premium"
-1,1,0.0,67.0,0.0,1.0,67.0,0.0,0.0,High-Volume
-2,1,546.0,12.0,45.5,1.0,12.0,0.0,0.0,"High-Sales, Premium"

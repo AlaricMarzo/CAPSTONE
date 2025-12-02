@@ -76,7 +76,7 @@
   },
   {
     "item_code":"1900010066",
-    "description":"SUPER CEE PLUS 500MG CAP",
+    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":1961.0,
@@ -166,7 +166,7 @@
   },
   {
     "item_code":"29314057013711",
-    "description":"DEQUADIN LOZENGES ORANGE",
+    "description":"DEQUADIN LOZENGES (DEQUALINIUM CHLORIDE) ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":496.0,
@@ -211,7 +211,7 @@
   },
   {
     "item_code":"300055556201",
-    "description":"CALTRATE PLUS TAB",
+    "description":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":237.0,
@@ -301,7 +301,7 @@
   },
   {
     "item_code":"4019338608969",
-    "description":"LEGALON TAB 140MG",
+    "description":"LEGALON (MILK THISTLE) 140MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":250.0,
@@ -616,7 +616,7 @@
   },
   {
     "item_code":"4800135002278",
-    "description":"MYRA ULTIMATE CAP",
+    "description":"MYRA ULTIMATE (ASTAXANTHIN + LYCOPENE + VITAMIN E) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":47.0,
@@ -691,7 +691,7 @@
   },
   {
     "item_code":"4800135012109",
-    "description":"MYRA E 12+2 SULIT PACK",
+    "description":"MYRA 400IU 2-WEEK TRIAL PACK 12+2",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":11.0,
@@ -781,7 +781,7 @@
   },
   {
     "item_code":"4800136400011",
-    "description":"BUSCOPAN VENUS TAB 10MG500MG",
+    "description":"BUSCOPAN VENUS 10MG\/500MG TAB",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":364.0,
@@ -901,7 +901,7 @@
   },
   {
     "item_code":"4800140000771",
-    "description":"PONSTAN SF CAP 500MG",
+    "description":"PONSTAN SF 500MG (MEFENAMIC ACID) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":718.0,
@@ -931,7 +931,7 @@
   },
   {
     "item_code":"4800153300677",
-    "description":"ADVIL LIQUIGEL CAP",
+    "description":"ADVIL LIQUIGEL (IBUPROFEN) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":1303.0,
@@ -1066,7 +1066,7 @@
   },
   {
     "item_code":"4800153953231",
-    "description":"ROBITUSSIN EXPECTORANT 60ML",
+    "description":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":46.0,
@@ -1081,7 +1081,7 @@
   },
   {
     "item_code":"4800153953262",
-    "description":"ROBITUSSIN REG 120ML",
+    "description":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 120ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":34.0,
@@ -1126,7 +1126,7 @@
   },
   {
     "item_code":"4800204005612",
-    "description":"POTEN-CEE SUGAR COATED TAB 500MG ..",
+    "description":"POTEN-CEE SUGAR COATED (ASCORBIC ACID) 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":1311.0,
@@ -1156,7 +1156,7 @@
   },
   {
     "item_code":"4800204018711",
-    "description":"POTEN CEE SUGAR FREE 500MG TAB",
+    "description":"POTEN CEE SUGAR FREE (ASCORBIC ACID) 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":734.0,
@@ -1336,7 +1336,7 @@
   },
   {
     "item_code":"4800253243836",
-    "description":"NEUROBION TAB",
+    "description":"NEUROBION (VITAMIN B1+B6+B12) X 10",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":1120.0,
@@ -1366,7 +1366,7 @@
   },
   {
     "item_code":"4800253243867",
-    "description":"SANGOBION IRON+CAPSULE",
+    "description":"SANGOBION IRON+ (MULTIVITAMINS + MINERALS) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":538.0,
@@ -1381,7 +1381,7 @@
   },
   {
     "item_code":"4800261123755",
-    "description":"POLY+NEO+DEXA EYE DROP (ISORE",
+    "description":"ISORE OPHTALMIC SOLUTION 5ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":25.0,
@@ -1426,7 +1426,7 @@
   },
   {
     "item_code":"4800301800370",
-    "description":"BIOFITEA (SENNA LEAVES SENNA POS) SAC",
+    "description":"BIOFITEA (SENNA LEAVES 1SENNA POS) SAC",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
     "total_qty":336.0,
@@ -1531,7 +1531,7 @@
   },
   {
     "item_code":"4800304940011",
-    "description":"LOMOTIL TAB",
+    "description":"LOMOTIL (LOPERAMIDE HCI) TAB",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":233.0,
@@ -1936,7 +1936,7 @@
   },
   {
     "item_code":"4800318150024",
-    "description":"BACTROBAN OINTMENT 5G",
+    "description":"BACTROBAN (MUPIROCIN) OINTMENT 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":20.0,
@@ -1996,7 +1996,7 @@
   },
   {
     "item_code":"4800318705286",
-    "description":"SINECOD FORTE TAB 50MG",
+    "description":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":1119.0,
@@ -2191,7 +2191,7 @@
   },
   {
     "item_code":"4800348110012",
-    "description":"HERACLENE 1MG CAP",
+    "description":"HERACLENE (DIBENCOZIDE) 1MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":460.0,
@@ -2296,7 +2296,7 @@
   },
   {
     "item_code":"48003603022041",
-    "description":"SALINASE DRP 30ML",
+    "description":"SALINASE DROP 30ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":9.0,
@@ -2341,7 +2341,7 @@
   },
   {
     "item_code":"4800363013121",
-    "description":"REGERON-E PLUS CAP",
+    "description":"REGERON-E PLUS (MULTIVITAMINS+IRON) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":25.0,
@@ -2371,7 +2371,7 @@
   },
   {
     "item_code":"4800369000873",
-    "description":"CENTRAVIM TAB",
+    "description":"CENTRAVIM (VITAMIN B-COMPLEX) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":675.0,
@@ -2401,7 +2401,7 @@
   },
   {
     "item_code":"4800428888817",
-    "description":"BIGUERLAI SLIMMING TEA",
+    "description":"BIGUERLAI (SENNA GLYCOSIDE) SLIMMING TEA",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
     "total_qty":69.0,
@@ -2611,7 +2611,7 @@
   },
   {
     "item_code":"4801962207997",
-    "description":"SARIDON TRIPLE ACTION TAB",
+    "description":"SARIDON TRIPLE ACTION (PARACETAMOL PROPYPHENAZONE CAFFEINE) TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":1127.0,
@@ -2641,7 +2641,7 @@
   },
   {
     "item_code":"4801962413152",
-    "description":"BEROCCA EFF TAB ORANGE 15&#039;S TUBE",
+    "description":"BEROCCA EFF TAB ORANGE 15&#039;",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":59.0,
@@ -2716,7 +2716,7 @@
   },
   {
     "item_code":"4806031902445",
-    "description":"Z-PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
+    "description":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":211.0,
@@ -2956,7 +2956,7 @@
   },
   {
     "item_code":"4806502367223",
-    "description":"FERN-C PLUS CAP",
+    "description":"FERN-C PLUS (SODIUM ASCORBATE) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":465.0,
@@ -3001,7 +3001,7 @@
   },
   {
     "item_code":"4806502850022",
-    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
+    "description":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":33.0,
@@ -3271,7 +3271,7 @@
   },
   {
     "item_code":"4806504654802",
-    "description":"QUATROFOL CAP",
+    "description":"QUATROFOL (METHYLTETRAHYDROFOLIC ACID) CAPS",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":731.0,
@@ -3496,7 +3496,7 @@
   },
   {
     "item_code":"4806510664055",
-    "description":"CALVIT GOLD FC TAB..",
+    "description":"CALVIT GOLD (CHOLECALCIFEROL + CALCIUM) FC TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":482.0,
@@ -3571,7 +3571,7 @@
   },
   {
     "item_code":"4806510690061",
-    "description":"CHERIFER FORTE 240ML\/24&#039;",
+    "description":"CHERIFER FORTE 240ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":7.0,
@@ -3811,7 +3811,7 @@
   },
   {
     "item_code":"4806510960539",
-    "description":"GAVINDEX FORTE CAP",
+    "description":"GAVINDEX FORTE (THIAMINE MONONITRATE VIT B1+PYRIDOXINE HCL VIT B6+CYANOCOBALAMIN VIT B12) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":270.0,
@@ -3961,7 +3961,7 @@
   },
   {
     "item_code":"4806516400756",
-    "description":"PROPAN WHITE (BUCLIZINE HCL + MULTIVITAMINS) 120ML SYRUP",
+    "description":"PROPAN SYR 120ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":7.0,
@@ -4021,7 +4021,7 @@
   },
   {
     "item_code":"4806516400992",
-    "description":"PROPAN TLC 250ML (MULTIVITAMINS",
+    "description":"PROPAN TLC 250ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":10.0,
@@ -4291,7 +4291,7 @@
   },
   {
     "item_code":"4806518900391",
-    "description":"ROBUST TAB 550MG",
+    "description":"ROBUST 550MG TAB 2s",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":48.0,
@@ -4321,7 +4321,7 @@
   },
   {
     "item_code":"4806518970387",
-    "description":"DOMILIUM 10MG TAB -011-30",
+    "description":"DOMILIUM (DOMPERIDONE) 10MG TAB",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":196.0,
@@ -4411,7 +4411,7 @@
   },
   {
     "item_code":"4806520890680",
-    "description":"BEWELL-C ZINC PROTECT 10s",
+    "description":"BEWELL-C ZINC PROTECT",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":8.0,
@@ -4486,7 +4486,7 @@
   },
   {
     "item_code":"4806523302708",
-    "description":"MYREX (CETIRIZINE) 5MG\/5ML 60ML SYR",
+    "description":"CETIREX (CETIRIZINE) 5MG\/5ML SYRUP 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":53.0,
@@ -4546,7 +4546,7 @@
   },
   {
     "item_code":"4806524146813",
-    "description":"E PRIME GOLD 1000MG CAP",
+    "description":"E PRIME (EVENING PRIMROSE OIL) 1000MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":336.0,
@@ -4756,7 +4756,7 @@
   },
   {
     "item_code":"4806529430528",
-    "description":"LUMAR ORS 6G SACHET ORANGE",
+    "description":"LUMAR ORS 6G SACHET",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":31.0,
@@ -4861,7 +4861,7 @@
   },
   {
     "item_code":"4806532560243",
-    "description":"MICROPIL 21s TAB",
+    "description":"MICROPIL (NORETHISTERONE+ ETHINYL ESTRADIOL) 400MCG\/35MCG 21s TAB",
     "category":"GUT AND HORMONES",
     "tab":"OTC",
     "total_qty":12.0,
@@ -4921,7 +4921,7 @@
   },
   {
     "item_code":"4806532560489",
-    "description":"NASATAPP NO DROWSE 500MG\/25MG TAB",
+    "description":"NASATAPP NO DROWSE (PARACETAMOL + PHENYLEPHRINE HYDROCHLORIDE) 500MG\/25MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":442.0,
@@ -5011,7 +5011,7 @@
   },
   {
     "item_code":"480653361754",
-    "description":"ENPLEX-B (VITAMIN B COMPLEX) AMP",
+    "description":"#EXP2025-04-30",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":30.0,
@@ -5041,7 +5041,7 @@
   },
   {
     "item_code":"4806534770008",
-    "description":"DANZEDIN 80000 EC TAB",
+    "description":"DANZEDIN (SERRAPEPTASE) 80000 EC TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":214.0,
@@ -5266,7 +5266,7 @@
   },
   {
     "item_code":"4807788410603",
-    "description":"HYDRITE GRANULES (ORAL REHYDRATION SALTS) APPLE SAC",
+    "description":"HYDRITE GRANULES (APPLE) SAC",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":563.0,
@@ -5326,7 +5326,7 @@
   },
   {
     "item_code":"4807788417206",
-    "description":"MEDICOL ADVANCE SOFTGEL CAP",
+    "description":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":660.0,
@@ -5356,7 +5356,7 @@
   },
   {
     "item_code":"4807788519139",
-    "description":"BIOGESIC 120MG\/5ML STRAWBERRY SYR 60ML",
+    "description":"BIOGESIC (PARACETAMOL) 120MG\/5ML STRAWBERRY SYR 60ML",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":8.0,
@@ -5761,7 +5761,7 @@
   },
   {
     "item_code":"4807788519856",
-    "description":"E-ZINC SYR 60ML",
+    "description":"E-ZINC 55MG\/5ML 60ML SYR",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":49.0,
@@ -5926,7 +5926,7 @@
   },
   {
     "item_code":"4807788522078",
-    "description":"LIVERPRIME CAP",
+    "description":"LIVERPRIME (SILYBIN-PHOSPHATIDYLCHOLINE + MULTIVITAMINS + ZINC) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":363.0,
@@ -6031,7 +6031,7 @@
   },
   {
     "item_code":"4807788523785",
-    "description":"MYRACOF TAB 30MG",
+    "description":"MYRACOF (AMBROXOL HCI) 30MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":87.0,
@@ -6061,7 +6061,7 @@
   },
   {
     "item_code":"4807788525574",
-    "description":"OBIMIN PLUS CAP",
+    "description":"OBIMIN PLUS (MULTIVITAMINS + MINERALS + DHA+ EPA) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":473.0,
@@ -6211,7 +6211,7 @@
   },
   {
     "item_code":"480778853619",
-    "description":"ALAXAN FR CAP",
+    "description":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":2097.0,
@@ -6406,7 +6406,7 @@
   },
   {
     "item_code":"4807788557384",
-    "description":"SOLMUX BRONCHO CAP",
+    "description":"SOLMUX BRONCHO (SALBUTAMOL SULFATE + CARBOCISTEINE) CAP",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":432.0,
@@ -6436,7 +6436,7 @@
   },
   {
     "item_code":"4807788558466",
-    "description":"HEMARATE FA TAB 100&#039;S",
+    "description":"HEMARATE FA TAB 100",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":392.0,
@@ -6466,7 +6466,7 @@
   },
   {
     "item_code":"4807788559593",
-    "description":"NEOZEP FORTE TAB",
+    "description":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":2809.0,
@@ -6616,7 +6616,7 @@
   },
   {
     "item_code":"4807788563286",
-    "description":"CEELIN PLUS CHEW TAB 100&#039;S",
+    "description":"CEELIN PLUS (ASCORBIC ACID + ZINC) CHEW TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":664.0,
@@ -6631,7 +6631,7 @@
   },
   {
     "item_code":"4807788564191",
-    "description":"SOLMUX ADVANCE 500MG",
+    "description":"SOLMUX ADVANCE (CARBOCISTEINE + ZINC) 500MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "total_qty":320.0,
@@ -6856,7 +6856,7 @@
   },
   {
     "item_code":"4807788669971",
-    "description":"MEDICOL ADVANCE 400MG CAP 4+1 SET",
+    "description":"MEDICOL ADVANCE (IBUPROFEN) 400MG CAP 4+1 SET",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":69.0,
@@ -6976,7 +6976,7 @@
   },
   {
     "item_code":"4807788712585",
-    "description":"REVICON FORTE TAB 9+1 SET",
+    "description":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB 9+1 SET",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":35.0,
@@ -7621,7 +7621,7 @@
   },
   {
     "item_code":"5000158066946",
-    "description":"GAVISCON 10ML SACHET",
+    "description":"GAVISCON (ALUMINUM HYDROXIDE + MAGNESIUM TRISILICATE) 10ML SACHET",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":166.0,
@@ -7636,7 +7636,7 @@
   },
   {
     "item_code":"5000158071155",
-    "description":"Z-GAVISCON DOUBLE ACTION SAC 10ML",
+    "description":"GAVISCON DOUBLE ACTION SAC 10ML",
     "category":"GIT",
     "tab":"OTC",
     "total_qty":176.0,
@@ -7786,7 +7786,7 @@
   },
   {
     "item_code":"72355794",
-    "description":"MUPISAPH 20MG\/G 5G OINMENT",
+    "description":"MUPISAPH (MUPIROCIN) 20MG\/G 5G OINMENT",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":80.0,
@@ -8206,7 +8206,7 @@
   },
   {
     "item_code":"8992916262035",
-    "description":"IBERET FOLIC TAB",
+    "description":"IBERET FOLIC (MULTIVITAMINS + IRON) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":228.0,
@@ -8446,7 +8446,7 @@
   },
   {
     "item_code":"8995201801001",
-    "description":"TEMPRA FORTE 120MG\/5ML 30ML",
+    "description":"TEMPRA (PARACETAMOL) 120MG\/5ML 30MLSYR ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":40.0,
@@ -8461,7 +8461,7 @@
   },
   {
     "item_code":"8995201801018",
-    "description":"TEMPRA FORTE 250MG\/5ML 30ML",
+    "description":"TEMPRA FORTE (ORANGE) 30ML",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":16.0,
@@ -8506,7 +8506,7 @@
   },
   {
     "item_code":"8998898101409",
-    "description":"TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
+    "description":"TOLAK ANGIN (HERBAL SUPPLEMENT) 15ML SACH",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_qty":54.0,
@@ -8521,7 +8521,7 @@
   },
   {
     "item_code":"8998898101447",
-    "description":"Z-TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
+    "description":"TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_qty":17.0,
@@ -8551,7 +8551,7 @@
   },
   {
     "item_code":"9314057007990",
-    "description":"CALADRYL LOTION 30ML",
+    "description":"CALADRYL (CALAMINE + ZINC OXIDE) 30ML LOTION",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "total_qty":9.0,

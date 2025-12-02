@@ -181,7 +181,7 @@
   },
   {
     "item_code":"17540193",
-    "description":"FLOXANOVA-500 FC TAB",
+    "description":"FLOXANOVA-500 (LEVOFLOXACIN) 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":36.0,
@@ -346,7 +346,7 @@
   },
   {
     "item_code":"37358747",
-    "description":"VALPROS 500MG TAB",
+    "description":"VALPROS (SODIUM VALPROATE\/VALPROIC ACID) 500MG TAB",
     "category":"NEUROLOGICAL DRUGS",
     "tab":"PRESCRIPTION",
     "total_qty":37.0,
@@ -601,7 +601,7 @@
   },
   {
     "item_code":"4800136010210",
-    "description":"CO-APROVEL TAB 150MG\/12.5MG",
+    "description":"CO-APROVEL (IRBESARTAN HYDROCHLOROTHIAZIDE) 150MG\/12.5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":51.0,
@@ -631,7 +631,7 @@
   },
   {
     "item_code":"4800136310020",
-    "description":"APROVASC 150MG\/5MG TAB",
+    "description":"APROVASC (IRBESARTAN + AMLODIPINE) 150MG\/5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":454.0,
@@ -646,7 +646,7 @@
   },
   {
     "item_code":"4800136310037",
-    "description":"APROVASC 300MG\/10MG TAB",
+    "description":"APROVASC (IRBESARTAN+ AMLODIPINE) 300MG\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":50.0,
@@ -766,7 +766,7 @@
   },
   {
     "item_code":"4800140000085",
-    "description":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
+    "description":"BENADRYL AH (DIPHENHYDRAMINE) 25MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":131.0,
@@ -796,7 +796,7 @@
   },
   {
     "item_code":"4800153302398",
-    "description":"STRESTABS (MULTIVITAMINS + IRON) TAB",
+    "description":"STRESSTABS WIRON TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1743.0,
@@ -916,7 +916,7 @@
   },
   {
     "item_code":"4800234406472",
-    "description":"XIGDUO XR 10\/500MG",
+    "description":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN)10\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":182.0,
@@ -931,7 +931,7 @@
   },
   {
     "item_code":"4800234406489",
-    "description":"XIGDUO XR 10\/1000MG TABLET",
+    "description":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN) 10\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":1144.0,
@@ -1186,7 +1186,7 @@
   },
   {
     "item_code":"4800289820612",
-    "description":"RAXIDE 150MG (RANITIDINE",
+    "description":"RAXIDE 150MG",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":86.0,
@@ -1216,7 +1216,7 @@
   },
   {
     "item_code":"4800289820711",
-    "description":"NEOBLOC 50MG TAB",
+    "description":"NEOBLOC (METOPROLOL) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":1324.0,
@@ -1246,7 +1246,7 @@
   },
   {
     "item_code":"4800289821510",
-    "description":"Z-NEOFORM 500MG TAB",
+    "description":"NEOFORM 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":1077.0,
@@ -1276,7 +1276,7 @@
   },
   {
     "item_code":"4800289822395",
-    "description":"ZEMIGLO 50MG FCT",
+    "description":"ZEMIGLO (GEMIGLIPTIN) 50MG FCT",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":122.0,
@@ -1501,7 +1501,7 @@
   },
   {
     "item_code":"4800304050079",
-    "description":"NORVASC TAB 10MG",
+    "description":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":321.0,
@@ -1561,7 +1561,7 @@
   },
   {
     "item_code":"4800304910021",
-    "description":"TROSYD CREAM 5G",
+    "description":"TROSYD CREAM (TIOCONAZOLE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":22.0,
@@ -1711,7 +1711,7 @@
   },
   {
     "item_code":"4800307101037",
-    "description":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "description":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":167.0,
@@ -1936,7 +1936,7 @@
   },
   {
     "item_code":"4800308100473",
-    "description":"BACTIV 457MG\/5ML 70ML",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":622.0,
@@ -2086,7 +2086,7 @@
   },
   {
     "item_code":"4800308741317",
-    "description":"PULMODUAL(IPRATROPIUM SALBUTAMOL)500MCG\/2.5MG\/2.5ML 20ML",
+    "description":"PULMODUAL (IPRATROPIUM SALBUTAMOL) 500MCG\/2.5MG\/2.5ML 20ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":12.0,
@@ -2101,7 +2101,7 @@
   },
   {
     "item_code":"4800308765108",
-    "description":"SILGRAM 750MG",
+    "description":"SILGRAM (SULTAMICILLIN) 750MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":238.0,
@@ -2176,7 +2176,7 @@
   },
   {
     "item_code":"4800316227018",
-    "description":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "description":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":5.0,
@@ -2251,7 +2251,7 @@
   },
   {
     "item_code":"4800318210162",
-    "description":"AMOXIL DROP 20ML",
+    "description":"AMOXIL (AMOXICILLIN) 20ML DROP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -2356,7 +2356,7 @@
   },
   {
     "item_code":"4800319890035",
-    "description":"DIOVAN TAB 80MG",
+    "description":"DIOVAN CAP 80MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":75.0,
@@ -2386,7 +2386,7 @@
   },
   {
     "item_code":"4800324090710",
-    "description":"PARIET 10MG FC TAB",
+    "description":"PARIET (RABEPRAZOLE SODIUM) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":27.0,
@@ -2446,7 +2446,7 @@
   },
   {
     "item_code":"4800331647051",
-    "description":"TOBRADEX 3MG\/1MG PER ML 5ML",
+    "description":"TOBRADEX (TOBRAMYCIN DEXAMETHASONE) 3MG\/1MG PER ML 5ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -2476,7 +2476,7 @@
   },
   {
     "item_code":"4800332237633",
-    "description":"DALACIN C CAP 300MG",
+    "description":"DALACIN C (CLINDAMYCIN) 300MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":622.0,
@@ -2551,7 +2551,7 @@
   },
   {
     "item_code":"4800333160824",
-    "description":"DERMOVATE CREAM 5G",
+    "description":"DERMOVATE (CLOBETASOL PROPIONATE) 5G CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":15.0,
@@ -2596,7 +2596,7 @@
   },
   {
     "item_code":"4800333161852",
-    "description":"SERETIDE DISKUS 100 50MCG\/100MCG",
+    "description":"SERETIDE 50MCG\/100MCG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":30.0,
@@ -2656,7 +2656,7 @@
   },
   {
     "item_code":"4800333162484",
-    "description":"AUGMENTIN 375MG TAB",
+    "description":"AUGMENTIN (CO-AMOXICLAV) 375MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":262.0,
@@ -2851,7 +2851,7 @@
   },
   {
     "item_code":"4800333900642",
-    "description":"VENTOLIN EXPECTORANT SYR 50MG\/5ML SYRUP 100ML",
+    "description":"VENTOLIN EXPECTORANT (SALBUTAMOL GUAIFENESIN) 1MG\/50MG\/5ML SYRUP 100ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
@@ -3016,7 +3016,7 @@
   },
   {
     "item_code":"4800346000193",
-    "description":"MOTILIUM TAB 10MG",
+    "description":"MOTILIUM (DOMPERIDONE) 10MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":261.0,
@@ -3046,7 +3046,7 @@
   },
   {
     "item_code":"4800346002647",
-    "description":"DOLCET TAB 37.5\/325MG",
+    "description":"DOLCET (TRAMADOL HCI + PARACETAMOL) 37.5\/325MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":160.0,
@@ -3166,7 +3166,7 @@
   },
   {
     "item_code":"4800348112757",
-    "description":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "description":"NATRAVOX 457MG\/5ML 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":112.0,
@@ -3196,7 +3196,7 @@
   },
   {
     "item_code":"4800348113020",
-    "description":"NATRAPHARM ATORVAST TAB 20MG",
+    "description":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
@@ -3241,7 +3241,7 @@
   },
   {
     "item_code":"4800348114515",
-    "description":"BREZU SYR 5MCG\/ML 60ML..",
+    "description":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":355.0,
@@ -3271,7 +3271,7 @@
   },
   {
     "item_code":"4800348620511",
-    "description":"I-MAX 500MG TAB",
+    "description":"I-MAX (METFORMIN) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":268.0,
@@ -3391,7 +3391,7 @@
   },
   {
     "item_code":"4800369000071",
-    "description":"ALLURASE(ALLOPURINOL) 100MG TAB",
+    "description":"ALLURASE TAB 100MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":217.0,
@@ -3421,7 +3421,7 @@
   },
   {
     "item_code":"4800369000286",
-    "description":"ASFRENONSYR 2MG 60ML SYR",
+    "description":"ASFRENON SYR 2MG 60ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":178.0,
@@ -3511,7 +3511,7 @@
   },
   {
     "item_code":"4800489051632",
-    "description":"MARVELON TAB 28&#039;",
+    "description":"MARVELON (DESOGESTRYL ETHINYLESTRDIOL) TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":20.0,
@@ -3556,7 +3556,7 @@
   },
   {
     "item_code":"4800489114320",
-    "description":"ARCOXIA 60MG TAB",
+    "description":"ARCOXIA (ETORICOXIB) 60MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":153.0,
@@ -3631,7 +3631,7 @@
   },
   {
     "item_code":"4800489426577",
-    "description":"JANUMET 50\/1000MG TAB",
+    "description":"JANUMET (SITAGLIPTIN + METFORMIN) 50\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":109.0,
@@ -3661,7 +3661,7 @@
   },
   {
     "item_code":"4800562011812",
-    "description":"ECTRIN 300 MG CAP",
+    "description":"ECTRIN (ERDOSTEINE)300 MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":102.0,
@@ -3721,7 +3721,7 @@
   },
   {
     "item_code":"4800573055195",
-    "description":"HIVENT PLUS 2.5MG+500MCG\/2.5ML AMP",
+    "description":"HIVENT PLUS (SALBUTAMOL+IPRATROPIUM BROMIDE) 2.5MG+500MCG\/2.5ML AMP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":293.0,
@@ -3736,7 +3736,7 @@
   },
   {
     "item_code":"4801010206118",
-    "description":"BENADRYL AH CAP",
+    "description":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":170.0,
@@ -3766,7 +3766,7 @@
   },
   {
     "item_code":"4801962113106",
-    "description":"DIANE 35 TAB 21&#039;..",
+    "description":"DIANE 35 TAB 21",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":49.0,
@@ -3826,7 +3826,7 @@
   },
   {
     "item_code":"4801962612159",
-    "description":"ELICA CREAM 5G",
+    "description":"ELICA CREAM (MOMETASONE FUROATE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":11.0,
@@ -3916,7 +3916,7 @@
   },
   {
     "item_code":"4806030400676",
-    "description":"HYPACE TAB 5MG",
+    "description":"HYPACE (ENALAPRIL MALEATE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":71.0,
@@ -4546,7 +4546,7 @@
   },
   {
     "item_code":"4806037100289",
-    "description":"ROZATIN-10 (ROSUVASTATIN) 10MG TAB",
+    "description":"ROZATIN-10 (ROSUVASTATIN) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":915.0,
@@ -4561,7 +4561,7 @@
   },
   {
     "item_code":"4806037100296",
-    "description":"ROZATIN-20(ROSUVASTATIN) 20MG FC TAB",
+    "description":"ROZATIN-20 FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":912.0,
@@ -4771,7 +4771,7 @@
   },
   {
     "item_code":"4806504653065",
-    "description":"RENALOG FC TAB",
+    "description":"RENALOG (KETOANALOGUE+AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":606.0,
@@ -5176,7 +5176,7 @@
   },
   {
     "item_code":"4806510660644",
-    "description":"CIMEX 25MG\/5ML 50ML SUSP",
+    "description":"CIMEX (CEFUROXIME AXETIL) 25MG\/5ML 50ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
@@ -5416,7 +5416,7 @@
   },
   {
     "item_code":"4806512120160",
-    "description":"CANDIBEC 10MG\/G\/250MCG2G CREAM",
+    "description":"#EXP2024-12-30",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":28.0,
@@ -5431,7 +5431,7 @@
   },
   {
     "item_code":"4806512120535",
-    "description":"FOSKINA B 20MG\/500MCG 5G",
+    "description":"FOSKINA B (MUPIROCIN+BETAMETHASONE) 20MG\/500MCG 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -5476,7 +5476,7 @@
   },
   {
     "item_code":"4806513450075",
-    "description":"CELSUS TIMOLOL MALEATE .05% 5ML EYE DROPS",
+    "description":"CELSUS (TIMOLOL MALEATE) 5ML EYE DROPS",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "total_qty":13.0,
@@ -5641,7 +5641,7 @@
   },
   {
     "item_code":"4806514620026",
-    "description":"TAPDIN 5MG TAB",
+    "description":"TAPDIN (METHIMAZOLE) 5MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":205.0,
@@ -5656,7 +5656,7 @@
   },
   {
     "item_code":"4806514620057",
-    "description":"TAPDIN TAB 20MG",
+    "description":"TAPDIN (METHIMAZOLE) 20MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":263.0,
@@ -5701,7 +5701,7 @@
   },
   {
     "item_code":"4806514633576",
-    "description":"PANTOR TAB 40MG",
+    "description":"PANTOR 40MG (PANTOPRAZOLE SODIUM) TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":82.0,
@@ -5746,7 +5746,7 @@
   },
   {
     "item_code":"4806515270190",
-    "description":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
+    "description":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":6.0,
@@ -6046,7 +6046,7 @@
   },
   {
     "item_code":"4806517790375",
-    "description":"ANTAXID 40MG TAB",
+    "description":"ANTAXID (PANTAPRAZOLE) 40MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":311.0,
@@ -6166,7 +6166,7 @@
   },
   {
     "item_code":"4806517790504",
-    "description":"LUSTATIN 40MG (ROSUVASTATIN",
+    "description":"#EXP2025-03-30",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":10.0,
@@ -6601,7 +6601,7 @@
   },
   {
     "item_code":"4806518970615",
-    "description":"AMINOLOG FC TAB",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":1353.0,
@@ -6946,7 +6946,7 @@
   },
   {
     "item_code":"4806521160577",
-    "description":"TAMPLUS CAP 200MCG\/5MG",
+    "description":"TAMPLUS (TAMSULOSIN + FINASTERIDE) 200MCG\/5MG CAP",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":40.0,
@@ -6976,7 +6976,7 @@
   },
   {
     "item_code":"4806521160591",
-    "description":"FENOSTAT 10MG\/160MG TAB",
+    "description":"FENOSTAT (ATORVASTIN+FENOFIBRATE) 10MG\/160MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":600.0,
@@ -6991,7 +6991,7 @@
   },
   {
     "item_code":"4806521160782",
-    "description":"ATENURIX FCT 40MG",
+    "description":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":1756.0,
@@ -7021,7 +7021,7 @@
   },
   {
     "item_code":"4806521161109",
-    "description":"ROSUFEN 160\/10MG TAB",
+    "description":"ROSUFEN (FENOFIBRATE + ROSUVASTATIN CA) 160\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":77.0,
@@ -7066,7 +7066,7 @@
   },
   {
     "item_code":"4806521161192",
-    "description":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "description":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":409.0,
@@ -7156,7 +7156,7 @@
   },
   {
     "item_code":"4806521246004",
-    "description":"DYPOTIN 4000IU\/ML IV\/SC",
+    "description":"DYPOTIN (EPOETIN ALFA) 4000IU\/ML IV\/SC",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":41.0,
@@ -7546,7 +7546,7 @@
   },
   {
     "item_code":"4806524781854",
-    "description":"NEPHROMIN TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":4868.0,
@@ -7876,7 +7876,7 @@
   },
   {
     "item_code":"4806528271030",
-    "description":"DOXOKEM 400MG",
+    "description":"DOXOKEM (DOXOFYLLINE) 400MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":82.0,
@@ -7906,7 +7906,7 @@
   },
   {
     "item_code":"4806528271337",
-    "description":"ALCLAV NEO 625MG TAB",
+    "description":"ALCLAV NEO (CO-AMOXICLAV) 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1519.0,
@@ -7936,7 +7936,7 @@
   },
   {
     "item_code":"4806528380022",
-    "description":"ROSUSTAT 20 FC TAB",
+    "description":"ROSUSTAT 20 (ROSUVASTATIN CALCIUM) FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":60.0,
@@ -7951,7 +7951,7 @@
   },
   {
     "item_code":"4806528380046",
-    "description":"COXBITOR-200 CAP",
+    "description":"COXBITOR-200 (CELECOXIB) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":970.0,
@@ -8086,7 +8086,7 @@
   },
   {
     "item_code":"4806529710057",
-    "description":"GETZAR TAB 50MG 100&#039;",
+    "description":"GETZAR (LOSARTAN POTASSIUM) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":971.0,
@@ -8206,7 +8206,7 @@
   },
   {
     "item_code":"4806530840071",
-    "description":"Z-MYONAL TAB",
+    "description":"MYONAL TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":442.0,
@@ -8386,7 +8386,7 @@
   },
   {
     "item_code":"4806533602379",
-    "description":"RETASAR (LOSARTAN) 50MG TAB",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":11709.0,
@@ -8536,7 +8536,7 @@
   },
   {
     "item_code":"4807788067067",
-    "description":"HEMOSTAN 500MG CAP",
+    "description":"HEMOSTAN (TRANEXAMIC ACID) 500MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":538.0,
@@ -8551,7 +8551,7 @@
   },
   {
     "item_code":"4807788107947",
-    "description":"KASTAIR 10MG TAB",
+    "description":"KASTAIR (MONTELUKAST) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":98.0,
@@ -8641,7 +8641,7 @@
   },
   {
     "item_code":"4807788402172",
-    "description":"GLUBITOR OD 30MG TAB",
+    "description":"GLUBITOR OD 30MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":229.0,
@@ -8746,7 +8746,7 @@
   },
   {
     "item_code":"4807788406019",
-    "description":"DAZOMET TAB 500MG",
+    "description":"DAZOMET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":740.0,
@@ -8806,7 +8806,7 @@
   },
   {
     "item_code":"4807788410016",
-    "description":"ENERVON TAB 30",
+    "description":"ENERVON 30s TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":58.0,
@@ -9001,7 +9001,7 @@
   },
   {
     "item_code":"4807788414021",
-    "description":"PLOGREL 75MG TAB",
+    "description":"PLOGREL (CLOPIDOGREL) 75MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":640.0,
@@ -9031,7 +9031,7 @@
   },
   {
     "item_code":"4807788416520",
-    "description":"AMVASC BE TAB 10MG",
+    "description":"AMVASC BE (AMLODIPINE) TAB 10MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":77.0,
@@ -9046,7 +9046,7 @@
   },
   {
     "item_code":"4807788416537",
-    "description":"AMVASC BE TAB 5MG",
+    "description":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":2024.0,
@@ -9121,7 +9121,7 @@
   },
   {
     "item_code":"4807788520463",
-    "description":"HIMOX 500MG CAP",
+    "description":"HIMOX (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":1056.0,
@@ -9226,7 +9226,7 @@
   },
   {
     "item_code":"4807788523709",
-    "description":"RESTIME 40MG ORAL DROP 10ML",
+    "description":"RESTIME (SIMETICONE) 40MG 10ML ORAL DROP",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":23.0,
@@ -9391,7 +9391,7 @@
   },
   {
     "item_code":"4807788535702",
-    "description":"MOVELAX 3.3MG\/5ML 120ML (LACTULOSE",
+    "description":"MOVELAX 3.3MG\/5ML 120ML",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":50.0,
@@ -9466,7 +9466,7 @@
   },
   {
     "item_code":"4807788544650",
-    "description":"GLUMET 1G",
+    "description":"GLUMET (METFORMIN HCI) 1G",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":257.0,
@@ -9571,7 +9571,7 @@
   },
   {
     "item_code":"4807788552167",
-    "description":"FUNXION 75MG CAP",
+    "description":"FUNXION (PREGABALIN) 75MG CAP",
     "category":"NEUROLOGICAL DRUGS",
     "tab":"PRESCRIPTION",
     "total_qty":192.0,
@@ -9661,7 +9661,7 @@
   },
   {
     "item_code":"4807788554550",
-    "description":"TASCIT 10MEQ (POTASSIUM CITRATE",
+    "description":"TASCIT 10MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":144.0,
@@ -9691,7 +9691,7 @@
   },
   {
     "item_code":"4807788554697",
-    "description":"KLAZ (CLARITHROMYCIN) 125MG\/5ML SUS 35ML",
+    "description":"KLAZ (CLARITHROMYCIN) 125MG\/5ML 35ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":3.0,
@@ -9706,7 +9706,7 @@
   },
   {
     "item_code":"4807788554734",
-    "description":"FENOFLEX 160MG",
+    "description":"FENOFLEX (FENOFIBRATE) 160MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":662.0,
@@ -9751,7 +9751,7 @@
   },
   {
     "item_code":"4807788558657",
-    "description":"URINORM 40MG",
+    "description":"URINORM (FEBUXOSTAT) 40MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":642.0,
@@ -9856,7 +9856,7 @@
   },
   {
     "item_code":"4807788562043",
-    "description":"TASCIT 15MEQ (POTASSIUM CITRATE",
+    "description":"TASCIT 15MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "total_qty":253.0,
@@ -9871,7 +9871,7 @@
   },
   {
     "item_code":"4807788562432",
-    "description":"CARVID 6.25MG TAB",
+    "description":"CARVID (CARVEDILOL) 6.25MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":1369.0,
@@ -9931,7 +9931,7 @@
   },
   {
     "item_code":"4807788566409",
-    "description":"FLOTERA CHEWABLE TAB",
+    "description":"FLOTERA (LACTOBACILLUS REUTERI) CHEWABLE TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":527.0,
@@ -10381,7 +10381,7 @@
   },
   {
     "item_code":"60370143",
-    "description":"DOLSAPH 325\/37.5 MG TAB",
+    "description":"DOLSAPH (PARACETAMOL+TRAMADOL) 325\/37.5 MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":791.0,
@@ -10546,7 +10546,7 @@
   },
   {
     "item_code":"8002660027818",
-    "description":"CHOLIB 145MG\/20MG",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":174.0,
@@ -10561,7 +10561,7 @@
   },
   {
     "item_code":"8002660027825",
-    "description":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "description":"CHOLIB (FENOFIBRATE + SIMVASTANIN) 145MG\/40MG FCT",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":285.0,
@@ -10741,7 +10741,7 @@
   },
   {
     "item_code":"88087975567",
-    "description":"NEBULIZER KIT W\/. MASK PEDIA",
+    "description":"NEB KIT W\/. MASK PEDIA",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "total_qty":40.0,
@@ -10771,7 +10771,7 @@
   },
   {
     "item_code":"8850769011517",
-    "description":"Z-FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
+    "description":"FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_qty":324.0,
@@ -10831,7 +10831,7 @@
   },
   {
     "item_code":"8853935018983",
-    "description":"BISCORE 2.5 FC TAB",
+    "description":"BISCORE 2.5 (BISOPROPOL FUMARATE) 2.5MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":418.0,
@@ -10936,7 +10936,7 @@
   },
   {
     "item_code":"8901302187128",
-    "description":"DAJIO (DAPAGLIFLOZIN) 10MG TAB",
+    "description":"DAJIO (DAPAGLIFLOZIN) 10MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":373.0,
@@ -10996,7 +10996,7 @@
   },
   {
     "item_code":"8902269001182",
-    "description":"ZOCEF 500MG TAB",
+    "description":"ZOCEF (CEFUROXIME) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":600.0,
@@ -11311,7 +11311,7 @@
   },
   {
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":2131.0,
@@ -11836,7 +11836,7 @@
   },
   {
     "item_code":"8906045886284",
-    "description":"PANTO PLUS 40MG\/30MG TAB",
+    "description":"PANTO PLUS (PANTOPRAZOLE + DOMPERIDONE) 40MG\/30MG TAB 30&#039;S",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "total_qty":289.0,
@@ -12121,7 +12121,7 @@
   },
   {
     "item_code":"8964001206064",
-    "description":"CLARIGET GRANULES 125MG\/5ML 50ML",
+    "description":"CLARIGET 125ML\/5ML GRANULES SUSP 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":7.0,
@@ -12151,7 +12151,7 @@
   },
   {
     "item_code":"8964001206101",
-    "description":"CLARIGET TAB 500MG",
+    "description":"CLARIGET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":133.0,
@@ -12226,7 +12226,7 @@
   },
   {
     "item_code":"8964001206170",
-    "description":"INSUGET 70\/30 INJECTION VIAL -VEX",
+    "description":"INSUGET 70\/30 INJECTION VIAL",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":8.0,
@@ -12256,7 +12256,7 @@
   },
   {
     "item_code":"8964001206224",
-    "description":"LEVOCIN TAB 500MG",
+    "description":"LEVOCIN (LEVOFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_qty":75.0,
@@ -12316,7 +12316,7 @@
   },
   {
     "item_code":"8964001206293",
-    "description":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
+    "description":"MONTIGET TAB 10MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":419.0,
@@ -12331,7 +12331,7 @@
   },
   {
     "item_code":"8964001206309",
-    "description":"MONTIGET TAB 4MG",
+    "description":"MONTIGET 4MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":442.0,
@@ -12346,7 +12346,7 @@
   },
   {
     "item_code":"8964001206316",
-    "description":"MONTIGET TAB 5MG",
+    "description":"MONTIGET 5MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "total_qty":253.0,
@@ -12376,7 +12376,7 @@
   },
   {
     "item_code":"8964001206330",
-    "description":"NEBILET TAB 5MG",
+    "description":"NEBIL 5MG (NEBIVOLOL) TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":577.0,
@@ -12511,7 +12511,7 @@
   },
   {
     "item_code":"8964001206439",
-    "description":"ROVISTA TAB 20MG",
+    "description":"ROVISTA (ROSUVASTATIN)20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":731.0,
@@ -12541,7 +12541,7 @@
   },
   {
     "item_code":"8964001206460",
-    "description":"SIMVOGET TAB 20MG 10&#039;",
+    "description":"SIMVOGET (SIMVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "total_qty":175.0,

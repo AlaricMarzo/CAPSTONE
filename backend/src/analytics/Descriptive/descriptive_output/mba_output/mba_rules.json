@@ -1,6 +1,6 @@
 [
   {
-    "item_a":"LAMPEIN JUMBO PACK L 54s",
+    "item_a":"LAMPEIN JUMBO PACK L 54S",
     "item_b":"LAMPEIN JUMBO PACK XL 48s",
     "pair_tx":17,
     "support":0.0006727078,
@@ -36,19 +36,19 @@
   {
     "item_a":"PARTNERS BLOOD GLUCOMETER CBPC-73",
     "item_b":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
-    "pair_tx":26,
-    "support":0.0010288473,
-    "lift":319.2643343052,
-    "confidence_a_to_b":0.619047619,
-    "confidence_b_to_a":0.5306122449,
+    "pair_tx":25,
+    "support":0.0009892762,
+    "lift":306.9849368319,
+    "confidence_a_to_b":0.5952380952,
+    "confidence_b_to_a":0.5102040816,
     "category_a":"ELECTRONIC MEDICAL DEVICES",
     "tab_a":"MED-SURG",
     "category_b":"ASSISTIVE DEVICE",
     "tab_b":"MED-SURG",
     "support_pct":0.1,
-    "confidence_ab_pct":61.9,
-    "confidence_ba_pct":53.06,
-    "either_confidence_max":0.619047619
+    "confidence_ab_pct":59.52,
+    "confidence_ba_pct":51.02,
+    "either_confidence_max":0.5952380952
   },
   {
     "item_a":"INSULINE SYRINGE (BD ULTRA FINE) G30 0.5ML",
@@ -137,7 +137,7 @@
   },
   {
     "item_a":"AK LOG TAB",
-    "item_b":"AMVASC BE TAB 5MG",
+    "item_b":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "pair_tx":38,
     "support":0.0015036999,
     "lift":90.9373106061,
@@ -255,23 +255,6 @@
     "either_confidence_max":0.4107142857
   },
   {
-    "item_a":"GAUZE PAD 4X4 TRUCARE",
-    "item_b":"MICROPORE 1 INCH",
-    "pair_tx":17,
-    "support":0.0006727078,
-    "lift":53.3540735221,
-    "confidence_a_to_b":0.2786885246,
-    "confidence_b_to_a":0.1287878788,
-    "category_a":"WOUND CARE",
-    "tab_a":"MED-SURG",
-    "category_b":"DISPOSABLES",
-    "tab_b":"MED-SURG",
-    "support_pct":0.07,
-    "confidence_ab_pct":27.87,
-    "confidence_ba_pct":12.88,
-    "either_confidence_max":0.2786885246
-  },
-  {
     "item_a":"CALIPTROL (ATORVASTATIN) 40MG",
     "item_b":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
     "pair_tx":39,
@@ -287,23 +270,6 @@
     "confidence_ab_pct":18.48,
     "confidence_ba_pct":41.49,
     "either_confidence_max":0.414893617
-  },
-  {
-    "item_a":"CALIPTROL (ATORVASTATIN) 40MG",
-    "item_b":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
-    "pair_tx":23,
-    "support":0.0009101341,
-    "lift":49.1903351388,
-    "confidence_a_to_b":0.1090047393,
-    "confidence_b_to_a":0.4107142857,
-    "category_a":"CARDIOVASCULAR",
-    "tab_a":"PRESCRIPTION",
-    "category_b":"PAIN MANAGEMENT",
-    "tab_b":"PRESCRIPTION",
-    "support_pct":0.09,
-    "confidence_ab_pct":10.9,
-    "confidence_ba_pct":41.07,
-    "either_confidence_max":0.4107142857
   },
   {
     "item_a":"CARESS ADULT DIAPER L10+1",
@@ -323,8 +289,42 @@
     "either_confidence_max":0.2063492063
   },
   {
+    "item_a":"GAUZE PAD 4X4 TRUCARE",
+    "item_b":"MICROPORE 1 INCH",
+    "pair_tx":15,
+    "support":0.0005935657,
+    "lift":47.077123696,
+    "confidence_a_to_b":0.2459016393,
+    "confidence_b_to_a":0.1136363636,
+    "category_a":"WOUND CARE",
+    "tab_a":"MED-SURG",
+    "category_b":"DISPOSABLES",
+    "tab_b":"MED-SURG",
+    "support_pct":0.06,
+    "confidence_ab_pct":24.59,
+    "confidence_ba_pct":11.36,
+    "either_confidence_max":0.2459016393
+  },
+  {
+    "item_a":"CALIPTROL (ATORVASTATIN) 40MG",
+    "item_b":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
+    "pair_tx":22,
+    "support":0.0008705631,
+    "lift":47.0516249154,
+    "confidence_a_to_b":0.1042654028,
+    "confidence_b_to_a":0.3928571429,
+    "category_a":"CARDIOVASCULAR",
+    "tab_a":"PRESCRIPTION",
+    "category_b":"PAIN MANAGEMENT",
+    "tab_b":"PRESCRIPTION",
+    "support_pct":0.09,
+    "confidence_ab_pct":10.43,
+    "confidence_ba_pct":39.29,
+    "either_confidence_max":0.3928571429
+  },
+  {
     "item_a":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "item_b":"ISOPTIN TAB 40MG",
+    "item_b":"ISOPTIN (VERAPAMIL) 40MG TAB",
     "pair_tx":18,
     "support":0.0007122789,
     "lift":46.0030339806,
@@ -358,7 +358,7 @@
   },
   {
     "item_a":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
-    "item_b":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "item_b":"NATRAVOX 457MG\/5ML 35ML",
     "pair_tx":18,
     "support":0.0007122789,
     "lift":44.3350877193,
@@ -392,7 +392,7 @@
   },
   {
     "item_a":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "item_b":"KARVIDOL 25MG TAB",
+    "item_b":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "pair_tx":27,
     "support":0.0010684183,
     "lift":41.9784053156,
@@ -426,7 +426,7 @@
   },
   {
     "item_a":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "item_b":"KARVIDOL 25MG TAB",
+    "item_b":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "pair_tx":15,
     "support":0.0005935657,
     "lift":32.0048125633,
@@ -442,7 +442,7 @@
     "either_confidence_max":0.1595744681
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"B-PLEX (VIT B1+B6+B12) CAP",
     "pair_tx":26,
     "support":0.0010288473,
@@ -461,19 +461,19 @@
   {
     "item_a":"CARVIDA (CARVEDILOL) 6.25MG TAB",
     "item_b":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "pair_tx":29,
-    "support":0.0011475604,
-    "lift":29.8955290854,
-    "confidence_a_to_b":0.140776699,
-    "confidence_b_to_a":0.243697479,
+    "pair_tx":27,
+    "support":0.0010684183,
+    "lift":30.6686893204,
+    "confidence_a_to_b":0.1310679612,
+    "confidence_b_to_a":0.25,
     "category_a":"CARDIOVASCULAR",
     "tab_a":"GENERICS",
     "category_b":"CARDIOVASCULAR",
     "tab_b":"GENERICS",
     "support_pct":0.11,
-    "confidence_ab_pct":14.08,
-    "confidence_ba_pct":24.37,
-    "either_confidence_max":0.243697479
+    "confidence_ab_pct":13.11,
+    "confidence_ba_pct":25.0,
+    "either_confidence_max":0.25
   },
   {
     "item_a":"B-PLEX (VIT B1+B6+B12) CAP",
@@ -510,7 +510,7 @@
     "either_confidence_max":0.2446808511
   },
   {
-    "item_a":"AMVASC BE TAB 5MG",
+    "item_a":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "item_b":"EUTHYROX TAB 50MCG",
     "pair_tx":18,
     "support":0.0007122789,
@@ -561,8 +561,8 @@
     "either_confidence_max":0.2248062016
   },
   {
-    "item_a":"AMVASC BE TAB 5MG",
-    "item_b":"ATENURIX FCT 40MG",
+    "item_a":"AMVASC BE (AMLODIPINE) 5MG TAB",
+    "item_b":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "pair_tx":47,
     "support":0.0018598393,
     "lift":24.1018060065,
@@ -595,7 +595,7 @@
     "either_confidence_max":0.1129032258
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"DIABEE (VITAMIN B COMPLEX) CAP",
     "pair_tx":28,
     "support":0.0011079894,
@@ -613,7 +613,7 @@
   },
   {
     "item_a":"B-PLEX (VIT B1+B6+B12) CAP",
-    "item_b":"NEBILET TAB 5MG",
+    "item_b":"NEBIL 5MG (NEBIVOLOL) TAB",
     "pair_tx":17,
     "support":0.0006727078,
     "lift":22.1675438596,
@@ -629,7 +629,7 @@
     "either_confidence_max":0.2236842105
   },
   {
-    "item_a":"FEMME PAPER TOWEL 1PLY",
+    "item_a":"FEMME INTERFOLDED PAPER TOWEL 1PLY",
     "item_b":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
     "pair_tx":19,
     "support":0.0007518499,
@@ -681,7 +681,7 @@
   },
   {
     "item_a":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "item_b":"KARVIDOL 25MG TAB",
+    "item_b":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "pair_tx":24,
     "support":0.0009497052,
     "lift":21.2049507027,
@@ -731,7 +731,7 @@
     "either_confidence_max":0.1550387597
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"AURORA (ROSUVASTATIN) 20MG FC TAB",
     "pair_tx":14,
     "support":0.0005539947,
@@ -749,7 +749,7 @@
   },
   {
     "item_a":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "item_b":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "item_b":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "pair_tx":15,
     "support":0.0005935657,
     "lift":19.5032414077,
@@ -800,7 +800,7 @@
   },
   {
     "item_a":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "item_b":"BACTIV 457MG\/5ML 70ML",
+    "item_b":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "pair_tx":47,
     "support":0.0018598393,
     "lift":17.6159379449,
@@ -817,7 +817,7 @@
   },
   {
     "item_a":"CALIPTROL (ATORVASTATIN) 40MG",
-    "item_b":"KARVIDOL 25MG TAB",
+    "item_b":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "pair_tx":18,
     "support":0.0007122789,
     "lift":17.1096817874,
@@ -833,7 +833,7 @@
     "either_confidence_max":0.1428571429
   },
   {
-    "item_a":"KARVIDOL 25MG TAB",
+    "item_a":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "item_b":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
     "pair_tx":16,
     "support":0.0006331368,
@@ -867,7 +867,7 @@
     "either_confidence_max":0.1327014218
   },
   {
-    "item_a":"RETASAR (LOSARTAN) 50MG TAB",
+    "item_a":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "item_b":"RETAVASC (AMLODIPINE) 10MG TAB",
     "pair_tx":17,
     "support":0.0006727078,
@@ -884,8 +884,8 @@
     "either_confidence_max":0.1440677966
   },
   {
-    "item_a":"NEBILET TAB 5MG",
-    "item_b":"NEPHROMIN TAB",
+    "item_a":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "item_b":"NEPHORMIN TAB",
     "pair_tx":18,
     "support":0.0007122789,
     "lift":13.4122954445,
@@ -918,7 +918,7 @@
     "either_confidence_max":0.1117021277
   },
   {
-    "item_a":"KARVIDOL 25MG TAB",
+    "item_a":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "item_b":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
     "pair_tx":22,
     "support":0.0008705631,
@@ -969,8 +969,8 @@
     "either_confidence_max":0.1202185792
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
-    "item_b":"NEBILET TAB 5MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "item_b":"NEBIL 5MG (NEBIVOLOL) TAB",
     "pair_tx":34,
     "support":0.0013454157,
     "lift":12.0338095238,
@@ -986,7 +986,7 @@
     "either_confidence_max":0.1333333333
   },
   {
-    "item_a":"NEBILET TAB 5MG",
+    "item_a":"NEBIL 5MG (NEBIVOLOL) TAB",
     "item_b":"REVICON FORTE TAB",
     "pair_tx":24,
     "support":0.0009497052,
@@ -1105,7 +1105,7 @@
     "either_confidence_max":0.2236842105
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"REVICON FORTE TAB",
     "pair_tx":24,
     "support":0.0009497052,
@@ -1122,8 +1122,8 @@
     "either_confidence_max":0.1212121212
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
-    "item_b":"NEPHROMIN TAB",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "item_b":"NEPHORMIN TAB",
     "pair_tx":16,
     "support":0.0006331368,
     "lift":10.8575725027,
@@ -1139,8 +1139,8 @@
     "either_confidence_max":0.1203007519
   },
   {
-    "item_a":"BACTIV 457MG\/5ML 70ML",
-    "item_b":"BREZU SYR 5MCG\/ML 60ML..",
+    "item_a":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "item_b":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "pair_tx":32,
     "support":0.0012662736,
     "lift":10.7444727891,
@@ -1157,7 +1157,7 @@
   },
   {
     "item_a":"APPEVIT 120ML SYR",
-    "item_b":"BACTIV 457MG\/5ML 70ML",
+    "item_b":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "pair_tx":24,
     "support":0.0009497052,
     "lift":10.6703729768,
@@ -1190,7 +1190,7 @@
     "either_confidence_max":0.0782122905
   },
   {
-    "item_a":"NEBILET TAB 5MG",
+    "item_a":"NEBIL 5MG (NEBIVOLOL) TAB",
     "item_b":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
     "pair_tx":18,
     "support":0.0007122789,
@@ -1208,7 +1208,7 @@
   },
   {
     "item_a":"FORXIGA 10MG",
-    "item_b":"KARVIDOL 25MG TAB",
+    "item_b":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "pair_tx":24,
     "support":0.0009497052,
     "lift":9.4941298018,
@@ -1241,21 +1241,21 @@
     "either_confidence_max":0.1808510638
   },
   {
-    "item_a":"ALAXAN FR CAP",
+    "item_a":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
     "item_b":"BIOFLU TAB",
-    "pair_tx":40,
-    "support":0.001582842,
-    "lift":8.3942866633,
-    "confidence_a_to_b":0.1481481481,
-    "confidence_b_to_a":0.0896860987,
+    "pair_tx":34,
+    "support":0.0013454157,
+    "lift":8.4867347544,
+    "confidence_a_to_b":0.1497797357,
+    "confidence_b_to_a":0.0762331839,
     "category_a":"PAIN MANAGEMENT",
     "tab_a":"OTC",
     "category_b":"PAIN MANAGEMENT",
     "tab_b":"OTC",
-    "support_pct":0.16,
-    "confidence_ab_pct":14.81,
-    "confidence_ba_pct":8.97,
-    "either_confidence_max":0.1481481481
+    "support_pct":0.13,
+    "confidence_ab_pct":14.98,
+    "confidence_ba_pct":7.62,
+    "either_confidence_max":0.1497797357
   },
   {
     "item_a":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
@@ -1275,7 +1275,7 @@
     "either_confidence_max":0.1585903084
   },
   {
-    "item_a":"BACTIV 457MG\/5ML 70ML",
+    "item_a":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "item_b":"MEPTIN SYR 60ML",
     "pair_tx":13,
     "support":0.0005144236,
@@ -1309,7 +1309,7 @@
     "either_confidence_max":0.1196013289
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
     "pair_tx":14,
     "support":0.0005539947,
@@ -1343,7 +1343,7 @@
     "either_confidence_max":0.0925110132
   },
   {
-    "item_a":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "item_a":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "item_b":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "pair_tx":15,
     "support":0.0005935657,
@@ -1378,7 +1378,7 @@
   },
   {
     "item_a":"FORXIGA 10MG",
-    "item_b":"NEBILET TAB 5MG",
+    "item_b":"NEBIL 5MG (NEBIVOLOL) TAB",
     "pair_tx":30,
     "support":0.0011871315,
     "lift":5.8640213482,
@@ -1428,7 +1428,7 @@
     "either_confidence_max":0.0696517413
   },
   {
-    "item_a":"BACTIV 457MG\/5ML 70ML",
+    "item_a":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "item_b":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "pair_tx":43,
     "support":0.0017015551,
@@ -1445,7 +1445,7 @@
     "either_confidence_max":0.1096938776
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"FORXIGA 10MG",
     "pair_tx":31,
     "support":0.0012267025,
@@ -1531,7 +1531,7 @@
   },
   {
     "item_a":"MX3 COFFEE MIX 10G",
-    "item_b":"NEBILET TAB 5MG",
+    "item_b":"NEBIL 5MG (NEBIVOLOL) TAB",
     "pair_tx":13,
     "support":0.0005144236,
     "lift":4.1964999681,
@@ -1547,7 +1547,7 @@
     "either_confidence_max":0.0509803922
   },
   {
-    "item_a":"ATENURIX FCT 40MG",
+    "item_a":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "item_b":"MX3 COFFEE MIX 10G",
     "pair_tx":13,
     "support":0.0005144236,
@@ -1565,7 +1565,7 @@
   },
   {
     "item_a":"BIOFLU TAB",
-    "item_b":"NEOZEP FORTE TAB",
+    "item_b":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "pair_tx":16,
     "support":0.0006331368,
     "lift":3.6852965839,
@@ -1582,7 +1582,7 @@
   },
   {
     "item_a":"BIOGESIC 500MG TAB",
-    "item_b":"NEOZEP FORTE TAB",
+    "item_b":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "pair_tx":33,
     "support":0.0013058446,
     "lift":3.6530303827,
@@ -1615,21 +1615,21 @@
     "either_confidence_max":0.130044843
   },
   {
-    "item_a":"ALAXAN FR CAP",
+    "item_a":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
     "item_b":"BIOGESIC 500MG TAB",
-    "pair_tx":33,
-    "support":0.0013058446,
-    "lift":3.3283165709,
-    "confidence_a_to_b":0.1222222222,
-    "confidence_b_to_a":0.0355603448,
+    "pair_tx":27,
+    "support":0.0010684183,
+    "lift":3.2390105195,
+    "confidence_a_to_b":0.1189427313,
+    "confidence_b_to_a":0.0290948276,
     "category_a":"PAIN MANAGEMENT",
     "tab_a":"OTC",
     "category_b":"PAIN MANAGEMENT",
     "tab_b":"OTC",
-    "support_pct":0.13,
-    "confidence_ab_pct":12.22,
-    "confidence_ba_pct":3.56,
-    "either_confidence_max":0.1222222222
+    "support_pct":0.11,
+    "confidence_ab_pct":11.89,
+    "confidence_ba_pct":2.91,
+    "either_confidence_max":0.1189427313
   },
   {
     "item_a":"FORXIGA 10MG",

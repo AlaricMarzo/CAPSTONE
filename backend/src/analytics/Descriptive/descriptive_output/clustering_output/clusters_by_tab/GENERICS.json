@@ -466,7 +466,7 @@
   },
   {
     "item_code":"1900010093",
-    "description":"Z-HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
+    "description":"HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":291.0,
@@ -976,7 +976,7 @@
   },
   {
     "item_code":"4800136390084",
-    "description":"DULCOLAX TAB",
+    "description":"DULCOLAX 5MG TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "total_qty":458.0,
@@ -1006,7 +1006,7 @@
   },
   {
     "item_code":"4800204031512",
-    "description":"PROPAN W\/IRON CAP",
+    "description":"PROPAN W\/. IRON (BUCLIZINE HCL + MULTIVITAMINS + MINERALS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":667.0,
@@ -1051,7 +1051,7 @@
   },
   {
     "item_code":"4800289822821",
-    "description":"NEOFORM 500MG TAB",
+    "description":"NEOFORM (METFORMIN HCL) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"GENERICS",
     "total_qty":271.0,
@@ -1246,7 +1246,7 @@
   },
   {
     "item_code":"4800304051489",
-    "description":"ISORDIL ORAL TAB 10MG",
+    "description":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":33.0,
@@ -1501,7 +1501,7 @@
   },
   {
     "item_code":"4800435122157",
-    "description":"CEPHORAL 500MG CAP (CEFALEXIN",
+    "description":"CEPHORAL (CEFALEXIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "total_qty":62.0,
@@ -1786,7 +1786,7 @@
   },
   {
     "item_code":"4806037100579",
-    "description":"SPIROPHIL(SPIRONOLACTONE 25MG TAB 100&#039;s",
+    "description":"SPIROPHIL 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":200.0,
@@ -1816,7 +1816,7 @@
   },
   {
     "item_code":"4806037101361",
-    "description":"EMICOX (CELECOXIB) 400MG TAB 100&#039;S",
+    "description":"EMICOX (CELECOXIB) 400MG TAB 100",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":143.0,
@@ -1861,7 +1861,7 @@
   },
   {
     "item_code":"4806501130026",
-    "description":"MUCOBRON EXPECTORANT 60ML SYR",
+    "description":"MUCOBRON (GUAIFENESIN+SODIUM CITRATE) EXPECTORANT 60ML SYR",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":2.0,
@@ -2266,7 +2266,7 @@
   },
   {
     "item_code":"4806505140724",
-    "description":"KARVIDOL 25MG TAB",
+    "description":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":509.0,
@@ -2311,7 +2311,7 @@
   },
   {
     "item_code":"4806505140854",
-    "description":"ZIMVAST 40MG TAB",
+    "description":"ZIMVAST (SIMVASTATIN) 40MG TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "total_qty":25.0,
@@ -2536,7 +2536,7 @@
   },
   {
     "item_code":"4806508830318",
-    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
+    "description":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":109.0,
@@ -2806,7 +2806,7 @@
   },
   {
     "item_code":"4806518970233",
-    "description":"ESPAZOL 40MG EC TAB",
+    "description":"ESPAZOL (ESOMEPRAZOLE) 40MG EC TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "total_qty":30.0,
@@ -2866,7 +2866,7 @@
   },
   {
     "item_code":"4806519380079",
-    "description":"ANALMIN 500MG CAP",
+    "description":"ANALMIN (MEFENAMIC ACID) 500MG CAP",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":499.0,
@@ -3136,7 +3136,7 @@
   },
   {
     "item_code":"4806520352621",
-    "description":"CLODIN(CLONIDINE) 75MCG TAB",
+    "description":"CLODIN (CLONIDINE) 75MCG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":416.0,
@@ -4036,7 +4036,7 @@
   },
   {
     "item_code":"4806524146776",
-    "description":"LOSAAR 100MG TAB",
+    "description":"LOSAAR (LOSARTAN) 100MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":620.0,
@@ -4186,7 +4186,7 @@
   },
   {
     "item_code":"4806524149074",
-    "description":"FREDTOR 10MG TAB",
+    "description":"FREDTOR (ATORVASTATIN) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":740.0,
@@ -4531,7 +4531,7 @@
   },
   {
     "item_code":"4806527190431",
-    "description":"TEMPAID 125MG\/5ML 60ML SYR",
+    "description":"TEMPAID (PARACETAMOL) 125MG\/5ML 60ML SYR",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "total_qty":5.0,
@@ -4546,7 +4546,7 @@
   },
   {
     "item_code":"4806527190547",
-    "description":"XENILPEX (SALBUTAMOL+GUAIFENESIN) 1MG\/50MG\/5ML 60ML",
+    "description":"VENTOBROX SYR 60ML",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":18.0,
@@ -4741,7 +4741,7 @@
   },
   {
     "item_code":"4806527194125",
-    "description":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "description":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":866.0,
@@ -5176,7 +5176,7 @@
   },
   {
     "item_code":"4806532560229",
-    "description":"FOLIDYN 5MG CAP",
+    "description":"FOLIDYN (FOLIC ACID) 5MG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":620.0,
@@ -5356,7 +5356,7 @@
   },
   {
     "item_code":"4806533601525",
-    "description":"SILDIAZ 10MG\/G 1% 20G",
+    "description":"SILDIAZ (SILVER SULFADIAZINE) 10MG\/G 1% 20G",
     "category":"DERMATOLOGICALS",
     "tab":"GENERICS",
     "total_qty":55.0,
@@ -5671,7 +5671,7 @@
   },
   {
     "item_code":"4807788549150",
-    "description":"ENERVON ACTIV CAP",
+    "description":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":19.0,
@@ -5761,7 +5761,7 @@
   },
   {
     "item_code":"4807788580931",
-    "description":"Z-ALGINA SUS",
+    "description":"ALGINA SUS",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":1346.0,
@@ -5806,7 +5806,7 @@
   },
   {
     "item_code":"4807788734983",
-    "description":"ENERVON ACTIV CAP 4+1 SET",
+    "description":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP 4+1 SET",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":3.0,
@@ -5866,7 +5866,7 @@
   },
   {
     "item_code":"4809014206110",
-    "description":"OMX PROBIOTIC CAP",
+    "description":"OMX (PROBIOTICS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":459.0,
@@ -6031,7 +6031,7 @@
   },
   {
     "item_code":"4809015705421",
-    "description":"TRAPADIX 325MG\/37.5MG TAB",
+    "description":"TRAPADIX (PARACETAMOL+TRAMADOL) 325MG\/37.5MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS",
     "total_qty":159.0,
@@ -6121,7 +6121,7 @@
   },
   {
     "item_code":"59646549",
-    "description":"SAPHORBIDE 30MG PR TAB",
+    "description":"SAPHORBIDE (ISOSORBIDE MONONITRATE) 30MG PR TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":611.0,
@@ -6271,7 +6271,7 @@
   },
   {
     "item_code":"69883958",
-    "description":"FOLISAPH 5MG CAP",
+    "description":"FOLISAPH (FOLIC ACID) 5MG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "total_qty":142.0,
@@ -6391,7 +6391,7 @@
   },
   {
     "item_code":"8002660031594",
-    "description":"ISOPTIN TAB 40MG",
+    "description":"ISOPTIN (VERAPAMIL) 40MG TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "total_qty":253.0,
@@ -6421,7 +6421,7 @@
   },
   {
     "item_code":"83770586",
-    "description":"FENOSAPH-200 CAP",
+    "description":"FENOSAPH-200 (FENOFIBRATE) 200MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":50.0,
@@ -6586,7 +6586,7 @@
   },
   {
     "item_code":"8901530004310",
-    "description":"LORIN 10MG TAB",
+    "description":"LORIN 10MG (LORATADINE) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":66.0,
@@ -6646,7 +6646,7 @@
   },
   {
     "item_code":"8902319019235",
-    "description":"INFEN-25 25MG TAB",
+    "description":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "total_qty":124.0,
@@ -6961,7 +6961,7 @@
   },
   {
     "item_code":"8904182011354",
-    "description":"LOPERAMED (LOPERAMIDE) 2MG CAP 100&#039;S",
+    "description":"LOPERAMED (LOPERAMIDE) 2MG CAP",
     "category":"GIT",
     "tab":"GENERICS",
     "total_qty":5.0,
@@ -7141,7 +7141,7 @@
   },
   {
     "item_code":"8906002050963",
-    "description":"QUANIL (CITICOLINE) 500MG TAB 30&#039;S",
+    "description":"QUANIL (CITICOLINE) 500MG TAB 30",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "total_qty":242.0,

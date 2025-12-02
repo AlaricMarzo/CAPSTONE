@@ -106,7 +106,7 @@
   },
   {
     "item_code":"4800234406472",
-    "description":"XIGDUO XR 10\/500MG",
+    "description":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN)10\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":182.0,
@@ -121,7 +121,7 @@
   },
   {
     "item_code":"4800234406489",
-    "description":"XIGDUO XR 10\/1000MG TABLET",
+    "description":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN) 10\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":1144.0,
@@ -151,7 +151,7 @@
   },
   {
     "item_code":"4800289821510",
-    "description":"Z-NEOFORM 500MG TAB",
+    "description":"NEOFORM 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":1077.0,
@@ -166,7 +166,7 @@
   },
   {
     "item_code":"4800289822395",
-    "description":"ZEMIGLO 50MG FCT",
+    "description":"ZEMIGLO (GEMIGLIPTIN) 50MG FCT",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":122.0,
@@ -181,7 +181,7 @@
   },
   {
     "item_code":"4800289822821",
-    "description":"NEOFORM 500MG TAB",
+    "description":"NEOFORM (METFORMIN HCL) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"GENERICS",
     "total_qty":271.0,
@@ -376,7 +376,7 @@
   },
   {
     "item_code":"4800348620511",
-    "description":"I-MAX 500MG TAB",
+    "description":"I-MAX (METFORMIN) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":268.0,
@@ -466,7 +466,7 @@
   },
   {
     "item_code":"4800489426577",
-    "description":"JANUMET 50\/1000MG TAB",
+    "description":"JANUMET (SITAGLIPTIN + METFORMIN) 50\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":109.0,
@@ -826,7 +826,7 @@
   },
   {
     "item_code":"4807788402172",
-    "description":"GLUBITOR OD 30MG TAB",
+    "description":"GLUBITOR OD 30MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":229.0,
@@ -871,7 +871,7 @@
   },
   {
     "item_code":"4807788544650",
-    "description":"GLUMET 1G",
+    "description":"GLUMET (METFORMIN HCI) 1G",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":257.0,
@@ -976,7 +976,7 @@
   },
   {
     "item_code":"8901302187128",
-    "description":"DAJIO (DAPAGLIFLOZIN) 10MG TAB",
+    "description":"DAJIO (DAPAGLIFLOZIN) 10MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":373.0,
@@ -1021,7 +1021,7 @@
   },
   {
     "item_code":"8904184004972",
-    "description":"PERGLIM M-2 2MG\/500MG TAB",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":2131.0,
@@ -1066,7 +1066,7 @@
   },
   {
     "item_code":"8964001206170",
-    "description":"INSUGET 70\/30 INJECTION VIAL -VEX",
+    "description":"INSUGET 70\/30 INJECTION VIAL",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_qty":8.0,

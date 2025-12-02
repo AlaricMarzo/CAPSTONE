@@ -42,7 +42,7 @@
     "support_pct":1.67
   },
   {
-    "item":"BACTIV 457MG\/5ML 70ML",
+    "item":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":392,
@@ -91,7 +91,7 @@
     "support_pct":1.12
   },
   {
-    "item":"ATENURIX FCT 40MG",
+    "item":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":280,
@@ -112,14 +112,7 @@
     "support_pct":1.07
   },
   {
-    "item":"ALAXAN FR CAP",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "item_tx":270,
-    "support_pct":1.07
-  },
-  {
-    "item":"NEBILET TAB 5MG",
+    "item":"NEBIL 5MG (NEBIVOLOL) TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":255,
@@ -133,14 +126,14 @@
     "support_pct":1.01
   },
   {
-    "item":"RETASAR (LOSARTAN) 50MG TAB",
+    "item":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":253,
     "support_pct":1.0
   },
   {
-    "item":"NEOZEP FORTE TAB",
+    "item":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":246,
@@ -173,6 +166,13 @@
     "tab":"OTC",
     "item_tx":233,
     "support_pct":0.92
+  },
+  {
+    "item":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "item_tx":227,
+    "support_pct":0.9
   },
   {
     "item":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
@@ -238,7 +238,7 @@
     "support_pct":0.78
   },
   {
-    "item":"BREZU SYR 5MCG\/ML 60ML..",
+    "item":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":192,
@@ -266,7 +266,7 @@
     "support_pct":0.74
   },
   {
-    "item":"PLOGREL 75MG TAB",
+    "item":"PLOGREL (CLOPIDOGREL) 75MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":183,
@@ -329,14 +329,14 @@
     "support_pct":0.7
   },
   {
-    "item":"AMVASC BE TAB 5MG",
+    "item":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":176,
     "support_pct":0.7
   },
   {
-    "item":"STRESTABS (MULTIVITAMINS + IRON) TAB",
+    "item":"STRESSTABS WIRON TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":175,
@@ -357,7 +357,7 @@
     "support_pct":0.68
   },
   {
-    "item":"FEMME PAPER TOWEL 1PLY",
+    "item":"FEMME INTERFOLDED PAPER TOWEL 1PLY",
     "category":"COTTONS AND HYGIENE",
     "tab":"PERSONAL CARE",
     "item_tx":172,
@@ -385,7 +385,7 @@
     "support_pct":0.65
   },
   {
-    "item":"ROVISTA TAB 20MG",
+    "item":"ROVISTA (ROSUVASTATIN)20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":163,
@@ -396,6 +396,13 @@
     "category":"BEVERAGES",
     "tab":"F&B",
     "item_tx":162,
+    "support_pct":0.64
+  },
+  {
+    "item":"ADVIL LIQUIGEL (IBUPROFEN) CAP",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "item_tx":161,
     "support_pct":0.64
   },
   {
@@ -483,6 +490,13 @@
     "support_pct":0.59
   },
   {
+    "item":"MYONAL TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
+    "item_tx":146,
+    "support_pct":0.58
+  },
+  {
     "item":"APPEVIT 120ML SYR",
     "category":"VITAMINS",
     "tab":"OTC",
@@ -560,13 +574,6 @@
     "support_pct":0.54
   },
   {
-    "item":"ADVIL LIQUIGEL CAP",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "item_tx":136,
-    "support_pct":0.54
-  },
-  {
     "item":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
@@ -574,16 +581,16 @@
     "support_pct":0.53
   },
   {
-    "item":"NEPHROMIN TAB",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
+    "item":"ALGINA SUS",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
     "item_tx":133,
     "support_pct":0.53
   },
   {
-    "item":"Z-ALGINA SUS",
-    "category":"VITAMINS",
-    "tab":"GENERICS",
+    "item":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
     "item_tx":133,
     "support_pct":0.53
   },
@@ -651,7 +658,7 @@
     "support_pct":0.5
   },
   {
-    "item":"KARVIDOL 25MG TAB",
+    "item":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":126,
@@ -700,13 +707,6 @@
     "support_pct":0.47
   },
   {
-    "item":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "item_tx":119,
-    "support_pct":0.47
-  },
-  {
     "item":"GREENCROSS 70% W\/ MOIST 500ML",
     "category":"DISINFECTANT",
     "tab":"PERSONAL CARE",
@@ -731,13 +731,6 @@
     "item":"GREENCROSS 70% W\/ MOIST 60ML",
     "category":"DISINFECTANT",
     "tab":"PERSONAL CARE",
-    "item_tx":116,
-    "support_pct":0.46
-  },
-  {
-    "item":"MYONAL TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION",
     "item_tx":116,
     "support_pct":0.46
   },
@@ -791,7 +784,7 @@
     "support_pct":0.45
   },
   {
-    "item":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "item":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":113,
@@ -829,6 +822,13 @@
     "item":"CARESS ADULT DIAPER M10+1",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
+    "item_tx":108,
+    "support_pct":0.43
+  },
+  {
+    "item":"FUSEDEX (FUROSEMIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
     "item_tx":108,
     "support_pct":0.43
   },
@@ -910,7 +910,7 @@
     "support_pct":0.41
   },
   {
-    "item":"ASFRENONSYR 2MG 60ML SYR",
+    "item":"ASFRENON SYR 2MG 60ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":102,
@@ -1015,6 +1015,13 @@
     "support_pct":0.39
   },
   {
+    "item":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "item_tx":99,
+    "support_pct":0.39
+  },
+  {
     "item":"ALNIX PLUS SYR 5MG 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
@@ -1043,7 +1050,7 @@
     "support_pct":0.38
   },
   {
-    "item":"CARVID 6.25MG TAB",
+    "item":"CARVID (CARVEDILOL) 6.25MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":95,
@@ -1141,21 +1148,21 @@
     "support_pct":0.36
   },
   {
-    "item":"POTEN-CEE SUGAR COATED TAB 500MG ..",
+    "item":"POTEN-CEE SUGAR COATED (ASCORBIC ACID) 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":92,
     "support_pct":0.36
   },
   {
-    "item":"SARIDON TRIPLE ACTION TAB",
+    "item":"SARIDON TRIPLE ACTION (PARACETAMOL PROPYPHENAZONE CAFFEINE) TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":92,
     "support_pct":0.36
   },
   {
-    "item":"ALCLAV NEO 625MG TAB",
+    "item":"ALCLAV NEO (CO-AMOXICLAV) 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":91,
@@ -1176,7 +1183,7 @@
     "support_pct":0.36
   },
   {
-    "item":"PONSTAN SF CAP 500MG",
+    "item":"PONSTAN SF 500MG (MEFENAMIC ACID) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":90,
@@ -1225,16 +1232,9 @@
     "support_pct":0.34
   },
   {
-    "item":"COXBITOR-200 CAP",
+    "item":"COXBITOR-200 (CELECOXIB) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
-    "item_tx":87,
-    "support_pct":0.34
-  },
-  {
-    "item":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
-    "category":"VITAMINS",
-    "tab":"OTC",
     "item_tx":87,
     "support_pct":0.34
   },
@@ -1288,7 +1288,7 @@
     "support_pct":0.33
   },
   {
-    "item":"SINECOD FORTE TAB 50MG",
+    "item":"SINECOD FORTE (BUTAMIRATE CITRATE) TAB 50MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":84,
@@ -1330,7 +1330,7 @@
     "support_pct":0.33
   },
   {
-    "item":"BETADINE WOUND SOOLUTION 7.5ML",
+    "item":"BETADINE WOUND SOLUTION 7.5ML",
     "category":"WOUND CARE",
     "tab":"MED-SURG",
     "item_tx":82,
@@ -1421,7 +1421,7 @@
     "support_pct":0.32
   },
   {
-    "item":"MEDICOL ADVANCE SOFTGEL CAP",
+    "item":"MEDICOL ADVANCE SOFTGEL (IBUPROFEN) CAP",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":80,
@@ -1470,7 +1470,7 @@
     "support_pct":0.3
   },
   {
-    "item":"HYDRITE GRANULES (ORAL REHYDRATION SALTS) APPLE SAC",
+    "item":"HYDRITE GRANULES (APPLE) SAC",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":77,
@@ -1498,7 +1498,7 @@
     "support_pct":0.3
   },
   {
-    "item":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "item":"NATRAVOX 457MG\/5ML 35ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":76,
@@ -1582,7 +1582,7 @@
     "support_pct":0.29
   },
   {
-    "item":"SISTERS DRY MAXI NO WINGS",
+    "item":"SISTERS DAY MAXI NO WINGS",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE",
     "item_tx":73,
@@ -1722,7 +1722,7 @@
     "support_pct":0.28
   },
   {
-    "item":"NEUROBION TAB",
+    "item":"NEUROBION (VITAMIN B1+B6+B12) X 10",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":70,
@@ -1869,7 +1869,7 @@
     "support_pct":0.26
   },
   {
-    "item":"SISTERS PANTYLINER PINK 8S",
+    "item":"SISTERS PANTYLINER PINK 8&#039;S",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE",
     "item_tx":66,
@@ -1946,9 +1946,16 @@
     "support_pct":0.25
   },
   {
-    "item":"NEOBLOC 50MG TAB",
+    "item":"NEOBLOC (METOPROLOL) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
+    "item_tx":63,
+    "support_pct":0.25
+  },
+  {
+    "item":"SALINASE DROP 30ML",
+    "category":"RESPIRATORY",
+    "tab":"OTC",
     "item_tx":63,
     "support_pct":0.25
   },
@@ -2100,7 +2107,7 @@
     "support_pct":0.23
   },
   {
-    "item":"GETZAR TAB 50MG 100&#039;",
+    "item":"GETZAR (LOSARTAN POTASSIUM) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":59,
@@ -2142,6 +2149,13 @@
     "support_pct":0.23
   },
   {
+    "item":"DULCOLAX 5MG TAB",
+    "category":"GIT",
+    "tab":"GENERICS",
+    "item_tx":58,
+    "support_pct":0.23
+  },
+  {
     "item":"JOHNSONS PINK BLOSSOMS BABY POWDER 25G",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
@@ -2170,7 +2184,7 @@
     "support_pct":0.23
   },
   {
-    "item":"PERGLIM M-2 2MG\/500MG TAB",
+    "item":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":58,
@@ -2219,13 +2233,6 @@
     "support_pct":0.23
   },
   {
-    "item":"DULCOLAX TAB",
-    "category":"GIT",
-    "tab":"GENERICS",
-    "item_tx":57,
-    "support_pct":0.23
-  },
-  {
     "item":"HAPPY ABSORBENT COTTON 40G",
     "category":"COTTONS AND HYGIENE",
     "tab":"PERSONAL CARE",
@@ -2236,13 +2243,6 @@
     "item":"MEDIPLAST BANTAM PLASTIC STRIPS",
     "category":"WOUND CARE",
     "tab":"MED-SURG",
-    "item_tx":57,
-    "support_pct":0.23
-  },
-  {
-    "item":"SALINASE DROP 30ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC",
     "item_tx":57,
     "support_pct":0.23
   },
@@ -2387,7 +2387,7 @@
     "support_pct":0.21
   },
   {
-    "item":"CHARMEE NIGHT PLUS FEM PADS 4S",
+    "item":"CHARMEE FEMININE PADS 4s",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE",
     "item_tx":54,
@@ -2436,7 +2436,7 @@
     "support_pct":0.21
   },
   {
-    "item":"URINORM 40MG",
+    "item":"URINORM (FEBUXOSTAT) 40MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":53,
@@ -2618,7 +2618,7 @@
     "support_pct":0.2
   },
   {
-    "item":"FLOTERA CHEWABLE TAB",
+    "item":"FLOTERA (LACTOBACILLUS REUTERI) CHEWABLE TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":50,
@@ -2628,6 +2628,13 @@
     "item":"NURSY BABY WIPES UNSCENTED 66S",
     "category":"COTTONS AND HYGIENE",
     "tab":"PERSONAL CARE",
+    "item_tx":50,
+    "support_pct":0.2
+  },
+  {
+    "item":"POTEN CEE SUGAR FREE (ASCORBIC ACID) 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
     "item_tx":50,
     "support_pct":0.2
   },
@@ -2653,7 +2660,7 @@
     "support_pct":0.19
   },
   {
-    "item":"DOLSAPH 325\/37.5 MG TAB",
+    "item":"DOLSAPH (PARACETAMOL+TRAMADOL) 325\/37.5 MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":49,
@@ -2702,7 +2709,7 @@
     "support_pct":0.19
   },
   {
-    "item":"BUSCOPAN VENUS TAB 10MG500MG",
+    "item":"BUSCOPAN VENUS 10MG\/500MG TAB",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":48,
@@ -2737,7 +2744,7 @@
     "support_pct":0.19
   },
   {
-    "item":"ISOPTIN TAB 40MG",
+    "item":"ISOPTIN (VERAPAMIL) 40MG TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "item_tx":48,
@@ -2758,14 +2765,14 @@
     "support_pct":0.19
   },
   {
-    "item":"ROZATIN-10 (ROSUVASTATIN) 10MG TAB",
+    "item":"ROZATIN-10 (ROSUVASTATIN) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":48,
     "support_pct":0.19
   },
   {
-    "item":"SAPHORBIDE 30MG PR TAB",
+    "item":"SAPHORBIDE (ISOSORBIDE MONONITRATE) 30MG PR TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":48,
@@ -2856,14 +2863,14 @@
     "support_pct":0.19
   },
   {
-    "item":"SANGOBION IRON+CAPSULE",
+    "item":"SANGOBION IRON+ (MULTIVITAMINS + MINERALS) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":47,
     "support_pct":0.19
   },
   {
-    "item":"SYNACTIV (LEVOCETIRIZINE diHCl+ BETAMETHASONE) 5MG\/1MG FC-TAB",
+    "item":"SYNACTIV (LEVOCETIRIZINE DIHCL + BETAMETHASONE) 5M\/1MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":47,
@@ -2940,6 +2947,13 @@
     "support_pct":0.18
   },
   {
+    "item":"PLASTIC URINAL",
+    "category":"PLASTIC, GLASSWARE, AND STAINLESS",
+    "tab":"MED-SURG",
+    "item_tx":46,
+    "support_pct":0.18
+  },
+  {
     "item":"REFLUXID DUO 40MG\/30MG SR CAP",
     "category":"GIT",
     "tab":"PRESCRIPTION",
@@ -2950,13 +2964,6 @@
     "item":"SANICARE CLEANSING WIPES - LAVENDER 15 SHEETS",
     "category":"COTTONS AND HYGIENE",
     "tab":"PERSONAL CARE",
-    "item_tx":46,
-    "support_pct":0.18
-  },
-  {
-    "item":"URINAL",
-    "category":"PLASTIC, GLASSWARE, AND STAINLESS",
-    "tab":"MED-SURG",
     "item_tx":46,
     "support_pct":0.18
   },
@@ -2998,13 +3005,6 @@
   {
     "item":"MUCOBRON FORTE CAP",
     "category":"RESPIRATORY",
-    "tab":"PRESCRIPTION",
-    "item_tx":45,
-    "support_pct":0.18
-  },
-  {
-    "item":"PANTO PLUS 40MG\/30MG TAB",
-    "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":45,
     "support_pct":0.18
@@ -3080,7 +3080,7 @@
     "support_pct":0.17
   },
   {
-    "item":"MUPISAPH 20MG\/G 5G OINMENT",
+    "item":"MUPISAPH (MUPIROCIN) 20MG\/G 5G OINMENT",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "item_tx":44,
@@ -3091,6 +3091,13 @@
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":44,
+    "support_pct":0.17
+  },
+  {
+    "item":"ALAXAN FR CAP",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "item_tx":43,
     "support_pct":0.17
   },
   {
@@ -3108,7 +3115,7 @@
     "support_pct":0.17
   },
   {
-    "item":"COLGATE SACHET 22G",
+    "item":"COLGATE GREAT REG TWIN PACK SAC 22G",
     "category":"ORAL CARE",
     "tab":"PERSONAL CARE",
     "item_tx":43,
@@ -3199,7 +3206,7 @@
     "support_pct":0.17
   },
   {
-    "item":"NASATAPP NO DROWSE 500MG\/25MG TAB",
+    "item":"NASATAPP NO DROWSE (PARACETAMOL + PHENYLEPHRINE HYDROCHLORIDE) 500MG\/25MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":42,
@@ -3283,7 +3290,7 @@
     "support_pct":0.16
   },
   {
-    "item":"E-ZINC SYR 60ML",
+    "item":"E-ZINC 55MG\/5ML 60ML SYR",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":41,
@@ -3388,7 +3395,7 @@
     "support_pct":0.16
   },
   {
-    "item":"LOMOTIL TAB",
+    "item":"LOMOTIL (LOPERAMIDE HCI) TAB",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":40,
@@ -3402,7 +3409,7 @@
     "support_pct":0.16
   },
   {
-    "item":"MONTIGET(MONTELUKAST SODIUM) 10MG TAB",
+    "item":"MONTIGET TAB 10MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":40,
@@ -3416,14 +3423,7 @@
     "support_pct":0.16
   },
   {
-    "item":"POTEN CEE SUGAR FREE 500MG TAB",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "item_tx":40,
-    "support_pct":0.16
-  },
-  {
-    "item":"XIGDUO XR 10\/1000MG TABLET",
+    "item":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN) 10\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":40,
@@ -3549,6 +3549,13 @@
     "support_pct":0.15
   },
   {
+    "item":"HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "item_tx":38,
+    "support_pct":0.15
+  },
+  {
     "item":"HAIROS (SPIRONOLACTONE) 25MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
@@ -3556,14 +3563,14 @@
     "support_pct":0.15
   },
   {
-    "item":"HEMOSTAN 500MG CAP",
+    "item":"HEMOSTAN (TRANEXAMIC ACID) 500MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":38,
     "support_pct":0.15
   },
   {
-    "item":"HIVENT PLUS 2.5MG+500MCG\/2.5ML AMP",
+    "item":"HIVENT PLUS (SALBUTAMOL+IPRATROPIUM BROMIDE) 2.5MG+500MCG\/2.5ML AMP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":38,
@@ -3605,7 +3612,7 @@
     "support_pct":0.15
   },
   {
-    "item":"DEQUADIN LOZENGES ORANGE",
+    "item":"DEQUADIN LOZENGES (DEQUALINIUM CHLORIDE) ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":37,
@@ -3619,9 +3626,16 @@
     "support_pct":0.15
   },
   {
-    "item":"HIMOX 500MG CAP",
+    "item":"HIMOX (AMOXICILLIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
+    "item_tx":37,
+    "support_pct":0.15
+  },
+  {
+    "item":"MAMA&#039;S LOVE ABS COTTON 20GM",
+    "category":"SPECIAL CATEGORY 1",
+    "tab":"PROMOTIONS",
     "item_tx":37,
     "support_pct":0.15
   },
@@ -3629,13 +3643,6 @@
     "item":"MICARDIS PLUS 40MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
-    "item_tx":37,
-    "support_pct":0.15
-  },
-  {
-    "item":"ML ABS COTTON 20GM",
-    "category":"SPECIAL CATEGORY 1",
-    "tab":"PROMOTIONS",
     "item_tx":37,
     "support_pct":0.15
   },
@@ -3682,14 +3689,14 @@
     "support_pct":0.15
   },
   {
-    "item":"PROPAN W\/IRON CAP",
+    "item":"PROPAN W\/. IRON (BUCLIZINE HCL + MULTIVITAMINS + MINERALS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":37,
     "support_pct":0.15
   },
   {
-    "item":"ROZATIN-20(ROSUVASTATIN) 20MG FC TAB",
+    "item":"ROZATIN-20 FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":37,
@@ -3711,6 +3718,13 @@
   },
   {
     "item":"APOLLO LIPBALM PINK 7G",
+    "category":"SKIN AND BODY",
+    "tab":"PERSONAL CARE",
+    "item_tx":36,
+    "support_pct":0.14
+  },
+  {
+    "item":"APOLLO SEBO DE MACHO 10G",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":36,
@@ -3794,6 +3808,13 @@
     "support_pct":0.14
   },
   {
+    "item":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "item_tx":36,
+    "support_pct":0.14
+  },
+  {
     "item":"MAALOX PLUS TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
@@ -3818,13 +3839,6 @@
     "item":"PHILCET (LEVOCETIRIZINE) 5MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "item_tx":36,
-    "support_pct":0.14
-  },
-  {
-    "item":"SEBO DE MACHO 10G",
-    "category":"SKIN AND BODY",
-    "tab":"PERSONAL CARE",
     "item_tx":36,
     "support_pct":0.14
   },
@@ -3857,14 +3871,7 @@
     "support_pct":0.14
   },
   {
-    "item":"Z-LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "item_tx":36,
-    "support_pct":0.14
-  },
-  {
-    "item":"ANALMIN 500MG CAP",
+    "item":"ANALMIN (MEFENAMIC ACID) 500MG CAP",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":35,
@@ -4109,7 +4116,7 @@
     "support_pct":0.13
   },
   {
-    "item":"DAZOMET TAB 500MG",
+    "item":"DAZOMET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":33,
@@ -4151,7 +4158,7 @@
     "support_pct":0.13
   },
   {
-    "item":"MEDICOL ADVANCE 400MG CAP 4+1 SET",
+    "item":"MEDICOL ADVANCE (IBUPROFEN) 400MG CAP 4+1 SET",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":33,
@@ -4165,7 +4172,7 @@
     "support_pct":0.13
   },
   {
-    "item":"QUATROFOL CAP",
+    "item":"QUATROFOL (METHYLTETRAHYDROFOLIC ACID) CAPS",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":33,
@@ -4200,7 +4207,7 @@
     "support_pct":0.13
   },
   {
-    "item":"ZOCEF 500MG TAB",
+    "item":"ZOCEF (CEFUROXIME) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":33,
@@ -4235,7 +4242,7 @@
     "support_pct":0.13
   },
   {
-    "item":"CLODIN(CLONIDINE) 75MCG TAB",
+    "item":"CLODIN (CLONIDINE) 75MCG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":32,
@@ -4326,6 +4333,13 @@
     "support_pct":0.12
   },
   {
+    "item":"CETIREX (CETIRIZINE) 5MG\/5ML SYRUP 60ML",
+    "category":"RESPIRATORY",
+    "tab":"OTC",
+    "item_tx":31,
+    "support_pct":0.12
+  },
+  {
     "item":"DRENEX 3MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
@@ -4375,13 +4389,6 @@
     "support_pct":0.12
   },
   {
-    "item":"MYREX (CETIRIZINE) 5MG\/5ML 60ML SYR",
-    "category":"RESPIRATORY",
-    "tab":"OTC",
-    "item_tx":31,
-    "support_pct":0.12
-  },
-  {
     "item":"NASATHERA CAP",
     "category":"RESPIRATORY",
     "tab":"OTC",
@@ -4417,7 +4424,7 @@
     "support_pct":0.12
   },
   {
-    "item":"SANITARY BALM 32G",
+    "item":"SANITARY BALM (CAMPHOR+MENTHOL) 32G",
     "category":"GALENICALS AND SOLUTIONS",
     "tab":"MED-SURG",
     "item_tx":31,
@@ -4494,6 +4501,13 @@
     "support_pct":0.12
   },
   {
+    "item":"NEOFORM 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"PRESCRIPTION",
+    "item_tx":30,
+    "support_pct":0.12
+  },
+  {
     "item":"NEOZEP FORTE Z 8+2",
     "category":"RESPIRATORY",
     "tab":"OTC",
@@ -4504,6 +4518,13 @@
     "item":"OMEGA PAIN KILLER 30ML",
     "category":"HOME REMEDY",
     "tab":"OTC",
+    "item_tx":30,
+    "support_pct":0.12
+  },
+  {
+    "item":"PANTO PLUS (PANTOPRAZOLE + DOMPERIDONE) 40MG\/30MG TAB 30&#039;S",
+    "category":"GIT",
+    "tab":"PRESCRIPTION",
     "item_tx":30,
     "support_pct":0.12
   },
@@ -4564,20 +4585,6 @@
     "support_pct":0.12
   },
   {
-    "item":"Z-MYONAL TAB",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION",
-    "item_tx":30,
-    "support_pct":0.12
-  },
-  {
-    "item":"Z-NEOFORM 500MG TAB",
-    "category":"ANTIDIABETICS",
-    "tab":"PRESCRIPTION",
-    "item_tx":30,
-    "support_pct":0.12
-  },
-  {
     "item":"ZENITH (AZITHROMYCIN MONOHYDRATE) 200MG\/5ML SUSP 20ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
@@ -4592,7 +4599,7 @@
     "support_pct":0.11
   },
   {
-    "item":"AMINOLOG FC TAB",
+    "item":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":29,
@@ -4613,14 +4620,14 @@
     "support_pct":0.11
   },
   {
-    "item":"APROVASC 150MG\/5MG TAB",
+    "item":"APROVASC (IRBESARTAN + AMLODIPINE) 150MG\/5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":29,
     "support_pct":0.11
   },
   {
-    "item":"BEROCCA EFF TAB ORANGE 15&#039;S TUBE",
+    "item":"BEROCCA EFF TAB ORANGE 15&#039;",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":29,
@@ -4641,7 +4648,7 @@
     "support_pct":0.11
   },
   {
-    "item":"DALACIN C CAP 300MG",
+    "item":"DALACIN C (CLINDAMYCIN) 300MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":29,
@@ -4655,7 +4662,7 @@
     "support_pct":0.11
   },
   {
-    "item":"FERN-C PLUS CAP",
+    "item":"FERN-C PLUS (SODIUM ASCORBATE) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":29,
@@ -4669,7 +4676,7 @@
     "support_pct":0.11
   },
   {
-    "item":"FOLIZ (FOLIC ACID) 5MG TAB",
+    "item":"FOLIZ (FOLIC ACID) 5MG CAP",
     "category":"SPECIAL CATEGORY 1",
     "tab":"PROMOTIONS",
     "item_tx":29,
@@ -4753,14 +4760,14 @@
     "support_pct":0.11
   },
   {
-    "item":"CENTRAVIM TAB",
+    "item":"CENTRAVIM (VITAMIN B-COMPLEX) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":28,
     "support_pct":0.11
   },
   {
-    "item":"DIANE 35 TAB 21&#039;..",
+    "item":"DIANE 35 TAB 21",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":28,
@@ -4781,7 +4788,7 @@
     "support_pct":0.11
   },
   {
-    "item":"ENERVON TAB 30",
+    "item":"ENERVON 30s TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":28,
@@ -4865,7 +4872,7 @@
     "support_pct":0.11
   },
   {
-    "item":"SOLMUX ADVANCE 500MG",
+    "item":"SOLMUX ADVANCE (CARBOCISTEINE + ZINC) 500MG",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":28,
@@ -4914,7 +4921,7 @@
     "support_pct":0.11
   },
   {
-    "item":"ANTAXID 40MG TAB",
+    "item":"ANTAXID (PANTAPRAZOLE) 40MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":27,
@@ -5012,7 +5019,7 @@
     "support_pct":0.11
   },
   {
-    "item":"MOTILIUM TAB 10MG",
+    "item":"MOTILIUM (DOMPERIDONE) 10MG TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":27,
@@ -5061,7 +5068,7 @@
     "support_pct":0.11
   },
   {
-    "item":"SUPER CEE PLUS 500MG CAP",
+    "item":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":27,
@@ -5145,7 +5152,7 @@
     "support_pct":0.1
   },
   {
-    "item":"FENOFLEX 160MG",
+    "item":"FENOFLEX (FENOFIBRATE) 160MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":26,
@@ -5162,6 +5169,13 @@
     "item":"FORTRA 200MCG\/6MCG CANISTER",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
+    "item_tx":26,
+    "support_pct":0.1
+  },
+  {
+    "item":"GAVISCON DOUBLE ACTION SAC 10ML",
+    "category":"GIT",
+    "tab":"OTC",
     "item_tx":26,
     "support_pct":0.1
   },
@@ -5201,28 +5215,28 @@
     "support_pct":0.1
   },
   {
-    "item":"ML ABS COTTON BALL 100&#039;S",
+    "item":"MAMA&#039;S LOVE ABS COTTON BALL 100&#039;S",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE",
     "item_tx":26,
     "support_pct":0.1
   },
   {
-    "item":"MONTIGET TAB 4MG",
+    "item":"MONTIGET 4MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":26,
     "support_pct":0.1
   },
   {
-    "item":"MOVELAX 3.3MG\/5ML 120ML (LACTULOSE",
+    "item":"MOVELAX 3.3MG\/5ML 120ML",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":26,
     "support_pct":0.1
   },
   {
-    "item":"OMX PROBIOTIC CAP",
+    "item":"OMX (PROBIOTICS) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":26,
@@ -5243,7 +5257,7 @@
     "support_pct":0.1
   },
   {
-    "item":"SOLMUX BRONCHO CAP",
+    "item":"SOLMUX BRONCHO (SALBUTAMOL SULFATE + CARBOCISTEINE) CAP",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":26,
@@ -5271,24 +5285,10 @@
     "support_pct":0.1
   },
   {
-    "item":"Z-GAVISCON DOUBLE ACTION SAC 10ML",
-    "category":"GIT",
-    "tab":"OTC",
-    "item_tx":26,
-    "support_pct":0.1
-  },
-  {
     "item":"ZEST-O CHOC-O 180ML",
     "category":"BEVERAGES",
     "tab":"F&B",
     "item_tx":26,
-    "support_pct":0.1
-  },
-  {
-    "item":"ADVIL LIQUIGEL (IBUPROFEN) CAP",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "item_tx":25,
     "support_pct":0.1
   },
   {
@@ -5481,7 +5481,7 @@
     "support_pct":0.09
   },
   {
-    "item":"GAVISCON 10ML SACHET",
+    "item":"GAVISCON (ALUMINUM HYDROXIDE + MAGNESIUM TRISILICATE) 10ML SACHET",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":24,
@@ -5509,7 +5509,7 @@
     "support_pct":0.09
   },
   {
-    "item":"IBERET FOLIC TAB",
+    "item":"IBERET FOLIC (MULTIVITAMINS + IRON) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":24,
@@ -5656,6 +5656,13 @@
     "support_pct":0.09
   },
   {
+    "item":"BETADINE WOUND 25ML",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "item_tx":23,
+    "support_pct":0.09
+  },
+  {
     "item":"BETZINE (BETAHISTINE HYDROCHLORIDE) 16MG TAB",
     "category":"NEUROLOGICAL DRUGS",
     "tab":"GENERICS",
@@ -5670,7 +5677,7 @@
     "support_pct":0.09
   },
   {
-    "item":"CEELIN PLUS CHEW TAB 100&#039;S",
+    "item":"CEELIN PLUS (ASCORBIC ACID + ZINC) CHEW TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":23,
@@ -5768,7 +5775,7 @@
     "support_pct":0.09
   },
   {
-    "item":"ROBITUSSIN EXPECTORANT 60ML",
+    "item":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 60ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":23,
@@ -5796,7 +5803,7 @@
     "support_pct":0.09
   },
   {
-    "item":"TEMPRA FORTE 120MG\/5ML 30ML",
+    "item":"TEMPRA (PARACETAMOL) 120MG\/5ML 30MLSYR ORANGE",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":23,
@@ -5894,7 +5901,7 @@
     "support_pct":0.09
   },
   {
-    "item":"BIOFITEA (SENNA LEAVES SENNA POS) SAC",
+    "item":"BIOFITEA (SENNA LEAVES 1SENNA POS) SAC",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
     "item_tx":22,
@@ -5929,7 +5936,7 @@
     "support_pct":0.09
   },
   {
-    "item":"HEMARATE FA TAB 100&#039;S",
+    "item":"HEMARATE FA TAB 100",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":22,
@@ -5971,7 +5978,7 @@
     "support_pct":0.09
   },
   {
-    "item":"LAMPEIN JUMBO PACK L 54s",
+    "item":"LAMPEIN JUMBO PACK L 54S",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
     "item_tx":22,
@@ -6034,7 +6041,7 @@
     "support_pct":0.09
   },
   {
-    "item":"SERETIDE DISKUS 100 50MCG\/100MCG",
+    "item":"SERETIDE 50MCG\/100MCG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":22,
@@ -6062,7 +6069,7 @@
     "support_pct":0.09
   },
   {
-    "item":"BENADRYL AH CAP",
+    "item":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":21,
@@ -6097,7 +6104,7 @@
     "support_pct":0.08
   },
   {
-    "item":"DAJIO (DAPAGLIFLOZIN) 10MG TAB",
+    "item":"DAJIO (DAPAGLIFLOZIN) 10MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":21,
@@ -6111,7 +6118,7 @@
     "support_pct":0.08
   },
   {
-    "item":"EMICOX (CELECOXIB) 400MG TAB 100&#039;S",
+    "item":"EMICOX (CELECOXIB) 400MG TAB 100",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":21,
@@ -6119,6 +6126,13 @@
   },
   {
     "item":"FLOSICRON (CIPROFLOXACIN) 500MG",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "item_tx":21,
+    "support_pct":0.08
+  },
+  {
+    "item":"FLOXANOVA-500 (LEVOFLOXACIN) 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":21,
@@ -6174,7 +6188,7 @@
     "support_pct":0.08
   },
   {
-    "item":"NEBULIZER KIT W\/. MASK PEDIA",
+    "item":"NEB KIT W\/. MASK PEDIA",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "item_tx":21,
@@ -6286,14 +6300,14 @@
     "support_pct":0.08
   },
   {
-    "item":"DOLCET TAB 37.5\/325MG",
+    "item":"DOLCET (TRAMADOL HCI + PARACETAMOL) 37.5\/325MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":20,
     "support_pct":0.08
   },
   {
-    "item":"DOMILIUM 10MG TAB -011-30",
+    "item":"DOMILIUM (DOMPERIDONE) 10MG TAB",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":20,
@@ -6363,7 +6377,7 @@
     "support_pct":0.08
   },
   {
-    "item":"LOSAAR 100MG TAB",
+    "item":"LOSAAR (LOSARTAN) 100MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":20,
@@ -6517,7 +6531,7 @@
     "support_pct":0.08
   },
   {
-    "item":"CALTRATE PLUS TAB",
+    "item":"CALTRATE PLUS (CALCIUM + VITAMIN + MINERALS) TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":19,
@@ -6552,7 +6566,7 @@
     "support_pct":0.08
   },
   {
-    "item":"DANZEDIN 80000 EC TAB",
+    "item":"DANZEDIN (SERRAPEPTASE) 80000 EC TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":19,
@@ -6587,7 +6601,7 @@
     "support_pct":0.08
   },
   {
-    "item":"FENOSTAT 10MG\/160MG TAB",
+    "item":"FENOSTAT (ATORVASTIN+FENOFIBRATE) 10MG\/160MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":19,
@@ -6595,13 +6609,6 @@
   },
   {
     "item":"FLAGYL FORTE 500MG FC TAB",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "item_tx":19,
-    "support_pct":0.08
-  },
-  {
-    "item":"FLOXANOVA-500 (LEVOFLOXACIN) 500MG FC TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":19,
@@ -6692,7 +6699,7 @@
     "support_pct":0.08
   },
   {
-    "item":"MONTIGET TAB 5MG",
+    "item":"MONTIGET 5MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":19,
@@ -6776,6 +6783,20 @@
     "support_pct":0.08
   },
   {
+    "item":"#EXP2024-12-30",
+    "category":"DERMATOLOGICALS",
+    "tab":"PRESCRIPTION",
+    "item_tx":18,
+    "support_pct":0.07
+  },
+  {
+    "item":"#EXP2027-01-30",
+    "category":"ORTHO SUPPORT",
+    "tab":"MED-SURG",
+    "item_tx":18,
+    "support_pct":0.07
+  },
+  {
     "item":"ALAXAN FR 5+1",
     "category":"PROMO PACKS",
     "tab":"PROMOTIONS",
@@ -6793,13 +6814,6 @@
     "item":"AMAZING PURE ORGANIC BARLEY 3G",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
-    "item_tx":18,
-    "support_pct":0.07
-  },
-  {
-    "item":"AMLOPIGEN 5MG (AMLODIPINE BESILATE",
-    "category":"ORTHO SUPPORT",
-    "tab":"MED-SURG",
     "item_tx":18,
     "support_pct":0.07
   },
@@ -6839,23 +6853,16 @@
     "support_pct":0.07
   },
   {
-    "item":"BISCORE 2.5 FC TAB",
+    "item":"BISCORE 2.5 (BISOPROPOL FUMARATE) 2.5MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":18,
     "support_pct":0.07
   },
   {
-    "item":"CALVIT GOLD FC TAB..",
+    "item":"CALVIT GOLD (CHOLECALCIFEROL + CALCIUM) FC TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "item_tx":18,
-    "support_pct":0.07
-  },
-  {
-    "item":"CANDIBEC 10MG\/G\/250MCG2G CREAM",
-    "category":"DERMATOLOGICALS",
-    "tab":"PRESCRIPTION",
     "item_tx":18,
     "support_pct":0.07
   },
@@ -6972,7 +6979,7 @@
     "support_pct":0.07
   },
   {
-    "item":"OBIMIN PLUS CAP",
+    "item":"OBIMIN PLUS (MULTIVITAMINS + MINERALS + DHA+ EPA) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":18,
@@ -7049,7 +7056,7 @@
     "support_pct":0.07
   },
   {
-    "item":"RENALOG FC TAB",
+    "item":"RENALOG (KETOANALOGUE+AMINO ACIDS) FC TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":18,
@@ -7147,7 +7154,7 @@
     "support_pct":0.07
   },
   {
-    "item":"CLARIGET TAB 500MG",
+    "item":"CLARIGET 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":17,
@@ -7196,7 +7203,7 @@
     "support_pct":0.07
   },
   {
-    "item":"FREDTOR 10MG TAB",
+    "item":"FREDTOR (ATORVASTATIN) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":17,
@@ -7231,7 +7238,7 @@
     "support_pct":0.07
   },
   {
-    "item":"HERACLENE 1MG CAP",
+    "item":"HERACLENE (DIBENCOZIDE) 1MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":17,
@@ -7245,7 +7252,7 @@
     "support_pct":0.07
   },
   {
-    "item":"I-MAX 500MG TAB",
+    "item":"I-MAX (METFORMIN) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":17,
@@ -7280,14 +7287,14 @@
     "support_pct":0.07
   },
   {
-    "item":"LIVERPRIME CAP",
+    "item":"LIVERPRIME (SILYBIN-PHOSPHATIDYLCHOLINE + MULTIVITAMINS + ZINC) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":17,
     "support_pct":0.07
   },
   {
-    "item":"MILCU UNDERARM & FOOT 80G",
+    "item":"MILCU DEO POWDER 80G",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":17,
@@ -7350,7 +7357,7 @@
     "support_pct":0.07
   },
   {
-    "item":"SAFEGUARD PURE WHITE 130G",
+    "item":"SAFE GUARD PURE WHITE 125G",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":17,
@@ -7364,14 +7371,14 @@
     "support_pct":0.07
   },
   {
-    "item":"SILDIAZ 10MG\/G 1% 20G",
+    "item":"SILDIAZ (SILVER SULFADIAZINE) 10MG\/G 1% 20G",
     "category":"DERMATOLOGICALS",
     "tab":"GENERICS",
     "item_tx":17,
     "support_pct":0.07
   },
   {
-    "item":"SILGRAM 750MG",
+    "item":"SILGRAM (SULTAMICILLIN) 750MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":17,
@@ -7406,14 +7413,14 @@
     "support_pct":0.06
   },
   {
-    "item":"ALLURASE(ALLOPURINOL) 100MG TAB",
+    "item":"ALLURASE TAB 100MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":16,
     "support_pct":0.06
   },
   {
-    "item":"ARCOXIA 60MG TAB",
+    "item":"ARCOXIA (ETORICOXIB) 60MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "item_tx":16,
@@ -7427,7 +7434,7 @@
     "support_pct":0.06
   },
   {
-    "item":"BENADRYL AH (DIPHENHYDRAMINE) CAP",
+    "item":"BENADRYL AH (DIPHENHYDRAMINE) 25MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":16,
@@ -7437,13 +7444,6 @@
     "item":"BERRY KNOTS STRAWBERRY 25G",
     "category":"FOOD",
     "tab":"F&B",
-    "item_tx":16,
-    "support_pct":0.06
-  },
-  {
-    "item":"BETADINE WOUND 25ML",
-    "category":"WOUND CARE",
-    "tab":"MED-SURG",
     "item_tx":16,
     "support_pct":0.06
   },
@@ -7707,7 +7707,7 @@
     "support_pct":0.06
   },
   {
-    "item":"AMVASC BE TAB 10MG",
+    "item":"AMVASC BE (AMLODIPINE) TAB 10MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":15,
@@ -7875,13 +7875,6 @@
     "support_pct":0.06
   },
   {
-    "item":"HAEMOREX 500MG CAP",
-    "category":"ADULT MILK",
-    "tab":"F&B",
-    "item_tx":15,
-    "support_pct":0.06
-  },
-  {
     "item":"HYDRO AID 250ML APPLE",
     "category":"GIT",
     "tab":"OTC",
@@ -7987,7 +7980,7 @@
     "support_pct":0.06
   },
   {
-    "item":"NEOFORM 500MG TAB",
+    "item":"NEOFORM (METFORMIN HCL) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"GENERICS",
     "item_tx":15,
@@ -8011,6 +8004,13 @@
     "item":"NIZORAL (KETOCONAZOLE) 20MG\/G (2%) SHAMPOO 6ML",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
+    "item_tx":15,
+    "support_pct":0.06
+  },
+  {
+    "item":"PANTO PLUS 40MG\/30MG TAB",
+    "category":"GIT",
+    "tab":"PRESCRIPTION",
     "item_tx":15,
     "support_pct":0.06
   },
@@ -8071,7 +8071,7 @@
     "support_pct":0.06
   },
   {
-    "item":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60ML",
+    "item":"SYMDEX-D (PHENYLPROPANOLAMINE HCL CHLORPHENAMINE MALEATE PARACETAMOL) 6.25MG\/500MCG\/125MG PER 5ML 60",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":15,
@@ -8099,7 +8099,7 @@
     "support_pct":0.06
   },
   {
-    "item":"XIGDUO XR 10\/500MG",
+    "item":"XIGDUO XR (DAPAGLIFLOZIN + METFORMIN)10\/500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":15,
@@ -8288,7 +8288,7 @@
     "support_pct":0.06
   },
   {
-    "item":"LEGALON TAB 140MG",
+    "item":"LEGALON (MILK THISTLE) 140MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":14,
@@ -8337,7 +8337,7 @@
     "support_pct":0.06
   },
   {
-    "item":"NORVASC TAB 10MG",
+    "item":"NORVASC (AMLODIPINE BESYLATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":14,
@@ -8393,14 +8393,14 @@
     "support_pct":0.06
   },
   {
-    "item":"RESTIME 40MG ORAL DROP 10ML",
+    "item":"RESTIME (SIMETICONE) 40MG 10ML ORAL DROP",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":14,
     "support_pct":0.06
   },
   {
-    "item":"ROBITUSSIN REG 120ML",
+    "item":"ROBITUSSIN EXPECTORANT (GUAIFENESIN) 120ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":14,
@@ -8456,7 +8456,7 @@
     "support_pct":0.06
   },
   {
-    "item":"ZEMIGLO 50MG FCT",
+    "item":"ZEMIGLO (GEMIGLIPTIN) 50MG FCT",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":14,
@@ -8652,6 +8652,13 @@
     "support_pct":0.05
   },
   {
+    "item":"FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
+    "item_tx":13,
+    "support_pct":0.05
+  },
+  {
     "item":"FORAIR-125 25MCG\/125MCG 120 ACT",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
@@ -8673,7 +8680,7 @@
     "support_pct":0.05
   },
   {
-    "item":"INFEN-25 25MG TAB",
+    "item":"INFEN-25 (DEXKETOPROFEN TROMETAMOL) 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":13,
@@ -8813,7 +8820,7 @@
     "support_pct":0.05
   },
   {
-    "item":"ROBUST TAB 550MG",
+    "item":"ROBUST 550MG TAB 2s",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":13,
@@ -8848,7 +8855,7 @@
     "support_pct":0.05
   },
   {
-    "item":"STYLEX STRONG HOLD (WHITE) 50G",
+    "item":"STYLEX STRONG HOLD (CLEAR) 50G",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
     "item_tx":13,
@@ -8858,6 +8865,13 @@
     "item":"SYSTOCOR (PREDNISONE) 5MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
+    "item_tx":13,
+    "support_pct":0.05
+  },
+  {
+    "item":"TAPDIN (METHIMAZOLE) 20MG TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
     "item_tx":13,
     "support_pct":0.05
   },
@@ -8911,7 +8925,7 @@
     "support_pct":0.05
   },
   {
-    "item":"AUGMENTIN 375MG TAB",
+    "item":"AUGMENTIN (CO-AMOXICLAV) 375MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":12,
@@ -8974,7 +8988,7 @@
     "support_pct":0.05
   },
   {
-    "item":"CELEBREX 200MG CAP",
+    "item":"CELEBREX (CELOCOXIB) 200MG CAP",
     "category":"SPECIAL CATEGORY 1",
     "tab":"PROMOTIONS",
     "item_tx":12,
@@ -9030,7 +9044,7 @@
     "support_pct":0.05
   },
   {
-    "item":"E PRIME GOLD 1000MG CAP",
+    "item":"E PRIME (EVENING PRIMROSE OIL) 1000MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":12,
@@ -9051,7 +9065,7 @@
     "support_pct":0.05
   },
   {
-    "item":"FOLIDYN 5MG CAP",
+    "item":"FOLIDYN (FOLIC ACID) 5MG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":12,
@@ -9072,7 +9086,7 @@
     "support_pct":0.05
   },
   {
-    "item":"GLUBITOR OD 30MG TAB",
+    "item":"GLUBITOR OD 30MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":12,
@@ -9331,7 +9345,7 @@
     "support_pct":0.05
   },
   {
-    "item":"QUANIL (CITICOLINE) 500MG TAB 30&#039;S",
+    "item":"QUANIL (CITICOLINE) 500MG TAB 30",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":12,
@@ -9387,7 +9401,7 @@
     "support_pct":0.05
   },
   {
-    "item":"TAPDIN 5MG TAB",
+    "item":"TAPDIN (METHIMAZOLE) 5MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":12,
@@ -9401,7 +9415,7 @@
     "support_pct":0.05
   },
   {
-    "item":"TRAPADIX 325MG\/37.5MG TAB",
+    "item":"TRAPADIX (PARACETAMOL+TRAMADOL) 325MG\/37.5MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS",
     "item_tx":12,
@@ -9415,29 +9429,15 @@
     "support_pct":0.05
   },
   {
-    "item":"Z-FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION",
-    "item_tx":12,
-    "support_pct":0.05
-  },
-  {
-    "item":"Z-HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "item_tx":12,
-    "support_pct":0.05
-  },
-  {
-    "item":"Z-PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "item_tx":12,
-    "support_pct":0.05
-  },
-  {
     "item":"APCIRON (MULTIVITAMINS + IRON + BUCLIZINE) CAP",
     "category":"VITAMINS",
+    "tab":"GENERICS",
+    "item_tx":11,
+    "support_pct":0.04
+  },
+  {
+    "item":"ASTEROL (PROPANOLOL HYDROCHLORIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":11,
     "support_pct":0.04
@@ -9450,7 +9450,7 @@
     "support_pct":0.04
   },
   {
-    "item":"BACTROBAN OINTMENT 5G",
+    "item":"BACTROBAN (MUPIROCIN) OINTMENT 5G",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "item_tx":11,
@@ -9499,14 +9499,14 @@
     "support_pct":0.04
   },
   {
-    "item":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/40MG FCT",
+    "item":"CHOLIB (FENOFIBRATE + SIMVASTANIN) 145MG\/40MG FCT",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":11,
     "support_pct":0.04
   },
   {
-    "item":"CHOLIB 145MG\/20MG",
+    "item":"CHOLIB (FENOFIBRATE + SIMVASTATIN) 145MG\/20MG",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":11,
@@ -9604,13 +9604,6 @@
     "support_pct":0.04
   },
   {
-    "item":"HAEMOREX (TRANEXAMIC ACID) 500MG CAP",
-    "category":"CARDIOVASCULAR",
-    "tab":"GENERICS",
-    "item_tx":11,
-    "support_pct":0.04
-  },
-  {
     "item":"HELLO STRAWBERRY",
     "category":"FOOD",
     "tab":"F&B",
@@ -9632,7 +9625,7 @@
     "support_pct":0.04
   },
   {
-    "item":"KASTAIR 10MG TAB",
+    "item":"KASTAIR (MONTELUKAST) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":11,
@@ -9793,7 +9786,7 @@
     "support_pct":0.04
   },
   {
-    "item":"REVICON FORTE TAB 9+1 SET",
+    "item":"REVICON FORTE (MULTIVITAMINS + MINERALS + AMINO ACIDS) TAB 9+1 SET",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":11,
@@ -9835,7 +9828,7 @@
     "support_pct":0.04
   },
   {
-    "item":"SPIROPHIL(SPIRONOLACTONE 25MG TAB 100&#039;s",
+    "item":"SPIROPHIL 25MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":11,
@@ -9856,7 +9849,7 @@
     "support_pct":0.04
   },
   {
-    "item":"TASCIT 10MEQ (POTASSIUM CITRATE",
+    "item":"TASCIT 10MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":11,
@@ -9919,7 +9912,7 @@
     "support_pct":0.04
   },
   {
-    "item":"WHEELCHAIR STANDARD-PROHEALTHCARE",
+    "item":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "item_tx":11,
@@ -10052,7 +10045,7 @@
     "support_pct":0.04
   },
   {
-    "item":"CELSUS TIMOLOL MALEATE .05% 5ML EYE DROPS",
+    "item":"CELSUS (TIMOLOL MALEATE) 5ML EYE DROPS",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "item_tx":10,
@@ -10192,7 +10185,7 @@
     "support_pct":0.04
   },
   {
-    "item":"LEVOCIN TAB 500MG",
+    "item":"LEVOCIN (LEVOFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":10,
@@ -10227,7 +10220,7 @@
     "support_pct":0.04
   },
   {
-    "item":"MYRACOF TAB 30MG",
+    "item":"MYRACOF (AMBROXOL HCI) 30MG TAB",
     "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":10,
@@ -10269,7 +10262,7 @@
     "support_pct":0.04
   },
   {
-    "item":"PENLIGHT RED",
+    "item":"PENLIGHT ASSORTED",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
     "item_tx":10,
@@ -10292,13 +10285,6 @@
   {
     "item":"POLYNERV TAB 500MG",
     "category":"VITAMINS",
-    "tab":"OTC",
-    "item_tx":10,
-    "support_pct":0.04
-  },
-  {
-    "item":"POTEN CEE SUGAR FREE (ASCORBIC ACID) 500MG TAB",
-    "category":"RESPIRATORY",
     "tab":"OTC",
     "item_tx":10,
     "support_pct":0.04
@@ -10426,13 +10412,6 @@
     "item":"SUREGUARD STERILE LATEX GLOVES 7.5 PAIR",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
-    "item_tx":10,
-    "support_pct":0.04
-  },
-  {
-    "item":"TAPDIN TAB 20MG",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
     "item_tx":10,
     "support_pct":0.04
   },
@@ -10633,7 +10612,7 @@
     "support_pct":0.04
   },
   {
-    "item":"FUNXION 75MG CAP",
+    "item":"FUNXION (PREGABALIN) 75MG CAP",
     "category":"NEUROLOGICAL DRUGS",
     "tab":"PRESCRIPTION",
     "item_tx":9,
@@ -10675,7 +10654,7 @@
     "support_pct":0.04
   },
   {
-    "item":"INSULIN SYRINGE TERUMO 29GX1\/2G 1\/2CC",
+    "item":"INSULIN SYRINGE TERUMO 29 1\/2G",
     "category":"NEEDLES AND TUBINGS",
     "tab":"MED-SURG",
     "item_tx":9,
@@ -10705,6 +10684,13 @@
   {
     "item":"KOJIE SAN SOAP 135G X 2",
     "category":"SKIN AND BODY",
+    "tab":"PERSONAL CARE",
+    "item_tx":9,
+    "support_pct":0.04
+  },
+  {
+    "item":"KWELL (PERMETHRIN) 10MG\/ML SHAMPOO",
+    "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
     "item_tx":9,
     "support_pct":0.04
@@ -11312,7 +11298,7 @@
     "support_pct":0.03
   },
   {
-    "item":"GLUMET 1G",
+    "item":"GLUMET (METFORMIN HCI) 1G",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":8,
@@ -11389,7 +11375,7 @@
     "support_pct":0.03
   },
   {
-    "item":"MARVELON TAB 28&#039;",
+    "item":"MARVELON (DESOGESTRYL ETHINYLESTRDIOL) TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":8,
@@ -11445,7 +11431,7 @@
     "support_pct":0.03
   },
   {
-    "item":"PANTOR TAB 40MG",
+    "item":"PANTOR 40MG (PANTOPRAZOLE SODIUM) TAB",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":8,
@@ -11480,7 +11466,7 @@
     "support_pct":0.03
   },
   {
-    "item":"RAXIDE 150MG (RANITIDINE",
+    "item":"RAXIDE 150MG",
     "category":"GIT",
     "tab":"PRESCRIPTION",
     "item_tx":8,
@@ -11501,14 +11487,14 @@
     "support_pct":0.03
   },
   {
-    "item":"REXONA MEN ROLL ON ICE COOL 50ML",
+    "item":"REXONA MEN ICE COOL 45ml",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":8,
     "support_pct":0.03
   },
   {
-    "item":"REXONA ROLL ON POWER DRY BRIGHTENING 50ML",
+    "item":"REXONA ROLL ON POWDER DRY BRIGHTENING 50ML",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":8,
@@ -11585,7 +11571,7 @@
     "support_pct":0.03
   },
   {
-    "item":"SIMVOGET TAB 20MG 10&#039;",
+    "item":"SIMVOGET (SIMVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":8,
@@ -11606,7 +11592,7 @@
     "support_pct":0.03
   },
   {
-    "item":"STYLEX STRONG HOLD 125G",
+    "item":"STYLEX STRONG HOLD (CLEAR) 125G",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
     "item_tx":8,
@@ -11634,7 +11620,7 @@
     "support_pct":0.03
   },
   {
-    "item":"TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
+    "item":"TOLAK ANGIN (HERBAL SUPPLEMENT) 15ML SACH",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":8,
@@ -11802,7 +11788,7 @@
     "support_pct":0.03
   },
   {
-    "item":"CALADRYL LOTION 30ML",
+    "item":"CALADRYL (CALAMINE + ZINC OXIDE) 30ML LOTION",
     "category":"DERMATOLOGICALS",
     "tab":"OTC",
     "item_tx":7,
@@ -11949,7 +11935,7 @@
     "support_pct":0.03
   },
   {
-    "item":"ELICA CREAM 5G",
+    "item":"ELICA CREAM (MOMETASONE FUROATE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "item_tx":7,
@@ -12040,6 +12026,13 @@
     "support_pct":0.03
   },
   {
+    "item":"ISORE OPHTALMIC SOLUTION 5ML",
+    "category":"RESPIRATORY",
+    "tab":"OTC",
+    "item_tx":7,
+    "support_pct":0.03
+  },
+  {
     "item":"ISOXILAN (ISOXUPRINE) 10MG TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
@@ -12068,7 +12061,7 @@
     "support_pct":0.03
   },
   {
-    "item":"LUCKY ME MINI JJAMPPONG 40G",
+    "item":"LUCKY ME MINI JJAMPPONG",
     "category":"FOOD",
     "tab":"F&B",
     "item_tx":7,
@@ -12082,7 +12075,7 @@
     "support_pct":0.03
   },
   {
-    "item":"LUMAR ORS 6G SACHET ORANGE",
+    "item":"LUMAR ORS 6G SACHET",
     "category":"GIT",
     "tab":"OTC",
     "item_tx":7,
@@ -12204,13 +12197,6 @@
     "item":"POCARI SWEAT 2L",
     "category":"BEVERAGES",
     "tab":"F&B",
-    "item_tx":7,
-    "support_pct":0.03
-  },
-  {
-    "item":"POLY+NEO+DEXA EYE DROP (ISORE",
-    "category":"RESPIRATORY",
-    "tab":"OTC",
     "item_tx":7,
     "support_pct":0.03
   },
@@ -12439,7 +12425,7 @@
     "support_pct":0.03
   },
   {
-    "item":"TEMPRA FORTE 250MG\/5ML 30ML",
+    "item":"TEMPRA FORTE (ORANGE) 30ML",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":7,
@@ -12512,13 +12498,6 @@
     "item":"VICKS FORMULA 44 15MG\/5ML 54ML",
     "category":"RESPIRATORY",
     "tab":"OTC",
-    "item_tx":7,
-    "support_pct":0.03
-  },
-  {
-    "item":"Z-BETADINE WOUND 25ML",
-    "category":"WOUND CARE",
-    "tab":"MED-SURG",
     "item_tx":7,
     "support_pct":0.03
   },
@@ -12628,7 +12607,7 @@
     "support_pct":0.02
   },
   {
-    "item":"BIGUERLAI SLIMMING TEA",
+    "item":"BIGUERLAI (SENNA GLYCOSIDE) SLIMMING TEA",
     "category":"FOOD SUPPLEMENTS",
     "tab":"OTC",
     "item_tx":6,
@@ -12645,6 +12624,13 @@
     "item":"BIODOL (PARACETAMOL) 250MG\/5ML SUSP 60ML",
     "category":"PAIN MANAGEMENT",
     "tab":"GENERICS",
+    "item_tx":6,
+    "support_pct":0.02
+  },
+  {
+    "item":"BLOOD LANCETS (KING MED",
+    "category":"NEEDLES AND TUBINGS",
+    "tab":"MED-SURG",
     "item_tx":6,
     "support_pct":0.02
   },
@@ -12796,7 +12782,7 @@
     "support_pct":0.02
   },
   {
-    "item":"DOXOKEM 400MG",
+    "item":"DOXOKEM (DOXOFYLLINE) 400MG TAB",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":6,
@@ -12810,7 +12796,7 @@
     "support_pct":0.02
   },
   {
-    "item":"DYPOTIN 4000IU\/ML IV\/SC",
+    "item":"DYPOTIN (EPOETIN ALFA) 4000IU\/ML IV\/SC",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":6,
@@ -12873,7 +12859,7 @@
     "support_pct":0.02
   },
   {
-    "item":"FOSKINA B 20MG\/500MCG 5G",
+    "item":"FOSKINA B (MUPIROCIN+BETAMETHASONE) 20MG\/500MCG 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "item_tx":6,
@@ -12901,7 +12887,7 @@
     "support_pct":0.02
   },
   {
-    "item":"GREAT STERILE LATEX SURGICAL GLOVES 8",
+    "item":"GREAT GLOVE STERILE LATEX GLOVES 8",
     "category":"PERSONAL PROTECTIVE EQUIPMENT",
     "tab":"MED-SURG",
     "item_tx":6,
@@ -13023,13 +13009,6 @@
     "item":"KIDZ KIT 3 FORTE",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "item_tx":6,
-    "support_pct":0.02
-  },
-  {
-    "item":"KING MED LANCETS STERILE 23G 200s",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG",
     "item_tx":6,
     "support_pct":0.02
   },
@@ -13244,16 +13223,9 @@
     "support_pct":0.02
   },
   {
-    "item":"ROSUFEN 160\/10MG TAB",
+    "item":"ROSUFEN (FENOFIBRATE + ROSUVASTATIN CA) 160\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
-    "item_tx":6,
-    "support_pct":0.02
-  },
-  {
-    "item":"SALINASE DRP 30ML",
-    "category":"RESPIRATORY",
-    "tab":"OTC",
     "item_tx":6,
     "support_pct":0.02
   },
@@ -13391,7 +13363,7 @@
     "support_pct":0.02
   },
   {
-    "item":"VENTOLIN EXPECTORANT SYR 50MG\/5ML SYRUP 100ML",
+    "item":"VENTOLIN EXPECTORANT (SALBUTAMOL GUAIFENESIN) 1MG\/50MG\/5ML SYRUP 100ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":6,
@@ -13468,7 +13440,7 @@
     "support_pct":0.02
   },
   {
-    "item":"AMOXIL DROP 20ML",
+    "item":"AMOXIL (AMOXICILLIN) 20ML DROP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":5,
@@ -13580,14 +13552,14 @@
     "support_pct":0.02
   },
   {
-    "item":"BEWELL-C ZINC PROTECT 10s",
+    "item":"BEWELL-C ZINC PROTECT",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":5,
     "support_pct":0.02
   },
   {
-    "item":"BIOGESIC 120MG\/5ML STRAWBERRY SYR 60ML",
+    "item":"BIOGESIC (PARACETAMOL) 120MG\/5ML STRAWBERRY SYR 60ML",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "item_tx":5,
@@ -13639,6 +13611,20 @@
     "item":"CALTRATE SILVER ADVANCE (CHOLECALCIFEROL + MINERALS",
     "category":"VITAMINS",
     "tab":"OTC",
+    "item_tx":5,
+    "support_pct":0.02
+  },
+  {
+    "item":"CANCARE IV CATH G20",
+    "category":"NEEDLES AND TUBINGS",
+    "tab":"MED-SURG",
+    "item_tx":5,
+    "support_pct":0.02
+  },
+  {
+    "item":"CANCARE IV CATH G24",
+    "category":"NEEDLES AND TUBINGS",
+    "tab":"MED-SURG",
     "item_tx":5,
     "support_pct":0.02
   },
@@ -13748,7 +13734,7 @@
     "support_pct":0.02
   },
   {
-    "item":"DERMOVATE CREAM 5G",
+    "item":"DERMOVATE (CLOBETASOL PROPIONATE) 5G CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "item_tx":5,
@@ -13790,7 +13776,7 @@
     "support_pct":0.02
   },
   {
-    "item":"ECTRIN 300 MG CAP",
+    "item":"ECTRIN (ERDOSTEINE)300 MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":5,
@@ -13944,7 +13930,7 @@
     "support_pct":0.02
   },
   {
-    "item":"JANUMET 50\/1000MG TAB",
+    "item":"JANUMET (SITAGLIPTIN + METFORMIN) 50\/1000MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":5,
@@ -14035,7 +14021,7 @@
     "support_pct":0.02
   },
   {
-    "item":"LORIN 10MG TAB",
+    "item":"LORIN 10MG (LORATADINE) 10MG TAB",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
     "item_tx":5,
@@ -14133,14 +14119,14 @@
     "support_pct":0.02
   },
   {
-    "item":"NIVEA EXTRA BRIGHTENING ROLL-ON 50ML X2",
+    "item":"NIVEA COOL KICK 50ML SINGLE",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":5,
     "support_pct":0.02
   },
   {
-    "item":"NIVEA MEN COOL KICK ROLL-ON 50ML",
+    "item":"NIVEA EXTRA BRIGHTENING ROLL-ON 50ML X2",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":5,
@@ -14182,7 +14168,7 @@
     "support_pct":0.02
   },
   {
-    "item":"PALMOLIVE SILKY STRAIGHT OLIVE OIL & KERATIN (VIOLET) 90ML",
+    "item":"PALMOLIVE OLIVE OIL & KERATIN 90ML",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
     "item_tx":5,
@@ -14434,7 +14420,7 @@
     "support_pct":0.02
   },
   {
-    "item":"TASCIT 15MEQ (POTASSIUM CITRATE",
+    "item":"TASCIT 15MEQ",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":5,
@@ -14486,6 +14472,13 @@
     "item":"VALERI (BETAMETHASONE) 1MG\/G (0.1%W\/W) TOPICAL CREAM",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
+    "item_tx":5,
+    "support_pct":0.02
+  },
+  {
+    "item":"VENTOBROX SYR 60ML",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
     "item_tx":5,
     "support_pct":0.02
   },
@@ -14567,13 +14560,6 @@
     "support_pct":0.02
   },
   {
-    "item":"XENILPEX (SALBUTAMOL+GUAIFENESIN) 1MG\/50MG\/5ML 60ML",
-    "category":"VITAMINS",
-    "tab":"GENERICS",
-    "item_tx":5,
-    "support_pct":0.02
-  },
-  {
     "item":"XYCLOVIRAX (ACICLOVIR FORTE) 800 MG",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
@@ -14584,27 +14570,6 @@
     "item":"YAKISOBA SAVORY BEEF 52G",
     "category":"FOOD",
     "tab":"F&B",
-    "item_tx":5,
-    "support_pct":0.02
-  },
-  {
-    "item":"Z-CANCARE IV CATH G20",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG",
-    "item_tx":5,
-    "support_pct":0.02
-  },
-  {
-    "item":"Z-CANCARE IV CATH G24",
-    "category":"NEEDLES AND TUBINGS",
-    "tab":"MED-SURG",
-    "item_tx":5,
-    "support_pct":0.02
-  },
-  {
-    "item":"Z-KWELL (PERMETHRIN) 10MG\/ML SHAMPOO",
-    "category":"HAIR CARE",
-    "tab":"PERSONAL CARE",
     "item_tx":5,
     "support_pct":0.02
   },
@@ -14620,6 +14585,13 @@
     "category":"BEVERAGES",
     "tab":"F&B",
     "item_tx":5,
+    "support_pct":0.02
+  },
+  {
+    "item":"#EXP2025-03-30",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "item_tx":4,
     "support_pct":0.02
   },
   {
@@ -14658,7 +14630,7 @@
     "support_pct":0.02
   },
   {
-    "item":"ANNIV DISC SDS2YOPET MENDOZA",
+    "item":"ANNIV DISC SDS2YO",
     "category":"ADULT MILK",
     "tab":"F&B",
     "item_tx":4,
@@ -14736,6 +14708,13 @@
   },
   {
     "item":"BENCH B20 BODY SPRAY 100ML",
+    "category":"SKIN AND BODY",
+    "tab":"PERSONAL CARE",
+    "item_tx":4,
+    "support_pct":0.02
+  },
+  {
+    "item":"BENCH BARE ME NOT BODY SPRAY 100ML",
     "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":4,
@@ -14896,7 +14875,7 @@
     "support_pct":0.02
   },
   {
-    "item":"CO-APROVEL TAB 150MG\/12.5MG",
+    "item":"CO-APROVEL (IRBESARTAN HYDROCHLOROTHIAZIDE) 150MG\/12.5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":4,
@@ -15036,7 +15015,7 @@
     "support_pct":0.02
   },
   {
-    "item":"FENOSAPH-200 CAP",
+    "item":"FENOSAPH-200 (FENOFIBRATE) 200MG CAP",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":4,
@@ -15050,7 +15029,7 @@
     "support_pct":0.02
   },
   {
-    "item":"FOLISAPH 5MG CAP",
+    "item":"FOLISAPH (FOLIC ACID) 5MG CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":4,
@@ -15122,13 +15101,6 @@
   {
     "item":"HAIR BLACKENING SHAMPOO",
     "category":"HAIR CARE",
-    "tab":"PERSONAL CARE",
-    "item_tx":4,
-    "support_pct":0.02
-  },
-  {
-    "item":"HERBENCH BARE ME NOT DEO BODY SPRAY 100ML",
-    "category":"SKIN AND BODY",
     "tab":"PERSONAL CARE",
     "item_tx":4,
     "support_pct":0.02
@@ -15267,13 +15239,6 @@
     "support_pct":0.02
   },
   {
-    "item":"KWELL (PERMETHRIN) 10MG\/ML SHAMPOO",
-    "category":"HAIR CARE",
-    "tab":"PERSONAL CARE",
-    "item_tx":4,
-    "support_pct":0.02
-  },
-  {
     "item":"LAMPEIN XL 4S",
     "category":"DISPOSABLES",
     "tab":"PERSONAL CARE",
@@ -15319,13 +15284,6 @@
     "item":"LUCKY ME CHICKEN MAMI 39G",
     "category":"FOOD",
     "tab":"F&B",
-    "item_tx":4,
-    "support_pct":0.02
-  },
-  {
-    "item":"LUSTATIN 40MG (ROSUVASTATIN",
-    "category":"CARDIOVASCULAR",
-    "tab":"PRESCRIPTION",
     "item_tx":4,
     "support_pct":0.02
   },
@@ -15400,16 +15358,16 @@
     "support_pct":0.02
   },
   {
-    "item":"MYRA CLASSIC MOISTURIZING LOTION 200ML + 100ML 1 SET",
-    "category":"SKIN AND BODY",
-    "tab":"PERSONAL CARE",
+    "item":"MYRA 400IU 2-WEEK TRIAL PACK 12+2",
+    "category":"VITAMINS",
+    "tab":"OTC",
     "item_tx":4,
     "support_pct":0.02
   },
   {
-    "item":"MYRA E 12+2 SULIT PACK",
-    "category":"VITAMINS",
-    "tab":"OTC",
+    "item":"MYRA CLASSIC MOISTURIZING LOTION 200ML + 100ML 1 SET",
+    "category":"SKIN AND BODY",
+    "tab":"PERSONAL CARE",
     "item_tx":4,
     "support_pct":0.02
   },
@@ -15428,7 +15386,7 @@
     "support_pct":0.02
   },
   {
-    "item":"MYRA ULTIMATE CAP",
+    "item":"MYRA ULTIMATE (ASTAXANTHIN + LYCOPENE + VITAMIN E) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":4,
@@ -15449,7 +15407,7 @@
     "support_pct":0.02
   },
   {
-    "item":"NATRAPHARM ATORVAST TAB 20MG",
+    "item":"NATRAPHARM ATORVAST (ATORVASTATIN) 20MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":4,
@@ -15610,14 +15568,14 @@
     "support_pct":0.02
   },
   {
-    "item":"PROPAN TLC 250ML (MULTIVITAMINS",
+    "item":"PROPAN SYR 120ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":4,
     "support_pct":0.02
   },
   {
-    "item":"PROPAN WHITE (BUCLIZINE HCL + MULTIVITAMINS) 120ML SYRUP",
+    "item":"PROPAN TLC 250ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":4,
@@ -15631,7 +15589,7 @@
     "support_pct":0.02
   },
   {
-    "item":"PULMODUAL(IPRATROPIUM SALBUTAMOL)500MCG\/2.5MG\/2.5ML 20ML",
+    "item":"PULMODUAL (IPRATROPIUM SALBUTAMOL) 500MCG\/2.5MG\/2.5ML 20ML",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":4,
@@ -15848,7 +15806,7 @@
     "support_pct":0.02
   },
   {
-    "item":"TOBRADEX 3MG\/1MG PER ML 5ML",
+    "item":"TOBRADEX (TOBRAMYCIN DEXAMETHASONE) 3MG\/1MG PER ML 5ML",
     "category":"EENT",
     "tab":"PRESCRIPTION",
     "item_tx":4,
@@ -16002,7 +15960,7 @@
     "support_pct":0.01
   },
   {
-    "item":"ANMUM MATERNA VANILLA 180G",
+    "item":"ANMUM MATERNA PLAIN 180G",
     "category":"ADULT MILK",
     "tab":"F&B",
     "item_tx":3,
@@ -16233,7 +16191,7 @@
     "support_pct":0.01
   },
   {
-    "item":"CHERIFER FORTE 240ML\/24&#039;",
+    "item":"CHERIFER FORTE 240ML",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":3,
@@ -16282,14 +16240,14 @@
     "support_pct":0.01
   },
   {
-    "item":"CIMEX 25MG\/5ML 50ML SUSP",
+    "item":"CIMEX (CEFUROXIME AXETIL) 25MG\/5ML 50ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":3,
     "support_pct":0.01
   },
   {
-    "item":"CLARIGET GRANULES 125MG\/5ML 50ML",
+    "item":"CLARIGET 125ML\/5ML GRANULES SUSP 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -16401,7 +16359,7 @@
     "support_pct":0.01
   },
   {
-    "item":"DESOTAP (PHENYLPROPANOLAMINE HYDROCHLORIDE) 12.5MG\/5ML 60ML SYRUP",
+    "item":"DESOTAP (PHENYLPROPANOLAMINE HCL) 12.5MG\/5ML 60ML SYR",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -16422,7 +16380,7 @@
     "support_pct":0.01
   },
   {
-    "item":"DIOVAN TAB 80MG",
+    "item":"DIOVAN CAP 80MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -16506,7 +16464,7 @@
     "support_pct":0.01
   },
   {
-    "item":"ENERVON ACTIV CAP",
+    "item":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":3,
@@ -16516,13 +16474,6 @@
     "item":"ENLEVO (LEVOFLOXACIN) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "item_tx":3,
-    "support_pct":0.01
-  },
-  {
-    "item":"ENPLEX-B (VITAMIN B COMPLEX) AMP",
-    "category":"VITAMINS",
-    "tab":"OTC",
     "item_tx":3,
     "support_pct":0.01
   },
@@ -16716,7 +16667,7 @@
     "support_pct":0.01
   },
   {
-    "item":"HYPACE TAB 5MG",
+    "item":"HYPACE (ENALAPRIL MALEATE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -17171,7 +17122,7 @@
     "support_pct":0.01
   },
   {
-    "item":"REGERON-E PLUS CAP",
+    "item":"REGERON-E PLUS (MULTIVITAMINS+IRON) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":3,
@@ -17234,7 +17185,7 @@
     "support_pct":0.01
   },
   {
-    "item":"ROSUSTAT 20 FC TAB",
+    "item":"ROSUSTAT 20 (ROSUVASTATIN CALCIUM) FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -17395,14 +17346,7 @@
     "support_pct":0.01
   },
   {
-    "item":"TAPDIN (METHIMAZOLE) 20MG TAB",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "item_tx":3,
-    "support_pct":0.01
-  },
-  {
-    "item":"TEMPAID 125MG\/5ML 60ML SYR",
+    "item":"TEMPAID (PARACETAMOL) 125MG\/5ML 60ML SYR",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "item_tx":3,
@@ -17465,7 +17409,7 @@
     "support_pct":0.01
   },
   {
-    "item":"TROSYD CREAM 5G",
+    "item":"TROSYD CREAM (TIOCONAZOLE) 5G",
     "category":"DERMATOLOGICALS",
     "tab":"PRESCRIPTION",
     "item_tx":3,
@@ -17913,7 +17857,7 @@
     "support_pct":0.01
   },
   {
-    "item":"CEPHORAL 500MG CAP (CEFALEXIN",
+    "item":"CEPHORAL (CEFALEXIN) 500MG CAP",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
     "item_tx":2,
@@ -18228,7 +18172,7 @@
     "support_pct":0.01
   },
   {
-    "item":"ENERVON ACTIV CAP 4+1 SET",
+    "item":"ENERVON ACTIV (MULTIVITAMINS + GINSENG + ROYAL JELLY) CAP 4+1 SET",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":2,
@@ -18236,6 +18180,13 @@
   },
   {
     "item":"ENERVON FILMTAB 30&#039;S PROMO",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "item_tx":2,
+    "support_pct":0.01
+  },
+  {
+    "item":"ENPLEX-B (VITAMIN B COMPLEX) AMP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":2,
@@ -18328,13 +18279,6 @@
   {
     "item":"FERTYL 50MG TAB",
     "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "item_tx":2,
-    "support_pct":0.01
-  },
-  {
-    "item":"FLOXANOVA-500 FC TAB",
-    "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":2,
     "support_pct":0.01
@@ -18543,7 +18487,7 @@
     "support_pct":0.01
   },
   {
-    "item":"INSUGET 70\/30 INJECTION VIAL -VEX",
+    "item":"INSUGET 70\/30 INJECTION VIAL",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "item_tx":2,
@@ -18851,7 +18795,7 @@
     "support_pct":0.01
   },
   {
-    "item":"MUCOBRON EXPECTORANT 60ML SYR",
+    "item":"MUCOBRON (GUAIFENESIN+SODIUM CITRATE) EXPECTORANT 60ML SYR",
     "category":"VITAMINS",
     "tab":"GENERICS",
     "item_tx":2,
@@ -19446,7 +19390,7 @@
     "support_pct":0.01
   },
   {
-    "item":"STYLEX EXTREME HOLD 50G",
+    "item":"STYLEX EXTREME HOLD (YELLOW) 50G",
     "category":"HAIR CARE",
     "tab":"PERSONAL CARE",
     "item_tx":2,
@@ -19516,7 +19460,7 @@
     "support_pct":0.01
   },
   {
-    "item":"TAMPLUS CAP 200MCG\/5MG",
+    "item":"TAMPLUS (TAMSULOSIN + FINASTERIDE) 200MCG\/5MG CAP",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
     "item_tx":2,
@@ -19565,7 +19509,7 @@
     "support_pct":0.01
   },
   {
-    "item":"TOSTAS CHEESE SWEET CORN 48G",
+    "item":"TOSTAS CHEESE AND SWEET CORN 48G",
     "category":"FOOD",
     "tab":"F&B",
     "item_tx":2,
@@ -19621,7 +19565,7 @@
     "support_pct":0.01
   },
   {
-    "item":"VALPROS 500MG TAB",
+    "item":"VALPROS (SODIUM VALPROATE\/VALPROIC ACID) 500MG TAB",
     "category":"NEUROLOGICAL DRUGS",
     "tab":"PRESCRIPTION",
     "item_tx":2,
@@ -19782,6 +19726,13 @@
     "support_pct":0.01
   },
   {
+    "item":"#EXP2025-04-30",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "item_tx":1,
+    "support_pct":0.0
+  },
+  {
     "item":"4TH YEAR ANNIVERSARY DISC",
     "category":"ADULT MILK",
     "tab":"F&B",
@@ -19894,7 +19845,7 @@
     "support_pct":0.0
   },
   {
-    "item":"APROVASC 300MG\/10MG TAB",
+    "item":"APROVASC (IRBESARTAN+ AMLODIPINE) 300MG\/10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":1,
@@ -20482,13 +20433,6 @@
     "support_pct":0.0
   },
   {
-    "item":"DULCOLAX 5MG TAB",
-    "category":"GIT",
-    "tab":"OTC",
-    "item_tx":1,
-    "support_pct":0.0
-  },
-  {
     "item":"DYLAX (BISACODYL) 5MG EC TAB",
     "category":"GIT",
     "tab":"GENERICS",
@@ -20601,7 +20545,7 @@
     "support_pct":0.0
   },
   {
-    "item":"ESPAZOL 40MG EC TAB",
+    "item":"ESPAZOL (ESOMEPRAZOLE) 40MG EC TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "item_tx":1,
@@ -20720,13 +20664,6 @@
     "support_pct":0.0
   },
   {
-    "item":"FLEXSA (GLUCOSAMINE SULFATE) 1500MG ORAL SOLUTION",
-    "category":"PAIN MANAGEMENT",
-    "tab":"PRESCRIPTION",
-    "item_tx":1,
-    "support_pct":0.0
-  },
-  {
     "item":"FLUCYSTEINE (ACETYLCYSTEINE) 200MG SACH",
     "category":"RESPIRATORY",
     "tab":"GENERICS",
@@ -20790,7 +20727,7 @@
     "support_pct":0.0
   },
   {
-    "item":"GAVINDEX FORTE CAP",
+    "item":"GAVINDEX FORTE (THIAMINE MONONITRATE VIT B1+PYRIDOXINE HCL VIT B6+CYANOCOBALAMIN VIT B12) CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "item_tx":1,
@@ -21007,7 +20944,7 @@
     "support_pct":0.0
   },
   {
-    "item":"ISORDIL ORAL TAB 10MG",
+    "item":"ISORDIL ORAL (ISOSORBIDE DINITRATE) 10MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
     "item_tx":1,
@@ -21063,7 +21000,7 @@
     "support_pct":0.0
   },
   {
-    "item":"KLAZ (CLARITHROMYCIN) 125MG\/5ML SUS 35ML",
+    "item":"KLAZ (CLARITHROMYCIN) 125MG\/5ML 35ML SUSP",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":1,
@@ -21203,6 +21140,13 @@
     "support_pct":0.0
   },
   {
+    "item":"LMC POPCORN CARAMEL 60G",
+    "category":"FOOD",
+    "tab":"F&B",
+    "item_tx":1,
+    "support_pct":0.0
+  },
+  {
     "item":"LODIPEN (AMLODIPINE BESILATE) 5MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
@@ -21315,7 +21259,7 @@
     "support_pct":0.0
   },
   {
-    "item":"MICROPIL 21s TAB",
+    "item":"MICROPIL (NORETHISTERONE+ ETHINYL ESTRADIOL) 400MCG\/35MCG 21s TAB",
     "category":"GUT AND HORMONES",
     "tab":"OTC",
     "item_tx":1,
@@ -21616,13 +21560,6 @@
     "support_pct":0.0
   },
   {
-    "item":"OISHI POPCORN CARAMEL 60G",
-    "category":"FOOD",
-    "tab":"F&B",
-    "item_tx":1,
-    "support_pct":0.0
-  },
-  {
     "item":"OMEBLOC-20 (OMEPRAZOLE) 20MG CAP",
     "category":"GIT",
     "tab":"GENERICS",
@@ -21763,7 +21700,7 @@
     "support_pct":0.0
   },
   {
-    "item":"PARIET 10MG FC TAB",
+    "item":"PARIET (RABEPRAZOLE SODIUM) 10MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
     "item_tx":1,
@@ -22505,6 +22442,13 @@
     "support_pct":0.0
   },
   {
+    "item":"TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "item_tx":1,
+    "support_pct":0.0
+  },
+  {
     "item":"TOPCARE TOUNGE DEPRESSOR 6\"",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
@@ -22722,13 +22666,6 @@
     "support_pct":0.0
   },
   {
-    "item":"Z-TOLAK ANGIN (HERBALSUPPLEMENT) 155ML SACH",
-    "category":"PAIN MANAGEMENT",
-    "tab":"OTC",
-    "item_tx":1,
-    "support_pct":0.0
-  },
-  {
     "item":"ZENOBLOC-50 (ATENOLOL) 50MG TAB",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
@@ -22743,14 +22680,14 @@
     "support_pct":0.0
   },
   {
-    "item":"ZIMVAST 40MG TAB",
+    "item":"ZIMVAST (SIMVASTATIN) 40MG TAB",
     "category":"GIT",
     "tab":"GENERICS",
     "item_tx":1,
     "support_pct":0.0
   },
   {
-    "item":"ZINNAT (CEFUROXIME) SUSP 125MG 50ML",
+    "item":"ZINNAT SUSP 125MG 50ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "item_tx":1,

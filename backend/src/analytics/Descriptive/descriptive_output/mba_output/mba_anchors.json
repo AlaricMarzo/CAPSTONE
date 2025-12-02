@@ -1,6 +1,6 @@
 [
   {
-    "anchor":"LAMPEIN JUMBO PACK L 54s",
+    "anchor":"LAMPEIN JUMBO PACK L 54S",
     "complement":"LAMPEIN JUMBO PACK XL 48s",
     "lift":976.3795454545,
     "confidence_pct":77.27,
@@ -9,7 +9,7 @@
   },
   {
     "anchor":"LAMPEIN JUMBO PACK XL 48s",
-    "complement":"LAMPEIN JUMBO PACK L 54s",
+    "complement":"LAMPEIN JUMBO PACK L 54S",
     "lift":976.3795454545,
     "confidence_pct":85.0,
     "support_pct":0.07,
@@ -34,18 +34,18 @@
   {
     "anchor":"PARTNERS BLOOD GLUCOMETER CBPC-73",
     "complement":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
-    "lift":319.2643343052,
-    "confidence_pct":61.9,
+    "lift":306.9849368319,
+    "confidence_pct":59.52,
     "support_pct":0.1,
-    "pair_tx":26
+    "pair_tx":25
   },
   {
     "anchor":"PARTNERS GLUCOSE STRIPS 25&#039;S CBPC-73",
     "complement":"PARTNERS BLOOD GLUCOMETER CBPC-73",
-    "lift":319.2643343052,
-    "confidence_pct":53.06,
+    "lift":306.9849368319,
+    "confidence_pct":51.02,
     "support_pct":0.1,
-    "pair_tx":26
+    "pair_tx":25
   },
   {
     "anchor":"INSULINE SYRINGE (BD ULTRA FINE) G30 0.5ML",
@@ -129,14 +129,14 @@
   },
   {
     "anchor":"AK LOG TAB",
-    "complement":"AMVASC BE TAB 5MG",
+    "complement":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "lift":90.9373106061,
     "confidence_pct":63.33,
     "support_pct":0.15,
     "pair_tx":38
   },
   {
-    "anchor":"AMVASC BE TAB 5MG",
+    "anchor":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "complement":"AK LOG TAB",
     "lift":90.9373106061,
     "confidence_pct":21.59,
@@ -144,7 +144,7 @@
     "pair_tx":38
   },
   {
-    "anchor":"AMVASC BE TAB 5MG",
+    "anchor":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "complement":"EUTHYROX TAB 50MCG",
     "lift":26.1064049587,
     "confidence_pct":10.23,
@@ -152,8 +152,8 @@
     "pair_tx":18
   },
   {
-    "anchor":"AMVASC BE TAB 5MG",
-    "complement":"ATENURIX FCT 40MG",
+    "anchor":"AMVASC BE (AMLODIPINE) 5MG TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":24.1018060065,
     "confidence_pct":26.7,
     "support_pct":0.19,
@@ -289,7 +289,7 @@
   },
   {
     "anchor":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":17.0692333671,
     "confidence_pct":8.51,
     "support_pct":0.06,
@@ -304,22 +304,6 @@
     "pair_tx":21
   },
   {
-    "anchor":"GAUZE PAD 4X4 TRUCARE",
-    "complement":"MICROPORE 1 INCH",
-    "lift":53.3540735221,
-    "confidence_pct":27.87,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
-    "anchor":"MICROPORE 1 INCH",
-    "complement":"GAUZE PAD 4X4 TRUCARE",
-    "lift":53.3540735221,
-    "confidence_pct":12.88,
-    "support_pct":0.07,
-    "pair_tx":17
-  },
-  {
     "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
     "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
     "lift":49.69088434,
@@ -330,10 +314,10 @@
   {
     "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
     "complement":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
-    "lift":49.1903351388,
-    "confidence_pct":10.9,
+    "lift":47.0516249154,
+    "confidence_pct":10.43,
     "support_pct":0.09,
-    "pair_tx":23
+    "pair_tx":22
   },
   {
     "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
@@ -345,7 +329,7 @@
   },
   {
     "anchor":"CALIPTROL (ATORVASTATIN) 40MG",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":17.1096817874,
     "confidence_pct":8.53,
     "support_pct":0.07,
@@ -377,7 +361,7 @@
   },
   {
     "anchor":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":32.0048125633,
     "confidence_pct":15.96,
     "support_pct":0.06,
@@ -400,14 +384,6 @@
     "pair_tx":15
   },
   {
-    "anchor":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
-    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
-    "lift":49.1903351388,
-    "confidence_pct":41.07,
-    "support_pct":0.09,
-    "pair_tx":23
-  },
-  {
     "anchor":"CARESS ADULT DIAPER L10+1",
     "complement":"CARESS UNDERPADS L8",
     "lift":48.7350541463,
@@ -424,8 +400,32 @@
     "pair_tx":13
   },
   {
+    "anchor":"GAUZE PAD 4X4 TRUCARE",
+    "complement":"MICROPORE 1 INCH",
+    "lift":47.077123696,
+    "confidence_pct":24.59,
+    "support_pct":0.06,
+    "pair_tx":15
+  },
+  {
+    "anchor":"MICROPORE 1 INCH",
+    "complement":"GAUZE PAD 4X4 TRUCARE",
+    "lift":47.077123696,
+    "confidence_pct":11.36,
+    "support_pct":0.06,
+    "pair_tx":15
+  },
+  {
+    "anchor":"FEBUNAZ (FEBUXOSTAT) 40MG FC TAB",
+    "complement":"CALIPTROL (ATORVASTATIN) 40MG",
+    "lift":47.0516249154,
+    "confidence_pct":39.29,
+    "support_pct":0.09,
+    "pair_tx":22
+  },
+  {
     "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "complement":"ISOPTIN TAB 40MG",
+    "complement":"ISOPTIN (VERAPAMIL) 40MG TAB",
     "lift":46.0030339806,
     "confidence_pct":8.74,
     "support_pct":0.07,
@@ -434,13 +434,13 @@
   {
     "anchor":"CARVIDA (CARVEDILOL) 6.25MG TAB",
     "complement":"FUSEDEX (FUROSEMIDE) 40MG TAB",
-    "lift":29.8955290854,
-    "confidence_pct":14.08,
+    "lift":30.6686893204,
+    "confidence_pct":13.11,
     "support_pct":0.11,
-    "pair_tx":29
+    "pair_tx":27
   },
   {
-    "anchor":"ISOPTIN TAB 40MG",
+    "anchor":"ISOPTIN (VERAPAMIL) 40MG TAB",
     "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
     "lift":46.0030339806,
     "confidence_pct":37.5,
@@ -465,14 +465,14 @@
   },
   {
     "anchor":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
-    "complement":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "complement":"NATRAVOX 457MG\/5ML 35ML",
     "lift":44.3350877193,
     "confidence_pct":13.33,
     "support_pct":0.07,
     "pair_tx":18
   },
   {
-    "anchor":"NATRAVOX 457MG\/5ML 35ML SUSP",
+    "anchor":"NATRAVOX 457MG\/5ML 35ML",
     "complement":"NATRAVOX (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":44.3350877193,
     "confidence_pct":23.68,
@@ -489,7 +489,7 @@
   },
   {
     "anchor":"GIRAN-8 (CANDESARTAN) 8MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":41.9784053156,
     "confidence_pct":20.93,
     "support_pct":0.11,
@@ -528,7 +528,7 @@
     "pair_tx":19
   },
   {
-    "anchor":"KARVIDOL 25MG TAB",
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "complement":"GIRAN-8 (CANDESARTAN) 8MG TAB",
     "lift":41.9784053156,
     "confidence_pct":21.43,
@@ -536,7 +536,7 @@
     "pair_tx":27
   },
   {
-    "anchor":"KARVIDOL 25MG TAB",
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "complement":"CLOHEAL (CLOPIDOGREL) 75MG TAB",
     "lift":32.0048125633,
     "confidence_pct":11.9,
@@ -544,7 +544,7 @@
     "pair_tx":15
   },
   {
-    "anchor":"KARVIDOL 25MG TAB",
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "complement":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
     "lift":21.2049507027,
     "confidence_pct":19.05,
@@ -552,7 +552,7 @@
     "pair_tx":24
   },
   {
-    "anchor":"KARVIDOL 25MG TAB",
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "complement":"CALIPTROL (ATORVASTATIN) 40MG",
     "lift":17.1096817874,
     "confidence_pct":14.29,
@@ -560,7 +560,7 @@
     "pair_tx":18
   },
   {
-    "anchor":"KARVIDOL 25MG TAB",
+    "anchor":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "complement":"SPIRODEN (SPIRONOLACTONE) 25MG TAB",
     "lift":17.0692333671,
     "confidence_pct":12.7,
@@ -568,7 +568,7 @@
     "pair_tx":16
   },
   {
-    "anchor":"ATENURIX FCT 40MG",
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "complement":"B-PLEX (VIT B1+B6+B12) CAP",
     "lift":30.8762218045,
     "confidence_pct":9.29,
@@ -576,15 +576,15 @@
     "pair_tx":26
   },
   {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"AMVASC BE TAB 5MG",
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "lift":24.1018060065,
     "confidence_pct":16.79,
     "support_pct":0.19,
     "pair_tx":47
   },
   {
-    "anchor":"ATENURIX FCT 40MG",
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "complement":"DIABEE (VITAMIN B COMPLEX) CAP",
     "lift":22.3637168142,
     "confidence_pct":10.0,
@@ -592,7 +592,7 @@
     "pair_tx":28
   },
   {
-    "anchor":"ATENURIX FCT 40MG",
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "complement":"AURORA (ROSUVASTATIN) 20MG FC TAB",
     "lift":20.7139344262,
     "confidence_pct":5.0,
@@ -600,8 +600,8 @@
     "pair_tx":14
   },
   {
-    "anchor":"ATENURIX FCT 40MG",
-    "complement":"NEBILET TAB 5MG",
+    "anchor":"ATENURIX (FEBUXOSTAT) 40MG FCT",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":12.0338095238,
     "confidence_pct":12.14,
     "support_pct":0.13,
@@ -609,7 +609,7 @@
   },
   {
     "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":30.8762218045,
     "confidence_pct":34.21,
     "support_pct":0.1,
@@ -633,7 +633,7 @@
   },
   {
     "anchor":"B-PLEX (VIT B1+B6+B12) CAP",
-    "complement":"NEBILET TAB 5MG",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":22.1675438596,
     "confidence_pct":22.37,
     "support_pct":0.07,
@@ -650,10 +650,10 @@
   {
     "anchor":"FUSEDEX (FUROSEMIDE) 40MG TAB",
     "complement":"CARVIDA (CARVEDILOL) 6.25MG TAB",
-    "lift":29.8955290854,
-    "confidence_pct":24.37,
+    "lift":30.6686893204,
+    "confidence_pct":25.0,
     "support_pct":0.11,
-    "pair_tx":29
+    "pair_tx":27
   },
   {
     "anchor":"REVICON FORTE TAB",
@@ -665,7 +665,7 @@
   },
   {
     "anchor":"REVICON FORTE TAB",
-    "complement":"NEBILET TAB 5MG",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":12.0123588829,
     "confidence_pct":12.12,
     "support_pct":0.09,
@@ -673,7 +673,7 @@
   },
   {
     "anchor":"REVICON FORTE TAB",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":10.9398268398,
     "confidence_pct":12.12,
     "support_pct":0.09,
@@ -713,7 +713,7 @@
   },
   {
     "anchor":"FEBUDAY-40 (FEBUXOSTAT) 40MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":21.2049507027,
     "confidence_pct":10.57,
     "support_pct":0.09,
@@ -737,7 +737,7 @@
   },
   {
     "anchor":"EUTHYROX TAB 50MCG",
-    "complement":"AMVASC BE TAB 5MG",
+    "complement":"AMVASC BE (AMLODIPINE) 5MG TAB",
     "lift":26.1064049587,
     "confidence_pct":18.18,
     "support_pct":0.07,
@@ -761,7 +761,7 @@
   },
   {
     "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"NEBILET TAB 5MG",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":9.9655603023,
     "confidence_pct":10.06,
     "support_pct":0.07,
@@ -769,7 +769,7 @@
   },
   {
     "anchor":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":7.0589385475,
     "confidence_pct":7.82,
     "support_pct":0.06,
@@ -801,14 +801,14 @@
   },
   {
     "anchor":"DIABEE (VITAMIN B COMPLEX) CAP",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":22.3637168142,
     "confidence_pct":24.78,
     "support_pct":0.11,
     "pair_tx":28
   },
   {
-    "anchor":"NEBILET TAB 5MG",
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
     "complement":"B-PLEX (VIT B1+B6+B12) CAP",
     "lift":22.1675438596,
     "confidence_pct":6.67,
@@ -816,23 +816,23 @@
     "pair_tx":17
   },
   {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"NEPHROMIN TAB",
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"NEPHORMIN TAB",
     "lift":13.4122954445,
     "confidence_pct":7.06,
     "support_pct":0.07,
     "pair_tx":18
   },
   {
-    "anchor":"NEBILET TAB 5MG",
-    "complement":"ATENURIX FCT 40MG",
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":12.0338095238,
     "confidence_pct":13.33,
     "support_pct":0.13,
     "pair_tx":34
   },
   {
-    "anchor":"NEBILET TAB 5MG",
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
     "complement":"REVICON FORTE TAB",
     "lift":12.0123588829,
     "confidence_pct":9.41,
@@ -840,7 +840,7 @@
     "pair_tx":24
   },
   {
-    "anchor":"NEBILET TAB 5MG",
+    "anchor":"NEBIL 5MG (NEBIVOLOL) TAB",
     "complement":"TRAJENTA (LINAGLIPTIN) 5MG TAB",
     "lift":9.9655603023,
     "confidence_pct":7.06,
@@ -848,7 +848,7 @@
     "pair_tx":18
   },
   {
-    "anchor":"FEMME PAPER TOWEL 1PLY",
+    "anchor":"FEMME INTERFOLDED PAPER TOWEL 1PLY",
     "complement":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
     "lift":21.9808185314,
     "confidence_pct":11.05,
@@ -857,7 +857,7 @@
   },
   {
     "anchor":"SANICARE CLEANSING WIPES - ALOE 80 SHEETS",
-    "complement":"FEMME PAPER TOWEL 1PLY",
+    "complement":"FEMME INTERFOLDED PAPER TOWEL 1PLY",
     "lift":21.9808185314,
     "confidence_pct":14.96,
     "support_pct":0.08,
@@ -905,7 +905,7 @@
   },
   {
     "anchor":"AURORA (ROSUVASTATIN) 20MG FC TAB",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":20.7139344262,
     "confidence_pct":22.95,
     "support_pct":0.06,
@@ -913,7 +913,7 @@
   },
   {
     "anchor":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "complement":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "complement":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "lift":19.5032414077,
     "confidence_pct":8.72,
     "support_pct":0.06,
@@ -921,14 +921,14 @@
   },
   {
     "anchor":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
-    "complement":"BACTIV 457MG\/5ML 70ML",
+    "complement":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":17.6159379449,
     "confidence_pct":27.33,
     "support_pct":0.19,
     "pair_tx":47
   },
   {
-    "anchor":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "anchor":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "complement":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
     "lift":19.5032414077,
     "confidence_pct":13.27,
@@ -936,7 +936,7 @@
     "pair_tx":15
   },
   {
-    "anchor":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "anchor":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "complement":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "lift":6.6957235971,
     "confidence_pct":13.27,
@@ -968,7 +968,7 @@
     "pair_tx":14
   },
   {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
+    "anchor":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "complement":"ASMACAIRE 2MG\/5ML 60ML SYRUP",
     "lift":17.6159379449,
     "confidence_pct":11.99,
@@ -976,15 +976,15 @@
     "pair_tx":47
   },
   {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
-    "complement":"BREZU SYR 5MCG\/ML 60ML..",
+    "anchor":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "complement":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
     "lift":10.7444727891,
     "confidence_pct":8.16,
     "support_pct":0.13,
     "pair_tx":32
   },
   {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
+    "anchor":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "complement":"APPEVIT 120ML SYR",
     "lift":10.6703729768,
     "confidence_pct":6.12,
@@ -992,7 +992,7 @@
     "pair_tx":24
   },
   {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
+    "anchor":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "complement":"MEPTIN SYR 60ML",
     "lift":7.287555457,
     "confidence_pct":3.32,
@@ -1000,7 +1000,7 @@
     "pair_tx":13
   },
   {
-    "anchor":"BACTIV 457MG\/5ML 70ML",
+    "anchor":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "complement":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "lift":5.5330817956,
     "confidence_pct":10.97,
@@ -1008,7 +1008,7 @@
     "pair_tx":43
   },
   {
-    "anchor":"RETASAR (LOSARTAN) 50MG TAB",
+    "anchor":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "complement":"RETAVASC (AMLODIPINE) 10MG TAB",
     "lift":14.390265961,
     "confidence_pct":6.72,
@@ -1017,23 +1017,23 @@
   },
   {
     "anchor":"RETAVASC (AMLODIPINE) 10MG TAB",
-    "complement":"RETASAR (LOSARTAN) 50MG TAB",
+    "complement":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "lift":14.390265961,
     "confidence_pct":14.41,
     "support_pct":0.07,
     "pair_tx":17
   },
   {
-    "anchor":"NEPHROMIN TAB",
-    "complement":"NEBILET TAB 5MG",
+    "anchor":"NEPHORMIN TAB",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":13.4122954445,
     "confidence_pct":13.53,
     "support_pct":0.07,
     "pair_tx":18
   },
   {
-    "anchor":"NEPHROMIN TAB",
-    "complement":"ATENURIX FCT 40MG",
+    "anchor":"NEPHORMIN TAB",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":10.8575725027,
     "confidence_pct":12.03,
     "support_pct":0.06,
@@ -1041,7 +1041,7 @@
   },
   {
     "anchor":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":13.2504409171,
     "confidence_pct":6.61,
     "support_pct":0.09,
@@ -1113,7 +1113,7 @@
   },
   {
     "anchor":"FORXIGA 10MG",
-    "complement":"KARVIDOL 25MG TAB",
+    "complement":"KARVIDOL (CARVEDILOL) 25MG TAB",
     "lift":9.4941298018,
     "confidence_pct":4.73,
     "support_pct":0.09,
@@ -1136,8 +1136,8 @@
     "pair_tx":17
   },
   {
-    "anchor":"BREZU SYR 5MCG\/ML 60ML..",
-    "complement":"BACTIV 457MG\/5ML 70ML",
+    "anchor":"BREZU (PROCATEROL) 5MCG\/ML 60ML SYR",
+    "complement":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":10.7444727891,
     "confidence_pct":16.67,
     "support_pct":0.13,
@@ -1145,35 +1145,35 @@
   },
   {
     "anchor":"APPEVIT 120ML SYR",
-    "complement":"BACTIV 457MG\/5ML 70ML",
+    "complement":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":10.6703729768,
     "confidence_pct":16.55,
     "support_pct":0.09,
     "pair_tx":24
   },
   {
-    "anchor":"ALAXAN FR CAP",
+    "anchor":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
     "complement":"BIOFLU TAB",
-    "lift":8.3942866633,
-    "confidence_pct":14.81,
-    "support_pct":0.16,
-    "pair_tx":40
+    "lift":8.4867347544,
+    "confidence_pct":14.98,
+    "support_pct":0.13,
+    "pair_tx":34
   },
   {
-    "anchor":"ALAXAN FR CAP",
+    "anchor":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
     "complement":"BIOGESIC 500MG TAB",
-    "lift":3.3283165709,
-    "confidence_pct":12.22,
-    "support_pct":0.13,
-    "pair_tx":33
+    "lift":3.2390105195,
+    "confidence_pct":11.89,
+    "support_pct":0.11,
+    "pair_tx":27
   },
   {
     "anchor":"BIOFLU TAB",
-    "complement":"ALAXAN FR CAP",
-    "lift":8.3942866633,
-    "confidence_pct":8.97,
-    "support_pct":0.16,
-    "pair_tx":40
+    "complement":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
+    "lift":8.4867347544,
+    "confidence_pct":7.62,
+    "support_pct":0.13,
+    "pair_tx":34
   },
   {
     "anchor":"BIOFLU TAB",
@@ -1185,7 +1185,7 @@
   },
   {
     "anchor":"BIOFLU TAB",
-    "complement":"NEOZEP FORTE TAB",
+    "complement":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "lift":3.6852965839,
     "confidence_pct":3.59,
     "support_pct":0.06,
@@ -1201,7 +1201,7 @@
   },
   {
     "anchor":"MEPTIN SYR 60ML",
-    "complement":"BACTIV 457MG\/5ML 70ML",
+    "complement":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":7.287555457,
     "confidence_pct":11.3,
     "support_pct":0.05,
@@ -1233,7 +1233,7 @@
   },
   {
     "anchor":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "complement":"KLARYTH 250MG\/5ML SUSP 35ML",
+    "complement":"KLARYTH (CLARITHROMYCIN) 250MG\/5ML SUSP 35ML",
     "lift":6.6957235971,
     "confidence_pct":2.99,
     "support_pct":0.06,
@@ -1241,7 +1241,7 @@
   },
   {
     "anchor":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
-    "complement":"BACTIV 457MG\/5ML 70ML",
+    "complement":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "lift":5.5330817956,
     "confidence_pct":8.58,
     "support_pct":0.17,
@@ -1257,7 +1257,7 @@
   },
   {
     "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"NEBILET TAB 5MG",
+    "complement":"NEBIL 5MG (NEBIVOLOL) TAB",
     "lift":4.1964999681,
     "confidence_pct":4.23,
     "support_pct":0.05,
@@ -1265,7 +1265,7 @@
   },
   {
     "anchor":"MX3 COFFEE MIX 10G",
-    "complement":"ATENURIX FCT 40MG",
+    "complement":"ATENURIX (FEBUXOSTAT) 40MG FCT",
     "lift":3.8218124709,
     "confidence_pct":4.23,
     "support_pct":0.05,
@@ -1288,7 +1288,7 @@
     "pair_tx":13
   },
   {
-    "anchor":"NEOZEP FORTE TAB",
+    "anchor":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "complement":"BIOFLU TAB",
     "lift":3.6852965839,
     "confidence_pct":6.5,
@@ -1296,7 +1296,7 @@
     "pair_tx":16
   },
   {
-    "anchor":"NEOZEP FORTE TAB",
+    "anchor":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "complement":"BIOGESIC 500MG TAB",
     "lift":3.6530303827,
     "confidence_pct":13.41,
@@ -1305,7 +1305,7 @@
   },
   {
     "anchor":"BIOGESIC 500MG TAB",
-    "complement":"NEOZEP FORTE TAB",
+    "complement":"NEOZEP FORTE (PHENYLEPHRINE HCL + PARACETAMOL) TAB",
     "lift":3.6530303827,
     "confidence_pct":3.56,
     "support_pct":0.13,
@@ -1321,11 +1321,11 @@
   },
   {
     "anchor":"BIOGESIC 500MG TAB",
-    "complement":"ALAXAN FR CAP",
-    "lift":3.3283165709,
-    "confidence_pct":3.56,
-    "support_pct":0.13,
-    "pair_tx":33
+    "complement":"ALAXAN FR (IBUPROFEN + PARACETAMOL) CAP",
+    "lift":3.2390105195,
+    "confidence_pct":2.91,
+    "support_pct":0.11,
+    "pair_tx":27
   },
   {
     "anchor":"BIOGESIC 500MG TAB",
