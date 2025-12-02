@@ -1,18 +1,17 @@
 cluster,n,total_sales,total_qty,avg_price_med,months_active_med,mean_monthly_qty_med,cv_monthly_qty_med,trend_qty_slope_med,persona
--1,163,314309.44,9524.0,33.0,3.0,4.0,0.3896981747912116,0.0,"High-Sales, High-Volume, Premium"
-0,32,1133.52,69.0,20.0,1.0,1.5,0.0,0.0,"High-Sales, High-Volume, Premium"
-1,9,1620.0,81.0,20.0,2.0,4.5,0.3333333333333333,-7.850462293418875e-17,"High-Sales, High-Volume, Premium, Declining"
-2,7,734.0,38.0,15.0,1.0,7.0,0.0,0.0,Mixed
-3,11,1097.0,54.0,20.0,2.0,2.0,0.282842712474619,0.0,"High-Sales, Premium"
-4,14,825.92,54.0,14.375,2.0,2.5,0.0,0.0,Mixed
-5,10,1200.0,55.0,30.0,1.5,3.333333333333333,0.08333333333333333,0.0,"High-Sales, High-Volume, Premium"
-6,16,364.0,26.0,12.0,1.0,1.0,0.0,0.0,Mixed
-7,10,736.14,58.0,13.5,2.0,3.0,0.27671541333648847,0.0,High-Volume
-8,9,985.0,59.0,12.0,2.0,3.6666666666666665,0.0,0.0,"High-Sales, High-Volume"
-9,16,194.5,23.0,10.0,1.0,1.0,0.0,0.0,Mixed
-10,5,1806.0,56.0,33.0,3.0,3.6666666666666665,0.3679900360969936,0.0,"High-Sales, High-Volume, Premium"
-11,8,1588.4,55.0,33.0,3.0,2.0,0.408248290463863,-0.2500000000000005,"High-Sales, High-Volume, Premium, Declining"
-12,5,825.0,35.0,33.0,3.0,1.6666666666666667,0.3333333333333333,-0.4999999999999999,"Premium, Declining"
-13,22,1066.08,62.0,18.5,1.0,2.0,0.0,0.0,"High-Sales, High-Volume"
-14,10,875.0,46.0,25.0,2.0,2.166666666666667,0.2676819211218877,-7.850462293418875e-17,"Premium, Declining"
-15,6,900.0,23.0,50.0,2.0,1.8333333333333335,0.3080880229039762,0.0,Premium
+Noise / Outliers,156,733140.43,24173.0,33.026315789473685,7.0,3.6794871794871797,0.5,-0.01818181818181818,"High-Sales, High-Volume, Premium, Declining"
+"High-Sales, High-Volume, Declining 1",28,4836.04,248.0,20.0,2.5,3.4,0.3398717474235544,-7.850462293418875e-17,"High-Sales, High-Volume, Declining"
+Rising 1,5,1610.5,87.0,20.0,4.0,3.5714285714285716,0.31716197120135853,0.14285714285714265,Rising
+"High-Sales, High-Volume, Premium 1",21,3134.12,156.0,24.0,2.0,3.0,0.3809008405285684,0.0,"High-Sales, High-Volume, Premium"
+"High-Sales, High-Volume 1",77,3967.1,301.0,12.0,2.0,2.0,0.0,0.0,"High-Sales, High-Volume"
+"High-Sales, High-Volume 2",35,3460.74,259.0,12.0,2.0,3.0,0.3535533905932738,0.0,"High-Sales, High-Volume"
+"Premium, Declining 1",6,1447.4,58.0,28.555555555555557,4.0,2.3666666666666667,0.408827719085593,-0.4000000000000002,"Premium, Declining"
+"High-Sales, High-Volume, Premium 2",22,4375.54,193.0,31.0,3.0,2.0,0.4481393009590856,0.0,"High-Sales, High-Volume, Premium"
+Declining,5,1896.75,85.0,20.0,4.0,4.75,0.6492207662311682,-0.7000000000000001,Declining
+Premium,7,845.0,40.0,25.0,1.0,2.5,0.0,0.0,Premium
+"Premium, Declining 2",9,736.0,30.0,28.0,2.0,1.5,0.0,-1.570092458683775e-16,"Premium, Declining"
+"High-Sales, High-Volume, Declining 2",17,4422.34,277.0,15.0,4.0,3.4,0.5378254348272379,-0.035714285714285705,"High-Sales, High-Volume, Declining"
+"High-Volume, Declining",11,2460.1,153.0,20.0,3.0,5.0,0.4320493798938574,-0.20000000000000023,"High-Volume, Declining"
+"Premium, Declining 3",5,2796.4,102.0,33.0,7.0,2.4285714285714284,0.49565586901037406,-5.87620928599458e-17,"Premium, Declining"
+Rising 2,6,2411.0,105.0,22.5,5.0,3.5,0.4411934580013898,0.18333333333333304,Rising
+"High-Sales, Premium, Declining",7,3166.0,83.0,38.0,6.0,2.0,0.5,-0.08571428571428587,"High-Sales, Premium, Declining"

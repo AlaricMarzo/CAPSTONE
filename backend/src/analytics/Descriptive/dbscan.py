@@ -251,8 +251,8 @@ def _scatter_plot(df: pd.DataFrame,
                   out_png: Path,
                   use_log: bool):
     """
-    Scatter with cluster-based colors and side legend.
-    One distinct color per cluster.
+    Scatter with persona-based colors and side legend.
+    One distinct color per persona.
     """
     if df.empty:
         return
@@ -284,26 +284,48 @@ def _scatter_plot(df: pd.DataFrame,
     ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
-    # ---- CLUSTER → COLOR mapping ----
+    # ---- PERSONA → COLOR mapping (unique) ----
+    # All personas present in this plot
+    personas = sorted(summary["persona"].dropna().unique().tolist())
+    n_personas = max(len(personas), 1)
+
+    # Sample n_personas distinct colors from a continuous colormap
+    cmap = plt.cm.get_cmap("tab20")
+    color_array = cmap(np.linspace(0, 1, n_personas))
+
+    persona_colors: Dict[str, Any] = {
+        persona: color_array[i] for i, persona in enumerate(personas)
+    }
+
     clusters = sorted(df["cluster"].unique().tolist())
-    n_clusters = len(clusters)
-    cmap = plt.cm.get_cmap("tab20", n_clusters)
     handles, labels = [], []
 
-    for i, c in enumerate(clusters):
+    for c in clusters:
         sub = df[df["cluster"] == c]
 
-        size = 30 if c == -1 else 50
-        alpha = 0.6 if c == -1 else 0.85
-        color = cmap(i)
+        if c == "Noise / Outliers":
+            persona = "Noise / Outliers"
+            color = "gray"
+        else:
+            # c is like "High-Sales" or "High-Sales 1"
+            if " " in c and c.split()[-1].isdigit():
+                persona = " ".join(c.split()[:-1])
+            else:
+                persona = c
+            color = persona_colors.get(persona, "black")
+
+        size = 30 if c == "Noise / Outliers" else 50
+        alpha = 0.6 if c == "Noise / Outliers" else 0.85
 
         sc = ax.scatter(
             sub["total_sales"], sub["total_qty"],
             s=size, alpha=alpha, color=color, edgecolors="none"
         )
 
-        handles.append(sc)
-        labels.append(f"Cluster {c}" if c != -1 else "Noise")
+        # legend: one entry per persona
+        if persona not in labels:
+            handles.append(sc)
+            labels.append(persona)
 
     # ---- title & legend ----
     full_title = title + (" (log view)" if use_log else " (linear view)")
@@ -384,11 +406,29 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
 
         # per-tab summary with personas
         sm = _summarize(subk)
+
+        # Assign names to clusters
+        persona_groups = sm.groupby("persona")
+        mapping = {}
+        for persona, group in persona_groups:
+            clusters = group["cluster"].tolist()
+            if len(clusters) == 1:
+                mapping[clusters[0]] = persona
+            else:
+                for i, c in enumerate(sorted(clusters)):
+                    mapping[c] = f"{persona} {i+1}"
+        # Handle noise
+        if -1 in sm["cluster"].values:
+            mapping[-1] = "Noise / Outliers"
+
+        subk["cluster"] = subk["cluster"].map(mapping)
+        sm["cluster"] = sm["cluster"].map(mapping)
+
         sm.to_csv(sub_sum / f"by_tab_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_tab_{fn_root}.json")
 
-        if -1 in sm["cluster"].values:
-            meta["n_noise"] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+        if "Noise / Outliers" in sm["cluster"].values:
+            meta["n_noise"] = sm.loc[sm["cluster"] == "Noise / Outliers", "total_qty"].iloc[0]
 
         _plot_both(
             subk, sm,
@@ -414,11 +454,29 @@ def cluster_all(df: pd.DataFrame, out_dir: str, random_state=42) -> Dict[str, An
 
         # per-category summary with personas
         sm = _summarize(subk)
+
+        # Assign names to clusters
+        persona_groups = sm.groupby("persona")
+        mapping = {}
+        for persona, group in persona_groups:
+            clusters = group["cluster"].tolist()
+            if len(clusters) == 1:
+                mapping[clusters[0]] = persona
+            else:
+                for i, c in enumerate(sorted(clusters)):
+                    mapping[c] = f"{persona} {i+1}"
+        # Handle noise
+        if -1 in sm["cluster"].values:
+            mapping[-1] = "Noise / Outliers"
+
+        subk["cluster"] = subk["cluster"].map(mapping)
+        sm["cluster"] = sm["cluster"].map(mapping)
+
         sm.to_csv(sub_sum / f"by_category_{fn_root}.csv", index=False, encoding="utf-8")
         _to_json(sm, sub_sum / f"by_category_{fn_root}.json")
 
-        if -1 in sm["cluster"].values:
-            meta["n_noise"] = sm.loc[sm["cluster"] == -1, "total_qty"].iloc[0]
+        if "Noise / Outliers" in sm["cluster"].values:
+            meta["n_noise"] = sm.loc[sm["cluster"] == "Noise / Outliers", "total_qty"].iloc[0]
 
         _plot_both(
             subk, sm,

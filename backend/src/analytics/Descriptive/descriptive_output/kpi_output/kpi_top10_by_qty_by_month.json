@@ -1,5 +1,105 @@
 [
   {
+    "month":"2022-05",
+    "item_code":"4800204044727",
+    "description":"POTEN-CEE NON-ACIDIC CAP 562.50MG",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":937.5,
+    "total_qty":150.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4800204506027",
+    "description":"PHAREX VIT BCOMPLEX (VITAMIN B1 + B6 + B12",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":750.5,
+    "total_qty":166.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4806504653164",
+    "description":"RENAKULT CAP(PROBIOTIC",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":4077.0,
+    "total_qty":150.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4806505141387",
+    "description":"FORMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":472.6,
+    "total_qty":280.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4806524780482",
+    "description":"KETOGO (KETOANALOGUES +ESSEN. AMINO ACIDS",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":9817.68,
+    "total_qty":469.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4806527194088",
+    "description":"ALLECUR (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":525.0,
+    "total_qty":175.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1236.0,
+    "total_qty":309.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":1435.0,
+    "total_qty":164.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"8904184004972",
+    "description":"PERGLIM M-2 (GLIMEPERIDE METFORMIN HCl) 2MG\/500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":3718.12,
+    "total_qty":206.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2022-05",
+    "item_code":"8944164510321",
+    "description":"ANIN (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1004.18,
+    "total_qty":463.0,
+    "rank_qty":2.0
+  },
+  {
     "month":"2022-06",
     "item_code":"1900010066",
     "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
@@ -52,7 +152,7 @@
   {
     "month":"2022-06",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4865.76,
@@ -98,6 +198,206 @@
     "total_sales":576.38,
     "total_qty":267.0,
     "rank_qty":6.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"1900010066",
+    "description":"SUPER CEE PLUS (SODIUM ASCORBATE FORTIFIED + ZINC) 500MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":800.0,
+    "total_qty":200.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4806035205429",
+    "description":"REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":365.72,
+    "total_qty":175.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4806504653164",
+    "description":"RENAKULT CAP(PROBIOTIC",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":11590.92,
+    "total_qty":458.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":680.0,
+    "total_qty":340.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":13548.24,
+    "total_qty":701.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4806527194088",
+    "description":"ALLECUR (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":876.0,
+    "total_qty":293.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2148.0,
+    "total_qty":537.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":1589.97,
+    "total_qty":186.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"8904360300065",
+    "description":"BRELVASTIN (ATORVASTATIN) 20MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":718.2,
+    "total_qty":230.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2022-07",
+    "item_code":"8944164510321",
+    "description":"ANIN (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1391.5,
+    "total_qty":624.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806504086139",
+    "description":"FORALIVIT (FERROUS+ FOLIC ACID+ VIT B COMPLEX) CAP",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":879.6,
+    "total_qty":222.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806504653164",
+    "description":"RENAKULT CAP(PROBIOTIC",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":7816.5,
+    "total_qty":294.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806504653348",
+    "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":7208.0,
+    "total_qty":212.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":504.0,
+    "total_qty":255.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806524772913",
+    "description":"AMLOTHIX (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":540.58,
+    "total_qty":310.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":4999.68,
+    "total_qty":258.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4806531820812",
+    "description":"AK LOG TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":4092.06,
+    "total_qty":287.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2380.56,
+    "total_qty":598.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"6100010004",
+    "description":"GAUZE PAD 4X4 TRUCARE",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":994.58,
+    "total_qty":223.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2022-08",
+    "item_code":"8944164510321",
+    "description":"ANIN (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":763.6,
+    "total_qty":335.0,
+    "rank_qty":2.0
   },
   {
     "month":"2022-09",
@@ -200,6 +500,106 @@
     "rank_qty":4.0
   },
   {
+    "month":"2022-10",
+    "item_code":"4800301903149",
+    "description":"DIABEE (VITAMIN B COMPLEX) CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":828.65,
+    "total_qty":275.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"4806527194088",
+    "description":"ALLECUR (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1203.0,
+    "total_qty":401.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"4806531820812",
+    "description":"AK LOG TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":8560.22,
+    "total_qty":599.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2873.25,
+    "total_qty":697.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":3518.73,
+    "total_qty":505.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"69853920",
+    "description":"ASCORSAPH ZEE(ASCORBIC ACID+ZN)500MG\/10MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":616.64,
+    "total_qty":320.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"8902269016674",
+    "description":"ALCLAV 625MG TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":6446.38,
+    "total_qty":216.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"8944164510321",
+    "description":"ANIN (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":758.08,
+    "total_qty":343.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"8961100510023",
+    "description":"CALIPTROL (ATORVASTATIN) 40MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1151.8,
+    "total_qty":214.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2022-10",
+    "item_code":"8961100510665",
+    "description":"AURORA (ROSUVASTATIN) 10MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1989.4,
+    "total_qty":217.0,
+    "rank_qty":8.0
+  },
+  {
     "month":"2022-11",
     "item_code":"4806032201004",
     "description":"POTEN CEE PLUS ZINC (ASCORBIC ACID + ZINC",
@@ -252,7 +652,7 @@
   {
     "month":"2022-11",
     "item_code":"4807788526762",
-    "description":"BIOFLU (PENYLEPHINE + CHLORPHENAMINE + PARACETAMOL) TAB",
+    "description":"BIOFLU TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_sales":1688.0,
@@ -300,6 +700,106 @@
     "rank_qty":2.0
   },
   {
+    "month":"2022-12",
+    "item_code":"4806504653164",
+    "description":"RENAKULT CAP(PROBIOTIC",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":6156.0,
+    "total_qty":240.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4806505141387",
+    "description":"FORMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":549.5,
+    "total_qty":315.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4806511990641",
+    "description":"RENABAL (KETOANALOGUES + ESSENTIAL AMINO ACIDS) FC TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":7634.2,
+    "total_qty":496.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":444.0,
+    "total_qty":234.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4806526296813",
+    "description":"GAUZE PAD 3X3 STERILE (PARTNERS",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":733.67,
+    "total_qty":223.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4807788526762",
+    "description":"BIOFLU TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1784.0,
+    "total_qty":223.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1627.75,
+    "total_qty":383.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":2038.68,
+    "total_qty":243.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"69853920",
+    "description":"ASCORSAPH ZEE(ASCORBIC ACID+ZN)500MG\/10MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":743.2,
+    "total_qty":400.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2022-12",
+    "item_code":"8904179014702",
+    "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2143.0,
+    "total_qty":920.0,
+    "rank_qty":1.0
+  },
+  {
     "month":"2023-01",
     "item_code":"4806035205429",
     "description":"REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
@@ -332,7 +832,7 @@
   {
     "month":"2023-01",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":9360.0,
@@ -372,7 +872,7 @@
   {
     "month":"2023-01",
     "item_code":"8902269016674",
-    "description":"ALCLAV (CO-AMOXICLAV) 625MG TAB",
+    "description":"ALCLAV 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4733.96,
@@ -412,7 +912,7 @@
   {
     "month":"2023-02",
     "item_code":"4806033302731",
-    "description":"RM COLCHICINE 500MG",
+    "description":"RM COLCHICINE 500MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_sales":590.94,
@@ -432,7 +932,7 @@
   {
     "month":"2023-02",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":13052.0,
@@ -500,6 +1000,306 @@
     "rank_qty":9.0
   },
   {
+    "month":"2023-03",
+    "item_code":"1900010021",
+    "description":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1112.44,
+    "total_qty":231.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":3366.36,
+    "total_qty":245.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"4806505142124",
+    "description":"FERRICORE (FERROUS SULFATE) 325MG TAB",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":756.0,
+    "total_qty":390.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":4000.0,
+    "total_qty":250.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2601.0,
+    "total_qty":616.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":23913.12,
+    "total_qty":374.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"54021235",
+    "description":"GLOBISAPH (KETOANALOGUE) 630MG TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":5624.0,
+    "total_qty":370.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"8904179014702",
+    "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2090.0,
+    "total_qty":885.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"8944164010272",
+    "description":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1714.88,
+    "total_qty":223.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-03",
+    "item_code":"8961100510023",
+    "description":"CALIPTROL (ATORVASTATIN) 40MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1245.4,
+    "total_qty":207.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"1900010021",
+    "description":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1189.0,
+    "total_qty":245.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4806035205429",
+    "description":"REGIVASC (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":487.5,
+    "total_qty":211.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":5871.36,
+    "total_qty":438.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4806505141387",
+    "description":"FORMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":603.75,
+    "total_qty":351.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":897.2,
+    "total_qty":467.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4806534570240",
+    "description":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":636.0,
+    "total_qty":212.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1012.64,
+    "total_qty":246.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":21131.04,
+    "total_qty":329.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"54021235",
+    "description":"GLOBISAPH (KETOANALOGUE) 630MG TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":8534.8,
+    "total_qty":554.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-04",
+    "item_code":"8904179014702",
+    "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1505.0,
+    "total_qty":637.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"38119798",
+    "description":"ATORSAPH-20 (ATORVASTATIN) 20MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":595.0,
+    "total_qty":196.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":5634.46,
+    "total_qty":424.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4806524772906",
+    "description":"AMLOTHIX (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":681.6,
+    "total_qty":347.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4806524772913",
+    "description":"AMLOTHIX (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":354.42,
+    "total_qty":225.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":8112.0,
+    "total_qty":492.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4806534570240",
+    "description":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":657.12,
+    "total_qty":225.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2908.14,
+    "total_qty":690.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":13134.24,
+    "total_qty":207.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"8904179014702",
+    "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2770.0,
+    "total_qty":1170.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-05",
+    "item_code":"8944164010272",
+    "description":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1656.92,
+    "total_qty":213.0,
+    "rank_qty":8.0
+  },
+  {
     "month":"2023-06",
     "item_code":"1900010021",
     "description":"SAPHLOPID (CLOPIDOGREL) 75MG TAB",
@@ -512,7 +1312,7 @@
   {
     "month":"2023-06",
     "item_code":"4800369000545",
-    "description":"TERRAFERON (FERROUS SULFATE + FOLIC ACID + B-COMPLEX + NICOTINAMIDE) CAP",
+    "description":"TERRAFERON CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":2707.21,
@@ -522,7 +1322,7 @@
   {
     "month":"2023-06",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":5048.12,
@@ -532,7 +1332,7 @@
   {
     "month":"2023-06",
     "item_code":"4806523302593",
-    "description":"MYMET (METFORMIN) 500MG F.C TAB",
+    "description":"MYMET (METFORMIN) 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"GENERICS",
     "total_sales":372.4,
@@ -542,7 +1342,7 @@
   {
     "month":"2023-06",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":4320.0,
@@ -552,7 +1352,7 @@
   {
     "month":"2023-06",
     "item_code":"4807788526762",
-    "description":"BIOFLU (PENYLEPHINE + CHLORPHENAMINE + PARACETAMOL) TAB",
+    "description":"BIOFLU TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
     "total_sales":1896.0,
@@ -632,7 +1432,7 @@
   {
     "month":"2023-07",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":5280.0,
@@ -702,7 +1502,7 @@
   {
     "month":"2023-08",
     "item_code":"4800369000545",
-    "description":"TERRAFERON (FERROUS SULFATE + FOLIC ACID + B-COMPLEX + NICOTINAMIDE) CAP",
+    "description":"TERRAFERON CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":3328.38,
@@ -712,7 +1512,7 @@
   {
     "month":"2023-08",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":4224.0,
@@ -722,7 +1522,7 @@
   {
     "month":"2023-08",
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
     "total_sales":8300.0,
@@ -762,7 +1562,7 @@
   {
     "month":"2023-08",
     "item_code":"4807788562630",
-    "description":"CALCIUMADE (CALCIUM + VITAMIN + MINERALS) TAB",
+    "description":"CALCIUMADE TAB",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":3138.0,
@@ -800,6 +1600,406 @@
     "rank_qty":5.0
   },
   {
+    "month":"2023-09",
+    "item_code":"45817663",
+    "description":"ROSUSAPH-20 (ROSUVASTATIN) 20MG FC TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":2929.0,
+    "total_qty":225.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4806033302731",
+    "description":"RM COLCHICINE 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
+    "total_sales":790.4,
+    "total_qty":232.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4806502850008",
+    "description":"SYMDEX D TAB",
+    "category":"RESPIRATORY",
+    "tab":"OTC",
+    "total_sales":1983.0,
+    "total_qty":638.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":3696.0,
+    "total_qty":231.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1142.5,
+    "total_qty":457.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4806534570240",
+    "description":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":767.84,
+    "total_qty":268.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2995.4,
+    "total_qty":705.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"4809015705865",
+    "description":"KETOMIRIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) 630MG FC TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":4125.0,
+    "total_qty":275.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"69853920",
+    "description":"ASCORSAPH ZEE(ASCORBIC ACID+ZN)500MG\/10MG CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":1928.96,
+    "total_qty":600.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-09",
+    "item_code":"8904186000521",
+    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2082.4,
+    "total_qty":264.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4800369000545",
+    "description":"TERRAFERON CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":1851.0,
+    "total_qty":275.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4806033302731",
+    "description":"RM COLCHICINE 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
+    "total_sales":1425.0,
+    "total_qty":379.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4806524147254",
+    "description":"GLYCEMET 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":393.96,
+    "total_qty":408.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4806527194125",
+    "description":"LODIPEX (AMLODIPINE BESILATE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":720.0,
+    "total_qty":256.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1188.0,
+    "total_qty":487.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4806534570240",
+    "description":"CETRINOVA (CETIRIZINE) 10MG FC TAB",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":921.0,
+    "total_qty":307.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2732.75,
+    "total_qty":645.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"4809015705865",
+    "description":"KETOMIRIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) 630MG FC TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":5955.0,
+    "total_qty":397.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"8904182011286",
+    "description":"MEDPIN-5 TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":564.0,
+    "total_qty":285.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-10",
+    "item_code":"8904186000521",
+    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2109.0,
+    "total_qty":275.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":13180.5,
+    "total_qty":261.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":3945.0,
+    "total_qty":285.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4806520351105",
+    "description":"FUSEDEX (FUROSEMIDE) 40MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":518.52,
+    "total_qty":221.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4806521161222",
+    "description":"CO-ALTRIA PED 5MG\/5ML TAB",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":6278.1,
+    "total_qty":255.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1772.5,
+    "total_qty":742.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1487.5,
+    "total_qty":350.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4809014206110",
+    "description":"OMX (PROBIOTICS) CAP",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":17144.75,
+    "total_qty":341.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"4809015705865",
+    "description":"KETOMIRIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) 630MG FC TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":10275.0,
+    "total_qty":685.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"8904186000521",
+    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2456.7,
+    "total_qty":307.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-11",
+    "item_code":"8944164010272",
+    "description":"CARVIDA (CARVEDILOL) 6.25MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2099.75,
+    "total_qty":278.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":38491.1,
+    "total_qty":765.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":5988.0,
+    "total_qty":419.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4806524147254",
+    "description":"GLYCEMET 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":259.35,
+    "total_qty":270.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4806524147391",
+    "description":"REVITAPLEX (VITAMIN B1 + B6 + B12) TAB",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":854.43,
+    "total_qty":268.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":2030.0,
+    "total_qty":866.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2295.0,
+    "total_qty":540.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":2178.75,
+    "total_qty":261.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":20665.5,
+    "total_qty":310.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"8904186000521",
+    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2648.6,
+    "total_qty":337.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2023-12",
+    "item_code":"8906043325297",
+    "description":"AMLOSAPH (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":578.0,
+    "total_qty":325.0,
+    "rank_qty":6.0
+  },
+  {
     "month":"2024-01",
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
@@ -812,7 +2012,7 @@
   {
     "month":"2024-01",
     "item_code":"4800369000545",
-    "description":"TERRAFERON (FERROUS SULFATE + FOLIC ACID + B-COMPLEX + NICOTINAMIDE) CAP",
+    "description":"TERRAFERON CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":2047.5,
@@ -822,7 +2022,7 @@
   {
     "month":"2024-01",
     "item_code":"4806033302731",
-    "description":"RM COLCHICINE 500MG",
+    "description":"RM COLCHICINE 500MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"PRESCRIPTION",
     "total_sales":694.95,
@@ -832,7 +2032,7 @@
   {
     "month":"2024-01",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":4822.5,
@@ -898,6 +2098,106 @@
     "total_sales":486.0,
     "total_qty":246.0,
     "rank_qty":8.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":23775.4,
+    "total_qty":471.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806035208246",
+    "description":"SELCEE (ASCORBIC ACID) 500MG",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":640.0,
+    "total_qty":400.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":4710.0,
+    "total_qty":342.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806524147391",
+    "description":"REVITAPLEX (VITAMIN B1 + B6 + B12) TAB",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":1522.61,
+    "total_qty":533.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806527201373",
+    "description":"MULTI VITA (MULTIVITAMINS) CAP",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":774.0,
+    "total_qty":330.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1610.0,
+    "total_qty":669.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4806534570493",
+    "description":"CLOPEGEN (CLOPIDOGREL) 75MG FCT",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1216.7,
+    "total_qty":245.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":3316.25,
+    "total_qty":386.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"8904130424502",
+    "description":"RETANIX (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1235.64,
+    "total_qty":884.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2024-02",
+    "item_code":"8906043325297",
+    "description":"AMLOSAPH (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":512.0,
+    "total_qty":268.0,
+    "rank_qty":9.0
   },
   {
     "month":"2024-03",
@@ -1000,6 +2300,106 @@
     "rank_qty":5.0
   },
   {
+    "month":"2024-04",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":20003.06,
+    "total_qty":398.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4800234406465",
+    "description":"FORXIGA 10MG",
+    "category":"ANTIDIABETICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":8794.8,
+    "total_qty":245.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806033302830",
+    "description":"RM METFORMIN 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":779.7,
+    "total_qty":230.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":5010.0,
+    "total_qty":350.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806517790214",
+    "description":"TMZ-MR (TRIMETAZIDINE HCL) 35MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":3272.95,
+    "total_qty":239.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806518970615",
+    "description":"AMINOLOG (KETOANALOGUES+ESSENTIAL AMINO ACIDS) FC TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":4272.04,
+    "total_qty":238.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806533602355",
+    "description":"RETAVASC- 5 (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":816.0,
+    "total_qty":535.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":3599.0,
+    "total_qty":1500.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4807788562593",
+    "description":"IMMUNPRO 500MG TAB",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":2135.0,
+    "total_qty":260.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2024-04",
+    "item_code":"4809015142035",
+    "description":"OHHIRAs PROPOLIS 600MG CAP",
+    "category":"RESPIRATORY",
+    "tab":"PRESCRIPTION",
+    "total_sales":19278.6,
+    "total_qty":292.0,
+    "rank_qty":5.0
+  },
+  {
     "month":"2024-05",
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
@@ -1012,7 +2412,7 @@
   {
     "month":"2024-05",
     "item_code":"4800234406465",
-    "description":"FORXIGA (DAPAGLIFLOZIN) 10MG",
+    "description":"FORXIGA 10MG",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":7266.0,
@@ -1022,7 +2422,7 @@
   {
     "month":"2024-05",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":3708.0,
@@ -1100,6 +2500,106 @@
     "rank_qty":3.0
   },
   {
+    "month":"2024-06",
+    "item_code":"4800067551165",
+    "description":"MEDIPLAST BANTAM PLASTIC STRIPS",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":490.0,
+    "total_qty":245.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":3637.5,
+    "total_qty":249.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806524149074",
+    "description":"FREDTOR (ATORVASTATIN) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":450.0,
+    "total_qty":200.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806526296820",
+    "description":"GAUZE PAD 4x4 STERILE (PARTNERS)(4X4X8",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":1756.3,
+    "total_qty":386.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806533602355",
+    "description":"RETAVASC- 5 (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":401.72,
+    "total_qty":242.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806533602362",
+    "description":"RETAVASC (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":402.75,
+    "total_qty":231.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":2417.5,
+    "total_qty":990.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1122.0,
+    "total_qty":264.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"8904130424502",
+    "description":"RETANIX (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1365.0,
+    "total_qty":458.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2024-06",
+    "item_code":"8904179017543",
+    "description":"RETAZIDINE (TRIMETAZIDINE) 35MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":2238.86,
+    "total_qty":248.0,
+    "rank_qty":6.0
+  },
+  {
     "month":"2024-07",
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
@@ -1122,7 +2622,7 @@
   {
     "month":"2024-07",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":4428.0,
@@ -1200,6 +2700,106 @@
     "rank_qty":9.0
   },
   {
+    "month":"2024-08",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":14392.5,
+    "total_qty":285.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"1000200070",
+    "description":"SAPHLECOX 200 (CELECOXIB) 200MG CAP",
+    "category":"PAIN MANAGEMENT",
+    "tab":"GENERICS",
+    "total_sales":894.3,
+    "total_qty":163.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"4806037104461",
+    "description":"CLAVXICURE (CO-AMOXICLAV) 625MG",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":6442.4,
+    "total_qty":238.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":4896.0,
+    "total_qty":326.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"4806505141387",
+    "description":"FORMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":350.0,
+    "total_qty":200.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"4806533602379",
+    "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
+    "category":"CARDIOVASCULAR",
+    "tab":"PRESCRIPTION",
+    "total_sales":1936.5,
+    "total_qty":787.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1334.5,
+    "total_qty":314.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"70974850",
+    "description":"FERROUMAX OB (B-COMPLEX + FOLIC ACID",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":2093.0,
+    "total_qty":182.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"8904130424502",
+    "description":"RETANIX (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":648.0,
+    "total_qty":219.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2024-08",
+    "item_code":"8906117651871",
+    "description":"CETIRILIFE (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1452.0,
+    "total_qty":484.0,
+    "rank_qty":2.0
+  },
+  {
     "month":"2024-09",
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
@@ -1262,7 +2862,7 @@
   {
     "month":"2024-09",
     "item_code":"4807788402202",
-    "description":"GLUMET (METFORMIN HCI) 500MG TAB",
+    "description":"GLUMET 500MG TAB",
     "category":"ANTIDIABETICS",
     "tab":"PRESCRIPTION",
     "total_sales":10480.0,
@@ -1322,7 +2922,7 @@
   {
     "month":"2024-10",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":4569.6,
@@ -1372,7 +2972,7 @@
   {
     "month":"2024-10",
     "item_code":"4809012254458",
-    "description":"LIVERAIDE (SILYMARIN) CAP",
+    "description":"LIVERAIDE CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":3170.0,
@@ -1392,7 +2992,7 @@
   {
     "month":"2024-10",
     "item_code":"8994388106237",
-    "description":"STIMUNO (PHYLLANTHUS NIRURI) 250MG CAP",
+    "description":"STIMUNO 250MG CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":2571.25,
@@ -1412,7 +3012,7 @@
   {
     "month":"2024-11",
     "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
+    "description":"APPEVIT CAP",
     "category":"VITAMINS",
     "tab":"OTC",
     "total_sales":3472.0,
@@ -1462,7 +3062,7 @@
   {
     "month":"2024-11",
     "item_code":"4809013625080",
-    "description":"MX3 COFFEE",
+    "description":"MX3 COFFEE MIX 10G",
     "category":"FOOD SUPPLEMENTS",
     "tab":"F&B",
     "total_sales":3740.4,
@@ -1498,5 +3098,405 @@
     "total_sales":1443.4,
     "total_qty":448.0,
     "rank_qty":3.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":20470.0,
+    "total_qty":445.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":4688.0,
+    "total_qty":315.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4806517790955",
+    "description":"GOUTER (COLCHICINE) 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"PRESCRIPTION",
+    "total_sales":819.0,
+    "total_qty":184.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4806529600563",
+    "description":"SEMITHINE 200MG\/200MG\/25MG TAB",
+    "category":"GIT",
+    "tab":"PRESCRIPTION",
+    "total_sales":2925.0,
+    "total_qty":195.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4806533602355",
+    "description":"RETAVASC- 5 (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":307.56,
+    "total_qty":200.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4806533602362",
+    "description":"RETAVASC (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":316.83,
+    "total_qty":189.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":2826.25,
+    "total_qty":667.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"4809013625080",
+    "description":"MX3 COFFEE MIX 10G",
+    "category":"FOOD SUPPLEMENTS",
+    "tab":"F&B",
+    "total_sales":3060.0,
+    "total_qty":170.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"8904130424502",
+    "description":"RETANIX (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":973.5,
+    "total_qty":329.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2024-12",
+    "item_code":"8904179017819",
+    "description":"RETAZART (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":2608.0,
+    "total_qty":1076.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":20332.0,
+    "total_qty":442.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"4800067551165",
+    "description":"MEDIPLAST BANTAM PLASTIC STRIPS",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":627.0,
+    "total_qty":228.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":7264.0,
+    "total_qty":493.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"4806523302593",
+    "description":"MYMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":645.0,
+    "total_qty":260.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"4806533602362",
+    "description":"RETAVASC (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":384.85,
+    "total_qty":227.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":3184.5,
+    "total_qty":700.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"725765883124",
+    "description":"PROPOLIS 600MG CAP",
+    "category":"FOOD SUPPLEMENTS",
+    "tab":"OTC",
+    "total_sales":15048.9,
+    "total_qty":228.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"8904179017567",
+    "description":"GOZTAN-50 (LOSARTAN POTASSIUM) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":1104.0,
+    "total_qty":595.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"8904179017819",
+    "description":"RETAZART (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":550.0,
+    "total_qty":230.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2025-01",
+    "item_code":"8906117651871",
+    "description":"CETIRILIFE (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1041.0,
+    "total_qty":349.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":11877.2,
+    "total_qty":261.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4806319103701",
+    "description":"PHAREX VITAMIN (VITAMIN B1+B6+B12) TAB",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":950.4,
+    "total_qty":193.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":4064.0,
+    "total_qty":270.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4806505141387",
+    "description":"FORMET (METFORMIN) 500MG TAB",
+    "category":"ANTIDIABETICS",
+    "tab":"GENERICS",
+    "total_sales":662.0,
+    "total_qty":335.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4806526296820",
+    "description":"GAUZE PAD 4x4 STERILE (PARTNERS)(4X4X8",
+    "category":"WOUND CARE",
+    "tab":"MED-SURG",
+    "total_sales":1606.5,
+    "total_qty":317.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4806533602355",
+    "description":"RETAVASC- 5 (AMLODIPINE) 5MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":851.7,
+    "total_qty":513.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4807788560438",
+    "description":"NAFARIN A TAB",
+    "category":"RESPIRATORY",
+    "tab":"OTC",
+    "total_sales":1564.0,
+    "total_qty":184.0,
+    "rank_qty":10.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1767.0,
+    "total_qty":372.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"8904179017567",
+    "description":"GOZTAN-50 (LOSARTAN POTASSIUM) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":862.0,
+    "total_qty":446.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2025-02",
+    "item_code":"8906117651871",
+    "description":"CETIRILIFE (CETIRIZINE) 10MG TAB",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":1383.44,
+    "total_qty":464.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":11868.0,
+    "total_qty":258.0,
+    "rank_qty":4.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4806319103701",
+    "description":"PHAREX VITAMIN (VITAMIN B1+B6+B12) TAB",
+    "category":"VITAMINS",
+    "tab":"GENERICS",
+    "total_sales":1262.8,
+    "total_qty":255.0,
+    "rank_qty":5.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":7248.0,
+    "total_qty":483.0,
+    "rank_qty":2.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4806527201342",
+    "description":"MULTICAPS",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":6000.0,
+    "total_qty":3000.0,
+    "rank_qty":1.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4806533602362",
+    "description":"RETAVASC (AMLODIPINE) 10MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":390.22,
+    "total_qty":232.0,
+    "rank_qty":8.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4806534570103",
+    "description":"Retavacyl (Co-Amoxiclav) 625mg tab",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":5695.2,
+    "total_qty":213.0,
+    "rank_qty":9.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"4807788561688",
+    "description":"BIOGESIC 500MG TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":1177.05,
+    "total_qty":249.0,
+    "rank_qty":6.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"8904179017567",
+    "description":"GOZTAN-50 (LOSARTAN POTASSIUM) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":552.0,
+    "total_qty":305.0,
+    "rank_qty":3.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"8904179017819",
+    "description":"RETAZART (LOSARTAN) 50MG TAB",
+    "category":"CARDIOVASCULAR",
+    "tab":"GENERICS",
+    "total_sales":605.0,
+    "total_qty":242.0,
+    "rank_qty":7.0
+  },
+  {
+    "month":"2025-03",
+    "item_code":"8906117652236",
+    "description":"Retanyx (Cetirizine) 10mg tab",
+    "category":"RESPIRATORY",
+    "tab":"GENERICS",
+    "total_sales":559.04,
+    "total_qty":195.0,
+    "rank_qty":10.0
   }
 ]

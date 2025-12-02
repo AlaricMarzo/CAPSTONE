@@ -5,9 +5,19 @@
     "description":"WHEELCHAIR SUREGUARD",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":15255.0,
-    "total_qty":3.0,
-    "rank_sales":3.0
+    "total_sales":34061.4,
+    "total_qty":7.0,
+    "rank_sales":5.0
+  },
+  {
+    "year":2022,
+    "item_code":"33835549",
+    "description":"RECLINING WHEELCHAIR WITH COMMODE",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":31314.14,
+    "total_qty":4.0,
+    "rank_sales":7.0
   },
   {
     "year":2022,
@@ -15,8 +25,8 @@
     "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":20507.13,
-    "total_qty":5.0,
+    "total_sales":59106.63,
+    "total_qty":15.0,
     "rank_sales":1.0
   },
   {
@@ -25,9 +35,9 @@
     "description":"RENAKULT CAP(PROBIOTIC",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":14551.65,
-    "total_qty":561.0,
-    "rank_sales":4.0
+    "total_sales":48120.57,
+    "total_qty":1853.0,
+    "rank_sales":2.0
   },
   {
     "year":2022,
@@ -35,39 +45,19 @@
     "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
-    "total_sales":10990.5,
-    "total_qty":321.0,
-    "rank_sales":6.0
+    "total_sales":36898.5,
+    "total_qty":1082.0,
+    "rank_sales":4.0
   },
   {
     "year":2022,
-    "item_code":"4806524780482",
-    "description":"KETOGO (KETOANALOGUES +ESSEN. AMINO ACIDS",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "total_sales":9270.48,
-    "total_qty":453.0,
-    "rank_sales":10.0
-  },
-  {
-    "year":2022,
-    "item_code":"4806531820812",
-    "description":"AK LOG TAB",
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":10448.19,
-    "total_qty":702.0,
-    "rank_sales":8.0
-  },
-  {
-    "year":2022,
-    "item_code":"71528104703",
-    "description":"PROHEALTHCARE DISP. MASK",
-    "category":"DISPOSABLES",
-    "tab":"MED-SURG",
-    "total_sales":10328.4,
-    "total_qty":97.0,
-    "rank_sales":9.0
+    "total_sales":26733.12,
+    "total_qty":1412.0,
+    "rank_sales":10.0
   },
   {
     "year":2022,
@@ -75,9 +65,19 @@
     "description":"ALCOSURE ISOPROPYL ALC 70% 3.7L",
     "category":"DISINFECTANT",
     "tab":"HOUSEHOLD GOODS",
-    "total_sales":18375.35,
-    "total_qty":48.0,
-    "rank_sales":2.0
+    "total_sales":44670.5,
+    "total_qty":117.0,
+    "rank_sales":3.0
+  },
+  {
+    "year":2022,
+    "item_code":"77939425",
+    "description":"HOSPITAL BED 3 CRANKS MANUAL",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":27142.74,
+    "total_qty":1.0,
+    "rank_sales":9.0
   },
   {
     "year":2022,
@@ -85,19 +85,29 @@
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":13928.51,
-    "total_qty":1.0,
-    "rank_sales":5.0
+    "total_sales":27857.02,
+    "total_qty":2.0,
+    "rank_sales":8.0
   },
   {
     "year":2022,
     "item_code":"8902269016674",
-    "description":"ALCLAV (CO-AMOXICLAV) 625MG TAB",
+    "description":"ALCLAV 625MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":10698.23,
-    "total_qty":388.0,
-    "rank_sales":7.0
+    "total_sales":31861.07,
+    "total_qty":1192.0,
+    "rank_sales":6.0
+  },
+  {
+    "year":2023,
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":51671.6,
+    "total_qty":1026.0,
+    "rank_sales":8.0
   },
   {
     "year":2023,
@@ -105,9 +115,19 @@
     "description":"WHEELCHAIR BLACK ECONO",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":26371.84,
-    "total_qty":7.0,
-    "rank_sales":7.0
+    "total_sales":57753.97,
+    "total_qty":15.0,
+    "rank_sales":5.0
+  },
+  {
+    "year":2023,
+    "item_code":"4800308100473",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":48511.5,
+    "total_qty":129.0,
+    "rank_sales":10.0
   },
   {
     "year":2023,
@@ -115,9 +135,9 @@
     "description":"CARESS ADULT DIAPER XL10",
     "category":"DIAPERS",
     "tab":"PERSONAL CARE",
-    "total_sales":26014.44,
-    "total_qty":83.0,
-    "rank_sales":8.0
+    "total_sales":55813.26,
+    "total_qty":178.0,
+    "rank_sales":7.0
   },
   {
     "year":2023,
@@ -125,19 +145,19 @@
     "description":"CORVELAM 800MG (SEVELAMER CARBONATE) TAB",
     "category":"GUT AND HORMONES",
     "tab":"PRESCRIPTION",
-    "total_sales":24641.5,
-    "total_qty":722.0,
+    "total_sales":51476.0,
+    "total_qty":1490.0,
     "rank_sales":9.0
   },
   {
     "year":2023,
     "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
+    "description":"NEPHORMIN TAB",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":40312.0,
-    "total_qty":2483.0,
-    "rank_sales":3.0
+    "total_sales":56120.0,
+    "total_qty":3456.0,
+    "rank_sales":6.0
   },
   {
     "year":2023,
@@ -145,29 +165,9 @@
     "description":"OHHIRAs PROPOLIS 600MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "total_sales":60301.32,
-    "total_qty":973.0,
-    "rank_sales":2.0
-  },
-  {
-    "year":2023,
-    "item_code":"54021235",
-    "description":"GLOBISAPH (KETOANALOGUE) 630MG TAB",
-    "category":"GUT AND HORMONES",
-    "tab":"PRESCRIPTION",
-    "total_sales":26505.0,
-    "total_qty":1730.0,
-    "rank_sales":6.0
-  },
-  {
-    "year":2023,
-    "item_code":"77939425",
-    "description":"HOSPITAL BED 3 CRANKS MANUAL",
-    "category":"ASSISTIVE DEVICE",
-    "tab":"MED-SURG",
-    "total_sales":30400.0,
-    "total_qty":1.0,
-    "rank_sales":5.0
+    "total_sales":171520.02,
+    "total_qty":2685.0,
+    "rank_sales":3.0
   },
   {
     "year":2023,
@@ -175,19 +175,19 @@
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":128978.51,
-    "total_qty":8.0,
-    "rank_sales":1.0
+    "total_sales":219514.04,
+    "total_qty":14.0,
+    "rank_sales":2.0
   },
   {
     "year":2023,
-    "item_code":"8427030007588",
-    "description":"GLUCERNA VANILLA 900G",
-    "category":"ADULT MILK",
-    "tab":"F&B",
-    "total_sales":22813.11,
-    "total_qty":10.0,
-    "rank_sales":10.0
+    "item_code":"98057740",
+    "description":"VAXIRAB 2.5 IU 1ML",
+    "category":"COLD CHAIN",
+    "tab":"PRESCRIPTION",
+    "total_sales":456528.0,
+    "total_qty":251.0,
+    "rank_sales":1.0
   },
   {
     "year":2023,
@@ -195,8 +195,8 @@
     "description":"OXYGEN TANK 15LBS",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":36674.83,
-    "total_qty":5.0,
+    "total_sales":59133.28,
+    "total_qty":10.0,
     "rank_sales":4.0
   },
   {
@@ -205,8 +205,8 @@
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":151106.93,
-    "total_qty":3030.0,
+    "total_sales":238138.47,
+    "total_qty":4797.0,
     "rank_sales":2.0
   },
   {
@@ -217,27 +217,7 @@
     "tab":"MED-SURG",
     "total_sales":68000.0,
     "total_qty":1.0,
-    "rank_sales":5.0
-  },
-  {
-    "year":2024,
-    "item_code":"33835549",
-    "description":"RECLINING WHEELCHAIR WITH COMMODE",
-    "category":"ASSISTIVE DEVICE",
-    "tab":"MED-SURG",
-    "total_sales":42649.6,
-    "total_qty":4.0,
     "rank_sales":8.0
-  },
-  {
-    "year":2024,
-    "item_code":"40617298136",
-    "description":"OXYGEN CONCENTRATOR OWGEL(PARTNERS) 10L",
-    "category":"ASSISTIVE DEVICE",
-    "tab":"MED-SURG",
-    "total_sales":50000.0,
-    "total_qty":1.0,
-    "rank_sales":6.0
   },
   {
     "year":2024,
@@ -245,9 +225,9 @@
     "description":"KLARYTH 250MG\/5ML SUSP 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":41575.0,
-    "total_qty":35.0,
-    "rank_sales":9.0
+    "total_sales":82223.55,
+    "total_qty":68.0,
+    "rank_sales":6.0
   },
   {
     "year":2024,
@@ -255,9 +235,19 @@
     "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
     "category":"ANTIBIOTICS",
     "tab":"PRESCRIPTION",
-    "total_sales":89832.0,
-    "total_qty":238.0,
+    "total_sales":141189.0,
+    "total_qty":376.0,
     "rank_sales":3.0
+  },
+  {
+    "year":2024,
+    "item_code":"4806504269808",
+    "description":"APPEVIT 120ML SYR",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":64625.0,
+    "total_qty":188.0,
+    "rank_sales":9.0
   },
   {
     "year":2024,
@@ -265,8 +255,18 @@
     "description":"OHHIRAs PROPOLIS 600MG CAP",
     "category":"RESPIRATORY",
     "tab":"PRESCRIPTION",
-    "total_sales":49828.35,
-    "total_qty":767.0,
+    "total_sales":92428.95,
+    "total_qty":1422.0,
+    "rank_sales":5.0
+  },
+  {
+    "year":2024,
+    "item_code":"70537970",
+    "description":"EPORIFE ( EPOETIN ALFA ) 400IU\/ML SOLUTION",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":76967.0,
+    "total_qty":171.0,
     "rank_sales":7.0
   },
   {
@@ -275,8 +275,8 @@
     "description":"HOSPITAL BED 2-CRANKS MANUAL",
     "category":"ASSISTIVE DEVICE",
     "tab":"MED-SURG",
-    "total_sales":81900.0,
-    "total_qty":5.0,
+    "total_sales":97500.0,
+    "total_qty":6.0,
     "rank_sales":4.0
   },
   {
@@ -285,8 +285,8 @@
     "description":"CEFUPLUS (CEFUROXIME AXETIL) 500MG TAB",
     "category":"ANTIBIOTICS",
     "tab":"GENERICS",
-    "total_sales":41303.2,
-    "total_qty":614.0,
+    "total_sales":63294.4,
+    "total_qty":943.0,
     "rank_sales":10.0
   },
   {
@@ -295,8 +295,108 @@
     "description":"VAXIRAB 2.5 IU 1ML",
     "category":"COLD CHAIN",
     "tab":"PRESCRIPTION",
-    "total_sales":458200.0,
-    "total_qty":254.0,
+    "total_sales":623536.0,
+    "total_qty":345.0,
     "rank_sales":1.0
+  },
+  {
+    "year":2025,
+    "item_code":"0725765883117",
+    "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":44077.2,
+    "total_qty":961.0,
+    "rank_sales":2.0
+  },
+  {
+    "year":2025,
+    "item_code":"4800286242646",
+    "description":"DUPHASTON(DYDROGESTERONE) 10MG TAB",
+    "category":"GUT AND HORMONES",
+    "tab":"PRESCRIPTION",
+    "total_sales":20191.2,
+    "total_qty":226.0,
+    "rank_sales":8.0
+  },
+  {
+    "year":2025,
+    "item_code":"4800307101044",
+    "description":"KLARYTH 250MG\/5ML SUSP 70ML",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":44477.25,
+    "total_qty":31.0,
+    "rank_sales":1.0
+  },
+  {
+    "year":2025,
+    "item_code":"4800308100473",
+    "description":"BACTIV (CO-AMOXICLAV) 457MG\/5ML 70ML",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":41948.2,
+    "total_qty":117.0,
+    "rank_sales":3.0
+  },
+  {
+    "year":2025,
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":18576.0,
+    "total_qty":1246.0,
+    "rank_sales":9.0
+  },
+  {
+    "year":2025,
+    "item_code":"4806504269808",
+    "description":"APPEVIT 120ML SYR",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":28737.5,
+    "total_qty":84.0,
+    "rank_sales":5.0
+  },
+  {
+    "year":2025,
+    "item_code":"4806511301393",
+    "description":"TOCOVID VANILLA POWDER DRINK 850G",
+    "category":"ADULT MILK",
+    "tab":"F&B",
+    "total_sales":18225.0,
+    "total_qty":15.0,
+    "rank_sales":10.0
+  },
+  {
+    "year":2025,
+    "item_code":"725765883124",
+    "description":"PROPOLIS 600MG CAP",
+    "category":"FOOD SUPPLEMENTS",
+    "tab":"OTC",
+    "total_sales":32919.9,
+    "total_qty":495.0,
+    "rank_sales":4.0
+  },
+  {
+    "year":2025,
+    "item_code":"77939425",
+    "description":"HOSPITAL BED 3 CRANKS MANUAL",
+    "category":"ASSISTIVE DEVICE",
+    "tab":"MED-SURG",
+    "total_sales":28000.0,
+    "total_qty":1.0,
+    "rank_sales":6.0
+  },
+  {
+    "year":2025,
+    "item_code":"80722472",
+    "description":"MEDICORE INHALER SPACER",
+    "category":"MANUAL MEDICAL DEVICES",
+    "tab":"MED-SURG",
+    "total_sales":25200.0,
+    "total_qty":45.0,
+    "rank_sales":7.0
   }
 ]

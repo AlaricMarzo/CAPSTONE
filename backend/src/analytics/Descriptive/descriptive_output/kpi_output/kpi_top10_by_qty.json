@@ -4,79 +4,79 @@
     "description":"BIOGESIC 500MG TAB",
     "category":"PAIN MANAGEMENT",
     "tab":"OTC",
-    "total_sales":33084.26,
-    "total_qty":7883.0
+    "total_sales":71975.05,
+    "total_qty":17045.0
   },
   {
     "item_code":"4806533602379",
     "description":"RETASAR (LOSARTAN POTASSIUM) 50MG",
     "category":"CARDIOVASCULAR",
     "tab":"PRESCRIPTION",
-    "total_sales":12548.75,
-    "total_qty":5211.0
+    "total_sales":28244.75,
+    "total_qty":11709.0
+  },
+  {
+    "item_code":"4806504260614",
+    "description":"APPEVIT CAP",
+    "category":"VITAMINS",
+    "tab":"OTC",
+    "total_sales":109510.6,
+    "total_qty":7675.0
   },
   {
     "item_code":"8904179014702",
     "description":"NOVASARTAN (LOSARTAN K) 50MG FC TAB",
     "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
-    "total_sales":8286.56,
-    "total_qty":3510.0
+    "total_sales":17058.76,
+    "total_qty":7234.0
   },
   {
     "item_code":"0725765883117",
     "description":"OHHIRA&#039;S RED OMX PROBIOTICS CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":151106.93,
-    "total_qty":3030.0
-  },
-  {
-    "item_code":"4806524781854",
-    "description":"NEPHROMIN (KETOANALOGUES+ESSENTIAL AMINO ACIDS) TAB",
-    "category":"ANTIBIOTICS",
-    "tab":"PRESCRIPTION",
-    "total_sales":45177.76,
-    "total_qty":2739.0
-  },
-  {
-    "item_code":"4806504260614",
-    "description":"APPEVIT (BUCLIZINE HCL+B-COMPLEX+IRON) CAP",
-    "category":"VITAMINS",
-    "tab":"OTC",
-    "total_sales":37717.42,
-    "total_qty":2639.0
+    "total_sales":333887.27,
+    "total_qty":6784.0
   },
   {
     "item_code":"4807788562593",
     "description":"IMMUNPRO 500MG TAB",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":21262.69,
-    "total_qty":2507.0
+    "total_sales":51408.11,
+    "total_qty":6210.0
+  },
+  {
+    "item_code":"4806524781854",
+    "description":"NEPHORMIN TAB",
+    "category":"ANTIBIOTICS",
+    "tab":"PRESCRIPTION",
+    "total_sales":82853.12,
+    "total_qty":4868.0
   },
   {
     "item_code":"4800369000545",
-    "description":"TERRAFERON (FERROUS SULFATE + FOLIC ACID + B-COMPLEX + NICOTINAMIDE) CAP",
+    "description":"TERRAFERON CAP",
     "category":"VITAMINS",
     "tab":"OTC",
-    "total_sales":18174.51,
-    "total_qty":2397.0
+    "total_sales":33848.98,
+    "total_qty":4509.0
   },
   {
-    "item_code":"4806523301312",
-    "description":"AXMEL (AMOXICILLIN TRIHYDRATE) 500MG CAP",
-    "category":"ANTIBIOTICS",
-    "tab":"GENERICS",
-    "total_sales":6694.1,
-    "total_qty":2130.0
+    "item_code":"4807788526762",
+    "description":"BIOFLU TAB",
+    "category":"PAIN MANAGEMENT",
+    "tab":"OTC",
+    "total_sales":36765.08,
+    "total_qty":4443.0
   },
   {
-    "item_code":"8904130424502",
-    "description":"RETANIX (CETIRIZINE) 10MG TAB",
-    "category":"RESPIRATORY",
+    "item_code":"8904186000521",
+    "description":"TRIMEBET (TRIMETAZIDINE) 35MG TAB",
+    "category":"CARDIOVASCULAR",
     "tab":"GENERICS",
-    "total_sales":5478.4,
-    "total_qty":2052.0
+    "total_sales":32364.16,
+    "total_qty":4245.0
   }
 ]

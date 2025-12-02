@@ -1,3 +1,4 @@
 cluster,n,total_sales,total_qty,avg_price_med,months_active_med,mean_monthly_qty_med,cv_monthly_qty_med,trend_qty_slope_med,persona
--1,26,199455.06,1080.0,185.804,9.0,2.6666666666666665,0.5532833351724882,8.985767264226737e-17,"High-Sales, High-Volume, Premium, Rising"
-0,30,7013.56,138.0,51.625,1.5,1.0,0.0,0.0,Mixed
+Noise / Outliers,26,423212.76999999996,2331.0,185.17857142857142,17.0,2.7058823529411766,0.5637580414075712,0.05882352941176469,"High-Sales, High-Volume, Premium, Rising"
+"High-Sales, High-Volume, Premium",29,8448.33,174.0,66.5,2.0,1.2222222222222223,0.0,0.0,"High-Sales, High-Volume, Premium"
+Rising,7,6938.5,133.0,35.5,14.0,1.5,0.4639180705887486,0.011764705882352913,Rising

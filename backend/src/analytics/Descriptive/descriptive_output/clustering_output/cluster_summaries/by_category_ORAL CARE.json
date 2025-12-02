@@ -1,50 +1,38 @@
 [
   {
-    "cluster":-1,
-    "n":19,
-    "total_sales":58183.56,
-    "total_qty":694.0,
-    "avg_price_med":124.1439393939,
-    "months_active_med":10.0,
-    "mean_monthly_qty_med":2.8571428571,
-    "cv_monthly_qty_med":0.5099019514,
-    "trend_qty_slope_med":-0.1212121212,
-    "persona":"High-Sales, High-Volume, Declining"
+    "cluster":"Noise \/ Outliers",
+    "n":25,
+    "total_sales":146634.49,
+    "total_qty":1483.0,
+    "avg_price_med":129.6526530612,
+    "months_active_med":20.0,
+    "mean_monthly_qty_med":2.1304347826,
+    "cv_monthly_qty_med":0.5153595474,
+    "trend_qty_slope_med":3.628312094e-17,
+    "persona":"High-Sales, High-Volume, Premium, Rising"
   },
   {
-    "cluster":0,
+    "cluster":"Premium, Rising",
     "n":7,
-    "total_sales":8495.5,
-    "total_qty":50.0,
-    "avg_price_med":147.8333333333,
-    "months_active_med":4.0,
+    "total_sales":9633.5,
+    "total_qty":105.0,
+    "avg_price_med":142.0909090909,
+    "months_active_med":7.0,
+    "mean_monthly_qty_med":1.6666666667,
+    "cv_monthly_qty_med":0.3149183286,
+    "trend_qty_slope_med":1.099298208e-17,
+    "persona":"Premium, Rising"
+  },
+  {
+    "cluster":"High-Sales, High-Volume",
+    "n":26,
+    "total_sales":11545.14,
+    "total_qty":253.0,
+    "avg_price_med":122.0,
+    "months_active_med":2.5,
     "mean_monthly_qty_med":1.5,
-    "cv_monthly_qty_med":0.3061862178,
-    "trend_qty_slope_med":-7.850462293e-17,
-    "persona":"High-Sales, Premium, Declining"
-  },
-  {
-    "cluster":1,
-    "n":6,
-    "total_sales":5469.0,
-    "total_qty":42.0,
-    "avg_price_med":151.9285714286,
-    "months_active_med":5.0,
-    "mean_monthly_qty_med":1.1875,
-    "cv_monthly_qty_med":0.3201912647,
-    "trend_qty_slope_med":-4.856400013e-17,
-    "persona":"Premium, Declining"
-  },
-  {
-    "cluster":2,
-    "n":20,
-    "total_sales":4501.85,
-    "total_qty":88.0,
-    "avg_price_med":100.75,
-    "months_active_med":1.0,
-    "mean_monthly_qty_med":1.0,
     "cv_monthly_qty_med":0.0,
     "trend_qty_slope_med":0.0,
-    "persona":"High-Volume"
+    "persona":"High-Sales, High-Volume"
   }
 ]
