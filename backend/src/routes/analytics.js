@@ -259,31 +259,18 @@ import runPythonScript from "../utils/runPythonScript.js"
       // Clustering Images
       const clusteringImages = []
 
-        
-      const globalImage = encodeImageToBase64(path.join(clusterDir, "fig_global_linear.png"))
-      if (globalImage) {
-        clusteringImages.push({
-          name: "Global Clustering",
-          image: globalImage,
-          summary: clusteringGlobalData || [],
-        })
-      }
-
     // By Category
     const categoryClusterDir = path.join(clusterDir, "clusters_by_category")
     if (fs.existsSync(categoryClusterDir)) {
       const categoryFiles = fs.readdirSync(categoryClusterDir).filter(f => f.endsWith('.json'))
       for (const file of categoryFiles) {
-        const summaryPath = path.join(categoryClusterDir, file)
         const categoryName = file.replace('.json', '')
-        const imagePath = path.join(categoryClusterDir, `fig_cat_${categoryName}.png`)
-        const summary = jsonToArray(summaryPath)
+        const imagePath = path.join(categoryClusterDir, `fig_cat_${categoryName}_linear.png`)
         const image = encodeImageToBase64(imagePath)
-        if (image && summary) {
+        if (image) {
           clusteringImages.push({
             name: `Clustering by Category: ${categoryName}`,
             image,
-            summary,
           })
         }
       }
@@ -294,16 +281,13 @@ import runPythonScript from "../utils/runPythonScript.js"
     if (fs.existsSync(tabClusterDir)) {
       const tabFiles = fs.readdirSync(tabClusterDir).filter(f => f.endsWith('.json'))
       for (const file of tabFiles) {
-        const summaryPath = path.join(tabClusterDir, file)
         const tabName = file.replace('.json', '')
-        const imagePath = path.join(tabClusterDir, `fig_tab_${tabName}.png`)
-        const summary = jsonToArray(summaryPath)
+        const imagePath = path.join(tabClusterDir, `fig_tab_${tabName}_linear.png`)
         const image = encodeImageToBase64(imagePath)
-        if (image && summary) {
+        if (image) {
           clusteringImages.push({
             name: `Clustering by Tab: ${tabName}`,
             image,
-            summary,
           })
         }
       }
