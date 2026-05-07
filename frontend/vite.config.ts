@@ -10,12 +10,17 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     proxy: mode === 'production' ? undefined : {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:5050',
         changeOrigin: true,
+        secure: false,
+        ws: true,
+        rewrite: (path) => path.replace(/^\/api/, '/api')
       },
       '/descriptive_output': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:5050',
         changeOrigin: true,
+        secure: false,
+        ws: true
       },
     },
   },

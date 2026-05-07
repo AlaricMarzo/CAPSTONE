@@ -14,7 +14,10 @@
     "install:frontend": "cd frontend && npm install",
     "install:backend": "cd backend && npm install",
     "install:all": "npm run install:frontend && npm run install:backend",
-    "clean": "rm -rf frontend/node_modules backend/node_modules frontend/dist backend/dist"
+    "clean": "rm -rf frontend/node_modules backend/node_modules frontend/dist backend/dist",
+    "update:browserslist": "npx update-browserslist-db@latest",
+    "update:baseline": "npm i baseline-browser-mapping@latest -D",
+    "update:data": "npm run update:browserslist && npm run update:baseline"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

@@ -117,9 +117,6 @@ import runPythonScript from "../utils/runPythonScript.js"
 
       const client = new pg.Client({
         connectionString: dsn,
-        ssl: {
-          rejectUnauthorized: false, // needed for Neon on Railway
-        },
       })
       await client.connect()
 
@@ -367,9 +364,6 @@ import runPythonScript from "../utils/runPythonScript.js"
 
       const client = new pg.Client({
         connectionString: dsn,
-        ssl: {
-          rejectUnauthorized: false, // needed for Neon on Railway
-        },
       })
       await client.connect()
 
